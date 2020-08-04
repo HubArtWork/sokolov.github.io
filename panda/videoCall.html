@@ -185,7 +185,7 @@
 							<div class="videoCall-text">
 								<p>Read the next and atch the head to the appropriate time of day</p>
 							</div>
-							<div class="videoCall-drag quiz-wrapper">
+							<div class="videoCall-drag">
 								<ul class="categories-list options">
 									<li class="card"><a href="#">Eat your dinner</a></li>
 									<li class="card"><a href="#">Eat your</a></li>
@@ -195,7 +195,9 @@
 								<span class="videoCall-title videoCall-title__center">Time for everything</span>
 								<div class="videoCall-input answers">
 									<span>Noon</span>
-									<div class="answers-wrap option"></div>
+									<div class="videoCall-dragTest">
+										<div class="answers-wrap option"></div>
+									</div>
 									<input type="text">
 								</div>
 							</div>
@@ -213,5 +215,42 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script>
+		//dragANDdrop
+		if($('.videoCall-drag').length > 0){
+			console.log('wd');
+		  // Enable drag and drop...
+		  function dragAndDrop(dragTarget, dropTarget) {
+		    // Enable draggable events...
+		    $(dragTarget).draggable({ revert: true });
+
+		    // Enable the droppable events...
+		    $(dropTarget).droppable({
+		      drop: function(event, ui) {
+		      	if(!$(this).parents('.videoCall-drag').find('.answers-wrap').hasClass('answers-active')){
+			      	$(this).parents('.videoCall-drag').find('.answers-wrap').addClass('answers-active');
+			        // Append the dropped item into its drop target...
+			        $(this).append(ui.draggable);
+			        // Place the drag target in the normal document flow...
+			        ui.draggable.css({
+			          position: "absolute",
+			          top: "0",
+			          left: "0"
+			        });
+			        // jQuery UI requires the draggable element to have position: relative...
+			        ui.draggable.css({
+			          position: "relative"
+			        });
+			        $(this).parents('.videoCall-drag').find('.answers input').val($(this).parents('.videoCall-drag').find('.answers-wrap .card').text());
+			        //console.log($(this).parents('.videoCall-drag').find('.answers-wrap .card').text());
+			      }
+		    	}
+		   	});
+		  }
+		  // Enable drag and drop in both directions...
+		  dragAndDrop(".card", ".answer");
+		  dragAndDrop(".card", ".option");
+		}
+	</script>
 </body>
 </html>
