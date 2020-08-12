@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="arrow-top"><svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8.66255L14.7006 9.98824L8.91876 4.08896L8.91876 25.5H7.08118L7.08118 4.08896L1.29935 9.98824L0 8.66255L8.00003 0.5L16 8.66255Z" fill="white"/></svg></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-bar">
+				<span></span>
+			</div>
+			<div class="header-logo">
+				<a href="#"><img src="img/logo.svg" alt=""></a>
+			</div>
+			<div class="header-menu">
+				<ul class="header-list">
+					<li><a href="#">Каталог продукции</a></li>
+					<li><a href="#">Как мы работаем</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header-info">
+					<span><a href="#">+7 (495) 229-44-48</a></span>
+					<span><a href="#">info@c-plus.pro</a></span>
+					<a href="#modal-backCall" class="header-ico button-modal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1626 10.9208L13.5529 9.60156C12.5041 8.74212 10.8762 8.82345 9.91952 9.78044L9.85562 9.84437C9.6952 10.0048 9.43389 10.0036 9.27573 9.84532L6.1656 6.73415C6.00859 6.57709 6.00549 6.32447 6.15679 6.16407C6.15955 6.16115 6.16234 6.15827 6.16518 6.1554L6.15663 6.16395C6.15947 6.16111 6.1623 6.15824 6.16514 6.1554C7.11656 5.19453 7.2076 3.55856 6.37417 2.50451L5.0686 0.853385C4.22942 -0.207946 2.77093 -0.289929 1.81434 0.666987L1.57453 0.906877C-0.124568 2.60655 -0.524954 5.66998 0.749533 7.70679C0.749533 7.70679 1.49978 9.4473 4.03166 11.98C6.56353 14.5128 8.30346 15.2633 8.30346 15.2633C10.3586 16.5071 13.4009 16.1387 15.0997 14.4394L15.328 14.2109C16.2854 13.2533 16.2106 11.7797 15.1626 10.9208ZM14.1715 13.0541L13.9431 13.2825C12.7769 14.4491 10.5614 14.7176 9.15007 13.8635L9.05405 13.8053L8.95101 13.7609C8.82451 13.7063 8.50742 13.5343 8.02804 13.2127C7.17663 12.6414 6.22053 11.8559 5.18812 10.8232C4.1557 9.79041 3.37046 8.834 2.79941 7.9823C2.47788 7.50275 2.30592 7.18555 2.25141 7.05901L2.20204 6.94448L2.13587 6.83876C1.2778 5.46744 1.55444 3.24079 2.73103 2.0638L2.97084 1.82391C3.23675 1.55791 3.55468 1.57601 3.78591 1.86843L5.09148 3.51956C5.4134 3.92667 5.37173 4.63545 5.00021 5.00714C4.20987 5.80699 4.21378 7.09552 5.00914 7.89111L8.11927 11.0023C8.91655 11.7998 10.2135 11.8003 11.0122 11.0013L11.0761 10.9374C11.4387 10.5747 12.1184 10.5411 12.5164 10.8672L14.1261 12.1865C14.4266 12.4327 14.4442 12.7813 14.1715 13.0541Z" fill="#003274"/></svg></a>
+				</div>
+			</div>
+			<div class="header-search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.7417 10.3276C12.5291 9.25241 13 7.93174 13 6.50002C13 2.91603 10.084 0 6.49999 0C2.916 0 0 2.91603 0 6.50002C0 10.084 2.91603 13 6.50002 13C7.93174 13 9.25254 12.529 10.3277 11.7417L14.586 16L16.0001 14.5859C16.0001 14.5859 11.7417 10.3276 11.7417 10.3276ZM6.50002 11C4.01857 11 2.00002 8.98148 2.00002 6.50002C2.00002 4.01857 4.01857 2.00002 6.50002 2.00002C8.98148 2.00002 11 4.01857 11 6.50002C11 8.98148 8.98145 11 6.50002 11Z" fill="#333333"/></svg></div>
+		</div>
+	</header>
+	<div class="search-bg"></div>
+	<div class="search">
+		<div class="wrapper">
+			<form action="">
+				<div class="search-row">
+					<input type="text" name="text" placeholder="Найти">
+					<button class="main-btn">Найти</button>
+					<div class="search-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7489 2.77832L21.1631 4.19253L4.19253 21.1631L2.77832 19.7489L19.7489 2.77832Z" fill="#003274"/><path d="M2.77832 4.19253L4.19253 2.77832L21.1631 19.7489L19.7489 21.1631L2.77832 4.19253Z" fill="#003274"/></svg></div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- start product -->
+	<section class="product">
+		<div class="wrapper">
+			<div class="product-back">
+				<a href="#" class="product-back__link">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.16244 4L9.48812 5.29935L3.58884 11.0812H24V12.9188H3.58884L9.48812 18.7006L8.16244 20L-0.000118256 12L8.16244 4Z" fill="#8795A5"/></svg>
+					Назад
+				</a>
+			</div>
+			<div class="product-row">
+				<div class="product-col product-col__img">
+					<img src="img/card-2.png" alt="">
+				</div>
+				<div class="product-col product-col__info">
+					<h1 class="section-title">Плиты и техпластины</h1>
+					<p><b>Техпластина полиуретановая</b> - это пластина, материал которой похож на резину. Но по своим эксплуатационным свойствам полиуретан гораздо лучше изделий из резины, а так же им часто заменяют металл (особенно когда речь идёт о необходимости износостойкого изделия).</p>
+					<p>Технические пластины как правило устанавливаются на отвалы коммунальной и дорожно-строительной техники, такой как: КО, КДМ, МДК, МТЗ, ВТЗ, ПУМ, МКСМ, ЛТЗ и др.</p>
+					<p>Такие пластины устойчивы к истиранию, не расслаиваются, не загибаются, выдерживают большие перепады температур.</p>
+					<a href="#modal-order" class="main-btn button-modal">Заказать сейчас</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end product -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-logo">
+				<a href="#">
+					<img src="img/logo-footer.svg" alt="">
+				</a>
+				<p>ООО “С-ПЛЮС” © 2020 Все права защищены.</p>
+			</div>
+			<ul class="footer-list">
+				<li><a href="#">Каталог продукции</a></li>
+				<li><a href="#">Как мы работаем</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="header-info footer-info">
+				<span><a href="#">+7 (495) 229-44-48</a></span>
+				<span><a href="#">info@c-plus.pro</a></span>
+				<a href="#modal-backCall" class="header-ico button-modal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1626 10.9208L13.5529 9.60156C12.5041 8.74212 10.8762 8.82345 9.91952 9.78044L9.85562 9.84437C9.6952 10.0048 9.43389 10.0036 9.27573 9.84532L6.1656 6.73415C6.00859 6.57709 6.00549 6.32447 6.15679 6.16407C6.15955 6.16115 6.16234 6.15827 6.16518 6.1554L6.15663 6.16395C6.15947 6.16111 6.1623 6.15824 6.16514 6.1554C7.11656 5.19453 7.2076 3.55856 6.37417 2.50451L5.0686 0.853385C4.22942 -0.207946 2.77093 -0.289929 1.81434 0.666987L1.57453 0.906877C-0.124568 2.60655 -0.524954 5.66998 0.749533 7.70679C0.749533 7.70679 1.49978 9.4473 4.03166 11.98C6.56353 14.5128 8.30346 15.2633 8.30346 15.2633C10.3586 16.5071 13.4009 16.1387 15.0997 14.4394L15.328 14.2109C16.2854 13.2533 16.2106 11.7797 15.1626 10.9208ZM14.1715 13.0541L13.9431 13.2825C12.7769 14.4491 10.5614 14.7176 9.15007 13.8635L9.05405 13.8053L8.95101 13.7609C8.82451 13.7063 8.50742 13.5343 8.02804 13.2127C7.17663 12.6414 6.22053 11.8559 5.18812 10.8232C4.1557 9.79041 3.37046 8.834 2.79941 7.9823C2.47788 7.50275 2.30592 7.18555 2.25141 7.05901L2.20204 6.94448L2.13587 6.83876C1.2778 5.46744 1.55444 3.24079 2.73103 2.0638L2.97084 1.82391C3.23675 1.55791 3.55468 1.57601 3.78591 1.86843L5.09148 3.51956C5.4134 3.92667 5.37173 4.63545 5.00021 5.00714C4.20987 5.80699 4.21378 7.09552 5.00914 7.89111L8.11927 11.0023C8.91655 11.7998 10.2135 11.8003 11.0122 11.0013L11.0761 10.9374C11.4387 10.5747 12.1184 10.5411 12.5164 10.8672L14.1261 12.1865C14.4266 12.4327 14.4442 12.7813 14.1715 13.0541Z" fill="#003274"/></svg></a>
+			</div>
+			<div class="footer-mob">
+				<p>ООО “С-ПЛЮС” © 2020 Все права защищены.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-backCall">
+		<div class="modal-ico modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7489 2.77832L21.1631 4.19253L4.19253 21.1631L2.77832 19.7489L19.7489 2.77832Z" fill="#003274"/><path d="M2.77832 4.19253L4.19253 2.77832L21.1631 19.7489L19.7489 21.1631L2.77832 4.19253Z" fill="#003274"/></svg></div>
+		<div class="modal-content">
+			<div class="modal-info">
+				<h3 class="modal-title">Обратный звонок</h3>
+				<form method="POST">
+					<div class="input-block">
+						<label for="m-1">Ваше имя</label>
+						<input id="m-1" type="text" name="name">
+					</div>
+					<div class="input-block">
+						<label for="m-2">Ваш телефон</label>
+						<input id="m-2" type="text" name="tel">
+						<span class="error-text">Ошибка</span>
+					</div>
+					<button class="main-btn">Заказать обратный звонок</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- error input -->
+	<div class="modal" id="modal-backCall2">
+		<div class="modal-ico modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7489 2.77832L21.1631 4.19253L4.19253 21.1631L2.77832 19.7489L19.7489 2.77832Z" fill="#003274"/><path d="M2.77832 4.19253L4.19253 2.77832L21.1631 19.7489L19.7489 21.1631L2.77832 4.19253Z" fill="#003274"/></svg></div>
+		<div class="modal-content">
+			<div class="modal-info">
+				<h3 class="modal-title">Обратный звонок</h3>
+				<form method="POST">
+					<div class="input-block">
+						<label for="m-12">Ваше имя</label>
+						<input id="m-12" type="text" name="name">
+					</div>
+					<div class="input-block input-error">
+						<label for="m-22">Ваш телефон</label>
+						<input id="m-22" type="text" name="tel">
+						<span class="error-text">Ошибка</span>
+					</div>
+					<button class="main-btn">Заказать обратный звонок</button>
+				</form>
+			</div>
+			<div class="modal-thank">
+				<h3 class="modal-title">Спасибо за обращение!</h3>
+				<div class="modal-img"><img src="img/done.svg" alt=""></div>
+				<p>Менеджеры компании свяжутся с Вами в ближайшее время.</p>
+				<span class="main-btn modal-close">Жду звонок</span>
+			</div>
+		</div>
+	</div>
+	<!-- error input -->
+	<div class="modal modal-active" id="modal-thank">
+		<div class="modal-ico modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7489 2.77832L21.1631 4.19253L4.19253 21.1631L2.77832 19.7489L19.7489 2.77832Z" fill="#003274"/><path d="M2.77832 4.19253L4.19253 2.77832L21.1631 19.7489L19.7489 21.1631L2.77832 4.19253Z" fill="#003274"/></svg></div>
+		<div class="modal-content">
+			<div class="modal-info">
+				<h3 class="modal-title">Обратный звонок</h3>
+				<form method="POST">
+					<div class="input-block">
+						<label for="m-13">Ваше имя</label>
+						<input id="m-13" type="text" name="name">
+					</div>
+					<div class="input-block input-error">
+						<label for="m-23">Ваш телефон</label>
+						<input id="m-23" type="text" name="tel">
+						<span class="error-text">Ошибка</span>
+					</div>
+					<button class="main-btn">Заказать обратный звонок</button>
+				</form>
+			</div>
+			<div class="modal-thank">
+				<h3 class="modal-title">Спасибо за обращение!</h3>
+				<div class="modal-img"><img src="img/done.svg" alt=""></div>
+				<p>Менеджеры компании свяжутся с Вами в ближайшее время.</p>
+				<span class="main-btn modal-close">Жду звонок</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-order">
+		<div class="modal-ico modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7489 2.77832L21.1631 4.19253L4.19253 21.1631L2.77832 19.7489L19.7489 2.77832Z" fill="#003274"/><path d="M2.77832 4.19253L4.19253 2.77832L21.1631 19.7489L19.7489 21.1631L2.77832 4.19253Z" fill="#003274"/></svg></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Заказать</h3>
+			<form method="POST">
+				<div class="input-block">
+					<label for="w-1">Ваше имя</label>
+					<input id="w-1" type="text" name="name">
+				</div>
+				<div class="input-block">
+					<label for="w-2">Ваш телефон</label>
+					<input id="w-2" type="text" name="tel">
+					<span class="error-text">Ошибка</span>
+				</div>
+				<div class="input-block">
+					<label for="w-3">Ваш e-mail</label>
+					<input id="w-3" type="email" name="email">
+					<span class="error-text">Ошибка</span>
+				</div>
+				<div class="input-block">
+					<label for="w-4">Комментарий</label>
+					<textarea id="w-4" name="text"></textarea>
+				</div>
+				<button class="main-btn">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
