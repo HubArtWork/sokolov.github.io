@@ -309,7 +309,7 @@
 						<p>As seen on:</p>
 						<div class="main-row">
 							<div class="main-logo"><img src="img/main-logo-1.svg" alt=""></div>
-							<div class="main-logo"><img src="img/main-logo-2.svg" alt=""></div>
+							<div class="main-logo"><img src="img/main-logo-2.png" alt=""></div>
 							<div class="main-logo"><img src="img/main-logo-3.svg" alt=""></div>
 							<div class="main-logo"><img src="img/main-logo-4.svg" alt=""></div>
 							<div class="main-logo"><img src="img/main-logo-5.svg" alt=""></div>
@@ -325,14 +325,14 @@
 						<span class="main-subtitle">Get started today and get access to 7,000 offers</span>
 					</div>
 					<h2 class="main-form__mob">Sign up and start saving money today</h2>
-					<form action="">
+					<form action="POST">
 						<div class="input-block">
 							<div class="input-block__wrap">
 								<span class="input-ico"><svg xmlns="http://www.w3.org/2000/svg" height="569pt" viewBox="-26 -18 569 569.33369" width="569pt"><path d="m58.199219 533.75h399.078125c32.355468-.039062 58.578125-26.257812 58.613281-58.613281v-270.804688c0-3.179687-1.730469-6.113281-4.519531-7.644531l-215.820313-182.746094c-21.84375-18.597656-53.960937-18.589844-75.789062.03125l-215.132813 182.457032c-3.074218 1.433593-5.039062 4.511718-5.042968 7.902343v270.804688c.039062 32.355469 26.257812 58.574219 58.613281 58.613281zm0-17.460938c-9.007813.007813-17.765625-2.957031-24.917969-8.429687l119.347656-122.074219c2.214844-2.222656 3.066406-5.464844 2.226563-8.488281-.835938-3.019531-3.234375-5.363281-6.273438-6.132813-3.039062-.765624-6.261719.15625-8.433593 2.414063l-118.234376 120.9375c-3.203124-5.957031-4.875-12.617187-4.867187-19.378906v-251.558594l202.882813 171.792969c21.84375 18.597656 53.964843 18.582031 75.792968-.03125l202.710938-171.925782v251.722657c.007812 6.785156-1.671875 13.46875-4.894532 19.445312l-118.941406-121.019531c-3.386718-3.410156-8.890625-3.441406-12.316406-.074219-3.429688 3.363281-3.488281 8.871094-.136719 12.3125l120 122.101563c-7.140625 5.445312-15.878906 8.398437-24.867187 8.386718zm172.851562-489.003906c15.328125-13.070312 37.878907-13.078125 53.214844-.019531l209.390625 177.300781-209.226562 177.453125c-15.332032 13.070313-37.875 13.082031-53.210938.027344l-209.394531-177.304687zm0 0"></path></svg></span>
-								<input type="email" name="email" placeholder="Email address">
+								<input id="email-input" type="email" name="email" placeholder="Email address" required="">
 							</div>
 						</div>
-						<button class="form-btn">Get free access</button>
+						<button class="form-btn" id="email-button">Get free access</button>
 					</form>
 					<p>By signing up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
 				</div>
@@ -385,36 +385,64 @@
 				<div class="testimonials-slide">
 					<div class="testimonials-wrap">
 						<div class="testimonials-img"><img src="img/human-1.jpg" alt=""></div>
+						<span class="testimonials-name">Tanya</span>
+						<p>Thank you so much for this opportunity to get such a good deals or even free products, thank you for all you do I am a happy customer</p>
+					</div>
+				</div><!-- slide -->
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<div class="testimonials-img"><img src="img/human-2.jpg" alt=""></div>
 						<span class="testimonials-name">Maxenne</span>
-						<p>By signing up, you agree to our Terms of Use, Privacy Policy and to receive RebateKey emails, newsletters & updates.</p>
+						<p>I feel so lucky to have found out about rebate key!!! They have so many items I was already looking for.</p>
 					</div>
 				</div><!-- slide -->
 				<div class="testimonials-slide">
 					<div class="testimonials-wrap">
-						<div class="testimonials-img"><img src="img/human-1.jpg" alt=""></div>
+						<div class="testimonials-img"><img src="img/human-3.jpg" alt=""></div>
 						<span class="testimonials-name">Amber</span>
-						<p>RebateKey emails, newsletters & updates. This site is protected by reCAPTCHA and the Google Terms of Service and Privacy Policy apply.</p>
+						<p>RebateKey is so easy to use! And who isn’t addicted to amazon?! Nothing better than getting a deal!!! Thank you rebatekey!</p>
 					</div>
 				</div><!-- slide -->
 				<div class="testimonials-slide">
 					<div class="testimonials-wrap">
-						<div class="testimonials-img"><img src="img/human-1.jpg" alt=""></div>
-						<span class="testimonials-name">Janett</span>
-						<p>Interactively syndicate backward-compatible technologies with leading-edge services. Objectively utilize efficient infomediaries thro... </p>
+						<div class="testimonials-img"><img src="img/human-4.jpg" alt=""></div>
+						<span class="testimonials-name">Raymond</span>
+						<p>Rebate Key is a definite game changer in our household. I've transformed from Scrooge McDuck to Jolly Saint Nick having found Rebate Key. Kudos, Rebate Key team. Keep up the great work!</p>
 					</div>
 				</div><!-- slide -->
 				<div class="testimonials-slide">
 					<div class="testimonials-wrap">
-						<div class="testimonials-img"><img src="img/human-1.jpg" alt=""></div>
-						<span class="testimonials-name">Amber</span>
-						<p>RebateKey emails, newsletters & updates. This site is protected by reCAPTCHA and the Google Terms of Service and Privacy Policy apply.</p>
+						<div class="testimonials-img"><img src="img/human-5.jpg" alt=""></div>
+						<span class="testimonials-name">Taylor</span>
+						<p>At first, I used rebate key as a seller. I have stayed a loyal member of rebate key ever since! I have gotten so many great deals on all sorts of products from Amazon. This is not a scam! Rebate Key is a win-win for everyone!</p>
 					</div>
 				</div><!-- slide -->
 				<div class="testimonials-slide">
 					<div class="testimonials-wrap">
-						<div class="testimonials-img"><img src="img/human-1.jpg" alt=""></div>
-						<span class="testimonials-name">Janett</span>
-						<p>Interactively syndicate backward-compatible technologies with leading-edge services. Objectively utilize efficient infomediaries thro... </p>
+						<div class="testimonials-img"><img src="img/human-6.jpg" alt=""></div>
+						<span class="testimonials-name">Daniella</span>
+						<p>I was skeptical when I first heard of Rebate Key. And when I received my first check I was super excited that I finally found a site that actually works! And the items are amazing. I constantly recommend this website. Customer service for Rebate Key is great. I love Rebate Key!</p>
+					</div>
+				</div><!-- slide -->
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<div class="testimonials-img"><img src="img/human-7.jpg" alt=""></div>
+						<span class="testimonials-name">Chalida</span>
+						<p>OMG!!! I can’t get enough!!! I really Love this website! I’ve been able to purchase so many great items!!! Thank you!</p>
+					</div>
+				</div><!-- slide -->
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<div class="testimonials-img"><img src="img/human-8.jpg" alt=""></div>
+						<span class="testimonials-name">Lena</span>
+						<p>RebateKey has become my go to site that I check everyday because I get such great deals on the products I need and want. My check collection is growing everyday and I've been telling all my friends and family about it.</p>
+					</div>
+				</div><!-- slide -->
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<div class="testimonials-img"><img src="img/human-9.jpg" alt=""></div>
+						<span class="testimonials-name">Karen</span>
+						<p>I was hesitant to wait 35 days to get a check and wondered it this company was legit, but boy, are they ever!  I have gifts for birthdays, Christmas and grads. There are new items in my kitchen and throughout my home. The checks come right on time! This website haas been great for me!</p>
 					</div>
 				</div><!-- slide -->
 			</div>
