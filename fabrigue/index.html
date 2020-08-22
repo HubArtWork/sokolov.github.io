@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="arrow-top"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8L8 1L15 8" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__logo">
+				<a href="#"><img src="img/logo.svg" alt=""></a>
+			</div>
+			<div class="header__row">
+				<div class="header__bg header__bg-1"><svg width="375" height="483" viewBox="0 0 375 483" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#lpond12)"><circle cx="-181" cy="-117" r="350" fill="#6FCF97"/></g><defs><filter id="lpond12" x="-781" y="-717" width="1200" height="1200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+				<div class="header__bg header__bg-2"><svg width="345" height="667" viewBox="0 0 345 667" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#dsnNUREUWQ1)"><circle cx="589" cy="312" r="339" fill="#F2C94C"/></g><defs><filter id="dsnNUREUWQ1" x="0" y="-277" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+				<div class="header__bg header__bg-3"><svg width="358" height="548" viewBox="0 0 358 548" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#dmsNJUBUJAD)"><circle cx="-231" cy="589" r="339" fill="#BB6BD9"/></g><defs><filter id="dmsNJUBUJAD" x="-820" y="0" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+				<ul class="header__list">
+					<li><a href="#">Продукты</a></li>
+					<li><a href="#">Кейсы</a></li>
+					<li><a href="#">Поддержка</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Связаться с нами</a></li>
+				</ul>
+				<a href="tel:88000000000" class="header__phone">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.7296 12.897V15.1551C16.7304 15.3647 16.6875 15.5722 16.6035 15.7643C16.5195 15.9564 16.3964 16.1288 16.2419 16.2705C16.0874 16.4122 15.9051 16.5201 15.7065 16.5873C15.5079 16.6544 15.2975 16.6794 15.0887 16.6605C12.7725 16.4088 10.5476 15.6173 8.59288 14.3497C6.77422 13.194 5.23232 11.6521 4.07667 9.83348C2.80459 7.86984 2.01294 5.63415 1.76588 3.30756C1.74707 3.09941 1.7718 2.88963 1.83851 2.69157C1.90522 2.4935 2.01244 2.3115 2.15334 2.15714C2.29424 2.00279 2.46574 1.87946 2.65692 1.79502C2.84809 1.71058 3.05476 1.66687 3.26375 1.66667H5.52186C5.88715 1.66307 6.24128 1.79243 6.51825 2.03062C6.79523 2.26882 6.97613 2.5996 7.02726 2.96132C7.12257 3.68396 7.29932 4.3935 7.55415 5.07641C7.65542 5.34582 7.67734 5.63861 7.61731 5.9201C7.55728 6.20158 7.41781 6.45996 7.21544 6.66461L6.2595 7.62054C7.33102 9.50496 8.89129 11.0652 10.7757 12.1367L11.7316 11.1808C11.9363 10.9784 12.1947 10.839 12.4762 10.7789C12.7576 10.7189 13.0504 10.7408 13.3198 10.8421C14.0028 11.0969 14.7123 11.2737 15.4349 11.369C15.8006 11.4206 16.1345 11.6047 16.3732 11.8865C16.6119 12.1682 16.7387 12.5278 16.7296 12.897Z" fill="#001843"/></svg>
+					8 800 000 00 00
+				</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main__bg main__bg-1"><svg width="705" height="928" viewBox="0 0 705 928" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#MEONWiw4312c)"><circle cx="589" cy="339" r="339" fill="#F2C94C"/></g><defs><filter id="MEONWiw4312c" x="0" y="-250" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="main__bg main__bg-2"><svg width="838" height="1178" viewBox="0 0 838 1178" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#kmoEWMIFN4)"><circle cx="249" cy="589" r="339" fill="#BB6BD9"/></g><defs><filter id="kmoEWMIFN4" x="-340" y="0" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="main__bg main__bg-3"><svg width="564" height="903" viewBox="0 0 564 903" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" filter="url(#ewikknwe213)"><circle cx="112.5" cy="451.5" r="201.5" fill="#6FCF97"/></g><defs><filter id="ewikknwe213" x="-339" y="0" width="903" height="903" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="wrapper">
+			<div class="main__row">
+				<div class="main__col main__col-1">
+					<div class="main__info">
+						<h1 class="main__title">Цифровая трансформация бизнеса</h1>
+						<p>Разрабатываем и внедренияем решения для автоматизации бизнеса</p>
+						<a href="#" class="primary__btn">Связаться с нами</a>
+						<ul class="tags">
+							<li><a href="#">Customer Experience</a></li>
+							<li><a href="#">Retail</a></li>
+							<li><a href="#">Интеграция ПО</a></li>
+							<li><a href="#">Разработка ПО</a></li>
+							<li><a href="#">Финансы</a></li>
+							<li><a href="#">Автоматизация</a></li>
+							<li><a href="#">Системы отчётности</a></li>
+							<li><a href="#">Системы опросов</a></li>
+							<li><a href="#">Мобильные приложения</a></li>
+							<li><a href="#">Веб-сайты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main__col main__col-2">
+					<div class="main__block">
+						<div class="main__img"><img src="img/main-ico-1.svg" alt=""></div>
+						<h3 class="main__subtitle"><a href="#">Обратная связь</a></h3>
+						<p>Коробочное решение, позволяющее отслеживать лояльность клиентов</p>
+					</div>
+					<div class="main__block">
+						<div class="main__img"><img src="img/main-ico-2.svg" alt=""></div>
+						<h3 class="main__subtitle"><a href="#">KPI</a></h3>
+						<p>Набор инструментов для расчёта и прогнозирования фонда оплаты труда</p>
+					</div>
+					<div class="main__block">
+						<div class="main__img"><img src="img/main-ico-3.svg" alt=""></div>
+						<h3 class="main__subtitle"><a href="#">Омниканальная платформа</a></h3>
+						<p>SaaS-решение, позволяющее осуществлять бесшовную и непрерывную коммуникацию с клиентами</p>
+					</div>
+					<div class="main__block">
+						<div class="main__img"><img src="img/main-ico-4.svg" alt=""></div>
+						<h3 class="main__subtitle"><a href="#">Система финансовой отчётности</a></h3>
+						<p>Платформа, помогающая унифицировать отчётность в компании</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start partners -->
+	<section class="partners">
+		<div class="partners__slider">
+			<div class="partners__slide"></div>
+		</div>
+	</section>
+	<!-- end partners -->
+	<!-- start advantages -->
+	<section class="advantages">
+		<div class="advantages__bg advantages__bg-1"><svg width="828" height="1178" viewBox="0 0 828 1178" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" filter="url(#mopnierqe54)"><circle cx="239" cy="589" r="339" fill="#6FCF97"/></g><defs><filter id="mopnierqe54" x="-350" y="0" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="advantages__bg advantages__bg-2"><svg width="1475" height="1187" viewBox="0 0 1475 1187" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" filter="url(#kndksnfinore5323)"><circle cx="1241" cy="589" r="339" fill="#56CCF2"/></g><g opacity="0.12" filter="url(#momoqow7)"><circle cx="589" cy="598" r="339" fill="#BB6BD9"/></g><defs><filter id="kndksnfinore5323" x="652" y="0" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="momoqow7" x="0" y="9" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="advantages__bg advantages__bg-3"><svg width="734" height="1178" viewBox="0 0 734 1178" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#momie2fr)"><circle cx="589" cy="589" r="339" fill="#56CCF2"/></g><defs><filter id="momie2fr" x="0" y="0" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="advantages__bg advantages__bg-mob advantages__bg-mob__1"><svg width="635" height="903" viewBox="0 0 635 903" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.12" filter="url(#moiernq)"><circle cx="451.5" cy="451.5" r="201.5" fill="#BB6BD9"/></g><defs><filter id="moiernq" x="0" y="0" width="903" height="903" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="advantages__bg advantages__bg-mob advantages__bg-mob__2"><svg width="768" height="1324" viewBox="0 0 768 1324" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" filter="url(#mciwdnn3412)"><circle cx="16.5" cy="524.5" r="274.5" fill="#BB6BD9"/></g><g opacity="0.2" filter="url(#nkwdicnv)"><circle cx="636.5" cy="925.5" r="148.5" fill="#56CCF2"/></g><g opacity="0.4" filter="url(#mipwneindq)"><circle cx="726.5" cy="674.5" r="273.5" fill="#56CCF2"/></g><g opacity="0.4" filter="url(#kNKNCKN)"><circle cx="293" cy="626" r="132" fill="#F2C94C"/></g><g opacity="0.3" filter="url(#cnknwdeinwE3)"><circle cx="82" cy="805" r="208" fill="#6FCF97"/></g><defs><filter id="mciwdnn3412" x="-508" y="0" width="1049" height="1049" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="nkwdicnv" x="238" y="527" width="797" height="797" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="mipwneindq" x="203" y="151" width="1047" height="1047" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="kNKNCKN" x="-89" y="244" width="764" height="764" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="cnknwdeinwE3" x="-376" y="347" width="916" height="916" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="advantages__bg advantages__bg-mob advantages__bg-mob__3"><svg width="375" height="1178" viewBox="0 0 375 1178" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" filter="url(#cnwini3)"><circle cx="-141" cy="589" r="339" fill="#6FCF97"/></g><defs><filter id="cnwini3" x="-730" y="0" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="wrapper">
+			<div class="advantages__row">
+				<div class="advantages__img">
+					<img src="img/advantages-img-1.svg" alt="">
+				</div>
+				<div class="advantages__info">
+					<div class="advantages__descr">
+						<div class="advantages__ico"><img src="img/advantages-ico-1.svg" alt=""></div>
+						<h3 class="advantages__title">Обратная связь</h3>
+						<p>Коробочное решение, позволяющее отслеживать лояльность клиентов. Проведение опросов через любые каналы связи: Web, SMS, Push, IVR и другие.</p>
+						<a href="#" class="primary__btn">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="advantages__row advantages__second">
+				<div class="advantages__img">
+					<img src="img/advantages-img-2.svg" alt="">
+				</div>
+				<div class="advantages__info">
+					<div class="advantages__descr">
+						<div class="advantages__ico"><img src="img/advantages-ico-2.svg" alt=""></div>
+						<h3 class="advantages__title">KPI</h3>
+						<p>Набор инструментов для расчёта и прогнозирования фонда оплаты труда, бонусов и премий сотрудникам компаний.</p>
+						<a href="#" class="primary__btn">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="advantages__row">
+				<div class="advantages__img">
+					<img src="img/advantages-img-3.svg" alt="">
+				</div>
+				<div class="advantages__info">
+					<div class="advantages__descr">
+						<div class="advantages__ico"><img src="img/advantages-ico-3.svg" alt=""></div>
+						<h3 class="advantages__title">Единая Платформа Коммуникаций</h3>
+						<p>SaaS-решение, позволяющее осуществлять бесшовную и непрерывную коммуникацию с клиентами</p>
+						<a href="#" class="primary__btn">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="advantages__row advantages__second">
+				<div class="advantages__img">
+					<img src="img/advantages-img-1-1.svg" alt="">
+				</div>
+				<div class="advantages__info">
+					<div class="advantages__descr">
+						<div class="advantages__ico"><img src="img/advantages-ico-4.svg" alt=""></div>
+						<h3 class="advantages__title">Система финансовой отчётности</h3>
+						<p>Платформа, помогающая унифицировать отчётность в компании: учёт текущих платежей, бюджетов и планов, внесение прогнозов.</p>
+						<a href="#" class="primary__btn">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end advantages -->
+	<!-- start statistics -->
+	<section class="statistics">
+		<div class="wrapper">
+			<div class="statistics__row">
+				<div class="statistics__col">
+					<div class="statistics__col-bg statistics__col-bg__1"><svg width="464" height="464" viewBox="0 0 464 464" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#nivfe3)"><circle cx="232" cy="232" r="62" fill="#EB5757"/></g><defs><filter id="nivfe3" x="0" y="0" width="464" height="464" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="85" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+					<div class="statistics__col-bg statistics__col-bg__1 statistics__col-bg__mob"><svg width="229" height="360" viewBox="0 0 229 360" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#ompininewd3)"><circle cx="49" cy="180" r="50" fill="#EB5757"/></g><defs><filter id="ompininewd3" x="-131" y="0" width="360" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="65" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+					<div class="statistics__wrap">
+						<div class="statistics__ico"><img src="img/statistics-1.svg" alt=""></div>
+						<span class="statistics__num">3</span>
+						<p>года активной работы компании</p>
+					</div>
+				</div><!-- col -->
+				<div class="statistics__col">
+					<div class="statistics__col-bg statistics__col-bg__2"><svg width="464" height="464" viewBox="0 0 464 464" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#jok2)"><circle cx="232" cy="232" r="62" fill="#9B51E0"/></g><defs><filter id="jok2" x="0" y="0" width="464" height="464" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="85" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+					<div class="statistics__col-bg statistics__col-bg__2 statistics__col-bg__mob"><svg width="229" height="360" viewBox="0 0 229 360" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#nwdsBUEWQ)"><circle cx="49" cy="180" r="50" fill="#9B51E0"/></g><defs><filter id="nwdsBUEWQ" x="-131" y="0" width="360" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="65" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+					<div class="statistics__wrap">
+						<div class="statistics__ico"><img src="img/statistics-2.svg" alt=""></div>
+						<span class="statistics__num">40</span>
+						<p>довольных компаний-клиентов</p>
+					</div>
+				</div><!-- col -->
+				<div class="statistics__col">
+					<div class="statistics__col-bg statistics__col-bg__3"><svg width="464" height="464" viewBox="0 0 464 464" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#nk1)"><circle cx="232" cy="232" r="62" fill="#2F80ED"/></g><defs><filter id="nk1" x="0" y="0" width="464" height="464" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="85" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+					<div class="statistics__col-bg statistics__col-bg__3 statistics__col-bg__mob"><svg width="229" height="360" viewBox="0 0 229 360" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#oihewbd53)"><circle cx="49" cy="180" r="50" fill="#2F80ED"/></g><defs><filter id="oihewbd53" x="-131" y="0" width="360" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="65" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+					<div class="statistics__wrap">
+						<div class="statistics__ico"><img src="img/statistics-3.svg" alt=""></div>
+						<span class="statistics__num">70</span>
+						<p>проектов реализованно</p>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end statistics -->
+	<!-- start action -->
+	<section class="action">
+		<div class="action__bg action__bg-1"><svg width="1118" height="1433" viewBox="0 0 1118 1433" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" filter="url(#minw2)"><circle cx="500" cy="932.709" r="250" fill="#56CCF2"/></g><g opacity="0.5" filter="url(#bcEUE2)"><circle cx="873" cy="577" r="250" fill="#BB6BD9"/></g><g opacity="0.4" filter="url(#WQBUU32)"><circle cx="694" cy="663" r="413" fill="#56CCF2"/></g><defs><filter id="minw2" x="0" y="432.709" width="1000" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="bcEUE2" x="373" y="77" width="1000" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="WQBUU32" x="31" y="0" width="1326" height="1326" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="action__bg action__bg-2"><svg width="885" height="1224" viewBox="0 0 885 1224" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#mpiniew35)"><circle cx="189" cy="623.716" r="350" fill="#6FCF97"/></g><g opacity="0.4" filter="url(#knndosane)"><circle cx="465" cy="420" r="170" fill="#F2C94C"/></g><defs><filter id="mpiniew35" x="-411" y="23.7163" width="1200" height="1200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter><filter id="knndosane" x="45" y="0" width="840" height="840" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="wrapper">
+			<h2 class="section__title action__title">Мы можем разработать решение для автоматизации вашего бизнеса</h2>
+			<div class="action__btn">
+				<a href="#" class="primary__btn">Связаться с нами</a>
+			</div>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start faq -->
+	<section class="faq">
+		<div class="faq__bg"><svg width="320" height="1326" viewBox="0 0 320 1326" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4" filter="url(#nicnwejk4)"><circle cx="-338" cy="663" r="413" fill="#56CCF2"/></g><defs><filter id="nicnwejk4" x="-1001" y="0" width="1326" height="1326" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="wrapper">
+			<div class="faq__top">
+				<h2 class="section__title faq__title">Как мы работаем?</h2>
+				<p>Комплексный инструмент для постановок целей субъектам бизнеса, и расчета премий сотрудников на их основе. Сбор аналитики.</p>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Подробный анализ</h3>
+					<span class="faq__accordeons-num">1</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Интерактивные прототипы</h3>
+					<span class="faq__accordeons-num">2</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Быстрые MVP и проверки гипотез</h3>
+					<span class="faq__accordeons-num">3</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Выверенные интерфейсы</h3>
+					<span class="faq__accordeons-num">4</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Интеграции с вашими данными</h3>
+					<span class="faq__accordeons-num">5</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Современные технологии</h3>
+					<span class="faq__accordeons-num">6</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Тщательное тестирование</h3>
+					<span class="faq__accordeons-num">7</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Поддержика и развитие продуктов</h3>
+					<span class="faq__accordeons-num">8</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faq__accordeons accordeon">
+				<div class="faq__accordeons-top">
+					<h3 class="faq__accordeons-title">Стабильные продукты</h3>
+					<span class="faq__accordeons-num">9</span>
+					<span class="faq__accordeons-arrow"><svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L8 8L1 0.999999" stroke="#2F80ED" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+				</div>
+				<div class="faq__accordeons-block accordeon-block">
+					<div class="faq__accordeons-block__wrap">
+						<p>Интеграл от функции, обращающейся в бесконечность вдоль линии концентрирует ряд Тейлора, осознав маркетинг как часть производства. Интеграл Пуассона упорядочивает конструктивный архетип. В соответствии с законом больших чисел, действие экономит линейно зависимый процесс стратегического планирования, осознавая социальную ответственность бизнеса.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end faq -->
+	<!-- start about -->
+	<section class="about">
+		<div class="about__bg"><svg width="973" height="1178" viewBox="0 0 973 1178" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3" filter="url(#opmofaf)"><circle cx="589" cy="589" r="339" fill="#6FCF97"/></g><defs><filter id="opmofaf" x="0" y="-0.000488281" width="1178" height="1178" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="wrapper">
+			<div class="about__wrap">
+				<div class="about__info">
+					<h2 class="section__title about__title">О нас</h2>
+					<p>Комплексный инструмент для постановок целей субъектам бизнеса, и расчета премий сотрудников на их основе. Сбор аналитики.</p>
+					<a href="#" class="primary__btn">Cтать частью Fabrique</a>
+				</div>
+				<div class="about__img"><img src="img/about-img.svg" alt=""></div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start reporting -->
+	<section class="reporting">
+		<div class="wrapper">
+			<div class="reporting__info">
+				<h2 class="section__title reporting__title">Система финансовой отчётности</h2>
+				<p>Платформа, помогающая унифицировать отчётность в компании: учёт текущих платежей, бюджетов и планов, внесение прогнозов.</p>
+				<a href="#" class="primary__btn">Узнать подробнее</a>
+			</div>
+		</div>
+	</section>
+	<!-- end reporting -->
+	<!-- start action -->
+	<section class="action">
+		<div class="wrapper">
+			<h2 class="section__title action__title">Не нашли что искали?</h2>
+			<p>Свяжитесь с нами напрямую!</p>
+			<div class="action__btn">
+				<a href="#" class="primary__btn">Связаться</a>
+			</div>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer__bg footer__bg-1"><svg width="785" height="518" viewBox="0 0 785 518" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#nsajnew11)"><circle cx="122" cy="663" r="413" fill="#6FCF97"/></g><defs><filter id="nsajnew11" x="-541" y="0" width="1326" height="1326" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="footer__bg footer__bg-2"><svg width="1118" height="447" viewBox="0 0 1118 447" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#nienw22)"><circle cx="570.5" cy="570.5" r="320.5" fill="#56CCF2"/></g><defs><filter id="nienw22" x="0" y="0" width="1141" height="1141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="footer__bg footer__bg-3"><svg width="677" height="771" viewBox="0 0 677 771" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#jnjdw33)"><circle cx="487.5" cy="487.5" r="237.5" fill="#BB6BD9"/></g><defs><filter id="jnjdw33" x="0" y="0" width="975" height="975" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur"/></filter></defs></svg></div>
+		<div class="wrapper">
+			<div class="footer__row">
+				<div class="footer__logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<ul class="footer__menu">
+					<li><a href="#">Продукты</a></li>
+					<li><a href="#">Кейсы</a></li>
+					<li><a href="#">Поддержка</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Связаться с нами</a></li>
+				</ul>
+				<div class="footer__text">
+					<div class="footer__col">
+						<p>© 2020 Fabrique. Все права сохранены. Использование данного сайта означает согласие с обязательством соблюдать нашу Политику конфиденциальности и Согласие на обработку персональных данных.</p>
+					</div>
+					<div class="footer__col">
+						<ul class="footer__list">
+							<li><a href="#">8 800 000 00 00</a></li>
+							<li>fabrique@fabrique.studio</a></li>
+							<li>129090, г. Москва, Проспект Мира, 3с3 <br>ООО «Фабрика Решений»,</li>
+							<li>ОГРН 1197746677480, ИНН 9706003698</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
