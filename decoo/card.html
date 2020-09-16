@@ -16,7 +16,7 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
-<body>
+<body class="body-load">
 	<!-- start header -->
 	<header class="header header-second">
 		<div class="wrapper">
@@ -154,111 +154,133 @@
 		<div class="wrapper">
 			<div class="card-image">
 				<div class="card-slider">
-					<div class="card-slide"></div>
+					<div class="card-slide">
+						<img src="img/card-main.jpg" alt="">
+					</div>
+					<div class="card-slide">
+						<img src="img/card-main.jpg" alt="">
+					</div>
+					<div class="card-slide">
+						<img src="img/card-main.jpg" alt="">
+					</div>
 				</div>
-				<div class="card-nav">
-					<div class="card-nav__slide">
-						<div class="card-nav__wrap">
-							<img src="img/" alt="">
+				<div class="card-image__bottom">
+					<div class="card-nav">
+						<div class="card-nav__slide">
+							<div class="card-nav__wrap">
+								<img src="img/product-1.png" alt="">
+							</div>
+						</div>
+						<div class="card-nav__slide">
+							<div class="card-nav__wrap">
+								<img src="img/product-2.png" alt="">
+							</div>
+						</div>
+						<div class="card-nav__slide">
+							<div class="card-nav__wrap card-nav__wrap-num">
+								<span>+7</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="card-info">
-				<div class="card-top">
-					<a href="#" class="card-like"><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.8984 4.07737C16.2874 2.39496 13.7221 2.24661 11.9435 3.73271L10.8786 4.62278L9.81368 3.73271C8.03514 2.24661 5.46981 2.39496 3.85883 4.07737C2.21807 5.79087 2.11856 8.49926 3.65639 10.2474C4.99434 11.7699 6.55344 13.4559 7.95688 14.7555C8.66031 15.4066 9.30504 15.9431 9.85026 16.3117C10.4389 16.7088 10.768 16.8092 10.8786 16.8092C10.9892 16.8092 11.3183 16.7088 11.9069 16.3117C12.4522 15.9431 13.0969 15.4066 13.8003 14.7555C15.2038 13.4559 16.7629 11.7699 18.1008 10.2474C19.6378 8.49926 19.5391 5.79087 17.8984 4.07737ZM10.8803 2.34518C13.3368 0.294124 16.8768 0.49843 19.1011 2.82041C21.3525 5.17259 21.5397 8.9629 19.3537 11.4492C18.0021 12.9868 16.3971 14.7252 14.929 16.0852C14.1967 16.7638 13.4788 17.3652 12.8298 17.804C12.2251 18.2126 11.5284 18.5857 10.8786 18.5857C10.2288 18.5857 9.53215 18.2126 8.92739 17.804C8.2784 17.3652 7.56052 16.7638 6.82818 16.0852C5.36009 14.7252 3.75506 12.9868 2.4035 11.4492C0.217533 8.9629 0.404659 5.17259 2.65612 2.82041C4.88037 0.49843 8.42045 0.294124 10.8769 2.34518L10.8786 2.34695L10.8803 2.34518Z" fill="#6E81A0"/></svg></a>
-					<a href="#" class="card-back">
-						<svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.17157 1.08069L1.29663 2.95561L3.17157 4.83055" stroke="#ABB5C6" stroke-linecap="round" stroke-linejoin="bevel"/></svg>
-						Алюминиевые жалюзи в Симферополе
-					</a>
-					<div class="card-top__wrap">
-						<h1 class="card-title">Алюминиевые жалюзи белый глянец</h1>
+				<div class="card-info__wrap">
+					<div class="card-top">
+						<div class="card-top__wrap">
+							<a href="#" class="card-like"><svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.8984 4.07737C16.2874 2.39496 13.7221 2.24661 11.9435 3.73271L10.8786 4.62278L9.81368 3.73271C8.03514 2.24661 5.46981 2.39496 3.85883 4.07737C2.21807 5.79087 2.11856 8.49926 3.65639 10.2474C4.99434 11.7699 6.55344 13.4559 7.95688 14.7555C8.66031 15.4066 9.30504 15.9431 9.85026 16.3117C10.4389 16.7088 10.768 16.8092 10.8786 16.8092C10.9892 16.8092 11.3183 16.7088 11.9069 16.3117C12.4522 15.9431 13.0969 15.4066 13.8003 14.7555C15.2038 13.4559 16.7629 11.7699 18.1008 10.2474C19.6378 8.49926 19.5391 5.79087 17.8984 4.07737ZM10.8803 2.34518C13.3368 0.294124 16.8768 0.49843 19.1011 2.82041C21.3525 5.17259 21.5397 8.9629 19.3537 11.4492C18.0021 12.9868 16.3971 14.7252 14.929 16.0852C14.1967 16.7638 13.4788 17.3652 12.8298 17.804C12.2251 18.2126 11.5284 18.5857 10.8786 18.5857C10.2288 18.5857 9.53215 18.2126 8.92739 17.804C8.2784 17.3652 7.56052 16.7638 6.82818 16.0852C5.36009 14.7252 3.75506 12.9868 2.4035 11.4492C0.217533 8.9629 0.404659 5.17259 2.65612 2.82041C4.88037 0.49843 8.42045 0.294124 10.8769 2.34518L10.8786 2.34695L10.8803 2.34518Z" fill="#6E81A0"/></svg></a>
+							<a href="#" class="card-back">
+								<svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.17157 1.08069L1.29663 2.95561L3.17157 4.83055" stroke="#ABB5C6" stroke-linecap="round" stroke-linejoin="bevel"/></svg>
+								Алюминиевые жалюзи в Симферополе
+							</a>
+							<h1 class="card-title">Алюминиевые жалюзи белый глянец</h1>
+						</div>
+						<div class="card-info__row">
+							<div class="card-info__row-wrap">
+								<span class="card-info__size">400 × 1000 см</span>
+								<div class="card-info__price">
+									<span class="card-info__price-main">969 050 ₽</span>
+									<span class="card-info__price-old">999 600 ₽</span>
+								</div>
+							</div>
+							<div class="card-info__stars"><svg width="80" height="14" viewBox="0 0 80 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.97982 0.55249L9.16987 4.0763L13.2409 5.04388L10.5234 8.1893L10.8494 12.3111L6.97982 10.7313L3.11023 12.3111L3.43624 8.1893L0.718696 5.04388L4.78976 4.0763L6.97982 0.55249Z" fill="#FFC833"/><path d="M23.4383 0.55249L25.6284 4.0763L29.6994 5.04388L26.9819 8.1893L27.3079 12.3111L23.4383 10.7313L19.5687 12.3111L19.8947 8.1893L17.1772 5.04388L21.2483 4.0763L23.4383 0.55249Z" fill="#FFC833"/><path d="M39.8963 0.55249L42.0864 4.0763L46.1574 5.04388L43.4399 8.1893L43.7659 12.3111L39.8963 10.7313L36.0267 12.3111L36.3527 8.1893L33.6352 5.04388L37.7063 4.0763L39.8963 0.55249Z" fill="#FFC833"/><path d="M56.3548 0.55249L58.5449 4.0763L62.6159 5.04388L59.8984 8.1893L60.2244 12.3111L56.3548 10.7313L52.4852 12.3111L52.8112 8.1893L50.0937 5.04388L54.1648 4.0763L56.3548 0.55249Z" fill="#FFC833"/><path d="M72.8133 0.55249L75.0034 4.0763L79.0744 5.04388L76.3569 8.1893L76.6829 12.3111L72.8133 10.7313L68.9437 12.3111L69.2697 8.1893L66.5522 5.04388L70.6233 4.0763L72.8133 0.55249Z" fill="#E7EDFF"/></svg></div>
+						</div>
 					</div>
-					<div class="card-info__row">
-						<div class="card-info__row-wrap">
-							<span class="card-info__size">400 × 1000 см</span>
-							<div class="card-info__price">
-								<span class="card-info__price-main">969 050 ₽</span>
-								<span class="card-info__price-old">999 600 ₽</span>
+					<div class="card-bottom">
+						<div class="card-bottom__row">
+							<div class="basket-parameters__input">
+								<div class="basket-parameters__input-ico"><svg width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.1797 1.50488H1.17969V21.5049H15.1797V1.50488ZM0.179688 0.504883V22.5049H16.1797V0.504883H0.179688Z" fill="#D0D8E3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.1797 3.55377H3.17969V19.5538H13.1797V3.55377ZM2.17969 2.55377V20.5538H14.1797V2.55377H2.17969Z" fill="#D0D8E3"/><rect x="0.179688" y="19.5049" width="16" height="3" fill="#FEAAA0"/></svg></div>
+								<input type="text" name="text" value="400">
+								<span>см</span>
 							</div>
+							<div class="basket-parameters__input">
+								<div class="basket-parameters__input-ico"><svg width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6533 1.26758H1.65332V21.2676H15.6533V1.26758ZM0.65332 0.267578V22.2676H16.6533V0.267578H0.65332Z" fill="#D0D8E3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6533 3.31647H3.65332V19.3165H13.6533V3.31647ZM2.65332 2.31647V20.3165H14.6533V2.31647H2.65332Z" fill="#D0D8E3"/><rect x="0.711182" y="22.2676" width="21.835" height="3" transform="rotate(-90 0.711182 22.2676)" fill="#FEAAA0"/></svg></div>
+								<input type="text" name="text" value="886">
+								<span>см</span>
+							</div>
+							<a class="card-link link-youtube" href="https://www.youtube.com/watch?v=Uoq8NA_N7Ao" data-rel="media">
+								<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3537 2.39815C14.1854 1.79407 13.7228 1.29785 13.1339 1.14683C12.0613 0.844788 7.72885 0.844788 7.72885 0.844788C7.72885 0.844788 3.39641 0.844788 2.32382 1.14683C1.73495 1.31943 1.25123 1.79407 1.10401 2.39815C0.80957 3.49845 0.80957 5.8285 0.80957 5.8285C0.80957 5.8285 0.80957 8.13697 1.10401 9.25885C1.27226 9.86294 1.73495 10.3591 2.32382 10.5102C3.39641 10.8122 7.72885 10.8122 7.72885 10.8122C7.72885 10.8122 12.0613 10.8122 13.1339 10.5102C13.7228 10.3376 14.2065 9.86294 14.3537 9.25885C14.6481 8.15855 14.6481 5.8285 14.6481 5.8285C14.6481 5.8285 14.6481 3.49845 14.3537 2.39815ZM6.34079 7.9428V3.69262L9.93713 5.8285L6.34079 7.9428Z" stroke="#93D7F5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Как замерить?
+							</a>
 						</div>
-						<div class="card-info__price-stars"><svg width="80" height="14" viewBox="0 0 80 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.97982 0.55249L9.16987 4.0763L13.2409 5.04388L10.5234 8.1893L10.8494 12.3111L6.97982 10.7313L3.11023 12.3111L3.43624 8.1893L0.718696 5.04388L4.78976 4.0763L6.97982 0.55249Z" fill="#FFC833"/><path d="M23.4383 0.55249L25.6284 4.0763L29.6994 5.04388L26.9819 8.1893L27.3079 12.3111L23.4383 10.7313L19.5687 12.3111L19.8947 8.1893L17.1772 5.04388L21.2483 4.0763L23.4383 0.55249Z" fill="#FFC833"/><path d="M39.8963 0.55249L42.0864 4.0763L46.1574 5.04388L43.4399 8.1893L43.7659 12.3111L39.8963 10.7313L36.0267 12.3111L36.3527 8.1893L33.6352 5.04388L37.7063 4.0763L39.8963 0.55249Z" fill="#FFC833"/><path d="M56.3548 0.55249L58.5449 4.0763L62.6159 5.04388L59.8984 8.1893L60.2244 12.3111L56.3548 10.7313L52.4852 12.3111L52.8112 8.1893L50.0937 5.04388L54.1648 4.0763L56.3548 0.55249Z" fill="#FFC833"/><path d="M72.8133 0.55249L75.0034 4.0763L79.0744 5.04388L76.3569 8.1893L76.6829 12.3111L72.8133 10.7313L68.9437 12.3111L69.2697 8.1893L66.5522 5.04388L70.6233 4.0763L72.8133 0.55249Z" fill="#E7EDFF"/></svg></div>
-					</div>
-				</div>
-				<div class="card-bottom">
-					<div class="card-bottom__row">
-						<div class="basket-parameters__input">
-							<div class="basket-parameters__input-ico"><svg width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.1797 1.50488H1.17969V21.5049H15.1797V1.50488ZM0.179688 0.504883V22.5049H16.1797V0.504883H0.179688Z" fill="#D0D8E3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.1797 3.55377H3.17969V19.5538H13.1797V3.55377ZM2.17969 2.55377V20.5538H14.1797V2.55377H2.17969Z" fill="#D0D8E3"/><rect x="0.179688" y="19.5049" width="16" height="3" fill="#FEAAA0"/></svg></div>
-							<input type="text" name="text" value="400">
-							<span>см</span>
-						</div>
-						<div class="basket-parameters__input">
-							<div class="basket-parameters__input-ico"><svg width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6533 1.26758H1.65332V21.2676H15.6533V1.26758ZM0.65332 0.267578V22.2676H16.6533V0.267578H0.65332Z" fill="#D0D8E3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6533 3.31647H3.65332V19.3165H13.6533V3.31647ZM2.65332 2.31647V20.3165H14.6533V2.31647H2.65332Z" fill="#D0D8E3"/><rect x="0.711182" y="22.2676" width="21.835" height="3" transform="rotate(-90 0.711182 22.2676)" fill="#FEAAA0"/></svg></div>
-							<input type="text" name="text" value="886">
-							<span>см</span>
-						</div>
-						<a class="card-link link-youtube" href="https://www.youtube.com/watch?v=Uoq8NA_N7Ao" data-rel="media">
-							<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3537 2.39815C14.1854 1.79407 13.7228 1.29785 13.1339 1.14683C12.0613 0.844788 7.72885 0.844788 7.72885 0.844788C7.72885 0.844788 3.39641 0.844788 2.32382 1.14683C1.73495 1.31943 1.25123 1.79407 1.10401 2.39815C0.80957 3.49845 0.80957 5.8285 0.80957 5.8285C0.80957 5.8285 0.80957 8.13697 1.10401 9.25885C1.27226 9.86294 1.73495 10.3591 2.32382 10.5102C3.39641 10.8122 7.72885 10.8122 7.72885 10.8122C7.72885 10.8122 12.0613 10.8122 13.1339 10.5102C13.7228 10.3376 14.2065 9.86294 14.3537 9.25885C14.6481 8.15855 14.6481 5.8285 14.6481 5.8285C14.6481 5.8285 14.6481 3.49845 14.3537 2.39815ZM6.34079 7.9428V3.69262L9.93713 5.8285L6.34079 7.9428Z" stroke="#93D7F5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							Как замерить?
-						</a>
-					</div>
-					<div class="card-bottom__wrap">
-						<div class="card-block">
-							<span class="card-label">Размещение:</span>
-							<div class="card-list">
-								<div class="card-radio">
-									<input type="radio" name="accommodation" checked="checked">
-									<span>На проём</span>
-								</div>
-								<div class="card-radio">
-									<input type="radio" name="accommodation">
-									<span>На окно</span>
+						<div class="card-bottom__wrap">
+							<div class="card-block">
+								<span class="card-label">Размещение:</span>
+								<div class="card-list">
+									<div class="card-radio">
+										<input type="radio" name="accommodation" checked="checked">
+										<span>На проём</span>
+									</div>
+									<div class="card-radio">
+										<input type="radio" name="accommodation">
+										<span>На окно</span>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card-block">
-							<span class="card-label">
-								Тип:
-								<i class="prompt">
-									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5.76425" cy="6.08743" r="5.68783" fill="#CBD6EA"/><path d="M6.00181 7.82938C6.10788 7.93014 6.16091 8.04947 6.16091 8.18735C6.16091 8.32523 6.10788 8.4472 6.00181 8.55327C5.90105 8.65403 5.78173 8.70441 5.64385 8.70441C5.50597 8.70441 5.38399 8.65403 5.27793 8.55327C5.17717 8.4472 5.12679 8.32523 5.12679 8.18735C5.12679 8.04947 5.17717 7.93014 5.27793 7.82938C5.38399 7.72332 5.50597 7.67029 5.64385 7.67029C5.78173 7.67029 5.90105 7.72332 6.00181 7.82938ZM6.43933 4.72702C6.43933 4.50429 6.35978 4.31602 6.20068 4.16223C6.04159 4.00844 5.84272 3.93154 5.60407 3.93154C5.42907 3.93154 5.25672 3.98458 5.08701 4.09064C4.92262 4.1967 4.80064 4.30277 4.7211 4.40883L4.60973 4.56793L3.8938 4.05087C3.90971 4.02435 3.93092 3.98988 3.95744 3.94745C3.98926 3.89973 4.0582 3.82018 4.16426 3.70881C4.27563 3.59214 4.39495 3.49138 4.52223 3.40653C4.6495 3.31637 4.81655 3.23683 5.02338 3.16789C5.2355 3.09364 5.45559 3.05652 5.68362 3.05652C6.17152 3.05652 6.58516 3.21296 6.92457 3.52585C7.26397 3.83874 7.43367 4.19935 7.43367 4.6077C7.43367 4.81983 7.38594 5.01604 7.29049 5.19635C7.20033 5.37666 7.08897 5.53045 6.95639 5.65773C6.82381 5.78501 6.69123 5.90963 6.55865 6.0316C6.42607 6.14827 6.31205 6.2782 6.21659 6.42139C6.12644 6.56457 6.08136 6.71571 6.08136 6.87481H5.20634C5.20634 6.65208 5.24876 6.45056 5.33361 6.27025C5.41846 6.08464 5.51922 5.93084 5.63589 5.80887C5.75787 5.68159 5.87984 5.56492 6.00181 5.45886C6.12379 5.34749 6.2272 5.23082 6.31205 5.10885C6.3969 4.98157 6.43933 4.8543 6.43933 4.72702Z" fill="#597197"/></svg>
-									<b>Lorem, ipsum dolor.</b>
-								</i>
-							</span>
-							<div class="card-list">
-								<div class="card-radio">
-									<input type="radio" name="type">
-									<span>В коробе</span>
-								</div>
-								<div class="card-radio">
-									<input type="radio" name="type" checked="checked">
-									<span>Открытые</span>
-								</div>
-							</div>
-						</div>
-						<div class="card-block">
-							<span class="card-label">Створка:</span>
-							<div class="card-list">
-								<div class="card-radio">
-									<input type="radio" name="sash" checked="checked">
-									<span>Глухая</span>
-								</div>
-								<div class="card-radio">
-									<input type="radio" name="sash">
-									<span>Откидная</span>
-								</div>
-								<div class="card-radio">
-									<input type="radio" name="sash">
-									<span>Мансардная</span>
+							<div class="card-block">
+								<span class="card-label">
+									Тип:
+									<i class="prompt">
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5.76425" cy="6.08743" r="5.68783" fill="#CBD6EA"/><path d="M6.00181 7.82938C6.10788 7.93014 6.16091 8.04947 6.16091 8.18735C6.16091 8.32523 6.10788 8.4472 6.00181 8.55327C5.90105 8.65403 5.78173 8.70441 5.64385 8.70441C5.50597 8.70441 5.38399 8.65403 5.27793 8.55327C5.17717 8.4472 5.12679 8.32523 5.12679 8.18735C5.12679 8.04947 5.17717 7.93014 5.27793 7.82938C5.38399 7.72332 5.50597 7.67029 5.64385 7.67029C5.78173 7.67029 5.90105 7.72332 6.00181 7.82938ZM6.43933 4.72702C6.43933 4.50429 6.35978 4.31602 6.20068 4.16223C6.04159 4.00844 5.84272 3.93154 5.60407 3.93154C5.42907 3.93154 5.25672 3.98458 5.08701 4.09064C4.92262 4.1967 4.80064 4.30277 4.7211 4.40883L4.60973 4.56793L3.8938 4.05087C3.90971 4.02435 3.93092 3.98988 3.95744 3.94745C3.98926 3.89973 4.0582 3.82018 4.16426 3.70881C4.27563 3.59214 4.39495 3.49138 4.52223 3.40653C4.6495 3.31637 4.81655 3.23683 5.02338 3.16789C5.2355 3.09364 5.45559 3.05652 5.68362 3.05652C6.17152 3.05652 6.58516 3.21296 6.92457 3.52585C7.26397 3.83874 7.43367 4.19935 7.43367 4.6077C7.43367 4.81983 7.38594 5.01604 7.29049 5.19635C7.20033 5.37666 7.08897 5.53045 6.95639 5.65773C6.82381 5.78501 6.69123 5.90963 6.55865 6.0316C6.42607 6.14827 6.31205 6.2782 6.21659 6.42139C6.12644 6.56457 6.08136 6.71571 6.08136 6.87481H5.20634C5.20634 6.65208 5.24876 6.45056 5.33361 6.27025C5.41846 6.08464 5.51922 5.93084 5.63589 5.80887C5.75787 5.68159 5.87984 5.56492 6.00181 5.45886C6.12379 5.34749 6.2272 5.23082 6.31205 5.10885C6.3969 4.98157 6.43933 4.8543 6.43933 4.72702Z" fill="#597197"/></svg>
+										<b class="prompt-info">Lorem, ipsum dolor.</b>
+									</i>
+								</span>
+								<div class="card-list">
+									<div class="card-radio">
+										<input type="radio" name="type">
+										<span>В коробе</span>
+									</div>
+									<div class="card-radio">
+										<input type="radio" name="type" checked="checked">
+										<span>Открытые</span>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card-panel">
-							<div class="card-quantity">
-								<span class="quantity-minus"><svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.58104 0.585976L1.00146 0.585976C0.770351 0.585976 0.582996 0.77333 0.582996 1.00444C0.582996 1.23556 0.770351 1.42291 1.00146 1.42291L6.58104 1.42291C6.81216 1.42291 6.99951 1.23556 6.99951 1.00444C6.99951 0.77333 6.81216 0.585976 6.58104 0.585976Z" fill="#6E81A0"/></svg></span>
-								<input type="number" value="2">
-								<span class="quantity-plus"><svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.24754 3.58599V1.21467C3.24754 0.983558 3.43489 0.796204 3.66601 0.796204C3.89712 0.796204 4.08448 0.983558 4.08448 1.21467V3.58599H6.45581C6.68692 3.58599 6.87428 3.77334 6.87428 4.00446C6.87428 4.23557 6.68692 4.42292 6.45581 4.42292H4.08448V6.79425C4.08448 7.02536 3.89712 7.21272 3.66601 7.21272C3.43489 7.21272 3.24754 7.02536 3.24754 6.79425V4.42292H0.876232C0.645118 4.42292 0.457764 4.23557 0.457764 4.00446C0.457764 3.77334 0.645118 3.58599 0.876232 3.58599H3.24754Z" fill="#6E81A0"/></svg></span>
+							<div class="card-block">
+								<span class="card-label">Створка:</span>
+								<div class="card-list">
+									<div class="card-radio">
+										<input type="radio" name="sash" checked="checked">
+										<span>Глухая</span>
+									</div>
+									<div class="card-radio">
+										<input type="radio" name="sash">
+										<span>Откидная</span>
+									</div>
+									<div class="card-radio">
+										<input type="radio" name="sash">
+										<span>Мансардная</span>
+									</div>
+								</div>
 							</div>
-							<a href="#" class="main-btn">В корзину</a>
+							<div class="card-panel">
+								<div class="card-quantity">
+									<span class="card-minus"><svg width="7" height="2" viewBox="0 0 7 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.58104 0.585976L1.00146 0.585976C0.770351 0.585976 0.582996 0.77333 0.582996 1.00444C0.582996 1.23556 0.770351 1.42291 1.00146 1.42291L6.58104 1.42291C6.81216 1.42291 6.99951 1.23556 6.99951 1.00444C6.99951 0.77333 6.81216 0.585976 6.58104 0.585976Z" fill="#6E81A0"/></svg></span>
+									<input type="number" value="2">
+									<span class="card-plus"><svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.24754 3.58599V1.21467C3.24754 0.983558 3.43489 0.796204 3.66601 0.796204C3.89712 0.796204 4.08448 0.983558 4.08448 1.21467V3.58599H6.45581C6.68692 3.58599 6.87428 3.77334 6.87428 4.00446C6.87428 4.23557 6.68692 4.42292 6.45581 4.42292H4.08448V6.79425C4.08448 7.02536 3.89712 7.21272 3.66601 7.21272C3.43489 7.21272 3.24754 7.02536 3.24754 6.79425V4.42292H0.876232C0.645118 4.42292 0.457764 4.23557 0.457764 4.00446C0.457764 3.77334 0.645118 3.58599 0.876232 3.58599H3.24754Z" fill="#6E81A0"/></svg></span>
+								</div>
+								<a href="#" class="card-btn">В корзину</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -544,7 +566,7 @@
 						<h4 class="reviews-form__name">Фото вашего изделия</h4>
 						<div class="reviews-form__photo">
 							<div class="input-download">
-								<input type="download">
+								<input type="file">
 								<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.9126 4.25366V13.587" stroke="#9098B1" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.05151 8.92029H13.7737" stroke="#9098B1" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
 						</div>
@@ -555,6 +577,14 @@
 		</div>
 	</section>
 	<!-- end reviews -->
+	<!-- start pageInfo -->
+	<section class="pageInfo">
+		<div class="wrapper">
+			<p>А вы знаете, что делает жалюзи алюминиевые горизонтальные такими привлекательными для умных руководителей и рачительных хозяев? Верно — сочетание отличных солнцезащитных свойств, долговечности, простоты эксплуатации и самой низкой цены в своем сегменте. Стоимость оформления окна с помощью этого типа штор начинается от 770 рублей за метр квадратный. Более экономного и оптимального решения с точки зрения соотношения цены и качества вы вряд ли найдете.</p>
+			<p>Жалюзи на окна горизонтальные алюминиевые подойдут для строгого офисного интерьера. Ассортимент компании «Винли» богат пастельными оттенками: бежевый, серый, коричневый, лиловый.</p>
+		</div>
+	</section>
+	<!-- end pageInfo -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="footer-main">
