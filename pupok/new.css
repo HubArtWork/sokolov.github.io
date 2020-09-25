@@ -42,6 +42,8 @@
 	.b-nav__links {
 		display: flex;
 		flex-flow: row nowrap;
+		overflow-y: hidden;
+		overflow-x: auto;
 	}
 	.b-nav__bar_icon_wrapper {
 		display: none;
@@ -53,7 +55,7 @@
 		padding: 0;
 	}
 	.b-products__item {
-		padding: 0!important;
+		margin: 0!important;
 		overflow: hidden;
 		max-width: 100%;
 	}
