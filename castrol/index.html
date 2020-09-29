@@ -31,7 +31,7 @@
 			<ul class="header-list">
 				<li><a href="#terms" class="link-scroll">ПОДРОБНЫЕ УСЛОВИЯ</a></li>
 				<li><a href="#dealers" class="link-scroll">ДИЛЕРЫ-УЧАСТНИКИ</a></li>
-				<li><a href="#" class="link-scroll">ОНЛАЙН-ЗАПИСЬ НА СЕРВИС</a></li>
+				<li><a href="#choice" class="link-scroll choice-link">ОНЛАЙН-ЗАПИСЬ НА СЕРВИС</a></li>
 				<li><a href="#faq" class="link-scroll">FAQ</a></li>
 				<li><a href="#modal-form" class="button-modal">ОБРАТНАЯ СВЯЗЬ</a></li>
 			</ul>
@@ -57,7 +57,7 @@
 				<p>Общий срок Акции: с 5 октября по 20 декабря 2020. Период прохождения ТО: с 5 октября по 30 ноября 2020.</p>
 			</div>
 			<div class="main-bottom">
-				<a href="#" class="main-btn">
+				<a href="#choice" class="main-btn link-scroll choice-link">
 					<span>Зарегистрироваться на сервис онлайн</span>
 				</a>
 				<p>*карта Renault EXTRA. на 2 года и/или до 100 тыс. км в зависимости от того, что наступит ранее. Предложение действует только для автомобилей, находящихся на гарантии.</p>
@@ -133,18 +133,18 @@
 				<h2 class="choice-title">Выберите Дилера</h2>
 				<div class="choice-steps">
 					<span class="active"><i>1</i></span>
-					<span class="active"><i>2</i></span>
-					<span class="active"><i>3</i></span>
+					<span><i>2</i></span>
+					<span><i>3</i></span>
 				</div>
 			</div>
 			<div class="choice-step active" id="step1">
 				<div class="choice-search">
 					<form action="POST">
 						<div class="choice-search__wrap">
-							<input type="text" name="text" placeholder="Введите город или адрес Дилера">
+							<input id="choice-search" type="text" name="text" placeholder="Введите город или адрес Дилера" autocomplete="off">
 							<button class="choice-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#moprweq)"><path d="M17.6125 15.4923C18.7935 13.8795 19.4999 11.8985 19.4999 9.75096C19.4999 4.375 15.1259 0.000976562 9.74993 0.000976562C4.37398 0.000976562 0 4.375 0 9.75096C0 15.1269 4.37403 19.5009 9.74998 19.5009C11.8975 19.5009 13.8787 18.7944 15.4915 17.6134L21.8789 24.0008L24 21.8798C24 21.8797 17.6125 15.4923 17.6125 15.4923ZM9.74998 16.5009C6.02781 16.5009 3.00001 13.4731 3.00001 9.75096C3.00001 6.02879 6.02781 3.00099 9.74998 3.00099C13.4721 3.00099 16.4999 6.02879 16.4999 9.75096C16.4999 13.4731 13.4721 16.5009 9.74998 16.5009Z" fill="white"/></g><defs><clipPath id="moprweq"><rect width="24" height="24" fill="white"/></clipPath></defs></svg></button>
 						</div>
-						<div class="choice-search__drop active">
+						<div class="choice-search__drop">
 							<div class="choice-search__drop-top">
 								<a href="#" class="choice-search__link">20 дилерских центров найдено</a>
 							</div>
@@ -474,7 +474,7 @@
 			<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.41406" width="36" height="2" transform="rotate(45 1.41406 0)" fill="white"/><rect y="25.4558" width="36" height="2" transform="rotate(-45 0 25.4558)" fill="white"/></svg>
 		</div>
 		<div class="modal-top">
-			<h3 class="modal-title">Акция завершена 30.11.2020</h3>
+			<h3 class="modal-title">Renault EXTRA</h3>
 		</div>
 		<div class="modal-content">
 			<div class="modal-wrap">
@@ -508,8 +508,7 @@
 	  var myP1 = new ymaps.Placemark([59.875998, 30.348531],{
 	    balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>АвтоГермес</b></font></div>",
       balloonContentBody: "<div class='map-balloon-body'><ul><li>Балашиха, Западная коммунальная зона, 1234556.,</li><li>Телефон: 8 (495) 236-00-34</li></ul></div>",
-      balloonContentFooter: "<div class='balloon-btn'><a href='#' class='main-btn' target='_blank'><span>Выбрать Дилера</span></a></div>"
-    	}, {
+      }, {
 	    iconLayout: 'default#image',
 	    iconImageHref: "img/map-ico.svg",
 	    iconImageSize: [34, 34],
