@@ -30,7 +30,7 @@
 			</div>
 			<ul class="header-list">
 				<li><a href="#terms" class="link-scroll">ПОДРОБНЫЕ УСЛОВИЯ</a></li>
-				<li><a href="#dealers">ДИЛЕРЫ-УЧАСТНИКИ</a></li>
+				<li><a href="#dealers" class="link-scroll">ДИЛЕРЫ-УЧАСТНИКИ</a></li>
 				<li><a href="#" class="link-scroll">ОНЛАЙН-ЗАПИСЬ НА СЕРВИС</a></li>
 				<li><a href="#faq" class="link-scroll">FAQ</a></li>
 				<li><a href="#modal-form" class="button-modal">ОБРАТНАЯ СВЯЗЬ</a></li>
@@ -90,7 +90,7 @@
 				</div>
 			</div>
 			<div class="terms-bottom">
-				<a href="3" class="main-btn">
+				<a href="#choice" class="main-btn link-scroll choice-link">
 					<span>ЗАПИСАТЬСЯ НА СЕРВИС ОНЛАЙН
 					</span>
 				</a>
@@ -117,7 +117,7 @@
 						<span class="shares-name">Гарантированная выгода</span>
 						<div class="shares-img"><img src="img/shares-2.png" alt=""></div>
 						<h3 class="shares-title">Выгода в размере <span>500 рублей</span> при записи на ТО с Castrol онлайн</h3>
-						<a href="#modal-shares" class="main-btn button-modal">
+						<a href="#choice" class="main-btn link-scroll choice-link">
 							<span>ЗАПИСАТЬСЯ НА СЕРВИС ОНЛАЙН</span>
 						</a>
 					</div>
@@ -126,6 +126,120 @@
 		</div>
 	</section>
 	<!-- end shares -->
+	<!-- start choice -->
+	<section class="choice" id="choice">
+		<div class="wrapper">
+			<div class="choice-top">
+				<h2 class="choice-title">Выберите Дилера</h2>
+				<div class="choice-steps">
+					<span class="active"><i>1</i></span>
+					<span class="active"><i>2</i></span>
+					<span class="active"><i>3</i></span>
+				</div>
+			</div>
+			<div class="choice-step active" id="step1">
+				<div class="choice-search">
+					<form action="POST">
+						<div class="choice-search__wrap">
+							<input type="text" name="text" placeholder="Введите город или адрес Дилера">
+							<button class="choice-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#moprweq)"><path d="M17.6125 15.4923C18.7935 13.8795 19.4999 11.8985 19.4999 9.75096C19.4999 4.375 15.1259 0.000976562 9.74993 0.000976562C4.37398 0.000976562 0 4.375 0 9.75096C0 15.1269 4.37403 19.5009 9.74998 19.5009C11.8975 19.5009 13.8787 18.7944 15.4915 17.6134L21.8789 24.0008L24 21.8798C24 21.8797 17.6125 15.4923 17.6125 15.4923ZM9.74998 16.5009C6.02781 16.5009 3.00001 13.4731 3.00001 9.75096C3.00001 6.02879 6.02781 3.00099 9.74998 3.00099C13.4721 3.00099 16.4999 6.02879 16.4999 9.75096C16.4999 13.4731 13.4721 16.5009 9.74998 16.5009Z" fill="white"/></g><defs><clipPath id="moprweq"><rect width="24" height="24" fill="white"/></clipPath></defs></svg></button>
+						</div>
+						<div class="choice-search__drop active">
+							<div class="choice-search__drop-top">
+								<a href="#" class="choice-search__link">20 дилерских центров найдено</a>
+							</div>
+							<div class="choice-search__block">
+								<h3 class="choice-search__title">АвтоГермес</h3>
+								<ul>
+									<li>Балашиха, Западная коммунальная зона, 1234556.,</li>
+									<li>Телефон: 8 (495) 236-00-34</li>
+								</ul>
+								<a href="#" class="main-btn disabled"><span>Отмена</span></a>
+							</div>
+							<div class="choice-search__block">
+								<h3 class="choice-search__title">АвтоГермес</h3>
+								<ul>
+									<li>Балашиха, Западная коммунальная зона, 1234556.,</li>
+									<li>Телефон: 8 (495) 236-00-34</li>
+								</ul>
+								<a href="#" class="main-btn"><span>Выбрать Дилера</span></a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="dealers-map">
+					<div id="map2"></div>
+				</div>
+				<div class="choice-bottom">
+					<a href="#" class="main-btn disabled"><span>Продолжить</span></a>
+				</div>
+			</div>
+			<div class="choice-step" id="step2">
+				<div class="choice-form">
+					<div class="choice-form__wrap">
+						<form action="POST">
+							<h3 class="choice-form__title">Контактные данные</h3>
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Имя*">
+							</div>
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Фамилия*">
+							</div>
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Отчество*">
+							</div>
+							<div class="input-block">
+								<input class="input-tel" type="text" name="text" placeholder="Телефон*">
+							</div>
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Email*">
+							</div>
+							<div class="input-block">
+								<select name="text" id="">
+									<option value="">Renault ARKANA</option>
+									<option value="">Renault DOKKER VP</option>
+									<option value="">Renault DOKKER VU</option>
+									<option value="">Renault DUSTER</option>
+									<option value="">Renault KAPTUR</option>
+									<option value="">Renault KOLEOS</option>
+									<option value="">Renault LOGAN</option>
+									<option value="">Renault MASTER VU</option>
+									<option value="">Renault SANDERO​</option>
+								</select>
+							</div>
+							<div class="input-block">
+								<input class="input-year" type="text" name="text" placeholder="Год выпуска*">
+							</div>
+							<div class="input-p">
+								<p>* - Обязательное поле для заполнения</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#wd1)"><path d="M0 8.5105L5.4791 14.0001L16 3.48956L14.4896 2L5.4791 11L1.48953 7.01045L0 8.5105Z" fill="#008E3F"/></g><defs><clipPath id="wd1"><rect width="16" height="16" fill="white"/></clipPath></defs></svg></span>
+								<p>Соглашаюсь с политикой обработки персональных данных и даю согласие на передачу и обработку моих персональных данных</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#wd2)"><path d="M0 8.5105L5.4791 14.0001L16 3.48956L14.4896 2L5.4791 11L1.48953 7.01045L0 8.5105Z" fill="#008E3F"/></g><defs><clipPath id="wd2"><rect width="16" height="16" fill="white"/></clipPath></defs></svg></span>
+								<p>Я прочитал и согласен с <a href="#">Правилами акции</a></p>
+							</div>
+							<div class="choice-form__btns">
+								<a href="#" class="main-btn disabled">Вернуться к выбору Дилера</a>
+								<a href="#" class="main-btn">Отправить</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="choice-step" id="step3">
+				<div class="choice-done">
+					<svg width="108" height="98" viewBox="0 0 108 98" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="53" r="45" fill="#F9F9F9"/><path d="M13 39.8975L45.5322 72.7192L108 9.87766L99.0317 0.97168L45.5322 54.782L21.8441 30.9288L13 39.8975Z" fill="#008E3F"/></svg>
+					<p>Ваша заявка отправлена. В течение 24 часов с Вами свяжется сотрудник официального Дилерского центра Renault для согласования удобных дня и времени визита на сервис.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end choice -->
 	<!-- start dealers -->
 	<section class="dealers" id="dealers">
 		<div class="wrapper">
@@ -134,7 +248,7 @@
 				<div id="map"></div>
 			</div>
 			<div class="dealers-btn">
-				<a href="#" class="main-btn">
+				<a href="#choice" class="main-btn link-scroll choice-link">
 					<span>ЗАПИСАТЬСЯ НА СЕРВИС ОНЛАЙН</span>
 				</a>
 			</div>
@@ -292,8 +406,8 @@
 		<div class="wrapper">
 			<ul class="footer-list">
 				<li><a href="#">Подробные условия</a></li>
-				<li><a href="#">ДИЛЕРЫ-УЧАСТНИКИ</a></li>
-				<li><a href="modal-form" class="button-modal">ОБРАТНАЯ СВЯЗЬ</a></li>
+				<li><a href="#dealers" class="link-scroll">ДИЛЕРЫ-УЧАСТНИКИ</a></li>
+				<li><a href="#modal-form" class="button-modal">ОБРАТНАЯ СВЯЗЬ</a></li>
 			</ul>
 			<p>2020 все права защищены</p>
 		</div>
@@ -380,11 +494,17 @@
 
 	  function init() {
 	   	var myMap = new ymaps.Map("map", {
-	    center: [59.9390,30.3156],
-	    zoom: 11
-	   	}, {
-	    	searchControlProvider: 'yandex#search'
-	  });
+		    center: [59.9390,30.3156],
+		    zoom: 11
+		   	}, {
+		    	searchControlProvider: 'yandex#search'
+		  });
+		  var myMap2 = new ymaps.Map("map2", {
+		    center: [59.9390,30.3156],
+		    zoom: 11
+		   	}, {
+		    	searchControlProvider: 'yandex#search'
+		  });
 	  var myP1 = new ymaps.Placemark([59.875998, 30.348531],{
 	    balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>АвтоГермес</b></font></div>",
       balloonContentBody: "<div class='map-balloon-body'><ul><li>Балашиха, Западная коммунальная зона, 1234556.,</li><li>Телефон: 8 (495) 236-00-34</li></ul></div>",
@@ -395,7 +515,18 @@
 	    iconImageSize: [34, 34],
 	    iconImageOffset: [-17, -17],
 	  });
+	  var myP2 = new ymaps.Placemark([59.875998, 30.348531],{
+	    balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>АвтоГермес</b></font></div>",
+      balloonContentBody: "<div class='map-balloon-body'><ul><li>Балашиха, Западная коммунальная зона, 1234556.,</li><li>Телефон: 8 (495) 236-00-34</li></ul></div>",
+      balloonContentFooter: "<div class='balloon-btn'><a href='#' class='main-btn' target='_blank'><span>Выбрать Дилера</span></a></div>"
+    	}, {
+	    iconLayout: 'default#image',
+	    iconImageHref: "img/map-ico.svg",
+	    iconImageSize: [34, 34],
+	    iconImageOffset: [-17, -17],
+	  });
 	  myMap.geoObjects.add(myP1);
+	  myMap2.geoObjects.add(myP2);
 		}
 	</script>
 </body>
