@@ -59,9 +59,9 @@
 			</div>
 			<div class="main-bottom">
 				<a href="#choice" class="main-btn link-scroll choice-link">
-					<span>Зарегистрироваться на сервис онлайн</span>
+					<span>ЗАПИСАТЬСЯ НА СЕРВИС ОНЛАЙН</span>
 				</a>
-				<p>*карта Renault EXTRA. на 2 года и/или до 100 тыс. км в зависимости от того, что наступит ранее. Предложение действует только для автомобилей, находящихся на гарантии.</p>
+				<p>*карта Renault EXTRA на 2 года и/или до 100 тыс. км в зависимости от того, что наступит ранее. Предложение действует только для автомобилей, находящихся на гарантии.</p>
 			</div>
 		</div>
 	</section>
@@ -92,10 +92,9 @@
 			</div>
 			<div class="terms-bottom">
 				<a href="#choice" class="main-btn link-scroll choice-link">
-					<span>ЗАПИСАТЬСЯ НА СЕРВИС ОНЛАЙН
-					</span>
+					<span>ЗАПИСАТЬСЯ НА СЕРВИС ОНЛАЙН</span>
 				</a>
-				<p>*карта Renault EXTRA. на 2 года и/или до 100 тыс. км в зависимости от того, что наступит ранее. Предложение действует только для автомобилей, находящихся на гарантии.</p>
+				<p>*карта Renault EXTRA на 2 года и/или до 100 тыс. км в зависимости от того, что наступит ранее. Предложение действует только для автомобилей, находящихся на гарантии.</p>
 			</div>
 		</div>
 	</section>
@@ -128,17 +127,17 @@
 	</section>
 	<!-- end shares -->
 	<!-- start choice -->
-	<section class="choice step1" id="choice">
+	<section class="choice" id="choice">
 		<div class="wrapper">
-			<div class="choice-top">
-				<h2 class="choice-title">Выберите Дилера</h2>
-				<div class="choice-steps">
-					<span class="choice-step__1"><i>1</i></span>
-					<span class="choice-step__2"><i>2</i></span>
-					<span class="choice-step__3"><i>3</i></span>
-				</div>
-			</div>
 			<div class="choice-step active" id="step1">
+				<div class="choice-top">
+					<h2 class="choice-title">Выберите Дилера</h2>
+					<div class="choice-steps">
+						<span class="choice-step__1 active"><i>1</i></span>
+						<span class="choice-step__2"><i>2</i></span>
+						<span class="choice-step__3"><i>3</i></span>
+					</div>
+				</div>
 				<div class="choice-search">
 					<form action="POST">
 						<div class="choice-search__wrap">
@@ -182,6 +181,14 @@
 				</div>
 			</div>
 			<div class="choice-step" id="step2">
+				<div class="choice-top">
+					<h2 class="choice-title">Укажите Ваши контактные данные</h2>
+					<div class="choice-steps">
+						<span class="choice-step__1 active"><i>1</i></span>
+						<span class="choice-step__2 active"><i>2</i></span>
+						<span class="choice-step__3"><i>3</i></span>
+					</div>
+				</div>
 				<div class="choice-form">
 					<div class="choice-form__wrap">
 						<form action="POST">
@@ -202,16 +209,36 @@
 								<input type="text" name="text" placeholder="Email*">
 							</div>
 							<div class="input-block">
-								<select name="text" id="">
-									<option value="">Renault ARKANA</option>
-									<option value="">Renault DOKKER VP</option>
-									<option value="">Renault DOKKER VU</option>
-									<option value="">Renault DUSTER</option>
-									<option value="">Renault KAPTUR</option>
-									<option value="">Renault KOLEOS</option>
-									<option value="">Renault LOGAN</option>
-									<option value="">Renault MASTER VU</option>
-									<option value="">Renault SANDERO​</option>
+								<div class="input-select">
+									<span class="input-select__text">Модель автомобиля*</span>
+									<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8L0.669873 0.499999L9.33013 0.5L5 8Z" fill="#008E3F"/></svg>
+								</div>
+								<select name="text" id="select-model">
+									<option value="">Модель автомобиля</option>
+									<option value="">«Другое»</option>
+									<option value="">ARKANA</option>
+									<option value="">KAPTUR</option>
+									<option value="">DUSTER</option>
+									<option value="">LOGAN</option>
+									<option value="">LOGAN Stepway</option>
+									<option value="">SANDERO</option>
+									<option value="">SANDERO Stepway</option>
+									<option value="">CLIO</option>
+									<option value="">DOKKER</option>
+									<option value="">DOKKER Stepway</option>
+									<option value="">ESPACE</option>
+									<option value="">FLUENCE</option>
+									<option value="">KANGOO</option>
+									<option value="">KOLEOS</option>
+									<option value="">LAGUNA</option>
+									<option value="">LATITUDE</option>
+									<option value="">MASTER</option>
+									<option value="">MEGANE</option>
+									<option value="">MODUS</option>
+									<option value="">SCENIC</option>
+									<option value="">SYMBOL</option>
+									<option value="">TRAFIC</option>
+									<option value="">VELSATIS</option>
 								</select>
 							</div>
 							<div class="input-block">
@@ -221,17 +248,17 @@
 								<p>* - Обязательное поле для заполнения</p>
 							</div>
 							<div class="checkbox">
-								<input type="checkbox">
+								<input type="checkbox" required>
 								<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#wd1)"><path d="M0 8.5105L5.4791 14.0001L16 3.48956L14.4896 2L5.4791 11L1.48953 7.01045L0 8.5105Z" fill="#008E3F"/></g><defs><clipPath id="wd1"><rect width="16" height="16" fill="white"/></clipPath></defs></svg></span>
 								<p>Соглашаюсь с политикой обработки персональных данных и даю согласие на передачу и обработку моих персональных данных</p>
 							</div>
 							<div class="checkbox">
-								<input type="checkbox">
+								<input type="checkbox" required>
 								<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#wd2)"><path d="M0 8.5105L5.4791 14.0001L16 3.48956L14.4896 2L5.4791 11L1.48953 7.01045L0 8.5105Z" fill="#008E3F"/></g><defs><clipPath id="wd2"><rect width="16" height="16" fill="white"/></clipPath></defs></svg></span>
 								<p>Я прочитал и согласен с <a href="#">Правилами акции</a></p>
 							</div>
 							<div class="choice-form__btns">
-								<a href="step1" class="main-btn choice-button disabled">Вернуться к выбору Дилера</a>
+								<a href="step1" class="main-btn choice-button main-btn__dis">Вернуться к выбору Дилера</a>
 								<a href="step3" class="main-btn choice-button">Отправить</a>
 							</div>
 						</form>
@@ -239,6 +266,14 @@
 				</div>
 			</div>
 			<div class="choice-step" id="step3">
+				<div class="choice-top">
+					<h2 class="choice-title">Заявка отправлена!</h2>
+					<div class="choice-steps">
+						<span class="choice-step__1 active"><i>1</i></span>
+						<span class="choice-step__2 active"><i>2</i></span>
+						<span class="choice-step__3 active"><i>3</i></span>
+					</div>
+				</div>
 				<div class="choice-done">
 					<svg width="108" height="98" viewBox="0 0 108 98" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="53" r="45" fill="#F9F9F9"/><path d="M13 39.8975L45.5322 72.7192L108 9.87766L99.0317 0.97168L45.5322 54.782L21.8441 30.9288L13 39.8975Z" fill="#008E3F"/></svg>
 					<p>Ваша заявка отправлена. В течение 24 часов с Вами свяжется сотрудник официального Дилерского центра Renault для согласования удобных дня и времени визита на сервис.</p>
@@ -439,7 +474,7 @@
 				</div>
 				<form method="POST">
 					<div class="input-block">
-						<input type="text" name="name" placeholder="Имя">
+						<input type="text" name="name" placeholder="Имя*">
 					</div>
 					<div class="input-block">
 						<input type="email" name="email" placeholder="E-mail*">
