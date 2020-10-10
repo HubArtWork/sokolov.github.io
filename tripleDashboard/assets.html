@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/logo.svg" alt=""></a>
+			</div>
+			<div class="header-row">
+				<a href="#" class="header-settings"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="1"><path d="M20.9374 9.88962C20.9058 9.60848 20.578 9.39722 20.2945 9.39722C19.3781 9.39722 18.5649 8.85912 18.2238 8.02695C17.8754 7.1746 18.1001 6.18057 18.7831 5.55408C18.9981 5.35755 19.0242 5.02856 18.8439 4.80004C18.3748 4.20442 17.8417 3.66641 17.2596 3.20012C17.0317 3.01721 16.6972 3.04266 16.4996 3.26152C15.9035 3.92165 14.8328 4.16699 14.0055 3.82178C13.1445 3.45961 12.6015 2.58717 12.6547 1.65067C12.6721 1.35651 12.4572 1.10074 12.1639 1.06659C11.4169 0.980191 10.6633 0.977512 9.91413 1.06063C9.6242 1.09263 9.40921 1.34237 9.41896 1.63281C9.45155 2.56009 8.90206 3.41727 8.04962 3.76642C7.23216 4.10032 6.16897 3.85706 5.57409 3.2028C5.37748 2.9873 5.04849 2.96081 4.81943 3.13933C4.22008 3.60955 3.67499 4.14802 3.20162 4.73872C3.017 4.96836 3.04416 5.30122 3.2613 5.49879C3.95732 6.12908 4.18206 7.13174 3.82047 7.99391C3.47525 8.81589 2.6217 9.34565 1.64454 9.34565C1.32745 9.33545 1.10159 9.54828 1.06692 9.83656C0.978956 10.5878 0.977914 11.3533 1.0626 12.1107C1.094 12.3931 1.43178 12.6025 1.71836 12.6025C2.58918 12.5802 3.42524 13.1194 3.77597 13.9728C4.12558 14.8252 3.90084 15.8186 3.2168 16.4456C3.00286 16.6421 2.9757 16.9706 3.15601 17.1991C3.62066 17.7909 4.15385 18.3295 4.73802 18.7996C4.96715 18.9843 5.30054 18.9582 5.49915 18.7394C6.09746 18.0776 7.16809 17.8327 7.99217 18.1786C8.85533 18.5396 9.39827 19.412 9.34514 20.349C9.3278 20.6433 9.54383 20.8995 9.83591 20.9332C10.218 20.9778 10.6025 21 10.988 21C11.3539 21 11.7198 20.9799 12.0857 20.9392C12.3757 20.9072 12.5906 20.6575 12.5808 20.3665C12.5473 19.4398 13.0977 18.5826 13.9491 18.234C14.772 17.8979 15.8307 18.1439 16.4257 18.7975C16.6234 19.0125 16.9501 19.0385 17.1804 18.8606C17.7787 18.3915 18.3227 17.8535 18.7982 17.2611C18.9828 17.032 18.9568 16.6986 18.7385 16.5011C18.0425 15.8708 17.8166 14.868 18.1782 14.0065C18.5181 13.1954 19.34 12.6508 20.224 12.6508L20.3477 12.654C20.6344 12.6773 20.8982 12.4565 20.933 12.1638C21.0211 11.4118 21.0221 10.647 20.9374 9.88962Z" stroke="#3B4348" stroke-width="2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11 15C8.79424 15 7 13.2058 7 11C7 8.79431 8.79424 7 11 7C13.2058 7 15 8.79431 15 11C15 13.2058 13.2058 15 11 15Z" stroke="#3B4348" stroke-width="2"/></g></svg></a>
+				<a href="#" class="header-messages"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="1"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86228 4.47821L10.0929 3.89496L10.0012 2.53618C10.0004 2.52451 10 2.51246 10 2.5C10 2.22386 10.2239 2 10.5 2H11.5C11.7761 2 12 2.22386 12 2.5C12 2.51247 11.9996 2.52452 11.9988 2.53618L11.9071 3.89496L13.1377 4.47821C14.8338 5.28204 16 7.00683 16 9V11.3368V12.6009L17.1418 13.1433C17.6532 13.3863 18 13.9046 18 14.5C18 15.3284 17.3284 16 16.5 16H5.5C4.67157 16 4 15.3284 4 14.5C4 13.9046 4.34676 13.3863 4.85819 13.1433L6 12.6009V11.3368V9C6 7.00683 7.16619 5.28204 8.86228 4.47821ZM10.5 0C9.11929 0 8 1.11929 8 2.5C8 2.55744 8.00194 2.61443 8.00575 2.6709C5.6377 3.79319 4 6.20534 4 9V11.3368C2.81753 11.8985 2 13.1038 2 14.5C2 16.433 3.567 18 5.5 18H16.5C18.433 18 20 16.433 20 14.5C20 13.1038 19.1825 11.8985 18 11.3368V9C18 6.20534 16.3623 3.79319 13.9943 2.6709C13.9981 2.61443 14 2.55744 14 2.5C14 1.11929 12.8807 0 11.5 0H10.5ZM11.0004 22C9.36455 22 7.91221 21.2144 7 20H15.0007C14.0885 21.2144 12.6362 22 11.0004 22Z" fill="#3B4348"/></g></svg></a>
+				<div class="header-user">
+					<div class="header-user__top">
+						<div class="header-user__img"><img src="img/user.jpg" alt=""></div>
+						<span class="header-user__name">Kevinstrot85</span>
+						<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L5.5 5.5L1 1" stroke="#3B4348" stroke-width="1.5"/></svg>
+					</div>
+					<div class="header-user__drop">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start menu -->
+	<section class="menu">
+		<div class="wrapper">
+			<div class="menu-select">
+				<div class="menu-select__top">
+					<div class="menu-select__top-row">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.00023L24 1.99854L30 10.5002L15 28.0002L0 10.5002L6 2.00023ZM26.0801 12.0002L17.2387 22.3153L21.6594 12.0002H26.0801ZM27.1992 10.0002L24.2858 5.87203L22.5165 10.0002H27.1992ZM20.9627 8.5487L22.9127 3.99864L16.4132 3.99925L20.9627 8.5487ZM19.5858 10.0002H10.4142L15 5.41444L19.5858 10.0002ZM15 4.00023L15.0008 3.99938L14.9992 3.99938L15 4.00023ZM9.03731 8.5487L13.5865 3.99952L7.08792 4.00013L9.03731 8.5487ZM10.5165 12.0002L15 22.4616L19.4835 12.0002H10.5165ZM8.3406 12.0002L12.7613 22.3153L3.91987 12.0002H8.3406ZM7.48346 10.0002L5.71454 5.87274L2.80102 10.0002H7.48346Z" fill="#3B4348"/></g></svg></span>
+						<b>Assets</b>
+					</div>
+					<div class="menu-select__top-arrow">
+						<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L5.5 5.5L1 1" stroke="#3B4348" stroke-width="1.5"/></svg>
+					</div>
+				</div>
+				<ul class="menu-list">
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H12V12H4V5C4 4.44772 4.44772 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H12H14V4V12V14H12H4H2V12V5ZM18 4H25C25.5523 4 26 4.44772 26 5V12H18V4ZM16 2H18H25C26.6569 2 28 3.34315 28 5V12V14H26H18H16V12V4V2ZM12 18H4V25C4 25.5523 4.44772 26 5 26H12V18ZM4 16H2V18V25C2 26.6569 3.34315 28 5 28H12H14V26V18V16H12H4ZM18 18H26V25C26 25.5523 25.5523 26 25 26H18V18ZM16 16H18H26H28V18V25C28 26.6569 26.6569 28 25 28H18H16V26V18V16Z" fill="#3B4348"/></g></svg></span>
+						<b>Dashboard</b>
+					</a></li>
+					<li><a href="#" class="active">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.00023L24 1.99854L30 10.5002L15 28.0002L0 10.5002L6 2.00023ZM26.0801 12.0002L17.2387 22.3153L21.6594 12.0002H26.0801ZM27.1992 10.0002L24.2858 5.87203L22.5165 10.0002H27.1992ZM20.9627 8.5487L22.9127 3.99864L16.4132 3.99925L20.9627 8.5487ZM19.5858 10.0002H10.4142L15 5.41444L19.5858 10.0002ZM15 4.00023L15.0008 3.99938L14.9992 3.99938L15 4.00023ZM9.03731 8.5487L13.5865 3.99952L7.08792 4.00013L9.03731 8.5487ZM10.5165 12.0002L15 22.4616L19.4835 12.0002H10.5165ZM8.3406 12.0002L12.7613 22.3153L3.91987 12.0002H8.3406ZM7.48346 10.0002L5.71454 5.87274L2.80102 10.0002H7.48346Z" fill="#3B4348"/></g></svg></span>
+						<b>Assets</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 9H19C20.3062 9 21.4175 8.16519 21.8293 7H27C27.5523 7 28 7.44772 28 8V25C28 25.5523 27.5523 26 27 26H3C2.44772 26 2 25.5523 2 25V8C2 7.44772 2.44772 7 3 7H8.17071C8.58254 8.16519 9.69378 9 11 9ZM27 5H22C22 3.34315 20.6569 2 19 2H11C9.34315 2 8 3.34315 8 5H3C1.34315 5 0 6.34315 0 8V25C0 26.6569 1.34315 28 3 28H27C28.6569 28 30 26.6569 30 25V8C30 6.34315 28.6569 5 27 5ZM10 6V5C10 4.44772 10.4477 4 11 4H19C19.5523 4 20 4.44772 20 5V6C20 6.55228 19.5523 7 19 7H11C10.4477 7 10 6.55228 10 6ZM16 15C16 15.5523 16.4477 16 17 16H23C23.5523 16 24 15.5523 24 15C24 14.4477 23.5523 14 23 14H17C16.4477 14 16 14.4477 16 15ZM17 20C16.4477 20 16 19.5523 16 19C16 18.4477 16.4477 18 17 18H23C23.5523 18 24 18.4477 24 19C24 19.5523 23.5523 20 23 20H17ZM9 21C6.79086 21 5 19.2091 5 17C5 14.7909 6.79086 13 9 13C11.2091 13 13 14.7909 13 17C13 19.2091 11.2091 21 9 21ZM9 19C10.1046 19 11 18.1046 11 17C11 15.8954 10.1046 15 9 15C7.89543 15 7 15.8954 7 17C7 18.1046 7.89543 19 9 19Z" fill="#3B4348"/></g></svg></span>
+						<b>Badges</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M29 25C29 26.6569 27.6569 28 26 28H4C2.34315 28 1 26.6569 1 25V5C1 3.34315 2.34315 2 4 2H26C27.6569 2 29 3.34315 29 5V25ZM4 4C3.44772 4 3 4.44772 3 5V25C3 25.5523 3.44772 26 4 26H26C26.5523 26 27 25.5523 27 25V5C27 4.44772 26.5523 4 26 4H20V11C20 12.1046 19.1046 13 18 13L15 12L12 13C10.8954 13 10 12.1046 10 11V4H4ZM12 4V11L15 10L18 11V4H12ZM13 20H12C11.4477 20 11 19.5523 11 19C11 18.4477 11.4477 18 12 18H13C13.5523 18 14 18.4477 14 19C14 19.5523 13.5523 20 13 20ZM17 20H18C18.5523 20 19 19.5523 19 19C19 18.4477 18.5523 18 18 18H17C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#3B4348"/></g></svg></span>
+						<b>Orders</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 2H12C10.8954 2 10 2.89543 10 4V6H6C3.23995 6.00331 1.00331 8.23995 1 11V23C1.00331 25.7601 3.23995 27.9967 6 28H24C26.7601 27.9967 28.9967 25.7601 29 23V11C28.9967 8.23995 26.7601 6.00331 24 6H20V4C20 2.89543 19.1046 2 18 2ZM10 9V8H6C4.34315 8 3 9.34315 3 11V15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H3V23C3 24.6569 4.34315 26 6 26H24C25.6569 26 27 24.6569 27 23V17H20C19.4477 17 19 16.5523 19 16C19 15.4477 19.4477 15 20 15H27V11C27 9.34315 25.6569 8 24 8H20V9C20 9.55228 19.5523 10 19 10C18.4477 10 18 9.55228 18 9V8H12V9C12 9.55228 11.5523 10 11 10C10.4477 10 10 9.55228 10 9ZM12 6H18V4H12V6ZM14 17H16C16.5523 17 17 16.5523 17 16C17 15.4477 16.5523 15 16 15H14C13.4477 15 13 15.4477 13 16C13 16.5523 13.4477 17 14 17Z" fill="#3B4348"/></g></svg></span>
+						<b>Projects</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 28H23C25.7601 27.9967 27.9967 25.7601 28 23V13C27.9967 10.2399 25.7601 8.00331 23 8H7C4.23995 8.00331 2.00331 10.2399 2 13V23C2.00331 25.7601 4.23995 27.9967 7 28ZM4 13C4 11.3431 5.34315 10 7 10H23C24.6569 10 26 11.3431 26 13V23C26 24.6569 24.6569 26 23 26H7C5.34315 26 4 24.6569 4 23V13Z" fill="#3B4348"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.00169 14.0002C2.44941 14.0002 2.00169 13.5525 2.00169 13.0002V6.00023C1.9701 4.92999 2.38138 3.89412 3.13848 3.13701C3.89558 2.37991 4.93146 1.96864 6.00169 2.00023H12.0017C12.2669 2.00029 12.5212 2.10568 12.7087 2.29323L15.4157 5.00023H19.0017C20.0718 4.96893 21.1076 5.3803 21.8646 6.13734C22.6216 6.89437 23.033 7.93008 23.0017 9.00023C23.0017 9.55251 22.554 10.0002 22.0017 10.0002C21.4494 10.0002 21.0017 9.55251 21.0017 9.00023C21.0368 8.4598 20.8374 7.93045 20.4544 7.5475C20.0715 7.16455 19.5421 6.96514 19.0017 7.00023H15.0017C14.7365 7.00017 14.4822 6.89478 14.2947 6.70723L11.5877 4.00023H6.00169C5.46135 3.96547 4.9322 4.16499 4.54933 4.54786C4.16646 4.93073 3.96693 5.45989 4.00169 6.00023V13.0002C4.00169 13.5525 3.55398 14.0002 3.00169 14.0002Z" fill="#3B4348"/></g></svg></span>
+						<b>Portfolio</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2H21C24.3137 2 27 4.68629 27 8V9.70835C26.4281 9.06036 25.7528 8.50573 25 8.07026V8C25 5.79086 23.2091 4 21 4H7C4.79086 4 3 5.79086 3 8V9.70835C1.75527 11.1186 1 12.9711 1 15V8C1 4.68629 3.68629 2 7 2Z" fill="#3B4348"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29 13H23C20.7909 13 19 14.7909 19 17V19C19 21.2091 20.7909 23 23 23H29V13ZM27 15V21H23C21.8954 21 21 20.1046 21 19V17C21 15.8954 21.8954 15 23 15H27Z" fill="#3B4348"/><path d="M25 18C25 18.5523 24.5523 19 24 19C23.4477 19 23 18.5523 23 18C23 17.4477 23.4477 17 24 17C24.5523 17 25 17.4477 25 18Z" fill="#3B4348"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23 7H7C3.68629 7 1 9.68629 1 13V22C1 25.3137 3.68629 28 7 28H23C26.3137 28 29 25.3137 29 22V13C29 9.68629 26.3137 7 23 7ZM3 13C3 10.7909 4.79086 9 7 9H23C25.2091 9 27 10.7909 27 13V22C27 24.2091 25.2091 26 23 26H7C4.79086 26 3 24.2091 3 22V13Z" fill="#3B4348"/></g></svg></span>
+						<b>TPS</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 2H8C5.79086 2 4 3.79086 4 6V24C4 26.2091 5.79086 28 8 28H22C24.2091 28 26 26.2091 26 24V6C26 3.79086 24.2091 2 22 2ZM8 0C4.68629 0 2 2.68629 2 6V24C2 27.3137 4.68629 30 8 30H22C25.3137 30 28 27.3137 28 24V6C28 2.68629 25.3137 0 22 0H8Z" fill="#3B4348"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15 12C16.1046 12 17 11.1046 17 10C17 8.89543 16.1046 8 15 8C13.8954 8 13 8.89543 13 10C13 11.1046 13.8954 12 15 12ZM15 14C17.2091 14 19 12.2091 19 10C19 7.79086 17.2091 6 15 6C12.7909 6 11 7.79086 11 10C11 12.2091 12.7909 14 15 14Z" fill="#3B4348"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.9904 18C20.9968 18.1168 21 18.2345 21 18.3529V20H9V17.6471C9 14.5283 11.5283 12 14.6471 12C18.0373 12 20.8072 14.6555 20.9904 18ZM11 18V17.6471C11 15.6328 12.6328 14 14.6471 14C16.9323 14 18.8062 15.761 18.9859 18H11Z" fill="#3B4348"/><path d="M9 23C9 22.4477 9.44772 22 10 22H20C20.5523 22 21 22.4477 21 23C21 23.5523 20.5523 24 20 24H10C9.44772 24 9 23.5523 9 23Z" fill="#3B4348"/></g></svg></span>
+						<b>Companies</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><circle cx="15" cy="17" r="11" stroke="#3B4348" stroke-width="2"/><rect x="14.5" y="11.5" width="1" height="6" rx="0.5" fill="#D8D8D8" stroke="#3B4348"/><rect x="14.5" y="16.5" width="5" height="1" rx="0.5" fill="#D8D8D8" stroke="#3B4348"/><rect x="11.5" y="1.5" width="7" height="1" rx="0.5" fill="#D8D8D8" stroke="#3B4348"/><rect x="22.7305" y="9.06055" width="3" height="1" rx="0.5" transform="rotate(-45 22.7305 9.06055)" fill="#D8D8D8" stroke="#3B4348"/></g></svg></span>
+						<b>Voting center</b>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2H18C19.1046 2 20 2.89543 20 4V6H24C26.7601 6.00331 28.9967 8.23995 29 11V23C28.9967 25.7601 26.7601 27.9967 24 28H6C3.23995 27.9967 1.00331 25.7601 1 23V11C1.00331 8.23995 3.23995 6.00331 6 6H10V4C10 2.89543 10.8954 2 12 2ZM10 8V9C10 9.55228 10.4477 10 11 10C11.5523 10 12 9.55228 12 9V8H18V9C18 9.55228 18.4477 10 19 10C19.5523 10 20 9.55228 20 9V8H24C25.6569 8 27 9.34315 27 11V23C27 24.6569 25.6569 26 24 26H6C4.34315 26 3 24.6569 3 23V11C3 9.34315 4.34315 8 6 8H10ZM18 6H12V4H18V6Z" fill="#3B4348"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2072 15.2072L16.0001 21.4143L13.0001 18.4143L9.20718 22.2072L7.79297 20.793L13.0001 15.5859L16.0001 18.5859L20.793 13.793L22.2072 15.2072Z" fill="#3B4348"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21 15H18V13H23V18H21V15Z" fill="#3B4348"/></g></svg></span>
+						<b>Investments</b>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end menu -->
+	<!-- start info -->
+	<section class="info">
+		<div class="wrapper">
+			<div class="info-wrap">
+				<div class="info-main">
+					<h1 class="info-title">Total</h1>
+					<p>Assets statistic</p>
+				</div>
+				<div class="info-row">
+					<div class="info-col">
+						<b>47</b>
+						<span>Name 1</span>
+					</div>
+					<div class="info-col">
+						<b>36</b>
+						<span>Name 2</span>
+					</div>
+					<div class="info-col">
+						<b>50</b>
+						<span>Name 3</span>
+					</div>
+					<div class="info-col">
+						<b>100</b>
+						<span>Name 4</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+	<!-- start content -->
+	<section class="content">
+		<div class="wrapper">
+			<div class="content-block">
+				<h2 class="content-title">Companies</h2>
+				<div class="content-table">
+					<div class="table table-1 scrollbar-outer">
+						<div class="table-wrap">
+							<div class="table-row table-top">
+								<div class="table-col table-col__1">
+									<span>Name</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>Name</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>Q1</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>Q2</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>Q3</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>Q4</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<a href="#" class="main-btn pagination-prev">PREVIOUS</a>
+					<ul class="pagination-list">
+						<li class="active">1</li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li>...</li>
+						<li><a href="#">10</a></li>
+					</ul>
+					<a href="#" class="main-btn pagination-next">NEXT</a>
+					<div class="pagination-mob">
+						<a href="#" class="main-btn">SHOW MORE</a>
+					</div>
+				</div>
+			</div>
+			<div class="content-block">
+				<h2 class="content-title">Stocks</h2>
+				<div class="content-table">
+					<div class="table table-1 scrollbar-outer">
+						<div class="table-wrap">
+							<div class="table-row table-top">
+								<div class="table-col table-col__1">
+									<span>Name</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>Name</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>Q1</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>Q2</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>Q3</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>Q4</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+							<div class="table-row">
+								<div class="table-col table-col__1">
+									<span>Name number one</span>
+								</div>
+								<div class="table-col table-col__2">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__3">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__4">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__5">
+									<span>$3000</span>
+								</div>
+								<div class="table-col table-col__6">
+									<span>$3000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<a href="#" class="main-btn pagination-prev">PREVIOUS</a>
+					<ul class="pagination-list">
+						<li class="active">1</li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li>...</li>
+						<li><a href="#">10</a></li>
+					</ul>
+					<a href="#" class="main-btn pagination-next">NEXT</a>
+					<div class="pagination-mob">
+						<a href="#" class="main-btn">SHOW MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-logo">
+					<a href="#"><img src="img/footer-logo.svg" alt=""></a>
+				</div>
+				<ul class="footer-list">
+					<li><a href="#" class="active">Privacy Policy</a></li>
+					<li><a href="#">Terms of Use</a></li>
+				</ul>
+				<p>© 2020 TripleOne</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
