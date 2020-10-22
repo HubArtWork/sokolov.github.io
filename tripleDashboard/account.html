@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>title</title>
+	<title>TripleOne - Account</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -33,7 +33,11 @@
 						<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L5.5 5.5L1 1" stroke="#3B4348" stroke-width="1.5"/></svg>
 					</div>
 					<div class="header-user__drop">
-						
+						<ul>
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">Billing</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -147,10 +151,13 @@
 						<div class="settings-block">
 							<form action="POST">
 								<span class="settings-title">Personal information</span>
-								<div class="download">
+								<div class="download"><!-- add class active -->
 									<span class="main-btn">CHOOSE USERPIC</span>
 									<input type="download">
-									<p>Png, jpeg no more than 1 mb</p>
+									<p>
+										Png, jpeg no more than 1 mb
+										<span class="download-close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1 9" stroke="#3B4348" stroke-width="1.5"/><path d="M1 1L9 9" stroke="#3B4348" stroke-width="1.5"/></svg></span>
+									</p>
 								</div>
 								<div class="input-block">
 									<label for="j-1">Nickname</label>
