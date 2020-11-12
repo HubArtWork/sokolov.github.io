@@ -43,7 +43,7 @@
 					<span>Позвоните нам бесплатно</span>
 				</a>
 				<a href="#" class="header-phone">8 (800) 550 40-40 </a>
-				<a href="#" class="header-link">перезвоните мне</a>
+				<a data-fancybox data-src="#modal-call" href="javascript:;" class="header-link">перезвоните мне</a>
 			</div>
 		</div>
 	</header>
@@ -566,7 +566,7 @@
 			<div class="contatcs-info">
 				<h2 class="contatcs-head">Наша компания находится по адресу</h2>
 				<span class="contatcs-subtitle">000000, г Москва обл., <br>ул. Луначарского, 128</span>
-				<a href="#" class="contatcs-locate">
+				<a data-fancybox data-src="#modal-map" href="javascript:;" class="contatcs-locate">
 					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7458 0.922852C9.35533 0.922852 4.96973 5.30846 4.96973 10.699C4.96973 17.4743 14.7555 29.0478 14.7555 29.0478C14.7555 29.0478 24.522 17.1411 24.522 10.699C24.522 5.30846 20.1365 0.922852 14.7458 0.922852ZM17.6955 13.5614C16.8822 14.3746 15.8141 14.7812 14.7458 14.7812C13.6778 14.7812 12.6093 14.3746 11.7964 13.5614C10.1699 11.9351 10.1699 9.28877 11.7964 7.66228C12.5839 6.87435 13.6316 6.44039 14.7458 6.44039C15.8601 6.44039 16.9076 6.87452 17.6955 7.66228C19.322 9.28877 19.322 11.9351 17.6955 13.5614Z" fill="#13B0FF"/></svg>
 					<span>Смотреть на карте</span>
 				</a>
@@ -646,22 +646,65 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<!-- modal-form -->
-	<div class="modal-overlay"></div>
-	<div class="modal" id="modal-form">
-		<div class="modal-close">
-			
+	<div style="display: none;" id="modal-call" class="modal modal-form modal-transparent">
+		<div class="modal-close"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.28557 25C0.95625 25 0.626931 24.8747 0.376724 24.6227C-0.125574 24.1204 -0.125574 23.306 0.376724 22.8038L22.8043 0.376714C23.3066 -0.125571 24.121 -0.125571 24.6233 0.376714C25.1256 0.878999 25.1256 1.69333 24.6233 2.19593L2.19598 24.6227C1.94389 24.8732 1.61457 25 1.28557 25Z" fill="#13B0FF"/><path d="M23.7147 25C23.3854 25 23.0564 24.8747 22.8059 24.6227L0.376724 2.19593C-0.125574 1.69333 -0.125574 0.878999 0.376724 0.376714C0.879022 -0.125571 1.69337 -0.125571 2.19598 0.376714L24.6233 22.8038C25.1256 23.306 25.1256 24.1204 24.6233 24.6227C24.3712 24.8732 24.0422 25 23.7147 25Z" fill="#13B0FF"/></svg></div>
+		<div class="modal-wrap">
+			<div class="modal-wrap__content">
+				<span class="modal-wrap__subtitle modal-wrap__subtitle-big"><b>Укажите</b> контактные данные и удобное время для звонка</span>
+				<span class="modal-wrap__subtitle"><b>Время работы</b> нашего офиса — c понедельника по пятницу с 9:00 до 20:00 по Москве</span>
+				<form action="POST">
+					<div class="input-block">
+						<input type="text" name="name" placeholder="Иван">
+					</div>
+					<div class="input-block">
+						<input type="text" name="tel" placeholder="+7(___) -___-__-__" class="input-tel">
+					</div>
+					<ul class="modal-time">
+						<li><a href="#i" class="modal-time__item">Сейчас</a></li>
+						<li><a href="#input-time" class="modal-time__item active">По времени</a></li>
+					</ul>
+					<div class="input-block input-time active" id="input-time">
+						<label for="c-1">Когда вам будет удобно принять звонок?</label>
+						<input id="c-1" type="text" name="tel" placeholder="Например, завтра в 12:00">
+					</div>
+					<div class="modal-btn">
+						<button class="main-btn">перезвоните мне</button>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span class="checkbox-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g><rect width="10" height="10" fill="white"/><path d="M9.9592 2.42586L3.75892 8.62615C3.7043 8.68076 3.61587 8.68076 3.56139 8.62615L0.0408644 5.10549C-0.0136215 5.05114 -0.0136215 4.96271 0.0408644 4.90809L0.896305 4.05265C0.950918 3.99817 1.03935 3.99817 1.09383 4.05265L3.66028 6.61897L8.90636 1.3729C8.9611 1.31841 9.04927 1.31841 9.10389 1.3729L9.9592 2.22834C10.0138 2.28282 10.0138 2.37112 9.9592 2.42586Z" fill="#30C462"/></g><defs><clipPath><rect width="10" height="10" fill="white"/></clipPath></defs></svg></span>
+						<p>Я принимаю <a href="#">условия политики конфидециальности</a></p>
+					</div>
+				</form>
+			</div>
 		</div>
-		<div class="modal-content">
-			<form method="POST">
-				<div class="input-block">
-					<input type="text" name="text" placeholder="oooo">
-				</div>
-				<button class="main-btn">HHHH</button>
-			</form>
+	</div>
+	<div style="display: none;" id="modal-map" class="modal modal-transparent">
+		<div class="modal-close"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.28557 25C0.95625 25 0.626931 24.8747 0.376724 24.6227C-0.125574 24.1204 -0.125574 23.306 0.376724 22.8038L22.8043 0.376714C23.3066 -0.125571 24.121 -0.125571 24.6233 0.376714C25.1256 0.878999 25.1256 1.69333 24.6233 2.19593L2.19598 24.6227C1.94389 24.8732 1.61457 25 1.28557 25Z" fill="#13B0FF"/><path d="M23.7147 25C23.3854 25 23.0564 24.8747 22.8059 24.6227L0.376724 2.19593C-0.125574 1.69333 -0.125574 0.878999 0.376724 0.376714C0.879022 -0.125571 1.69337 -0.125571 2.19598 0.376714L24.6233 22.8038C25.1256 23.306 25.1256 24.1204 24.6233 24.6227C24.3712 24.8732 24.0422 25 23.7147 25Z" fill="#13B0FF"/></svg></div>
+		<div class="modal-wrap">
+			<div class="modal-map">
+				<div id="map"></div>
+			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+		var myMap;
+
+		function init(){    
+	    myMap = new ymaps.Map ("map", {
+	        center: [55.7084, 37.6527],
+	        zoom: 16,
+	        controls: []
+	    });
+	    myMap.behaviors.disable([
+			  'scrollZoom'
+			]);
+
+		}
+	</script>
 </body>
 </html>
