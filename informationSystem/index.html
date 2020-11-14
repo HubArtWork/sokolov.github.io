@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/logo.svg" alt=""></a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main action">
+		<div class="wrapper">
+			<div class="action-wrap">
+				<div class="action-bg" style="background-image: url(img/main-bg.jpg);"></div>
+				<div class="action-row">
+					<div class="action-info">
+						<h1 class="action-head">Инфосистема НДС <span>на базе SAP</span></h1>
+						<p>Внедрите решение по подготовке деклараций НДС на базе SAP и минимизируйте ошибки при подаче декларации в налоговые органы</p>
+					</div>
+					<div class="action-form">
+						<div class="action-form__wrap">
+							<form action="POST">
+								<h3 class="action-subtitle">Заявка на бесплатную консультацию</h3>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.243 2 7 4.243 7 7C7 9.757 9.243 12 12 12C14.757 12 17 9.757 17 7C17 4.243 14.757 2 12 2ZM12 10C10.346 10 9 8.654 9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7C15 8.654 13.654 10 12 10ZM21 21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H5V20C5 17.243 7.243 15 10 15H14C16.757 15 19 17.243 19 20V21H21Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="name" placeholder="Имя">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 12.293C17.316 11.902 16.684 11.902 16.293 12.293L14.699 13.887C13.96 13.667 12.581 13.167 11.707 12.293C10.833 11.419 10.333 10.04 10.113 9.30101L11.707 7.70701C12.098 7.31601 12.098 6.68401 11.707 6.29301L7.70703 2.29301C7.31603 1.90201 6.68403 1.90201 6.29303 2.29301L3.58103 5.00501C3.20103 5.38501 2.98703 5.90701 2.99503 6.44001C3.01803 7.86401 3.39503 12.81 7.29303 16.708C11.191 20.606 16.137 20.982 17.562 21.006C17.567 21.006 17.585 21.006 17.59 21.006C18.118 21.006 18.617 20.798 18.995 20.42L21.707 17.708C22.098 17.317 22.098 16.685 21.707 16.294L17.707 12.293ZM17.58 19.005C16.332 18.984 12.062 18.649 8.70703 15.293C5.34103 11.927 5.01503 7.64201 4.99503 6.41901L7.00003 4.41401L9.58603 7.00001L8.29303 8.29301C8.05403 8.53101 7.95203 8.87501 8.02103 9.20501C8.04503 9.32001 8.63203 12.047 10.292 13.707C11.952 15.367 14.679 15.954 14.794 15.978C15.127 16.049 15.468 15.946 15.706 15.707L17 14.414L19.586 17L17.58 19.005Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="tel" placeholder="Телефон" class="input-tel">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C2.897 4 2 4.897 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.897 21.103 4 20 4ZM20 6V6.511L12 12.734L4 6.512V6H20ZM4 18V9.044L11.386 14.789C11.566 14.93 11.783 15 12 15C12.217 15 12.434 14.93 12.614 14.789L20 9.044L20.002 18H4Z" fill="#98A1A6"/></svg></div>
+									<input type="email" name="email" placeholder="Email">
+								</div>
+								<button class="main-btn">Получить консультацию</button>
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.09399 7.48734L2.23932 8.51267L6.75199 12.272L13.846 3.76067L12.8207 2.90601L6.58132 10.3947L3.09399 7.48734Z" fill="white"/></svg></span>
+									<p>Я согласен с условиями <a href="#">соглашения</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="main-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.707 12.707L17.293 11.293L13 15.586V6H11V15.586L6.70703 11.293L5.29303 12.707L12 19.414L18.707 12.707Z" fill="#374146"/></svg></div>
+			</div>
+			<div class="main-bottom">
+				<div class="main-col">
+					<div class="main-wrap">
+						<div class="main-ico"><img src="img/main-ico-1.svg" alt=""></div>
+						<p>Экономия времени на формирование декларации</p>
+					</div>
+				</div>
+				<div class="main-col">
+					<div class="main-wrap">
+						<div class="main-ico"><img src="img/main-ico-2.svg" alt=""></div>
+						<p>Автоматизированная проверка декларации перед отправкой</p>
+					</div>
+				</div>
+				<div class="main-col">
+					<div class="main-wrap">
+						<div class="main-ico"><img src="img/main-ico-3.svg" alt=""></div>
+						<p>Корректировка декларации в учетной системе</p>
+					</div>
+				</div>
+				<div class="main-col">
+					<div class="main-wrap">
+						<div class="main-ico"><img src="img/main-ico-4.svg" alt=""></div>
+						<p>Снижение количества замечаний от налоговой инспекции</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start job -->
+	<section class="job">
+		<div class="wrapper">
+			<h2 class="section-title">В работе вы могли сталкиваться со следующими проблемами</h2>
+			<div class="job-row">
+				<div class="job-col">
+					<span class="job-subtitle"><b>Бухгалтеры</b></span>
+					<div class="job-wrap">
+						<div class="job-block">
+							<span class="job-num">1</span>
+							<span class="job-title">Подготовка декларации отнимает много времени</span>
+							<p>Декларация содержит внушительный объём информации, в том числе документы контрагентов, зачастую поступающие после отчетного периода. Материалы проходят многоступенчатую экспертизу c привлечением нескольких сотрудников. При этом проверка должна осуществляться в ограниченные сроки.</p>
+						</div>
+						<div class="job-block">
+							<span class="job-num">2</span>
+							<span class="job-title">Качественная проверка данных требует больших усилий</span>
+							<p>При использовании стандартного решения SAP, чтобы увидеть декларацию, нужно сформировать несколько отчетов и пройти через разные окна в 475 транзакциях.  Это долго и трудозатратно. Также бухгалтерам приходится использовать большое количество разных программ для выполнения корректировок. Процесс усложняет редактирование декларации — ошибка в файле одной программы влечет за собой ошибки во всех остальных.</p>
+						</div>
+					</div>
+				</div>
+				<div class="job-col">
+					<span class="job-subtitle"><b>IT-специалисты</b></span>
+					<div class="job-wrap">
+						<div class="job-block">
+							<span class="job-num">1</span>
+							<span class="job-title">Нет подходящего IТ-решения</span>
+							<p>Стандартный продукт SAP He обладает достаточной для бухгалтеров компании функциональностью. В связи с этим IT-специалисту нужно искать альтернативные решения. Но рынок таких систем недостаточно развит.</p>
+						</div>
+						<div class="job-block">
+							<span class="job-num">2</span>
+							<span class="job-title">Отсутствие ресурсов на создание своего решения</span>
+							<p>Разработка программы с нуля — непредсказуемый процесс, и, как правило, первые итерации не приводят к успеху. При этом создание собственного продукта с нужной функциональностью требует больших финансовых и временных затрат.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end job -->
+	<!-- start infosystem -->
+	<section class="infosystem">
+		<div class="infosystem-bg"><img src="img/infosystem-bg.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="infosystem-top">
+				<div class="infosystem-top__wrap">
+					<h2 class="section-title">Инфосистема НДС <span>на базе SAP</span></h2>
+					<p>Программный комплекс для создания, проверки, редактирования и подачи декларации НДС</p>
+				</div>
+			</div>
+			<div class="infosystem-img"><img src="img/infosystem-img.png" alt=""></div>
+			<div class="infosystem-wrap">
+				<div class="infosystem-row">
+					<div class="infosystem-col">
+						<p>Представляет собой расширение, которое инсталлируется в используемую в компании систему SAP в виде программного кода</p>
+					</div>
+					<div class="infosystem-col">
+						<p>Для установки расширения обязатепьно наличие SАР HANA</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end infosystem -->
+	<!-- start action -->
+	<section class="action">
+		<div class="wrapper">
+			<div class="action-wrap">
+				<div class="action-bg" style="background-image: url(img/main-bg-2.jpg);"></div>
+				<div class="action-row">
+					<div class="action-info">
+						<h1 class="action-head">Оставьте заявку на бесплатную консультацию</h1>
+						<p>и узнайте больше о возможностях Инфосистемы НДС на базе SAP</p>
+					</div>
+					<div class="action-form">
+						<div class="action-form__wrap">
+							<form action="POST">
+								<h3 class="action-subtitle">Заявка</h3>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.243 2 7 4.243 7 7C7 9.757 9.243 12 12 12C14.757 12 17 9.757 17 7C17 4.243 14.757 2 12 2ZM12 10C10.346 10 9 8.654 9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7C15 8.654 13.654 10 12 10ZM21 21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H5V20C5 17.243 7.243 15 10 15H14C16.757 15 19 17.243 19 20V21H21Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="name" placeholder="Имя">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 12.293C17.316 11.902 16.684 11.902 16.293 12.293L14.699 13.887C13.96 13.667 12.581 13.167 11.707 12.293C10.833 11.419 10.333 10.04 10.113 9.30101L11.707 7.70701C12.098 7.31601 12.098 6.68401 11.707 6.29301L7.70703 2.29301C7.31603 1.90201 6.68403 1.90201 6.29303 2.29301L3.58103 5.00501C3.20103 5.38501 2.98703 5.90701 2.99503 6.44001C3.01803 7.86401 3.39503 12.81 7.29303 16.708C11.191 20.606 16.137 20.982 17.562 21.006C17.567 21.006 17.585 21.006 17.59 21.006C18.118 21.006 18.617 20.798 18.995 20.42L21.707 17.708C22.098 17.317 22.098 16.685 21.707 16.294L17.707 12.293ZM17.58 19.005C16.332 18.984 12.062 18.649 8.70703 15.293C5.34103 11.927 5.01503 7.64201 4.99503 6.41901L7.00003 4.41401L9.58603 7.00001L8.29303 8.29301C8.05403 8.53101 7.95203 8.87501 8.02103 9.20501C8.04503 9.32001 8.63203 12.047 10.292 13.707C11.952 15.367 14.679 15.954 14.794 15.978C15.127 16.049 15.468 15.946 15.706 15.707L17 14.414L19.586 17L17.58 19.005Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="tel" placeholder="Телефон" class="input-tel">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C2.897 4 2 4.897 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.897 21.103 4 20 4ZM20 6V6.511L12 12.734L4 6.512V6H20ZM4 18V9.044L11.386 14.789C11.566 14.93 11.783 15 12 15C12.217 15 12.434 14.93 12.614 14.789L20 9.044L20.002 18H4Z" fill="#98A1A6"/></svg></div>
+									<input type="email" name="email" placeholder="Email">
+								</div>
+								<button class="main-btn">Получить консультацию</button>
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.09399 7.48734L2.23932 8.51267L6.75199 12.272L13.846 3.76067L12.8207 2.90601L6.58132 10.3947L3.09399 7.48734Z" fill="white"/></svg></span>
+									<p>Я согласен с условиями <a href="#">соглашения</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start functionality -->
+	<section class="functionality">
+		<div class="wrapper">
+			<h2 class="section-title">Функциональность Инфосистемы НДС и решаемые задачи</h2>
+			<div class="functionality-row">
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="functionality-img"><img src="img/functionality-1.png" alt=""></div>
+						<h3 class="functionality-title">Автоматизированная проверка налоговых деклараций</h3>
+						<p>Инфосистема НДС за 1 минуту выявляет имеющиеся в отчётности ошибки и противоречия. В настройках системы заложен комплекс проверок, включающий трудоёмкие или невозможные для выполнения вручную</p>
+						<a href="img/modal.png" class="fancybox functionality-link" data-fancybox="gallery" data-caption="Слева выделена сама функция «Проверить данные разделы». Если её нажать, то каждая строка раздела проверяется по комплексу проверок. Для каждой строки, где найдены какие-либо ошибки выводится лог внизу. При двойном клике на ошибку происходит позиционирование на проблемном документе.">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="functionality-img"><img src="img/functionality-2.png" alt=""></div>
+						<h3 class="functionality-title">Расшифровка строк декларации в 1 клик</h3>
+						<p>В разделах 3 и 4 каждая строка расшифровывается по двойному клику до бухгалтерской проводки и строки книги покупок/продаж. Расшифровка представляет собой отчёт, который можно предоставить в налоговый орган в качестве ответа на требование при проверке.</p>
+						<a href="img/modal.png" class="fancybox functionality-link" data-fancybox="gallery" data-caption="Слева выделена сама функция «Проверить данные разделы». Если её нажать, то каждая строка раздела проверяется по комплексу проверок. Для каждой строки, где найдены какие-либо ошибки выводится лог внизу. При двойном клике на ошибку происходит позиционирование на проблемном документе.">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="functionality-img"><img src="img/functionality-3.png" alt=""></div>
+						<h3 class="functionality-title">Возможность «проваливания» в документы</h3>
+						<p>Разделы 8, 9, 10 и 11 формируются по счетам-фактурам с возможностью расшифровки по клику до бухгалтерских проводок.</p>
+						<a href="img/modal.png" class="fancybox functionality-link" data-fancybox="gallery" data-caption="Слева выделена сама функция «Проверить данные разделы». Если её нажать, то каждая строка раздела проверяется по комплексу проверок. Для каждой строки, где найдены какие-либо ошибки выводится лог внизу. При двойном клике на ошибку происходит позиционирование на проблемном документе.">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="functionality-img"><img src="img/functionality-4.png" alt=""></div>
+						<h3 class="functionality-title">Формирование налоговой декларации по НДС</h3>
+						<p>Система в автоматизированном режиме формирует декларацию в привычном виде — как на бумаге, после чего её можно сразу подать в налоговые органы</p>
+						<a href="img/modal.png" class="fancybox functionality-link" data-fancybox="gallery" data-caption="Слева выделена сама функция «Проверить данные разделы». Если её нажать, то каждая строка раздела проверяется по комплексу проверок. Для каждой строки, где найдены какие-либо ошибки выводится лог внизу. При двойном клике на ошибку происходит позиционирование на проблемном документе.">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="functionality-img"><img src="img/functionality-5.png" alt=""></div>
+						<h3 class="functionality-title">Автоматический расчёт 1-7 разделов и итогов по декларации</h3>
+						<p>Расчёт происходит в интерфейсе работы с декларацией, с учётом возможных исправлений разделов 8 и 9. Таким образом, пользователю не нужно заходить в разные программы и отдельно формировать в них документ XML.</p>
+						<a href="img/modal.png" class="fancybox functionality-link" data-fancybox="gallery" data-caption="Слева выделена сама функция «Проверить данные разделы». Если её нажать, то каждая строка раздела проверяется по комплексу проверок. Для каждой строки, где найдены какие-либо ошибки выводится лог внизу. При двойном клике на ошибку происходит позиционирование на проблемном документе.">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="functionality-img"><img src="img/functionality-6.png" alt=""></div>
+						<h3 class="functionality-title">Расширенная функциональность</h3>
+						<p>Может использоваться как совместно со стандартными книгами покупок, продаж и журналом счетов-фактур, так и с собственными реестрами.</p>
+						<a href="img/modal.png" class="fancybox functionality-link" data-fancybox="gallery" data-caption="Слева выделена сама функция «Проверить данные разделы». Если её нажать, то каждая строка раздела проверяется по комплексу проверок. Для каждой строки, где найдены какие-либо ошибки выводится лог внизу. При двойном клике на ошибку происходит позиционирование на проблемном документе.">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end functionality -->
+	<!-- start results -->
+	<section class="results">
+		<div class="wrapper">
+			<h2 class="section-title">Результаты внедрения<span>Инфосистемы НДС</span></h2>
+			<div class="results-row">
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-1.svg" alt=""></div>
+						<span class="results-subtitle">Ускорение проверки декларации</span>
+						<p>Неточности в отчетности выявляются одним кликом</p>
+					</div>
+				</div><!-- col -->
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-2.svg" alt=""></div>
+						<span class="results-subtitle">Уменьшение количества замечаний от налоговой инспекции</span>
+						<p>Обеспечивается благодаря проверкам, заложенным в настройках системы</p>
+					</div>
+				</div><!-- col -->
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-3.svg" alt=""></div>
+						<span class="results-subtitle">Минимизация ошибок при подаче декларации</span>
+						<p>Оптимизация работы отдела бухгалтерии и автоматизация проверок сокращают ошибки человеческого фактора</p>
+					</div>
+				</div><!-- col -->
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-4.svg" alt=""></div>
+						<span class="results-subtitle">Снижение трудозатрат для отдела бухгалтерии</span>
+						<p>Автоматизация и выполнение всех действий в одном окне снимают высокую нагрузку с бухгалтеров</p>
+					</div>
+				</div><!-- col -->
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-5.svg" alt=""></div>
+						<span class="results-subtitle">Своевременная и точная уплата налогов</span>
+						<p>Отлаженный процесс работы с декларацией позволяет избежать просрочек и повышенных налоговых начислений</p>
+					</div>
+				</div><!-- col -->
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-6.svg" alt=""></div>
+						<span class="results-subtitle">Рациональное использование финансов компании</span>
+						<p>Минимизация ошибок в декларациях и учёте снижает количество недоимок, штрафов и пени за просрочки</p>
+					</div>
+				</div><!-- col -->
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-7.svg" alt=""></div>
+						<span class="results-subtitle">Отсутствие рисков при внедрении продукта собственной разработки</span>
+						<p>Система доказала свою эффективность на практике — продукт активно используется российскими компаниями</p>
+					</div>
+				</div><!-- col -->
+				<div class="results-col">
+					<div class="results-wrap">
+						<div class="results-ico"><img src="img/results-ico-8.svg" alt=""></div>
+						<span class="results-subtitle">Сокращение временных затрат на внедрение и поддержку нового продукта</span>
+						<p>Трудоёмкость поддержки готового решения сведена к минимуму</p>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end results -->
+	<!-- start VAT -->
+	<section class="VAT">
+		<div class="wrapper">
+			<div class="VAT-info">
+				<h2 class="section-title">Инфосистема НДС</h2>
+				<p>это точная работа в ограниченные сроки. Используя готовое решение, вы сможете делать проверку декларации гораздо быстрее<span>*</span></p>
+			</div>
+			<div class="VAT-wrap">
+				<div class="VAT-ico"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.84234 14.2891L20.9285 19.9056V0H35.0715V19.9056L52.1577 14.2891L56 26.5959L38.5869 32.0472L49.9504 48.4838L39.4861 56L28.1226 40.472L16.4321 56L5.96788 48.4838L17.4131 32.0472L0 26.5959L3.84234 14.2891Z" fill="#F09000"/></svg></div>
+				<div class="VAT-row">
+					<div class="VAT-img"><img src="img/VAT-img.svg" alt=""></div>
+					<div class="VAT-descr">
+						<div class="VAT-block">
+							<p>проверка декларации, размером</p>
+							<span>2000 строк </span>
+						</div>
+						<div class="VAT-block">
+							<p>занимает всего </p>
+							<span>7 минут</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end VAT -->
+	<!-- start solutions -->
+	<section class="solutions">
+		<div class="wrapper">
+			<div class="solutions-row solutions-top">
+				<div class="solutions-col solutions-col__1 solutions-mob">
+					<span class="solutions-subtitle"></span>
+				</div>
+				<div class="solutions-col solutions-col__2">
+					<span class="solutions-subtitle">Инфосистема НДС</span>
+				</div>
+				<div class="solutions-col solutions-col__3">
+					<span class="solutions-subtitle">Стандартное решение</span>
+				</div>
+			</div>
+			<div class="solutions-row">
+				<div class="solutions-col solutions-col__1">
+					<p>Проверка корректности возмещения НДС для операций, которые отражаются в разделах 8 и 9 (авансы, налоговый агент и т. д.)</p>
+				</div>
+				<div class="solutions-col solutions-col__2">
+					<p>Проверочный отчёт по всем операциям. <br>Время проверки – 1-2 минуты</p>
+				</div>
+				<div class="solutions-col solutions-col__3">
+					<p>Возможна выборочная проверка. Автоматизированных средств не предусмотрено</p>
+				</div>
+			</div>
+			<div class="solutions-row">
+				<div class="solutions-col solutions-col__1">
+					<p>Проверка полноты отчётности (в сравнении с главной книгой)</p>
+				</div>
+				<div class="solutions-col solutions-col__2">
+					<p>Проверочный отчёт по всем операциям. <br>Время проверки – 1-2 минуты</p>
+				</div>
+				<div class="solutions-col solutions-col__3">
+					<p>Предусмотрены в режиме одного окна с декларацией. Время проверки — в зависимости от объёма — до 5 минут</p>
+				</div>
+			</div>
+			<div class="solutions-row">
+				<div class="solutions-col solutions-col__1">
+					<p>Форматные проверки</p>
+				</div>
+				<div class="solutions-col solutions-col__2">
+					<p>Предусмотрены в режиме одного окна с декларацией. Время проверки — в зависимости от объёма — до 5 минут</p>
+				</div>
+				<div class="solutions-col solutions-col__3">
+					<p>Не реализованы. Нужно загружать XML в тестер или «Налогоплательщик ЮЛ»</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end solutions -->
+	<!-- start action -->
+	<section class="action">
+		<div class="wrapper">
+			<div class="action-wrap">
+				<div class="action-bg" style="background-image: url(img/main-bg-2.jpg);"></div>
+				<div class="action-row">
+					<div class="action-info">
+						<h1 class="action-head">Оставьте заявку на бесплатную консультацию</h1>
+						<p>и узнайте больше о возможностях Инфосистемы НДС на базе SAP</p>
+					</div>
+					<div class="action-form">
+						<div class="action-form__wrap">
+							<form action="POST">
+								<h3 class="action-subtitle">Заявка</h3>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.243 2 7 4.243 7 7C7 9.757 9.243 12 12 12C14.757 12 17 9.757 17 7C17 4.243 14.757 2 12 2ZM12 10C10.346 10 9 8.654 9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7C15 8.654 13.654 10 12 10ZM21 21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H5V20C5 17.243 7.243 15 10 15H14C16.757 15 19 17.243 19 20V21H21Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="name" placeholder="Имя">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 12.293C17.316 11.902 16.684 11.902 16.293 12.293L14.699 13.887C13.96 13.667 12.581 13.167 11.707 12.293C10.833 11.419 10.333 10.04 10.113 9.30101L11.707 7.70701C12.098 7.31601 12.098 6.68401 11.707 6.29301L7.70703 2.29301C7.31603 1.90201 6.68403 1.90201 6.29303 2.29301L3.58103 5.00501C3.20103 5.38501 2.98703 5.90701 2.99503 6.44001C3.01803 7.86401 3.39503 12.81 7.29303 16.708C11.191 20.606 16.137 20.982 17.562 21.006C17.567 21.006 17.585 21.006 17.59 21.006C18.118 21.006 18.617 20.798 18.995 20.42L21.707 17.708C22.098 17.317 22.098 16.685 21.707 16.294L17.707 12.293ZM17.58 19.005C16.332 18.984 12.062 18.649 8.70703 15.293C5.34103 11.927 5.01503 7.64201 4.99503 6.41901L7.00003 4.41401L9.58603 7.00001L8.29303 8.29301C8.05403 8.53101 7.95203 8.87501 8.02103 9.20501C8.04503 9.32001 8.63203 12.047 10.292 13.707C11.952 15.367 14.679 15.954 14.794 15.978C15.127 16.049 15.468 15.946 15.706 15.707L17 14.414L19.586 17L17.58 19.005Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="tel" placeholder="Телефон" class="input-tel">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C2.897 4 2 4.897 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.897 21.103 4 20 4ZM20 6V6.511L12 12.734L4 6.512V6H20ZM4 18V9.044L11.386 14.789C11.566 14.93 11.783 15 12 15C12.217 15 12.434 14.93 12.614 14.789L20 9.044L20.002 18H4Z" fill="#98A1A6"/></svg></div>
+									<input type="email" name="email" placeholder="Email">
+								</div>
+								<button class="main-btn">Получить консультацию</button>
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.09399 7.48734L2.23932 8.51267L6.75199 12.272L13.846 3.76067L12.8207 2.90601L6.58132 10.3947L3.09399 7.48734Z" fill="white"/></svg></span>
+									<p>Я согласен с условиями <a href="#">соглашения</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start advantage -->
+	<section class="advantage">
+		<div class="wrapper">
+			<h2 class="section-title">Преимущества <span>Инфосистемы НДС</span></h2>
+			<div class="functionality-row">
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="advantage-ico">1</div>
+						<h3 class="functionality-title">Проверка корректности декларации в 1 клик</h3>
+						<p>В программе реализованы форматные проверки, проводимые ФНС при получении декларации, а также сверки с бухучётом. Это позволяет ускорить выявление и последующее исправление проблем, возникших в процессе подготовки отчётности.</p>
+						<a href="#" class="functionality-link">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="advantage-ico">2</div>
+						<h3 class="functionality-title">Гибкая работа с декларацией</h3>
+						<p>Можно вносить правки в декларацию на любом этапе её формирования, не меняя данные в учёте. Программа позволяет корректировать данные в декларации, в частности реквизиты организации. Все изменения контролируются, сохраняются и учитываются при формировании отчётности за следующие периоды.</p>
+						<a href="#" class="functionality-link">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="advantage-ico">3</div>
+						<h3 class="functionality-title">Загрузка деклараций из внешних программ</h3>
+						<p>Документы выгружаются в формате XML. Эти данные можно использовать при подготовке уточнённых деклараций по предыдущим периодам и для проверки отчётности за последующие.</p>
+						<a href="#" class="functionality-link">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="advantage-ico">4</div>
+						<h3 class="functionality-title">Все действия — в одном окне</h3>
+						<p>Вам не нужно запускать дополнительные приложения и транзакции для выполнения той или иной задачи — весь процесс осуществляется в рамках одного окна.</p>
+						<a href="#" class="functionality-link">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+				<div class="functionality-col">
+					<div class="functionality-wrap">
+						<div class="advantage-ico">5</div>
+						<h3 class="functionality-title">Удобство для пользователей любого уровня</h3>
+						<p>Декларация в программе выглядит как её бумажный прототип, поэтому с ней легко и привычно работать. Интуитивно понятный интерфейс делает решение удобным как для IT-специалистов, так и для бухгалтеров.</p>
+						<a href="#" class="functionality-link">
+							<img src="img/zoom.svg" alt="">
+							Подробнее
+						</a>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end advantage -->
+	<!-- start acquisition -->
+	<section class="acquisition">
+		<div class="acquisition-bg"><img src="img/acquisition-bg.svg" alt=""></div>
+		<div class="wrapper">
+			<h2 class="section-title">Что вы получаете, приобретая Инфосистему НДС на базе SAP:</h2>
+			<div class="acquisition-row">
+				<div class="acquisition-col">
+					<div class="acquisition-block">
+						<div class="acquisition-ico"><img src="img/acquisition-ico-1.svg" alt=""></div>
+						<h3 class="acquisition-title">Программа</h3>
+						<p>Разворачивается внутри вашей текущей системы SAP, расширяя её функциональность. После внедрения продукта вы сможете формировать декларацию по НДС, получать печатные формы, проводить комплекс проверок и расшифровывать строки декларации до первичного документа.</p>
+					</div>
+					<div class="acquisition-block">
+						<div class="acquisition-ico"><img src="img/acquisition-ico-2.svg" alt=""></div>
+						<h3 class="acquisition-title">Обучение и консалтинг</h3>
+						<p>Проводим обучение работе в системе с демонстрацией её функций и возможностей. В течение адаптационного периода оказываем информационную поддержку, отвечаем на любые вопросы и помогаем их решить.</p>
+					</div>
+					<div class="acquisition-block">
+						<div class="acquisition-ico"><img src="img/acquisition-ico-3.svg" alt=""></div>
+						<h3 class="acquisition-title">Сопровождение при подготовке и подаче первой декларации</h3>
+						<p>Вместе с вашим отделом бухгалтерии мы пройдём все этапы формирования декларации в SAP за один отчётный период и подадим её в налоговую инспекцию.</p>
+					</div>
+				</div>
+				<div class="acquisition-col">
+					<div class="acquisition-block">
+						<div class="acquisition-ico"><img src="img/acquisition-ico-4.svg" alt=""></div>
+						<h3 class="acquisition-title">Внедрение</h3>
+						<p>Мы проводим анализ текущих настроек вашей SAP, устанавливаем, настраиваем и, при необходимости, кастомизируем Инфосистему НДС, дорабатывая отдельные модули до отраслевых особенностей вашей сферы деятельности.</p>
+					</div>
+					<div class="acquisition-block">
+						<div class="acquisition-ico"><img src="img/acquisition-ico-5.svg" alt=""></div>
+						<h3 class="acquisition-title">Документация</h3>
+						<p>В пакет Инфосистемы НДС входит методическое пособие, которое поможет не только работать в системе, но и быстро проводить обучение для новых сотрудников.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end acquisition -->
+	<!-- start action -->
+	<section class="action">
+		<div class="wrapper">
+			<div class="action-wrap">
+				<div class="action-bg" style="background-image: url(img/main-bg-2.jpg);"></div>
+				<div class="action-row">
+					<div class="action-info">
+						<h1 class="action-head">Оставьте заявку на бесплатную консультацию</h1>
+						<p>и узнайте больше о возможностях Инфосистемы НДС на базе SAP</p>
+					</div>
+					<div class="action-form">
+						<div class="action-form__wrap">
+							<form action="POST">
+								<h3 class="action-subtitle">Заявка</h3>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.243 2 7 4.243 7 7C7 9.757 9.243 12 12 12C14.757 12 17 9.757 17 7C17 4.243 14.757 2 12 2ZM12 10C10.346 10 9 8.654 9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7C15 8.654 13.654 10 12 10ZM21 21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H5V20C5 17.243 7.243 15 10 15H14C16.757 15 19 17.243 19 20V21H21Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="name" placeholder="Имя">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 12.293C17.316 11.902 16.684 11.902 16.293 12.293L14.699 13.887C13.96 13.667 12.581 13.167 11.707 12.293C10.833 11.419 10.333 10.04 10.113 9.30101L11.707 7.70701C12.098 7.31601 12.098 6.68401 11.707 6.29301L7.70703 2.29301C7.31603 1.90201 6.68403 1.90201 6.29303 2.29301L3.58103 5.00501C3.20103 5.38501 2.98703 5.90701 2.99503 6.44001C3.01803 7.86401 3.39503 12.81 7.29303 16.708C11.191 20.606 16.137 20.982 17.562 21.006C17.567 21.006 17.585 21.006 17.59 21.006C18.118 21.006 18.617 20.798 18.995 20.42L21.707 17.708C22.098 17.317 22.098 16.685 21.707 16.294L17.707 12.293ZM17.58 19.005C16.332 18.984 12.062 18.649 8.70703 15.293C5.34103 11.927 5.01503 7.64201 4.99503 6.41901L7.00003 4.41401L9.58603 7.00001L8.29303 8.29301C8.05403 8.53101 7.95203 8.87501 8.02103 9.20501C8.04503 9.32001 8.63203 12.047 10.292 13.707C11.952 15.367 14.679 15.954 14.794 15.978C15.127 16.049 15.468 15.946 15.706 15.707L17 14.414L19.586 17L17.58 19.005Z" fill="#98A1A6"/></svg></div>
+									<input type="text" name="tel" placeholder="Телефон" class="input-tel">
+								</div>
+								<div class="input-block">
+									<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C2.897 4 2 4.897 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.897 21.103 4 20 4ZM20 6V6.511L12 12.734L4 6.512V6H20ZM4 18V9.044L11.386 14.789C11.566 14.93 11.783 15 12 15C12.217 15 12.434 14.93 12.614 14.789L20 9.044L20.002 18H4Z" fill="#98A1A6"/></svg></div>
+									<input type="email" name="email" placeholder="Email">
+								</div>
+								<button class="main-btn">Получить консультацию</button>
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.09399 7.48734L2.23932 8.51267L6.75199 12.272L13.846 3.76067L12.8207 2.90601L6.58132 10.3947L3.09399 7.48734Z" fill="white"/></svg></span>
+									<p>Я согласен с условиями <a href="#">соглашения</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start steps -->
+	<section class="steps">
+		<div class="wrapper">
+			<h2 class="section-title">Как выглядит работа с нами</h2>
+			<div class="steps-row">
+				<ul class="steps-list tab-list">
+					<li><a href="#tab-1" class="active">
+						<span class="steps-ico">1</span>
+						<b>Бесплатная консультация</b>
+					</a></li>
+					<li><a href="#tab-2">
+						<span class="steps-ico">2</span>
+						<b>Заключение договора</b>
+					</a></li>
+					<li><a href="#tab-3">
+						<span class="steps-ico">3</span>
+						<b>Инсталляция и адаптация системы</b>
+					</a></li>
+					<li><a href="#tab-4">
+						<span class="steps-ico">4</span>
+						<b>Ввод в эксплуатацию и обучение</b>
+					</a></li>
+					<li><a href="#tab-5">
+						<span class="steps-ico">5</span>
+						<b>Подача первой декларации с Инфосистемы НДС</b>
+					</a></li>
+				</ul>
+				<div class="steps-block">
+					<div class="steps-tab tab tab-active" id="tab-1">
+						<span class="steps-num">1</span>
+						<h3 class="steps-title">Бесплатная консультация</h3>
+						<a href="#" class="steps-link">Получить консультацию →</a>
+						<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+					</div>
+					<div class="steps-tab tab" id="tab-2">
+						<span class="steps-num">2</span>
+						<h3 class="steps-title">Бесплатная консультация</h3>
+						<a href="#" class="steps-link">Получить консультацию →</a>
+						<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+					</div>
+					<div class="steps-tab tab" id="tab-3">
+						<span class="steps-num">3</span>
+						<h3 class="steps-title">Бесплатная консультация</h3>
+						<a href="#" class="steps-link">Получить консультацию →</a>
+						<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+					</div>
+					<div class="steps-tab tab" id="tab-4">
+						<span class="steps-num">4</span>
+						<h3 class="steps-title">Бесплатная консультация</h3>
+						<a href="#" class="steps-link">Получить консультацию →</a>
+						<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+					</div>
+					<div class="steps-tab tab" id="tab-5">
+						<span class="steps-num">5</span>
+						<h3 class="steps-title">Бесплатная консультация</h3>
+						<a href="#" class="steps-link">Получить консультацию →</a>
+						<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+					</div>
+				</div>
+			</div>
+			<div class="steps-mob">
+				<div class="accordeon">
+					<div class="accordeon-top">
+						<span class="accordeon-num">1</span>
+						<span class="accordeon-name">Бесплатная консультация</span>
+						<div class="accordeon-arrow"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L11.1962 0H0.803848L6 6Z" fill="#98A1A6"/></svg></div>
+					</div>
+					<div class="accordeon-block">
+						<div class="accordeon-block__wrap">
+							<a href="#" class="steps-link">Получить консультацию →</a>
+							<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordeon">
+					<div class="accordeon-top">
+						<span class="accordeon-num">2</span>
+						<span class="accordeon-name">Заключение договора</span>
+						<div class="accordeon-arrow"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L11.1962 0H0.803848L6 6Z" fill="#98A1A6"/></svg></div>
+					</div>
+					<div class="accordeon-block">
+						<div class="accordeon-block__wrap">
+							<a href="#" class="steps-link">Получить консультацию →</a>
+							<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordeon">
+					<div class="accordeon-top">
+						<span class="accordeon-num">3</span>
+						<span class="accordeon-name">Инсталляция и адаптация системы</span>
+						<div class="accordeon-arrow"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L11.1962 0H0.803848L6 6Z" fill="#98A1A6"/></svg></div>
+					</div>
+					<div class="accordeon-block">
+						<div class="accordeon-block__wrap">
+							<a href="#" class="steps-link">Получить консультацию →</a>
+							<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordeon">
+					<div class="accordeon-top">
+						<span class="accordeon-num">4</span>
+						<span class="accordeon-name">Ввод в эксплуатацию и обучение</span>
+						<div class="accordeon-arrow"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L11.1962 0H0.803848L6 6Z" fill="#98A1A6"/></svg></div>
+					</div>
+					<div class="accordeon-block">
+						<div class="accordeon-block__wrap">
+							<a href="#" class="steps-link">Получить консультацию →</a>
+							<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordeon">
+					<div class="accordeon-top">
+						<span class="accordeon-num">5</span>
+						<span class="accordeon-name">Подача первой декларации с Инфосистемы НДС</span>
+						<div class="accordeon-arrow"><svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L11.1962 0H0.803848L6 6Z" fill="#98A1A6"/></svg></div>
+					</div>
+					<div class="accordeon-block">
+						<div class="accordeon-block__wrap">
+							<a href="#" class="steps-link">Получить консультацию →</a>
+							<p>Выясняем, подходит ли решение для вашей компании и возможно ли его развернуть внутри действующей системы SAP. Обсуждаем особенности учёта на предприятии и определяем, необходимо ли кастомизировать продукт.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end steps -->
+	<!-- start fits -->
+	<section class="fits">
+		<div class="wrapper">
+			<h2 class="section-title">Для кого подходит <span>Инфосистема НДС</span></h2>
+			<p>Продукт предназначен для любых предприятий с SAP HANA, таких как:</p>
+			<div class="fits-row">
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-1.jpg" alt=""></div>
+					<span class="fits-name">Промышленные производства</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-2.jpg" alt=""></div>
+					<span class="fits-name">Крупный ритейл</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-3.jpg" alt=""></div>
+					<span class="fits-name">Нефтегазовые компании</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-4.jpg" alt=""></div>
+					<span class="fits-name">Банки</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-5.jpg" alt=""></div>
+					<span class="fits-name">Металлургия</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-6.jpg" alt=""></div>
+					<span class="fits-name">Энергетика</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-7.jpg" alt=""></div>
+					<span class="fits-name">Авиация</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-8.jpg" alt=""></div>
+					<span class="fits-name">Добыча леса</span>
+				</div><!-- col -->
+				<div class="fits-col">
+					<div class="fits-img"><img src="img/fits-9.jpg" alt=""></div>
+					<span class="fits-name">Строительные компании</span>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end fits -->
+	<!-- start company -->
+	<section class="company">
+		<div class="wrapper">
+			<div class="company-wrap">
+				<div class="company-logo"><img src="img/company-logo.png" alt=""></div>
+				<div class="company-info">
+					<div class="company-top">
+						<p>Разработчиком Инфосистемы НДС на базе SAP является ООО «Наука». Специалисты компании оказывают услуги по внедрению, адаптации, сопровождению и обучению работе в программе.</p>
+					</div>
+					<div class="company-row">
+						<div class="company-col">
+							<div class="company-ico"><img src="img/company-ico-1.svg" alt=""></div>
+							<span class="company-title">Профессионалы IT-индустрии</span>
+							<p>В компании работают лучшие разработчики, инженеры и консультанты с опытом создания, внедрения и сопровождения программных решений для крупных предприятий России и мира</p>
+						</div><!-- col -->
+						<div class="company-col">
+							<div class="company-ico"><img src="img/company-ico-2.svg" alt=""></div>
+							<span class="company-title">Широкий отраслевой охват</span>
+							<p>Внедряем систему как в организациях со стандартной отчётностью, так и на предприятиях более сложных с точки зрения налогового учёта отраслей — авиация, ритейл, строительство и др.</p>
+						</div><!-- col -->
+						<div class="company-col">
+							<div class="company-ico"><img src="img/company-ico-3.svg" alt=""></div>
+							<span class="company-title">Кастомизация продуктов под запросы клиента</span>
+							<p>На этапе подготовки к установке готового решения мы изучаем специфику сферы бизнеса заказчика, чтобы адаптировать продукт в соответствии с особенностями его деятельности</p>
+						</div><!-- col -->
+						<div class="company-col">
+							<div class="company-ico"><img src="img/company-ico-4.svg" alt=""></div>
+							<span class="company-title">Интеграционные решения</span>
+							<p>Перенос данных учёта из применяемых ранее программ в Инфосистему НДС позволяет работать с декларациями прошлых периодов</p>
+						</div><!-- col -->
+						<div class="company-col">
+							<div class="company-ico"><img src="img/company-ico-5.svg" alt=""></div>
+							<span class="company-title">Комплексный подход</span>
+							<p>В пакетное предложение входит весь спектр услуг: от изучения специфики бизнеса и внедрения программы в компании до подготовки и подачи первой декларации в SAP вместе с отделом бухгалтерии заказчика</p>
+						</div><!-- col -->
+						<div class="company-col">
+							<div class="company-ico"><img src="img/company-ico-6.svg" alt=""></div>
+							<span class="company-title">Информационная поддержка</span>
+							<p>Даём подробные консультации и отвечаем на любые вопросы клиента в рамках адаптационного периода</p>
+						</div><!-- col -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end company -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<h2 class="section-title">О нас в цифрах</h2>
+			<div class="about-row">
+				<div class="about-col">
+					<span class="about-num">29<b>+</b></span>
+					<p>лет работы на рынке информационных технологий</p>
+				</div><!-- col -->
+				<div class="about-col">
+					<span class="about-num">200<b>+</b></span>
+					<p>профессионалов в области IT-консалтинга, разработки программного обеспечения, системной интеграции</p>
+				</div><!-- col -->
+				<div class="about-col">
+					<span class="about-num">60<b>+</b></span>
+					<p>проектов по всей России в год, охватывающих производство, финансы, персонал, строительство, ремонты, материальное обеспечение, сбыт, отчетность.</p>
+				</div><!-- col -->
+				<div class="about-col">
+					<span class="about-num">30<b>+</b></span>
+					<p>научно-исследовательских работ выполнено для создания экономичного производства, снижения себестоимости продукции</p>
+				</div><!-- col -->
+				<div class="about-col">
+					<span class="about-num">3000<b>+</b></span>
+					<p>пользователей выполняют свои рабочие задачи через наши решения ежедневно</p>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start introduction -->
+	<section class="introduction">
+		<div class="wrapper">
+			<div class="introduction-wrap">
+				<div class="action-bg" style="background-image: url(img/main-bg-2.jpg);"></div>
+				<div class="introduction-top">
+					<h2 class="introduction-title">Внедрите Инфосистему НДС на базе SAP</h2>
+					<p>и экономьте время при формировании декларации</p>
+				</div>
+				<div class="introduction-form">
+					<form action="POST">
+						<span class="introduction-subtitle introduction-mob">Заявка на бесплатную консультацию</span>
+						<span class="introduction-subtitle">Заполните форму заявки, и мы свяжемся с вами, чтобы дать развернутую консультацию по внедрению Инфосистемы НДС в вашей организации.</span>
+						<div class="introduction-row">
+							<div class="input-block">
+								<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.243 2 7 4.243 7 7C7 9.757 9.243 12 12 12C14.757 12 17 9.757 17 7C17 4.243 14.757 2 12 2ZM12 10C10.346 10 9 8.654 9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7C15 8.654 13.654 10 12 10ZM21 21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H5V20C5 17.243 7.243 15 10 15H14C16.757 15 19 17.243 19 20V21H21Z" fill="#98A1A6"/></svg></div>
+								<input type="text" name="name" placeholder="Имя">
+							</div>
+							<div class="input-block">
+								<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.707 12.293C17.316 11.902 16.684 11.902 16.293 12.293L14.699 13.887C13.96 13.667 12.581 13.167 11.707 12.293C10.833 11.419 10.333 10.04 10.113 9.30101L11.707 7.70701C12.098 7.31601 12.098 6.68401 11.707 6.29301L7.70703 2.29301C7.31603 1.90201 6.68403 1.90201 6.29303 2.29301L3.58103 5.00501C3.20103 5.38501 2.98703 5.90701 2.99503 6.44001C3.01803 7.86401 3.39503 12.81 7.29303 16.708C11.191 20.606 16.137 20.982 17.562 21.006C17.567 21.006 17.585 21.006 17.59 21.006C18.118 21.006 18.617 20.798 18.995 20.42L21.707 17.708C22.098 17.317 22.098 16.685 21.707 16.294L17.707 12.293ZM17.58 19.005C16.332 18.984 12.062 18.649 8.70703 15.293C5.34103 11.927 5.01503 7.64201 4.99503 6.41901L7.00003 4.41401L9.58603 7.00001L8.29303 8.29301C8.05403 8.53101 7.95203 8.87501 8.02103 9.20501C8.04503 9.32001 8.63203 12.047 10.292 13.707C11.952 15.367 14.679 15.954 14.794 15.978C15.127 16.049 15.468 15.946 15.706 15.707L17 14.414L19.586 17L17.58 19.005Z" fill="#98A1A6"/></svg></div>
+								<input type="text" name="tel" placeholder="Телефон" class="input-tel">
+							</div>
+							<div class="input-block">
+								<div class="input-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4C2.897 4 2 4.897 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.897 21.103 4 20 4ZM20 6V6.511L12 12.734L4 6.512V6H20ZM4 18V9.044L11.386 14.789C11.566 14.93 11.783 15 12 15C12.217 15 12.434 14.93 12.614 14.789L20 9.044L20.002 18H4Z" fill="#98A1A6"/></svg></div>
+								<input type="email" name="email" placeholder="Email">
+							</div>
+							<button class="main-btn">Получить консультацию</button>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span class="checkbox-ico"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.09399 7.48734L2.23932 8.51267L6.75199 12.272L13.846 3.76067L12.8207 2.90601L6.58132 10.3947L3.09399 7.48734Z" fill="white"/></svg></span>
+							<p>Я согласен с условиями <a href="#">соглашения</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end introduction -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<ul class="footer-list">
+				<li>© 2020 — ООО «Наука»</li>
+				<li>ОРГН 1027802483301  •  ИНН 7804056944</li>
+				<li><a href="#">Политика конфиденциальности</a></li>
+			</ul>
+			<ul class="footer-list">
+				<li>Юридический адрес: 194223, Санкт-Петербург, </li>
+				<li>ул. Курчатова, д. 6, корп. 4, пом. 2Н, лит. А </li>
+				<li>Тел. +7 (812) 346 61 49</li>
+			</ul>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
