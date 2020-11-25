@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-row">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+					<p>Корпоративная платформа готовых IT-решений</p>
+				</div>
+				<ul class="header-list">
+					<li><a href="#">Функционал</a></li>
+					<li><a href="#">Наши работы</a></li>
+					<li><a href="#">Как мы работаем?</a></li>
+				</ul>
+				<div class="header-promo">
+					<div class="promo-bg"><svg width="180" height="75" viewBox="0 0 180 75" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.7" d="M5 10C5 7.23858 7.23858 5 10 5H170C172.761 5 175 7.23858 175 10V30.5L173.559 31.1004C164.897 34.7087 165.882 47.2843 175 49.5V70C175 72.7614 172.761 75 170 75H10C7.23858 75 5 72.7614 5 70V49.5L5.59589 49.2792C14.5101 45.9757 14.1057 33.2317 5 30.5V10Z" fill="white"/><path d="M0 5C0 2.23858 2.23858 0 5 0H175C177.761 0 180 2.23858 180 5V25.5L178.62 26.0429C169.759 29.5294 170.718 42.3698 180 44.5V65C180 67.7614 177.761 70 175 70H5C2.23858 70 0 67.7614 0 65V44.5L0.569626 44.3006C9.66257 41.1181 9.26894 28.1262 0 25.5V5Z" fill="white"/></svg></div>
+					<div class="header-ico"><img src="img/promo.png" alt=""></div>
+					<span class="header-title">Промо-акция</span>
+					<div class="header-price">за <span>150т.р.</span></div>
+				</div>
+			</div>
+			<div class="header-info">
+				<a href="#" class="header-call">
+					<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M9.97911 7.74817C9.95083 7.66295 9.77088 7.5374 9.43938 7.37183C9.34958 7.31964 9.22162 7.24872 9.05605 7.15874C8.89032 7.06877 8.7399 6.98586 8.60505 6.91008C8.46992 6.83434 8.34333 6.76095 8.22505 6.69003C8.20614 6.67583 8.14696 6.63446 8.04753 6.56565C7.94801 6.49705 7.86408 6.44613 7.79529 6.41292C7.72666 6.37991 7.65915 6.36329 7.59285 6.36329C7.49818 6.36329 7.37992 6.4308 7.23793 6.56565C7.09594 6.70068 6.96569 6.84735 6.84738 7.0061C6.72905 7.16479 6.60355 7.31145 6.47111 7.4464C6.33847 7.58141 6.22949 7.64884 6.14437 7.64884C6.10163 7.64884 6.04835 7.63693 5.98449 7.61342C5.92066 7.58976 5.8721 7.56949 5.83877 7.55315C5.80573 7.53646 5.74904 7.50342 5.66849 7.45354C5.5878 7.40382 5.54292 7.37658 5.53347 7.37183C4.88483 7.0119 4.32854 6.59996 3.86448 6.1361C3.40057 5.67197 2.98858 5.11572 2.62875 4.46701C2.62402 4.45753 2.59674 4.41253 2.54706 4.33209C2.49731 4.25156 2.46415 4.19482 2.44758 4.16159C2.43101 4.12848 2.41089 4.07992 2.38726 4.01601C2.36363 3.95211 2.35176 3.89887 2.35176 3.85621C2.35176 3.77104 2.41925 3.66208 2.5542 3.5295C2.68912 3.39698 2.83594 3.27146 2.9945 3.15317C3.15318 3.03489 3.29985 2.90464 3.43482 2.76265C3.56975 2.62059 3.63721 2.50228 3.63721 2.4076C3.63721 2.34136 3.62065 2.27382 3.58754 2.20519C3.5544 2.1364 3.50351 2.05247 3.43482 1.95299C3.36612 1.85357 3.3247 1.79444 3.31047 1.77541C3.23953 1.65712 3.16622 1.53048 3.09037 1.39553C3.01452 1.2606 2.93174 1.1102 2.84174 0.944507C2.75181 0.778885 2.68084 0.650998 2.6287 0.561048C2.46308 0.229678 2.33763 0.0496769 2.25238 0.0213683C2.21922 0.00716422 2.16947 0 2.10325 0C1.97534 0 1.80847 0.023632 1.60253 0.0710451C1.39651 0.118384 1.23439 0.168036 1.11601 0.2202C0.879265 0.319579 0.628343 0.608386 0.363167 1.08652C0.121699 1.5315 0.000976562 1.97193 0.000976562 2.40747C0.000976562 2.53521 0.00926019 2.65949 0.0258274 2.78034C0.0423947 2.90106 0.0719968 3.0372 0.114659 3.18875C0.157246 3.34024 0.191599 3.45278 0.21757 3.52606C0.243565 3.5994 0.292097 3.73076 0.363143 3.92022C0.434088 4.10962 0.47675 4.22557 0.490954 4.26818C0.656651 4.73221 0.853145 5.14647 1.08039 5.51107C1.45427 6.11709 1.96449 6.74339 2.61077 7.38971C3.25706 8.03598 3.88323 8.54619 4.48931 8.92022C4.85386 9.14743 5.26827 9.3439 5.73222 9.50972C5.77486 9.52385 5.89081 9.56642 6.08014 9.63761C6.26954 9.7086 6.40096 9.75714 6.47429 9.78318C6.54765 9.80925 6.66021 9.84363 6.81158 9.88629C6.96328 9.92896 7.0993 9.95856 7.22002 9.97525C7.34081 9.99159 7.46512 10 7.59288 10C8.02841 10 8.46885 9.87923 8.91391 9.63778C9.39199 9.37271 9.68073 9.12174 9.78016 8.88482C9.83244 8.76656 9.88197 8.6044 9.92931 8.39838C9.9768 8.19245 10.0004 8.02561 10.0004 7.89773C10.0005 7.83123 9.99339 7.78161 9.97911 7.74817Z" fill="#8A8A8A"/></g><defs><clipPath><rect width="10" height="10" fill="white"/></clipPath></defs></svg>
+					<span>Позвоните нам бесплатно</span>
+				</a>
+				<a href="#" class="header-phone">8 (800) 550 40-40 </a>
+				<a data-fancybox data-src="#modal-call" href="javascript:;" class="header-link">перезвоните мне</a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-bg"><img src="img/main-bg.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="main-info">
+				<h1 class="main-head">Повысим эффективность компании в <span>4 раза</span>, за счет запуска цифрового проекта на платформе <b>Bafsy</b></h1>
+				<div class="main-row">
+					<p>Посмотрите как выглядит <b>запуск промо-акций на платформе Bafsy</b></p>
+					<div class="main-mob"><svg width="58" height="48" viewBox="0 0 58 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M47.3353 43.9451L47.8316 43.8848L47.3353 43.9451ZM48.2073 46.9803L47.8316 43.8848L46.8389 44.0053L47.2146 47.1008L48.2073 46.9803ZM47.8316 43.8848C45.2303 22.4497 26.6213 6.59416 5.04505 7.42901L5.08372 8.42827C26.1399 7.61354 44.3003 23.0869 46.8389 44.0053L47.8316 43.8848Z" fill="#C0D4E2"/></svg></div>
+					<div class="main-arrow"><svg width="87" height="73" viewBox="0 0 87 73" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6871 5.75278L15.1908 5.81301L15.6871 5.75278ZM14.614 1.06024L15.1908 5.81301L16.1835 5.69254L15.6067 0.939762L14.614 1.06024ZM15.1908 5.81301C19.1682 38.5867 47.6207 62.8294 80.6102 61.553L80.5716 60.5537C48.1022 61.81 20.0982 37.9496 16.1835 5.69254L15.1908 5.81301Z" fill="#C0D4E2"/></svg></div>
+					<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="main-video link-youtube" style="background-image: url(img/main-video.png);">
+						<span class="main-play"><img src="img/play.svg" alt=""></span>
+					</a>
+				</div>
+			</div>
+			<div class="main-block">
+				<div class="main-wrap">
+					<h2 class="main-title">Пройдите тест</h2>
+					<p>за <b>2 минуты</b> и получите пакет <b>готового решения с зафиксированной ценой</b>для <b>повышения эффективности</b>вашей компании</p>
+				  <div class="main-wrap__bottom">
+				  	<div class="main-img"><img src="img/main-img.png" alt=""></div>
+				  	<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn">пройти тест</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start advantages -->
+	<section class="advantages">
+		<div class="wrapper">
+			<h2 class="section-title"><b>Сэкономьте ≈ 600 000 ₽</b> стоимости проекта, за счёт <b>заключения прямого договора</b></h2>
+			<div class="advantages-row">
+				<div class="advantages-col">
+					<div class="advantages-wrap">
+						<div class="advantages-ico"><img src="img/advantages-ico-1.svg" alt=""></div>
+						<span class="advantages-title">14 пакетов </span>
+						<p>готовых цифровых решений</p>
+					</div>
+				</div><!-- col -->
+				<div class="advantages-col">
+					<div class="advantages-wrap">
+						<div class="advantages-ico"><img src="img/advantages-ico-2.svg" alt=""></div>
+						<span class="advantages-title">Команда из 12</span>
+						<p><b>специалистов</b> работает над вашим проектом</p>
+					</div>
+				</div><!-- col -->
+				<div class="advantages-col">
+					<div class="advantages-wrap">
+						<div class="advantages-ico"><img src="img/advantages-ico-3.svg" alt=""></div>
+						<span class="advantages-title">Ваш личный менеджер </span>
+						<p>24 часа в сутки</p>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end advantages -->
+	<!-- start whyAreWe -->
+	<section class="whyAreWe">
+		<div class="wrapper">
+			<h2 class="section-title">Посмотрите видео за <b>3 минуты</b> и узнайте, почему российские и международные <b>крупные компании выбирают нас</b></h2>
+			<div class="whyAreWe-row">
+				<div class="whyAreWe-col">
+					<a href="#"><img src="img/whyAreWe-1.png" alt=""></a>
+				</div>
+				<div class="whyAreWe-col">
+					<a href="#"><img src="img/whyAreWe-2.png" alt=""></a>
+				</div>
+				<div class="whyAreWe-col">
+					<a href="#"><img src="img/whyAreWe-3.png" alt=""></a>
+				</div>
+				<div class="whyAreWe-col">
+					<a href="#"><img src="img/whyAreWe-4.png" alt=""></a>
+				</div>
+				<div class="whyAreWe-col">
+					<a href="#"><img src="img/whyAreWe-5.png" alt=""></a>
+				</div>
+				<div class="whyAreWe-col">
+					<a href="#" class="whyAreWe-all">
+						<span>+</span> ещё 249 клиентов
+					</a>
+				</div>
+			</div>
+			<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="whyAreWe-video link-youtube">
+				<img src="img/video.png" alt="">
+			</a>
+		</div>
+	</section>
+	<!-- end whyAreWe -->
+	<!-- start composition -->
+	<section class="composition">
+		<div class="wrapper">
+			<h2 class="section-title">Bafsy состоит из четырех элементов</h2>
+			<div class="composition-row">
+				<div class="composition-col">
+					<div class="composition-wrap">
+						<div class="composition-ico">
+							<img src="img/composition-ico-1.svg" alt="">
+						</div>
+						<h3 class="composition-title">14 пакетов <br>готовых решений</h3>
+						<p>Это пример текста в 2-3 строки, чтобы можно было оценить как это выглядит в этом блоке</p>
+						<a href="#" class="second-btn">Подробнее</a>
+					</div>
+				</div><!-- col -->
+				<div class="composition-col">
+					<div class="composition-wrap">
+						<div class="composition-ico">
+							<img src="img/composition-ico-2.svg" alt="">
+						</div>
+						<h3 class="composition-title">Встроенный движок <br>с 26+ модулями</h3>
+						<p>(CRM, Статистика, Аналитика, Email, Модуль интерфейса обработки обратной связи и т.д.)</p>
+						<a href="#" class="second-btn">Подробнее</a>
+					</div>
+				</div><!-- col -->
+				<div class="composition-col">
+					<div class="composition-wrap">
+						<div class="composition-ico">
+							<img src="img/composition-ico-3.svg" alt="">
+						</div>
+						<h3 class="composition-title">Визуальный zero-code конструктор</h3>
+						<p>Соберите сайт в несколько кликов</p>
+						<a href="#" class="second-btn">Подробнее</a>
+					</div>
+				</div><!-- col -->
+				<div class="composition-col">
+					<div class="composition-wrap">
+						<div class="composition-ico">
+							<img src="img/composition-ico-4.svg" alt="">
+						</div>
+						<h3 class="composition-title">Интеграция <br>с IT-сервисами компании</h3>
+						<p>Это пример текста в 2-3 строки, чтобы можно было оценить как это выглядит в этом блоке</p>
+						<a href="#" class="second-btn">Подробнее</a>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end composition -->
+	<!-- start portfolio -->
+	<section class="portfolio">
+		<div class="wrapper">
+			<div class="portfolio-top">
+				<h2 class="section-title"><b>За 4 года работы</b> мы успешно разработали 127 сайтов и запустили более <span>54 промо-акций со сложной  механикой</span></h2>
+				<div class="portfolio-company">
+					<img src="img/portfolio-ico.svg" alt="">
+					<p>Сотрудничаем с международными компаниями</p>
+				</div>
+			</div>
+			<div class="portfolio-row">
+				<div class="portfolio-sidebar">
+					<div class="portfolio-sidebar__wrap">
+						<p><b>Посмотрите работы</b>, которые мы выполнили для наших клиентов</p>
+						<ul class="portfolio-list">
+							<li><a href="#portfolio-1" class="active">Кейс 1</a></li>
+							<li><a href="#portfolio-2">Кейс 2</a></li>
+							<li><a href="#portfolio-3">Кейс 3</a></li>
+							<li><a href="#portfolio-4">Кейс 4</a></li>
+							<li><a href="#portfolio-5">Кейс 5</a></li>
+							<li><a href="#portfolio-6">Кейс 6</a></li>
+							<li><a href="#portfolio-7">Кейс 7</a></li>
+							<li><a href="#portfolio-8">Кейс 8</a></li>
+							<li><a href="#portfolio-9">Кейс 9</a></li>
+							<li><a href="#portfolio-10">Кейс 10</a></li>
+							<li><a href="#portfolio-11">Кейс 11</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="portfolio-content">
+					<div class="portfolio-tab portfolio-active" id="portfolio-1">
+						<div class="portfolio-slider">
+							<div class="portfolio-slide"></div>
+							<div class="portfolio-slide"></div>
+							<div class="portfolio-slide"></div>
+						</div>
+						<div class="portfolio-wrap">
+							<span class="portfolio-title">Кейс 1</span>
+							<div class="portfolio-block">
+								<span class="portfolio-subtitle">Задача</span>
+								<p>Но базовые сценарии поведения пользователей подвергнуты целой серии независимых исследований. В своём стремлении улучшить </p>
+							</div>
+							<div class="portfolio-block">
+								<span class="portfolio-subtitle">Выполненные работы</span>
+								<p>С учётом сложившейся международной обстановки, сплочённость команды профессионалов говорит о возможностях кластеризации усилий. </p>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-tab" id="portfolio-2">
+						<div class="portfolio-slider">
+							<div class="portfolio-slide"></div>
+							<div class="portfolio-slide"></div>
+							<div class="portfolio-slide"></div>
+						</div>
+						<div class="portfolio-wrap">
+							<span class="portfolio-title">Кейс 2</span>
+							<div class="portfolio-block">
+								<span class="portfolio-subtitle">Задача</span>
+								<p>Но базовые сценарии поведения пользователей подвергнуты целой серии независимых исследований. В своём стремлении улучшить </p>
+							</div>
+							<div class="portfolio-block">
+								<span class="portfolio-subtitle">Выполненные работы</span>
+								<p>С учётом сложившейся международной обстановки, сплочённость команды профессионалов говорит о возможностях кластеризации усилий. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end portfolio -->
+	<!-- start action -->
+	<section class="action"><!-- add class active for form done -->
+		<div class="wrapper">
+			<div class="action-wrap">
+				<div class="action-img"><img src="img/action.png" alt=""></div>
+				<div class="action-info">
+					<h3 class="action-title"><b>Оставьте заявку</b> и получите в ту же минуту нашу <b>книгу кейсов</b> с результатами крупных мировых компаний <b>со ссылками на полные версии сайтов</b></h3>
+					<div class="action-all">
+						<form action="POST">
+							<div class="action-form">
+								<div class="action-input">
+								  <input type="email" name="email" placeholder="Введите ваш e-mail">
+								  <div class="action-ico">
+								  	<div class="action-drop">
+								  		<span>Ваши данные защищены</span><br>и будут переданы по безопасному протоколу <span>https</span>
+								  	</div>
+								  	<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M15.625 8.49805H15V5.99805C15 3.24055 12.7575 0.998047 10 0.998047C7.2425 0.998047 5 3.24055 5 5.99805V8.49805H4.375C3.34167 8.49805 2.5 9.33888 2.5 10.373V19.123C2.5 20.1572 3.34167 20.998 4.375 20.998H15.625C16.6583 20.998 17.5 20.1572 17.5 19.123V10.373C17.5 9.33888 16.6583 8.49805 15.625 8.49805ZM6.66667 5.99805C6.66667 4.15971 8.16167 2.66471 10 2.66471C11.8383 2.66471 13.3333 4.15971 13.3333 5.99805V8.49805H6.66667V5.99805ZM10.8333 14.933V16.8314C10.8333 17.2914 10.4608 17.6647 10 17.6647C9.53917 17.6647 9.16667 17.2914 9.16667 16.8314V14.933C8.67083 14.6439 8.33333 14.1122 8.33333 13.498C8.33333 12.5789 9.08083 11.8314 10 11.8314C10.9192 11.8314 11.6667 12.5789 11.6667 13.498C11.6667 14.1122 11.3292 14.6439 10.8333 14.933Z" fill="#4C6782"/></g><defs><clipPath><rect width="20" height="20" fill="white" transform="translate(0 0.998047)"/></clipPath></defs></svg>
+								  </div>
+								</div>
+								<button class="main-btn">
+									Получить книгу кейсов
+									<span>PDF, 2.5МБ</span>
+								</button>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" checked>
+								<span class="checkbox-ico"><svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M9.9592 3.4244L3.75892 9.62468C3.7043 9.67929 3.61587 9.67929 3.56139 9.62468L0.0408644 6.10403C-0.0136215 6.04967 -0.0136215 5.96124 0.0408644 5.90663L0.896305 5.05119C0.950918 4.9967 1.03935 4.9967 1.09383 5.05119L3.66028 7.61751L8.90636 2.37143C8.9611 2.31694 9.04927 2.31694 9.10389 2.37143L9.9592 3.22687C10.0138 3.28136 10.0138 3.36966 9.9592 3.4244Z" fill="white"/></g><defs><clipPath><rect width="10" height="10" fill="white" transform="translate(0 0.998047)"/></clipPath></defs></svg></span>
+								<p>Я принимаю условия политики конфидециальности</p>
+							</div>
+						</form>
+					</div>
+					<div class="action-done">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36.4844 5.9375H3.51562C1.5732 5.9375 0 7.52047 0 9.45312V30.5469C0 32.491 1.58477 34.0625 3.51562 34.0625H36.4844C38.4105 34.0625 40 32.4977 40 30.5469V9.45312C40 7.52391 38.433 5.9375 36.4844 5.9375ZM35.992 8.28125C35.2738 8.9957 22.9127 21.2916 22.4859 21.7162C21.8219 22.3802 20.9391 22.7459 20 22.7459C19.0609 22.7459 18.1781 22.3802 17.5119 21.714C17.2248 21.4284 5.00023 9.26828 4.00797 8.28125H35.992ZM2.34375 30.0698V9.93164L12.4717 20.0062L2.34375 30.0698ZM4.00945 31.7188L14.1334 21.6591L15.8568 23.3734C16.9635 24.4802 18.4349 25.0896 20 25.0896C21.5651 25.0896 23.0365 24.4802 24.141 23.3756L25.8666 21.6591L35.9905 31.7188H4.00945ZM37.6562 30.0698L27.5283 20.0062L37.6562 9.93164V30.0698Z" fill="white"/></svg>
+						<p>Книга кейсов была отправлена на указанный Вами электронный адрес</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start steps -->
+	<section class="steps">
+		<div class="wrapper">
+			<div class="steps-top">
+				<h2 class="section-title"><b>Осуществляем полный цикл работ:</b> от разработки технического задания до 4-х месячного обслуживания сайта после запуска</h2>
+				<p>Ознакомьтесь с 6-ю этапами решения задач по разработке сайта</p>
+			</div>
+			<ul class="steps-tabs tab-list">
+				<li><a href="#step-1" class="active">1. Собираем информацию и формируем ТЗ</a></li>
+				<li><a href="#step-2">2. Визуализируем сайт</a></li>
+				<li><a href="#step-3">3. Создадим проект на билдере Bafsy в 4 раза быстрее других</a></li>
+				<li><a href="#step-4">4. Выполним разработку с двойным контролем качества</a></li>
+				<li><a href="#step-5">5. Подключим мощный движок к сайту</a></li>
+				<li><a href="#step-6">6. Гарантированное техническое обслуживание</a></li>
+			</ul>
+			<div class="steps-content">
+				<div class="tab steps-tab steps-tab__1 tab-active" id="step-1">
+					<div class="steps-row">
+						<div class="steps-info">
+							<h2 class="steps-title">Собираем информацию<br>и формируем техническое задание</h2>
+							<span class="steps-subtitle">Вы получаете:</span>
+							<ul class="steps-list">
+								<li>Готовое <a href="#">техническое задание</a>, соответствующее требованиям проведения тендеров или требованиям заказчика;</li>
+								<li>Разработанная <a href="#">смета</a> с экономией в ≈600 000 рублей;</li>
+								<li>Официальный <a href="#">договор</a>, где мы юридически обязуемся все выполнить;</li>
+								<li>Разработанный <a href="#">TimePlan+RACI+GANT</a> под ваш проект;</li>
+								<li>Разработанный <a href="#">Customer Journey</a> под ваш проект</li>
+							</ul>
+							<a href="#" class="main-btn">Разработать ТЗ</a>
+						</div>
+						<div class="steps-img"><img src="img/steps-1.png" alt=""></div>
+					</div>
+				</div>
+				<div class="tab steps-tab steps-tab__2" id="step-2">
+					<div class="steps-row">
+						<div class="steps-info">
+							<h2 class="steps-title">Создаем уникальный дизайн сайта с учетом всех нюансов согласованных в прототипе </h2>
+							<span class="steps-subtitle">Вы получаете:</span>
+							<ul class="steps-list">
+								<li>Разработанный прототип сайта</li>
+								<li>Разработанный уникальный дизайн</li>
+							</ul>
+							<a href="#" class="main-btn">Разработать ТЗ</a>
+						</div>
+						<div class="steps-img"><img src="img/steps-2.png" alt=""></div>
+					</div>
+				</div>
+				<div class="tab steps-tab steps-tab__3" id="step-3">
+					<div class="steps-row">
+						<div class="steps-info">
+							<h2 class="steps-title">Ускорим разработку в 4 раза и снизим стоимость минимум в 2 раза за счет шаблонизации и многолетнего опыта команды</h2>
+							<p>Производственные мощности серверов, команда из 12 профессионалов, большая библиотека готовых блоков позволяют разрабатывать качественнее и быстрее</p>
+							<span class="steps-subtitle">Вы получаете:</span>
+							<ul class="steps-list">
+								<li>Еженедельные удаленные встречи с детальным <b>статусом проекта</b></li>
+								<li><b>Экономию времени</b> разработки до 60% <b>на готовых блоках</b></li>
+								<li>Разработанный сайт на вашем домене с <b>уникальным дизайном, повышенной надёжностью и высоким баллом в Google Page Speed</b></li>
+							</ul>
+							<a href="#" class="main-btn">Разработать ТЗ</a>
+						</div>
+						<div class="steps-img"><img src="img/steps-3.png" alt=""></div>
+					</div>
+				</div>
+				<div class="tab steps-tab steps-tab__4" id="step-4">
+					<div class="steps-row">
+						<div class="steps-info">
+							<h2 class="steps-title">Разработку выполняют собственные разработчики с опытом более 7-ми лет</h2>
+							<p class="steps-small">Специалисты компании проверяет качество сайта путем контрольной проверки по чек-листу из 63 пунктов</p>
+							<span class="steps-subtitle">Вы получаете:</span>
+							<ul class="steps-list">
+								<li>Чеклист для проверки качества сайта </li>
+							</ul>
+							<a href="#" class="main-btn">Разработать ТЗ</a>
+						</div>
+						<div class="steps-img"><img src="img/steps-4.png" alt=""></div>
+					</div>
+				</div>
+				<div class="tab steps-tab steps-tab__5" id="step-5">
+					<div class="steps-row">
+						<div class="steps-info">
+							<h2 class="steps-title">Подключим мощный движок с оптимальным набором модулей, которые отвечают за функциональную часть проекта</h2>
+							<p>(CRM, Статистика, Аналитика, Email, <br>Модуль интерфейса обработки обратной связи и т.д. +26 модулей)</p>
+							<span class="steps-subtitle">Вы получаете:</span>
+							<ul class="steps-list">
+								<li>Интеграцию с вашей IT-системой;</li>
+								<li>Любые модули на выбор;</li>
+								<li>Видео-инструкцию для работы администратора;</li>
+								<li>Доступ администратора к панели со статистикой и отчётами.</li>
+							</ul>
+							<a href="#" class="main-btn">Разработать ТЗ</a>
+						</div>
+						<div class="steps-img"><img src="img/steps-5.png" alt=""></div>
+					</div>
+				</div>
+				<div class="tab steps-tab steps-tab__6" id="step-6">
+					<div class="steps-row">
+						<div class="steps-info">
+							<h2 class="steps-title">Приходим на помощь <br>в экстренных ситуациях</h2>
+							<p>Любая неисправность будет обнаружена мгновенно в течении 1-2 минут, за счёт встроенной системы мониторинга. <br>И все заинтересованные лица будут оповещены.</p>
+							<p><b>Специалисты оперативно исправят неполадки — любая неисправность будет устранена в течение 1—2 часов*</b></p>
+							<p>*время устранения неполадки зависит <br>от скорости вашей обратной связи</p>
+							<a href="#" class="main-btn">Разработать ТЗ</a>
+						</div>
+						<div class="steps-img"><img src="img/steps-6.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end steps -->
+	<!-- start command -->
+	<section class="command">
+		<div class="wrapper">
+			<div class="command-top">
+				<h2 class="section-title">Над вашим проектом будет работать вся команда</h2>
+				<p>Каждый из них необходим для роста вашей прибыли</p>
+			</div>
+			<div class="command-row">
+				<div class="command-col">
+					<div class="command-wrap">
+						<div class="command-img"><img src="img/command-1.png" alt=""></div>
+						<h3 class="command-name">Филипп Дельсаль</h3>
+						<p>Генеральный директор</p>
+					</div>
+				</div><!-- col -->
+				<div class="command-col">
+					<div class="command-wrap">
+						<div class="command-img"><img src="img/command-2.png" alt=""></div>
+						<h3 class="command-name">Антон Баранов</h3>
+						<p>Коммерческий директор</p>
+					</div>
+				</div><!-- col -->
+				<div class="command-col">
+					<div class="command-wrap">
+						<div class="command-img"><img src="img/command-1.png" alt=""></div>
+						<h3 class="command-name">Давид Шахбазян</h3>
+						<p>Менеджер проектов</p>
+					</div>
+				</div><!-- col -->
+				<div class="command-col">
+					<div class="command-wrap">
+						<div class="command-img"><img src="img/command-1.png" alt=""></div>
+						<h3 class="command-name">Евгений Зуев</h3>
+						<p>Технический директор</p>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="command-mob">
+				<div class="command-row">
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-1.png" alt=""></div>
+							<h3 class="command-name">Денис Тихомиров</h3>
+							<p>Аккаунт-менеджер</p>
+						</div>
+					</div><!-- col -->
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-2.png" alt=""></div>
+							<h3 class="command-name">Вячеслав Бойков</h3>
+							<p>Менеджер проектов</p>
+						</div>
+					</div><!-- col -->
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-1.png" alt=""></div>
+							<h3 class="command-name">Мария Долганина</h3>
+							<p>Менеджер документооборота</p>
+						</div>
+					</div><!-- col -->
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-2.png" alt=""></div>
+							<h3 class="command-name">Светлана Анисимова</h3>
+							<p>Главный бухгалтер</p>
+						</div>
+					</div><!-- col -->
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-1.png" alt=""></div>
+							<h3 class="command-name">Владислав Пинчуков</h3>
+							<p>Ruby программист</p>
+						</div>
+					</div><!-- col -->
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-2.png" alt=""></div>
+							<h3 class="command-name">Сергей Клюшниченко</h3>
+							<p>Ruby программист</p>
+						</div>
+					</div><!-- col -->
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-2.png" alt=""></div>
+							<h3 class="command-name">Максат Мансуров</h3>
+							<p>Ruby программист</p>
+						</div>
+					</div><!-- col -->
+					<div class="command-col">
+						<div class="command-wrap">
+							<div class="command-img"><img src="img/command-2.png" alt=""></div>
+							<h3 class="command-name">Сергей Брушка</h3>
+							<p>Ruby программист</p>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+			<div class="command-btn">
+				<a href="#" class="second-btn">показать еще</a>
+			</div>
+		</div>
+	</section>
+	<!-- end command -->
+	<!-- start testimonials -->
+	<section class="testimonials">
+		<div class="wrapper">
+			<h2 class="section-title">Видеоотзывы</h2>
+			<div class="testimonials-slider">
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<img src="img/testimonials.png" alt="">
+					</div>
+				</div>
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<img src="img/testimonials.png" alt="">
+					</div>
+				</div>
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<img src="img/testimonials.png" alt="">
+					</div>
+				</div>
+				<div class="testimonials-slide">
+					<div class="testimonials-wrap">
+						<img src="img/testimonials.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end testimonials -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<h2 class="section-title">Платформа Bafsy работает на <b>запатентованной технологии,</b> которая позволяет загружать сайт <b>со скоростью до 100/100 в Google Page Speed</b></h2>
+			<div class="about-row">
+				<div class="about-img">
+					<img src="img/about.png" alt="">
+				</div>
+				<div class="about-info">
+					<div class="about-screenshot">
+						<img src="img/screenshot.png" alt="">
+					</div>
+					<div class="about-user">
+						<div class="about-user__img">
+							<img src="img/user.png" alt="">
+						</div>
+						<div class="about-user__info">
+							<span class="about-user__title">«За последние 35 лет работы патентоведом — я впервые встречаю изобретение действительно новой технологии»</span>
+							<div class="about-user__row">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M0.00850454 27.7552C0.00850454 33.0141 4.27144 37.277 9.53028 37.277C14.7892 37.277 19.0521 33.0141 19.0521 27.7552C19.0521 22.4962 14.7892 18.2334 9.53028 18.2334C8.4495 18.2334 7.41495 18.4218 6.44645 18.7538C8.58926 6.46425 18.1728 -1.46113 9.28888 5.06162C-0.561997 12.2946 -0.00204573 27.4642 0.00897694 27.7422C0.00897694 27.7465 0.00850454 27.7504 0.00850454 27.7552Z" fill="#13B0FF"/><path d="M20.9568 27.7552C20.9568 33.0141 25.2197 37.277 30.4786 37.277C35.7375 37.277 40.0004 33.0141 40.0004 27.7552C40.0004 22.4962 35.7374 18.2334 30.4785 18.2334C29.3977 18.2334 28.3632 18.4218 27.3947 18.7538C29.5375 6.46425 39.121 -1.46113 30.2371 5.06162C20.3863 12.2946 20.9461 27.4642 20.9572 27.7422C20.9572 27.7465 20.9568 27.7504 20.9568 27.7552Z" fill="#13B0FF"/></g><defs><clipPath><rect width="40" height="40" fill="white"/></clipPath></defs></svg>
+								<span class="about-user__name">Дмитрий Юрьевич Соколов</span>
+								<p>Руководитель патентной службы ЗАО «Нанотехнология МДТ»</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start contatcs -->
+	<section class="contatcs">
+		<div class="contatcs-bg"><img src="img/contatcs-bg.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="contatcs-info">
+				<h2 class="contatcs-head">Наша компания находится по адресу</h2>
+				<span class="contatcs-subtitle">000000, г Москва обл., <br>ул. Луначарского, 128</span>
+				<a data-fancybox data-src="#modal-map" href="javascript:;" class="contatcs-locate">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7458 0.922852C9.35533 0.922852 4.96973 5.30846 4.96973 10.699C4.96973 17.4743 14.7555 29.0478 14.7555 29.0478C14.7555 29.0478 24.522 17.1411 24.522 10.699C24.522 5.30846 20.1365 0.922852 14.7458 0.922852ZM17.6955 13.5614C16.8822 14.3746 15.8141 14.7812 14.7458 14.7812C13.6778 14.7812 12.6093 14.3746 11.7964 13.5614C10.1699 11.9351 10.1699 9.28877 11.7964 7.66228C12.5839 6.87435 13.6316 6.44039 14.7458 6.44039C15.8601 6.44039 16.9076 6.87452 17.6955 7.66228C19.322 9.28877 19.322 11.9351 17.6955 13.5614Z" fill="#13B0FF"/></svg>
+					<span>Смотреть на карте</span>
+				</a>
+				<h2 class="contatcs-title">Приезжайте к нам в офис<br>и обсудите проект лично<br>с руководителем компании</h2>
+			</div>
+			<div class="contatcs-col">
+				<div class="contatcs-form">
+					<div class="contatcs-wrap">
+						<form action="POST">
+							<h3 class="contatcs-form__title">
+								Вам нужно только оставить заявку
+								<span>и немного рассказать о своем проекте</span>
+							</h3>
+							<span class="contatcs-form__subtitle">После этого мы свяжемся с вами, обговорим варианты и <b>предложим детальный план.</b></span>
+							<div class="input-block">
+								<input type="text" name="name" placeholder="Как вас зовут?">
+							</div>
+							<div class="input-block">
+								<input type="text" name="tel" placeholder="+7(___) -___-__-__" class="input-tel">
+							</div>
+							<div class="input-block">
+								<input type="email" name="email" placeholder="ivan@companyname.com">
+							</div>
+							<div class="contatcs-btn">
+								<button class="main-btn">Забронировать место</button>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" checked>
+								<span class="checkbox-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g><rect width="10" height="10" fill="white"/><path d="M9.9592 2.42586L3.75892 8.62615C3.7043 8.68076 3.61587 8.68076 3.56139 8.62615L0.0408644 5.10549C-0.0136215 5.05114 -0.0136215 4.96271 0.0408644 4.90809L0.896305 4.05265C0.950918 3.99817 1.03935 3.99817 1.09383 4.05265L3.66028 6.61897L8.90636 1.3729C8.9611 1.31841 9.04927 1.31841 9.10389 1.3729L9.9592 2.22834C10.0138 2.28282 10.0138 2.37112 9.9592 2.42586Z" fill="#30C462"/></g><defs><clipPath><rect width="10" height="10" fill="white"/></clipPath></defs></svg></span>
+								<p>Я принимаю <a href="#">условия политики конфидециальности</a></p>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="contatcs-bottom">
+					<p>Нажмите на одну из кнопок, чтобы открыть чат с менеджером Bafsy в удобном вам мессенджере</p>
+					<ul class="contatcs-social">
+						<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/Telegram.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/Viber.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/WhatsApp.svg" alt=""></a></li>
+					</ul>
+					<p>Среднее время ответа: 4 минуты в рабочее время</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contatcs -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-col footer-col__1">
+				<p>ООО Бафси, Юридический адрес: 124482, Москва, г.Зеленоград, ул.Юности, д.8, ком.11, 124482. ИНН 7735164826, КПП 773501001, <br>ОГРН 1177746828236.</p>
+			</div>
+			<div class="footer-col footer-col__2">
+				<span class="footer-subtitle">Пишите</span>
+				<a href="#" class="footer-link">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.4637 2.14355H0.535156L7.49945 7.87998L14.5425 2.15963C14.5167 2.15209 14.4904 2.14673 14.4637 2.14355Z" fill="#13B0FF"/><path d="M7.83802 8.98708C7.64064 9.1487 7.35666 9.1487 7.15928 8.98708L0 3.08887V12.3214C0 12.6172 0.239847 12.8571 0.535724 12.8571H14.4643C14.7602 12.8571 15 12.6172 15 12.3214V3.16816L7.83802 8.98708Z" fill="#13B0FF"/></svg>
+					support@carbonfay.ru
+				</a>
+			</div>
+			<div class="footer-col footer-col__3">
+				<span class="footer-subtitle">Звоните</span>
+				<a href="#" class="footer-link">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M14.9682 11.6223C14.9258 11.4944 14.6558 11.3061 14.1586 11.0577C14.0239 10.9795 13.8319 10.8731 13.5836 10.7381C13.335 10.6031 13.1094 10.4788 12.9071 10.3651C12.7044 10.2515 12.5145 10.1414 12.3371 10.035C12.3087 10.0137 12.22 9.95169 12.0708 9.84848C11.9215 9.74557 11.7956 9.66919 11.6925 9.61938C11.5895 9.56986 11.4882 9.54494 11.3888 9.54494C11.2468 9.54494 11.0694 9.6462 10.8564 9.84848C10.6434 10.051 10.448 10.271 10.2706 10.5092C10.0931 10.7472 9.90483 10.9672 9.70617 11.1696C9.50722 11.3721 9.34375 11.4733 9.21606 11.4733C9.15196 11.4733 9.07203 11.4554 8.97625 11.4201C8.8805 11.3846 8.80766 11.3542 8.75766 11.3297C8.70811 11.3047 8.62307 11.2551 8.50225 11.1803C8.38121 11.1057 8.31389 11.0649 8.29971 11.0577C7.32676 10.5179 6.49232 9.89994 5.79623 9.20415C5.10037 8.50795 4.48238 7.67358 3.94264 6.70052C3.93555 6.6863 3.89462 6.6188 3.8201 6.49813C3.74547 6.37735 3.69573 6.29223 3.67088 6.24238C3.64603 6.19272 3.61585 6.11988 3.5804 6.02402C3.54495 5.92816 3.52715 5.84831 3.52715 5.78432C3.52715 5.65656 3.62838 5.49312 3.83081 5.29424C4.0332 5.09547 4.25342 4.90719 4.49126 4.72976C4.72928 4.55234 4.94929 4.35696 5.15175 4.14398C5.35414 3.93088 5.45533 3.75341 5.45533 3.6114C5.45533 3.51203 5.43048 3.41073 5.38082 3.30778C5.33112 3.20461 5.25477 3.07871 5.15175 2.92949C5.04869 2.78035 4.98656 2.69166 4.96522 2.66311C4.8588 2.48568 4.74884 2.29572 4.63507 2.09329C4.5213 1.8909 4.39712 1.66531 4.26212 1.41676C4.12723 1.16833 4.02077 0.976497 3.94256 0.841571C3.69413 0.344517 3.50596 0.0745153 3.37808 0.0320524C3.32834 0.0107463 3.25372 0 3.15439 0C2.96252 0 2.71222 0.0354479 2.4033 0.106568C2.09427 0.177575 1.8511 0.252053 1.67352 0.3303C1.31841 0.479368 0.942026 0.912579 0.544263 1.62978C0.18206 2.29725 0.000976562 2.95789 0.000976562 3.61121C0.000976562 3.80282 0.013402 3.98924 0.0382529 4.17051C0.0631037 4.35159 0.107507 4.55581 0.1715 4.78312C0.235381 5.01036 0.286911 5.17917 0.325866 5.28909C0.364859 5.39909 0.437658 5.59615 0.544226 5.88033C0.650644 6.16443 0.714637 6.33835 0.735943 6.40227C0.984489 7.09832 1.27923 7.7197 1.62009 8.26661C2.18091 9.17564 2.94625 10.1151 3.91566 11.0846C4.88511 12.054 5.82436 12.8193 6.73347 13.3803C7.2803 13.7212 7.90191 14.0159 8.59785 14.2646C8.6618 14.2858 8.83572 14.3496 9.11972 14.4564C9.40382 14.5629 9.60095 14.6357 9.71095 14.6748C9.82099 14.7139 9.98983 14.7654 10.2169 14.8294C10.4444 14.8934 10.6485 14.9378 10.8295 14.9629C11.0107 14.9874 11.1972 15 11.3888 15C12.0421 15 12.7028 14.8188 13.3704 14.4567C14.0875 14.0591 14.5206 13.6826 14.6697 13.3272C14.7482 13.1498 14.8225 12.9066 14.8935 12.5976C14.9647 12.2887 15.0001 12.0384 15.0001 11.8466C15.0003 11.7468 14.9896 11.6724 14.9682 11.6223Z" fill="#13B0FF"/></g><defs><clipPath><rect width="15" height="15" fill="white"/></clipPath></defs></svg>
+					8 (800) 550-40-40
+				</a>
+			</div>
+			<div class="footer-col footer-col__4">
+				<a href="#" class="main-btn main-btn-second">Подписаться на новости</a>
+				<ul>
+					<li><a href="#">Политика конфиденциальности</a></li>
+					<li>Bafsy 2020. Все права защищены</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
