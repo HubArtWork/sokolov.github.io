@@ -299,7 +299,7 @@
 	</section>
 	<!-- end action -->
 	<!-- start steps -->
-	<section class="steps">
+	<section class="steps" id="steps">
 		<div class="wrapper">
 			<div class="steps-top">
 				<h2 class="section-title"><b>Осуществляем полный цикл работ:</b> от разработки технического задания до 4-х месячного обслуживания сайта после запуска</h2>
@@ -648,7 +648,7 @@
 				</a>
 			</div>
 			<div class="footer-col footer-col__4">
-				<a href="#" class="main-btn main-btn-second">Подписаться на новости</a>
+				<a data-fancybox data-src="#modal-subscribe" href="javascript:;" class="main-btn main-btn-second">Подписаться на новости</a>
 				<ul>
 					<li><a href="#">Политика конфиденциальности</a></li>
 					<li>Bafsy 2020. Все права защищены</li>
@@ -671,8 +671,8 @@
 						<input type="text" name="tel" placeholder="+7(___) -___-__-__" class="input-tel">
 					</div>
 					<ul class="modal-time">
-						<li><a href="#i" class="modal-time__item">Сейчас</a></li>
-						<li><a href="#input-time" class="modal-time__item active">По времени</a></li>
+						<li><a href="#i" class="modal-time__item active">Сейчас</a></li>
+						<li><a href="#input-time" class="modal-time__item">По времени</a></li>
 					</ul>
 					<div class="input-block input-time active" id="input-time">
 						<label for="c-1">Когда вам будет удобно принять звонок?</label>
@@ -698,10 +698,39 @@
 			</div>
 		</div>
 	</div>
+	<div style="display: none;" id="modal-subscribe" class="modal modal-transparent modal-subscribe">
+		<div class="modal-close"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.28557 25C0.95625 25 0.626931 24.8747 0.376724 24.6227C-0.125574 24.1204 -0.125574 23.306 0.376724 22.8038L22.8043 0.376714C23.3066 -0.125571 24.121 -0.125571 24.6233 0.376714C25.1256 0.878999 25.1256 1.69333 24.6233 2.19593L2.19598 24.6227C1.94389 24.8732 1.61457 25 1.28557 25Z" fill="#13B0FF"/><path d="M23.7147 25C23.3854 25 23.0564 24.8747 22.8059 24.6227L0.376724 2.19593C-0.125574 1.69333 -0.125574 0.878999 0.376724 0.376714C0.879022 -0.125571 1.69337 -0.125571 2.19598 0.376714L24.6233 22.8038C25.1256 23.306 25.1256 24.1204 24.6233 24.6227C24.3712 24.8732 24.0422 25 23.7147 25Z" fill="#13B0FF"/></svg></div>
+		<div class="modal-wrap">
+			<h3 class="modal-subscribe__title">Подпишитесь на наши новости!</h3>
+			<span class="modal-subscribe__subtitle">Заполните форму, чтобы первым получать наши новости и предложения.</span>
+			<form action="POST">
+				<div class="action-form">
+					<div class="action-input">
+					  <input type="email" name="email" placeholder="Введите ваш e-mail">
+					  <div class="action-ico">
+					  	<div class="action-drop">
+					  		<span>Ваши данные защищены</span><br>и будут переданы по безопасному протоколу <span>https</span>
+					  	</div>
+					  	<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M15.625 8.49805H15V5.99805C15 3.24055 12.7575 0.998047 10 0.998047C7.2425 0.998047 5 3.24055 5 5.99805V8.49805H4.375C3.34167 8.49805 2.5 9.33888 2.5 10.373V19.123C2.5 20.1572 3.34167 20.998 4.375 20.998H15.625C16.6583 20.998 17.5 20.1572 17.5 19.123V10.373C17.5 9.33888 16.6583 8.49805 15.625 8.49805ZM6.66667 5.99805C6.66667 4.15971 8.16167 2.66471 10 2.66471C11.8383 2.66471 13.3333 4.15971 13.3333 5.99805V8.49805H6.66667V5.99805ZM10.8333 14.933V16.8314C10.8333 17.2914 10.4608 17.6647 10 17.6647C9.53917 17.6647 9.16667 17.2914 9.16667 16.8314V14.933C8.67083 14.6439 8.33333 14.1122 8.33333 13.498C8.33333 12.5789 9.08083 11.8314 10 11.8314C10.9192 11.8314 11.6667 12.5789 11.6667 13.498C11.6667 14.1122 11.3292 14.6439 10.8333 14.933Z" fill="#4C6782"/></g><defs><clipPath><rect width="20" height="20" fill="white" transform="translate(0 0.998047)"/></clipPath></defs></svg>
+					  </div>
+					</div>
+					<button class="main-btn">
+						Подписаться на новости
+					</button>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<span class="checkbox-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g><rect width="10" height="10" fill="white"/><path d="M9.9592 2.42586L3.75892 8.62615C3.7043 8.68076 3.61587 8.68076 3.56139 8.62615L0.0408644 5.10549C-0.0136215 5.05114 -0.0136215 4.96271 0.0408644 4.90809L0.896305 4.05265C0.950918 3.99817 1.03935 3.99817 1.09383 4.05265L3.66028 6.61897L8.90636 1.3729C8.9611 1.31841 9.04927 1.31841 9.10389 1.3729L9.9592 2.22834C10.0138 2.28282 10.0138 2.37112 9.9592 2.42586Z" fill="#30C462"/></g><defs><clipPath><rect width="10" height="10" fill="white"/></clipPath></defs></svg></span>
+					<p>Я принимаю условия политики конфидециальности</p>
+				</div>
+			</form>
+			<div class="modal-subscribe__bg"><img src="img/subscribe.png" alt=""></div>
+		</div>
+	</div>
 	<div style="display: none;" id="modal-test" class="modal modal-transparent modal-test">
 		<div class="modal-close"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.28557 25C0.95625 25 0.626931 24.8747 0.376724 24.6227C-0.125574 24.1204 -0.125574 23.306 0.376724 22.8038L22.8043 0.376714C23.3066 -0.125571 24.121 -0.125571 24.6233 0.376714C25.1256 0.878999 25.1256 1.69333 24.6233 2.19593L2.19598 24.6227C1.94389 24.8732 1.61457 25 1.28557 25Z" fill="#13B0FF"/><path d="M23.7147 25C23.3854 25 23.0564 24.8747 22.8059 24.6227L0.376724 2.19593C-0.125574 1.69333 -0.125574 0.878999 0.376724 0.376714C0.879022 -0.125571 1.69337 -0.125571 2.19598 0.376714L24.6233 22.8038C25.1256 23.306 25.1256 24.1204 24.6233 24.6227C24.3712 24.8732 24.0422 25 23.7147 25Z" fill="#13B0FF"/></svg></div>
 		<div class="modal-wrap">
-			<div class="test-tab active" id="test-1">
+			<div class="modal-tab test-tab active" id="test-1">
 				<div class="test-row">
 					<div class="test-col test-col__1">
 						<div class="test-bar">
@@ -745,7 +774,7 @@
 							<input type="text" name="text" placeholder="Ссылка на сайт и/или аккаунт в соцсетях">
 						</div>
 						<div class="test-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="test-col test-col__2">
@@ -768,7 +797,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="test-tab" id="test-2">
+			<div class="modal-tab test-tab" id="test-2">
 				<div class="test-row">
 					<div class="test-col test-col__1">
 						<div class="test-bar">
@@ -813,7 +842,7 @@
 							Например: в июне будет чемпионат Европы по футболу. Нужно будет создать чат-бот и лендиг с промо-акцией на 20 000 участников и 40 000 кодов.
 						</div>
 						<div class="test-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="test-col test-col__2">
@@ -836,7 +865,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="test-tab" id="test-3">
+			<div class="modal-tab test-tab" id="test-3">
 				<div class="test-row">
 					<div class="test-col test-col__1 test-col__all">
 						<div class="test-col__top">
@@ -878,7 +907,7 @@
 						</div>
 						<div class="test-col__bottom">
 							<div class="test-btn">
-								<a href="#" class="main-btn">Дальше</a>
+								<a href="#" class="modal-next main-btn">Дальше</a>
 							</div>
 							<div class="test-link">
 								<a href="#">Пропустить вопрос</a>
@@ -905,7 +934,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="test-tab" id="test-4">
+			<div class="modal-tab test-tab" id="test-4">
 				<div class="test-row">
 					<div class="test-col test-col__1">
 						<div class="test-bar">
@@ -929,7 +958,7 @@
 							<img src="img/test-3.png" alt="">
 						</div>
 						<div class="test-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 						<div class="test-link">
 							<a href="#">Пропустить вопрос</a>
@@ -955,7 +984,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="test-tab" id="test-5">
+			<div class="modal-tab test-tab" id="test-5">
 				<div class="test-row">
 					<div class="test-col test-col__1">
 						<div class="test-bar">
@@ -1030,7 +1059,7 @@
 	<div style="display: none;" id="modal-calculator" class="modal modal-transparent modal-test modal-calculator">
 		<div class="modal-close"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.28557 25C0.95625 25 0.626931 24.8747 0.376724 24.6227C-0.125574 24.1204 -0.125574 23.306 0.376724 22.8038L22.8043 0.376714C23.3066 -0.125571 24.121 -0.125571 24.6233 0.376714C25.1256 0.878999 25.1256 1.69333 24.6233 2.19593L2.19598 24.6227C1.94389 24.8732 1.61457 25 1.28557 25Z" fill="#13B0FF"/><path d="M23.7147 25C23.3854 25 23.0564 24.8747 22.8059 24.6227L0.376724 2.19593C-0.125574 1.69333 -0.125574 0.878999 0.376724 0.376714C0.879022 -0.125571 1.69337 -0.125571 2.19598 0.376714L24.6233 22.8038C25.1256 23.306 25.1256 24.1204 24.6233 24.6227C24.3712 24.8732 24.0422 25 23.7147 25Z" fill="#13B0FF"/></svg></div>
 		<div class="modal-wrap">
-			<div class="calculator-tab active" id="calculator-1">
+			<div class="modal-tab calculator-tab active" id="calculator-1">
 				<div class="calculator-bar">
 					<p>Осталось 7 вопросов из 7</p>
 					<div class="calculator-bar__content">
@@ -1069,7 +1098,7 @@
 							</div>
 						</div>
 						<div class="calculator-btn calculator-btn__mob">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -1095,7 +1124,7 @@
 					</div>
 					<div class="calculator-col calculator-col__1 calculator-col__last">
 						<div class="calculator-btn calculator-btn__hid">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -1107,7 +1136,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="calculator-tab" id="calculator-2">
+			<div class="modal-tab calculator-tab" id="calculator-2">
 				<div class="calculator-bar">
 					<p>Осталось 6 вопроса из 7</p>
 					<div class="calculator-bar__content">
@@ -1168,7 +1197,7 @@
 					</div>
 					<div class="calculator-col calculator-col__1 calculator-col__pad">
 						<div class="calculator-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -1180,7 +1209,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="calculator-tab" id="calculator-3">
+			<div class="modal-tab calculator-tab" id="calculator-3">
 				<div class="calculator-bar">
 					<p>Осталось 5 вопроса из 7</p>
 					<div class="calculator-bar__content">
@@ -1494,7 +1523,7 @@
 					</div>
 					<div class="calculator-col calculator-col__1 calculator-col__pad">
 						<div class="calculator-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -1506,7 +1535,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="calculator-tab" id="calculator-4">
+			<div class="modal-tab calculator-tab" id="calculator-4">
 				<div class="calculator-bar">
 					<p>Осталось 4 вопроса из 7</p>
 					<div class="calculator-bar__content">
@@ -1657,7 +1686,7 @@
 					</div>
 					<div class="calculator-col calculator-col__1 calculator-col__pad">
 						<div class="calculator-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -1669,7 +1698,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="calculator-tab calculator-tab__tit" id="calculator-5">
+			<div class="modal-tab calculator-tab calculator-tab__tit" id="calculator-5">
 				<div class="calculator-bar">
 					<p>Осталось 3 вопроса из 7</p>
 					<div class="calculator-bar__content">
@@ -1806,7 +1835,7 @@
 					</div>
 					<div class="calculator-col calculator-col__1 calculator-col__pad">
 						<div class="calculator-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -1818,7 +1847,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="calculator-tab" id="calculator-6">
+			<div class="modal-tab calculator-tab" id="calculator-6">
 				<div class="calculator-bar">
 					<p>Осталось 2 вопроса из 7</p>
 					<div class="calculator-bar__content">
@@ -1982,7 +2011,7 @@
 					</div>
 					<div class="calculator-col calculator-col__1 calculator-col__pad">
 						<div class="calculator-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -1994,7 +2023,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="calculator-tab calculator-tab__tit" id="calculator-7">
+			<div class="modal-tab calculator-tab calculator-tab__tit" id="calculator-7">
 				<div class="calculator-bar">
 					<p>Осталось 1 вопроса из 7</p>
 					<div class="calculator-bar__content">
@@ -2291,7 +2320,7 @@
 					</div>
 					<div class="calculator-col calculator-col__1 calculator-col__pad">
 						<div class="calculator-btn">
-							<a href="#" class="main-btn">Дальше</a>
+							<a href="#" class="modal-next main-btn">Дальше</a>
 						</div>
 					</div>
 					<div class="calculator-col calculator-col__2">
@@ -2303,7 +2332,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="calculator-tab" id="calculator-8">
+			<div class="modal-tab calculator-tab" id="calculator-8">
 				<div class="calculator-bar">
 					<p>Все готово. Остался последний шаг</p>
 					<div class="calculator-bar__content">
