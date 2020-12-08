@@ -26,17 +26,43 @@
 			<div class="main-img">
 				<img src="img/phone-1.png" alt="">
 			</div>
-			<div class="main-info">
+			<div class="main-info"><!-- add class active for done -->
 				<h1 class="main-title">Программа лояльности для любителей спорта и ставок на спорт</h1>
-				<p>Получи ранний доступ и <span>выигрывай крутые призы</span>!</p>
-				<form action="POST">
-					<div class="main-form">
-						<div class="input-block">
-							<input type="text" name="tel" placeholder="+7 ___ ___ ____" class="input-tel">
-						</div>
-						<button class="main-btn">Вступить</button>
+				<div class="block-sms"><!-- add class active for next -->
+					<div class="main-join">
+						<p>Получи ранний доступ и <span>выигрывай крутые призы</span>!</p>
+						<form action="POST">
+							<div class="main-form">
+								<div class="input-block">
+									<input type="text" name="tel" placeholder="+7 ___ ___ ____" class="input-tel">
+								</div>
+								<button class="main-btn">Вступить</button>
+							</div>
+						</form>
 					</div>
-				</form>
+					<div class="form-sms">
+						<form action="POST">
+							<div class="code-sms">
+								<p>На номер +7 999 999 9999 отправлен SMS-код</p>
+								<div class="input-block"><!-- input-error -->
+									<input type="text" name="code" placeholder="____" class="input-code" maxlength="4">
+									<span class="text-error">Неправильный код</span>
+									<button class="main-btn">Зарегистрироваться</button>
+								</div>
+								<div class="code-text">
+									<ul>
+										<li><a href="#" class="notActive">Отправить СМС повторно (24)</a></li>
+										<li><a href="#" class="code-prev">Изменить номер</a></li>
+									</ul>
+									<p>Вводом кода из SMS Вы подтверждаете согласие на получение информационных и рекламных материалов</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="main-done">
+					<p>Вы зарегистрировались в программе и получите приглашение одним из первых. Накапливайте баллы и участвуйте в <span>розыгрыше призов</span>!</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -56,7 +82,7 @@
 				</ul>
 				<p>Среди первых участников программы, накопивших 500 бонусов из числа получивших ранний доступ, мы разыграем настоящий молоцикл, консоли PlayStation 5, смартфоны, гаджеты и другие призы!</p>
 				<div class="prizes-btns">
-					<a href="#" class="second-btn">Регистрация</a>
+					<a data-fancybox data-src="#modal-checkIn" href="javascript:;" href="#" class="second-btn">Регистрация</a>
 					<a data-fancybox data-src="#modal-conditions" href="javascript:;" class="prizes-link">Полные условия</a>
 				</div>
 			</div>
@@ -84,18 +110,29 @@
 		</div>
 	</section>
 	<!-- end howItWork -->
+	<!-- start info -->
+	<section class="info">
+		<div class="wrapper">
+			<h3 class="info-title">CEO Text Title</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor justo et volutpat semper. Nam erat turpis, accumsan nec odio sed, mollis condimentum justo. In sodales ipsum nisi, sed lacinia lacus varius vitae. Mauris convallis libero ut nisi porta, ut dignissim lorem dignissim. In hac habitasse platea dictumst. Pellentesque faucibus, odio nec pulvinar dictum, urna libero tempor tellus, ac sagittis lectus nulla et orci. Morbi a finibus metus. Suspendisse nec velit mi. Mauris molestie aenean.</p>
+		</div>
+	</section>
+	<!-- end info -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
 			<div class="footer-text">
-				<p>© РБ+ 2020</p>
 				<div class="footer-row">
-					<p>Powered by Рейтинг Букмекеров</p>
+					<p>© РБ+ 2020</p>
 					<ul>
 						<li><a data-fancybox data-src="#modal-feedback" href="javascript:;">Обратная связь</a></li>
 						<li><a data-fancybox data-src="#modal-partner" href="javascript:;">Стать партнером</a></li>
 					</ul>
 				</div>
+				<a href="#" class="footer-logo">
+					<span>Powered by</span>
+					<img src="img/logo-2.svg" alt="">
+				</a>
 			</div>
 		</div>
 	</footer>
@@ -107,7 +144,7 @@
 			<h3 class="modal-title">Полные правила</h3>
 			<p>Правила пользования сайтом Bookmaker-Ratings.ru («Рейтинг Букмекеров») регламентируют ответственность владельцев и пользователей этого сайта, а также то, как может использоваться любое содержимое этого сайта, в том числе новости, прогнозы, статьи, иллюстрации, фотографии и прочее текстовое и графическое содержимое, фирменный стиль, логотип и прочие составляющие бренда ООО «РБ» (ОГРН: 5167746400707 ИНН: 7725343230), а также иная интеллектуальная собственность сайта Bookmaker-Ratings.ru.</p>
 			<span class="modal-subtitle">Пример заголовка</span>
-			<ul>
+			<ul class="modal-list">
 				<li>Права на данный веб-сайт и его содержание принадлежат ООО «РБ» – © ООО «РБ» 2016. Все права защищены.</li>
 				<li>Администрация оставляет за собой право ограничить пользователю возможность публикации комментариев, иных сообщений и материалов на данном веб-сайте и/или ограничить пользователю доступ к данному веб-сайту по своему усмотрению.</li>
 				<li>Администрация оставляет за собой право удалить материалы пользователей на данном веб-сайте, содержащие оскорбления, нецензурные выражения, конфиденциальную информацию о физических либо юридических лицах, ссылки на другие веб-сайты, обсуждения действий Администрации.</li>
@@ -137,7 +174,7 @@
 			</div>
 			<div class="modal-done">
 				<p>Заявка принята, мы свяжемся с вами!</p>
-				<a href="#" class="main-btn modal-close">OK</a>
+				<span class="main-btn modal-close">OK</span>
 			</div>
 		</div>
 	</div>
@@ -156,7 +193,47 @@
 			</div>
 			<div class="modal-done">
 				<p>Заявка принята, мы свяжемся с вами!</p>
-				<a href="#" class="main-btn modal-close">OK</a>
+				<span class="main-btn modal-close">OK</span>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-checkIn" class="modal modal-small">
+		<div class="modal-close modal-cross"><img src="img/close.svg"></div>
+		<div class="modal-wrap"><!-- add class active for done -->
+			<h3 class="modal-title">Регистрация в программе</h3>
+			<div class="modal-main block-sms"><!-- add class active for next -->
+				<div class="modal-form">
+					<p>Введите ваш номер телефона:</p>
+					<form action="POST">
+						<div class="input-block">
+							<input type="text" name="tel" placeholder="+ 7 ___ ___ ____" class="input-tel">
+						</div>
+						<button class="main-btn">Далее</button>
+					</form>
+				</div>
+				<div class="form-sms">
+					<form action="POST">
+						<div class="code-sms">
+							<p>На номер +7 999 999 9999 отправлен SMS-код</p>
+							<div class="input-block"><!-- input-error -->
+								<input type="text" name="code" placeholder="____" class="input-code" maxlength="4">
+								<span class="text-error">Неправильный код</span>
+							</div>
+							<div class="code-text">
+								<ul>
+									<li><a href="#" class="notActive">Отправить СМС повторно (24)</a></li>
+									<li><a href="#" class="code-prev">Изменить номер</a></li>
+								</ul>
+								<p>Вводом кода из SMS Вы подтверждаете согласие на получение информационных и рекламных материалов</p>
+							</div>
+							<button class="main-btn">Зарегистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-done">
+				<p>Вы зарегистрировались в программе и получите приглашение одним из первых. Накапливайте баллы и участвуйте в розыгрыше призов!</p>
+				<span class="main-btn modal-close">OK</span>
 			</div>
 		</div>
 	</div>
