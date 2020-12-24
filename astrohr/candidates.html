@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">Astro<b>HR</b></a>
+			</div>
+			<div class="header-row">
+				<span class="header-time">09:20</span>
+				<div class="header-info">
+					<span class="header-name">Мирзулина  Ирина Олеговна</span>
+					<span class="header-position">Главный HR</span>
+				</div>
+				<a href="#" class="header-exit">
+					<span class="hb-ico exit-ico"></span>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="sidebar">
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-1"></span>
+					Вакансии
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-2"></span>
+					Тесты
+				</a></li>
+				<li><a href="#" class="active">
+					<span class="hb-ico sidebar-ico-3"></span>
+					Кандидаты
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-4"></span>
+					Сотрудники
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-5"></span>
+					События
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-6"></span>
+					Настройки
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-7"></span>
+					Профиль
+				</a></li>
+			</ul>
+			<a href="#" class="sidebar-link">
+				<span class="hb-ico sidebar-ico-8"></span>
+				Поддержка
+			</a>
+		</div>
+		<div class="content">
+			<ul class="breadCrumbs">
+				<li><a href="#">Кандидаты</a></li>
+				<li>Отправка теста</li>
+			</ul>
+			<div class="content-top">
+				<ul class="content-menu">
+					<li><a href="#" class="active">Кандидаты</a></li>
+					<li><a href="#">Архив</a></li>
+				</ul>
+				<a href="#" class="main-btn disabled">Добавить кандидата</a>
+			</div>
+			<div class="search">
+				<form action="POST">
+					<span class="hb-ico search-ico"></span>
+					<input type="text" name="search" placeholder="Я ищу...">
+				</form>
+				<a href="#" class="hb-ico filter-ico"></a>
+			</div>
+			<div class="table table-2">
+				<div class="table-row table-top">
+					<div class="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">ФИО</div>
+					<div class="table-col table-col__2">Статус</div>
+					<div class="table-col table-col__3">IQ</div>
+					<div class="table-col table-col__4">Дата добавления</div>
+					<div class="table-col table-col__5">Ответственный HR</div>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2">
+						Проходит тестирование
+					</div>
+					<div class="table-col table-col__3">
+						120%
+					</div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2">
+						Новый
+					</div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2">
+						Принятие решения
+					</div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+				<div class="table-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="hb-ico check-ico"></span>
+					</div>
+					<div class="table-col table-col__1">
+						<a href="#" class="table-position">Иванов Иван Иванович</a>
+						<span class="table-department">Отдел продаж</span>
+					</div>
+					<div class="table-col table-col__2"></div>
+					<div class="table-col table-col__3"></div>
+					<div class="table-col table-col__4">
+						01.10.2020
+					</div>
+					<div class="table-col table-col__5">
+						Мирзулина И.Ю.
+					</div>
+					<a href="#" class="hb-ico del-ico"></a>
+				</div>
+			</div>
+			<div class="navigation">
+				<ul class="pagination pagination-pad">
+					<li><a href="#">
+						<span class="hb-ico arrow-left-ico"></span>
+					</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li>...</li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">
+						<span class="hb-ico arrow-right-ico"></span>
+					</a></li>
+				</ul>
+				<div class="navigation-row">
+					<span class="navigation-selected">Выбрано - 3 теста</span>
+					<span class="navigation-text">Выбрано - 5 кандидатов</span>
+					<a href="#" class="main-btn">Отправить ссылку</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

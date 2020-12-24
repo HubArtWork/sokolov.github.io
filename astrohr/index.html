@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">Astro<b>HR</b></a>
+			</div>
+			<div class="header-row">
+				<span class="header-time">09:20</span>
+				<div class="header-info">
+					<span class="header-name">Мирзулина  Ирина Олеговна</span>
+					<span class="header-position">Главный HR</span>
+				</div>
+				<a href="#" class="header-exit">
+					<span class="hb-ico exit-ico"></span>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="sidebar">
+			<ul class="sidebar-menu">
+				<li><a href="#" class="active">
+					<span class="hb-ico sidebar-ico-1"></span>
+					Вакансии
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-2"></span>
+					Тесты
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-3"></span>
+					Кандидаты
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-4"></span>
+					Сотрудники
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-5"></span>
+					События
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-6"></span>
+					Настройки
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico sidebar-ico-7"></span>
+					Профиль
+				</a></li>
+			</ul>
+			<a href="#" class="sidebar-link">
+				<span class="hb-ico sidebar-ico-8"></span>
+				Поддержка
+			</a>
+		</div>
+		<div class="content">
+			<ul class="breadCrumbs">
+				<li><a href="#">Вакансии</a></li>
+				<li>Создание</li>
+			</ul>
+			<h1 class="content-title">Создание вакансии</h1>
+			<ul class="content-menu">
+				<li><a href="#" class="active">Общие сведения</a></li>
+				<li><a href="#">Параметры поиска</a></li>
+				<li><a href="#">АСТРО профиль</a></li>
+			</ul>
+			<div class="content-block">
+				<div class="content-block__wrap">
+					<form action="POST">
+						<div class="form-row">
+							<div class="form-wrap">
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Название вакансии">
+								</div>
+								<div class="input-block">
+									<select name="text">
+										<option value="">Отдел</option>
+										<option value="">Отдел</option>
+										<option value="">Отдел</option>
+									</select>
+								</div>
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Зарплата">
+								</div>
+								<div class="input-block input-block__small">
+									<select name="text">
+										<option value="">Срок:</option>
+										<option value="">21.01.2021</option>
+										<option value="">Срок:</option>
+									</select>
+								</div>
+							</div>
+							<ul class="form-info">
+								<li>
+									Дата создания:
+									<b>01.01.2020</b>
+								</li>
+								<li>
+									Ответственный:
+									<span class="form-info__name">Мирзулина И.О.</span>
+								</li>
+							</ul>
+						</div>
+						<span class="content-subtitle">Описание</span>
+						<div class="input-block">
+							<textarea name="text"></textarea>
+						</div>
+						<div class="navigation">
+							<ul class="pagination">
+								<li><a href="#">
+									<span class="hb-ico arrow-left-ico"></span>
+								</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li>...</li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">
+									<span class="hb-ico arrow-right-ico"></span>
+								</a></li>
+							</ul>
+							<div class="navigation-btns">
+								<a href="#" class="cancel-btn">Отменить</a>
+								<a href="#" class="main-btn" disabled>Создать вакансию</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
