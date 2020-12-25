@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="message">
+		<img src="img/Subtract.svg" alt="">
+		<span>Зарегистрируйтесь, чтобы изучить полный инвестиционный портфель</span>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-bar">
+				<span></span>
+			</div>
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.png" alt="">
+					<span>инвестиции в понятный бизнес</span>
+				</a>
+			</div>
+			<ul class="header-list">
+				<li><a href="#">Заемщикам</a></li>
+				<li><a href="#">Инвесторам</a></li>
+				<li><a href="#">Проекты</a></li>
+				<li><a href="#">Кредитный фонд</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<a href="#" class="header-link">
+				<img src="img/entrance-ico.svg" alt="">
+				Вход
+			</a>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start project -->
+	<section class="page project">
+		<div class="checkIn-bg checkIn-bg__1"><img src="img/checkIn-bg-1.svg" alt=""></div>
+		<div class="checkIn-bg checkIn-bg__3"><img src="img/checkIn-bg-3.svg" alt=""></div>
+		<div class="wrapper">
+			<ul class="breadCrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Проекты</a></li>
+				<li>MAYA MATE</li>
+			</ul>
+			<div class="project-row">
+				<div class="project-content">
+					<div class="project-img">
+						<img src="img/post-1.jpg" alt="">
+						<h1 class="project-title">MAYA MATE</h1>
+					</div>
+					<ul class="project-list">
+						<li>
+							<b>Дата размещения</b>
+							<span>21 февраля 2019</span>
+						</li>
+						<li>
+							<b>Местоположение</b>
+							<span>Санкт-Петербург</span>
+						</li>
+						<li>
+							<b>Отрасль</b>
+							<span>Продукты питания</span>
+						</li>
+						<li>
+							<b>Целевое назначение</b>
+							<span>Закупка оборудования</span>
+						</li>
+						<li>
+							<b>Вид финансирования</b>
+							<span>Заём</span>
+						</li>
+						<li>
+							<b>Срок инвестирования</b>
+							<span>18 мес</span>
+						</li>
+						<li>
+							<b>Доходность</b>
+							<span>до 28.0%</span>
+						</li>
+						<li>
+							<b>Рейтинг</b>
+							<span>B</span>
+						</li>
+						<li>
+							<b>Количество активных инвесторов</b>
+							<span>1</span>
+						</li>
+						<li>
+							<b>Фонд</b>
+							<span>₽ 10 000 000</span>
+						</li>
+						<li>
+							<b>Минимальный фонд</b>
+							<span>₽ 10 000 000</span>
+						</li>
+					</ul>
+					<div class="project-sidebar">
+						<div class="project-sidebar__wrap">
+							<h3 class="project-sidebar__title">Выберите параметры сделки</h3>
+							<div class="project-invest">
+								<div class="project-invest__top">
+									<span class="project-invest__subtitle">Сумма инвестиций (тыс. ₽)</span>
+									<div class="project-invest__row">
+										<span class="projects-ico minus">-</span>
+										<span class="projects-ico plus">+</span>
+									</div>
+								</div>
+								<div class="project-invest__bar" id="bar-1">
+									<div id="custom-handle-1" class="ui-slider-handle">
+										<span></span>
+									</div>
+								</div>
+								<div class="project-invest__nums">
+									<span>20</span>
+									<span>600</span>
+								</div>
+							</div>
+							<div class="project-invest">
+								<div class="project-invest__top">
+									<span class="project-invest__subtitle">Срок инвестиций (месяцев)</span>
+									<div class="project-invest__row">
+										<span class="projects-ico minus">-</span>
+										<span class="projects-ico plus">+</span>
+									</div>
+								</div>
+								<div class="project-invest__bar" id="bar-2">
+									<div id="custom-handle-2" class="ui-slider-handle">
+										<span></span>
+									</div>
+								</div>
+								<div class="project-invest__nums">
+									<span>6</span>
+									<span>24</span>
+								</div>
+							</div>
+							<div class="project-guarantor">
+								<span class="projects-ico guarantor-ico"></span>
+								Поручительство
+							</div>
+							<div class="project-table">
+								<ul class="project-table__list">
+									<li class="active">Аннуитет</li>
+									<li>Проценты ежемес.</li>
+									<li>Проценты в конце</li>
+								</ul>
+								<div class="project-table__row">
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 30%;"></span>
+										</div>
+										<span class="project-table__num">1</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">2</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">3</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">4</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">5</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">6</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">7</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">8</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">9</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">10</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">11</span>
+									</div>
+									<div class="project-table__col">
+										<div class="project-table__bar">
+											<span class="project-table__bar-wrap" style="height: 34%;"></span>
+										</div>
+										<span class="project-table__num">12</span>
+									</div>
+								</div>
+							</div>
+							<div class="project-sidebar__bottom">
+								<div class="project-sidebar__col">
+									<span>Базовая<br>ставка</span>
+									<b>25.0%</b>
+								</div>
+								<div class="project-sidebar__col">
+									<span>Эффективная ставка</span>
+									<b>14.1%</b>
+								</div>
+								<div class="project-sidebar__col">
+									<span>Доходы в виде процентов</span>
+									<b>₽ 913 448</b>
+								</div>
+							</div>
+						</div>
+						<div class="project-left">Осталось: <span>12:05:04</span></div>
+						<a href="#" class="main-btn">Инвестировать</a>
+					</div>
+					<div class="project-progress">
+						<h2 class="section-title">Инвестировано</h2>
+						<div class="project-progress__wrap">
+							<span class="project-progress__num" style="left: 34%;">24%</span>
+							<div class="project-progress__bar" style="width: 34%;"></div>
+						</div>
+					</div>
+					<div class="project-review">
+						<h2 class="section-title">Обзор и фото</h2>
+						<div class="project-review__slider">
+							<div class="project-review__slide">
+								<img src="img/projects-1.jpg" alt="">
+							</div>
+							<div class="project-review__slide">
+								<img src="img/projects-2.jpg" alt="">
+							</div>
+						</div>
+						<p>«Мясная фабрика» -  крупнооптовая компания, квотодержатель. Основной деятельностью компании является импорт замороженных мясопродуктов со всего мира и их оптовая реализация на всей территории России. На данный момент компания занимаем лидирующие позиции в Ленинградской области по реализации данной группы товаров. На рынке более 12 лет. Из года в год демонстрирует отличные показатели по выручке. В 2017 од выручка составила более 1,2 млрд. руб. В этом можно убедиться ознакомившись с финансовой отчетностью за последний отчетный период ( по отдельному запросу) . На данном этапе компании необходимы 5 млн. руб. <br>Собранные средства пойдут на проектирование и строительство большого промышленного холодильника в уже готовом помещении. Эта потребность возникла из-за возросшего спроса на продукцию и расширения ассортимента товаров. На данный момент у организации нет кредитных обязательств. В качестве обеспечения будет предоставлено поручительство собственника.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end project -->
+	<!-- start projects -->
+	<section class="projects projects-second">
+		<div class="wrapper">
+			<h2 class="section-title">Инвестиционные проекты</h2>
+			<div class="projects-all projects-slider">
+				<div class="projects-slide">
+					<div class="projects-top">
+						<img src="img/post-1.jpg" alt="">
+						<div class="projects-top__info">
+							<div class="projects-top__info-wrap">
+								<h3 class="projects-title">MAYA MATE</h3>
+								<ul>
+									<li><span class="projects-ico projects-ico1"></span>Заем</li>
+									<li><span class="projects-ico projects-ico2"></span>33.%</li>
+									<li><span class="projects-ico projects-ico3"></span>12-12 мес</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="projects-descr">
+						<div class="projects-descr__wrap">
+							<div class="projects-fund">
+								<span class="projects-subtitle">Фонд</span>
+								<div class="projects-fund__row">
+									<span class="projects-price"><span class="projects-ico rub"></span>138 000 000</span>
+									<span class="projects-stage">Без стадий</span>
+								</div>
+							</div>
+							<div class="projects-main">
+								<div class="projects-col projects-col__1">
+									<span class="projects-subtitle">Осталось</span>
+									<span class="projects-day"><b>8</b>дня</span>
+								</div>
+								<div class="projects-col projects-col__2">
+									<span class="projects-subtitle">Инвестировано</span>
+									<div class="projects-bar">
+										<div class="projects-bar__content" style="width: 61%;"></div>
+										<span class="projects-num" style="left: 61%;">72%</span>
+									</div>
+								</div>
+							</div>
+							<div class="projects-info">
+								<span class="projects-subtitle">Описание</span>
+								<p>Натуральный тонизирующий напиток на основе чая мате</p>
+								<span class="projects-ico projects-ico4"></span>
+							</div>
+							<div class="projects-list">
+								<p><span class="projects-ico projects-ico5"></span>Строительство</p>
+								<p><span class="projects-ico projects-ico6"></span>Челябинск</p>
+							</div>
+							<div class="projects-rating">
+								<p><span>Работает:</span> 14 лет 4 мес</p>
+								<p><span>Рейтинг:</span> C</p>
+							</div>
+						</div>
+						<div class="projects-btn">
+							<a href="#" class="projects-more">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- slide -->
+				<div class="projects-slide">
+					<div class="projects-top">
+						<img src="img/post-1.jpg" alt="">
+						<div class="projects-top__info">
+							<div class="projects-top__info-wrap">
+								<h3 class="projects-title">MAYA MATE</h3>
+								<ul>
+									<li><span class="projects-ico projects-ico1"></span>Заем</li>
+									<li><span class="projects-ico projects-ico2"></span>33.%</li>
+									<li><span class="projects-ico projects-ico3"></span>12-12 мес</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="projects-descr">
+						<div class="projects-descr__wrap">
+							<div class="projects-fund">
+								<span class="projects-subtitle">Фонд</span>
+								<div class="projects-fund__row">
+									<span class="projects-price"><span class="projects-ico rub"></span>138 000 000</span>
+									<span class="projects-stage">Без стадий</span>
+								</div>
+							</div>
+							<div class="projects-main">
+								<div class="projects-col projects-col__1">
+									<span class="projects-subtitle">Осталось</span>
+									<span class="projects-day"><b>8</b>дня</span>
+								</div>
+								<div class="projects-col projects-col__2">
+									<span class="projects-subtitle">Инвестировано</span>
+									<div class="projects-bar">
+										<div class="projects-bar__content" style="width: 61%;"></div>
+										<span class="projects-num" style="left: 61%;">72%</span>
+									</div>
+								</div>
+							</div>
+							<div class="projects-info">
+								<span class="projects-subtitle">Описание</span>
+								<p>Натуральный тонизирующий напиток на основе чая мате</p>
+								<span class="projects-ico projects-ico4"></span>
+							</div>
+							<div class="projects-list">
+								<p><span class="projects-ico projects-ico5"></span>Строительство</p>
+								<p><span class="projects-ico projects-ico6"></span>Челябинск</p>
+							</div>
+							<div class="projects-rating">
+								<p><span>Работает:</span> 14 лет 4 мес</p>
+								<p><span>Рейтинг:</span> C</p>
+							</div>
+						</div>
+						<div class="projects-btn">
+							<a href="#" class="projects-more">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- slide -->
+				<div class="projects-slide">
+					<div class="projects-top">
+						<img src="img/post-1.jpg" alt="">
+						<div class="projects-top__info">
+							<div class="projects-top__info-wrap">
+								<h3 class="projects-title">MAYA MATE</h3>
+								<ul>
+									<li><span class="projects-ico projects-ico1"></span>Заем</li>
+									<li><span class="projects-ico projects-ico2"></span>33.%</li>
+									<li><span class="projects-ico projects-ico3"></span>12-12 мес</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="projects-descr">
+						<div class="projects-descr__wrap">
+							<div class="projects-fund">
+								<span class="projects-subtitle">Фонд</span>
+								<div class="projects-fund__row">
+									<span class="projects-price"><span class="projects-ico rub"></span>138 000 000</span>
+									<span class="projects-stage">Без стадий</span>
+								</div>
+							</div>
+							<div class="projects-main">
+								<div class="projects-col projects-col__1">
+									<span class="projects-subtitle">Осталось</span>
+									<span class="projects-day"><b>8</b>дня</span>
+								</div>
+								<div class="projects-col projects-col__2">
+									<span class="projects-subtitle">Инвестировано</span>
+									<div class="projects-bar">
+										<div class="projects-bar__content" style="width: 61%;"></div>
+										<span class="projects-num" style="left: 61%;">72%</span>
+									</div>
+								</div>
+							</div>
+							<div class="projects-info">
+								<span class="projects-subtitle">Описание</span>
+								<p>Натуральный тонизирующий напиток на основе чая мате</p>
+								<span class="projects-ico projects-ico4"></span>
+							</div>
+							<div class="projects-list">
+								<p><span class="projects-ico projects-ico5"></span>Строительство</p>
+								<p><span class="projects-ico projects-ico6"></span>Челябинск</p>
+							</div>
+							<div class="projects-rating">
+								<p><span>Работает:</span> 14 лет 4 мес</p>
+								<p><span>Рейтинг:</span> C</p>
+							</div>
+						</div>
+						<div class="projects-btn">
+							<a href="#" class="projects-more">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- slide -->
+			</div>
+			<div class="projects-bottom projects-bottom__mob">
+				<a href="#" class="main-btn">Посмотреть все</a>
+			</div>
+		</div>
+	</section>
+	<!-- end projects -->
+	<!-- start subscribe -->
+	<section class="subscribe">
+		<div class="subscribe-bg" style="background-image: url(img/subscribe-bg.jpg);"></div>
+		<div class="wrapper">
+			<h2 class="subscribe-title">Подписаться на новые инвестиционные проекты и специальные предложения</h2>
+			<div class="subscribe-form">
+				<form action="POST">
+					<div class="input-block">
+						<input type="email" name="email" placeholder="Email">
+						<button class="second-btn">Подписаться</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end subscribe -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-logo">
+					<a href="#"><img src="img/logo-footer.svg" alt=""></a>
+				</div>
+				<div class="footer-all">
+					<div class="footer-col footer-col__1">
+						<span class="footer-subtitle">О нас</span>
+						<ul class="footer-list">
+							<li><a href="#">О проекте</a></li>
+							<li><a href="#">Тарифы и документы</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer-col__2">
+						<span class="footer-subtitle">Компании</span>
+						<ul class="footer-list">
+							<li><a href="#">Заявка на инвестицию</a></li>
+							<li><a href="#">Вопросы заёмщиков</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer-col__3">
+						<span class="footer-subtitle">Инвестору</span>
+						<ul class="footer-list">
+							<li><a href="#">Проекты для инвестирования</a></li>
+							<li><a href="#">Вопросы инвесторов</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer-col__4">
+						<ul class="footer-social">
+							<li><a href="#"><img src="img/Telegram.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-middle">
+				<span class="footer-title">Организованная ООО "ФАНМАНИ" (ИНН 7716933385 )</span>
+				<div class="footer-row">
+					<div class="footer-text">
+						<p>Предлагаемые к заключению посредством инвестиционной платформы сделки являются высокорискованными и могут привести к потере внесенных денежных средств в полном объеме. До совершения сделок следует ознакомиться с рисками, с которыми они связаны (данный пункт включён по рекомендации Банка России).</p>
+					</div>
+					<div class="footer-text">
+						<p>© . Все материалы и дизайн данного сайта являются объектами авторского права. Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>© 2019 Fan.money. Все права защищены</p>
+				<p>Разработка и поддержка сайта - <a href="#"><img src="img/logo-small.svg" alt=""></a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
