@@ -73,21 +73,27 @@
 			<h2 class="section-title">Кредит от 11% годовых для физических или юридических лиц под любые цели</h2>
 			<form action="POST">
 				<div class="about-row">
-					<div class="about-col">
+					<div class="about-col about-col__1">
 						<div class="input-block">
 							<label for="i-1">Желаемая сумма кредита</label>
-							<input id="i-1" type="number" name="number" placeholder="Введите сумму" min="300000" max="15000000" required>
+							<div id="sum"></div>
+							<div class="input-item">
+								<span>500 000</span> руб.
+							</div>
+							<div class="input-range">
+								<div id="range-1"></div>
+							</div>
 						</div>
 						<div class="about-text">От 300 000 до 15 000 000 ₽</div>
 					</div>
 					<div class="about-col about-col__2">
 						<div class="input-block">
 							<label for="i-2">Срок кредита</label>
-							<div class="input-item">
+							<div class="input-item" id="month">
 								<span>12</span> мес.
 							</div>
 							<div class="input-range">
-								<div id="range"></div>
+								<div id="range-2"></div>
 							</div>
 						</div>
 						<div class="about-text">
@@ -117,7 +123,7 @@
 				<div class="about-bottom">
 					<button class="main-btn">Оформить заявку</button>
 					<div class="checkbox">
-						<input type="checkbox">
+						<input type="checkbox" checked>
 						<span class="checkbox-ico"></span>
 						<p>Я принимаю условия <a href="#">политики конфедициальности</a></p>
 					</div>
