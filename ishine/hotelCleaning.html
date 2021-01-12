@@ -223,13 +223,16 @@
 						</div>
 					</div><!-- col -->
 					<div class="getQuote-col getQuote-col__big">
-						<div class="input-block">
-							<label for="i-10">How should we contact you?</label>
-							<select name="text">
-								<option value="">E-mail</option>
-								<option value="">E-mail2</option>
-								<option value="">E-mail3</option>
-							</select>
+						<label for="i-10">How should we contact you?</label>
+						<div class="choice">
+							<div class="choice-col">
+								<input type="radio" name="contact">
+								<span class="choice-text">E-mail</span>
+							</div>
+							<div class="choice-col">
+								<input type="radio" name="contact" checked>
+								<span class="choice-text">Phone</span>
+							</div>
 						</div>
 					</div><!-- col -->
 				</div>
@@ -243,9 +246,15 @@
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
+			<div class="footer-logo">
+				<a href="#"><img src="img/logo-footer.svg" alt=""></a>
+			</div>
 			<div class="footer-row">
 				<div class="footer-col">
-					<p>2916 South 132nd Street <br>Omaha, Nebraska 68144</p>
+					<p>
+						<span class="hb-ico local-ico"></span>
+						2916 South 132nd Street <br>Omaha, Nebraska 68144
+					</p>
 				</div>
 				<div class="footer-col">
 					<ul class="footer-list">
@@ -263,6 +272,7 @@
 			<div class="footer-bottom">
 				<p>Copyright © 2021 iShine. All rights reserved | Terms of Service & Privacy Policy</p>
 			</div>
+			<div class="footer-powered">Powered by Web <span>&</span> Ad</div>
 		</div>
 	</footer>
 	<!-- end footer -->
