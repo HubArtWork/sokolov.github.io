@@ -46,7 +46,246 @@
 	<!-- start book -->
 	<section class="book">
 		<div class="wrapper">
-			
+			<div class="book-content">
+				<h2 class="book-title">Book Now</h2>
+				<p>Already registered? <a href="#">Login here</a></p>
+				<form action="POST">
+					<label for="h-1">When should we come?</label>
+					<div class="book-row">
+						<div class="book-col">
+							<div class="input-block">
+								<input type="text" id="datepicker">
+							</div>
+						</div><!-- col -->
+						<div class="book-col">
+							<div class="input-block">
+								<select name="text">
+									<option value="">Arrival Window</option>
+									<option value="">Arrival Window</option>
+									<option value="">Arrival Window</option>
+								</select>
+							</div>
+						</div><!-- col -->
+					</div>
+					<label for="h-2">Where should we come?</label>
+					<div class="book-row">
+						<div class="book-col book-col__75">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Street Address">
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__25">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Apt.Number">
+							</div>
+						</div><!-- col -->
+					</div>
+					<label for="h-3">Contact info</label>
+					<div class="book-row">
+						<div class="book-col book-col__33">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Name">
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__40">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Email">
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__27">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Phone">
+							</div>
+						</div><!-- col -->
+					</div>
+					<label for="h-4">Choose the type of cleaning</label>
+					<div class="book-row">
+						<div class="book-col book-col__40">
+							<div class="input-block">
+								<select name="text">
+									<option value="">Standard Cleaning - 2 hours</option>
+									<option value="">Arrival Window</option>
+									<option value="">Arrival Window</option>
+								</select>
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__33">
+							<div class="input-block">
+								<select name="text">
+									<option value="">Studio</option>
+									<option value="">Arrival Window</option>
+									<option value="">Arrival Window</option>
+								</select>
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__27">
+							<div class="input-block">
+								<select name="text">
+									<option value="">1 Bathroom</option>
+									<option value="">Arrival Window</option>
+									<option value="">Arrival Window</option>
+								</select>
+							</div>
+						</div><!-- col -->
+					</div>
+					<label for="h-4">Extras</label>
+					<div class="book-row">
+						<div class="book-col book-col__33">
+							<div class="book-item">
+								<span class="hb-ico item-ico-1"></span>
+								<span class="book-item__name">Inside Fridge</span>
+								<span class="book-item__price">$25</span>
+								<div class="book-item__plus"></div>
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__33">
+							<div class="book-item">
+								<span class="hb-ico item-ico-2"></span>
+								<span class="book-item__name">Inside Oven</span>
+								<span class="book-item__price">$25</span>
+								<div class="book-item__plus"></div>
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__33">
+							<div class="book-item">
+								<span class="hb-ico item-ico-3"></span>
+								<span class="book-item__name">Inside Cabinets</span>
+								<span class="book-item__price">$25</span>
+								<div class="book-item__plus"></div>
+							</div>
+						</div><!-- col -->
+					</div>
+					<div class="book-details">
+						<label for="h-7">payment details</label>
+						<ul class="book-cards">
+							<li class="active"><svg width="39" height="25" viewBox="0 0 39 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.2436 3.09355H35.0984V2.87152C35.0984 2.1125 34.7708 1.38436 34.1872 0.846265C33.6036 0.308173 32.8114 0.00391246 31.9839 0L3.13062 0C2.30032 0 1.50404 0.302534 0.916936 0.841049C0.329832 1.37956 0 2.10995 0 2.87152L0 19.0349C0 19.412 0.0809758 19.7854 0.238304 20.1338C0.395632 20.4822 0.626232 20.7988 0.916936 21.0654C1.20764 21.3321 1.55276 21.5436 1.93258 21.6879C2.3124 21.8322 2.7195 21.9065 3.13062 21.9065H3.37267V22.0397C3.37267 22.8248 3.71271 23.5778 4.31797 24.1329C4.92323 24.6881 5.74414 25 6.60011 25H35.2436C36.0996 25 36.9205 24.6881 37.5258 24.1329C38.131 23.5778 38.4711 22.8248 38.4711 22.0397V6.05388C38.4711 5.26875 38.131 4.51578 37.5258 3.96061C36.9205 3.40544 36.0996 3.09355 35.2436 3.09355ZM1.61372 5.15098H33.5008V8.20012H1.61372V5.15098ZM3.13062 1.48017H31.9839C32.3862 1.48017 32.7721 1.62675 33.0565 1.88768C33.341 2.14861 33.5008 2.50251 33.5008 2.87152V3.67081H1.61372V2.87152C1.61372 2.50251 1.77353 2.14861 2.05801 1.88768C2.34248 1.62675 2.72831 1.48017 3.13062 1.48017ZM1.61372 19.0349V9.68028H33.5008V19.0349C33.5008 19.4039 33.341 19.7578 33.0565 20.0188C32.7721 20.2797 32.3862 20.4263 31.9839 20.4263H3.13062C2.72831 20.4263 2.34248 20.2797 2.05801 20.0188C1.77353 19.7578 1.61372 19.4039 1.61372 19.0349ZM36.8574 21.9953C36.8574 22.3878 36.6873 22.7643 36.3847 23.0419C36.0821 23.3195 35.6716 23.4754 35.2436 23.4754H6.60011C6.17213 23.4754 5.76167 23.3195 5.45904 23.0419C5.15641 22.7643 4.98639 22.3878 4.98639 21.9953V21.9065H31.9839C32.395 21.9065 32.8021 21.8322 33.182 21.6879C33.5618 21.5436 33.9069 21.3321 34.1976 21.0654C34.4883 20.7988 34.7189 20.4822 34.8762 20.1338C35.0336 19.7854 35.1145 19.412 35.1145 19.0349V4.57371H35.2598C35.6878 4.57371 36.0982 4.72966 36.4008 5.00724C36.7035 5.28483 36.8735 5.66131 36.8735 6.05388L36.8574 21.9953Z" fill="#2F2F2F"/></svg></li>
+							<li><svg width="38" height="25" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.9478 9H22.5578C22.4172 9 22.2766 9.14625 22.2063 9.29251L21.2222 15.7277C21.2222 15.8739 21.2925 15.9471 21.4331 15.9471H22.6984C22.8389 15.9471 22.9092 15.8739 22.9092 15.7277L23.1904 13.8995C23.1904 13.7533 23.331 13.607 23.5419 13.607H24.3151C25.9319 13.607 26.8457 12.8026 27.0566 11.1938C27.1972 10.5357 27.0566 9.95065 26.7755 9.58502C26.3537 9.21938 25.721 9 24.9478 9ZM25.229 11.4132C25.0884 12.2907 24.4557 12.2907 23.8231 12.2907H23.4013L23.6825 10.6088C23.6825 10.5357 23.7528 10.4625 23.8934 10.4625H24.034C24.4557 10.4625 24.8775 10.4625 25.0884 10.755C25.229 10.8282 25.229 11.0476 25.229 11.4132Z" fill="#2F2F2F"/><path d="M7.72562 9H5.3356C5.19501 9 5.05442 9.14625 4.98413 9.29251L4 15.7277C4 15.8739 4.0703 15.9471 4.21089 15.9471H5.3356C5.47619 15.9471 5.61678 15.8008 5.68707 15.6546L5.96825 13.8995C5.96825 13.7533 6.10884 13.607 6.31973 13.607H7.09297C8.70975 13.607 9.62358 12.8026 9.83446 11.1938C9.97505 10.5357 9.83446 9.95065 9.55328 9.58502C9.13152 9.21938 8.56916 9 7.72562 9ZM8.0068 11.4132C7.86621 12.2907 7.23356 12.2907 6.60091 12.2907H6.24943L6.53061 10.6088C6.53061 10.5357 6.6009 10.4625 6.74149 10.4625H6.88208C7.30385 10.4625 7.72562 10.4625 7.93651 10.755C8.0068 10.8282 8.0771 11.0476 8.0068 11.4132Z" fill="#2F2F2F"/><path d="M14.966 11.3396H13.8413C13.771 11.3396 13.6304 11.4127 13.6304 11.4859L13.5601 11.8515L13.4898 11.7052C13.2086 11.3396 12.7166 11.1934 12.1542 11.1934C10.8889 11.1934 9.7642 12.2171 9.55331 13.6066C9.41272 14.3378 9.62361 14.996 9.97508 15.4347C10.3266 15.8735 10.8186 16.0197 11.4513 16.0197C12.5057 16.0197 13.0681 15.3616 13.0681 15.3616L12.9978 15.7272C12.9978 15.8735 13.0681 15.9466 13.2086 15.9466H14.2631C14.4037 15.9466 14.5442 15.8004 14.6145 15.6541L15.2472 11.559C15.1769 11.4859 15.0363 11.3396 14.966 11.3396ZM13.3492 13.6797C13.2086 14.3378 12.7166 14.8497 12.0136 14.8497C11.6622 14.8497 11.381 14.7035 11.2404 14.5572C11.0998 14.3378 11.0295 14.0453 11.0295 13.6797C11.0998 13.0215 11.6622 12.5096 12.2948 12.5096C12.6463 12.5096 12.8572 12.6559 13.0681 12.8022C13.2789 13.0215 13.3492 13.3872 13.3492 13.6797Z" fill="#2F2F2F"/><path d="M32.1179 11.3396H30.9932C30.9229 11.3396 30.7823 11.4127 30.7823 11.4859L30.712 11.8515L30.6417 11.7052C30.3605 11.3396 29.8684 11.1934 29.3061 11.1934C28.0408 11.1934 26.9161 12.2171 26.7052 13.6066C26.5646 14.3378 26.7755 14.996 27.1269 15.4347C27.4784 15.8735 27.9705 16.0197 28.6031 16.0197C29.6576 16.0197 30.2199 15.3616 30.2199 15.3616L30.1496 15.7272C30.1496 15.8735 30.2199 15.9466 30.3605 15.9466H31.4149C31.5555 15.9466 31.6961 15.8004 31.7664 15.6541L32.399 11.559C32.3288 11.4859 32.2585 11.3396 32.1179 11.3396ZM30.5011 13.6797C30.3605 14.3378 29.8684 14.8497 29.1655 14.8497C28.814 14.8497 28.5328 14.7035 28.3922 14.5572C28.2517 14.3378 28.1814 14.0453 28.1814 13.6797C28.2517 13.0215 28.814 12.5096 29.4467 12.5096C29.7981 12.5096 30.009 12.6559 30.2199 12.8022C30.5011 13.0215 30.5714 13.3872 30.5011 13.6797Z" fill="#2F2F2F"/><path d="M21.0816 11.3398H19.8866C19.746 11.3398 19.6757 11.413 19.6054 11.4861L18.059 13.9724L17.356 11.6324C17.2857 11.4861 17.2154 11.413 17.0045 11.413H15.8798C15.7392 11.413 15.6689 11.5592 15.6689 11.7055L16.9342 15.5812L15.7392 17.3362C15.6689 17.4825 15.7392 17.7019 15.8798 17.7019H17.0045C17.1451 17.7019 17.2154 17.6287 17.2857 17.5556L21.1519 11.7786C21.3628 11.5592 21.2222 11.3398 21.0816 11.3398Z" fill="#2F2F2F"/><path d="M33.4534 9.21889L32.4692 15.8004C32.4692 15.9466 32.5395 16.0197 32.6801 16.0197H33.6642C33.8048 16.0197 33.9454 15.8735 34.0157 15.7272L34.9999 9.29202C34.9999 9.14576 34.9296 9.07263 34.789 9.07263H33.6642C33.594 8.99951 33.5237 9.07263 33.4534 9.21889Z" fill="#2F2F2F"/><rect x="0.75" y="0.75" width="36.5" height="23.5" rx="1.25" stroke="#2F2F2F" stroke-width="1.5"/></svg></li>
+							<li><svg width="38" height="25" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.75" y="0.75" width="36.5" height="23.5" rx="1.25" stroke="#2F2F2F" stroke-width="1.5"/><path d="M10.0639 16.1167C9.37037 16.1167 8.74167 15.9676 8.17778 15.6694C7.62037 15.3648 7.17963 14.9468 6.85556 14.4153C6.53796 13.8773 6.37917 13.2713 6.37917 12.5972C6.37917 11.9231 6.53796 11.3204 6.85556 10.7889C7.17963 10.2509 7.62037 9.83287 8.17778 9.53472C8.74167 9.23009 9.37361 9.07778 10.0736 9.07778C10.6634 9.07778 11.1949 9.18148 11.6681 9.38889C12.1477 9.5963 12.5495 9.89444 12.8736 10.2833L11.8625 11.2167C11.4023 10.6852 10.8319 10.4194 10.1514 10.4194C9.73009 10.4194 9.35417 10.5134 9.02361 10.7014C8.69306 10.8829 8.4338 11.1389 8.24583 11.4694C8.06435 11.8 7.97361 12.1759 7.97361 12.5972C7.97361 13.0185 8.06435 13.3944 8.24583 13.725C8.4338 14.0556 8.69306 14.3148 9.02361 14.5028C9.35417 14.6843 9.73009 14.775 10.1514 14.775C10.8319 14.775 11.4023 14.506 11.8625 13.9681L12.8736 14.9014C12.5495 15.2968 12.1477 15.5981 11.6681 15.8056C11.1884 16.013 10.6537 16.1167 10.0639 16.1167ZM15.902 10.6917C16.7122 10.6917 17.3344 10.8861 17.7687 11.275C18.2029 11.6574 18.4201 12.2375 18.4201 13.0153V16H17.0006V15.3486C16.7154 15.8347 16.184 16.0778 15.4062 16.0778C15.0043 16.0778 14.6543 16.0097 14.3562 15.8736C14.0645 15.7375 13.8409 15.5495 13.6853 15.3097C13.5298 15.0699 13.452 14.7977 13.452 14.4931C13.452 14.0069 13.6335 13.6245 13.9965 13.3458C14.3659 13.0671 14.933 12.9278 15.6978 12.9278H16.9034C16.9034 12.5972 16.8029 12.3444 16.602 12.1694C16.4011 11.988 16.0997 11.8972 15.6978 11.8972C15.4191 11.8972 15.1437 11.9426 14.8715 12.0333C14.6057 12.1176 14.3789 12.2343 14.1909 12.3833L13.6465 11.3236C13.9316 11.1227 14.2719 10.9671 14.6673 10.8569C15.0691 10.7468 15.4807 10.6917 15.902 10.6917ZM15.7853 15.0569C16.0446 15.0569 16.2747 14.9986 16.4756 14.8819C16.6765 14.7588 16.8191 14.5806 16.9034 14.3472V13.8125H15.8631C15.2409 13.8125 14.9298 14.0167 14.9298 14.425C14.9298 14.6194 15.0043 14.775 15.1534 14.8917C15.309 15.0019 15.5196 15.0569 15.7853 15.0569ZM21.5524 16.0778C21.1182 16.0778 20.6936 16.0259 20.2788 15.9222C19.864 15.812 19.5335 15.6759 19.2872 15.5139L19.7927 14.425C20.0261 14.5741 20.308 14.6972 20.6386 14.7944C20.9691 14.8852 21.2932 14.9306 21.6108 14.9306C22.2524 14.9306 22.5733 14.7718 22.5733 14.4542C22.5733 14.3051 22.4858 14.1981 22.3108 14.1333C22.1358 14.0685 21.8668 14.0134 21.5038 13.9681C21.0761 13.9032 20.7228 13.8287 20.4441 13.7444C20.1654 13.6602 19.9223 13.5111 19.7149 13.2972C19.514 13.0833 19.4136 12.7787 19.4136 12.3833C19.4136 12.0528 19.5075 11.7611 19.6955 11.5083C19.8899 11.2491 20.1686 11.0481 20.5316 10.9056C20.9011 10.763 21.3353 10.6917 21.8344 10.6917C22.2038 10.6917 22.57 10.7338 22.933 10.8181C23.3024 10.8958 23.6071 11.006 23.8469 11.1486L23.3413 12.2278C22.8811 11.9685 22.3788 11.8389 21.8344 11.8389C21.5103 11.8389 21.2673 11.8843 21.1052 11.975C20.9432 12.0657 20.8622 12.1824 20.8622 12.325C20.8622 12.487 20.9497 12.6005 21.1247 12.6653C21.2997 12.7301 21.5784 12.7917 21.9608 12.85C22.3886 12.9213 22.7386 12.9991 23.0108 13.0833C23.283 13.1611 23.5196 13.3069 23.7205 13.5208C23.9214 13.7347 24.0219 14.0329 24.0219 14.4153C24.0219 14.7394 23.9247 15.0278 23.7302 15.2806C23.5358 15.5333 23.2506 15.731 22.8747 15.8736C22.5052 16.0097 22.0645 16.0778 21.5524 16.0778ZM28.1368 10.6917C28.785 10.6917 29.3067 10.8861 29.7021 11.275C30.1039 11.6639 30.3049 12.2407 30.3049 13.0056V16H28.7882V13.2389C28.7882 12.8241 28.6975 12.5162 28.516 12.3153C28.3345 12.1079 28.072 12.0042 27.7285 12.0042C27.3461 12.0042 27.0414 12.1241 26.8146 12.3639C26.5877 12.5972 26.4743 12.9472 26.4743 13.4139V16H24.9576V8.78611H26.4743V11.3139C26.6752 11.113 26.9183 10.9606 27.2035 10.8569C27.4887 10.7468 27.7998 10.6917 28.1368 10.6917Z" fill="#2F2F2F"/></svg></li>
+						</ul>
+					</div>
+					<div class="book-row">
+						<div class="book-col book-col__50">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Card number">
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__25">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Exp. date">
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__25">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="CVV code">
+							</div>
+						</div><!-- col -->
+					</div>
+					<label for="h-7">payment details</label>
+					<div class="book-row book-row__radio">
+						<div class="book-col book-col__25">
+							<div class="radio">
+								<input type="radio" name="payment" checked>
+								<div class="radio-text">
+									<span class="radio-title">One time</span>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__25">
+							<div class="radio">
+								<input type="radio" name="payment">
+								<div class="radio-text">
+									<span class="radio-name">Weekly</span>
+									<div class="radio-save">Save <b>15%</b></div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__25">
+							<div class="radio">
+								<input type="radio" name="payment">
+								<div class="radio-text">
+									<span class="radio-name">Bl-weekly</span>
+									<div class="radio-save">Save <b>10%</b></div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="book-col book-col__25">
+							<div class="radio">
+								<input type="radio" name="payment">
+								<div class="radio-text">
+									<span class="radio-name">Monthly</span>
+									<div class="radio-save">Save <b>5%</b></div>
+								</div>
+							</div>
+						</div><!-- col -->
+					</div>
+					<div class="book-bottom">
+						<div class="book-bottom__text">
+							<span>Total:</span>
+							<span>$85,32</span>
+						</div>
+						<div class="book-bottom__buttons">
+							<button class="main-btn" disabled>submit</button>
+							<div class="book-bottom__buttons-check">
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<span class="checkbox-ico"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.87665 0.121495C9.71261 -0.0404984 9.44614 -0.0404984 9.28209 0.121495L3.33316 6.00173L0.717594 3.43594C0.553549 3.27394 0.287079 3.27394 0.123034 3.43594C-0.0410113 3.59793 -0.0410113 3.86019 0.123034 4.02177L3.03713 6.88006C3.19951 7.03998 3.46973 7.03998 3.63211 6.88006L9.87665 0.707323C10.0411 0.545744 10.0411 0.283074 9.87665 0.121495C9.71261 -0.0404984 10.0411 0.283074 9.87665 0.121495Z" fill="#006EAC"/></svg></span>
+									<p>I Agree Terms And Privacy Policy.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="book-sidebar">
+				<h2 class="book-title">Your order Summary</h2>
+				<div class="book-sidebar__row">
+					<div class="book-sidebar__col book-sidebar__col-small">
+						<span>bedrooms</span>
+						<b>Studio</b>
+					</div>
+					<div class="book-sidebar__col">
+						<span>bedrooms</span>
+						<b>1</b>
+					</div>
+					<div class="book-sidebar__col book-sidebar__col-small">
+						<span>Schedule date</span>
+						<b>Studio</b>
+					</div>
+					<div class="book-sidebar__col">
+						<span>Clean Type</span>
+						<b class="book-type">Standart cleaning <i>(2 hours)</i></b>
+					</div>
+				</div>
+				<ul class="book-list">
+					<li class="book-list__big">
+						<span>appointment value</span>
+						<b>$79</b>
+					</li>
+					<li>
+						<span>Discounts</span>
+						- $0.00
+					</li>
+					<li class="book-list__dash">
+						<span class="text-blue">Promo Code</span>
+					</li>
+					<li class="book-list__big">
+						<span>SUBTOTAL</span>
+						$79
+					</li>
+					<li>
+						<span>Tax</span>
+						$6.32
+					</li>
+					<li>
+						<span>Discounts</span>
+						- $0.00
+					</li>
+				</ul>
+				<div class="book-total">
+					<span>TOTAL</span>
+					<b>$85.32</b>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- end book -->
