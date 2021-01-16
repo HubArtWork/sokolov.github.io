@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-top__row">
+					<a data-fancybox data-src="#modal-local" href="javascript:;" class="header-local">
+						<span class="hb-ico local-ico"></span>
+						<b>Москва</b>
+					</a>
+					<ul class="header-menu">
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#" class="drop">
+							<div class="drop-top">
+								<span class="drop-text">Покупателям</span>
+								<span class="hb-ico arrow-down"></span>
+							</div>
+							<ul class="drop-list">
+								<li><a href="#">Покупателям</a></li>
+								<li><a href="#">Покупателям</a></li>
+								<li><a href="#">Покупателям</a></li>
+							</ul>
+						</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">
+							<span class="hb-ico percent-ico"></span>
+							Акции
+						</a></li>
+					</ul>
+				</div>
+				<div class="header-info">
+					<span class="header-timetable">ПН-ВС 10:00 - 18:00</span>
+					<a href="+78122009716" class="header-phone">+7 (812) 200-97-16</a>
+					<a data-fancybox data-src="#modal-call" href="javascript:;" class="main-btn">Заказать звонок</a>
+				</div>
+				<a href="#" class="header-entrance">
+					<span class="hb-ico user-ico"></span>
+					Войти
+				</a>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<div class="hb-ico header-bar"></div>
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<a href="+78122009716" class="hb-ico tel-ico"></a>
+				<span class="hb-ico search-ico search-mob"></span>
+				<a href="#" class="header-catalog catalog-btn">
+					<span class="hb-ico catalog-ico"></span>
+					Каталог товаров
+				</a>
+				<div class="header-search">
+					<form action="POST">
+						<div class="input-block">
+							<input type="text" name="search" placeholder="Поиск по каталогу">
+							<span class="hb-ico search-ico"></span>
+						</div>
+					</form>
+				</div>
+				<div class="header-buttons">
+					<a href="#" class="hb-ico bar-ico"></a>
+					<a href="#" class="hb-ico favorite-ico"></a>
+					<a href="#" class="hb-ico basket-ico">
+						<b>10</b>
+					</a>
+					<span class="header-price">10 000 Р</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="mobMenu">
+		<div class="mobMenu-wrap">
+			<ul class="mobMenu-list">
+				<li><a data-fancybox data-src="#modal-local" href="javascript:;">
+					<span class="hb-ico local-ico"></span>
+					Москва
+				</a></li>
+				<li><a href="#">
+					<span class="hb-ico percent-ico"></span>
+					Акции
+				</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Как купить</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Обзоры</a></li>
+				<li><a href="#">Гарантия и сервис</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="mobMenu-bottom">
+				<div class="mobMenu-info">
+					<a href="tel:+78122009716" class="mobMenu-phone">+7 (812) 200-97-16</a>
+					<span>ПН-ВС 10:00 - 18:00</span>
+				</div>
+				<a data-fancybox data-src="#modal-call" href="javascript:;" class="main-btn">Заказать звонок</a>
+			</div>
+		</div>
+	</div>
+	<ul class="mobBar">
+		<li><a href="#">
+			<span><i class="hb-ico house-ico"></i></span>
+			<b>Главная</b>
+		</a></li>
+		<li><a href="#" class="catalog-btn">
+			<span><i class="hb-ico catalog-ico-2"></i></span>
+			<b>Каталог</b>
+		</a></li>
+		<li><a href="#">
+			<span><i class="hb-ico favorite-ico"></i></span>
+			<b>Избранное</b>
+		</a></li>
+		<li><a href="#">
+			<span><i class="hb-ico user-ico"></i></span>
+			<b>Войти</b>
+		</a></li>
+		<li><a href="#">
+			<span>
+				<i class="hb-ico basket-ico-2">
+					<b>10</b>
+				</i>
+			</span>
+			<b>Корзина</b>
+		</a></li>
+	</ul>
+	<!-- end header -->
+	<!-- start directory -->
+	<div class="main-sidebar directory">
+		<div class="catalog-top">
+			<span class="catalog-top__title">Каталог</span>
+			<span class="hb-ico close-ico"></span>
+		</div>
+		<ul class="catalog-menu">
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-1"></span>
+					Арбалеты и Луки
+				</a>
+				<div class="catalog-item__row">
+					<div class="catalog-top">
+						<span class="hb-ico arrow-left"></span>
+						<span class="catalog-top__title">Ножи</span>
+						<span class="hb-ico close-ico"></span>
+					</div>
+					<div class="catalog-mob">
+						<a href="#" class="catalog-mob__link">
+							<img src="img/catalog.png" alt="">
+							<span class="catalog-mob__name">Смотреть все ножи</span>
+						</a>
+					</div>
+					<div class="catalog-item__col">
+						<ul>
+							<li><a href="#">Балисонги</a></li>
+							<li><a href="#">Для городского ношения</a></li>
+							<li><a href="#">Керамбиты</a></li>
+							<li><a href="#">Кукри</a></li>
+							<li><a href="#">Кухонные</a></li>
+							<li><a href="#">Мачете</a></li>
+							<li><a href="#">Метательные</a></li>
+							<li><a href="#">Мультиинструменты</a></li>
+							<li><a href="#">Охотничьи</a></li>
+							<li><a href="#">Складные</a></li>
+							<li><a href="#">Сувенирные</a></li>
+							<li><a href="#">С фиксированным клинком</a></li>
+						</ul>
+					</div>
+					<div class="catalog-item__col">
+						<ul>
+							<li><a href="#">Тренировочные</a></li>
+							<li><a href="#">Туристические</a></li>
+							<li><a href="#">Тычковые</a></li>
+							<li><a href="#">Филейные</a></li>
+							<li><a href="#">Швейцарские</a></li>
+						</ul>
+						<div class="catalog-item__block">
+							<span class="catalog-item__subtitle">Аксессуары для ножей</span>
+							<ul>
+								<li><a href="#">Средства заточки</a></li>
+								<li><a href="#">Темляки и бусины</a></li>
+							  <li><a href="#">Чехлы и ножны</a></li>
+							</ul>
+						</div>
+						<div class="catalog-item__block">
+							<span class="catalog-item__subtitle">Расходники для ножей</span>
+							<ul>
+								<li><a href="#">Запчасти для Victorinox</a></li>
+								<li><a href="#">Масла для ножей</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-item__col">
+						<span class="catalog-item__title">Бренды</span>
+						<div class="catalog-item__logos">
+							<a href="#" class="catalog-item__logo"><img src="img/logo-1.png" alt=""></a>
+							<a href="#" class="catalog-item__logo"><img src="img/logo-2.png" alt=""></a>
+							<a href="#" class="catalog-item__logo"><img src="img/logo-3.png" alt=""></a>
+						</div>
+						<span class="catalog-item__title">Подборки</span>
+						<ul>
+							<li><a href="#">Ножи Кизляр</a></li>
+							<li><a href="#">Ножи Victorinox</a></li>
+							<li><a href="#">Ножи НОКС</a></li>
+							<li><a href="#">Ножи Steel Will</a></li>
+							<li><a href="#">Ножи Cold Steel</a></li>
+							<li><a href="#">Ножи Ganzo</a></li>
+							<li><a href="#">Складные ножи Ganzo</a></li>
+						</ul>
+					</div>
+					<div class="catalog-item__col">
+						<ul>
+							<li><a href="#">Складные ножи Cold Steel</a></li>
+							<li><a href="#">Туристические ножи Ganzo</a></li>
+							<li><a href="#">Туристические ножи Morakniv</a></li>
+							<li><a href="#">Точильный брусок для заточки</a></li>
+							<li><a href="#">Ножи Кизляр Суприм</a></li>
+							<li><a href="#">Ножи МОРА</a></li>
+							<li><a href="#">Складные ножи Opinel</a></li>
+							<li><a href="#">Тренировочные ножи бабочки</a></li>
+							<li><a href="#">Алмазные точилки</a></li>
+							<li><a href="#">Складные Кизляр</a></li>
+							<li><a href="#">Мультитулы Leatherman</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-2"></span>
+					Ножи
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-3"></span>
+					Оптика
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-4"></span>
+					Пневматика
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-5"></span>
+					Страйкбол
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-6"></span>
+					Сувениры
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-7"></span>
+					Туризм
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-8"></span>
+					Средства самообороны
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-9"></span>
+					Фонари
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-10"></span>
+					Экипировка
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="#" class="catalog-link">
+					<span class="hb-ico sidebar-ico-11"></span>
+					Электроника
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- end directory -->
+	<!-- start main -->
+	<section class="main">
+		<div class="wrapper">
+			<div class="main-row">
+				<div class="main-content">
+					<div class="main-slider">
+						<div class="main-slide" style="background-image: url(img/main-bg-min.jpg);">
+							<div class="main-slide__mob" style="background-image: url(img/main-bg-mob-min.jpg);"></div>
+							<div class="main-info">
+								<div class="main-info__top">
+									<span class="hb-ico star-ico"></span>
+									<span class="main-title">Кешбэк</span>
+									<span class="hb-ico star-ico"></span>
+								</div>
+								<div class="main-slide__row">
+									<div class="main-percent">
+										<b>5</b>
+										<span>%</span>
+									</div>
+									<p>на все следующие заказы</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-slide" style="background-image: url(img/main-bg-min.jpg);">
+							<div class="main-slide__mob" style="background-image: url(img/main-bg-mob-min.jpg);"></div>
+							<div class="main-info">
+								<div class="main-info__top">
+									<span class="hb-ico star-ico"></span>
+									<span class="main-title">Кешбэк</span>
+									<span class="hb-ico star-ico"></span>
+								</div>
+								<div class="main-slide__row">
+									<div class="main-percent">
+										<b>5</b>
+										<span>%</span>
+									</div>
+									<p>на все следующие заказы</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-slide" style="background-image: url(img/main-bg-min.jpg);">
+							<div class="main-slide__mob" style="background-image: url(img/main-bg-mob-min.jpg);"></div>
+							<div class="main-info">
+								<div class="main-info__top">
+									<span class="hb-ico star-ico"></span>
+									<span class="main-title">Кешбэк</span>
+									<span class="hb-ico star-ico"></span>
+								</div>
+								<div class="main-slide__row">
+									<div class="main-percent">
+										<b>5</b>
+										<span>%</span>
+									</div>
+									<p>на все следующие заказы</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-goods">
+						<div class="main-goods__head">
+							<span class="hb-ico fire-ico"></span>
+							Товары дня
+						</div>
+						<div class="main-goods__slider">
+							<div class="main-goods__slide">
+								<div class="main-goods__wrap">
+									<a href="#" class="main-goods__img"><img src="img/product-small-1-min.png" alt=""></a>
+									<div class="main-goods__row">
+										<span class="main-goods__price">6 190 ₽</span>
+										<span class="main-goods__oldPrice">6 590 ₽</span>
+									</div>
+									<span class="main-goods__name"><a href="#">Пневматический пистолет Umarex ПМ Ultra</a></span>
+								</div>
+							</div><!-- slide -->
+							<div class="main-goods__slide">
+								<div class="main-goods__wrap">
+									<a href="#" class="main-goods__img"><img src="img/product-small-2-min.png" alt=""></a>
+									<div class="main-goods__row">
+										<span class="main-goods__price">6 190 ₽</span>
+										<span class="main-goods__oldPrice">6 590 ₽</span>
+									</div>
+									<span class="main-goods__name"><a href="#">Арбалет блочный Man Kung - MK-400BR_95 Lbs</a></span>
+								</div>
+							</div><!-- slide -->
+							<div class="main-goods__slide">
+								<div class="main-goods__wrap">
+									<a href="#" class="main-goods__img"><img src="img/product-small-2-min.png" alt=""></a>
+									<div class="main-goods__row">
+										<span class="main-goods__price">6 190 ₽</span>
+										<span class="main-goods__oldPrice">6 590 ₽</span>
+									</div>
+									<span class="main-goods__name"><a href="#">Нож складной туристический Firebird F712</a></span>
+								</div>
+							</div><!-- slide -->
+						</div>
+					</div>
+				</div>
+				<div class="main-sidebar">
+					<ul class="catalog-menu">
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-1"></span>
+							Арбалеты и Луки
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-2"></span>
+							Ножи
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-3"></span>
+							Оптика
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-4"></span>
+							Пневматика
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-5"></span>
+							Страйкбол
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-6"></span>
+							Сувениры
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-7"></span>
+							Туризм
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-8"></span>
+							Средства самообороны
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-9"></span>
+							Фонари
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-10"></span>
+							Экипировка
+						</a></li>
+						<li><a href="#">
+							<span class="hb-ico sidebar-ico-11"></span>
+							Электроника
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start products -->
+	<section class="products">
+		<div class="wrapper">
+			<h2 class="section-title">Рекомендуем</h2>
+			<div class="products-slider">
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-hit">Хит</li>
+							<li class="product-percent">%</li>
+							<li class="product-new">NEW</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex ПМ Ultra</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-percent">%</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex Colt Defender (colt)</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-percent">%</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex XBG 4,5 мм</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-percent">%</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-6-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Арбалет блочный Man Kung - MK-400BR_95 Lbs</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-percent">%</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Нож складной туристический Firebird F712</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-percent">%</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex ПМ Ultra</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+			</div>
+		</div>
+	</section>
+	<!-- end products -->
+	<!-- start products -->
+	<section class="products">
+		<div class="wrapper">
+			<h2 class="section-title">Хиты продаж</h2>
+			<div class="products-slider">
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-hit">Хит</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex ПМ Ultra</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-hit">Хит</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex Colt Defender (colt)</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-hit">Хит</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex XBG 4,5 мм</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-hit">Хит</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-6-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Арбалет блочный Man Kung - MK-400BR_95 Lbs</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-hit">Хит</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Нож складной туристический Firebird F712</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+			</div>
+		</div>
+	</section>
+	<!-- end products -->
+	<!-- start review -->
+	<section class="review">
+		<div class="wrapper">
+			<div class="section-row">
+				<h2 class="section-title">Обзоры</h2>
+				<a href="#" class="section-link">
+					Показать все обзоры
+					<span class="hb-ico arrow-right"></span>
+				</a>
+			</div>
+			<div class="review-slider">
+				<div class="review-col review-col__big">
+					<a href="#" class="review-wrap">
+						<img src="img/product-bg-1-min.jpg" alt="">
+						<span class="review-name">Сравнительный рейтинг пневматических винтовок</span>
+					</a>
+				</div><!-- col -->
+				<div class="review-col">
+					<a href="#" class="review-wrap">
+						<div class="review-img"><img src="img/product-bg-2-min.jpg" alt=""></div>
+						<span class="review-name">Обзор ножей для самообороны и юридический вопрос легальности</span>
+					</a>
+				</div><!-- col -->
+				<div class="review-col">
+					<a href="#" class="review-wrap">
+						<div class="review-img"><img src="img/product-bg-3-min.jpg" alt=""></div>
+						<span class="review-name">Рейтинг ножей 2020 по версии Steel&Gun</span>
+					</a>
+				</div><!-- col -->
+				<div class="review-col">
+					<a href="#" class="review-wrap">
+						<div class="review-img"><img src="img/product-bg-4-min.jpg" alt=""></div>
+						<span class="review-name">Сравнительный рейтинг пневматических винтовок</span>
+					</a>
+				</div><!-- col -->
+				<div class="review-col">
+					<a href="#" class="review-wrap">
+						<div class="review-img"><img src="img/product-bg-5-min.jpg" alt=""></div>
+						<span class="review-name">Из каких популярных сталей делают туристические ножи?</span>
+					</a>
+				</div><!-- col -->
+				<div class="review-col">
+					<a href="#" class="review-wrap">
+						<div class="review-img"><img src="img/product-bg-6-min.jpg" alt=""></div>
+						<span class="review-name">Система Blowback</span>
+					</a>
+				</div><!-- col -->
+				<div class="review-col">
+					<a href="#" class="review-wrap">
+						<div class="review-img"><img src="img/product-bg-7-min.jpg" alt=""></div>
+						<span class="review-name">Обзор средств для заточки</span>
+					</a>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end review -->
+	<!-- start products -->
+	<section class="products">
+		<div class="wrapper">
+			<h2 class="section-title">Новинки</h2>
+			<div class="products-slider">
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-new">NEW</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex ПМ Ultra</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-new">NEW</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex Colt Defender (colt)</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-new">NEW</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex XBG 4,5 мм</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-new">NEW</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-6-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Арбалет блочный Man Kung - MK-400BR_95 Lbs</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-new">NEW</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-5-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-4-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Нож складной туристический Firebird F712</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+				<div class="product">
+					<div class="product-wrap">
+						<ul class="product-list">
+							<li class="product-new">NEW</li>
+						</ul>
+						<div class="product-slider">
+							<a href="#" class="product-slide"><img src="img/product-2-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-3-min.png" alt=""></a>
+							<a href="#" class="product-slide"><img src="img/product-1-min.png" alt=""></a>
+						</div>
+						<h3 class="product-name"><a href="#">Пневматический пистолет Umarex ПМ Ultra</a></h3>
+						<div class="product-price">
+							<div>26 190 Р</div>
+							<div class="product-old">27 000 Р</div>
+						</div>
+						<div class="product-status">
+							<span class="hb-ico status-ico-green"></span>
+							В наличии
+						</div>
+						<a href="#" class="product-reviews">
+							<span class="hb-ico status-rate-0"></span>
+							0 отзывов
+						</a>
+						<div class="product-row">
+							<a href="#" class="second-btn">В корзину</a>
+							<div class="product-icons">
+								<a href="#" class="hb-ico like-ico-gray"></a>
+								<a href="#" class="hb-ico rating-ico-gray"></a>
+							</div>
+						</div>
+					</div>
+				</div><!-- product -->
+			</div>
+		</div>
+	</section>
+	<!-- end products -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<h2 class="section-title">STEEL-GUN - интернет-магазин товаров для активного отдыха</h2>
+			<div class="about-info">
+				<p>Представлен такими мировыми брендами, как Leatherman, Victorinox, Spyderco, Ontario, Кизляр, Ganzo, Златоуст, Mora, Cyma, G&G, Stalker, Gletcher, Borner, Umarex, Zippo, Led Lenser, Petzl, Nikon, Veber. Данные производители заработали безупречную репутацию среди страйкболистов, любителей ножей и пневматики, туристов и спортсменов.</p>
+				<p>Совершив покупку в STEEL-GUN.RU, вы получите официальную гарантию от производителя, идеальное качество, бонусы за каждую покупку и море положительных эмоций.</p>
+			</div>
+			<a href="#" class="about-link">Читать далее</a>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-col footer-col__1">
+					<span class="footer-title">Каталог</span>
+					<div class="footer-block">
+						<div class="footer-block__row">
+							<ul class="footer-list">
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Арбалеты и Луки</a></li>
+								<li><a href="#">Ножи</a></li>
+								<li><a href="#">Оптика</a></li>
+								<li><a href="#">Пневматика</a></li>
+								<li><a href="#">Страйкбол</a></li>
+							</ul>
+							<ul class="footer-list">
+								<li><a href="#">Сувениры</a></li>
+								<li><a href="#">Туризм</a></li>
+								<li><a href="#">Средства самообороны</a></li>
+								<li><a href="#">Фонари</a></li>
+								<li><a href="#">Экипировка</a></li>
+								<li><a href="#">Электроника</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col footer-col__2">
+					<span class="footer-title">Как купить</span>
+					<div class="footer-block">
+						<ul class="footer-list">
+							<li><a href="#">Способы оплаты</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Гарантия и Сервис</a></li>
+							<li><a href="#">Бонусная программа</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-col footer-col__3">
+					<span class="footer-title">Компания</span>
+					<div class="footer-block">
+						<ul class="footer-list">
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Обзоры и советы</a></li>
+							<li><a href="#">Наши партнеры</a></li>
+							<li><a href="#">Наши сотрудники</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Реквизиты</a></li>
+							<li><a href="#">Политика обработки персональных данных</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-col footer-col__4">
+					<span class="footer-title">Контакты</span>
+					<ul class="footer-contacts">
+						<li><a href="tel:+78122009716">+7 (812) 200-97-16</a></li>
+						<li><a href="mailto:info@steel-gun.ru">info@steel-gun.ru</a></li>
+					</ul>
+					<p>г. Санкт-Петербург, пр. Народного Ополчения, д. 22, офис 301-7</p>
+					<ul class="footer-social">
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>© 2020 Steel&Gun (Стил Ган) - интернет-магазин товаров для активного отдыха, охоты и страйкбола.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-call" class="modal">
+		<div class="modal-close"></div>
+		<div class="modal-wrap"><!-- add active for done -->
+			<div class="modal-form">
+				<h3 class="modal-title">Обратный звонок</h3>
+				<form action="POST">
+					<div class="input-block">
+						<label for="m-1">Ваше имя *</label>
+						<input id="m-1" type="text" name="name" placeholder="Введите имя">
+					</div>
+					<div class="input-block">
+						<label for="m-2">Телефон *</label>
+						<input id="m-2" type="text" name="phone" placeholder="Введите телефон">
+					</div>
+					<button class="main-btn">Заказать звонок</button>
+					<p>Нажимая на кнопку «Заказать звонок», я даю согласие на обработку персональных данных</p>
+				</form>
+			</div>
+			<div class="modal-done">
+				<h3 class="modal-title">Спасибо!</h3>
+				<p>Мы свяжемся с вами в ближайшее время<br>График работы: пн-пт, 9:00 - 18:00</p>
+				<a href="#" class="second-btn">Вернуться к покупкам</a>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-local" class="modal modal-local">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<h3 class="modal-title">Выберите город</h3>
+			<form action="POST">
+				<div class="input-block">
+					<input type="text" name="search" placeholder="Поиск по каталогу">
+					<span class="hb-ico search-ico"></span>
+				</div>
+			</form>
+			<ul class="modal-list">
+				<li><a href="#" class="active">Москва</a></li>
+				<li><a href="#">Санкт-Петербург</a></li>
+				<li><a href="#">Астрахань</a></li>
+				<li><a href="#">Барнаул</a></li>
+				<li><a href="#">Владивосток</a></li>
+				<li><a href="#">Волгоград</a></li>
+				<li><a href="#">Воронеж</a></li>
+				<li><a href="#">Екатеринбург</a></li>
+				<li><a href="#">Ижевск</a></li>
+				<li><a href="#">Иркутск</a></li>
+				<li><a href="#">Казань</a></li>
+				<li><a href="#">Кемерово</a></li>
+				<li><a href="#">Киров</a></li>
+				<li><a href="#">Краснодар</a></li>
+				<li><a href="#">Красноярск</a></li>
+				<li><a href="#">Липецк</a></li>
+				<li><a href="#">Махачкала</a></li>
+				<li><a href="#">Набережные Челны</a></li>
+				<li><a href="#">Нижний Новгород</a></li>
+				<li><a href="#">Новокузнецк</a></li>
+			</ul>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
