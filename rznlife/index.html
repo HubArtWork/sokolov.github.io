@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-bar"><span></span></div>
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<div class="search-btn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.32031 11.9062C7.57031 11.9062 8.72656 11.5 9.66406 10.8047L13.3125 14.4609C13.4531 14.6094 13.6484 14.6797 13.8516 14.6797C14.2891 14.6797 14.5859 14.3438 14.5859 13.9297C14.5859 13.7344 14.5234 13.5469 14.375 13.3984L10.7422 9.75781C11.4922 8.79688 11.9453 7.59375 11.9453 6.28906C11.9453 3.1875 9.41406 0.664062 6.32031 0.664062C3.23438 0.664062 0.695312 3.1875 0.695312 6.28906C0.695312 9.38281 3.22656 11.9062 6.32031 11.9062ZM6.32031 10.8594C3.8125 10.8594 1.75 8.78906 1.75 6.28906C1.75 3.78125 3.8125 1.71094 6.32031 1.71094C8.82812 1.71094 10.8984 3.78125 10.8984 6.28906C10.8984 8.78906 8.82812 10.8594 6.32031 10.8594Z" fill="black"/></svg></div>
+				<div class="header-row">
+					<div class="header-search">
+						<form action="POST">
+							<div class="header-search__wrap">
+								<span class="search-ico"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.43799 18.291C11.3911 18.291 13.1978 17.6562 14.6626 16.5698L20.3633 22.2827C20.583 22.5146 20.8882 22.6245 21.2056 22.6245C21.8892 22.6245 22.353 22.0996 22.353 21.4526C22.353 21.1475 22.2554 20.8545 22.0234 20.6226L16.3472 14.9341C17.519 13.4326 18.2271 11.5527 18.2271 9.51416C18.2271 4.66797 14.272 0.725098 9.43799 0.725098C4.61621 0.725098 0.648926 4.66797 0.648926 9.51416C0.648926 14.3481 4.604 18.291 9.43799 18.291ZM9.43799 16.6553C5.51953 16.6553 2.29688 13.4204 2.29688 9.51416C2.29688 5.5957 5.51953 2.36084 9.43799 2.36084C13.3564 2.36084 16.5913 5.5957 16.5913 9.51416C16.5913 13.4204 13.3564 16.6553 9.43799 16.6553Z" fill="white"/></svg></span>
+								<input type="text" name="search" placeholder="Поиск">
+								<span class="hb-ico close-ico"></span>
+								<span class="hb-ico remove-ico"></span>
+							</div>
+						</form>
+					</div>
+					<div class="header-btns">
+						<a href="#" class="header-link">О нас</a>
+						<div class="header-btn">
+							<a data-fancybox data-src="#modal-offer" href="javascript:;">Предложить новость</a>
+						</div>
+						<ul class="mob-social">
+							<li><a href="#">
+								<span class="hb-ico vk-ico"></span>
+							</a></li>
+							<li><a href="#">
+								<span class="hb-ico fb-ico"></span>
+							</a></li>
+							<li><a href="#">
+								<span class="hb-ico inst-ico"></span>
+							</a></li>
+							<li><a href="#">
+								<span class="hb-ico clas-ico"></span>
+							</a></li>
+							<li><a href="#">
+								<span class="hb-ico you-ico"></span>
+							</a></li>
+							<li><a href="#">
+								<span class="hb-ico tg-ico"></span>
+							</a></li>
+							<li><a href="#">
+								<span class="hb-ico tw-ico"></span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<nav class="header-nav">
+					<ul class="header-menu">
+						<li><a href="#">Все</a></li>
+						<li><a href="#" class="active">Новости Рязани</a></li>
+						<li><a href="#">Россия и мир</a></li>
+						<li><a href="#">Треш</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Дороги Рязани</a></li>
+						<li><a href="#">Фоторепортаж</a></li>
+						<li><a href="#">Опросы</a></li>
+						<li><a href="#">Наука</a></li>
+						<li class="drop">
+							<a href="#" class="drop-text"><span></span></a>
+							<ul class="drop-list">
+								<li><a href="#">Криминал</a></li>
+								<li><a href="#">Культура</a></li>
+								<li><a href="#">Транспорт</a></li>
+								<li><a href="#">Праздники</a></li>
+								<li><a href="#">Видео</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<ul class="header-social">
+					<li><a href="#">
+						<span class="hb-ico vk-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico fb-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico inst-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico clas-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico you-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico tg-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico tw-ico"></span>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="search-bg"></div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="wrapper">
+			<div class="main-content">
+				<div class="main-story">
+					<div class="main-story__slider">
+						<div class="main-story__slide new-story">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-1.jpg" data-caption="Главное  за неделю">
+								<span class="main-story__slide-img"><img src="img/story-1-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Главное  за неделю</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide new-story">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-2.jpg" data-caption="Фестиваль Небо России">
+								<span class="main-story__slide-img"><img src="img/story-2-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Фестиваль Небо России</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-3.jpg" data-caption="История">
+								<span class="main-story__slide-img"><img src="img/story-3-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">История</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-4.jpg" data-caption="Covid-19">
+								<span class="main-story__slide-img"><img src="img/story-4-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Covid-19</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-5.jpg" data-caption="Губернатор Николай  Любимов">
+								<span class="main-story__slide-img"><img src="img/story-5-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Губернатор Николай  Любимов</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-6.jpg" data-caption="Новый мост через Оку">
+								<span class="main-story__slide-img"><img src="img/story-6-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Новый мост через Оку</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-7.jpg" data-caption="Новый год  2021">
+								<span class="main-story__slide-img"><img src="img/story-7-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Новый год  2021</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-8.jpg" data-caption="Космос">
+								<span class="main-story__slide-img"><img src="img/story-8-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Космос</span>
+							</a>
+						</div><!-- slide -->
+							<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-5.jpg" data-caption="Губернатор Николай  Любимов">
+								<span class="main-story__slide-img"><img src="img/story-5-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Губернатор Николай  Любимов</span>
+							</a>
+						</div><!-- slide -->
+						<div class="main-story__slide">
+							<a class="main-story__slide-wrap" data-fancybox="gallery" href="img/story-big-6.jpg" data-caption="Новый мост через Оку">
+								<span class="main-story__slide-img"><img src="img/story-6-min.jpg" alt=""></span>
+								<span class="main-story__slide-name">Новый мост через Оку</span>
+							</a>
+						</div><!-- slide -->
+					</div>
+				</div>
+				<div class="categories">
+					<div class="categories-slider">
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap categories-wrap__all">
+								<span class="categories-name">Все</span>
+							</a>
+						</div><!-- slide -->
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap">
+								<span class="categories-logo"><img src="img/logo-1-min.png" alt=""></span>
+								<span class="categories-name">Дороги Рязани</span>
+							</a>
+						</div><!-- slide -->
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap">
+								<span class="categories-logo"><img src="img/logo-2-min.png" alt=""></span>
+								<span class="categories-name">Губернатор</span>
+							</a>
+						</div><!-- slide -->
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap">
+								<span class="categories-logo"><img src="img/logo-3-min.png" alt=""></span>
+								<span class="categories-name">Технониколь</span>
+							</a>
+						</div><!-- slide -->
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap">
+								<span class="categories-logo"><img src="img/logo-4-min.png" alt=""></span>
+								<span class="categories-name">РГАТУ</span>
+							</a>
+						</div><!-- slide -->
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap">
+								<span class="categories-logo"><img src="img/logo-5-min.png" alt=""></span>
+								<span class="categories-name">СБЕР</span>
+							</a>
+						</div><!-- slide -->
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap">
+								<span class="categories-logo"><img src="img/logo-1-min.png" alt=""></span>
+								<span class="categories-name">Дороги Рязани</span>
+							</a>
+						</div><!-- slide -->
+						<div class="categories-slide">
+							<a href="#" class="categories-wrap">
+								<span class="categories-logo"><img src="img/logo-2-min.png" alt=""></span>
+								<span class="categories-name">Губернатор</span>
+							</a>
+						</div><!-- slide -->
+					</div>
+				</div>
+				<div class="news">
+					<div class="news-col news-col__big">
+						<div class="news-slider">
+							<div class="news-slide">
+								<a href="#" class="news-wrap">
+									<img src="img/news-1-min.png" alt="" class="news-img">
+									<span class="news-tag">Новости Рязани</span>
+									<div class="news-info">
+										<span class="news-date">1 час назад</span>
+										<h3 class="news-name">Рязанцы обсудили введение «дистанционки» для школьников</h3>
+									</div>
+								</a>
+							</div><!-- slide -->
+							<div class="news-slide">
+								<a href="#" class="news-wrap">
+									<img src="img/news-1-min.png" alt="" class="news-img">
+									<span class="news-tag">Новости Рязани</span>
+									<div class="news-info">
+										<span class="news-date">1 час назад</span>
+										<h3 class="news-name">Рязанцы обсудили введение «дистанционки» для школьников</h3>
+									</div>
+								</a>
+							</div><!-- slide -->
+							<div class="news-slide">
+								<a href="#" class="news-wrap">
+									<img src="img/news-1-min.png" alt="" class="news-img">
+									<span class="news-tag">Новости Рязани</span>
+									<div class="news-info">
+										<span class="news-date">1 час назад</span>
+										<h3 class="news-name">Рязанцы обсудили введение «дистанционки» для школьников</h3>
+									</div>
+								</a>
+							</div><!-- slide -->
+						</div>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-2-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Дороги Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">Рязанский минтранс отказался от повторной экспертизы ремонта Солотчинского моста</h3>
+								<span class="news-date">15 мая</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-3-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Дороги Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">В Касимовском районе перевернулась «Нива»</h3>
+								<span class="news-date">6 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-4-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Губернатор</span>
+							<div class="news-info">
+								<h3 class="news-name">Всё, что не разум: какую роль играл авторитет в философии Средневековья и Античности</h3>
+								<span class="news-date">14 февраля</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-5-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Новости Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">5 образовательных платформ для учеников младших классов, чтобы ребенок учился эффективнее</h3>
+								<span class="news-date">8 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-6-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Дороги Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">В Касимовском районе перевернулась «Нива»</h3>
+								<span class="news-date">9 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-7-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Новости Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">5 образовательных платформ для учеников младших классов, чтобы ребенок учился эффективнее</h3>
+								<span class="news-date">8 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="contact">
+						<a href="#" class="contact-wrap"><img src="img/form-bg-min.jpg" alt=""></a>
+					</div>
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-4-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Губернатор</span>
+							<div class="news-info">
+								<h3 class="news-name">Всё, что не разум: какую роль играл авторитет в философии Средневековья и Античности</h3>
+								<span class="news-date">14 февраля</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-2-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Дороги Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">Рязанский минтранс отказался от повторной экспертизы ремонта Солотчинского моста</h3>
+								<span class="news-date">15 мая</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-5-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Новости Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">5 образовательных платформ для учеников младших классов, чтобы ребенок учился эффективнее</h3>
+								<span class="news-date">8 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-7-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Новости Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">5 образовательных платформ для учеников младших классов, чтобы ребенок учился эффективнее</h3>
+								<span class="news-date">8 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-3-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Дороги Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">В Касимовском районе перевернулась «Нива»</h3>
+								<span class="news-date">6 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+					<div class="news-col">
+						<a href="#" class="news-wrap">
+							<img src="img/news-6-min.jpg" alt="" class="news-img">
+							<span class="news-tag">Дороги Рязани</span>
+							<div class="news-info">
+								<h3 class="news-name">В Касимовском районе перевернулась «Нива»</h3>
+								<span class="news-date">9 часов назад</span>
+							</div>
+						</a>
+					</div><!-- col -->
+				</div>
+			</div>
+			<div class="main-sidebar">
+				<div class="main-sidebar__block">
+					<a href="#" class="main-sidebar__block-wrap"><img src="img/bImg-1-min.jpg" alt=""></a>
+				</div>
+				<div class="main-sidebar__block">
+					<a href="#" class="main-sidebar__block-wrap"><img src="img/bImg-2-min.jpg" alt=""></a>
+				</div>
+				<div class="main-sidebar__block">
+					<a href="#" class="main-sidebar__block-wrap"><img src="img/bImg-3-min.png" alt=""></a>
+				</div>
+				<div class="main-sidebar__block">
+					<a href="#" class="main-sidebar__block-wrap"><img src="img/bImg-1-min.jpg" alt=""></a>
+				</div>
+				<div class="main-sidebar__block">
+					<a href="#" class="main-sidebar__block-wrap"><img src="img/bImg-2-min.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<ul class="footer-list">
+				<li><a href="#">Все</a></li>
+				<li><a href="#">Новости Рязани</a></li>
+				<li><a href="#">Россия и мир</a></li>
+				<li><a href="#">Треш</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Дороги Рязани</a></li>
+				<li><a href="#">О нас</a></li>
+			</ul>
+			<div class="footer-info">
+				<img src="img/footer-logo.png" alt="">
+				<p>© 2020 RZNLIFE</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-offer" class="modal">
+		<div class="modal-close"></div>
+		<div class="modal-all">
+			<div class="modal-wrap"><!-- add class modal-done for done -->
+				<div class="modal-content">
+					<h3 class="modal-title">Предложите новость</h3>
+					<form action="POST">
+						<div class="input-block input-block__textarea">
+							<label for="i-1">Что произошло?</label>
+							<textarea name="text" id="i-1"></textarea>
+						</div>
+						<div class="input-block">
+							<label for="i-2">Ссылка на видео</label>
+							<input id="i-2" type="text" name="text">
+							<span class="hb-ico input-ico"></span>
+						</div>
+						<a href="#" class="modal-add">
+							<span class="hb-ico plus-ico"></span>
+							Добавить ещё одну ссылку
+						</a>
+						<div class="modal-row">
+							<div class="modal-col">
+								<div class="modal-col__wrap">
+									<span class="hb-ico close-ico"></span>
+									<img src="img/news-4-min.jpg" alt="">
+								</div>
+							</div>
+							<div class="modal-col">
+								<div class="modal-col__wrap">
+									<div class="input-download">
+										<input type="file">
+										<span class="hb-ico photo-ico"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="main-btn" disabled>Отправить</button>
+					</form>
+				</div>
+				<div class="modal-info">
+					<h3 class="modal-title">Спасибо!</h3>
+					<p>Новость будет опубликована после того, как ее проверит администратор</p>
+				</div>
+			</div>
+			<div class="modal-bottom">
+				<p>Вы можете связаться с нами в соцсетях</p>
+				<ul class="modal-social">
+					<li><a href="#">
+						<span class="hb-ico vk-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico fb-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico inst-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico clas-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico you-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico tg-ico"></span>
+					</a></li>
+					<li><a href="#">
+						<span class="hb-ico tw-ico"></span>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
