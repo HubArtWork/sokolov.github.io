@@ -70,6 +70,17 @@
 					<a href="#" class="header-support">Техническая поддержка</a>
 					<a href="#" class="header-btn">Онлайн заявка</a>
 				</div>
+				<div class="header-buttons">
+					<div>
+						<a href="#" class="header-button">Кнопка 1</a>
+					</div>
+					<div>
+						<a href="#" class="header-button">Кнопка 2</a>
+					</div>
+					<div>
+						<a href="#" class="header-button">Кнопка 3</a>
+					</div>
+				</div>
 				<div class="header-menu__row">
 					<div class="header-col">
 						<a href="https://hubartwork.github.io/perfectCRM/industry.html" class="header-wrap">
@@ -112,12 +123,17 @@
 					<img src="img/phone-line.svg" alt="">
 				</div>
 			</div>
-			<a data-aos="fade-up" data-aos-duration="500" data-aos-once="true" data-fancybox href="https://youtu.be/OaEqjZALjMo" class="main-img img-shadow link-youtube"><img src="img/video.svg" alt=""></a>
+			<div class="main-img img-shadow" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+			  <div class="main-img__wrap"
+			   	data-vide-bg="mp4: video/ScreenRecorderProject33, poster: video/video"
+			  	data-vide-options="posterType: jpg, position: 50% 50%">
+			  </div>
+			</div>
 		</div>
 	</section>
 	<!-- end main -->
 	<!-- start about -->
-	<section class="about section-scroll" id="about">
+	<section class="about about-1 section-scroll" id="about">
 		<div class="wrapper">
 			<div class="section-head" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 				<div class="section-ico"><img src="img/section/section-ico-1.svg" alt=""></div>
@@ -127,7 +143,7 @@
 			<div class="about-row">
 				<div class="about-info">
 					<div class="about-info__wrap">
-						<div class="accordeon accordeon-active" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="accordeon accordeon-1 accordeon-active" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 							<div class="accordeon-top">
 								<span class="accordeon-name">Маркетинг</span>
 							</div>
@@ -139,7 +155,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="accordeon" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="accordeon accordeon-2" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 							<div class="accordeon-top">
 								<span class="accordeon-name">Продажи</span>
 							</div>
@@ -151,7 +167,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="accordeon" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="accordeon accordeon-3" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 							<div class="accordeon-top">
 								<span class="accordeon-name">Производство продукции и услуг</span>
 							</div>
@@ -173,7 +189,7 @@
 	</section>
 	<!-- end about -->
 	<!-- start advantages -->
-	<section class="advantages section-scroll" id="advantages">
+	<section class="advantages section-scroll advantages-1" id="advantages">
 		<div class="wrapper">
 			<div class="section-head" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 				<div class="section-ico"><img src="img/section/section-ico-2.svg" alt=""></div>
@@ -247,8 +263,11 @@
 							<li>Все запросы клиента сразу же будут отработаны и учтены в системе</li>
 							<li>Классифицируйте и сегментируйте клиентов по их объемам заказов и значимости</li>
 						</ul>
-						<div class="functionality-img img-shadow">
-							<a data-fancybox href="https://www.youtube.com/watch?v=MmQ9Dy4wnks&feature=youtu.be" class="link-youtube"><img src="img/functionality/functionality-1-min.png" alt=""></a>
+						<div class="functionality-img functionality-video img-shadow" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						  <div class="main-img__wrap"
+						   	data-vide-bg="mp4: video/functionality-1, poster: img/functionality/functionality-1-min"
+						  	data-vide-options="posterType: png, position: 50% 50%">
+						  </div>
 						</div>
 					</div>
 					<div class="functionality-tab tab" id="tab-2">
@@ -313,8 +332,14 @@
 							<li>Автоматизация бизнес-процессов и регламентов</li>
 							<li>Выполнение интеграций с сайтом, системами СКУД, и тп</li>
 						</ul>
-						<div class="functionality-img img-shadow">
-							<a data-fancybox href="https://www.youtube.com/watch?v=Gw_Iz_4mljs&feature=youtu.be" class="link-youtube"><img src="img/functionality/functionality-7-min.png" alt=""></a>
+						<!-- <div class="functionality-img img-shadow">
+							<img src="img/functionality/functionality-7-min.png" alt="">
+						</div> -->
+						<div id="functionality-video-2" class="functionality-img functionality-video img-shadow">
+						  <div class="main-img__wrap"
+						   	data-vide-bg="mp4: video/functionality-2, poster: img/functionality/functionality-7-min"
+						  	data-vide-options="posterType: png, position: 50% 50%">
+						  </div>
 						</div>
 					</div>
 				</div>
@@ -676,6 +701,7 @@
 	<div style="display: none;" id="modal-test" class="modal">
 		<div class="modal-close">
 			<form action="POST">
+				<input type="hidden" id="modal-input">
 				<div class="contacts-form__wrap">
 					<span class="contacts-subtitle">Мы всегда рады помочь!</span>
 					<div class="input-block"><!-- add class input-error -->
