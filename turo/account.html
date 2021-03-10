@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-wrap">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<div class="header-search">
+					<form action="">
+						<input type="text" name="search" placeholder="City, airport, address or hotel">
+					</form>
+				</div>
+			</div>
+			<div class="header-row">
+				<ul class="header-list">
+					<li class="li-1"><a href="#">List your car</a></li>
+					<li class="li-2 drop drop-1">
+						<a href="#" class="drop-top">Learn more</a>
+						<div class="drop-info">
+							<ul>
+								<li><a href="#">How Turo works</a></li>
+								<li><a href="#">Insurance &amp; protection</a></li>
+								<li><a href="#">Carculator</a></li>
+								<li><a href="#">Host tools</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="drop drop-2">
+						<a href="#" class="drop-top">Trips</a>
+						<div class="drop-info">
+							<ul>
+								<li><a href="#">Activity</a></li>
+								<li><a href="#">Booked</a></li>
+								<li><a href="#">History</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+				<div class="header-drop drop drop-3">
+					<div class="header-drop__head drop-top">
+						<img src="img/icons/user.svg" alt="">
+					</div>
+					<div class="drop-info">
+						<ul>
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Favorites</a></li>
+							<li><a href="#">List your car</a></li>
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Contact support</a></li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start account -->
+	<section class="account">
+		<div class="wrapper">
+			<div class="account-wrap">
+				<h1 class="page-title">Account</h1>
+				<div class="account-block">
+					<form action="">
+						<span class="account-subtitle">Contact information</span>
+						<div class="input-block input-block__small">
+							<label for="b-1">Email</label>
+							<div class="input-block__row input-verified">
+								<input id="b-1" type="email" name="email" value="viktor.ved@mail.ru">
+								<div class="verified">
+									<img src="img/verfi.png" alt="">
+									Verified
+								</div>
+							</div>
+						</div>
+						<div class="input-block">
+							<label for="b-2">Password</label>
+							<a href="#" class="second-btn">Update</a>
+						</div>
+						<div class="account-buttons">
+							<a href="#" class="second-btn">Link to your Google account</a>
+							<a href="#" class="second-btn">Link to your Facebook account</a>
+						</div>
+						<div class="input-block">
+							<label for="b-3">Mobile phone</label>
+							<a href="#" class="second-btn">Update</a>
+						</div>
+						<div class="input-block">
+							<label for="b-4">Mobile notifications</label>
+							<div class="checkbox">
+								<input type="checkbox" checked>
+								<span class="checkbox-ico"></span>
+								<p>Enable text message notifications</p>
+							</div>
+						</div>
+						<div class="input-block">
+							<label for="b-4">Email notifications</label>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-ico"></span>
+								<p>Promotions and announcements</p>
+							</div>
+						</div>
+						<button class="primary-btn">Save changes</button>
+					</form>
+				</div><!-- block -->
+				<div class="account-block">
+					<form action="">
+						<span class="account-subtitle">Transmission</span>
+						<span class="account-tit">Some cars on Turo do not have automatic transmissions. Are you an expert at driving manual transmissions?</span>
+						<div class="radio">
+							<input type="radio" name="yesNo" checked>
+							<span class="radio-ico"></span>
+							<p>Yes, I am an expert</p>
+						</div>
+						<div class="radio">
+							<input type="radio" name="yesNo">
+							<span class="radio-ico"></span>
+							<p>No, I am not an expert</p>
+						</div>
+						<button class="primary-btn">Save changes</button>
+					</form>
+				</div><!-- block -->
+				<div class="account-block">
+					<span class="account-subtitle">Approval Status</span>
+					<span class="account-tit">Before you can drive a Turo car, we need a bit more information. <br><a href="#">Get approved to drive</a></span>
+				</div><!-- block -->
+				<div class="account-block">
+					<form action="">
+						<span class="account-label">Travel credit</span>
+						<span class="account-tit">Travel credit will automatically apply towards your next trip. Promo codes must be entered at checkout.</span>
+						<div class="input-block input-block__apply">
+							<label for="b-1">Email</label>
+							<div class="input-block__row">
+								<input type="text" name="text" placeholder="Enter code">
+								<button class="second-btn" disabled>Apply</button>
+							</div>
+						</div>
+						<div class="account-balance">Balance: $0</div>
+					</form>
+				</div><!-- block -->
+				<div class="account-block">
+					<span class="account-subtitle">Download account data</span>
+					<span class="account-tit">You can download a copy of all information Turo has accumulated throughout your time as a Turo user. You may download your data as often as you’d like.</span>
+					<a href="#" class="second-btn">Download my data</a>
+				</div><!-- block -->
+				<div class="account-block">
+					<span class="account-subtitle">Close account</span>
+					<a href="#" class="second-btn">Close my account</a>
+				</div><!-- block -->
+			</div>
+		</div>
+	</section>
+	<!-- end account -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Turo</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Policies</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">OpenRoad</a></li>
+							<li><a href="#">Turo shop</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Locations</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">USA (EN)</a></li>
+							<li><a href="#">Canada (EN)</a></li>
+							<li><a href="#">Canada (FR)</a></li>
+							<li><a href="#">UK (EN)</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Explore</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Book a car</a></li>
+							<li><a href="#">Weddings</a></li>
+							<li><a href="#">Trust & safety</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Get help</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Hosting</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">List your car</a></li>
+							<li><a href="#">Carculator</a></li>
+							<li><a href="#">All-Star Hosts</a></li>
+							<li><a href="#">Host tools</a></li>
+							<li><a href="#">Insurance & protection</a></li>
+							<li><a href="#">FAQs</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-col__social">
+					<ul class="footer-social">
+						<li><a href="#"><img src="img/facebook-circular-logo.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+						<li><a href="#"><span>Blog</span></a></li>
+					</ul>
+					<ul class="footer-apps">
+						<li><a href="#"><img src="img/google-2.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/google-2.svg" alt=""></a></li>
+					</ul>
+					<div class="footer-wrap">
+						<div class="footer-drop drop">
+							<div class="footer-drop__head drop-top">
+								<span class="flag-ico"><img src="img/icons/flag-3.svg" alt=""></span>
+								<span>English</span>
+							</div>
+							<div class="drop-info">
+								<ul>
+									<li>
+										<span class="flag-ico"><img src="img/icons/flag-1.svg" alt=""></span>
+										<span>English</span>
+									</li>
+									<li>
+										<span class="flag-ico"><img src="img/icons/flag-2.svg" alt=""></span>
+										<span>English</span>
+									</li>
+									<li>
+										<span class="flag-ico"><img src="img/icons/flag-2.svg" alt=""></span>
+										<span>Français</span>
+									</li>
+									<li class="active">
+										<span class="flag-ico"><img src="img/icons/flag-3.svg" alt=""></span>
+										<span>English</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Vehicle types</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Trucks</a></li>
+							<li><a href="#">Vans</a></li>
+							<li><a href="#">Exotic & Luxury</a></li>
+							<li><a href="#">Convertibles</a></li>
+							<li><a href="#">Sport</a></li>
+							<li><a href="#">Classics</a></li>
+							<li><a href="#">Minivans</a></li>
+							<li><a href="#">SUVs</a></li>
+							<li><a href="#">Cars</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Makes</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Tesla</a></li>
+							<li><a href="#">Lamborghini</a></li>
+							<li><a href="#">Jeep</a></li>
+							<li><a href="#">Rolls-Royce</a></li>
+							<li><a href="#">Mercedes-Benz</a></li>
+							<li><a href="#">Ferrari</a></li>
+							<li><a href="#">Porsche</a></li>
+							<li><a href="#">BMW</a></li>
+							<li><a href="#">Subaru</a></li>
+							<li><a href="#">Maserati</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-col__big footer-accordeon">
+					<span class="footer-subtitle">Top cities</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Atlanta</a></li>
+							<li><a href="#">Austin</a></li>
+							<li><a href="#">Boston</a></li>
+							<li><a href="#">Charlotte</a></li>
+							<li><a href="#">Chicago</a></li>
+							<li><a href="#">Dallas</a></li>
+							<li><a href="#">Denver</a></li>
+							<li><a href="#">Detroit</a></li>
+							<li><a href="#">Fort Lauderdale</a></li>
+							<li><a href="#">Honolulu</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Houston</a></li>
+							<li><a href="#">Jersey City</a></li>
+							<li><a href="#">Las Vegas</a></li>
+							<li><a href="#">London</a></li>
+							<li><a href="#">Los Angeles</a></li>
+							<li><a href="#">Miami</a></li>
+							<li><a href="#">Montréal</a></li>
+							<li><a href="#">Orlando</a></li>
+							<li><a href="#">Philadelphia</a></li>
+							<li><a href="#">Phoenix</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Portland</a></li>
+							<li><a href="#">Sacramento</a></li>
+							<li><a href="#">San Diego</a></li>
+							<li><a href="#">San Francisco</a></li>
+							<li><a href="#">Seattle</a></li>
+							<li><a href="#">Tampa</a></li>
+							<li><a href="#">Toronto</a></li>
+							<li><a href="#">Vancouver</a></li>
+							<li><a href="#">Washington DC</a></li>
+							<li><a href="#">West Palm Beach</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="footer-bottom">
+				<ul>
+					<li>©2021 Turo</li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

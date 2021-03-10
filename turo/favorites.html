@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-wrap">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<div class="header-search">
+					<form action="">
+						<input type="text" name="search" placeholder="City, airport, address or hotel">
+					</form>
+				</div>
+			</div>
+			<div class="header-row">
+				<ul class="header-list">
+					<li class="li-1"><a href="#">List your car</a></li>
+					<li class="li-2 drop drop-1">
+						<a href="#" class="drop-top">Learn more</a>
+						<div class="drop-info">
+							<ul>
+								<li><a href="#">How Turo works</a></li>
+								<li><a href="#">Insurance &amp; protection</a></li>
+								<li><a href="#">Carculator</a></li>
+								<li><a href="#">Host tools</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="drop drop-2">
+						<a href="#" class="drop-top">Trips</a>
+						<div class="drop-info">
+							<ul>
+								<li><a href="#">Activity</a></li>
+								<li><a href="#">Booked</a></li>
+								<li><a href="#">History</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Messages</a></li>
+				</ul>
+				<div class="header-drop drop drop-3">
+					<div class="header-drop__head drop-top">
+						<img src="img/icons/user.svg" alt="">
+					</div>
+					<div class="drop-info">
+						<ul>
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Favorites</a></li>
+							<li><a href="#">List your car</a></li>
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Contact support</a></li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start favorites -->
+	<section class="favorites">
+		<div class="wrapper">
+			<div class="page-top favorites-top">
+				<div>
+					<a href="#" class="page-back">
+						<span>Viktor’s favorites</span>
+					</a>
+					<h1 class="page-title">Viktor’s favorites</h1>
+				</div>
+				<div class="dropbox">
+					<a href="#" class="second-btn">
+						<img src="img/filter.svg" alt="">
+						Availability
+					</a>
+					<div class="dropbox-wrap">
+						<i class="hb-ico close-ico"></i>
+						<span class="dropbox-title">Dates</span>
+						<div class="dropbox-content">
+							<div class="main-row">
+								<span class="dropbox-label">From</span>
+								<input type="text" class="datepicker" value="02/02/2027">
+								<select name="text">
+									<option value="11:00">11:00 AM</option>
+									<option value="12:00">12:00 AM</option>
+									<option value="13:00">13:00 AM</option>
+									<option value="14:00">14:00 AM</option>
+									<option value="15:00">15:00 AM</option>
+								</select>
+							</div>
+							<div class="main-row">
+								<span class="dropbox-label">Until</span>
+								<input type="text" class="datepicker" value="02/02/2027">
+								<select name="text">
+									<option value="11:00">11:00 AM</option>
+									<option value="12:00">12:00 AM</option>
+									<option value="13:00">13:00 AM</option>
+									<option value="14:00">14:00 AM</option>
+									<option value="15:00">15:00 AM</option>
+								</select>
+							</div>
+						</div>
+						<div class="buttons">
+							<a href="#" class="primary-btn">Save</a>
+							<a href="#" class="second-btn">Reset</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="favorites-content">
+				<div class="products-row">
+					<div class="product">
+						<div class="product-wrap">
+							<a href="#" class="hb-ico product-like active"></a>
+							<a href="#" class="product-content">
+								<div class="product-img"><img src="img/car-2.jpg" alt=""></div>
+								<div class="product-info">
+									<div class="product-info__top">
+										<h3 class="product-name">Range Rover</h3>
+										<ul class="product-list">
+											<li>
+											  4.94
+											  <i class="hb-ico star-ico"></i>
+											</li>
+											<li>(17 trips)</li>
+											<li>
+												<i class="hb-ico starAll-ico"></i>
+											  All-Star Host
+											</li>
+										</ul>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div><!-- slide -->
+					<div class="product">
+						<div class="product-wrap">
+							<a href="#" class="hb-ico product-like active"></a>
+							<a href="#" class="product-content">
+								<div class="product-img"><img src="img/car-2.jpg" alt=""></div>
+								<div class="product-info">
+									<div class="product-info__top">
+										<h3 class="product-name">Range Rover</h3>
+										<ul class="product-list">
+											<li>
+											  4.94
+											  <i class="hb-ico star-ico"></i>
+											</li>
+											<li>(17 trips)</li>
+											<li>
+												<i class="hb-ico starAll-ico"></i>
+											  All-Star Host
+											</li>
+										</ul>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div><!-- slide -->
+					<div class="product">
+						<div class="product-wrap">
+							<a href="#" class="hb-ico product-like active"></a>
+							<a href="#" class="product-content">
+								<div class="product-img"><img src="img/car-2.jpg" alt=""></div>
+								<div class="product-info">
+									<div class="product-info__top">
+										<h3 class="product-name">Range Rover</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div><!-- slide -->
+				</div>
+				<div class="notifications-bottom">
+					<img src="img/notifications-2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end favorites -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Turo</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Policies</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">OpenRoad</a></li>
+							<li><a href="#">Turo shop</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Locations</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">USA (EN)</a></li>
+							<li><a href="#">Canada (EN)</a></li>
+							<li><a href="#">Canada (FR)</a></li>
+							<li><a href="#">UK (EN)</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Explore</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Book a car</a></li>
+							<li><a href="#">Weddings</a></li>
+							<li><a href="#">Trust & safety</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Get help</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Hosting</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">List your car</a></li>
+							<li><a href="#">Carculator</a></li>
+							<li><a href="#">All-Star Hosts</a></li>
+							<li><a href="#">Host tools</a></li>
+							<li><a href="#">Insurance & protection</a></li>
+							<li><a href="#">FAQs</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-col__social">
+					<ul class="footer-social">
+						<li><a href="#"><img src="img/facebook-circular-logo.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+						<li><a href="#"><span>Blog</span></a></li>
+					</ul>
+					<ul class="footer-apps">
+						<li><a href="#"><img src="img/google-2.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/google-2.svg" alt=""></a></li>
+					</ul>
+					<div class="footer-wrap">
+						<div class="footer-drop drop">
+							<div class="footer-drop__head drop-top">
+								<span class="flag-ico"><img src="img/icons/flag-3.svg" alt=""></span>
+								<span>English</span>
+							</div>
+							<div class="drop-info">
+								<ul>
+									<li>
+										<span class="flag-ico"><img src="img/icons/flag-1.svg" alt=""></span>
+										<span>English</span>
+									</li>
+									<li>
+										<span class="flag-ico"><img src="img/icons/flag-2.svg" alt=""></span>
+										<span>English</span>
+									</li>
+									<li>
+										<span class="flag-ico"><img src="img/icons/flag-2.svg" alt=""></span>
+										<span>Français</span>
+									</li>
+									<li class="active">
+										<span class="flag-ico"><img src="img/icons/flag-3.svg" alt=""></span>
+										<span>English</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Vehicle types</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Trucks</a></li>
+							<li><a href="#">Vans</a></li>
+							<li><a href="#">Exotic & Luxury</a></li>
+							<li><a href="#">Convertibles</a></li>
+							<li><a href="#">Sport</a></li>
+							<li><a href="#">Classics</a></li>
+							<li><a href="#">Minivans</a></li>
+							<li><a href="#">SUVs</a></li>
+							<li><a href="#">Cars</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-accordeon">
+					<span class="footer-subtitle">Makes</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Tesla</a></li>
+							<li><a href="#">Lamborghini</a></li>
+							<li><a href="#">Jeep</a></li>
+							<li><a href="#">Rolls-Royce</a></li>
+							<li><a href="#">Mercedes-Benz</a></li>
+							<li><a href="#">Ferrari</a></li>
+							<li><a href="#">Porsche</a></li>
+							<li><a href="#">BMW</a></li>
+							<li><a href="#">Subaru</a></li>
+							<li><a href="#">Maserati</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col footer-col__big footer-accordeon">
+					<span class="footer-subtitle">Top cities</span>
+					<div class="footer-block">
+						<ul>
+							<li><a href="#">Atlanta</a></li>
+							<li><a href="#">Austin</a></li>
+							<li><a href="#">Boston</a></li>
+							<li><a href="#">Charlotte</a></li>
+							<li><a href="#">Chicago</a></li>
+							<li><a href="#">Dallas</a></li>
+							<li><a href="#">Denver</a></li>
+							<li><a href="#">Detroit</a></li>
+							<li><a href="#">Fort Lauderdale</a></li>
+							<li><a href="#">Honolulu</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Houston</a></li>
+							<li><a href="#">Jersey City</a></li>
+							<li><a href="#">Las Vegas</a></li>
+							<li><a href="#">London</a></li>
+							<li><a href="#">Los Angeles</a></li>
+							<li><a href="#">Miami</a></li>
+							<li><a href="#">Montréal</a></li>
+							<li><a href="#">Orlando</a></li>
+							<li><a href="#">Philadelphia</a></li>
+							<li><a href="#">Phoenix</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Portland</a></li>
+							<li><a href="#">Sacramento</a></li>
+							<li><a href="#">San Diego</a></li>
+							<li><a href="#">San Francisco</a></li>
+							<li><a href="#">Seattle</a></li>
+							<li><a href="#">Tampa</a></li>
+							<li><a href="#">Toronto</a></li>
+							<li><a href="#">Vancouver</a></li>
+							<li><a href="#">Washington DC</a></li>
+							<li><a href="#">West Palm Beach</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="footer-bottom">
+				<ul>
+					<li>©2021 Turo</li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
