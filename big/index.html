@@ -107,7 +107,7 @@
 								<i class="hb-ico services-arrow"></i>
 							</div>
 							<div class="services-item__info">
-								<p></p>
+								<p>IT Outsourcing is changing the way businesses manage and operate their information systems. The BIG process starts with understanding your business objectives, and how IT can be leveraged to deliver better results for your business. A senior IT executive works with you to develop an overall IT strategy and project plan to align technology, processes, and people with your key business objectives.</p>
 							</div>
 						</div>
 					</div>
@@ -181,7 +181,7 @@
 						<div class="plans-item__wrap">
 							<span class="plans-title">1 hr</span>
 							<span class="plans-subtitle">100 USD/EUR</span>
-							<a href="#" class="primary-btn">Pay now</a>
+							<a data-fancybox data-src="#modal-schedule" href="javascript:;" class="primary-btn">Pay now</a>
 						</div>
 					</div>
 				</div><!-- col -->
@@ -190,7 +190,7 @@
 						<div class="plans-item__wrap">
 							<span class="plans-title">10 hrs</span>
 							<span class="plans-subtitle">8 990 USD/EUR</span>
-							<a href="#" class="primary-btn">Pay now</a>
+							<a data-fancybox data-src="#modal-schedule" href="javascript:;" class="primary-btn">Pay now</a>
 						</div>
 					</div>
 				</div><!-- col -->
@@ -199,7 +199,7 @@
 						<div class="plans-item__wrap">
 							<span class="plans-title">Flexible</span>
 							<span class="plans-subtitle">Contact us</span>
-							<a href="#" class="primary-btn">Let's discuss</a>
+							<a data-fancybox data-src="#modal-schedule" href="javascript:;" class="primary-btn">Let's discuss</a>
 						</div>
 					</div>
 				</div><!-- col -->
@@ -234,7 +234,7 @@
 		<div class="wrapper">
 			<div class="footer-row">
 				<div class="footer-col footer-col__1">
-					<a href="#" class="primary-btn">Contact us</a>
+					<a data-fancybox data-src="#modal-schedule" href="javascript:;" class="primary-btn">Contact us</a>
 					<p>Order Of Manitude LP Technology</p>
 				</div><!-- col -->
 				<div class="footer-col footer-col__2">
@@ -301,7 +301,7 @@
 				</div>
 				<div class="input-block"><!-- add class input-error -->
 					<label for="h-4">Phone number</label>
-					<input id="h-4" type="phone" name="phone" placeholder="+7 000 000 00 00">
+					<input id="h-4" type="phone" name="phone" placeholder="Enter your phone number">
 					<span class="input-text">Invalid Password</span>
 				</div>
 				<div class="input-block"><!-- add class input-error -->
@@ -310,30 +310,30 @@
 					<span class="input-text">Invalid Password</span>
 				</div>
 				<div class="input-block input-block__choice"><!-- add class input-error -->
-					<label for="h-6">Choose consultation duration</label>
+					<label for="h-6">Сhoose a duration for the consultation</label>
 					<div class="choice">
 						<div class="choice-col">
-							<div class="choice-wrap">
+							<div class="choice-wrap" data-radio="1hour">
 								<input type="radio" name="time" checked>
 								<span>1 hour</span>
 							</div>
 						</div>
 						<div class="choice-col">
-							<div class="choice-wrap">
+							<div class="choice-wrap" data-radio="10hour">
 								<input type="radio" name="time">
 								<span>10 hours</span>
 							</div>
 						</div>
 						<div class="choice-col">
-							<div class="choice-wrap">
+							<div class="choice-wrap" data-radio="flexible">
 								<input type="radio" name="time">
 								<span>Flexible</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="modal-price">Total: 100 USD/EUR</div>
-				<button class="primary-btn">Pay now</button>
+				<div class="modal-price">Total: <span>100 USD/EUR</span></div>
+				<button class="primary-btn primary-btn__schedule">Pay now</button>
 			</form>
 		</div>
 	</div>
@@ -342,7 +342,7 @@
 		<div class="modal-wrap">
 			<h2 class="modal-title">The consultation is sucсessfully paid!</h2>
 			<div class="modal-text">
-				You will get the further instructions and registration link to your email.
+				You will receive further instructions and a link for registration to your email.
 			</div>
 			<a href="#" class="primary-btn modal-cancel">Ok</a>
 		</div>
@@ -352,7 +352,7 @@
 		<div class="modal-wrap">
 			<h2 class="modal-title">Your request is successfully sent.</h2>
 			<div class="modal-text">
-				We will contact you back in few hours. Thank you!
+				We will get back to you in a few hours. <br>Thank you!
 			</div>
 			<a href="#" class="primary-btn modal-cancel">Ok</a>
 		</div>
