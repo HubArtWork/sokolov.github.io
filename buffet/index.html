@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-wrap">
+				<div class="header-logo">
+					<a href="#">
+						<img class="logo-white" src="img/logo.svg" alt="">
+						<img class="logo-dark" src="img/logo-dark.svg" alt="">
+					</a>
+				</div>
+				<div class="header-search">
+					<form action="">
+						<div class="header-search__wrap">
+							<input type="text" name="search" placeholder="Search...">
+							<i class="hb-ico search-ico"></i>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="header-row">
+				<a href="#" class="header-link header-mob">
+					<i class="hb-ico search-ico2"></i>
+					<span>Search</span>
+				</a>
+				<a href="#" class="header-btn">
+					<i class="hb-ico plus-ico"></i>
+					<span>Add review</span>
+				</a>
+				<div class="drop">
+					<a href="#" class="header-link drop-text">
+						<i class="hb-ico bell-ico"></i>
+						<span>Alerts</span>
+					</a>
+					<div class="drop-wrap">
+						<div class="drop-list">
+							<div class="drop-item">
+								<span class="drop-item__name"><a href="#">Martin Berasategui</a></span>
+								<span class="drop-item__status">has requested a booking!</span>
+								<span class="drop-item__date">September 27, 2020</span>
+							</div><!-- item -->
+							<div class="drop-item">
+								<span class="drop-item__name"><a href="#">Martin Berasategui</a></span>
+								<span class="drop-item__status">has requested a booking!</span>
+								<span class="drop-item__date">September 27, 2020</span>
+							</div><!-- item -->
+							<div class="drop-item">
+								<span class="drop-item__name"><a href="#">Martin Berasategui</a></span>
+								<span class="drop-item__status">has requested a booking!</span>
+								<span class="drop-item__date">September 27, 2020</span>
+							</div><!-- item -->
+						</div>
+						<a href="#" class="second-btn">Save changes</a>
+					</div>
+				</div>
+				<a data-fancybox data-src="#modal-signIn" href="javascript:;" class="second-btn header-second-btn">Sign In</a>
+				<div class="header-link header-mob header-mob-2">
+					<i class="hb-ico user-ico"></i>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-bg" style="background-image: url(img/main-bg-min.jpg);"></div>
+		<div class="main-bg main-bg__mob" style="background-image: url(img/main-bg-min.jpg);"></div>
+		<div class="wrapper">
+			<div class="main-info">
+				<h1 class="main-title"><span>Find</span> Your Perfect Restaurant</h1>
+				<div class="search">
+					<div class="search-wrap">
+						<form action="">
+							<div class="search-row">
+								<label for="g-1">
+									<i class="hb-ico locate-ico"></i>
+									Location / Place name
+								</label>
+								<input type="text" name="search" placeholder="Quebec">
+								<i class="hb-ico close-ico"></i>
+							</div>
+							<button class="primary-btn">Search</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start advantages -->
+	<section class="advantages">
+		<div class="wrapper">
+			<div class="advantages-row">
+				<div class="advantages-col">
+					<div class="advantages-ico"><img src="img/advantages/ico-1.svg" alt=""></div>
+					<span class="advantages-title">Find the best places to eat</span>
+					<p>4.3 million restautants — everything from street food to fine dining</p>
+				</div><!-- col -->
+				<div class="advantages-col">
+					<div class="advantages-ico"><img src="img/advantages/ico-2.svg" alt=""></div>
+					<span class="advantages-title">See the latest reviews</span>
+					<p>Millions of restautants reviews and photos from our global travel community</p>
+				</div><!-- col -->
+				<div class="advantages-col">
+					<div class="advantages-ico"><img src="img/advantages/ico-3.svg" alt=""></div>
+					<span class="advantages-title">Reserve a table</span>
+					<p>Make instant online reservation at restaurants around the world</p>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end advantages -->
+	<!-- start cards -->
+	<section class="cards">
+		<div class="wrapper">
+			<h2 class="section-title">Travelers’ Choice: Fine dining</h2>
+			<div class="cards-row">
+				<div class="card">
+					<div class="card-wrap">
+						<a href="#" class="card-favorites"><i class="hb-ico favorites-ico"></i></a>
+						<a href="#" class="card-img"><img src="img/post-1-min.jpg" alt=""></a>
+						<h3 class="card-title"><a href="#">Martin Berasategui</a></h3>
+						<div class="card-reviews">
+							<div class="stars">
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+							</div>
+							<span>1,750 Reviews</span>
+						</div>
+						<span class="card-locate">Lasarte, Spain</span>
+					</div>
+				</div><!-- card -->
+				<div class="card">
+					<div class="card-wrap">
+						<a href="#" class="card-favorites"><i class="hb-ico favorites-ico"></i></a>
+						<a href="#" class="card-img"><img src="img/post-1-min.jpg" alt=""></a>
+						<h3 class="card-title"><a href="#">Martin Berasategui</a></h3>
+						<div class="card-reviews">
+							<div class="stars">
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+							</div>
+							<span>1,750 Reviews</span>
+						</div>
+						<span class="card-locate">Lasarte, Spain</span>
+					</div>
+				</div><!-- card -->
+				<div class="card">
+					<div class="card-wrap">
+						<a href="#" class="card-favorites"><i class="hb-ico favorites-ico"></i></a>
+						<a href="#" class="card-img"><img src="img/post-1-min.jpg" alt=""></a>
+						<h3 class="card-title"><a href="#">Martin Berasategui</a></h3>
+						<div class="card-reviews">
+							<div class="stars">
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+							</div>
+							<span>1,750 Reviews</span>
+						</div>
+						<span class="card-locate">Lasarte, Spain</span>
+					</div>
+				</div><!-- card -->
+				<div class="card">
+					<div class="card-wrap">
+						<a href="#" class="card-favorites"><i class="hb-ico favorites-ico"></i></a>
+						<a href="#" class="card-img"><img src="img/post-1-min.jpg" alt=""></a>
+						<h3 class="card-title"><a href="#">Martin Berasategui</a></h3>
+						<div class="card-reviews">
+							<div class="stars">
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+								<i class="hb-ico star-active-ico"></i>
+							</div>
+							<span>1,750 Reviews</span>
+						</div>
+						<span class="card-locate">Lasarte, Spain</span>
+					</div>
+				</div><!-- card -->
+			</div>
+			<div class="more-btn">
+				<a href="#" class="second-btn">Show more</a>
+			</div>
+		</div>
+	</section>
+	<!-- end cards -->
+	<!-- start popular -->
+	<section class="popular">
+		<div class="wrapper">
+			<h2 class="popular-title"><span>Restaurants</span>in the most popular holiday destinations</h2>
+			<div class="popular-info">
+				<p>This is the version of our website addressed to speakers of English in Canada. If you are a resident of another country or region, please select the appropriate version of Buffet for your country or region in the drop-down menu. Buffet makes no guarantees for availability of prices advertised on our sites and applications.</p>
+				<a href="#" class="show-more">
+					Show more
+					<i class="hb-ico more-ico"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- end popular -->
+	<!-- start travelers -->
+	<section class="travelers">
+		<div class="wrapper">
+			<h2 class="section-title">Travelers’ Choice: Fine dining</h2>
+			<div class="travelers-row">
+				<div class="travelers-col travelers-col__big">
+					<div class="travelers-wrap">
+						<a href="#" class="travelers-img"><img src="img/post-5-min.jpg" alt=""></a>
+						<div class="travelers-info">
+							<a href="#" class="travelers-locate">
+								<i class="hb-ico locate-ico"></i>
+								Ottawa
+							</a>
+							<span class="travelers-text">125 places</span>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="travelers-col">
+					<div class="travelers-wrap">
+						<a href="#" class="travelers-img"><img src="img/post-1-min.jpg" alt=""></a>
+						<div class="travelers-info">
+							<a href="#" class="travelers-locate">
+								<i class="hb-ico locate-ico"></i>
+								Quebec
+							</a>
+							<span class="travelers-text">125 places</span>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="travelers-col">
+					<div class="travelers-wrap">
+						<a href="#" class="travelers-img"><img src="img/post-2-min.jpg" alt=""></a>
+						<div class="travelers-info">
+							<a href="#" class="travelers-locate">
+								<i class="hb-ico locate-ico"></i>
+								Calgari
+							</a>
+							<span class="travelers-text">125 places</span>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="travelers-col">
+					<div class="travelers-wrap">
+						<a href="#" class="travelers-img"><img src="img/post-3-min.jpg" alt=""></a>
+						<div class="travelers-info">
+							<a href="#" class="travelers-locate">
+								<i class="hb-ico locate-ico"></i>
+								Montreal
+							</a>
+							<span class="travelers-text">125 places</span>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="travelers-col">
+					<div class="travelers-wrap">
+						<a href="#" class="travelers-img"><img src="img/post-4-min.jpg" alt=""></a>
+						<div class="travelers-info">
+							<a href="#" class="travelers-locate">
+								<i class="hb-ico locate-ico"></i>
+								Toronto
+							</a>
+							<span class="travelers-text">125 places</span>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="travelers-col travelers-col__big">
+					<div class="travelers-wrap">
+						<a href="#" class="travelers-img"><img src="img/post-5-min.jpg" alt=""></a>
+						<div class="travelers-info">
+							<a href="#" class="travelers-locate">
+								<i class="hb-ico locate-ico"></i>
+								Vancouver
+							</a>
+							<span class="travelers-text">125 places</span>
+						</div>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="more-btn">
+				<a href="#" class="second-btn">Show more</a>
+			</div>
+		</div>
+	</section>
+	<!-- end travelers -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<h2 class="section-title">Best restaurants near me</h2>
+			<div class="footer-top">
+				<div class="footer-col">
+					<span class="footer-subtitle">Popular cuisines</span>
+					<ul>
+						<li><a href="#">African Food Near Me</a></li>
+						<li><a href="#">British Food Near Me</a></li>
+						<li><a href="#">Cajun Food Near Me</a></li>
+						<li><a href="#">Caribbean Food Near Me</a></li>
+						<li><a href="#">Chinese Food Near Me</a></li>
+						<li><a href="#">Eastern European Food Near Me</a></li>
+						<li><a href="#">French Food Near Me</a></li>
+						<li><a href="#">German Food Near Me</a></li>
+						<li><a href="#">Greek Food Near Me</a></li>
+						<li><a href="#">Indian Food Near Me</a></li>
+						<li><a href="#">International Food Near Me</a></li>
+						<li><a href="#">Irish Food Near Me</a></li>
+						<li><a href="#">Italian Food Near Me</a></li>
+						<li><a href="#">Japanese Food Near Me</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<ul>
+						<li><a href="#">Mediterranean Food Near Me</a></li>
+						<li><a href="#">Mexican Food Near Me</a></li>
+						<li><a href="#">South American Food Near Me</a></li>
+						<li><a href="#">Spanish Food Near Me</a></li>
+						<li><a href="#">Thai Food Near Me</a></li>
+						<li><a href="#">Vietnamese Food Near Me</a></li>
+					</ul>
+					<div class="footer-block">
+						<span class="footer-subtitle">Popular restaraunts</span>
+						<ul>
+							<li><a href="#">American Restaurants Near Me</a></li>
+							<li><a href="#">Asian Restaurants Near Me</a></li>
+							<li><a href="#">BBQ Restaurants Near Me</a></li>
+							<li><a href="#">European Restaurants Near Me</a></li>
+							<li><a href="#">Fusion Restaurants Near Me</a></li>
+							<li><a href="#">Middle Eastern Restaurants Near Me</a></li>
+							<li><a href="#">Seafood Restaurants Near Me</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Other food&dring nearby</span>
+					<ul>
+						<li><a href="#">Mexican Cafe Near Me</a></li>
+						<li><a href="#">Spanish Deli Near Me</a></li>
+						<li><a href="#">Italian Pizza Near Me</a></li>
+						<li><a href="#">Irish Soup Near Me</a></li>
+						<li><a href="#">Japanese Sushi Near Me</a></li>
+						<li><a href="#">Mexican Cafe Near Me</a></li>
+						<li><a href="#">Spanish Deli Near Me</a></li>
+						<li><a href="#">Italian Pizza Near Me</a></li>
+						<li><a href="#">Irish Soup Near Me</a></li>
+						<li><a href="#">Japanese Sushi Near Me</a></li>
+						<li><a href="#">Mexican Cafe Near Me</a></li>
+						<li><a href="#">Spanish Deli Near Me</a></li>
+						<li><a href="#">Italian Pizza Near Me</a></li>
+						<li><a href="#">Mexican Cafe Near Me</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<ul>
+						<li><a href="#">Mediterranean Food Near Me</a></li>
+						<li><a href="#">Mexican Food Near Me</a></li>
+						<li><a href="#">South American Food Near Me</a></li>
+						<li><a href="#">Spanish Food Near Me</a></li>
+						<li><a href="#">Thai Food Near Me</a></li>
+						<li><a href="#">Vietnamese Food Near Me</a></li>
+					</ul>
+					<div class="footer-block">
+						<span class="footer-subtitle">Popular restaraunts</span>
+						<ul>
+							<li><a href="#">American Restaurants Near Me</a></li>
+							<li><a href="#">Asian Restaurants Near Me</a></li>
+							<li><a href="#">BBQ Restaurants Near Me</a></li>
+							<li><a href="#">European Restaurants Near Me</a></li>
+							<li><a href="#">Fusion Restaurants Near Me</a></li>
+							<li><a href="#">Middle Eastern Restaurants Near Me</a></li>
+							<li><a href="#">Seafood Restaurants Near Me</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-row">
+					<p>© 2021 Buffet.com All rights reserved.</p>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy and Cookies</a></li>
+					  <li><a href="#">Statement</a></li>
+				    <li><a href="#">Cookie consent</a></li>
+			      <li><a href="#">Site Map</a></li>
+		        <li><a href="#">How the site works</a></li>
+					</ul>
+				</div>
+				<div class="footer-text">
+					<p>This is the version of our website addressed to speakers of English in Canada. If you are a resident of another country or region, please select the appropriate version of Buffet for your country or region in the drop-down menu. Buffet makes no guarantees for availability of prices advertised on our sites and applications. Listed prices may require a stay of a particular length or  have blackout dates, qualifications or other applicable restrictions. Buffet is not responsible for any content on external web sites that are not owned or operated by Buffet. Buffet is not a booking agent or tour operator. When you book with one of our partners, please be sure to check their site for a full disclosure of all applicable fees.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox modal signIn -->
+	<div style="display: none;" id="modal-signIn" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Sign In</h3>
+			<form action="">
+				<div class="input-block"><!-- add calss input-error -->
+					<label for="j-1">Email <sup>*</sup></label>
+					<input id="j-1" type="email" name="email">
+					<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+				</div>
+				<div class="input-block"><!-- add calss input-error -->
+					<label for="j-2">Password <sup>*</sup></label>
+					<input id="j-2" type="password" name="password">
+					<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+				</div>
+				<div class="modal-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<i class="checkbox-ico"></i>
+						<p>Rememeber me</p>
+					</div>
+					<a href="#" class="link-forgot">Forgot password?</a>
+				</div>
+				<button class="primary-btn primary-btn__black">Sign In</button>
+			</form>
+			<div class="modal-bottom">
+				<a data-fancybox data-src="#modal-signUp" href="javascript:;" class="second-btn">Don't have account? SignUp</a>
+			</div>
+		</div>
+	</div>
+	<!-- fancybox modal signIn -->
+	<div style="display: none;" id="modal-signUp" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Sign Up</h3>
+			<form action="">
+				<div class="input-block"><!-- add calss input-error -->
+					<label for="j-3">Email <sup>*</sup></label>
+					<input id="j-3" type="email" name="email">
+					<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+				</div>
+				<div class="input-block__row">
+					<div class="input-block__col">
+						<div class="input-block"><!-- add calss input-error -->
+							<label for="j-4">First name <sup>*</sup></label>
+							<input id="j-4" type="text" name="text">
+							<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+						</div>
+					</div>
+					<div class="input-block__col">
+						<div class="input-block"><!-- add calss input-error -->
+							<label for="j-5">Last name <sup>*</sup></label>
+							<input id="j-5" type="text" name="text">
+							<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+						</div>
+					</div>
+				</div>
+				<div class="input-block"><!-- add calss input-error -->
+					<label for="j-6">Password <sup>*</sup></label>
+					<input id="j-6" type="password" name="password">
+					<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+				</div>
+				<div class="input-block"><!-- add calss input-error -->
+					<label for="j-7">Repeat password <sup>*</sup></label>
+					<input id="j-7" type="password" name="password">
+					<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+				</div>
+				<button class="primary-btn primary-btn__black">Sign Up</button>
+			</form>
+			<div class="modal-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</div>
+			<div class="modal-bottom">
+				<a data-fancybox data-src="#modal-signIn" href="javascript:;" class="second-btn">Do you have an account? Sign In</a>
+			</div>
+		</div>
+	</div>
+	<!-- fancybox modal forgot -->
+	<div style="display: none;" id="modal-forgot" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Forgot password?</h3>
+			<form action="">
+				<div class="input-block"><!-- add calss input-error -->
+					<label for="j-8">Email <sup>*</sup></label>
+					<input id="j-8" type="email" name="email">
+					<span class="input-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</span>
+				</div>
+				<button class="primary-btn primary-btn__black">Send link</button>
+			</form>
+			<div class="modal-text">No problem. Just enter your email address below — we’ll send you a link to reset it.</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
