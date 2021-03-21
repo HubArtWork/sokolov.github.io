@@ -34,10 +34,11 @@
 							<i class="hb-ico search-ico"></i>
 						</div>
 					</form>
+					<i class="hb-ico close-ico"></i>
 				</div>
 			</div>
 			<div class="header-row">
-				<a href="#" class="header-link header-mob">
+				<a href="#" class="header-link header-mob header-link__search">
 					<i class="hb-ico search-ico2"></i>
 					<span>Search</span>
 				</a>
@@ -72,9 +73,9 @@
 					</div>
 				</div>
 				<a data-fancybox data-src="#modal-signIn" href="javascript:;" class="second-btn header-second-btn">Sign In</a>
-				<div class="header-link header-mob header-mob-2">
+				<a href="#" class="header-link header-mob header-mob-2">
 					<i class="hb-ico user-ico"></i>
-				</div>
+				</a>
 			</div>
 		</div>
 	</header>
@@ -94,7 +95,7 @@
 									<i class="hb-ico locate-ico"></i>
 									Location / Place name
 								</label>
-								<input type="text" name="search" placeholder="Quebec">
+								<input type="text" name="search" placeholder="Type your location or name...">
 								<i class="hb-ico close-ico"></i>
 							</div>
 							<button class="primary-btn">Search</button>
@@ -438,12 +439,12 @@
 						<i class="checkbox-ico"></i>
 						<p>Rememeber me</p>
 					</div>
-					<a href="#" class="link-forgot">Forgot password?</a>
+					<a data-fancybox data-src="#modal-forgot" href="javascript:;" onclick="$.fancybox.close();" class="link-forgot">Forgot password?</a>
 				</div>
 				<button class="primary-btn primary-btn__black">Sign In</button>
 			</form>
 			<div class="modal-bottom">
-				<a data-fancybox data-src="#modal-signUp" href="javascript:;" class="second-btn">Don't have account? SignUp</a>
+				<a data-fancybox data-src="#modal-signUp" href="javascript:;" onclick="$.fancybox.close();" class="second-btn">Don't have account? SignUp</a>
 			</div>
 		</div>
 	</div>
@@ -487,7 +488,7 @@
 			</form>
 			<div class="modal-text">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</div>
 			<div class="modal-bottom">
-				<a data-fancybox data-src="#modal-signIn" href="javascript:;" class="second-btn">Do you have an account? Sign In</a>
+				<a data-fancybox data-src="#modal-signIn" href="javascript:;" onclick="$.fancybox.close();" class="second-btn">Do you have an account? Sign In</a>
 			</div>
 		</div>
 	</div>
