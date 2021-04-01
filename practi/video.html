@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Home</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								Printables
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Online learning
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Test preparation
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Private tutoring
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="header-mob">
+					<a href="#modal-signIn" class="second-btn modal-btn">Sign In</a>
+				</div>
+			</nav>
+			<div class="header-row">
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico like-ico"></i>
+						<span>15</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Favorite list
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico basket-ico"></i>
+						<span>3</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Shopping Cart
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<a href="#modal-signIn" class="second-btn modal-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start info -->
+	<section class="info">
+		<div class="wrapper">
+			<div class="info-wrap">
+				<div class="info-bg" style="background-image: url(img/info-bg.svg);"></div>
+				<div class="info-img"><img src="img/info-8.svg" alt=""></div>
+				<div class="info-info">
+					<h3 class="info-title">Lesson’s title goes here</h3>
+					<p>Title tag suggestion Please limit your title tag to 50–60 charachters so it  display properly. Title tag format: Primary Keyword - Secondary Keyword.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+	<!-- start catalog -->
+	<section class="catalog catalog-second">
+		<div class="filter-btn"><i class="hb-ico filter-ico-white"></i></div>
+		<div class="wrapper">
+			<div class="catalog-row">
+				<div class="catalog-sidebar">
+					<i class="hb-ico close-ico sidebar-mob"></i>
+					<div class="sidebar">
+						<div class="sidebar-block active">
+							<div class="sidebar-top">
+								<i class="hb-ico sidebar-ico-1"></i>
+								Ages
+								<i class="hb-ico sidebar-arrow"></i>
+							</div>
+							<div class="sidebar-content">
+								<ul>
+									<li>
+										<input type="checkbox" checked>
+										<span>2 - 3 Years</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>4 - 5 years</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>6 - 7 Years</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>8 - 9 Years</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>10 - 11 Years</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>12 - 13 Years</span>
+									</li>
+								</ul>
+							</div>
+						</div><!-- block -->
+						<div class="sidebar-block active">
+							<div class="sidebar-top">
+								<i class="hb-ico sidebar-ico-2"></i>
+								Sunject
+								<i class="hb-ico sidebar-arrow"></i>
+							</div>
+							<div class="sidebar-content">
+								<ul>
+									<li>
+										<input type="checkbox" checked>
+										<span>Math</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Science</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Writenning</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Reading</span>
+									</li>
+								</ul>
+							</div>
+						</div><!-- block -->
+						<div class="sidebar-block active">
+							<div class="sidebar-top">
+								<i class="hb-ico sidebar-ico-3"></i>
+								Topic
+								<i class="hb-ico sidebar-arrow"></i>
+							</div>
+							<div class="sidebar-content">
+								<ul>
+									<li>
+										<input type="checkbox" checked>
+										<span>Times table</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Square roots</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Division</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Subtraction</span>
+									</li>
+								</ul>
+								<a href="#" class="sidebar-all">See all</a>
+							</div>
+						</div><!-- block -->
+						<div class="sidebar-block">
+							<div class="sidebar-top">
+								<i class="hb-ico sidebar-ico-4"></i>
+								Theme
+								<i class="hb-ico sidebar-arrow"></i>
+							</div>
+							<div class="sidebar-content">
+								<ul>
+									<li>
+										<input type="checkbox" checked>
+										<span>Math</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Science</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Writenning</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Reading</span>
+									</li>
+								</ul>
+							</div>
+						</div><!-- block -->
+						<div class="sidebar-block">
+							<div class="sidebar-top">
+								<i class="hb-ico sidebar-ico-5"></i>
+								Bestsellers
+								<i class="hb-ico sidebar-arrow"></i>
+							</div>
+							<div class="sidebar-content">
+								<ul>
+									<li>
+										<input type="checkbox" checked>
+										<span>Math</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Science</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Writenning</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Reading</span>
+									</li>
+								</ul>
+							</div>
+						</div><!-- block -->
+						<div class="sidebar-block">
+							<div class="sidebar-top">
+								<i class="hb-ico sidebar-ico-6"></i>
+								New releases
+								<i class="hb-ico sidebar-arrow"></i>
+							</div>
+							<div class="sidebar-content">
+								<ul>
+									<li>
+										<input type="checkbox" checked>
+										<span>Math</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Science</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Writenning</span>
+									</li>
+									<li>
+										<input type="checkbox">
+										<span>Reading</span>
+									</li>
+								</ul>
+							</div>
+						</div><!-- block -->
+					</div>
+					<div class="sidebar-bottom">
+						<a href="#" class="primary-btn">Apply filters</a>
+					</div>
+				</div>
+				<div class="catalog-content products-second"><!-- modifier products-second -->
+					<div class="products-block">
+						<div class="products-top">
+							<div class="products-top__row">
+								<div class="products-top__btn">
+									<a href="#" class="sidebar-btn">
+										<i class="hb-ico filter-ico"></i>
+										<span>Filters</span>
+									</a>
+								</div>
+							</div>
+							<div class="products-top__last">
+								<span class="products-top__text">9 Items</span>
+								<div class="select select-second">
+									<div class="select-top">
+										<span class="select-text">Most resent</span>
+									</div>
+									<div class="select-info">
+										<ul>
+											<li><a href="#">Most helpful</a></li>
+											<li><a href="#">Most resent</a></li>
+											<li><a href="#">Highest rated</a></li>
+											<li><a href="#">lowest rated</a></li>
+										</ul>
+									</div>
+									<input type="text" class="select-value">
+								</div>
+							</div>
+						</div>
+						<div class="products-row row">
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Name 1234</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>This article gives you access to free printable multiplication charts for your classroom.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-2-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Вот так будет смотреться длинное название...</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-3-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Вот так будет смотреться длинное название...</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Name 1234</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Name 1234</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>This article gives you access to free printable multiplication charts for your classroom.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-2-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Вот так будет смотреться длинное название...</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-3-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Вот так будет смотреться длинное название...</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Name 1234</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="col-12 products-educators">
+								<div class="products-educators__wrap">
+									<h2 class="section-title">Educators are welcome!</h2>
+									<p>We are always happy to see new educators on our platform. Professional teachers, part time tutors, or involved parents, who are interested in explaining different  topics with an individual and personal approach are welcome at PractiThink! Welcome on board!</p>
+									<a href="#" class="primary-btn primary-btn__big">
+										<i class="hb-ico plus-ico"></i>
+										Add a lesson
+									</a>
+								</div>
+							</div>
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Name 1234</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>This article gives you access to free printable multiplication charts for your classroom.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-2-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Вот так будет смотреться длинное название...</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-3-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Вот так будет смотреться длинное название...</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-lg-3 col-md-4 col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Name 1234</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<p>Какое-то любое описание будет длинное или нет . Для детей и взрослых задачи, 1 - 2 класс. Может 3 класс.</p>
+									</div>
+								</div>
+							</div><!-- col -->
+						</div>
+					</div><!-- block -->
+					<ul class="pagination">
+						<li><a href="#"><i class="hb-ico arrow-left"></i></a></li>
+						<li class="active">1</li>
+						<li><a href="#">2</a></li>
+						<li>...</li>
+						<li><a href="#">10</a></li>
+						<li><a href="#">11</a></li>
+						<li><a href="#"><i class="hb-ico arrow-right"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end catalog -->
+	<!-- start education -->
+	<section class="education">
+		<div class="wrapper">
+			<h2 class="section-title">Learning with PractiThink is fun!</h2>
+			<p>If you are a teacher who is looking for interpretive materials for students or a parent that needs help in explaining certain topics to a kid, you may need some help in finding the materials and inspiration to help the kids. We’ve got you covered! With our lessons library children and students will be more focused and interested during their practices. You can discover online learning sources to help kids reach their learning goals by having interactive and engaging approaches. </p>
+			<p>We offer many well-designed and professionally-prepared lessons by certified teachers and private tutors. Each lesson we offer has helpful tips and entertaining interactive activities that will help children understand the topic in the most simple yet entertaining ways. We cover the essential and approved lessons from pre-K to 8th grade on subjects like Math, English, Science, Social Science, Art, etc. </p>
+			<p>With these engaging resources, kids will confidently reach their academic goals no matter the challenge.</p>
+		</div>
+	</section>
+	<!-- end education -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<span class="footer-subtitle">Social channels</span>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/bxl-twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-instagram-alt.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-facebook-square.svg" alt=""></a></li>
+				</ul>
+				<p>PractiThink © 2020 | All Rights Reserved</p>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col">
+					<span class="footer-subtitle">Useful Links</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Test your math</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Legal</span>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Support</span>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</div><!-- col -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<div class="modal-bg"></div>
+	<!-- start signIn -->
+	<div id="modal-signIn" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<div class="form-logo"><a href="#"><img src="img/modal/logo-1.svg" alt=""></a></div>
+			<p>New to PractiThink? <a href="#">Create an account</a></p>
+			<h2 class="form-title">Sign In</h2>
+			<form action="POST">
+				<div class="input-block">
+					<label for="m-1">Email or Account #</label>
+					<input id="m-1" type="email" name="email" placeholder="Example: email@gmail.com">
+				</div>
+				<div class="input-block">
+					<div class="input-block__top">
+						<label for="m-2">Password</label>
+						<span class="btn-show">Show</span>
+					</div>
+					<input id="m-2" type="password" name="password" placeholder="Password">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox-ico"></span>
+					<p>Keep me signed in</p>
+				</div>
+				<button class="primary-btn">Sign in</button>
+				<a href="#" class="form-link">Forgot password?</a>
+				<span class="form-or">or sign in with</span>
+				<ul class="form-social">
+					<li><a href="#"><i class="hb-ico soc-1"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-2"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-3"></i></a></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- end faq -->
+	<!-- start signIn -->
+	<div id="modal-create" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<div class="form-logo"><a href="#"><img src="img/modal/logo-1.svg" alt=""></a></div>
+			<p>New to PractiThink? <a href="#">Sign in here</a></p>
+			<h2 class="form-title">Create an account</h2>
+			<form action="POST">
+				<div class="input-block">
+					<label for="n-1">Email</label>
+					<input id="n-1" type="email" name="email" placeholder="Example: email@gmail.com">
+				</div>
+				<div class="input-block">
+					<label for="n-2">Role</label>
+					<div class="select">
+						<div class="select-top">
+							<span class="select-text">Teacher</span>
+						</div>
+						<div class="select-info">
+							<ul>
+								<li><a href="#">Teacher</a></li>
+								<li><a href="#">Child</a></li>
+								<li><a href="#">Parents</a></li>
+							</ul>
+						</div>
+						<input type="text" class="select-value">
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block__top">
+						<label for="n-3">Password</label>
+						<span class="btn-show">Show</span>
+					</div>
+					<input id="n-3" type="password" name="password" placeholder="Password">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox-ico"></span>
+					<p>Keep me signed in</p>
+				</div>
+				<button class="primary-btn">Create an account</button>
+				<p>By creating an account, you accept the following <a href="#">Practithink Terms of service</a> and <a href="#">Privacy policy</a></p>
+				<span class="form-or">or creat an account with</span>
+				<ul class="form-social">
+					<li><a href="#"><i class="hb-ico soc-1"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-2"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-3"></i></a></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- end faq -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

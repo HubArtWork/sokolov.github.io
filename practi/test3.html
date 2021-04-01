@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Home</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								Printables
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Online learning
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Test preparation
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Private tutoring
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="header-mob">
+					<a href="#" class="second-btn">Sign In</a>
+				</div>
+			</nav>
+			<div class="header-row">
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico like-ico"></i>
+						<span>15</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Favorite list
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico basket-ico"></i>
+						<span>3</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Shopping Cart
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="second-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start info -->
+	<section class="info">
+		<div class="wrapper">
+			<a href="#" class="page-back">
+				<i class="hb-ico arrow-back"></i>
+				Back 
+			</a>
+			<div class="info-wrap">
+				<div class="info-bg" style="background-image: url(img/info-bg.svg);"></div>
+				<div class="info-img info-img__small"><img src="img/info-7.svg" alt=""></div>
+				<div class="info-info">
+					<h3 class="info-title">1st Grade Math Checkup</h3>
+					<p>Including: counting by 5, putting numbers in orders, reading clocks and writing times, word problems, counting coins, shape faces, true or false addition sentences. </p>
+					<p>Type your answers in the corresponding fields for each question. Click the button  "Check my answers"  to see how you did. Use the "Clear" button to start over.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+	<!-- start question -->
+	<div class="question-modal active">
+		<div class="wrapper">
+			<i class="hb-ico question-close"></i>
+			<div class="question-modal__img"><img src="img/test/question-modal.svg" alt=""></div>
+			<div class="question-modal__info">
+				<h3 class="question-modal__title">Wow! You did great!</h3>
+				<div class="question-modal__rate">
+					<span>Test score: 5/7</span>
+					<img src="img/test/stars.svg" alt="">
+				</div>
+				<span class="question-modal__subtitle">Do you want us to study together?</span>
+				<p>Join Practithink to access tons of practicing, lessons, test preparation and so much more!</p>
+				<a href="#" class="primary-btn">Join now</a>
+			</div>
+		</div>
+	</div>
+	<section class="question allTabs check">
+		<div class="wrapper">
+			<ul class="question-menu tab-list">
+				<li><a href="#question-1" class="active">1st Grade</a></li>
+				<li><a href="#question-2">2st Grade</a></li>
+				<li><a href="#question-3">3st Grade</a></li>
+				<li><a href="#question-4">4st Grade</a></li>
+				<li><a href="#question-5">5st Grade</a></li>
+			</ul>
+			<div class="question-content">
+				<form action="POST">
+					<div class="tab tab-active" id="question-1">
+						<div class="question-block good">
+							<span class="question-title">Question 1 <i class="hb-ico answers-ico"></i></span>
+							<div class="question-wrap">
+								<span class="question-subtitle">What are the missing numbers in this sequence?</span>
+								<ul class="question-list">
+									<li>
+										<input type="text" name="text" value="20">
+									</li>
+									<li>
+										<input type="text" name="text" value="25">
+									</li>
+									<li class="correctly correctly-ico">
+										<input type="text" name="text" value="30">
+									</li>
+									<li>
+										<input type="text" name="text" value="35">
+									</li>
+									<li>
+										<input type="text" name="text" value="40">
+									</li>
+									<li class="correctly correctly-ico">
+										<input type="text" name="text" value="45">
+									</li>
+									<li>
+										<input type="text" name="text" value="50">
+									</li>
+									<li class="mistake mistake-ico">
+										<input type="text" name="text" value="28">
+									</li>
+								</ul>
+								<div class="question-answers">
+									<span class="question-subtitle">Correct answer</span>
+									<ul class="question-list">
+										<li>
+											<input type="text" name="text" value="20">
+										</li>
+										<li>
+											<input type="text" name="text" value="25">
+										</li>
+										<li>
+											<input type="text" name="text" value="50">
+										</li>
+										<li>
+											<input type="text" name="text" value="35">
+										</li>
+										<li>
+											<input type="text" name="text" value="40">
+										</li>
+										<li>
+											<input type="text" name="text" value="50">
+										</li>
+										<li>
+											<input type="text" name="text" value="50">
+										</li>
+										<li>
+											<input type="text" name="text" value="50">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- block -->
+						<div class="question-block">
+							<span class="question-title">Question 2  <i class="hb-ico answers-ico"></i></span>
+							<div class="question-wrap">
+								<span class="question-subtitle">Put these numbers in order from least to greatest</span>
+								<ul class="question-choice">
+										<li class="correctly correctly-ico">
+											<span>30</span>
+										</li>
+										<li class="correctly correctly-ico">
+											<span>35</span>
+										</li>
+										<li class="mistake mistake-ico">
+											<span>40</span>
+										</li>
+										<li class="correctly correctly-ico">
+											<span>45</span>
+										</li>
+										<li class="correctly correctly-ico">
+											<span>50</span>
+										</li>
+										<li class="mistake mistake-ico">
+											<span>55</span>
+										</li>
+									</ul>
+								<div class="question-answers">
+									<span class="question-subtitle">Correct answer</span>
+									<ul class="question-choice">
+										<li>
+											<span>30</span>
+										</li>
+										<li>
+											<span>35</span>
+										</li>
+										<li>
+											<span>40</span>
+										</li>
+										<li>
+											<span>45</span>
+										</li>
+										<li>
+											<span>50</span>
+										</li>
+										<li>
+											<span>55</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- block -->
+						<div class="question-block">
+							<span class="question-title">Question 3  <i class="hb-ico answers-ico"></i></span>
+							<div class="question-wrap">
+								<span class="question-subtitle">What times do the clocks show?</span>
+								<div class="question-times">
+									<div class="question-col active">
+										<img src="img/test/time-1.svg" alt="">
+										<input type="text" name="text" value="12 : 10" class="time-input correctly">
+									</div><!-- col -->
+									<div class="question-col active">
+										<img src="img/test/time-2.svg" alt="">
+										<input type="text" name="text" value="12 : 10" class="time-input mistake">
+									</div><!-- col -->
+									<div class="question-col">
+										<img src="img/test/time-3.svg" alt="">
+										<input type="text" name="text" value="12 : 10" class="time-input mistake">
+									</div><!-- col -->
+									<div class="question-col">
+										<img src="img/test/time-4.svg" alt="">
+										<input type="text" name="text" value="12 : 10" class="time-input mistake">
+									</div><!-- col -->
+								</div>
+								<div class="question-answers">
+									<span class="question-subtitle">Correct answer</span>
+									<ul class="question-choice">
+										<li>
+											<span>12  :  10</span>
+										</li>
+										<li>
+											<span>12  :  10</span>
+										</li>
+										<li>
+											<span>12  :  10</span>
+										</li>
+										<li>
+											<span>12  :  10</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- block -->
+						<div class="question-block good">
+							<span class="question-title">Question 4 <i class="hb-ico answers-ico"></i></span>
+							<div class="question-wrap">
+								<span class="question-subtitle">John had a  with his 10 classmates.Three boys came to his party. <br>How many girls from John's class were at his party?</span>
+								<div class="question-row question-row__pad">
+									<input type="text" name="text" class="correctly correctly-ico" value="6">
+									<span class="question-text">girls</span>
+								</div>
+								<div class="question-answers">
+									<span class="question-subtitle">Correct answer</span>
+									<ul class="question-choice">
+										<li>
+											<span>6</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- block -->
+						<div class="question-block good">
+							<span class="question-title">Question 5 <i class="hb-ico answers-ico"></i></span>
+							<div class="question-wrap">
+								<span class="question-subtitle">How much money is there?</span>
+								<div class="question-img"><img src="img/test/test-5.svg" alt=""></div>
+								<div class="question-row question-row__pad">
+									<input type="text" name="text" class="mistake" value="1$">
+								</div>
+								<div class="question-answers">
+									<span class="question-subtitle">Correct answer</span>
+									<ul class="question-choice">
+										<li>
+											<span>20</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- block -->
+						<div class="question-block good">
+							<span class="question-title">Question 6 <i class="hb-ico answers-ico"></i></span>
+							<div class="question-wrap">
+								<span class="question-subtitle">How many faces does this shape have?</span>
+								<div class="question-img"><img src="img/test/test-6.svg" alt=""></div>
+								<div class="question-row question-row__pad">
+									<input type="text" name="text" class="mistake" value="20">
+									<span class="question-text">faces</span>
+								</div>
+								<div class="question-answers">
+									<span class="question-subtitle">Correct answer</span>
+									<ul class="question-choice">
+										<li>
+											<span>6</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- block -->
+						<div class="question-block good">
+							<span class="question-title">Question 7 <i class="hb-ico answers-ico"></i></span>
+							<div class="question-wrap">
+								<span class="question-subtitle">Which number sentence is true?</span>
+								<ul class="question-choice">
+									<li>
+										<input type="radio" name="question-7" class="choice-input">
+										<span>2+4 =6</span>
+									</li>
+									<li class="mistake mistake-ico">
+										<input type="radio" name="question-7" class="choice-input">
+										<span>8+1 =7</span>
+									</li>
+									<li>
+										<input type="radio" name="question-7" class="choice-input">
+										<span>4+2 =7</span>
+									</li>
+								</ul>
+								<div class="question-answers">
+									<span class="question-subtitle">Correct answer</span>
+									<ul class="question-choice">
+										<li>
+											<span>2+4 =6</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- block -->
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end question -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<span class="footer-subtitle">Social channels</span>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/bxl-twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-instagram-alt.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-facebook-square.svg" alt=""></a></li>
+				</ul>
+				<p>PractiThink © 2020 | All Rights Reserved</p>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col">
+					<span class="footer-subtitle">Useful Links</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Test your math</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Legal</span>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Support</span>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</div><!-- col -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script>
+		  // Set the initial score to zero...
+		  var score = 0;
+		  // Create an array with the answers in the correct order...
+		  var answers = [
+		    "Short-term supply of energy.",
+		    "Needed for growth and repair of cells.",
+		    "Long-term store of energy.",
+		    "Needed to maintain health.",
+		    "Needed to maintain health."
+		  ];
+		  // Get the intial state of the table, so it can be reset...
+		  var tableDefault = $(".dragTarget").html();
+
+		  // Enable drag and drop...
+		  function dragAndDrop(dragTarget, dropTarget) {
+		    // Enable draggable events...
+		    $(dragTarget).draggable({ revert: true });
+
+		    // Enable the droppable events...
+		    $(dropTarget).droppable({
+		      drop: function(event, ui) {
+		        // Append the dropped item into its drop target...
+		        $(this).append(ui.draggable);
+		        // Place the drag target in the normal document flow...
+		        ui.draggable.css({
+		          position: "static",
+		          top: "auto",
+		          left: "auto"
+		        });
+		        // jQuery UI requires the draggable element to have position: relative...
+		        ui.draggable.css({
+		          position: "relative"
+		        });
+		      }
+		    });
+		  }
+		  // Enable drag and drop in both directions...
+		  dragAndDrop(".option-card", ".answer");
+		  dragAndDrop(".option-card", ".option");
+
+		  /*
+		  // When the check answers button is clicked...
+		  $(".check-answer").on("click", function() {
+		    
+		    // Check the guess against each answer in the answers array, and increment the score if they match...
+		    $(".answer").each(function(i) {
+		      
+		      // Get the correct answer for the current row...
+		      var answer = answers[i];
+		      // Get the user's guess...
+		      var guess = $(this).find("div").text();
+		      // Compare the user's guess to the correct answer...
+		      if (guess === answer) {
+		        // They were correct - increment the score!
+		        score++;
+		        // Correct answer gets a green background...
+		        $(this).css("background", "#2ecc71");
+		      } else {
+		        // Incorrect answers get a red background...
+		        $(this).css("background", "#e74c3c");
+		      }
+		    });
+		    // Display the score...
+		    $(".score-card").html("<p>Score: " + score + "/5</p>");
+
+		    // Swap the "check answers" and "reset" buttons...
+		    $(".reset-btn").css("display", "flex");
+		    $(".check-answer").css("display", "none");
+		  }); // END $(".check-answer").on("click", function({...}));
+
+		  // When the reset button is clicked...
+		  $(".reset-btn").on("click", function() {
+		    
+		    // Reset the question table...
+		    $(".table").html(tableDefault);
+		    
+		    // Re-enable the drag and drops...
+		    dragAndDrop(".card", ".answer");
+		    dragAndDrop(".card", ".option");
+
+		    // Swap the "check answers" and "reset" buttons...
+		    $(".reset-btn").css("display", "none");
+		    $(".check-answer").css("display", "flex");
+
+		    // Hide the score...
+		    $(".score-card").html("");
+
+		    // Reset the score to zero...
+		    score = 0;
+		  }); // END $(".reset-btn").on("click", function() {...});
+		  */
+	</script>
+</body>
+</html>

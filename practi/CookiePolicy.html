@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Home</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								Printables
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Online learning
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Test preparation
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Private tutoring
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="header-mob">
+					<a href="#" class="second-btn">Sign In</a>
+				</div>
+			</nav>
+			<div class="header-row">
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico like-ico"></i>
+						<span>15</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Favorite list
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico basket-ico"></i>
+						<span>3</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Shopping Cart
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="second-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start info -->
+	<section class="info">
+		<div class="wrapper">
+			<div class="info-wrap">
+				<div class="info-bg" style="background-image: url(img/info-bg.svg);"></div>
+				<div class="info-info">
+					<h3 class="info-title">Terms of Service</h3>
+					<p>Last updated: November 5, 2019</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+	<!-- start text -->
+	<section class="text">
+		<div class="wrapper">
+			<div class="text-block">
+				<p>PractiThink respects the intellectual property of others and expects the same from Sellers on our Marketplace. This article aims to clarify the rules regarding copyright and IP, which will enable you to both avoid breaching the rights of others and know what rights you have for the content that you create.</p>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">About us and these terms</h2>
+				</div>
+				<ol>
+					<li><span>1. </span>Welcome to <b>PractiThink</b>, the test preparation online software services and learning materials marketplace (“Marketplace”) operated by MNG Consulting Inc. PractiThink (referred to in this document as “PractiThink”, “us”, “we”, or “our”) has adopted the following Terms of Service (“Terms”) which govern your relationship with Practithink and describe your legal rights.</li>
+					<li><span>2. </span>These Terms apply to the use of all services and products located at practithink.com and related subdomains (together, the "PractiThink"), any affiliated web pages we may host (which, together with the PractiThink, are defined in these Terms as the “Sites”), our mobile applications (“Apps”), and any other services we might offer (together, the Sites, Apps, and related services are our “Services”).</li>
+					<li><span>3. </span>When you create a PractiThink account or visit our Marketplace, you must accept these Terms, as use of PractiThink is conditional on your acceptance to be bound by these Terms whether or not you become a member. You agree to follow the ground rules outlined in these Terms, so please take time to read and understand them.</li>
+					<li><span>4. </span>Please note that Section Legal Disputes of these Terms describes what happens in the event of a dispute between you and PractiThink, and includes a binding arbitration clause as well as a class action waiver. Please review that section carefully as it affects your right to a jury trial and to participate in a class or representative action.</li>
+					<li><span>5. </span>The learning materials (“Products”) offered on the PractiThink Marketplace are owned by the respective rightsholder. They are licensed to you under the terms of the PractiThink Marketplace License (as amended from time to time) at the direction of authors (“Authors”).</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">RULES FOR BROWSING AND BUYING FROM OUR MARKETPLACE:</h2>
+				</div>
+				<ol>
+					<li><span>6. </span><b>Browsing: </b>You need to be 16 years or over to browse the PractiThink Marketplace. If you are below 16, you will need the permission from a parent or legal guardian to use the Marketplace, and the parent or legal guardian becomes responsible for all your activities on our Sites. We don’t knowingly collect any information from anyone aged 16 or under. When browsing the PractiThink Marketplace, you agree to follow our guidelines and instructions and acknowledge that these Terms apply to any use of the PractiThink Marketplace whether or not you’re a member.</li>
+					<li><span>7. </span><b>Content available to browsing users: </b>In certain areas of the PractiThink Marketplace, a limited range of content is made available to you without the requirement of a PractiThink membership. The membership-free content is also subject to the PractiThinkTerms.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">BECOMING A MEMBER</h2>
+				</div>
+				<ol>
+					<li><span>8. </span><b>Subscription types: </b>When you subscribe to our Services, you become a Member and obtain access to our library of online Products that must be used in accordance with the PractiThink Terms. Usage of Products is varied based on your subscription plan. You are not permitted to share access to your PractiThink account. Plans for groups of multiple students are available.</li>
+					<li><span>9. </span><b>Authority to agree to these terms: </b>If you are a school or organization, both you and the actual person who signs up on your behalf represent and warrant that this person has the authority to bind your school or organization to these Terms.</li>
+					<li><span>10. </span><b>Age: </b>You need to be 18 years of age or over to become a Member. If you’re under 18, you will need to use the account of a parent or legal guardian who is at least 18 years of age, with their permission, and this adult will be responsible for all your activities.</li>
+					<li><span>11. </span><b>Your responsibility: </b>You promise that the information you provide us is true, accurate and complete and that you will keep your account information up-to-date (including a current email address). Your subscription is not transferable. You are responsible for any use of PractiThink that occurs on your account, so please keep your username and password secure. If you realise there has been any unauthorized use of your account or any other breach of security, you need to let us know immediately.</li>
+					<li><span>12. </span><b>Recurring Billing: </b>Our subscription plans to the Service consist of an initial period, for which there is an initial charge from your payment method, followed by recurring periodic charges, as agreed to by you. By accepting these Terms, you acknowledge that your subscription has an initial and recurring payment feature and you accept responsibility for all recurring charges prior to the termination of your account. PractiThink may deduct monthly, semi-annual or annual fees from your nominated payment method without further authorization from you, until you provide prior notice that you have revoked this authorization or wish to change your payment method. Such notice will not affect fees by PractiThink charged to your payment method that were made 48 hours prior to the notice. </li>
+					<li>Your PractiThink subscription will be automatically extended for successive renewal periods of the same duration as your original subscription billing term at the then-current, non-promotional subscription rate. To change or update your subscription details, log onto practithink.com with your username and password, and click the tab at the top of the homepage. You may terminate your membership subscription by entering the “My Account” area of PractiThink and clicking the “Delete account” button or you may submit an account termination request by contacting us at help@practithink.com. Please note, you will not be eligible for a refund of any portion of the subscription fee paid for the then-current subscription period.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">HOW DOWNLOADING PRODUCTS WORKS</h2>
+				</div>
+				<ol>
+					<li><span>13. </span><b>What do you get when you download a Product?</b></li>
+					<li><span>a. </span><b>License: </b>When you download a Product from our Marketplace, you will be granted a license from us to use that Product for the purpose you nominated during the registration process. For example, if you registered as a School or Teacher, a multiple students license is granted.</li>
+					<li><span>b. </span><b>No ownership: </b>By downloading a Product, you do not actually acquire ownership of the Product itself, only a license to use that Product for a limited number of students (“end-users”).</li>
+					<li><span>c. </span><b>Services: </b>As a Member of PractiThink, you also receive services from us like account support, fraud protection, product quality control and other related services.</li>
+					<li><span>d. </span><b>Monitoring content: </b>PractiThink has the right, but not the obligation, to monitor any activity and Content associated with our Services. We may investigate any complaints or reported violations of our policies and take any action that we deem appropriate. Such action may include, but is not limited to, issuing warnings, suspension or termination of your Membership, denying access, and/or removal of any Content on the Sites, including the Products listed on our Marketplace</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">THIRD PARTY PRODUCTS AND SERVICES</h2>
+				</div>
+				<ol>
+					<li><span>14. </span>As a Subscriber, you may also have access to, or be eligible for, special offers in relation to products and services provided by our partnered suppliers (Third Party Offers). Information about Third Party Offers will be published on our website.</li>
+					<li><span>15. </span>You have no obligation to redeem any Third Party Offer. However, if you choose to do so, you will then be buying the relevant product and/or service from the supplier and not from us.</li>
+					<li><span>16. </span>The redemption of a Third Party Offer is subject to the terms and conditions set by our partners. You should read and make sure that you agree to the applicable terms and conditions before redeeming any Third Party Offer.</li>
+					<li><span>17. </span>The description of products and services forming part of a Third Party Offer published on our site, and any associated links, have been provided to us by the suppliers. While we have made reasonable efforts to check the accuracy of the descriptions, the suppliers are solely responsible for any representations contained in those descriptions. Further, we do not endorse or assume any responsibility for those products and services.</li>
+					<li><span>18. </span>The suppliers might make, or be required by relevant laws to make, other promises to you as a consumer. Check their terms and conditions to make sure that you are aware of what these might be.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">SUBSCRIBING TO OUR PRACTITHINK ONLINE SERVICES</h2>
+				</div>
+				<ol>
+					<li><span>19. </span>You can pay for your subscription via PayPal or credit card. You may be required to pay a handling fee depending on the method of payment you choose.</li>
+					<li><span>20. </span>By signing on as a Subscriber, you must agree to the individual payment terms that relate to your chosen method of payment.</li>
+					<li><span>21. </span>In the event that you select an ongoing, regular payment method (for example a monthly credit card or PayPal payment) and that payment fails to be processed, we may immediately suspend your subscription until payment has been made. If we suspend your subscription, your rights under these Terms and the PractiThink membership will also be suspended.</li>
+					<li><span>22. </span>Subscription Terms: When you subscribe to PractiThink Services, you do so on the following terms:</li>
+					<li><i>a. </i>you acknowledge that you understand what you can and can’t do with your downloaded Products and/or with our test-preparation software in accordance with these Terms;</li>
+					<li><i>b. </i>we and the authors do not promise that any particular Product will continue to be available on the PractiThink platform;</li>
+					<li><i>c. </i>once you register for an account, you acquire a non-exclusive license to use our test preparation software under the Terms described in this document (non-exclusive means others might also received the same license); and</li>
+					<li><i>d. </i>you do not gain any ownership rights of downloaded Products or our test-preparation software.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">REFUNDS AND CANCELATIONS</h2>
+				</div>
+				<ol>
+					<li><span>23. </span>Given the nature of digital content, we do not generally offer a refund or credit on a purchased Products from our Marketplace or available to our members with a subscription plan unless we have made changes to these Terms that materially affect you to your detriment or as required under US consumer law or other relevant consumer protection laws. If you would like to request a refund or credit you should submit a help request. When you cancel a subscription for any reason, you will receive a refund for any whole unused months remaining in your subscription period.</li>
+					<li><span>24. </span>We will review refund or credit requests within 48 hours, but it may take longer as this is not a priority for our support team. There is generally no obligation to provide a refund or credit in situations like the following:</li>
+					<li><i>a. </i>You have changed your mind about your subscription;</li>
+					<li><i>b. </i>You subscribed by mistake;</li>
+					<li><i>c. </i>You do not have sufficient expertise to use the Products made available;</li>
+					<li><i>d. </i>You ask for goodwill; or</li>
+					<li><i>e. </i>You can no longer access any of your desired Products because they have been removed from the PractiThink   Marketplace (we advise you to download Products as soon as you obtain a license to them to avoid this situation).</li>
+					<li><span>25. </span>If we decide to issue a refund or credit, this will generally be done using the same method that was used to make the purchase. Any payment made to you will be made in the currency PractiThink offered to you when you purchased your subscription (either Euros or US Dollars), under the rules of the payment method (see Currency conversion costs about currency conversion back to your local currency).</li>
+					<li>Disputes lodged with payment agents: If, as a Subscriber, you lodge a dispute with a payment agent, this will result in freezing your PractiThink Marketplace subscription and your PractiThink account until the dispute raised with the payment agent has been resolved. This will make it very complex to resolve any related issues, so we encourage you to first contact us directly to see if we can help resolve your concerns.</li>
+					<li><span>26. </span>Fine print: We are not a bank or licensed deposit taker. Any credit we apply to your subscription is not a deposit under law for banks, and that means you don’t get the benefit of any deposit insurance, interest or guarantee under those laws. We don’t act as a fiduciary or as a trustee for you, and we’re not a licensed financial service provider.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">INTELLECTUAL PROPERTY</h2>
+				</div>
+				<ol>
+					<li><span>27. </span>What we own: We own all the PractiThink Content that we have added to the PractiThink Marketplace (unless otherwise stated and excluding content owned by others). This includes the design, compilation, and look and feel of the PractiThink Marketplace site, and copyright, designs and other intellectual property on the PractiThink Marketplace. We own all the trademarks, logos, service marks and trade names on the PractiThink Marketplace (unless otherwise stated and excluding those owned by others). The rights of all tests uploaded to the PractiThink Prep platform will be transferred from the Author to PractiThink upon acceptance of the test. You will not copy, distribute, modify or make derivative works of any of our PractiThink Content or use any of our intellectual property in any way not expressly stated in these terms.</li>
+					<li><span>28. </span>What we don’t own: We do not own the content of the Products on the PractiThink Marketplace; the Product Authors do. However, we have the right to sublicense the Products to you through the terms of the PractiThink Marketplace License.</li>
+					<li><span>29. </span>Copyright, trademark and intellectual property claims: We respect the intellectual property rights of others. If you believe that a Product or any content on the PractiThink Marketplace infringes any intellectual property rights (including copyright), please see the information in our Intellectual Property Policy.</li>
+					<li>Our Intellectual Property Policy is where you will find all the information relating to how we treat intellectual property on the PractiThink Marketplace including copyright and other rights.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">OUR USE OF YOUR INFORMATION</h2>
+				</div>
+				<ol>
+					<li><span>30. </span>Privacy: We respect your privacy and process your information in accordance with our Privacy Policy.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">Our Privacy Policy explains how we treat your information.</h2>
+				</div>
+				<ol>
+					<li><span>31. </span>Confidential Information: We value your information and take reasonable precautions to protect it. While using the PractiThink Marketplace, you may also become aware of confidential information about us, or someone else. You acknowledge that you will not disclose any confidential information made available to you through the PractiThink Marketplace to any other person.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">FAIR USE</h2>
+				</div>
+				<ol>
+					<li><span>32. </span>Prohibited Conduct: Your use of the PractiThink Marketplace, including the content and the Products, must comply with our policies (as published on the PractiThink Marketplace site) including the Acceptable Use Policy and the Fair Use Policy.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">LINKING; APPS MADE BY OTHERS</h2>
+				</div>
+				<ol>
+					<li><span>33. </span>Linking to PractiThink Marketplace: We reserve the right to insist that any link to the PractiThink Marketplace be removed, and to revoke your ability to link to the PractiThink Marketplace.</li>
+					<li><span>34. </span>Links from PractiThink Marketplace: The PractiThink Marketplace platform and Product downloads may contain links to other non-PractiThink sites. We have no control or responsibility over anything appearing on those sites, and do not endorse or sponsor those sites.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">SELLER-SPECIFIC TERMS</h2>
+				</div>
+				<ol>
+					<li>Teachers, Educators and Contributors (“Sellers”), acknowledge and accept the following Seller-specific Terms when submitting any content to the PractiThink team:</li>
+					<li><span>35. </span>The content (learning material and/or lessons) has been created by you, and you have acquired all necessary permissions for the re-use of any material (such as pictures or graphs).</li>
+					<li><span>36. </span>Once accepted by our review team, your test on our platform (the Product) will become PractiThink Prep property and you (the Author) give us unlimited rights to use this Product, including all elements within it. Upon acceptance, the Product can no longer be deleted or modified by it’s original Author.</li>
+					<li><span>37. </span>You (the Author) retain ownership of all content included in your test and can use this in any manner you wish.</li>
+					<li><span>38. </span>You have a PayPal or Payoneer account that is in good standing.</li>
+					<li><span>39. </span>To be eligible for a payment on the 19th of the month, you must request a payout before the last day of the previous month (please note, there is a minimum payout threshold of $40 (USD). Payments will not be processed until your entitled payment is above this value).</li>
+					<li>When submitting your Product for review, you will nominate an Author Cash price (amount you will receive before tax). You are able to nominate whether you would like your learning material to be exclusive or non-exclusive to the PractiThink platform. This will determine your Author Cash calculation. PractiThink will show the List price (which is calculated by the Author Cash + Buyer and Author Fees). Although you are able to set your Author Cash price, PractiThink reserves the right to reject this if it is deemed to be too high.</li>
+					<li><span>40. </span>Sellers based in the US are required to submit a W-4 form before payments can be processed. No such form is required for Sellers based outside of the US.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">Legal disputes</h2>
+				</div>
+				<ol>
+					<li>Any legal action that might arise between you and PractiThink related to your use of PractiThink is governed by the provisions of this Section of these Terms.</li>
+					<li><span>41. </span><b>Other Terms</b></li>
+					<li>In this Section, you’ll find additional rules for using PractiThink, such as what happens if there is a dispute between you and PractiThink, and certain modifications for government Users.</li>
+					<li><span>a. </span><b>Disputes with practithink</b><br>In the case of a dispute between you and PractiThink arising from these Terms or your use of our Services, the following rules will apply. <br><b>PLEASE READ THIS SECTION CAREFULLY – IT MAY SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT AND TO HAVE A JURY HEAR YOUR CLAIMS.</b></li>
+					<li><b>- Binding Arbitration. </b>You and PractiThink agree that any dispute arising from or relating to these Terms or your use of our Services will be settled through binding arbitration conducted by the American Arbitration Association (AAA) and in accordance with their Commercial Arbitration Rules. The responsibility to pay any filing, administrative, or arbitrator fees will be solely yours, as set forth in the AAA rules. To the extent permitted under AAA rules, the arbitrator may award costs, fees, and expenses, including reasonable attorney’s fees to the prevailing party. A decision reached by arbitration will be final and binding and may be entered as a judgment by any court having jurisdiction. You understand that there is no judge or jury in arbitration, and that other procedural rights, such as discovery and appeal, are not available in an arbitration. YOU AND PRACTITHINK EACH KNOWINGLY AND VOLUNTARILY AGREE TO WAIVE YOUR RESPECTIVE RIGHTS TO A TRIAL BY JUDGE AND JURY, AND TO HAVE YOUR CASE HEARD IN A COURT OF LAW.</li>
+					<li><b>- Disputes will be settled on an individual basis. </b>YOU AND PRACTITHINK EACH KNOWINGLY AND VOLUNTARILY AGREE TO WAIVE THE RIGHT TO BRING OR PARTICIPATE IN A CLASS, COLLECTIVE, CONSOLIDATED, OR REPRESENTATIVE ACTION OR ARBITRATION. Notwithstanding this clause, each party may seek injunctive or other equitable relief in a court of competent jurisdiction in New York County to protect the party’s intellectual property rights pending completion of the arbitration.</li>
+					<li><b>- Governing Law. </b>These Terms are governed by the laws of the state of New York, and the laws of the United States of America without regard to principles of conflicts of law, and regardless of where you are located in the world.</li>
+					<li><span>b. </span><b>No waiver</b></li>
+					<li>Any failure by PractiThink to enforce any right or provision of these Terms does not constitute a waiver of that right or provision and will not limit our right to act or enforce these Terms against subsequent or similar breaches.</li>
+					<li><span>c. </span><b>Severability</b></li>
+					<li>If any part of these Terms is deemed invalid, unenforceable, or illegal, that part which is unenforceable is sevred from the  Terms, and will have no impact on the enforceability of the remainder of these Terms.</li>
+					<li><span>d. </span><b>Government agencies & public entities</b></li>
+					<li>- If you are a federal, state, or local government or government agency in the United States and are using PractiThink in your official capacity, the following amendments to these Terms apply:</li>
+					<li>- Federal Governments & Entities. If you are a federal government or federal government entity, the provisions entitled “Indemnification,” “Binding Arbitration,” and “Governing Law,” do not apply to your official use of the Services, only to the extent that they are inconsistent with federal laws or regulations.</li>
+					<li>- PractiThink will not use your name, seals, trademarks, or the fact that you’re a member of our Services to purposefully state or imply an endorsement of our Services. PractiThink will use your name, seals, trademarks, and the fact that you’re a member of our Services as necessary in the regular operation of our Services and to deliver our Services to you and to other Members.</li>
+					<li>- State and Local Governments & Entities. If you are a state or local government, or state or local government entity, the provisions entitled “Indemnification,” “Binding Arbitration,” “Governing Law,” and “Venue” will apply to your official use of the Site and the Services only to the extent permitted by your jurisdiction’s laws.</li>
+					<li><span>42. </span><b>Survival of Terms</b></li>
+					<li>- Some parts of this agreement will stay in effect even if you decide to stop using PractiThink or if PractiThink terminates your account.</li>
+					<li>- The following provisions survive if you cease using our Services or your Account is closed by you or by PractiThink for any reason:</li>
+					<li>- Visitors. If you continue to access our Services as a Visitor, any Terms that apply to Visitors still apply to you.</li>
+					<li>- Intellectual Property Rights. You still have to respect our intellectual property rights as described in the Intellectual Property Section.</li>
+					<li>- Rules for Listing Products. If you’ve sold Products, our rules requiring continued access to your Products for Members who have previously purchased or downloaded them still apply. This means, if you’re hosting any Resource content through a third party, access through that third party host must be maintained.</li>
+					<li>- Rules for Purchasing and Downloading Products. After your Account is closed, you have to follow the licensing rules about how you can use the Products you’ve purchased or downloaded and who you can share them with, as set out in our Refund Policy and our Payment Disputes policy.</li>
+					<li>- Privacy Policy. The Our use of your information Section of these Terms and the terms of our Privacy Policy continue to apply, including data we collect from Visitors if you continue to visit our Site, how we treat and use your Account information after your Account is closed, and how you can report Content that you believe violates your privacy rights.</li>
+					<li>- Earnings and Payouts. Any final Payouts owed to you are subject to these Terms and will be paid in accordance with Section Seller-specific Terms.</li>
+					<li>- Warranty Disclaimer, Limitation of Liability, and Indemnity (Section Liability and Indemnity). PractiThink’s warranty disclaimer remains in effect. You can’t hold PractiThink liable for losses or damages due to your use of PractiThink, and you still have to defend PractiThink against legal action arising from your use of the Services.</li>
+					<li>- Eligibility, suspension or termination: Being a Subscriber is not an automatic right, it is a benefit for those who follow our reasonable rules. We hope that you will be with us for a long time. But we may, using reasonable discretion, decide whether or not your use of the PractiThink Marketplace complies with these Terms. We can suspend or terminate your subscription account at any time for any reason (acting reasonably of course) including:</li>
+					<li><span>a. </span><b>if you breach these terms;</b></li>
+					<li><span>b. </span><b>if you act in a way that does not align with the values of our community; or</b></li>
+					<li><span>c. </span><b>if you act in a way that could cause us or others harm.</b></li>
+					<li>- If we do decide to permanently terminate your PractiThink account, you must not apply for a new account as you will no longer be welcome in our community. This decision may also apply to all of your PractiThink accounts you use on other PractiThink Sites.</li>
+					<li>- PractiThink Companies: If an indemnity, limitation or disclaimer of liability, promise or release (a ‘benefit’) is given in our favour according to these Terms or the PractiThink Marketplace License, we hold that benefit on trust for the other PractiThink Companies. We may enforce that benefit as trustee for and on behalf of the other PractiThink Companies as beneficiaries under that trust.</li>
+				</ol>
+			</div>
+			<div class="text-block">
+				<div class="section-head">
+					<h2 class="section-title">Liability and indemnity - between us and subscribers</h2>
+				</div>
+				<ol>
+					<li><span>43. </span>You indemnify us against all losses, costs (including legal costs on a full indemnity basis), expenses, demands or liability that we incur arising out of, or in connection with, a third party claim against us relating to use of the PractiThink Marketplace, any Product or the products or services forming part of any Third Party Offer.</li>
+					<li><span>44. </span>PractiThink Marketplace, the Products and all Third Party Offers are made available to you on an “AS IS” basis. Subject to clause 42, we disclaim all warranties, express or implied, including any implied warranties of non-infringement, merchantability and fitness for a particular purpose.</li>
+					<li><span>45. </span>Our liability to you in connection with the PractiThink Marketplace or these Terms, in contract, tort (including negligence) or otherwise, is limited as follows:</li>
+					<li><span>a. </span>we exclude liability for any of these things incurred by you: loss of revenue, loss of profit, loss of goodwill, loss of customers, loss of capital, damage to reputation, loss in connection with any other contract, loss of data, or indirect,  consequential or special loss, damage or expense; and</li>
+					<li><span>b. </span>our total aggregate liability to you is otherwise limited to the total amounts paid by you to us for your PractiThink <br>Marketplace subscription in the 6 months immediately preceding the date on which the claim giving rise to the liability arose.</li>
+					<li><span>46. </span><b>Availability: </b>We strive to have the PractiThink platform available to you 24 hours a day, seven days a week, but because of how the internet works, occasionally you may not be able to access the PractiThink Marketplace, and this might happen for any reason, at any time, with or without notice, or at our absolute discretion. We might also change aspects of how the PractiThink platform works, including the kinds of Products available on the PractiThink Marketplace. The PractiThink Companies will not be liable to you for any loss you suffer as a result of these things.</li>
+					<li><span>47. </span><b>Third party: </b>If you’re agreeing to these Terms on behalf of someone else, then you’re acknowledging that you have full legal authority to bind that third party accordingly. Remember that only real people can subscribe to the PractiThink Marketplace.</li>
+					<li><span>48. </span>Consumer laws: In some places, there may be non-excludable warranties, guarantees or other rights (‘non-excludable consumer guarantees’). We do not exclude, restrict or modify non-excludable consumer guarantees in these Terms. Except for non-excludable consumer guarantees, we are bound only by the express promises made in these Terms. Our liability for a breach of a non-excludable consumer guarantee is limited, at our option, to replacing or paying the cost of replacing the relevant Product or service, (unless the non-excludable consumer guarantee says otherwise). You must not use a Product in violation of any export laws that apply to you.</li>
+					<li><span>49. </span>Blocking you, disabling your subscription or refusing to process a payment: We may block you, terminate your subscription or refuse to process a payment if we reasonably believe there is a risk associated with you, your subscription, or that payment, including if it breaches a law or regulation. Examples of where we might do this include transactions where the payment is from or to a person or country sanctioned by an authority (like the United Nations, the United States government or the Australian government); or where we reasonably believe there is a legal or regulatory risk or a risk of loss being suffered by us or our members. You promise that you are not located in a sanctioned country and are not on a sanctioned persons list. We may also block members from a country if we can’t make payments to or from that country. You should check what payment methods are available in your country for making payments. We may take any of the actions stated in this section without notice and against all of your PractiThink accounts on other PractiThink sites. As our sites are global, there are different laws that may apply and these may restrict our relationship with you.</li>
+					<li><span>50. </span>US-specific controls: The PractiThink Marketplace is not available to anyone located in any U.S. sanctioned countries, or to anyone on the U.S Treasury Department’s list of Specially Designated Nationals List (SDN list). You must not export or re-export PractiThink Products to a U.S. sanctioned country or to anyone on the SDN list.</li>
+					<li><span>51. </span>Relationship between the parties: Nothing in these terms is to be construed as constituting a partnership, joint venture, employment or agency relationship between you and us, or between you and any other member. Neither you nor us can bind each other in any way.</li>
+					<li><span>52. </span><b>Changes to these terms: </b>We may change these terms at any time and, if we make changes, we will take reasonable steps to let our Subscribers know of these changes. You can also keep track of whether changes have been made to our terms by referring to the version and effective date at the footer of the Terms. If a change we make has a material effect on you to your detriment, then you may, upon demonstrating that detriment to us, cancel your PractiThink Marketplace subscription in accordance with SectionRefunds and cancelations above. However, if you continue to use the PractiThink Marketplace after the changes are made, then you will be agreeing to the changes regardless of the amount of time which has elapsed.</li>
+					<li>Whether a change has a material effect on you to your detriment depends on the nature of the change and your particular circumstances. For example, a change which causes you to incur increased transaction fees, or which removes an entire category of Products, could have a material effect on the amount of value you get out of the PractiThink Marketplace. The removal of individual Products from our Services or Marketplace and minor clarifying changes to the PractiThink will not typically have a material effect on you to your detriment.</li>
+					<li><span>53. </span>Applicable Laws: PractiThink is located in New York, with our headquarters in New York City. Any dispute subject to Binding Arbitration will take place in New York County, New York. For any other judicial action that may arise between you and PractiThink, or for which our Binding Arbitration clause is found not to apply, both you and PractiThink agree to submit to the venue and personal jurisdiction of the state and federal courts located in New York County, New York.</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+	<!-- end text -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<span class="footer-subtitle">Social channels</span>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/bxl-twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-instagram-alt.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-facebook-square.svg" alt=""></a></li>
+				</ul>
+				<p>PractiThink © 2020 | All Rights Reserved</p>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col">
+					<span class="footer-subtitle">Useful Links</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Test your math</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Legal</span>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Support</span>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</div><!-- col -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox trigger -->
+	<!--<a data-options='{"touch" : false}'  data-fancybox data-src="#modal-wait" href="javascript:;" id="modal-trigger"></a>-->
+	<!-- fancybox youtube -->
+	<!--<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="link-youtube"></a>-->
+	<!-- fancybox modal -->
+	<!--<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn main-btn-second">fancybox</a>-->
+	<div style="display: none;" id="modal-test" class="modal modal-transparent">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
