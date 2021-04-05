@@ -11,7 +11,9 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
@@ -21,7 +23,7 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="wrapper">
-				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt="" class="lazyload"></a></div>
 				<div class="header-row">
 					<ul class="header-menu">
 						<li><a href="#">О ФОНДЕ</a></li>
@@ -100,7 +102,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-1-min.jpg" alt="">
+							<img src="img/post-1-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -126,7 +128,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-2-min.jpg" alt="">
+							<img src="img/post-2-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -152,7 +154,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-3-min.jpg" alt="">
+							<img src="img/post-3-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -178,7 +180,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-4-min.jpg" alt="">
+							<img src="img/post-4-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -204,7 +206,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-1-min.jpg" alt="">
+							<img src="img/post-1-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -230,7 +232,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-2-min.jpg" alt="">
+							<img src="img/post-2-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -256,7 +258,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-3-min.jpg" alt="">
+							<img src="img/post-3-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -282,7 +284,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-4-min.jpg" alt="">
+							<img src="img/post-4-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -308,7 +310,7 @@
 				<div class="card">
 					<div class="card-wrap">
 						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img">
-							<img src="img/post-1-min.jpg" alt="">
+							<img src="img/post-1-min.jpg" alt="" class="lazyload">
 							<span>Подробнее</span>
 						</a>
 						<div class="card-info">
@@ -333,7 +335,7 @@
 				</div><!-- card -->
 				<div class="card">
 					<div class="card-wrap">
-						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img"><img src="img/post-2-min.jpg" alt=""></a>
+						<a data-fancybox data-src="#card-1" href="javascript:;" class="card-img"><img src="img/post-2-min.jpg" alt="" class="lazyload"></a>
 						<div class="card-info">
 							<h3 class="card-name">Профстрой-Юг</h3>
 							<p>Краснодар, улица им. Сергея Есенина, 108, Прикубанский внутригородской округ</p>
@@ -479,6 +481,9 @@
 		</div>
 	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script defer src="js/scripts.min.js"></script>
+	<script defer src="libs/lazysizes/lazysizes.min.js"></script>
+	<script defer src="libs/swiper/swiper-bundle.min.js"></script>
+	<script defer src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script defer src="js/common.js"></script>
 </body>
 </html>
