@@ -40,6 +40,9 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 
+  //mask
+  $('.input-tel').mask( '+' + '7 (999) 999-99-99');
+
 	//fancybox
 	$('[data-fancybox=""]').fancybox({
     autoFocus: false,

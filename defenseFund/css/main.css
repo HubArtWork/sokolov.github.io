@@ -1881,6 +1881,15 @@ button {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 5px; }
 
+.page-list li a {
+  display: block;
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #000; }
+  .page-list li a:hover {
+    color: #E23636; }
+
 @media only screen and (max-width: 920px) {
   body {
     padding-top: 50px; } }
@@ -2462,6 +2471,8 @@ button {
   padding-bottom: 16px; }
   .modalHouse-block:last-child {
     padding-bottom: 0; }
+  .modalHouse-block p {
+    max-width: 475px; }
   .modalHouse-block a {
     color: #000; }
 
@@ -2685,7 +2696,8 @@ button {
     .header-col p {
       font-size: 14px;
       line-height: 1.3;
-      color: #fff; }
+      color: #fff;
+      padding-right: 47px; }
       .header-col p a {
         color: #fff; }
   .header-subtitle {
@@ -2819,7 +2831,9 @@ button {
   .header-wrap .social-ico {
     margin: 0; }
   .header-col {
-    max-width: 180px; } }
+    max-width: 180px; }
+    .header-col p {
+      padding-right: 10px; } }
 
 @media only screen and (max-width: 920px) {
   .header {
@@ -3986,7 +4000,7 @@ button {
   .contacts-wrap {
     margin-top: 38px;
     background: #121A45;
-    padding: 25px 19px 34px; }
+    padding: 25px 14px 34px 19px; }
   .contacts-block {
     padding: 6px 0 17px 45px;
     position: relative; }
@@ -3994,11 +4008,11 @@ button {
       position: absolute;
       top: 0;
       left: 0; }
-    .contacts-block p, .contacts-block a {
+    .contacts-block p, .contacts-block a, .contacts-block ul li {
       font-size: 13px;
       line-height: 16px;
       color: #fff; }
-      .contacts-block p.text-red, .contacts-block a.text-red {
+      .contacts-block p.text-red, .contacts-block a.text-red, .contacts-block ul li.text-red {
         color: #E23636; }
   .contacts-title {
     display: block;
