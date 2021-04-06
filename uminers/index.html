@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><svg width="108" height="12" viewBox="0 0 108 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M75.0267 0H59.4257V1.5601H75.0267V0ZM12.4832 8.97596C12.4832 9.82721 11.8224 10.2528 10.5007 10.2528H4.21708C2.89539 10.2528 2.23455 9.81601 2.23455 8.94236V0.172178H0V8.94236C0 10.9809 1.40569 12.0002 4.21708 12.0002H10.5007C13.3121 12.0002 14.7178 10.9921 14.7178 8.97596V0.172178H12.4832V8.97596ZM18.9673 0.172178H16.8839V12.0002H19.0345V3.80122L24.9821 12.0002H26.8134L32.7442 3.78442V12.0002H34.8947V0.172178H32.9794L25.9901 9.83282L18.9673 0.172178ZM37.0814 0.172178H39.3159V12.0002H37.0814V0.172178ZM43.6775 12.0002V2.99476L55.4551 12.0002H57.2192V0.172178H55.1022V9.24478L43.3247 0.172178H41.5606V12.0002H43.6775ZM77.2043 12.0002V0.172178H86.5625C89.3739 0.172178 90.7796 1.02343 90.7796 2.72595V4.17084C90.7796 5.59334 89.8051 6.42219 87.8562 6.65741L90.662 12.0002H88.2762L85.5041 6.72461H79.4389V12.0002H77.2043ZM79.4389 1.91949V4.9773H86.5625C87.8842 4.9773 88.545 4.70848 88.545 4.17084V2.72595C88.545 2.18831 87.8842 1.91949 86.5625 1.91949H79.4389ZM107.39 7.37985C107.39 5.67734 105.985 4.82609 103.173 4.82609H96.8895C95.5679 4.82609 94.907 4.55727 94.907 4.01963V2.72595C94.907 2.18831 95.5679 1.91949 96.8895 1.91949H106.651V0.172178H96.8895C94.0782 0.172178 92.6725 1.02343 92.6725 2.72595V4.01963C92.6725 5.72214 94.0782 6.5734 96.8895 6.5734H103.173C104.495 6.5734 105.156 6.84222 105.156 7.37985V9.47999C105.156 9.99523 104.495 10.2528 103.173 10.2528H93.0757V12.0002H103.173C105.985 12.0002 107.39 11.1601 107.39 9.47999V7.37985ZM59.4257 5.16038H75.0267V6.72048H59.4257V5.16038ZM75.0267 10.3208H59.4257V11.8809H75.0267V10.3208Z" fill="black"/></svg></a></div>
+			<div class="header-menu">
+				<ul class="header-list">
+					<li><a href="#" class="active">Главная</a></li>
+					<li><a href="#">Маркетплейс</a></li>
+					<li><a href="#">Хостинг</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Поддержка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a data-fancybox data-src="#modal-feedback" href="javascript:;" class="primary-btn"><span>Войти</span></a>
+			</div>
+			<div class="header-row">
+				<div class="drop">
+					<div class="drop-top">
+						<img src="img/lang/ru.svg" alt="" class="lazyload">
+						<i class="hb-ico drop-ico"></i>
+					</div>
+					<div class="drop-info">
+						<ul>
+							<li><a href="#">
+								<img src="img/lang/ru.svg" alt="" class="lazyload">
+								<span>Russian</span>
+							</a></li>
+							<li><a href="#">
+								<img src="img/lang/ru.svg" alt="" class="lazyload">
+								<span>English</span>
+							</a></li>
+							<li><a href="#">
+								<img src="img/lang/ru.svg" alt="" class="lazyload">
+								<span>German</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<a data-fancybox data-src="#modal-feedback" href="javascript:;" class="primary-btn"><span>Войти</span></a>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="main-slider swiper-container">
+			<div class="main-slider__wrapper swiper-wrapper">
+				<div class="main-slide swiper-slide">
+					<div class="wrapper">
+						<div class="main-wrap">
+							<div class="main-info">
+								<h2 class="main-title">Единая цифровая платформа CyberLog</h2>
+								<p>Buy & Sell Multimodal logistics. Hosting in the largest and most reliable data centers. 24/7 monitoring.</p>
+								<div class="main-buttons">
+									<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="primary-btn link-youtube">
+										<i class="hb-ico play-small"></i>
+										<span>Как это работает?</span>
+									</a>
+									<a href="#" class="main-scroll">
+										<i class="hb-ico scroll-ico"></i>
+										<span>Прокрутите вниз, чтобы узнать детали</span>
+									</a>
+								</div>
+							</div>
+							<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="hb-ico play-ico link-youtube"></a>
+						</div>
+					</div>
+				</div><!-- slide -->
+				<div class="main-slide swiper-slide slide-dark">
+					<div class="wrapper">
+						<div class="main-wrap">
+							<div class="main-info">
+								<h2 class="main-title">Единая цифровая платформа CyberLog</h2>
+								<p>Buy & Sell Multimodal logistics. Hosting in the largest and most reliable data centers. 24/7 monitoring.</p>
+								<div class="main-buttons">
+									<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="primary-btn link-youtube">
+										<i class="hb-ico play-small"></i>
+										<span>Как это работает?</span>
+									</a>
+									<a href="#" class="main-scroll">
+										<i class="hb-ico scroll-ico"></i>
+										<span>Прокрутите вниз, чтобы узнать детали</span>
+									</a>
+								</div>
+							</div>
+							<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="hb-ico play-ico link-youtube"></a>
+						</div>
+					</div>
+				</div><!-- slide -->
+				<div class="main-slide swiper-slide">
+					<div class="wrapper">
+						<div class="main-wrap">
+							<div class="main-info">
+								<h2 class="main-title">Единая цифровая платформа CyberLog</h2>
+								<p>Buy & Sell Multimodal logistics. Hosting in the largest and most reliable data centers. 24/7 monitoring.</p>
+								<div class="main-buttons">
+									<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="primary-btn link-youtube">
+										<i class="hb-ico play-small"></i>
+										<span>Как это работает?</span>
+									</a>
+									<a href="#" class="main-scroll">
+										<i class="hb-ico scroll-ico"></i>
+										<span>Прокрутите вниз, чтобы узнать детали</span>
+									</a>
+								</div>
+							</div>
+							<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="hb-ico play-ico link-youtube"></a>
+						</div>
+					</div>
+				</div><!-- slide -->
+				<div class="main-slide swiper-slide slide-dark">
+					<div class="wrapper">
+						<div class="main-wrap">
+							<div class="main-info">
+								<h2 class="main-title">Единая цифровая платформа CyberLog</h2>
+								<p>Buy & Sell Multimodal logistics. Hosting in the largest and most reliable data centers. 24/7 monitoring.</p>
+								<div class="main-buttons">
+									<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="primary-btn link-youtube">
+										<i class="hb-ico play-small"></i>
+										<span>Как это работает?</span>
+									</a>
+									<a href="#" class="main-scroll">
+										<i class="hb-ico scroll-ico"></i>
+										<span>Прокрутите вниз, чтобы узнать детали</span>
+									</a>
+								</div>
+							</div>
+							<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="hb-ico play-ico link-youtube"></a>
+						</div>
+					</div>
+				</div><!-- slide -->
+			</div>
+		</div>
+		<div class="mainPagination">
+			<div class="wrapper">
+				<div class="mainPagination-wrap">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start ecosystem -->
+	<section class="ecosystem">
+		<div class="wrapper">
+			<div class="ecosystem-top" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<div class="section-top">
+					<span class="section-subtitle">WHAT’S NEW?</span>
+					<h2 class="section-title">экосистема uminers</h2>
+				</div>
+				<p>Единая цифровая платформа CyberLog состоит из модулей. Маркетплейс -  здесь вы можете приобрести оборудование. Логистика - транспортировка вашего заказа в любую точку мира. Хостинг - размещение вашего оборудования в дата-центре. </p>
+			</div>
+			<div class="ecosystem-info" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<h3 class="ecosystem-subtitle">маркетплейс</h3>
+				<p>Сделай первый шаг. <br>Выбирай. Заказывай. Оплачивай. Приобретай свое майнинг оборудование.</p>
+			</div>
+			<div class="ecosystem-slider swiper-container" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<div class="ecosystem-slider__wrapper swiper-wrapper">
+					<div class="card swiper-slide">
+						<div class="card-wrap">
+							<a href="#" class="card-img"><img src="img/card/img-1.png" alt=""></a>
+							<h3 class="card-name"><a href="#">Antminer S19 - 95.00 TH/s</a></h3>
+							<div class="card-descr">
+								<div>
+									<span class="card-price">$7830</span>
+									<span class="card-profitability">Доходность: <b>$35</b></span>
+								</div>
+								<a href="#" class="primary-btn">
+									<i class="hb-ico basket-ico"></i>
+									<span>Buy</span>
+								</a>
+							</div>
+							<span class="card-status">В наличии (Москва)</span>
+							<ul class="card-list">
+								<li>
+									<i class="hb-ico card-ico-1"></i>
+									<span>64</span>
+									<sup>Th/s</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-2"></i>
+									<span>1390</span>
+									<sup>W</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-3"></i>
+									<span>52</span>
+									<sup>Kg</sup>
+								</li>
+							</ul>
+						</div>
+					</div><!-- slide -->
+					<div class="card swiper-slide">
+						<div class="card-wrap">
+							<a href="#" class="card-img"><img src="img/card/img-1.png" alt=""></a>
+							<h3 class="card-name"><a href="#">Antminer S19 - 95.00 TH/s</a></h3>
+							<div class="card-descr">
+								<div>
+									<span class="card-price">$7830</span>
+									<span class="card-profitability">Доходность: <b>$35</b></span>
+								</div>
+								<a href="#" class="primary-btn">
+									<i class="hb-ico basket-ico"></i>
+									<span>Buy</span>
+								</a>
+							</div>
+							<span class="card-status">В наличии (Москва)</span>
+							<ul class="card-list">
+								<li>
+									<i class="hb-ico card-ico-1"></i>
+									<span>64</span>
+									<sup>Th/s</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-2"></i>
+									<span>1390</span>
+									<sup>W</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-3"></i>
+									<span>52</span>
+									<sup>Kg</sup>
+								</li>
+							</ul>
+						</div>
+					</div><!-- slide -->
+					<div class="card swiper-slide">
+						<div class="card-wrap">
+							<a href="#" class="card-img"><img src="img/card/img-1.png" alt=""></a>
+							<h3 class="card-name"><a href="#">Antminer S19 - 95.00 TH/s</a></h3>
+							<div class="card-descr">
+								<div>
+									<span class="card-price">$7830</span>
+									<span class="card-profitability">Доходность: <b>$35</b></span>
+								</div>
+								<a href="#" class="primary-btn">
+									<i class="hb-ico basket-ico"></i>
+									<span>Buy</span>
+								</a>
+							</div>
+							<span class="card-status">В наличии (Москва)</span>
+							<ul class="card-list">
+								<li>
+									<i class="hb-ico card-ico-1"></i>
+									<span>64</span>
+									<sup>Th/s</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-2"></i>
+									<span>1390</span>
+									<sup>W</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-3"></i>
+									<span>52</span>
+									<sup>Kg</sup>
+								</li>
+							</ul>
+						</div>
+					</div><!-- slide -->
+					<div class="card swiper-slide">
+						<div class="card-wrap">
+							<a href="#" class="card-img"><img src="img/card/img-1.png" alt=""></a>
+							<h3 class="card-name"><a href="#">Antminer S19 - 95.00 TH/s</a></h3>
+							<div class="card-descr">
+								<div>
+									<span class="card-price">$7830</span>
+									<span class="card-profitability">Доходность: <b>$35</b></span>
+								</div>
+								<a href="#" class="primary-btn">
+									<i class="hb-ico basket-ico"></i>
+									<span>Buy</span>
+								</a>
+							</div>
+							<span class="card-status">В наличии (Москва)</span>
+							<ul class="card-list">
+								<li>
+									<i class="hb-ico card-ico-1"></i>
+									<span>64</span>
+									<sup>Th/s</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-2"></i>
+									<span>1390</span>
+									<sup>W</sup>
+								</li>
+								<li>
+									<i class="hb-ico card-ico-3"></i>
+									<span>52</span>
+									<sup>Kg</sup>
+								</li>
+							</ul>
+						</div>
+					</div><!-- slide -->
+				</div>
+			</div>
+			<div class="ecosystem-row">
+				<div class="ecosystem-col" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+					<div class="ecosystem-wrap ecosystem-wrap__dark">
+						<div class="ecosystem-descr">
+							<h3 class="ecosystem-title">Логистика</h3>
+							<p>Заказывай. Отслеживай. Получай. <br>Международная доставка и таможенное сопровождение</p>
+							<ul>
+								<li><a href="#">Подробнее</a></li>
+								<li><a href="#">Заказать услугу</a></li>
+							</ul>
+						</div>
+						<div class="ecosystem-img"><img src="img/ecosystem/img-1.svg" alt=""></div>
+					</div>
+				</div><!-- col -->
+				<div class="ecosystem-col" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+					<div class="ecosystem-wrap ecosystem-wrap__blue">
+						<div class="ecosystem-descr">
+							<h3 class="ecosystem-title">Хостинг</h3>
+							<p>Заказывай. Размещай. Зарабатывай. <br>Оформи запрос на размещение в дата центре.</p>
+							<ul>
+								<li><a href="#">Подробнее</a></li>
+								<li><a href="#">Заказать услугу</a></li>
+							</ul>
+						</div>
+						<div class="ecosystem-img"><img src="img/ecosystem/img-2.svg" alt=""></div>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end ecosystem -->
+	<!-- start advantages -->
+	<section class="advantages">
+		<div class="wrapper">
+			<div class="advantages-list">
+				<div class="advantages-item">
+					<div class="advantages-img" data-aos="fade-right" data-aos-duration="500" data-aos-once="true"><img src="img/advantages/img-1.svg" alt="" class="lazyload"></div>
+					<div class="advantages-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<span class="advantages-subtitle">Many years of working experience </span>
+						<p>Маркетплейс интегрирован в CyberLog, что позволяет поставщикам оборудования напрямую взаимодействовать с покупателями. Все оборудование поставляется от производителей и надежных поставщиков.</p>
+					</div>
+				</div><!-- item -->
+				<div class="advantages-item advantages-item__second">
+					<div class="advantages-img" data-aos="fade-left" data-aos-duration="500" data-aos-once="true"><img src="img/advantages/img-2.svg" alt="" class="lazyload"></div>
+					<div class="advantages-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<span class="advantages-subtitle">Many years of working experience </span>
+						<p>Быстрая и надежная доставка оптимальным маршрутом и выгодной цене. Мы предлагаем индивидуальные логистические решения и берем на себя решение вопросов, связанных с доставкой и таможенным оформлением. Доверь доставку профессионалам.</p>
+					</div>
+				</div><!-- item -->
+				<div class="advantages-item">
+					<div class="advantages-img" data-aos="fade-right" data-aos-duration="500" data-aos-once="true"><img src="img/advantages/img-3.svg" alt="" class="lazyload"></div>
+					<div class="advantages-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<span class="advantages-subtitle">Many years of working experience </span>
+						<p>Разместите свое майнинг оборудование в надежных и защищенных дата центрах наших партнеров по своему выбору. Наши партнеры предоставляют профессиональные технические услуги по установке, обслуживанию и круглосуточной поддержке клиентов.</p>
+					</div>
+				</div><!-- item -->
+			</div>
+			<div class="section-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<span class="section-subtitle">WHAT’S NEW?</span>
+				<h2 class="section-title">личный кабинет</h2>
+			</div>
+			<div class="advantages-image" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<img src="img/advantages/img-4-min.png" alt="" class="lazyload">
+				<div class="advantages-mob">
+					<img src="img/advantages/img-5-min.png" alt="" class="lazyload">
+				</div>
+				<a href="#" class="primary-btn"><span>Регистрация/Вход</span></a>
+			</div>
+		</div>
+	</section>
+	<!-- end advantages -->
+	<!-- start ourFuture -->
+	<section class="ourFuture">
+		<div class="ourFuture-bg" data-aos="fade-in" data-aos-duration="500" data-aos-once="true"><img src="img/ourFuture/bg.svg" alt="" class="lazyload"></div>
+		<div class="ourFuture-ico ourFuture-ico__1" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><i class="hb-ico ourFuture1-ico"></i></div>
+		<div class="ourFuture-ico ourFuture-ico__2" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><i class="hb-ico ourFuture2-ico"></i></div>
+		<div class="ourFuture-ico ourFuture-ico__3" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><i class="hb-ico ourFuture3-ico"></i></div>
+		<div class="ourFuture-ico ourFuture-ico__4" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><i class="hb-ico ourFuture4-ico"></i></div>
+		<div class="ourFuture-ico ourFuture-ico__5" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><i class="hb-ico ourFuture5-ico"></i></div>
+		<div class="ourFuture-ico ourFuture-ico__6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><i class="hb-ico ourFuture6-ico"></i></div>
+		<div class="wrapper">
+			<div class="section-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<span class="section-subtitle">WHAT’S NEW?</span>
+				<h2 class="section-title">НАШЕ БУДУЩЕЕ</h2>
+				<p>Сегодня мы стремимся сделать взаимодействие с майнинг индустрией удобной и простой. В будущем мы хотим применить свой опыт и навыки в разработке кастомизированных блокчейн-приложений для покупателей из самых разных отраслей: медицины, рекламы, логистики, образования и многих других.</p>
+			</div>
+			<div class="ourFuture-content">
+				<ul class="ourFuture-list" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<li>Медицина</li>
+					<li>Реклама</li>
+					<li>Логистика</li>
+					<li>Образование</li>
+					<li>Другое</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end ourFuture -->
+	<!-- start investments -->
+	<section class="investments">
+		<div class="wrapper">
+			<div class="investments-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<div class="section-top">
+					<span class="section-subtitle">INVESTEMENTS</span>
+					<h2 class="section-title">Доступно для каждого</h2>
+				</div>
+				<p>The investor becomes a co-owner of the innovative business and can count on part of the company's profit by receiving dividends on his share. Any person from any place in the world can invest.</p>
+			</div>
+			<div class="investments-row" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<div class="investments-main">
+					<div class="investments-item">
+						<span class="investments-item__subtitle">Select the number of friends that you're going to invite</span>
+						<div class="investments-item__row">
+							<div class="investments-item__range">
+								<div id="range-1"></div>
+							</div>
+							<span class="investments-item__price">$<i>1,000</i></span>
+						</div>
+					</div>
+					<div class="investments-item">
+						<span class="investments-item__subtitle">Numbers of months</span>
+						<div class="investments-item__row">
+							<div class="investments-item__range">
+								<div id="range-2"></div>
+							</div>
+							<span class="investments-item__price"><i>24</i> months</span>
+						</div>
+					</div>
+				</div>
+				<div class="investments-descr">
+					<span class="investments-subtitle">Earn amount</span>
+					<span class="investments-price">$5,000</span>
+					<a data-fancybox data-src="#modal-feedback" href="javascript:;" class="second-btn"><span>Send request</span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end investments -->
+	<!-- start mission -->
+	<section class="mission">
+		<div class="wrapper">
+			<div class="mission-row">
+				<div class="section-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<span class="section-subtitle">WHAT’S NEW?</span>
+					<h2 class="section-title">Концепция и миссия</h2>
+					<p>We offer to all interested parties - beginners and experienced miners, investors, turnkey mining solutions from the stage of ordering equipment to logistics and hosting in our own and partner data centers with round-the-clock monitoring.</p>
+				</div>
+				<div class="mission-descr">
+					<div class="mission-item mission-item__1" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<span>125,000</span>
+						<p>Устройств продано в 2018</p>
+					</div>
+					<div class="mission-item mission-item__2" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<span>72,000</span>
+						<p>Устройств продано в 2015</p>
+					</div>
+					<div class="mission-item mission-item__3" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<span>36,000</span>
+						<p>Устройств продано в 2012</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end mission -->
+	<!-- start achievements -->
+	<section class="achievements">
+		<div class="wrapper">
+			<div class="section-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<span class="section-subtitle">WHAT’S NEW?</span>
+				<h2 class="section-title">Наши достижения</h2>
+				<p>Свой опыт и навыки мы направляем на разработку кастомизированных блокчейн-приложений для клиентов из самых разных отраслей. Здравоохронение, реклама, логистика, образование и многое другие сферы деятельности.</p>
+			</div>
+			<div class="achievements-slider swiper-container" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<div class="achievements-slider__wrapper swiper-wrapper">
+					<div class="achievements-slide swiper-slide">
+						<a href="img/certificate-min.png" data-fancybox="images" class="achievements-wrap"><img src="img/certificate-min.png" alt="" class="lazyload"></a>
+					</div><!-- slide -->
+					<div class="achievements-slide swiper-slide">
+						<a href="img/certificate-min.png" data-fancybox="images" class="achievements-wrap"><img src="img/certificate-min.png" alt="" class="lazyload"></a>
+					</div><!-- slide -->
+					<div class="achievements-slide swiper-slide">
+						<a href="img/certificate-min.png" data-fancybox="images" class="achievements-wrap"><img src="img/certificate-min.png" alt="" class="lazyload"></a>
+					</div><!-- slide -->
+					<div class="achievements-slide swiper-slide">
+						<a href="img/certificate-min.png" data-fancybox="images" class="achievements-wrap"><img src="img/certificate-min.png" alt="" class="lazyload"></a>
+					</div><!-- slide -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end achievements -->
+	<!-- start news -->
+	<section class="news">
+		<div class="wrapper">
+			<div class="section-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<span class="section-subtitle">WHAT’S NEW?</span>
+				<h2 class="section-title">Новости</h2>
+			</div>
+			<div class="news-list">
+				<div class="news-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<h3 class="news-title"><a href="#">Uplifting black voices at samsung company techn</a></h3>
+					<span class="news-date">24 Feb 2021</span>
+					<a href="#" class="hb-ico news-arrow"></a>
+				</div>
+				<div class="news-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<h3 class="news-title"><a href="#">How samsung is shaping a sustainable future with Innovations</a></h3>
+					<span class="news-date">24 Feb 2021</span>
+					<a href="#" class="hb-ico news-arrow"></a>
+				</div>
+				<div class="news-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<h3 class="news-title"><a href="#">4 Tips for galaxy wearables to make your everyday life</a></h3>
+					<span class="news-date">24 Feb 2021</span>
+					<a href="#" class="hb-ico news-arrow"></a>
+				</div>
+				<div class="news-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<h3 class="news-title"><a href="#">Uplifting black voices at samsung company techn</a></h3>
+					<span class="news-date">24 Feb 2021</span>
+					<a href="#" class="hb-ico news-arrow"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end news -->
+	<!-- start testimonials -->
+	<section class="testimonials">
+		<div class="wrapper">
+			<div class="section-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<span class="section-subtitle">WHAT’S NEW?</span>
+				<h2 class="section-title">Отзывы</h2>
+			</div>
+			<div class="testimonials-slider swiper-container" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<div class="testimonials-slider__wrapper swiper-wrapper">
+					<div class="testimonials-slide swiper-slide">
+						<div class="testimonials-wrap">
+							<div class="testimonials-user">
+								<div class="testimonials-ava"><img src="img/testimonials/ava-min.jpg" alt="" class="lazyload"></div>
+								<div class="testimonials-user__info">
+									<span class="testimonials-name">Erick Normann</span>
+									<span class="testimonials-status">CEO at CryptoTime</span>
+								</div>
+							</div>
+							<div class="testimonials-info">
+								<p>We offer to all interested parties - beginners and experienced miners, investors, turnkey mining solutions from the stage of ordering equipment to logistics and hosting in our own and partner. We offer to all interested parties beginners and experienced miners, investors, turnkey mining solutions from the stage of ordering equipment to logistics. We offer to all interested parties and experienced miners, investors. </p>
+							</div>
+						</div>
+					</div><!-- slide -->
+					<div class="testimonials-slide swiper-slide">
+						<div class="testimonials-wrap">
+							<div class="testimonials-user">
+								<div class="testimonials-ava"><img src="img/testimonials/ava-min.jpg" alt="" class="lazyload"></div>
+								<div class="testimonials-user__info">
+									<span class="testimonials-name">Erick Normann</span>
+									<span class="testimonials-status">CEO at CryptoTime</span>
+								</div>
+							</div>
+							<div class="testimonials-info">
+								<a data-fancybox href="https://youtu.be/ga4_vUmvNbo" class="testimonials-video link-youtube" style="background-image: url(img/testimonials/video-min.jpg);">
+									<i class="hb-ico play-ico"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- slide -->
+					<div class="testimonials-slide swiper-slide">
+						<div class="testimonials-wrap">
+							<div class="testimonials-user">
+								<div class="testimonials-ava"><img src="img/testimonials/ava-min.jpg" alt="" class="lazyload"></div>
+								<div class="testimonials-user__info">
+									<span class="testimonials-name">Erick Normann</span>
+									<span class="testimonials-status">CEO at CryptoTime</span>
+								</div>
+							</div>
+							<div class="testimonials-info">
+								<p>We offer to all interested parties - beginners and experienced miners, investors, turnkey mining solutions from the stage of ordering equipment to logistics and hosting in our own and partner. We offer to all interested parties beginners and experienced miners, investors, turnkey mining solutions from the stage of ordering equipment to logistics. We offer to all interested parties and experienced miners, investors. </p>
+							</div>
+						</div>
+					</div><!-- slide -->
+				</div>
+				<div class="swiper-buttons">
+					<div class="swiper-button-prev"><i class="hb-ico slider-prev"></i></div>
+					<div class="swiper-button-next"><i class="hb-ico slider-next"></i></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end testimonials -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-col footer-col__1">
+					<div class="footer-logo"><a href="#"><img src="img/logo-white.svg" alt="" class="lazyload"></a></div>
+					<div class="footer-receive">
+						<form action="">
+							<input type="text" name="text" placeholder="Получать новости и апдейты">
+							<button class="footer-btn"><i class="hb-ico receive-arrow"></i></button>
+						</form>
+					</div>
+					<p>By signing up, you are agreeing to the Uminers Terms of Service and Uminers <br>Privacy Policy. You may unsubscribe at any time.</p>
+					<ul class="footer-social">
+						<li><a href="#"><img src="img/social/linkedin.svg" alt="" class="lazyload"></a></li>
+						<li><a href="#"><img src="img/social/github.svg" alt="" class="lazyload"></a></li>
+						<li><a href="#"><img src="img/social/twitter.svg" alt="" class="lazyload"></a></li>
+					</ul>
+				</div>
+				<div class="footer-row">
+					<div class="footer-col footer-col__2">
+						<span class="footer-subtitle">Маркеплейс</span>
+						<ul class="footer-list">
+							<li><a href="#">Antminer S19</a></li>
+							<li><a href="#">Antminer S19 Pro</a></li>
+							<li><a href="#">WhatsMiner M30S++</a></li>
+							<li><a href="#">WhatsMiner M30S+</a></li>
+							<li><a href="#">AvalonMiner 1246</a></li>
+							<li><a href="#">AntMiner V9~4TH/s</a></li>
+							<li><a href="#">RXFSP 19GPU Open Air</a></li>
+							<li><a href="#">Antminer S19</a></li>
+							<li><a href="#">Antminer S19 Pro</a></li>
+							<li><a href="#">WhatsMiner M30S++</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer-col__3">
+						<span class="footer-subtitle"></span>
+						<ul class="footer-list">
+							<li><a href="#">Antminer S19</a></li>
+							<li><a href="#">Antminer S19 Pro</a></li>
+							<li><a href="#">WhatsMiner M30S++</a></li>
+							<li><a href="#">WhatsMiner M30S+</a></li>
+							<li><a href="#">AvalonMiner 1246</a></li>
+							<li><a href="#">AntMiner V9~4TH/s</a></li>
+							<li><a href="#">RXFSP 19GPU Open Air</a></li>
+							<li><a href="#">Antminer S19</a></li>
+							<li><a href="#">Antminer S19 Pro</a></li>
+							<li><a href="#">WhatsMiner M30S++</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer-col__4">
+						<span class="footer-subtitle">Навигация</span>
+						<ul class="footer-list">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Маркетплейс</a></li>
+							<li><a href="#">Хостинг</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Поддержка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>© 2021 Uminers. Все права защищены.</p>
+				<div class="footer-bottom__row">
+					<a href="#" class="footer-regulations">Правила пользования</a>
+					<div class="footer-lang">
+						<span class="footer-lang__text">Язык:</span>
+						<div class="drop">
+							<div class="drop-top">
+								<img src="img/lang/ru.svg" alt="" class="lazyload">
+								<span>Russian</span>
+								<i class="hb-ico drop-ico"></i>
+							</div>
+							<div class="drop-info">
+								<ul>
+									<li><a href="#">
+										<img src="img/lang/ru.svg" alt="" class="lazyload">
+										<span>Russian</span>
+									</a></li>
+									<li><a href="#">
+										<img src="img/lang/ru.svg" alt="" class="lazyload">
+										<span>English</span>
+									</a></li>
+									<li><a href="#">
+										<img src="img/lang/ru.svg" alt="" class="lazyload">
+										<span>German</span>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox modal-feedback -->
+	<div style="display: none;" id="modal-feedback" class="modal">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<h3 class="modal-title">Обратная связь</h3>
+			<form action="">
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-1">Ваше имя*:</label>
+					<input id="i-1" type="text" name="name">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-2">Название компании*:</label>
+					<input id="i-2" type="text" name="text">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-3">Ваш email*:</label>
+					<input id="i-3" type="email" name="email">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox-ico"></span>
+					<p>Принимаю условия обработки персональных данных и правила пользования</p>
+				</div>
+				<button class="primary-btn"><span>Отправить запрос</span></button>
+			</form>
+		</div>
+	</div>
+	<!-- fancybox modal-signIn -->
+	<div style="display: none;" id="modal-signIn" class="modal">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<h3 class="modal-title">Вход</h3>
+			<form action="">
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-4">Ваше почта*:</label>
+					<input id="i-4" type="email" name="email">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-5">Пароль*:</label>
+					<input id="i-5" type="password" name="password">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="modal-forgot">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="checkbox-ico"></span>
+						<p>Запомнить меня</p>
+					</div>
+					<a data-fancybox data-src="#modal-forgot" href="javascript:;">Забыли пароль?</a>
+				</div>
+				<button class="primary-btn"><span>Войти в личный кабинет</span></button>
+				<div class="modal-bottom">
+					<p>Нет аккаунта? <a data-fancybox data-src="#modal-checkIn" href="javascript:;">Регистрация</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
