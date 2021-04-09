@@ -11,9 +11,11 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="libs/normalize.css">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/icons.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
@@ -23,12 +25,29 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="wrapper">
-				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt="" class="lazyload"></a></div>
+				<div class="header-logo"><a href="#"><img data-src="img/logo.svg" alt="" class="lazyload"></a></div>
 				<div class="header-row">
 					<ul class="header-menu">
 						<li><a href="#">О ФОНДЕ</a></li>
-						<li><a href="#">ПРОБЛЕМНЫЕ ОБЪЕКТЫ</a></li>
-						<li><a href="#">ОБЪЕКТЫ В РАБОТЕ</a></li>
+						<li class="drop">
+							<a href="#" class="drop-text"><span>ПРОБЛЕМНЫЕ ОБЪЕКТЫ</span></a>
+							<div class="drop-info">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-2</a></li>
+									<li><a href="#">lorem-3</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="drop">
+							<a href="#" class="drop-text"><span>ОБЪЕКТЫ В РАБОТЕ</span></a>
+							<div class="drop-info">
+								<ul>
+									<li><a href="#">ДОРОЖНЫЕ КАРТЫ</a></li>
+									<li><a href="#">РЕЕСТР ПРОБЛЕМНЫХ ОБЪЕКТОВ</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="#">ИНФОРМАЦИЯ</a></li>
 						<li><a href="#">КОНТАКТЫ</a></li>
 					</ul>
@@ -57,7 +76,6 @@
 					<li class="drop">
 						<a href="#" class="drop-text">
 							ПРОБЛЕМНЫЕ ОБЪЕКТЫ
-							<i class="hb-ico arrow-drop"></i>
 						</a>
 						<div class="drop-info">
 							<ul>
@@ -70,7 +88,6 @@
 					<li class="drop">
 						<a href="#" class="drop-text">
 							ОБЪЕКТЫ В РАБОТЕ
-							<i class="hb-ico arrow-drop"></i>
 						</a>
 						<div class="drop-info">
 							<ul>
@@ -94,7 +111,7 @@
 				<div class="main-info">
 					<h1 class="main-title">Фонд защиты прав граждан – участников долевого строительства в Краснодарском крае</h1>
 					<p>Фонд защиты дольщиков Кубани является некоммерческой организацией, созданной для восстановления законных прав </p>
-					<a href="#" class="primary-btn">Подробнее</a>
+					<a data-fancybox data-src="#modal-form" href="javascript:;" class="primary-btn">Подробнее</a>
 				</div>
 				<div class="main-statistics">
 					<div class="main-block">
@@ -170,7 +187,7 @@
 					<div class="actions-text">
 						<p>Основная задача деятельности Фонда – завершение строительства многоквартирных домов и иных объектов недвижимого имущества, в том числе объектов инфраструктуры в установленные Федеральным законом № 214-ФЗ сроки. Поэтому деятельность Фонда направлена на защиту дольщиков, вложивших денежные средства в строительство объектов, включенных в единый реестр проблемных объектов Краснодарского края.</p>
 					</div>
-					<a href="#" class="primary-btn">Подробнее</a>
+					<a data-fancybox data-src="#modal-form" href="javascript:;" class="primary-btn">Подробнее</a>
 				</div>
 				<div class="actions-col actions-col__2">
 					<ul>
@@ -187,7 +204,7 @@
 						<div class="actions-slide swiper-slide">
 							<div class="actions-wrap">
 								<a href="#" class="actions-img">
-									<img src="img/post-01-min.jpg" alt="" class="lazyload">
+									<img data-src="img/post-01-min.jpg" alt="" class="lazyload">
 									<div class="actions-date">
 										<span>15</span>Марта
 									</div>
@@ -202,7 +219,7 @@
 						<div class="actions-slide swiper-slide">
 							<div class="actions-wrap">
 								<a href="#" class="actions-img">
-									<img src="img/post-02-min.jpg" alt="" class="lazyload">
+									<img data-src="img/post-02-min.jpg" alt="" class="lazyload">
 									<div class="actions-date">
 										<span>15</span>Марта
 									</div>
@@ -217,7 +234,7 @@
 						<div class="actions-slide swiper-slide">
 							<div class="actions-wrap">
 								<a href="#" class="actions-img">
-									<img src="img/post-03-min.jpg" alt="" class="lazyload">
+									<img data-src="img/post-03-min.jpg" alt="" class="lazyload">
 									<div class="actions-date">
 										<span>15</span>Марта
 									</div>
@@ -242,15 +259,15 @@
 			<div class="useful-row">
 				<div class="useful-images">
 					<div class="useful-images__row">
-						<div class="useful-item"><a href="#"><img src="img/logo-1-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-2-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-3-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-4-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-5-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-6-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-5-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-1-min.png" alt="" class="lazyload"></a></div><!-- item -->
-						<div class="useful-item"><a href="#"><img src="img/logo-4-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-1-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-2-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-3-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-4-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-5-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-6-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-5-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-1-min.png" alt="" class="lazyload"></a></div><!-- item -->
+						<div class="useful-item"><a href="#"><img data-src="img/logo-4-min.png" alt="" class="lazyload"></a></div><!-- item -->
 					</div>
 				</div>
 				<div class="useful-info">
@@ -296,6 +313,27 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-form" class="modal modal-form">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<div class="modal-form__head">
+				<h3 class="modal-form__title">Заказать звонок</h3>
+				<p>Оператор перезванивает в рабочее время в течении 5 минут.</p>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<label for="f-1">Ваше имя <span>*</span></label>
+					<input id="f-1" type="text" name="text" placeholder="Ваше имя">
+				</div>
+				<div class="input-block">
+					<label for="f-2">Ваш номер телефона <span>*</span></label>
+					<input id="f-2" class="input-tel" type="text" name="text" placeholder="Ваше имя">
+				</div>
+				<button class="primary-btn">Подробнее</button>
+			</form>
+		</div>
+	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script defer src="libs/lazysizes/lazysizes.min.js"></script>
 	<script defer src="libs/swiper/swiper-bundle.min.js"></script>

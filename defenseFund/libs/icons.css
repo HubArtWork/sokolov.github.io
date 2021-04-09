@@ -1,0 +1,72 @@
+.inst-ico {
+  background-image: url(../img/icons/inst-ico.svg);
+}
+.arrow-drop {
+  background-image: url(../img/icons/arrow-drop.svg);
+}
+.arrow-link {
+  background-image: url(../img/icons/arrow-link.svg);
+}
+.search-ico {
+  background-image: url(../img/icons/search-ico.svg);
+}
+.view-ico {
+  background-image: url(../img/icons/view-ico.svg);
+}
+.local-ico {
+  background-image: url(../img/icons/local-ico.svg);
+}
+.phone-ico {
+  background-image: url(../img/icons/phone-ico.svg);
+}
+.time-ico {
+  background-image: url(../img/icons/time-ico.svg);
+}
+.mail-ico {
+  background-image: url(../img/icons/mail-ico.svg);
+}
+.news-ico-1 {
+  background-image: url(../img/icons/news-ico-1-min.png);
+}
+.news-ico-2 {
+  background-image: url(../img/icons/news-ico-2-min.png);
+}
+.news-ico-3 {
+  background-image: url(../img/icons/news-ico-3-min.png);
+}
+.news-ico-4 {
+  background-image: url(../img/icons/news-ico-4-min.png);
+}
+.pdf-ico {
+  background-image: url(../img/icons/pdf-ico.png);
+}
+.doc-ico {
+  background-image: url(../img/icons/doc-ico.png);
+}
+.checkbox-ico {
+  background-image: url(../img/icons/checkbox-ico.svg);
+}
+.loading-ico {
+  background-image: url(../img/icons/loading-ico.svg)
+}
+.close-ico {
+  background-image: url(../img/icons/close-ico.svg)
+}
+.header-list li a.drop-text::before,.header-menu li a.drop-text span::before {
+  background-image: url(../img/icons/arrow-drop.svg);
+}
+.news-list li a .arrow-link {
+  background-image: url(../img/icons/arrow-link-gray.svg);
+}
+.news-list li a:hover .arrow-link {
+  background-image: url(../img/icons/arrow-link.svg);
+}
+.card-wrap:hover .card-link .hb-ico {
+  background-image: url(../img/icons/arrow-link-active.svg);
+}
+.card-info ul li::after {
+  background: url(../img/icons/list-ico.svg) no-repeat center;
+}
+.opportunities-col ul li::after {
+  background: url(../img/icons/check-ico.svg) no-repeat center;
+}

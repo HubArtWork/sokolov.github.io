@@ -28,6 +28,12 @@ $(document).ready(function(){
 		$('.header').toggleClass('header-active');
 	});
 
+  //drop-text
+  $('.drop-text').on('click', function(e){
+    e.preventDefault();
+    $(this).parents('.drop').toggleClass('active').find('.drop-info').slideToggle();
+  });
+
   //tab
   $('.tab-list li a').on('click', function(e){
     e.preventDefault();

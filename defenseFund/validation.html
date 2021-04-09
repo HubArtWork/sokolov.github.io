@@ -11,9 +11,11 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="libs/normalize.css">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="libs/icons.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
@@ -23,12 +25,29 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="wrapper">
-				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt="" class="lazyload"></a></div>
+				<div class="header-logo"><a href="#"><img data-src="img/logo.svg" alt="" class="lazyload"></a></div>
 				<div class="header-row">
 					<ul class="header-menu">
 						<li><a href="#">О ФОНДЕ</a></li>
-						<li><a href="#">ПРОБЛЕМНЫЕ ОБЪЕКТЫ</a></li>
-						<li><a href="#">ОБЪЕКТЫ В РАБОТЕ</a></li>
+						<li class="drop">
+							<a href="#" class="drop-text"><span>ПРОБЛЕМНЫЕ ОБЪЕКТЫ</span></a>
+							<div class="drop-info">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-2</a></li>
+									<li><a href="#">lorem-3</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="drop">
+							<a href="#" class="drop-text"><span>ОБЪЕКТЫ В РАБОТЕ</span></a>
+							<div class="drop-info">
+								<ul>
+									<li><a href="#">ДОРОЖНЫЕ КАРТЫ</a></li>
+									<li><a href="#">РЕЕСТР ПРОБЛЕМНЫХ ОБЪЕКТОВ</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="#">ИНФОРМАЦИЯ</a></li>
 						<li><a href="#">КОНТАКТЫ</a></li>
 					</ul>
@@ -57,7 +76,6 @@
 					<li class="drop">
 						<a href="#" class="drop-text">
 							ПРОБЛЕМНЫЕ ОБЪЕКТЫ
-							<i class="hb-ico arrow-drop"></i>
 						</a>
 						<div class="drop-info">
 							<ul>
@@ -70,7 +88,6 @@
 					<li class="drop">
 						<a href="#" class="drop-text">
 							ОБЪЕКТЫ В РАБОТЕ
-							<i class="hb-ico arrow-drop"></i>
 						</a>
 						<div class="drop-info">
 							<ul>
@@ -153,23 +170,6 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script>
-		ymaps.ready(init);
-		var myMap,
-		    myPlacemark;
-
-		function init(){    
-	    myMap = new ymaps.Map ("map", {
-	        center: [55.73653158, 37.65894149],
-	        zoom: 16,
-	        controls: []
-	    });
-	    myMap.behaviors.disable([
-			  'scrollZoom'
-			]);
-		}
-	</script>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script defer src="libs/lazysizes/lazysizes.min.js"></script>
 	<script defer src="libs/swiper/swiper-bundle.min.js"></script>
