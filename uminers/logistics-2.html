@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header header-second">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><svg width="144" height="16" viewBox="0 0 144 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M100.036 0H79.2344V2.08014H100.036V0ZM16.6443 11.9675C16.6443 13.1026 15.7632 13.6701 14.0009 13.6701H5.62277C3.86052 13.6701 2.9794 13.0876 2.9794 11.9227V0.22917H0V11.9227C0 14.6408 1.87426 15.9998 5.62277 15.9998H14.0009C17.7494 15.9998 19.6237 14.6557 19.6237 11.9675V0.22917H16.6443V11.9675ZM25.2897 0.22917H22.5119V15.9998H25.3793V5.06789L33.3094 15.9998H35.7512L43.6589 5.04549V15.9998H46.5263V0.22917H43.9725L34.6535 13.11L25.2897 0.22917ZM49.4418 0.22917H52.4212V15.9998H49.4418V0.22917ZM58.2367 15.9998V3.99262L73.9401 15.9998H76.2923V0.22917H73.4697V12.326L57.7662 0.22917H55.4141V15.9998H58.2367ZM102.939 15.9998V0.22917H115.417C119.165 0.22917 121.039 1.36418 121.039 3.63419V5.56072C121.039 7.45738 119.74 8.56252 117.142 8.87614L120.883 15.9998H117.702L114.005 8.96575H105.918V15.9998H102.939ZM105.918 2.55892V6.63599H115.417C117.179 6.63599 118.06 6.27757 118.06 5.56072V3.63419C118.06 2.91735 117.179 2.55892 115.417 2.55892H105.918ZM143.187 9.8394C143.187 7.56939 141.313 6.43438 137.564 6.43438H129.186C127.424 6.43438 126.543 6.07596 126.543 5.35911V3.63419C126.543 2.91735 127.424 2.55892 129.186 2.55892H142.201V0.22917H129.186C125.438 0.22917 123.563 1.36418 123.563 3.63419V5.35911C123.563 7.62913 125.438 8.76413 129.186 8.76413H137.564C139.326 8.76413 140.208 9.12256 140.208 9.8394V12.6396C140.208 13.3266 139.326 13.6701 137.564 13.6701H124.101V15.9998H137.564C141.313 15.9998 143.187 14.8797 143.187 12.6396V9.8394ZM79.2344 6.88082H100.036V8.96096H79.2344V6.88082ZM100.036 13.7611H79.2344V15.8413H100.036V13.7611Z" fill="black"/></svg></a></div>
+			<div class="header-menu">
+				<ul class="header-list">
+					<li><a href="#" class="active">Главная</a></li>
+					<li><a href="#">Маркетплейс</a></li>
+					<li><a href="#">Логистика</a></li>
+					<li><a href="#">Хостинг</a></li>
+					<li><a href="#">Медиа</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a data-fancybox data-src="#modal-feedback" href="javascript:;" class="primary-btn"><span>Войти</span></a>
+			</div>
+			<div class="header-row">
+				<div class="drop drop-currency">
+					<div class="drop-top">
+						<div class="header-currency">$</div>
+					</div>
+					<div class="drop-info">
+						<ul>
+							<li><a href="#">
+								<img src="img/currency/USD@2x.svg" alt="">
+								<span>USD</span>
+							</a></li>
+							<li><a href="#">
+								<img src="img/currency/USDT@2x.svg" alt="">
+								<span>USDT</span>
+							</a></li>
+							<li><a href="#">
+								<img src="img/currency/Roubles@2x.svg" alt="">
+								<span>Roubles</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<a href="#" class="header-basket">
+					<span>3</span>
+					<i class="hb-ico shopping-ico"></i>
+				</a>
+				<div class="drop">
+					<div class="drop-top">
+						<img src="img/lang/ru.svg" alt="">
+						<i class="hb-ico drop-ico"></i>
+					</div>
+					<div class="drop-info">
+						<ul>
+							<li><a href="#">
+								<img src="img/lang/ru.svg" alt="">
+								<span>Russian</span>
+							</a></li>
+							<li><a href="#">
+								<img src="img/lang/ru.svg" alt="">
+								<span>English</span>
+							</a></li>
+							<li><a href="#">
+								<img src="img/lang/ru.svg" alt="">
+								<span>German</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<a data-fancybox data-src="#modal-feedback" href="javascript:;" class="primary-btn"><span>Войти</span></a>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start about -->
+	<section class="about">
+		<div class="about-line"><img src="img/about/line-bg.svg" alt=""></div>
+		<div class="about-bg" style="background-image: url(img/about/bg-3-min.jpg);"></div>
+		<div class="wrapper">
+			<div class="about-top">
+				<div class="about-ico"><img src="img/about/ico-2.svg" alt=""></div>
+				<h1 class="about-head">UEXPRESS</h1>
+				<h3 class="about-title">это логистическое подразделение Uasia Trading Co., Ltd.</h3>
+			</div>
+			<div class="about-list">
+				<div class="about-row">
+					<div class="about-info">
+						<span class="about-subtitle">Making mining easy</span>
+						<p>Uasia Trading Co., LtD., китайской экспортно-импортной компании, которая уже более 4 лет успешно осуществляет поставки товаров из Китая, а также предоставляет клиентам услуги по доставке грузов авиа и морским путями.</p>
+					</div>
+					<div class="about-img"><img src="img/about/img-5-min.jpg" alt=""></div>
+				</div>
+				<div class="about-row">
+					<div class="about-info">
+						<span class="about-subtitle">Making mining easy</span>
+						<p>Штаб-квартира находится на юге Китая в городе Гуанчжоу, мировом центре производства и торговли, что позволяет нам решать задачи клиентов с наибольшей эффективностью. Оперативность, надежность, доступность - девиз нашей команды!</p>
+					</div>
+					<div class="about-img"><img src="img/about/img-6-min.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start ourServices -->
+	<section class="ourServices">
+		<div class="wrapper">
+			<div class="section-top">
+				<span class="section-subtitle">OUR MISSION</span>
+				<h2 class="section-title">Наши услуги</h2>
+			</div>
+			<div class="ourServices-row">
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-1.svg" alt=""></div>
+					<p>Быструю доставку в любую точку мира; </p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-2.svg" alt=""></div>
+					<p>Услуги таможенного брокера в России и Республике Беларусь;</p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-3.svg" alt=""></div>
+					<p>Доступная цену на перевозку майнингово оборудования; </p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-4.svg" alt=""></div>
+					<p>Круглосуточную поддержку клиентов;</p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-5.svg" alt=""></div>
+					<p>Получение необходимых сертификатов на товары;</p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-6.svg" alt=""></div>
+					<p>Онлайн мониторинг статуса доставки в личном кабинете;</p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-7.svg" alt=""></div>
+					<p>Оформляем нотификацию на те виды майнеров, на которые отсутсвует;</p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-8.svg" alt=""></div>
+					<p>Страхование груза от гибели во время транспортировки;</p>
+				</div><!-- col -->
+				<div class="ourServices-col">
+					<div class="ourServices-ico"><img src="img/ourServices/ico-9.svg" alt=""></div>
+					<p>Таможенное сопровождение оборудования;</p>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end ourServices -->
+	<!-- start investments -->
+	<section class="investments investments-second">
+		<div class="wrapper">
+			<div class="investments-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<div class="section-top">
+					<span class="section-subtitle">INVESTEMENTS</span>
+					<h2 class="section-title">Калькулятор доставки</h2>
+				</div>
+				<p>Сейчас репутация цифровой валюты достигает все новых высот, ее применение становится более открытым и распространенным. Эти тенденции провоцируют развитие рынка майнинга. </p>
+			</div>
+			<div class="investments-row" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<div class="investments-main">
+					<div class="investments-wrap">
+						<div class="investments-col">
+							<div class="investments-input">
+								<label for="j-1">Город отправления:</label>
+								<input type="text" name="text" id="j-1" placeholder="Москва" autocomplete="off">
+							</div>
+						</div><!-- col -->
+						<div class="investments-col">
+							<div class="investments-input">
+								<label for="j-2">Город назначения:</label>
+								<input type="text" name="text" id="j-2" placeholder="гуаньчжоу" autocomplete="off">
+							</div>
+						</div><!-- col -->
+						<div class="investments-col">
+							<div class="investments-input">
+								<label for="j-3">Модель майнера:</label>
+								<input type="text" name="text" id="j-3" placeholder="Antminer S19" autocomplete="off">
+							</div>
+						</div><!-- col -->
+						<div class="investments-col">
+							<div class="investments-col__row">
+								<div class="investments-col__block">
+									<div class="investments-input">
+										<label for="j-4">Вес (кг):</label>
+										<input type="text" name="text" id="j-4" placeholder="56" autocomplete="off">
+									</div>
+								</div>
+								<div class="investments-col__block">
+									<div class="investments-input">
+										<label for="j-5">Количество:</label>
+										<div class="investments-quantity">
+											<span class="quantity-minus">-</span>
+											<input type="text" name="text" id="j-5" placeholder="1" autocomplete="off">
+											<span class="quantity-plus">+</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+					</div>
+				</div>
+				<div class="investments-descr">
+					<a data-fancybox src="#modal-feedback" href="javascript:;" class="second-btn"><span>Рассчитать стоимость</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="investments-form">
+			<div class="investments-form__all">
+				<div class="investments-form__top">
+					<span class="investments-form__title">Статус доставки</span>
+					<a href="#">Проверить статус</a>
+				</div>
+				<div class="investments-form__middle">
+					<span>Трекинговый номер:</span>
+					<b>1536TD53EB</b>
+				</div>
+				<ul>
+					<li>
+						<span>20 Апр 2021, 17:02</span>
+						Выехал на ПТО
+					</li>
+					<li>
+						<span>21 Апр 2021, 16:46</span>
+						Прибыл в POD
+					</li>
+					<li>
+						<span>23 Апр 2021, 08:12</span>
+						Отпарвлен в POD
+					</li>
+					<li>
+						<span>25 Апр 2021, 23:48</span>
+						Выехал на ПТО
+					</li>
+					<li>
+						<span>28 Апр 2021, 18:59</span>
+						Прибыл в POD
+					</li>
+					<li>
+						<span>29 Апр 2021, 08:12</span>
+						Отпарвлен в POD
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end investments -->
+	<!-- start advantages -->
+	<section class="advantages advantages-second">
+		<div class="wrapper">
+			<div class="section-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<span class="section-subtitle">EASY TO USE</span>
+				<h2 class="section-title">личный кабинет</h2>
+			</div>
+			<div class="advantages-image" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<img src="img/advantages/img-6-min.png" alt="">
+				<div class="advantages-mob">
+					<img src="img/advantages/img-5-min.png" alt="">
+				</div>
+				<a href="#" class="primary-btn"><span>Регистрация/Вход</span></a>
+			</div>
+		</div>
+	</section>
+	<!-- end advantages -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-logo"><a href="#"><img src="img/logo-white.svg" alt=""></a></div>
+				<ul class="footer-list">
+					<li>Багратионовский  проезд 7к20б</li>
+					<li><a href="#">sales@uminers.com</a></li>
+					<li>telegram  <a href="#">@uminers_sales</a></li>
+				</ul>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/telegram.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/wechat.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/youtube.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/whatsapp.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/instagram.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>© 2017-2021 UMINERS TECHNOLOGY PTE. LTD. All rights reserved.</p>
+				<div class="footer-bottom__row">
+					<a href="#" class="footer-link">Конфиденциальность</a>
+					<a href="#" class="footer-link">Правила пользования</a>
+					<div class="footer-by">
+						<span>By</span>
+						<a href="#"><img src="img/footer/uasia-img.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox modal-feedback -->
+	<div style="display: none;" id="modal-feedback" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Обратная связь</h3>
+			<form action="">
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-1">Ваше имя*:</label>
+					<input id="i-1" type="text" name="name">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-2">Название компании*:</label>
+					<input id="i-2" type="text" name="text">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-3">Ваш email*:</label>
+					<input id="i-3" type="email" name="email">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox-ico"></span>
+					<p>Принимаю условия обработки персональных данных и правила пользования</p>
+				</div>
+				<button class="primary-btn"><span>Отправить запрос</span></button>
+			</form>
+		</div>
+	</div>
+	<!-- fancybox modal-signIn -->
+	<div style="display: none;" id="modal-signIn" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Вход</h3>
+			<form action="">
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-4">Ваше почта*:</label>
+					<input id="i-4" type="email" name="email">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="input-block"><!-- add class input-error -->
+					<label for="i-5">Пароль*:</label>
+					<input id="i-5" type="password" name="password">
+					<span class="input-text">• Text error will be there</span>
+				</div>
+				<div class="modal-forgot">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span class="checkbox-ico"></span>
+						<p>Запомнить меня</p>
+					</div>
+					<a data-fancybox data-src="#modal-forgot" href="javascript:;">Забыли пароль?</a>
+				</div>
+				<button class="primary-btn"><span>Войти в личный кабинет</span></button>
+				<div class="modal-bottom">
+					<p>Нет аккаунта? <a data-fancybox data-src="#modal-checkIn" href="javascript:;">Регистрация</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
