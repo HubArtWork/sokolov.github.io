@@ -54,10 +54,7 @@
 				</div>
 				<div class="howItWorks-descr">
 					<div class="howItWorks-descr__wrap">
-						<picture>
-						 	<source srcset="img/howItWorks/bg-2.svg" media="(min-width: 960px)">
-						 	<img src="img/howItWorks/bg-3.svg" alt="">
-						</picture>
+						<div id="chartdiv"></div>
 						<span class="howItWorks-subtitle">Get a deeper understanding</span>
 					</div>
 				</div>
@@ -216,5 +213,35 @@
 	<!-- end footer -->
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
+	<!-- Resources -->
+	<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/plugins/venn.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+	<!-- Chart code -->
+	<script>
+	am4core.ready(function() {
+
+	// Themes begin
+	am4core.useTheme(am4themes_animated);
+	// Themes end
+
+	var data = [{ name: "A", value: 10 }, { name: "B", value: 10 }, { name: "C", value: 10 }, { name: "X", value: 2, sets: ["A", "B"] }, { name: "Y", value: 2, sets: ["A", "C"] }, { name: "Z", value: 2, sets: ["B", "C"] }, { name: "Q", value: 1, sets: ["A", "B", "C"] }];
+
+	var chart = am4core.create("chartdiv", am4plugins_venn.VennDiagram);
+	var series = chart.series.push(new am4plugins_venn.VennSeries())
+
+	series.dataFields.category = "name";
+	series.dataFields.value = "value";
+	series.dataFields.intersections = "sets";
+	series.data = data;
+
+	chart.legend = new am4charts.Legend();
+	chart.legend.marginTop = 40;
+
+
+	}); // end am4core.ready()
+	</script>
 </body>
 </html>
