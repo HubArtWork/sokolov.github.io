@@ -104,17 +104,17 @@
 	</section>
 	<!-- end menu -->
 	<!-- start content -->
-	<section class="content content-second">
+	<section class="content content-second allTabs">
 		<div class="content-tabs">
 			<div class="wrapper">
 				<ul class="content-tabs__list tab-list">
-					<li><a href="#tab-1" class="active"><span>Account settings</span></a></li>
-					<li><a href="#tab-2"><span>Billing</span></a></li>
+					<li><span data-tabs="tab-1" class="tabs-item active">Account settings</span></li>
+					<li><span data-tabs="tab-2" class="tabs-item">Billing</span></li>
 				</ul>
 			</div>
 		</div>
 		<div class="wrapper">
-			<div class="tab tab-active" id="tab-1">
+			<div class="tab active" id="tab-1">
 				<div class="settings">
 					<div class="main-sidebar">
 						<div class="main-sidebar__top">
@@ -208,22 +208,22 @@
 								<div class="input-block">
 									<label for="r-2">Security question</label>
 									<div class="input-block__row">
-									  <div class="select disabled">
-											<div class="select-main">
-												<div class="select-text">Name of your first pet?</div>
-												<div class="input-icon"><svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L5.5 5.5L1 1" stroke="#3B4348" stroke-width="1.5"/></svg></div>
-											</div>
-											<div class="select-info scrollbar-outer">
-												<ul>
-													<li>Name of your first pet?</li>
-													<li>Name of your first pet?2</li>
-													<li>Name of your first pet?3</li>
-													<li>Name of your first pet?</li>
-													<li>Name of your first pet?2</li>
-													<li>Name of your first pet?3</li>
-												</ul>
-											</div>
-											<input type="text" name="text" class="select-value">
+										<div class="custom-select">
+											<select>
+										    <option value="0">Name of your first pet?</option>
+										    <option value="1">Audi</option>
+										    <option value="2">BMW</option>
+										    <option value="3">Citroen</option>
+										    <option value="4">Ford</option>
+										    <option value="5">Honda</option>
+										    <option value="6">Jaguar</option>
+										    <option value="7">Land Rover</option>
+										    <option value="8">Mercedes</option>
+										    <option value="9">Mini</option>
+										    <option value="10">Nissan</option>
+										    <option value="11">Toyota</option>
+										    <option value="12">Volvo</option>
+										  </select>
 										</div>
 									  <span class="input-change">CHANGE</span>
 									</div>
@@ -481,7 +481,6 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
