@@ -19,6 +19,10 @@
 <body>
 	<!-- start header -->
 	<header class="header">
+		<div class="header-bar">
+			<span></span>
+		</div>
+		<a href="#" class="header-phone"><i class="hb-ico phone-ico-solid"></i></a>
 		<div class="header-top">
 			<div class="wrapper">
 				<p>Добро пожаловать на сайт AUTO NAUK</p>
@@ -29,12 +33,12 @@
 						<li><a href="#"><i class="hb-ico instagram-ico"></i></a></li>
 						<li><a href="#"><i class="hb-ico telegram-ico"></i></a></li>
 					</ul>
-					<div class="buttons">
-						<a href="#" class="button-dark">
+					<div class="header-buttons">
+						<a href="#" class="header-btn header-call">
 							<i class="hb-ico call-ico"></i>
-							+374 93 57 57 16
+							<span>+374 93 57 57 16</span>
 						</a>
-						<a href="#" class="button-primary">Подобрать авто</a>
+						<a href="#" class="header-btn header-auto"><span>Подобрать авто</span></a>
 					</div>
 				</div>
 			</div>
@@ -58,449 +62,269 @@
 		</div>
 		<div class="header-bottom">
 			<div class="wrapper">
-				<ul class="header-list">
-					<li><a href="#" class="active">Главная</a></li>
-					<li><a href="#">Каталог авто</a></li>
-					<li><a href="#">Блог</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<i class="hb-ico search-ico"></i>
+				<div class="header-wrap">
+					<ul class="header-list">
+						<li><a href="#" class="active">Главная</a></li>
+						<li><a href="#">Каталог авто</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="header-search">
+						<i class="hb-ico search-ico"></i>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
+	<div class="header-bg"></div>
+	<div class="headerMob">
+		<div class="headerMob-wrap">
+			<span class="headerMob-title">Меню:</span>
+			<ul class="headerMob-menu">
+				<li><a href="#" class="active"><span>Главная</span></a></li>
+				<li><a href="#"><span>Каталог авто</span></a></li>
+				<li><a href="#"><span>Блог</span></a></li>
+				<li><a href="#"><span>Контакты</span></a></li>
+			</ul>
+			<a href="#" class="header-btn header-call">
+				<i class="hb-ico call-ico"></i>
+				<span>+374 93 57 57 16</span>
+			</a>
+			<a href="#" class="header-btn header-auto"><span>Подобрать авто</span></a>
+			<div class="header-col">
+				<div class="header-ico"><i class="hb-ico locate-ico-white"></i></div>
+				<span class="header-subtitle">Адрес:</span>
+				<p>Армения, Ереван, ул. Давида Бека 71/12</p>
+			</div>
+			<div class="header-col">
+				<div class="header-ico"><i class="hb-ico phone-ico-white"></i></div>
+				<span class="header-subtitle">Переоформления документов и ПМЖ:</span>
+				<p>+374 41 57 57 16</p>
+			</div>
+			<ul class="social-list">
+				<li><a href="#"><i class="hb-ico facebook-ico"></i></a></li>
+				<li><a href="#"><i class="hb-ico youtube-ico"></i></a></li>
+				<li><a href="#"><i class="hb-ico instagram-ico"></i></a></li>
+				<li><a href="#"><i class="hb-ico telegram-ico"></i></a></li>
+			</ul>
+		</div>
+	</div>
 	<!-- end header -->
 	<!-- start page -->
-	<section class="page" style="background-image: url(img/page/bg-4-min.jpg);">
+	<section class="page page-middle" style="background-image: url(img/page/bg-3-min.jpg);">
 		<div class="wrapper">
 			<div class="page-info">
 				<ul class="breadCrumbs">
 					<li><a href="#">Главная</a></li>
-					<li>Каталог авто</li>
+					<li><a href="#">Блог</a></li>
+					<li>Характерные различия авто из Америки и Европы</li>
 				</ul>
-				<h1 class="page-title">Каталог автомобилей</h1>
+				<div class="page-bottom">
+					<div class="page-item">
+						<i class="hb-ico date-ico"></i>
+						<span>12.06.2020</span>
+					</div>
+					<div class="page-row">
+						<div class="page-item">
+							<i class="hb-ico eye-ico"></i>
+							<span>13 000 просмотров</span>
+						</div>
+						<div class="page-item page-item__last">
+							<span>Оценить:</span>
+							<img src="img/post/stars.svg" alt="">
+							<b>5/5</b>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- end page -->
-	<!-- start catalog -->
-	<section class="catalog">
+	<!-- start post -->
+	<section class="post">
 		<div class="wrapper">
-			<a href="#" class="catalog-mob primary-btn">
-				<i class="hb-ico filter-ico"></i>
-				<span>Фильтр автомобилей</span>
-			</a>
-			<div class="catalog-all">
-				<div class="catalog-content">
-					<div class="catalog-row">
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
-						<div class="product">
-							<div class="product-wrap">
-								<a href="#" class="product-img"></a>
-								<div class="product-info">
-									<h3 class="product-name"><a href="#">Ssangyong Rexton</a></h3>
-									<span class="product-price">38,500$</span>
-									<ul class="product-list">
-										<li>
-											<i class="hb-ico product-ico-1"></i>
-											20k
-										</li>
-										<li>
-											<i class="hb-ico product-ico-2"></i>
-											Автомат
-										</li>
-										<li>
-											<i class="hb-ico product-ico-3"></i>
-											Гибрид
-										</li>
-									</ul>
-								</div>
-								<a href="#" class="primary-btn"><span>Подробнее об авто</span></a>
-							</div>
-						</div><!-- product -->
+			<div class="post-wrap">
+				<div class="post-top">
+					<h1 class="post-title">Как создать AMP-письма с помощью Stripo</h1>
+					<p>Динамические обновления, контент в режиме реального времени, гиперперсонализация, геймификация нового уровня, отзывы в открытых формах, бронирование встреч... — с появлением технологии AMP4Email пользователи могут делать все это и многое другое непосредственно в своих входящих</p>
+				</div>
+				<div class="post-images">
+				  <img src="img/post/img-1-min.jpg" alt="">
+				</div>
+				<p><a href="#">По данным GetApp,</a> для 33,8 % клиентов отзывы других покупателей – один из самых важных факторов, который формирует доверие к интернет-магазину. <a href="#">Исследование</a> Website Builders показало, что при одном негативном отзыве от покупки откажется 22% потенциальных клиентов, при трех ­– 59 %, а если негативных отзывов больше четырех, доля отказа составит 70%.</p>
+				<p>Критика бывает разной: конструктивной, эмоциональной, безосновательной, и компании реагируют на нее <a href="#">по-разному.</a> Но есть особый тип отзывов – фальшивые. Каюсь, в студенческие годы я сама писала фейковые отзывы, которые размещала на сайтах компаний за 10–30 рублей за штуку. Не горжусь этим, но теперь лучше понимаю, как выглядят фейки.</p>
+				<p>Сейчас размещением отзывов занимаются не только <span>копирайтеры</span>, но и специальные агентства. <br>Они же обычно предоставляют услугу по работе с негативом.</p>
+				<h3>Оглавление:</h3>
+				<ol>
+					<li><a href="#">Уточните контактные данные</a></li>
+					<li><a href="#">Уточните детали</a></li>
+					<li><a href="#">Откажитесь от явной или скрытой агрессии</a></li>
+					<li><a href="#">Избегайте отписок и канцеляризмов</a></li>
+					<li><a href="#">Попросите доказать, что отзыв не фейковый</a></li>
+					<li><a href="#">Вежливо укажите на ложь или ошибку</a></li>
+					<li><a href="#">Проверьте достоверность отзыва</a></li>
+					<li><a href="#">Пошутите, если это уместно</a></li>
+					<li><a href="#">Как карты, отзовики и рекомендательные сервисы борются с фейковыми отзывами</a></li>
+					<li><a href="#">Зачем отвечать на фальшивый отзыв, и как это делать</a></li>
+				</ol>
+				<div class="post-img">
+					<img src="img/post/img-2-min.jpg" alt="">
+					<span>Недостаток личной переписки в том, что потенциальные клиенты так и не узнают, был решен конфликт или нет</span>
+				</div>
+				<div class="post-info">
+					<h3>Большое количество восклицательных знаков в совокупности с другими признаками указывает на фейк</h3>
+				</div>
+				<p><a href="#">По данным GetApp,</a> для 33,8 % клиентов отзывы других покупателей – один из самых важных факторов, который формирует доверие к интернет-магазину. <a href="#">Исследование</a> Website Builders показало, что при одном негативном отзыве от покупки откажется 22% потенциальных клиентов, при трех ­– 59 %, а если негативных отзывов больше четырех, доля отказа составит 70%</p>
+				<div class="post-blockquote">
+					<span class="post-name">Любимов Никита</span>
+					<span class="post-status">Генеральный директор магазина игровых компьютеров DigitalRazor</span>
+					<p>Критика бывает разной: конструктивной, эмоциональной, безосновательной, и компании реагируют на нее <a href="#">по-разному</a>. Но есть особый тип отзывов – фальшивые. Каюсь, в студенческие годы я сама писала фейковые отзывы, которые размещала на сайтах компаний за 10–30 рублей за штуку. Не горжусь этим, <a href="#">копирайтеры</a>, но и специальные агентства. Они же обычно предоставляют услугу по работе с негативом,но теперь лучше понимаю, как выглядят фейки. Сейчас размещением отзывов занимаются не только </p>
+				</div>
+				<h4>Подзаголовок статьи:</h4>
+				<p><a href="#">По данным GetApp,</a> для 33,8 % клиентов отзывы других покупателей – один из самых важных факторов, который формирует доверие к интернет-магазину. <a href="#">Исследование</a> Website Builders показало, что при одном негативном отзыве от покупки откажется 22% потенциальных клиентов, при трех ­– 59 %, а если негативных отзывов больше четырех, доля отказа составит 70%</p>
+				<div class="post-list">
+					<div class="post-item">
+						<span class="post-subtitle">Уточните контактные данные</span>
+						<p>Но есть особый тип отзывов – фальшивые. Каюсь, в студенческие годы на сайтах компаний за 10–30 рублей</p>
 					</div>
-					<div class="catalog-bottom">
-						<a href="#" class="primary-btn">
-							<i class="hb-ico load-ico"></i>
-							<span>Показать еще</span>
-						</a>
+					<div class="post-item">
+						<span class="post-subtitle">Уточните детали</span>
+						<p>Но есть особый тип отзывов – фальшивые. Каюсь, в студенческие годы я сама писала фейковые отзывы, на сайтах компаний за 10–30 рублей за штуку. Не горжусь этим, но теперь лучше понимаю, как выглядят фейки.</p>
+					</div>
+					<div class="post-item">
+						<span class="post-subtitle">Уточните контактные данные</span>
+						<p>Каюсь, в студенческие годы я сама писала фейковые отзывы, на сайтах компаний за 10–30 рублей за штуку. <br>Не горжусь этим, но теперь лучше понимаю</p>
 					</div>
 				</div>
-				<div class="catalog-sidebar">
-					<div class="catalog-wrap">
-						<div class="catalog-block">
-							<h3 class="catalog-title">Автомобиль:</h3>
-							<div class="input-block">
-								<select name="text">
-									<option value="">Марка авто</option>
-									<option value="">Марка авто</option>
-									<option value="">Марка авто</option>
-								</select>
-							</div>
-							<div class="input-block">
-								<select name="text">
-									<option value="">Все модели</option>
-									<option value="">Марка авто</option>
-									<option value="">Марка авто</option>
-								</select>
-							</div>
-							<div class="input-block">
-								<select name="text">
-									<option value="">Праворульное</option>
-									<option value="">Марка авто</option>
-									<option value="">Марка авто</option>
-								</select>
-							</div>
-						</div>
-						<div class="catalog-block">
-							<h3 class="catalog-title">Год авто:</h3>
-							<div class="catalog-range">
-								<div id="range-1"></div>
-								<div class="catalog-range__row fromTo">
-									<div class="catalog-range__col">
-										<div class="input-block">
-											<input type="text" name="text" placeholder="1950" class="fromTo-1">
-										</div>
-									</div>
-									<div class="catalog-range__col">
-										<div class="input-block">
-											<input type="text" name="text" placeholder="2021" class="fromTo-2">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-block">
-							<h3 class="catalog-title">Диапазон цены:</h3>
-							<div class="catalog-range">
-								<div id="range-2"></div>
-								<div class="catalog-range__row fromTo">
-									<div class="catalog-range__col">
-										<div class="input-block">
-											<input type="text" name="text" placeholder="0,00$" class="fromTo-1">
-										</div>
-									</div>
-									<div class="catalog-range__col">
-										<div class="input-block">
-											<input type="text" name="text" placeholder="100 000.00$" class="fromTo-2">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-block catalog-block__last">
-							<h3 class="catalog-title">Тип авто:</h3>
-							<div class="catalog-category">
-								<div class="catalog-col">
-									<a href="#" class="catalog-wrap">
-										<span class="catalog-img"><img src="img/catalog/img-1-min.png" alt=""></span>
-										<span class="catalog-name">Седан</span>
-									</a>
-								</div>
-								<div class="catalog-col">
-									<a href="#" class="catalog-wrap">
-										<span class="catalog-img"><img src="img/catalog/img-2-min.png" alt=""></span>
-										<span class="catalog-name">Спорт</span>
-									</a>
-								</div>
-								<div class="catalog-col">
-									<a href="#" class="catalog-wrap">
-										<span class="catalog-img"><img src="img/catalog/img-3-min.png" alt=""></span>
-										<span class="catalog-name">Премиум</span>
-									</a>
-								</div>
-								<div class="catalog-col">
-									<a href="#" class="catalog-wrap">
-										<span class="catalog-img"><img src="img/catalog/img-4-min.png" alt=""></span>
-										<span class="catalog-name">Суперкар</span>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-button">
-							<a href="#" class="primary-btn"><span>Применить</span></a>
-						</div>
-						<div class="catalog-buttons">
-							<div>
-							  <a href="#" class="primary-btn"><span>Применить</span></a>
-							</div>
-							<div>
-							  <a href="#" class="primary-btn second-btn"><span>Сбросить</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-bg">
-					<i class="hb-ico close-ico"></i>
-				</div>
+			</div>
+			<div class="post-bottom">
+				<span>Поделиться:</span>
+				<ul class="social-list">
+					<li><a href="#"><i class="hb-ico facebook-ico"></i></a></li>
+					<li><a href="#"><i class="hb-ico youtube-ico"></i></a></li>
+					<li><a href="#"><i class="hb-ico instagram-ico"></i></a></li>
+					<li><a href="#"><i class="hb-ico telegram-ico"></i></a></li>
+				</ul>
 			</div>
 		</div>
 	</section>
-	<!-- end catalog -->
+	<!-- end post -->
+	<!-- start news -->
+	<section class="news">
+		<div class="wrapper">
+			<div class="section-top section-top__swipe">
+				<span class="section-subtitle">Из нашего блога</span>
+				<h2 class="section-title">Последние новости:</h2>
+			</div>
+			<div class="news-slider swiper-container">
+				<div class="news-slider__wrapper swiper-wrapper">
+					<div class="news-col swiper-slide">
+						<div class="news-wrap">
+							<div class="news-top">
+							  <a href="#" class="news-img" style="background-image: url(img/news/img-1-min.jpg);"></a>
+							  <div class="news-date">
+							  	<i class="hb-ico date-ico"></i>
+							  	12.06.2020
+							  </div>
+							</div>
+							<div class="news-info">
+								<h3 class="news-name"><a href="#">Bout avez was main jet</a></h3>
+								<p>Bout avez was main jet. There are suivit bourse depuis. Them longues republique paraissents i people evidemment</p>
+								<a href="#" class="news-link">Читать статью</a>
+							</div>
+						</div>
+					</div><!-- slide -->
+					<div class="news-col swiper-slide">
+						<div class="news-wrap">
+							<div class="news-top">
+							  <a href="#" class="news-img" style="background-image: url(img/news/img-2-min.jpg);"></a>
+							  <div class="news-date">
+							  	<i class="hb-ico date-ico"></i>
+							  	12.06.2020
+							  </div>
+							</div>
+							<div class="news-info">
+								<h3 class="news-name"><a href="#">Bout avez was main jet</a></h3>
+								<p>Bout avez was main jet. There are suivit bourse depuis. Them longues republique paraissents i people evidemment</p>
+								<a href="#" class="news-link">Читать статью</a>
+							</div>
+						</div>
+					</div><!-- slide -->
+					<div class="news-col swiper-slide">
+						<div class="news-wrap">
+							<div class="news-top">
+							  <a href="#" class="news-img" style="background-image: url(img/news/img-3-min.jpg);"></a>
+							  <div class="news-date">
+							  	<i class="hb-ico date-ico"></i>
+							  	12.06.2020
+							  </div>
+							</div>
+							<div class="news-info">
+								<h3 class="news-name"><a href="#">Bout avez was main jet</a></h3>
+								<p>Bout avez was main jet. There are suivit bourse depuis. Them longues republique paraissents i people evidemment</p>
+								<a href="#" class="news-link">Читать статью</a>
+							</div>
+						</div>
+					</div><!-- slide -->
+					<div class="news-col swiper-slide">
+						<div class="news-wrap">
+							<div class="news-top">
+							  <a href="#" class="news-img" style="background-image: url(img/news/img-1-min.jpg);"></a>
+							  <div class="news-date">
+							  	<i class="hb-ico date-ico"></i>
+							  	12.06.2020
+							  </div>
+							</div>
+							<div class="news-info">
+								<h3 class="news-name"><a href="#">Bout avez was main jet</a></h3>
+								<p>Bout avez was main jet. There are suivit bourse depuis. Them longues republique paraissents i people evidemment</p>
+								<a href="#" class="news-link">Читать статью</a>
+							</div>
+						</div>
+					</div><!-- slide -->
+					<div class="news-col swiper-slide">
+						<div class="news-wrap">
+							<div class="news-top">
+							  <a href="#" class="news-img" style="background-image: url(img/news/img-2-min.jpg);"></a>
+							  <div class="news-date">
+							  	<i class="hb-ico date-ico"></i>
+							  	12.06.2020
+							  </div>
+							</div>
+							<div class="news-info">
+								<h3 class="news-name"><a href="#">Bout avez was main jet</a></h3>
+								<p>Bout avez was main jet. There are suivit bourse depuis. Them longues republique paraissents i people evidemment</p>
+								<a href="#" class="news-link">Читать статью</a>
+							</div>
+						</div>
+					</div><!-- slide -->
+					<div class="news-col swiper-slide">
+						<div class="news-wrap">
+							<div class="news-top">
+							  <a href="#" class="news-img" style="background-image: url(img/news/img-3-min.jpg);"></a>
+							  <div class="news-date">
+							  	<i class="hb-ico date-ico"></i>
+							  	12.06.2020
+							  </div>
+							</div>
+							<div class="news-info">
+								<h3 class="news-name"><a href="#">Bout avez was main jet</a></h3>
+								<p>Bout avez was main jet. There are suivit bourse depuis. Them longues republique paraissents i people evidemment</p>
+								<a href="#" class="news-link">Читать статью</a>
+							</div>
+						</div>
+					</div><!-- slide -->
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end news -->
 	<!-- start action -->
-	<section class="action action-second">
+	<section class="action">
 		<div class="wrapper">
 			<div class="action-all">
 				<div class="action-wrap">
