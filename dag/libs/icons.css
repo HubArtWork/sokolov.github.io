@@ -1,0 +1,63 @@
+.input-block select {
+  background: url(../img/icons/select-icon.svg) #fff no-repeat 97% center;
+}
+.checkbox input:checked + .checkbox-ico {
+  background: url(../img/icons/check.svg) no-repeat center;
+}
+.search-ico {
+  background-image: url(../img/icons/search-ico.svg);
+}
+.search-ico-white {
+  background-image: url(../img/icons/search-ico-white.svg);
+}
+.facebook-ico {
+  background-image: url(../img/social/facebook-ico.svg);
+}
+.instagram-ico {
+  background-image: url(../img/social/instagram-ico.svg);
+}
+.vk-ico {
+  background-image: url(../img/social/vk-ico.svg);
+}
+.youtube-ico {
+  background-image: url(../img/social/youtube-ico.svg);
+}
+.twitter-ico {
+  background-image: url(../img/social/twitter-ico.svg);
+}
+.facebook-ico-white {
+  background-image: url(../img/social/facebook-ico-white.svg);
+}
+.instagram-ico-white {
+  background-image: url(../img/social/instagram-ico-white.svg);
+}
+.vk-ico-white {
+  background-image: url(../img/social/vk-ico-white.svg);
+}
+.youtube-ico-white {
+  background-image: url(../img/social/youtube-ico-white.svg);
+}
+.twitter-ico-white {
+  background-image: url(../img/social/twitter-ico-white.svg);
+}
+.eyeglasses-ico-white {
+  background-image: url(../img/social/eyeglasses-ico-white.svg);
+}
+.play-ico {
+  background-image: url(../img/icons/play-ico.svg);
+}
+.headerMob-title::after {
+  background: url(../img/icons/menu-arrow.svg) no-repeat center;
+}
+.page-mob::after {
+  background-image: url(../img/icons/menu-arrow.svg);
+}
+.documentation-img::after {
+  background-image: url(../img/page/documentation-min.png);
+}
+
+@media only screen and (max-width : 768px){
+  .footer-title::after {
+    background: url(../img/icons/menu-arrow.svg) no-repeat center;
+  }
+}
