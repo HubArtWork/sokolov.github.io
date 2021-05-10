@@ -81,6 +81,11 @@ $(document).ready(function(){
 		$('body').toggleClass('header-active');
 	});
 
+  //page-sidebar
+  $('.page-mob').on('click', function(){
+    $(this).parents('.page-wrap').toggleClass('active');
+  });
+
 	//menu link
 	$('.headerMob-title').on('click', function(){
 		$(this).parents('.headerMob-block').toggleClass('active').find('ul').slideToggle();
