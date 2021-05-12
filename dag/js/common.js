@@ -86,6 +86,11 @@ $(document).ready(function(){
   $('.drop').on('click', function(){
     $(this).toggleClass('active');
   });
+  $(document).on('click', function (e){
+    var block = $(".drop");
+    if (!block.is(e.target) && block.has(e.target).length === 0)
+      $('.drop').removeClass('active');
+  });
 
 	//menu link
 	$('.headerMob-title').on('click', function(){
