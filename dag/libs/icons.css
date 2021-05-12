@@ -10,6 +10,15 @@
 .search-ico-white {
   background-image: url(../img/icons/search-ico-white.svg);
 }
+.photo-ico {
+  background-image: url(../img/icons/photo-ico.svg);
+}
+.video-ico {
+  background-image: url(../img/icons/video-ico.svg);
+}
+.close-ico {
+  background-image: url(../img/icons/close-ico.svg);
+}
 .facebook-ico {
   background-image: url(../img/social/facebook-ico.svg);
 }
@@ -55,9 +64,12 @@
 .documentation-img::after {
   background-image: url(../img/page/documentation-min.png);
 }
+.pressCenter-more::after {
+  background-image: url(../img/icons/arrow-right-red.svg);
+}
 
 @media only screen and (max-width : 768px){
   .footer-title::after {
-    background: url(../img/icons/menu-arrow.svg) no-repeat center;
+    background: url(../img/icons/arrow-right-red) no-repeat center;
   }
 }
