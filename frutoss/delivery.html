@@ -42,7 +42,7 @@
 					</form>
 				</div>
 				<div class="header-actions">
-					<a href="#" class="header-comeIn">
+					<a data-fancybox data-src="#modal-entrance" href="javascript:;" class="header-comeIn">
 						<span>Войти</span>
 						<i class="hb-ico user-ico"></i>
 					</a>
@@ -241,6 +241,45 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-entrance" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-row">
+					<div class="modal-col">
+						<span class="modal-title">Постоянный покупатель</span>
+						<div class="input-block">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<div class="input-block">
+							<input type="password" name="password" placeholder="Пароль">
+						</div>
+						<a href="#" class="modal-link">Забыли пароль?</a>
+						<div>
+							<button class="primary-btn">Войти</button>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<i class="checkbox-ico"></i>
+							<p>Запомнить меня</p>
+						</div>
+					</div>
+					<div class="modal-col">
+						<span class="modal-title">Новый покупатель?</span>
+						<ul>
+							<li>Быстрое оформление заказа</li>
+							<li>Сохранение нескольких адресов доставки</li>
+							<li>Просмотр и отслеживание заказов</li>
+							<li>Просмотр и отслеживание заказов</li>
+						</ul>
+						<div class="modal-center">
+							<a href="#" class="primary-btn">Продолжить</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 </body>
