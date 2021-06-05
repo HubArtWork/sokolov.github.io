@@ -116,11 +116,15 @@
 				</div>
 			</div>
 			<div class="allTabs">
-				<ul class="personalArea-list tab-list">
-					<li><a href="#tab-1" class="active">Личные данные</a></li>
-					<li><a href="#tab-2">Избранное</a></li>
-					<li><a href="#tab-3">Мои заказы</a></li>
-				</ul>
+				<div class="personalArea-head">
+					<i class="hb-ico arrow-left"></i>
+					<ul class="personalArea-list tab-list">
+						<li><a href="#tab-1" class="active">Личные данные</a></li>
+						<li><a href="#tab-2">Избранное</a></li>
+						<li><a href="#tab-3">Мои заказы</a></li>
+					</ul>
+					<i class="hb-ico arrow-right"></i>
+				</div>
 				<div class="tab tab-active" id="tab-1">
 					<form action="">
 						<div class="personalArea-form">
@@ -233,55 +237,87 @@
 					</div>
 				</div>
 				<div class="tab" id="tab-3">
-					<div class="personalArea-table">
+					<div class="personalArea-order">
+						<h3 class="personalArea-order__title">Заказ №265473 от 20 апреля 2021</h3>
+						<div class="personalArea-order__status">
+							<span>Готов к выдаче</span>
+							<i class="hb-ico check-ico"></i>
+						</div>
+						<div class="personalArea-order__subtitle">Детали заказа</div>
+						<ul>
+							<li><span>Способ оплаты:</span>Наличными курьеру</li>
+							<li><span>Способ доставки:</span>Курьерская доставка по Санкт-Петербургу</li>
+							<li><span>Адрес доставки:</span>Санкт-Петербург, ул. ..</li>
+						</ul>
+					</div>
+					<div class="personalArea-table personalArea-table__2">
 						<div class="personalArea-table__row personalArea-table__top">
-							<div class="personalArea-table__col personalArea-table__col-1">Номер заказа</div>
-							<div class="personalArea-table__col personalArea-table__col-2">Количество товаров</div>
-							<div class="personalArea-table__col personalArea-table__col-3">Общая сумма</div>
-							<div class="personalArea-table__col personalArea-table__col-4">Статус заказа</div>
+							<div class="personalArea-table__col personalArea-table__col-1">Изображение</div>
+							<div class="personalArea-table__col personalArea-table__col-2">Название</div>
+							<div class="personalArea-table__col personalArea-table__col-3">Количество</div>
+							<div class="personalArea-table__col personalArea-table__col-4">Итого</div>
 						</div>
 						<div class="personalArea-table__row">
 							<div class="personalArea-table__col personalArea-table__col-1">
-								Заказ номер №79541512
-								<span>от 20 марта</span>
+								<div class="personalArea-table__img"><img src="img/ordering/img-1-min.png" alt=""></div>
 							</div>
-							<div class="personalArea-table__col personalArea-table__col-2">2</div>
-							<div class="personalArea-table__col personalArea-table__col-3">1526 руб.</div>
+							<div class="personalArea-table__col personalArea-table__col-2">Курага высший сорт</div>
+							<div class="personalArea-table__col personalArea-table__col-3">2</div>
 							<div class="personalArea-table__col personalArea-table__col-4">
-								<div class="personalArea-table__status">
-									Готов к выдаче
-									<i class="hb-ico status-ico-active"></i>
-								</div>
-							</div>
-						</div>
-						<div class="personalArea-table__row">
-							<div class="personalArea-table__col personalArea-table__col-1">
-								Заказ номер №79541512
-								<span>от 20 марта</span>
-							</div>
-							<div class="personalArea-table__col personalArea-table__col-2">2</div>
-							<div class="personalArea-table__col personalArea-table__col-3">1526 руб.</div>
-							<div class="personalArea-table__col personalArea-table__col-4">
-								<div class="personalArea-table__status">
-									Получен
-									<i class="hb-ico status-ico"></i>
-								</div>
+								1526 руб.
+								<a href="#" class="header-like">
+									<i class="hb-ico like-ico"></i>
+								</a>
 							</div>
 						</div>
 						<div class="personalArea-table__row">
 							<div class="personalArea-table__col personalArea-table__col-1">
-								Заказ номер №79541512
-								<span>от 20 марта</span>
+								<div class="personalArea-table__img"><img src="img/ordering/img-1-min.png" alt=""></div>
 							</div>
-							<div class="personalArea-table__col personalArea-table__col-2">2</div>
-							<div class="personalArea-table__col personalArea-table__col-3">1526 руб.</div>
+							<div class="personalArea-table__col personalArea-table__col-2">Курага высший сорт</div>
+							<div class="personalArea-table__col personalArea-table__col-3">2</div>
 							<div class="personalArea-table__col personalArea-table__col-4">
-								<div class="personalArea-table__status">
-									Получен
-									<i class="hb-ico status-ico"></i>
-								</div>
+								1526 руб.
+								<a href="#" class="header-like">
+									<i class="hb-ico like-ico"></i>
+								</a>
 							</div>
 						</div>
+					</div>
+					<div class="personalArea-info">
+						<div class="personalArea-info__row">
+							<div class="personalArea-info__block">
+								<b>Комментарий к заказу</b>
+								<span>Санкт-Петербург, ул. ..</span>
+							</div>
+							<ul>
+								<li><b>Итого:</b>3052 руб.</li>
+								<li><b>Доставка:</b>250 руб.</li>
+							</ul>
+						</div>
+						<div class="personalArea-info__bottom">
+							<span>История заказов</span>
+						</div>
+					</div>
+					<div class="personalArea-table personalArea-table__3">
+						<div class="personalArea-table__row personalArea-table__top">
+							<div class="personalArea-table__col personalArea-table__col-1">Дата добавления</div>
+							<div class="personalArea-table__col personalArea-table__col-2">Статус</div>
+							<div class="personalArea-table__col personalArea-table__col-3">Комментарий</div>
+						</div>
+						<div class="personalArea-table__row">
+							<div class="personalArea-table__col personalArea-table__col-1">20 апреля 2021</div>
+							<div class="personalArea-table__col personalArea-table__col-2">В обработке</div>
+							<div class="personalArea-table__col personalArea-table__col-3">Нет комментариев</div>
+						</div>
+						<div class="personalArea-table__row">
+							<div class="personalArea-table__col personalArea-table__col-1">20 апреля 2021</div>
+							<div class="personalArea-table__col personalArea-table__col-2">В обработке</div>
+							<div class="personalArea-table__col personalArea-table__col-3">Нет комментариев</div>
+						</div>
+					</div>
+					<div class="personalArea-table__btn">
+						<a href="#" class="primary-btn primary-btn-second">Повторить заказ</a>
 					</div>
 					<div class="personalArea-mob">
 						<div class="personalArea-block">
