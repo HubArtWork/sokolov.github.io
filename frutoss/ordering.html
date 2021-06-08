@@ -17,353 +17,355 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
-	<!-- start header -->
-	<header class="header">
-		<div class="header-top">
-			<div class="wrapper">
-				<div class="header-workingHours">
-					<span>Пн.- Пт. с 8.00 до 19.00,</span>
-					<span>Сб, Вс. с 9:00 до 17:00.</span>
-				</div>
-				<a href="tel:+79602637070" class="header-phone">
-					<i class="hb-ico phone-ico"></i>
-					<span>+7 (960) 263-70-70</span>
-				</a>
-				<div class="header-bar"></div>
-			</div>
-		</div>
-		<div class="header-middle">
-			<div class="wrapper">
-				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
-				<div class="header-search">
-					<form action="">
-						<input type="text" name="text">
-						<button class="primary-btn">Поиск</button>
-					</form>
-				</div>
-				<div class="header-actions">
-					<a data-fancybox data-src="#modal-entrance" href="javascript:;" class="header-comeIn">
-						<span>Войти</span>
-						<i class="hb-ico user-ico"></i>
+	<div class="body-wrap">
+		<!-- start header -->
+		<header class="header">
+			<div class="header-top">
+				<div class="wrapper">
+					<div class="header-workingHours">
+						<span>Пн.- Пт. с 8.00 до 19.00,</span>
+						<span>Сб, Вс. с 9:00 до 17:00.</span>
+					</div>
+					<a href="tel:+79602637070" class="header-phone">
+						<i class="hb-ico phone-ico"></i>
+						<span>+7 (960) 263-70-70</span>
 					</a>
-					<a href="#" class="header-like">
-						<i class="hb-ico like-ico"></i>
-					</a>
-					<a href="#" class="hb-ico basket-ico"></a>
+					<div class="header-bar"></div>
 				</div>
 			</div>
-		</div>
-		<div class="header-bottom">
-			<div class="wrapper">
-				<ul class="header-list">
+			<div class="header-middle">
+				<div class="wrapper">
+					<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+					<div class="header-search">
+						<form action="">
+							<input type="text" name="text">
+							<button class="primary-btn">Поиск</button>
+						</form>
+					</div>
+					<div class="header-actions">
+						<a data-fancybox data-src="#modal-entrance" href="javascript:;" class="header-comeIn">
+							<span>Войти</span>
+							<i class="hb-ico user-ico"></i>
+						</a>
+						<a href="#" class="header-like">
+							<i class="hb-ico like-ico"></i>
+						</a>
+						<a href="#" class="hb-ico basket-ico"></a>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="wrapper">
+					<ul class="header-list">
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="mobMenu">
+			<div class="header-bar"></div>
+			<div class="mobMenu-wrap">
+				<div class="mobMenu-top">
+					<div class="mobMenu-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+				</div>
+				<ul class="mobMenu-menu">
+					<li class="drop">
+						<a href="#" class="drop-text">Каталог</a>
+						<ul>
+							<li><a href="#">Категория 1</a></li>
+							<li><a href="#">Категория 2</a></li>
+							<li><a href="#">Категория 3</a></li>
+							<li><a href="#">Категория 4</a></li>
+							<li><a href="#">Категория 5</a></li>
+							<li><a href="#">Категория 6</a></li>
+							<li><a href="#">Категория 7</a></li>
+							<li><a href="#">Категория 8</a></li>
+							<li><a href="#">Категория 9</a></li>
+							<li><a href="#">Категория 10</a></li>
+							<li><a href="#">Категория 11</a></li>
+							<li><a href="#">Категория 12</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Блог</a></li>
 					<li><a href="#">О нас</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
+				<div class="mobMenu-bottom">
+					<div>
+						<a href="tel:+79602637070" class="mobMenu-phone">+7 (960) 263-70-70</a>
+					</div>
+					<a href="#" class="hb-ico phone-ico"></a>
+				</div>
 			</div>
 		</div>
-	</header>
-	<div class="mobMenu">
-		<div class="header-bar"></div>
-		<div class="mobMenu-wrap">
-			<div class="mobMenu-top">
-				<div class="mobMenu-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+		<!-- end header -->
+		<!-- start ordering -->
+		<section class="ordering">
+			<div class="wrapper">
+				<h1 class="section-title">Оформление заказа</h1>
+				<form action="">
+					<div class="ordering-all">
+						<div class="ordering-block">
+							<div class="ordering-product">
+								<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
+								<div class="ordering-descr">
+									<span class="ordering-product__weight">1 кг</span>
+									<span class="ordering-product__name"><a href="#">Лукум с ароматом розы в белой шок.глазури с лепестками роз</a></span>
+								</div>
+								<div class="ordering-product__row">
+									<span class="ordering-product__price">500 руб.</span>
+									<div class="quantity">
+										<span class="quantity-minus">-</span>
+										<input type="text" value="1">
+										<span class="quantity-plus">+</span>
+									</div>
+								</div>
+								<i class="hb-ico close-ico"></i>
+							</div>
+							<div class="ordering-product">
+								<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
+								<div class="ordering-descr">
+									<span class="ordering-product__weight">1 кг</span>
+									<span class="ordering-product__name"><a href="#">Лукум с ароматом розы в белой шок.глазури с лепестками роз</a></span>
+								</div>
+								<div class="ordering-product__row">
+									<span class="ordering-product__price">500 руб.</span>
+									<div class="quantity">
+										<span class="quantity-minus">-</span>
+										<input type="text" value="1">
+										<span class="quantity-plus">+</span>
+									</div>
+								</div>
+								<i class="hb-ico close-ico"></i>
+							</div>
+						</div>
+						<div class="ordering-total">
+							<h2 class="section-title">Итог:</h2>
+							<span class="ordering-weight">Общий вес: <b>2 кг</b></span>
+							<div class="ordering-price">
+								<ul>
+									<li>Стоимость заказа: <b>1000 руб.</b></li>
+									<li>Доставка: <b>0 руб.</b></li>
+								</ul>
+								<p>Самовывоз <br>(после подтверждения заказа)</p>
+							</div>
+							<div class="ordering-total__bottom">
+								<span>Общая сумма:</span>
+								<b>1000 руб.</b>
+							</div>
+						</div>
+						<h2 class="section-title">Рекомендуем к заказу</h2>
+						<div class="ordering-slider swiper-container">
+							<div class="ordering-slider__wrapper swiper-wrapper">
+								<div class="ordering-slide swiper-slide">
+									<div class="ordering-wrap">
+										<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
+										<h3 class="ordering-name">Лукум с ароматом розы в белой шок.глазури с лепестками роз</h3>
+										<span class="ordering-value">500 руб.</span>
+									</div>
+								</div><!-- slide -->
+								<div class="ordering-slide swiper-slide">
+									<div class="ordering-wrap">
+										<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
+										<h3 class="ordering-name">22Лукум с ароматом розы в белой шок.глазури с лепестками роз</h3>
+										<span class="ordering-value">500 руб.</span>
+									</div>
+								</div><!-- slide -->
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+					<div class="ordering-row ordering-row__second">
+						<div class="ordering-col">
+							<div class="ordering-top">
+							  <h2 class="section-title">Способ доставки</h2>
+							  <a href="#" class="ordering-tarif">Зоны доставки и тарифы</a>
+							</div>
+							<div class="ordering-row">
+								<div class="ordering-way">
+									<div class="ordering-way__wrap">
+										<input type="radio" name="way" checked>
+										<div class="ordering-way__block">
+											<span>Самовывоз</span>
+											<p>после подтверждения вашего заказа</p>
+											<span>0 руб.</span>
+										</div>
+									</div>
+								</div><!-- way -->
+								<div class="ordering-way">
+									<div class="ordering-way__wrap">
+										<input type="radio" name="way">
+										<div class="ordering-way__block">
+											<span>Доставка по СПб</span>
+											<p>250 р. каждые следующие 20 кг.</p>
+											<span>250 руб.</span>
+										</div>
+									</div>
+								</div><!-- way -->
+								<div class="ordering-way">
+									<div class="ordering-way__wrap">
+										<input type="radio" name="way">
+										<div class="ordering-way__block">
+											<span>Доставка по ЛО</span>
+											<p>точную стоимость сообщит менеджер</p>
+											<span>от 250 руб.</span>
+										</div>
+									</div>
+								</div><!-- way -->
+								<div class="ordering-way">
+									<div class="ordering-way__wrap">
+										<input type="radio" name="way">
+										<div class="ordering-way__block">
+											<span>Доставка по РФ</span>
+											<p>Cогласно тарифному плану ТК «ПЭК»</p>
+											<span>от 0 руб.</span>
+										</div>
+									</div>
+								</div><!-- way -->
+							</div>
+						</div>
+						<div class="ordering-col">
+							<div class="ordering-top">
+							  <h2 class="section-title">Способ оплаты</h2>
+							</div>
+							<div class="ordering-row">
+								<div class="ordering-pay">
+									<div class="ordering-pay__wrap">
+										<input type="radio" name="pay" checked>
+										<div class="ordering-pay__block">
+											<span>Наличными</span>
+											<img src="img/pay/img-1.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="ordering-pay">
+									<div class="ordering-pay__wrap">
+										<input type="radio" name="pay">
+										<div class="ordering-pay__block">
+											<span>Переводом <br>на карту</span>
+											<img src="img/pay/img-2.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="ordering-pay">
+									<div class="ordering-pay__wrap">
+										<input type="radio" name="pay">
+										<div class="ordering-pay__block">
+											<span>Картой при получении</span>
+											<img src="img/pay/img-3.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ordering-form">
+						<div class="ordering-col">
+							<h2 class="section-title">Контактная информация</h2>
+							<div class="input-block input-block__row input-error">
+								<label for="r-1">Имя:<span>*</span></label>
+								<input id="r-1" type="text" name="text">
+								<span class="input-text">Обязательное поле</span>
+							</div>
+							<div class="input-block input-block__row">
+								<label for="r-2">Телефон:<span>*</span></label>
+								<input id="r-2" type="text" name="text" placeholder="+79110000000">
+							</div>
+							<div class="ordering-checkbox">
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<i class="checkbox-ico"></i>
+									<p>Стать постоянным клиентом</p>
+								</div>
+							</div>
+							<div class="input-block input-block__row">
+								<label for="r-3">Электронная почта:<span>*</span></label>
+								<input id="r-3" type="text" name="text" placeholder="example@yandex.ru">
+							</div>
+						</div>
+						<div class="ordering-col">
+							<div class="ordering-form__mob">
+								<h2 class="section-title">Комментарий к заказу:</h2>
+								<div class="input-block">
+									<textarea name="text"></textarea>
+								</div>
+							</div>
+							<div class="ordering-btn">
+							  <button class="primary-btn">Оформить заказ</button>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
-			<ul class="mobMenu-menu">
-				<li class="drop">
-					<a href="#" class="drop-text">Каталог</a>
-					<ul>
-						<li><a href="#">Категория 1</a></li>
-						<li><a href="#">Категория 2</a></li>
-						<li><a href="#">Категория 3</a></li>
-						<li><a href="#">Категория 4</a></li>
-						<li><a href="#">Категория 5</a></li>
-						<li><a href="#">Категория 6</a></li>
-						<li><a href="#">Категория 7</a></li>
-						<li><a href="#">Категория 8</a></li>
-						<li><a href="#">Категория 9</a></li>
-						<li><a href="#">Категория 10</a></li>
-						<li><a href="#">Категория 11</a></li>
-						<li><a href="#">Категория 12</a></li>
+		</section>
+		<!-- end ordering -->
+		<!-- start footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer-top">
+					<ul class="footer-mob">
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Блог</a></li>
 					</ul>
-				</li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<div class="mobMenu-bottom">
-				<div>
-					<a href="tel:+79602637070" class="mobMenu-phone">+7 (960) 263-70-70</a>
-				</div>
-				<a href="#" class="hb-ico phone-ico"></a>
-			</div>
-		</div>
-	</div>
-	<!-- end header -->
-	<!-- start ordering -->
-	<section class="ordering">
-		<div class="wrapper">
-			<h1 class="section-title">Оформление заказа</h1>
-			<form action="">
-				<div class="ordering-all">
-					<div class="ordering-block">
-						<div class="ordering-product">
-							<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
-							<div class="ordering-descr">
-								<span class="ordering-product__weight">1 кг</span>
-								<span class="ordering-product__name"><a href="#">Лукум с ароматом розы в белой шок.глазури с лепестками роз</a></span>
-							</div>
-							<div class="ordering-product__row">
-								<span class="ordering-product__price">500 руб.</span>
-								<div class="quantity">
-									<span class="quantity-minus">-</span>
-									<input type="text" value="1">
-									<span class="quantity-plus">+</span>
-								</div>
-							</div>
-							<i class="hb-ico close-ico"></i>
-						</div>
-						<div class="ordering-product">
-							<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
-							<div class="ordering-descr">
-								<span class="ordering-product__weight">1 кг</span>
-								<span class="ordering-product__name"><a href="#">Лукум с ароматом розы в белой шок.глазури с лепестками роз</a></span>
-							</div>
-							<div class="ordering-product__row">
-								<span class="ordering-product__price">500 руб.</span>
-								<div class="quantity">
-									<span class="quantity-minus">-</span>
-									<input type="text" value="1">
-									<span class="quantity-plus">+</span>
-								</div>
-							</div>
-							<i class="hb-ico close-ico"></i>
-						</div>
-					</div>
-					<div class="ordering-total">
-						<h2 class="section-title">Итог:</h2>
-						<span class="ordering-weight">Общий вес: <b>2 кг</b></span>
-						<div class="ordering-price">
+					<div class="footer-row">
+						<div class="footer-col">
+							<span class="footer-subtitle">Клиентам</span>
 							<ul>
-								<li>Стоимость заказа: <b>1000 руб.</b></li>
-								<li>Доставка: <b>0 руб.</b></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оптовые закупки</a></li>
+								<li><a href="#">Личный кабинет</a></li>
 							</ul>
-							<p>Самовывоз <br>(после подтверждения заказа)</p>
 						</div>
-						<div class="ordering-total__bottom">
-							<span>Общая сумма:</span>
-							<b>1000 руб.</b>
+						<div class="footer-col">
+							<span class="footer-subtitle">О нас</span>
+							<ul>
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Блог</a></li>
+							</ul>
 						</div>
-					</div>
-					<h2 class="section-title">Рекомендуем к заказу</h2>
-					<div class="ordering-slider swiper-container">
-						<div class="ordering-slider__wrapper swiper-wrapper">
-							<div class="ordering-slide swiper-slide">
-								<div class="ordering-wrap">
-									<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
-									<h3 class="ordering-name">Лукум с ароматом розы в белой шок.глазури с лепестками роз</h3>
-									<span class="ordering-value">500 руб.</span>
-								</div>
-							</div><!-- slide -->
-							<div class="ordering-slide swiper-slide">
-								<div class="ordering-wrap">
-									<div class="ordering-img"><img src="img/ordering/img-1-min.png" alt=""></div>
-									<h3 class="ordering-name">22Лукум с ароматом розы в белой шок.глазури с лепестками роз</h3>
-									<span class="ordering-value">500 руб.</span>
-								</div>
-							</div><!-- slide -->
+						<div class="footer-col">
+							<span class="footer-subtitle">Телефоны</span>
+							<ul>
+								<li><a href="tel:+79602637070">+7 (960) 263-70-70</a></li>
+								<li><a href="tel:+79602637070">+7 (960) 263-70-70</a></li>
+								<li><a href="tel:+79602637070">+7 (960) 263-70-70</a></li>
+							</ul>
 						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
-				</div>
-				<div class="ordering-row ordering-row__second">
-					<div class="ordering-col">
-						<div class="ordering-top">
-						  <h2 class="section-title">Способ доставки</h2>
-						  <a href="#" class="ordering-tarif">Зоны доставки и тарифы</a>
+						<div class="footer-col">
+							<span class="footer-subtitle">Адрес</span>
+							<p>г. Санкт-Петербург, <br>проспект Непокоренных, д.63, корп. 13</p>
 						</div>
-						<div class="ordering-row">
-							<div class="ordering-way">
-								<div class="ordering-way__wrap">
-									<input type="radio" name="way" checked>
-									<div class="ordering-way__block">
-										<span>Самовывоз</span>
-										<p>после подтверждения вашего заказа</p>
-										<span>0 руб.</span>
-									</div>
-								</div>
-							</div><!-- way -->
-							<div class="ordering-way">
-								<div class="ordering-way__wrap">
-									<input type="radio" name="way">
-									<div class="ordering-way__block">
-										<span>Доставка по СПб</span>
-										<p>250 р. каждые следующие 20 кг.</p>
-										<span>250 руб.</span>
-									</div>
-								</div>
-							</div><!-- way -->
-							<div class="ordering-way">
-								<div class="ordering-way__wrap">
-									<input type="radio" name="way">
-									<div class="ordering-way__block">
-										<span>Доставка по ЛО</span>
-										<p>точную стоимость сообщит менеджер</p>
-										<span>от 250 руб.</span>
-									</div>
-								</div>
-							</div><!-- way -->
-							<div class="ordering-way">
-								<div class="ordering-way__wrap">
-									<input type="radio" name="way">
-									<div class="ordering-way__block">
-										<span>Доставка по РФ</span>
-										<p>Cогласно тарифному плану ТК «ПЭК»</p>
-										<span>от 0 руб.</span>
-									</div>
-								</div>
-							</div><!-- way -->
+						<div class="footer-col">
+							<span class="footer-subtitle">E-mail</span>
+							<ul>
+								<li><a href="#">zakaz@frutoss.ru</a></li>
+							</ul>
 						</div>
-					</div>
-					<div class="ordering-col">
-						<div class="ordering-top">
-						  <h2 class="section-title">Способ оплаты</h2>
-						</div>
-						<div class="ordering-row">
-							<div class="ordering-pay">
-								<div class="ordering-pay__wrap">
-									<input type="radio" name="pay" checked>
-									<div class="ordering-pay__block">
-										<span>Наличными</span>
-										<img src="img/pay/img-1.svg" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="ordering-pay">
-								<div class="ordering-pay__wrap">
-									<input type="radio" name="pay">
-									<div class="ordering-pay__block">
-										<span>Переводом <br>на карту</span>
-										<img src="img/pay/img-2.svg" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="ordering-pay">
-								<div class="ordering-pay__wrap">
-									<input type="radio" name="pay">
-									<div class="ordering-pay__block">
-										<span>Картой при получении</span>
-										<img src="img/pay/img-3.svg" alt="">
-									</div>
-								</div>
-							</div>
+						<div class="footer-col footer-col__last">
+							<div class="footer-logo"><a href="#"><img src="img/logo-2-min.png" alt=""></a></div>
+							<span>Nuts and dried fruits</span>
+							<ul class="footer-social social">
+								<li><a href="#" class="hb-ico vk-ico"></a></li>
+								<li><a href="#" class="hb-ico instagram-ico"></a></li>
+								<li><a href="#" class="hb-ico youtube-ico"></a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="ordering-form">
-					<div class="ordering-col">
-						<h2 class="section-title">Контактная информация</h2>
-						<div class="input-block input-block__row input-error">
-							<label for="r-1">Имя:<span>*</span></label>
-							<input id="r-1" type="text" name="text">
-							<span class="input-text">Обязательное поле</span>
-						</div>
-						<div class="input-block input-block__row">
-							<label for="r-2">Телефон:<span>*</span></label>
-							<input id="r-2" type="text" name="text" placeholder="+79110000000">
-						</div>
-						<div class="ordering-checkbox">
-							<div class="checkbox">
-								<input type="checkbox" checked>
-								<i class="checkbox-ico"></i>
-								<p>Стать постоянным клиентом</p>
-							</div>
-						</div>
-						<div class="input-block input-block__row">
-							<label for="r-3">Электронная почта:<span>*</span></label>
-							<input id="r-3" type="text" name="text" placeholder="example@yandex.ru">
-						</div>
-					</div>
-					<div class="ordering-col">
-						<div class="ordering-form__mob">
-							<h2 class="section-title">Комментарий к заказу:</h2>
-							<div class="input-block">
-								<textarea name="text"></textarea>
-							</div>
-						</div>
-						<div class="ordering-btn">
-						  <button class="primary-btn">Оформить заказ</button>
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
-	</section>
-	<!-- end ordering -->
-	<!-- start footer -->
-	<footer class="footer">
-		<div class="wrapper">
-			<div class="footer-top">
-				<ul class="footer-mob">
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Блог</a></li>
-				</ul>
-				<div class="footer-row">
-					<div class="footer-col">
-						<span class="footer-subtitle">Клиентам</span>
-						<ul>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Оптовые закупки</a></li>
-							<li><a href="#">Личный кабинет</a></li>
-						</ul>
-					</div>
-					<div class="footer-col">
-						<span class="footer-subtitle">О нас</span>
-						<ul>
-							<li><a href="#">Компания</a></li>
-							<li><a href="#">Контакты</a></li>
-							<li><a href="#">Блог</a></li>
-						</ul>
-					</div>
-					<div class="footer-col">
-						<span class="footer-subtitle">Телефоны</span>
-						<ul>
-							<li><a href="tel:+79602637070">+7 (960) 263-70-70</a></li>
-							<li><a href="tel:+79602637070">+7 (960) 263-70-70</a></li>
-							<li><a href="tel:+79602637070">+7 (960) 263-70-70</a></li>
-						</ul>
-					</div>
-					<div class="footer-col">
-						<span class="footer-subtitle">Адрес</span>
-						<p>г. Санкт-Петербург, <br>проспект Непокоренных, д.63, корп. 13</p>
-					</div>
-					<div class="footer-col">
-						<span class="footer-subtitle">E-mail</span>
-						<ul>
-							<li><a href="#">zakaz@frutoss.ru</a></li>
-						</ul>
-					</div>
-					<div class="footer-col footer-col__last">
-						<div class="footer-logo"><a href="#"><img src="img/logo-2-min.png" alt=""></a></div>
-						<span>Nuts and dried fruits</span>
-						<ul class="footer-social social">
-							<li><a href="#" class="hb-ico vk-ico"></a></li>
-							<li><a href="#" class="hb-ico instagram-ico"></a></li>
-							<li><a href="#" class="hb-ico youtube-ico"></a></li>
-						</ul>
-					</div>
+				<div class="footer-bottom">
+					<p>© 2021 Frutoss. Информация на сайте не является публичной офертой (Ст. 437.2 ГК РФ).</p>
 				</div>
 			</div>
-			<div class="footer-bottom">
-				<p>© 2021 Frutoss. Информация на сайте не является публичной офертой (Ст. 437.2 ГК РФ).</p>
-			</div>
-		</div>
-	</footer>
-	<!-- end footer -->
+		</footer>
+		<!-- end footer -->
+	</div>
 	<!-- fancybox modal -->
 	<div style="display: none;" id="modal-entrance" class="modal">
 		<div class="modal-wrap">
