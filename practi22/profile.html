@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Home</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								Printables
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Online learning
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Test preparation
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Private tutoring
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="header-mob">
+					<a href="#" class="second-btn">Sign In</a>
+				</div>
+			</nav>
+			<div class="header-row">
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico like-ico"></i>
+						<span>15</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Favorite list
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico basket-ico"></i>
+						<span>3</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Shopping Cart
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="second-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start profile -->
+	<section class="profile" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="profile-top" style="background-image: url(img/profile/bg-1-min.png);"></div>
+		<div class="wrapper">
+			<div class="profile-row">
+				<div class="profile-sidebar">
+					<div class="profile-sidebar__top">
+						<div class="profile-sidebar__user" style="background-image: url(img/profile/user-min.jpg);">
+							<span class="profile-sidebar__num">1</span>
+							<a href="#" class="profile-sidebar__star"><i class="hb-ico star-ico-white"></i></a>
+						</div>
+						<span class="profile-sidebar__name">Carra Sykes</span>
+						<span class="profile-sidebar__status">Art Direction & Graphic Design</span>
+						<i class="hb-ico star-ico-4"></i>
+						<div class="profile-sidebar__locate">
+							<i class="hb-ico locate-ico"></i>
+							Pescara, Italy
+						</div>
+						<div class="profile-sidebar__btns">
+							<a href="#" class="primary-btn primary-btn__ico">
+								<i class="hb-ico mail-ico"></i>
+								Message
+							</a>
+							<a href="#" class="second-btn">Unsubscribe</a>
+							<div class="profile-sidebar__mob">
+								<a href="#" class="primary-btn">More info</a>
+							</div>
+						</div>
+					</div>
+					<div class="profile-sidebar__info">
+						<i class="hb-ico close-ico"></i>
+						<ul class="profile-sidebar__list">
+							<li>
+								Contributions
+								<span>234</span>
+							</li>
+							<li>
+								Followers
+								<span>45, 456</span>
+							</li>
+							<li>
+								Subscriptions
+								<span>135</span>
+							</li>
+							<li>
+								Downloads
+								<span>23, 453</span>
+							</li>
+						</ul>
+						<div class="profile-sidebar__block">
+							<span class="profile-sidebar__title">About me</span>
+							<p>Founded in 2007, Concept Store is a creative lab focused on communication and  packaging design. Our projects, combining strategy and graphic design ...</p>
+							<a href="#" class="read-more">
+								<span>Read more</span>
+							</a>
+						</div>
+						<span class="profile-sidebar__title">work experience</span>
+						<div class="profile-sidebar__block">
+							<span class="profile-sidebar__subtitle"><b>Art director -</b> HIDE Productions</span>
+							<div class="profile-sidebar__text">
+								<p>
+									<span>http://www.carra-skykes-adv.it</span>
+									May 2006 - Dec 2008
+								</p>
+							</div>
+						</div>
+						<div class="profile-sidebar__block">
+							<span class="profile-sidebar__subtitle"><b>Designer -</b> NETHER CORP</span>
+							<div class="profile-sidebar__text">
+								<p>
+									<span>http://www.carra-skykes-adv.it</span>
+									May 2006 - Dec 2008
+								</p>
+							</div>
+						</div>
+						<ul class="profile-sidebar__social">
+							<li><a href="#"><img src="img/profileSocial/fa-brands_behance-square.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/bxl-twitter.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/bxl-instagram-alt.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/bxl-facebook-square.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/bx_bxl-linkedin-square.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/dashicons_youtube.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/carbon_logo-pinterest.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/icomoon-free_google-plus2.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/brandico_tumblr-rect.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/profileSocial/fa-brands_dribbble-square.svg" alt=""></a></li>
+						</ul>
+						<a href="#" class="profile-sidebar__link">http://www.carra-skykes-adv.it</a>
+						<div class="profile-sidebar__bottom">
+							<p>REGISTRATION DATE: FEBRUARY 6, 2019</p>
+							<a href="#">Report user or content</a>
+						</div>
+					</div>
+				</div>
+				<div class="profile-content allTabs">
+					<ul class="profile-list payment-list tab-list">
+						<li><a href="#tab-1">Lessons</a></li>
+						<li><a href="#tab-2" class="active">Worksheet <span>(234)</span></a></li>
+					</ul>
+					<div class="tab tab-active" id="tab-1">
+						<div class="products-row row">
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="products-col col-sm-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="img/product-1-min.jpg" alt="">
+										<a href="#" class="hb-ico favorite-ico"></a>
+									</div>
+									<div class="product-info">
+										<div class="product-row">
+											<div>
+												<a href="#" class="product-title">Lorem ipsum dolor sit amet.</a>
+												<span class="product-name">by <a href="#">Kate Bee</a></span>
+											</div>
+											<i class="hb-ico star-ico star-ico-4"></i>
+										</div>
+										<div class="product-bottom">
+											<span class="product-price">$0.99</span>
+											<a href="#" class="hb-ico basketB-ico"></a>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end profile -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<span class="footer-subtitle">Social channels</span>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/bxl-twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-instagram-alt.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-facebook-square.svg" alt=""></a></li>
+				</ul>
+				<p>PractiThink © 2020 | All Rights Reserved</p>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col">
+					<span class="footer-subtitle">Useful Links</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Test your math</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Legal</span>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Support</span>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</div><!-- col -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox trigger -->
+	<!--<a data-options='{"touch" : false}'  data-fancybox data-src="#modal-wait" href="javascript:;" id="modal-trigger"></a>-->
+	<!-- fancybox youtube -->
+	<!--<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="link-youtube"></a>-->
+	<!-- fancybox modal -->
+	<!--<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn main-btn-second">fancybox</a>-->
+	<div style="display: none;" id="modal-test" class="modal modal-transparent">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

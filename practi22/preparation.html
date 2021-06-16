@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Home</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								Printables
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Online learning
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Test preparation
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Private tutoring
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="header-mob">
+					<a href="#" class="second-btn">Sign In</a>
+				</div>
+			</nav>
+			<div class="header-row">
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico like-ico"></i>
+						<span>15</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Favorite list
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico basket-ico"></i>
+						<span>3</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Shopping Cart
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="second-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start info -->
+	<section class="info" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="info-wrap">
+				<div class="info-bg" style="background-image: url(img/info-bg.svg);"></div>
+				<div class="info-img"><img src="img/info-7.svg" alt=""></div>
+				<div class="info-info">
+					<h3 class="info-title">Math</h3>
+					<p>Gain fluency and confidence in math! PractiThink helps students master essential skills at their own pace through fun and interactive questions, built in support, and motivating awards.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+	<!-- start preparation -->
+	<section class="preparation allTabs">
+		<div class="wrapper">
+			<div class="preparation-btns row tab-list" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#tab-1" class="second-btn active">Math</a>
+				</div><!-- col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#tab-2" class="second-btn">English</a>
+				</div><!-- col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#tab-3" class="second-btn">Social Studies</a>
+				</div><!-- col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#tab-4" class="second-btn">Science</a>
+				</div><!-- col -->
+			</div>
+			<div class="tab tab-active" id="tab-1">
+				<div class="preparation-row row">
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Pre-K</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Learn to count - up to 3</li>
+								<li>Count using stickers - up to 5</li>
+								<li>Name the shape</li>
+								<li>Above and below</li>
+								<li>Classify and sort by shape</li>
+								<li>Shape patterns</li>
+								<li> Pennies and nickels</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Kindergarten</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Skip-count by tens</li>
+								<li>Squares</li>
+								<li>Subtract - numbers up to 10</li>
+								<li>Make a number using addition - sums up to 5</li>
+								<li>Counting on the hundred chart</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Grade 1</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Addition and subtraction word problems - up to 20</li>
+								<li>Place value models up to 20</li>
+								<li>Subtract multiples of 10</li>
+								<li>Select three-dimensional shapes</li>
+								<li>Equal parts - halves and fourths</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Grade 2</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Add and subtract numbers up to 100</li>
+								<li>Measure using an inch ruler</li>
+								<li>Identify a digit up to the hundreds place</li>
+								<li>Create line plots</li>
+								<li>Number lines - up to 100</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Grade 3</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Multiplication tables up to 10</li>
+								<li>Divide by counting equal groups</li>
+								<li>Graph fractions on number lines</li>
+								<li>Model decimals and fractions</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Grade 4</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Decompose fractions into unit fractions</li>
+								<li>Multiply a 2-digit number by a larger number</li>
+								<li>Model decimals and fractions</li>
+								<li>Multi-step word problems</li>
+								<li>Classify triangles</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Grade 5</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Graph points on a coordinate plane</li>
+								<li>Evaluate numerical expressions</li>
+								<li>Add fractions with unlike denominators</li>
+								<li>Volume of rectangular prisms made of unit cubes</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-wrap">
+							<span class="preparation-left">Grade 6</span>
+							<span class="preparation-subtitle">Topics</span>
+							<ul>
+								<li>Graph inequalities on number lines</li>
+								<li>Identify equivalent expressions</li>
+								<li>Understanding integers</li>
+								<li>Ratios and rates: word problems</li>
+								<li>Graph triangles and quadrilaterals</li>
+							</ul>
+							<div class="preparation-bottom">
+								<a href="#" class="seeAll">
+									See all
+									<i class="hb-ico see-all"></i>
+								</a>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Seventh grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Eighth grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+			<div class="tab" id="tab-2">
+				<div class="preparation-row row">
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Eighth grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+			<div class="tab" id="tab-3">
+				<div class="preparation-row row">
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Eighth grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Eighth grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+			<div class="tab" id="tab-4">
+				<div class="preparation-row row">
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Eighth grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Eighth grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+					<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<div class="preparation-item">
+							<div class="preparation-img"><img src="img/preparation-1.svg" alt=""></div>
+							<span class="preparation-item__title">Eighth grade</span>
+							<p>Coming soon</p>
+							<a href="#" class="second-btn second-btn__big">
+								<i class="hb-ico bell-ico"></i>
+								Notify me
+							</a>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end preparation -->
+	<!-- start recommend -->
+	<section class="recommend" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="products-block">
+				<div class="products-top">
+					<h2 class="section-title">FREE Printables</h2>
+					<a href="#" class="seeAll">
+						See all
+						<i class="hb-ico see-all"></i>
+					</a>
+				</div>
+				<div class="products-slider swiper-container">
+					<div class="products-slider__wrapper swiper-wrapper">
+						<div class="products-col swiper-slide">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-1-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="products-col swiper-slide">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-2-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="products-col swiper-slide">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-3-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="products-col swiper-slide">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-3-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="products-col swiper-slide">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-3-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div><!-- block -->
+		</div>
+	</section>
+	<!-- end recommend -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<span class="footer-subtitle">Social channels</span>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/bxl-twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-instagram-alt.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-facebook-square.svg" alt=""></a></li>
+				</ul>
+				<p>PractiThink © 2020 | All Rights Reserved</p>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col">
+					<span class="footer-subtitle">Useful Links</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Test your math</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Legal</span>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Support</span>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</div><!-- col -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox trigger -->
+	<!--<a data-options='{"touch" : false}'  data-fancybox data-src="#modal-wait" href="javascript:;" id="modal-trigger"></a>-->
+	<!-- fancybox youtube -->
+	<!--<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="link-youtube"></a>-->
+	<!-- fancybox modal -->
+	<!--<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn main-btn-second">fancybox</a>-->
+	<div style="display: none;" id="modal-test" class="modal modal-transparent">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
