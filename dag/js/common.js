@@ -48,9 +48,10 @@ var swiper = new Swiper(".pressCenter-slider", {
   slidesPerView: 1,
   watchSlidesVisibility: true,
   watchOverflow: true,
+  spaceBetween: 30,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.pressCenter-top .swiper-button-next',
+    prevEl: '.pressCenter-top .swiper-button-prev',
   },
 });
 

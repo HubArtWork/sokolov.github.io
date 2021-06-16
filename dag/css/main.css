@@ -1305,7 +1305,14 @@ p.text-small {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 199px;
-  margin-bottom: 49px; }
+  margin-bottom: 49px;
+  position: relative; }
+  .pressCenter-top .swiper-button-prev, .pressCenter-top .swiper-button-next {
+    top: 10px; }
+  .pressCenter-top .swiper-button-prev {
+    right: 66px; }
+  .pressCenter-top .swiper-button-next {
+    right: 0; }
   .pressCenter-top__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1335,21 +1342,9 @@ p.text-small {
           flex-flow: row wrap;
   margin: 0 -15px; }
 
-.pressCenter-slider {
-  overflow: visible; }
-  .pressCenter-slider .swiper-button-prev, .pressCenter-slider .swiper-button-next {
-    top: -110px; }
-  .pressCenter-slider .swiper-button-prev {
-    right: 66px; }
-  .pressCenter-slider .swiper-button-next {
-    right: 0; }
-
-.pressCenter-slide {
-  opacity: 0;
-  visibility: hidden; }
-  .pressCenter-slide.swiper-slide-visible {
-    opacity: 1;
-    visibility: visible; }
+.pressCenter-slide.swiper-slide-visible {
+  opacity: 1;
+  visibility: visible; }
 
 .pressCenter-col {
   width: 33.333%;
@@ -1527,6 +1522,8 @@ p.text-small {
     margin-bottom: 16px; }
     .pressCenter-top__row {
       display: none; }
+    .pressCenter-top .swiper-button-prev, .pressCenter-top .swiper-button-next {
+      display: none !important; }
   .pressCenter-slider .swiper-button-prev, .pressCenter-slider .swiper-button-next {
     top: -55px; }
   .pressCenter-slider .swiper-button-prev {
