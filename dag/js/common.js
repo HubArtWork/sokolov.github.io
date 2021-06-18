@@ -14,8 +14,8 @@ var swiper = new Swiper('.post-slider', {
   spaceBetween: 30,
   slideToClickedSlide: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.post .swiper-button-next',
+    prevEl: '.post .swiper-button-prev',
   },
   pagination: {
     el: ".swiper-pagination",

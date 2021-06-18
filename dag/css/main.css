@@ -1008,6 +1008,21 @@ p.text-small {
         margin-right: 0; }
       .main-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: white; }
+  .main-slide {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding-bottom: 90%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .main-slide.swiper-slide-visible.swiper-slide-active {
+      opacity: 1;
+      visibility: visible; }
 
 .link-about {
   display: inline-block;
