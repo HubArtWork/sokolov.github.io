@@ -2,15 +2,12 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>title</title>
+	<title>CI-CD - Order of Magnitude</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<!--<meta property="og:image" content="path/to/image.jpg">-->
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -20,20 +17,24 @@
 	<!-- start header -->
 	<header class="header">
 		<div class="wrapper">
+			<div class="header-bar"><span></span></div>
 			<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
-			<ul class="header-list">
-				<li class="drop">
-					<a href="#" class="drop-text">Услуги</a>
-					<ul class="drop-list">
-						<li><a href="#">CI/CD</a></li>
-						<li><a href="#">Мониторинг</a></li>
-						<li><a href="#">Проектирование</a></li>
-						<li><a href="#">Миграция</a></li>
-					</ul>
-				</li>
-				<li><a href="#">О компании</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
+			<div class="header-menu">
+				<ul class="header-list">
+					<li class="drop drop-menu">
+						<a href="#" class="drop-text">Услуги</a>
+						<ul class="drop-list">
+							<li><a href="#">CI/CD</a></li>
+							<li><a href="#">Мониторинг</a></li>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Миграция</a></li>
+						</ul>
+					</li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li class="header-mob"><a href="#">Вакансии</a></li>
+				</ul>
+			</div>
 			<div class="header-actions">
 				<div class="drop drop-lang">
 					<div class="drop-text">En</div>
@@ -46,6 +47,7 @@
 			</div>
 		</div>
 	</header>
+	<div class="header-bg"></div>
 	<!-- end header -->
 	<!-- start main -->
 	<section class="main main-2">

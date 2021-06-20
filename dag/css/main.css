@@ -1857,6 +1857,11 @@ p.text-small {
       top: -66px; }
       .page-bg__second img, .page-bg__second svg {
         max-width: 131px; }
+    .page-bg__big {
+      top: -110px;
+      right: -68px; }
+      .page-bg__big img, .page-bg__big svg {
+        max-width: 418px; }
   .page-top {
     display: -webkit-box;
     display: -webkit-flex;
