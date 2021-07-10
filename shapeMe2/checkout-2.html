@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+				<div class="header-timer">
+					<div class="header-descr">
+						<b>Remaining time</b>
+						<span>to order for upcoming delivery:</span>
+					</div>
+					<div class="header-time">
+						<div>
+							<b>4</b>
+							<span>Days</span>
+						</div>
+						<div>
+							<b>12</b>
+							<span>Hours</span>
+						</div>
+						<div>
+							<b>02</b>
+							<span>Min</span>
+						</div>
+						<div>
+							<b>15</b>
+							<span>Sec</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<div class="header-row">
+					<div class="header-menu">
+						<ul class="header-list">
+							<li class="drop">
+								<a href="#" class="drop-text">Menu</a>
+								<ul class="drop-list">
+									<li><a href="#">À la carte</a></li>
+									<li><a href="#">Meal packs</a></li>
+									<li><a href="#">Subscription</a></li>
+									<li><a href="#">Custom meal bulder</a></li>
+								</ul>
+							</li>
+							<li><a href="#">How it works</a></li>
+							<li><a href="#">Custom plans</a></li>
+							<li><a href="#">Ambassadors</a></li>
+							<li><a href="#">Member benefits</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+						<div class="header-mob">
+							<span class="header-subtitle">Find us in social media</span>
+							<ul class="social">
+								<li><a href="#" class="youtube-ico"></a></li>
+								<li><a href="#" class="instagram-ico"></a></li>
+								<li><a href="#" class="facebook-ico"></a></li>
+							</ul>
+							<a href="#" class="header-phone">1-833-393-2665</a>
+						</div>
+					</div>
+					<div class="header-actions">
+						<a href="#" class="header-user"></a>
+						<a href="#" class="header-basket"><b>1</b></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bar"><span></span></div>
+	</header>
+	<!-- end header -->
+	<!-- start checkout -->
+	<section class="page checkout">
+		<div class="wrapper">
+			<ul class="breadCrumbs">
+				<li><a href="#">Main page</a></li>
+				<li><a href="#">Shopping cart</a></li>
+				<li>Checkout</li>
+			</ul>
+			<div class="checkout-block">
+				<h1 class="page-title">Checkout</h1>
+				<div class="checkout-wrap inputs-big">
+					<form action="">
+						<span class="input-label">Personal info</span>
+						<div class="input-row">
+							<div class="input-block input-50">
+								<input type="text" name="name" placeholder="Full name">
+							</div>
+							<div class="input-block input-50">
+								<input type="email" name="email" placeholder="Email">
+							</div>
+						</div>
+						<span class="input-label">Choose your preferences</span>
+						<div class="input-row">
+							<div class="input-block input-50">
+								<div class="radio">
+									<input type="radio" name="preferences">
+									<div class="radio-wrap">
+										<i class="radio-ico"></i>
+										<p>Delivery</p>
+									</div>
+								</div>
+							</div>
+							<div class="input-block input-50">
+								<div class="radio">
+									<input type="radio" name="preferences" checked>
+									<div class="radio-wrap">
+										<i class="radio-ico"></i>
+										<p>Pick up</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<span class="input-label">Pickup location</span>
+						<div class="input-block">
+							<input type="text" name="text" value="711 Boulevard du Curé-Labelle, Laval, QC H7V 2T8">
+						</div>
+						<span class="input-label">Add a note to your order:</span>
+						<div class="input-block">
+							<textarea name="text" placeholder="For example: «Please call when delivered»"></textarea>
+						</div>
+						<span class="input-label">Discount code</span>
+						<div class="input-block">
+							<div class="input-wrap">
+							  <input type="text" name="text" placeholder="Code">
+							  <span class="input-apply">Apply</span>
+							</div>
+						</div>
+						<span class="input-label">Payment methods</span>
+						<div class="choose payments">
+							<div class="choose-col">
+								<div class="choose-wrap">
+									<input type="radio" name="payment" checked>
+									<span class="choose-label">Bank card</span>
+								</div>
+							</div><!-- col -->
+							<div class="choose-col">
+								<div class="choose-wrap">
+									<input type="radio" name="payment">
+									<span class="choose-label"><img src="img/payments/img-1.svg" alt=""></span>
+								</div>
+							</div><!-- col -->
+							<div class="choose-col">
+								<div class="choose-wrap">
+									<input type="radio" name="payment">
+									<span class="choose-label"><img src="img/payments/img-2.svg" alt=""></span>
+								</div>
+							</div><!-- col -->
+						</div>
+						<div class="checkout-hr"></div>
+						<div class="checkout-info">
+							<ul>
+								<li>
+									<span>Subtotal</span>
+									<b>$215</b>
+								</li>
+								<li>
+									<span>Shipping</span>
+									<b>$10</b>
+								</li>
+								<li>
+									<span>
+										Membership discounts
+										<div class="tooltip tooltip-big">
+											<div class="tooltip-ico"></div>
+											<div class="tooltip-drop">
+												<div class="tooltip-title">Discount programm</div>
+												<p>Couple words about membership discounts to show how popup will look like.</p>
+												<a href="#" class="show-more">Got it</a>
+											</div>
+										</div>
+									</span>
+									<b>10%</b>
+								</li>
+								<li>
+									<span>TPS (5%)</span>
+									<b>$0,0</b>
+								</li>
+								<li>
+									<span>TVQ (9.975%)</span>
+									<b>$0,0</b>
+								</li>
+							</ul>
+						</div>
+						<div class="checkout-total">
+							<span>Total</span>
+							<b>$235,99</b>
+						</div>
+						<div class="buttons-space">
+							<a href="#" class="border-btn back-btn">Back to cart</a>
+							<a href="#" class="second-btn">Purchase</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end checkout -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<ul class="footer-list">
+					<li><a href="#">How it works</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">F.A.Q.</a></li>
+				</ul>
+				<a href="#" class="footer-email">info@shapeme.ca</a>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="footer-bottom">
+				<div class="footer-row">
+					<p>© 2021 All rights reserved.</p>
+					<a href="#">Privacy policy</a>
+				</div>
+				<div class="footer-social">
+					<span>Find us in social media</span>
+					<ul class="social">
+						<li><a href="#" class="tik-tok-ico"></a></li>
+						<li><a href="#" class="instagram-ico"></a></li>
+						<li><a href="#" class="facebook-ico"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
