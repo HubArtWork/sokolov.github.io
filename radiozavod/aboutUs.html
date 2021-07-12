@@ -15,9 +15,14 @@
 </head>
 <body>
 	<!-- start header -->
-	<header class="header">
+	<header class="header header-second">
 		<div class="wrapper">
-			<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<div class="header-logo"><a href="#">
+				<picture>
+				 	<source srcset="img/logo-white.svg" media="(min-width: 901px)">
+				 	<img src="img/logo.svg" alt="MDN">
+				</picture>
+			</a></div>
 			<div class="header-row">
 				<div class="header-menu">
 					<div class="header-wrap">
@@ -70,146 +75,24 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<!-- start page -->
-	<section class="page">
-		<div class="wrapper">
-			<div class="page-main" style="background-image: url(img/page/bg-1-min.jpg);">
-				<h1 class="page-title">Охрана труда</h1>
+	<!-- start aboutUs -->
+	<section class="aboutUs">
+		<div class="aboutUs-main" style="background-image: url(img/aboutUs/bg-1-min.jpg);">
+			<div class="wrapper">
+				<h1 class="page-title">История завода</h1>
 			</div>
 		</div>
-	</section>
-	<!-- end page -->
-	<!-- start productivity -->
-	<section class="productivity">
-		<div class="productivity-info">
+		<div class="aboutUs-content">
 			<div class="wrapper">
-				<h2 class="page-tit">В 2019 году руководство предприятия приняло решение об участии в национальном проекте «Производительность труда».</h2>
-				<p>Проект рассчитан на три года, основная цель — повышение производительности труда на <b>30%</b>. В 2020 году начался первый этап реализации проекта на предприятии, включивший работы по организации эталонного участка в заготовительном производстве.</p>
-			</div>
-		</div>
-		<div class="productivity-analytics">
-			<div class="wrapper">
-				<h3 class="productivity-title">Проделана большая аналитическая работа:</h3>
-				<div class="productivity-row">
-					<div class="productivity-item">
-						<p>определены границы процесса</p>
-					</div>
-					<div class="productivity-item">
-						<p>составлены карты потока создания ценности текущего, идеального и целевого состояния</p>
-					</div>
-					<div class="productivity-item">
-						<p>проведен анализ показателей процесса, видов потерь</p>
-					</div>
-				</div>
-				<div class="productivity-analytics__info">
-					<p>По итогам анализа был разработан комплекс мероприятий, включающий внедрение различных инструментов бережливого производства. В их числе SMED (быстрая переналадка), TPM (всеобщее обслуживание оборудования), стандартизация, визуализация и др.</p>
-				</div>
-			</div>
-		</div>
-		<div class="productivity-statistic">
-			<div class="wrapper">
-				<h3 class="productivity-title">В результате успешно реализованного комплекса мероприятий были достигнуты следующие ключевые показатели:</h3>
-				<div class="productivity-row">
-					<div class="productivity-col">
-						<div class="productivity-num">
-							<i>на</i>
-							<span>7%</span>
-						</div>
-						<p>— выросло выполнение плана по номенклатуре</p>
-					</div>
-					<div class="productivity-col">
-						<div class="productivity-num">
-							<i>на</i>
-							<span>12,6%</span>
-						</div>
-						<p>— увеличилась выработка</p>
-					</div>
-					<div class="productivity-col">
-						<div class="productivity-num">
-							<i>на</i>
-							<span>18,7%</span>
-						</div>
-						<p>— снизилось время протекания процесса</p>
-					</div>
-					<div class="productivity-col">
-						<div class="productivity-num">
-							<i>на</i>
-							<span>12%</span>
-						</div>
-						<p>— в среднем сократилось время переналадки</p>
-					</div>
+				<div class="aboutUs-all">
+					<div class="aboutUs-row aboutUs-row__1">
+						
+					</div><!-- row -->
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end productivity -->
-	<!-- start idea -->
-	<section class="idea">
-		<div class="idea-main">
-			<div class="wrapper">
-				<h2 class="idea-title"><b>Идея проекта</b> — использовать творческий потенциал персонала, найти ключевые причины проблемных областей в основных бизнес-процессах предприятия и совместными усилиями устранить их, повысив эффективность</h2>
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="idea-row">
-				<div class="idea-wrap"><div class="idea-img" style="background-image: url(img/idea/idea-min.jpg);"></div></div>
-				<div class="idea-info">
-					<h3 class="idea-subtitle">На следующем этапе реализации национального проекта запланирован комплекс проектов, направленных на овышение производительности труда на <b>30%</b> к 2023 году</h3>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end idea -->
-	<!-- start news -->
-	<section class="news nationalProject">
-		<div class="wrapper">
-			<h2 class="main-title">Реализация нацпроекта</h2>
-			<div class="news-all">
-				<div class="news-slider swiper-container" id="news-slider">
-					<div class="news-slider__wrapper swiper-wrapper">
-						<div class="post swiper-slide">
-							<div class="post-wrap">
-								<a href="#" class="post-img" style="background-image: url(img/post/img-1-min.jpg);"></a>
-								<span class="post-date">28.02.2021</span>
-								<h3 class="post-name"><a href="#">Повышаем производительность производительность</a></h3>
-								<p>Рязанский радиозавод участвует в национальном проекте «Повышение производительности труда и поддержка занятости» с 2020 года.</p>
-							</div>
-						</div><!-- slide -->
-						<div class="post swiper-slide">
-							<div class="post-wrap">
-								<a href="#" class="post-img" style="background-image: url(img/post/img-2-min.jpg);"></a>
-								<span class="post-date">25.02.2021</span>
-								<h3 class="post-name"><a href="#">Профсоюзная конференция</a></h3>
-								<p>Рязанский радиозавод участвует в национальном проекте «Повышение производительности труда...</p>
-							</div>
-						</div><!-- slide -->
-						<div class="post swiper-slide">
-							<div class="post-wrap">
-								<a href="#" class="post-img" style="background-image: url(img/post/img-3-min.jpg);"></a>
-								<span class="post-date">12.10.2020</span>
-								<h3 class="post-name"><a href="#">Реализация проекта</a></h3>
-								<p>29 января руководитель Регионального центра компетенций (РЦК) Оксана Любимова...</p>
-							</div>
-						</div><!-- slide -->
-						<div class="post swiper-slide">
-							<div class="post-wrap">
-								<a href="#" class="post-img" style="background-image: url(img/post/img-3-min.jpg);"></a>
-								<span class="post-date">12.10.2020</span>
-								<h3 class="post-name"><a href="#">Реализация проекта</a></h3>
-								<p>29 января руководитель Регионального центра компетенций (РЦК) Оксана Любимова...</p>
-							</div>
-						</div><!-- slide -->
-					</div>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-			</div>
-			<div class="news-mob">
-				<a href="#" class="primary-btn">Читать далее</a>
-			</div>
-		</div>
-	</section>
-	<!-- end news -->
+	<!-- end aboutUs -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
