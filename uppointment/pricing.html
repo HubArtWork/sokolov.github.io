@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
 	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link href = "https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel = "stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -100,25 +101,20 @@
 							<div class="pricing-selects">
 								<div class="input-block">
 									<select name="product" class="select-main">
-										<option value="product-1">Main product</option>
-										<option value="product-2">product-2</option>
-										<option value="product-3">product-3</option>
-										<option value="product-4">product-4</option>
-										<option value="product-5">product-5</option>
+										<option value="product-1">email marketing and automation</option>
+										<option value="product-2">appointment scheduling </option>
+										<option value="product-3">web chat and chatbot</option>
+										<option value="product-4">web forns and applications (pdf)</option>
 									</select>
 								</div>
-								<div class="input-block">
-									<select name="product" class="select-second">
-										<option value="product-1" selected="true" disabled="disabled">Additional products (optional)</option>
-										<option value="product-1">product-1</option>
-										<option value="product-2">product-2</option>
-										<option value="product-3">product-3</option>
-										<option value="product-4">product-4</option>
-										<option value="product-5">product-5</option>
-									</select>
-								</div>
+								<select class="select-second" multiple>
+									<option value="product-1">email marketing and automation</option>
+									<option value="product-2">appointment scheduling </option>
+									<option value="product-3">web chat and chatbot</option>
+									<option value="product-4">web forns and applications (pdf)</option>
+								</select>
 							</div>
-							<ul>
+							<ul class="pricing-list">
 								<li>Single user</li>
 								<li>Up to 150 clients</li>
 								<li>Professional invoicing</li>
@@ -137,25 +133,20 @@
 							<div class="pricing-selects">
 								<div class="input-block">
 									<select name="product" class="select-main">
-										<option value="product-1">Email compaigns</option>
-										<option value="product-2">product-2</option>
-										<option value="product-3">product-3</option>
-										<option value="product-4">product-4</option>
-										<option value="product-5">product-5</option>
+										<option value="product-1">email marketing and automation</option>
+										<option value="product-2">appointment scheduling </option>
+										<option value="product-3">web chat and chatbot</option>
+										<option value="product-4">web forns and applications (pdf)</option>
 									</select>
 								</div>
-								<div class="input-block">
-									<select name="product" class="select-second">
-										<option value="product-1" selected="true" disabled="disabled">Additional products (optional)</option>
-										<option value="product-1">product-1</option>
-										<option value="product-2">product-2</option>
-										<option value="product-3">product-3</option>
-										<option value="product-4">product-4</option>
-										<option value="product-5">product-5</option>
-									</select>
-								</div>
+								<select class="select-second" multiple>
+									<option value="product-1">email marketing and automation</option>
+									<option value="product-2">appointment scheduling </option>
+									<option value="product-3">web chat and chatbot</option>
+									<option value="product-4">web forns and applications (pdf)</option>
+								</select>
 							</div>
-							<ul>
+							<ul class="pricing-list">
 								<li>Up to 15 users</li>
 								<li>Up to 500 clients</li>
 							</ul>
@@ -176,7 +167,7 @@
 						<div class="pricing-info">
 							<span class="pricing-title">Unlimited</span>
 							<span class="pricing-price">$<b id="range-2-text">99</b><i>/  month</i></span>
-							<ul>
+							<ul class="pricing-list">
 								<li>Unlimited user</li>
 								<li>Unlimited clients</li>
 								<li>Unlimited services</li>
@@ -483,6 +474,7 @@
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 </body>
 </html>
