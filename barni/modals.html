@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8">
+  <title>Личный кабинет</title><!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <ul class="popup-btnsList">
+    <li><a class="pop-op" href="#!" data-popup="signIn">Вход</a></li>
+    <li><a class="pop-op" href="#!" data-popup="signUp">Регистрация</a></li>
+    <li><a class="pop-op" href="#!" data-popup="loadingCheck">Загрузка чека</a></li>
+    <li><a class="pop-op" href="#!" data-popup="loadingCheck2">Загрузка чека 2</a></li>
+    <!--<li><a class="pop-op" href="#!" data-popup="checkDeclined">Чек отклонен</a></li>
+    <li><a class="pop-op" href="#!" data-popup="checkLoaded">Чек загружен</a></li>-->
+    <li><a class="pop-op" href="#!" data-popup="signUpPassed">регистрация пройдена</a></li>
+    <li><a class="pop-op" href="#!" data-popup="address">Адрес</a></li>
+    <li><a class="pop-op" href="#!" data-popup="thanks">Спасибо</a></li>
+    <li><a class="pop-op" href="#!" data-popup="checks">Ваши данные</a></li>
+    <li><a class="pop-op" href="#!" data-popup="checks">Получить</a></li>
+  </ul>
+  <!-- signIn -->
+  <div class="popup" id="signIn">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="input-text">Неверный логин или пароль</div>
+        <div class="popup__title">Вход</div>
+        <form>
+          <div class="input-block">
+            <input type="email" name="email" placeholder="Ваше E-mail" required>
+          </div>
+          <div class="input-block">
+            <div class="input-wrap">
+              <input type="password" name="password" placeholder="Ваш пароль" required>
+              <a href="#!" data-popup="checks" class="input-forgot pop-op">Забыли пароль?</a>
+            </div>
+          </div>
+          <button class="btn">Вход</button>
+          <div class="popup-info">
+            <p>Если вы впервые на сайте, то Вам необходимо</p>
+            <a href="#!" data-popup="signUp" class="pop-op popup-link">зарегистрироваться</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- signUp -->
+  <div class="popup popup-signUp" id="signUp">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="input-text">Неверный логин или пароль</div>
+        <div class="popup__title">регистрация</div>
+        <form>
+          <div class="input-block">
+            <input type="text" name="text" placeholder="Ваше ФИО" required>
+          </div>
+          <div class="input-block">
+            <input type="text" name="email" placeholder="Ваш E-mail" required>
+          </div>
+          <div class="input-block">
+            <input type="text" name="tel" placeholder="Ваш телефон" required>
+          </div>
+          <div class="popup-checkbox">
+            <div class="checkbox">
+              <input type="checkbox" required>
+              <i class="checkbox-ico"></i>
+              <p>Я согласен с <a href="#">Правилами акции</a></p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" required checked>
+              <i class="checkbox-ico"></i>
+              <p>Я даю свое <a href="#">согласие</a> на обработку моих персональных данных в соответствии с Правилами акции и <a href="#">Положением об организации обработки ПДн в ООО «Мон’дэлис Русь».</a></p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" required checked>
+              <i class="checkbox-ico"></i>
+              <p>Я согласен получать рассылки по акциям Mondelez</p>
+            </div>
+          </div>
+          <div class="popup-bottom">
+            <button class="btn">Регистрация</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- loadingCheck -->
+  <div class="popup popup-loadingCheck" id="loadingCheck">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="popup__title">Загрузка чека</div>
+        <form>
+          <ul class="popup-list">
+            <li>1. Нажмите на кнопку «Загрузить чек» и сделайте фото чека.  </li>
+            <li>2. Если чек длинный, сделайте несколько последовательных фото.</li>
+            <li>3. Если на чеке есть QR-код, сделайте фото отдельным кадром.</li>
+            <li>4. Если фото окажется плохого качества, чек принят не будет. </li>
+          </ul>
+          <div class="popup-bottom">
+            <div class="file">
+              <input type="file">
+              <button class="btn">Загрузить фото</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- loadingCheck2 -->
+  <div class="popup popup-loadingCheck" id="loadingCheck2">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="popup__title">Загрузка чека</div>
+        <form>
+          <div class="check-img"><img src="img/check-min.png" alt=""></div>
+          <div class="check-buttons">
+            <div class="file">
+              <input type="file">
+              <button class="btn">еще одна часть</button>
+            </div>
+            <button class="btn">на модерацию</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- signUpPassed -->
+  <div class="popup popup-signUpPassed" id="signUpPassed">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="popup__title">регистрация пройдена</div>
+        <form>
+          <p>Пароль для входа на сайт отправлен на email, указанный при регистрации.</p>
+          <div class="js-close-popup">
+            <button class="btn">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- address -->
+  <div class="popup popup-address" id="address">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="input-text">Неверный логин или пароль</div>
+        <div class="popup__title">Адрес</div>
+        <div class="popup-text">Оставьте ваш адрес для получения приза</div>
+        <form>
+          <div class="input-block">
+            <input type="text" name="text" placeholder="Фамилия" required>
+          </div>
+          <div class="input-block">
+            <input type="text" name="text" placeholder="Имя" required>
+          </div>
+          <div class="input-block">
+            <input type="text" name="text" placeholder="Мобильный телефон" required>
+          </div>
+          <div class="input-block">
+            <div class="select">
+              <select name="city" class="select-search" data-placeholder="Регион" required>
+                <option value="1">Регион</option>
+                <option value="2">Регион</option>
+                <option value="3">Регион</option>
+                <option value="4">Регион</option>
+                <option value="5">Регион</option>
+              </select> 
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="select">
+              <select name="city" class="select-search" data-placeholder="Город" required>
+                <option value="1">Город</option>
+                <option value="2">Город</option>
+                <option value="3">Город</option>
+                <option value="4">Город</option>
+                <option value="5">Город</option>
+              </select> 
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="select">
+              <select name="city" class="select-search" data-placeholder="Улица" required>
+                <option value="1">Улица</option>
+                <option value="2">Улица</option>
+                <option value="3">Улица</option>
+                <option value="4">Улица</option>
+                <option value="5">Улица</option>
+              </select> 
+            </div>
+          </div>
+          <div class="inputs-all">
+            <div class="inputs-50">
+              <div class="input-block">
+                <div class="input-block">
+                  <div class="select">
+                    <select name="city" class="select-search" data-placeholder="Дом" required>
+                      <option value="1">Дом</option>
+                      <option value="2">Дом</option>
+                      <option value="3">Дом</option>
+                      <option value="4">Дом</option>
+                      <option value="5">Дом</option>
+                    </select> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inputs-50">
+              <div class="input-block">
+                <div class="input-block">
+                  <input type="text" name="text" placeholder="Квартира" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup-bottom">
+            <button class="btn">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- thanks -->
+  <div class="popup popup-thanks" id="thanks">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="popup__title">Спасибо!</div>
+        <div class="popup-text">Ваш приз будет отправлен по адресу:</div>
+        <form>
+          <div class="popup-descr">123456, Свердловская область,  г. Карпинск, ул. Макарова, д. 18, к. 2, кв. 18</div>
+          <div class="popup-buttons">
+            <button class="btn">Подтвердить</button>
+            <a href="#" class="popup-link">Назад</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- checks -->
+  <div class="popup" id="checks">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/>
+          <rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/>
+        </svg>
+      </div>
+      <div class="popup__inner">
+        <div class="input-text">Неверный логин или пароль</div>
+        <div class="popup__title">Ваши данные</div>
+        <p>При сумме призов свыше 4000₽, для их получения необходимо загрузить паспортные данные и ИНН для уплаты организатором налога за участника.</p>
+        <form>
+          <label>
+            <input type="text" placeholder="Фамилия" required>
+          </label>
+          <label>
+            <input type="text" placeholder="Имя" required>
+          </label>
+          <label>
+            <input type="text" placeholder="Отчество" required>
+          </label>
+          <label>
+            <input type="text" placeholder="Дата рождения (дд.мм.гггг)" required>
+          </label>
+          <strong>Паспортные данные</strong>
+          <div class="inputs inputs-row">
+            <div class="inputs-col inputs-col__small">
+              <label>
+                <input type="text" placeholder="Серия" required>
+              </label>
+            </div>
+            <div class="inputs-col">
+              <label>
+                <input type="text" placeholder="Номер" required>
+              </label>
+            </div>
+          </div>
+          <label>
+            <input type="text" placeholder="Дата выдачи (дд.мм.гггг)" required>
+          </label>
+          <label>
+            <input type="text" placeholder="Кем выдан" required>
+          </label>
+          <label>
+            <input type="text" placeholder="Адрес регистрации" required>
+          </label><strong>ИНН</strong>
+          <label>
+            <input type="text" placeholder="12 цифр">
+          </label><strong>Фото или сканы</strong>
+          <label class="file">
+            <input type="file" required>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.6153 35.3848C23.3982 35.3848 22.2084 35.0239 21.1964 34.3477C20.1844 33.6715 19.3956 32.7104 18.9299 31.586C18.4641 30.4615 18.3422 29.2242 18.5797 28.0304C18.8171 26.8367 19.4032 25.7402 20.2639 24.8796C21.1245 24.0189 22.221 23.4328 23.4147 23.1954C24.6084 22.9579 25.8458 23.0798 26.9703 23.5456C28.0947 24.0114 29.0558 24.8001 29.732 25.8121C30.4082 26.8241 30.7691 28.0139 30.7691 29.231C30.7671 30.8625 30.1181 32.4265 28.9645 33.5802C27.8108 34.7338 26.2468 35.3828 24.6153 35.3848ZM24.6153 26.1541C24.0067 26.1541 23.4118 26.3345 22.9058 26.6726C22.3998 27.0107 22.0055 27.4913 21.7726 28.0535C21.5397 28.6157 21.4788 29.2344 21.5975 29.8313C21.7162 30.4281 22.0092 30.9764 22.4396 31.4067C22.8699 31.837 23.4181 32.1301 24.015 32.2488C24.6119 32.3675 25.2305 32.3066 25.7928 32.0737C26.355 31.8408 26.8355 31.4464 27.1736 30.9404C27.5117 30.4344 27.6922 29.8396 27.6922 29.231C27.6914 28.4152 27.3669 27.633 26.7901 27.0562C26.2132 26.4793 25.4311 26.1549 24.6153 26.1541Z" fill="white"/>
+              <path d="M36.923 40.0002H12.3076C11.4916 40.0002 10.709 39.676 10.1319 39.0989C9.55489 38.5219 9.23071 37.7393 9.23071 36.9232V23.0771C9.23071 22.261 9.55489 21.4784 10.1319 20.9014C10.709 20.3243 11.4916 20.0002 12.3076 20.0002H17.3538L18.1892 17.4894C18.3933 16.8764 18.7852 16.3433 19.3093 15.9656C19.8334 15.5878 20.4631 15.3846 21.1092 15.3848H28.1215C28.7675 15.3846 29.3972 15.5878 29.9213 15.9656C30.4454 16.3433 30.8373 16.8764 31.0415 17.4894L31.8769 20.0002H36.923C37.7391 20.0002 38.5217 20.3243 39.0987 20.9014C39.6758 21.4784 39.9999 22.261 39.9999 23.0771V36.9232C39.9999 37.7393 39.6758 38.5219 39.0987 39.0989C38.5217 39.676 37.7391 40.0002 36.923 40.0002ZM12.3076 36.9232H36.923V23.0771H29.6615L28.123 18.4617H21.1076L19.5692 23.0771H12.3076V36.9232Z" fill="white"/>
+              <path d="M36.9231 12.3076H40V15.3845H36.9231V12.3076Z" fill="white"/>
+              <path d="M36.9231 6.15381H40V9.23073H36.9231V6.15381Z" fill="white"/>
+              <path d="M36.9231 0H40V3.07692H36.9231V0Z" fill="white"/>
+              <path d="M30.7693 0H33.8462V3.07692H30.7693V0Z" fill="white"/>
+              <path d="M24.6155 0H27.6924V3.07692H24.6155V0Z" fill="white"/>
+              <path d="M18.4614 0H21.5383V3.07692H18.4614V0Z" fill="white"/>
+              <path d="M12.3076 0H15.3845V3.07692H12.3076V0Z" fill="white"/>
+              <path d="M6.15381 0H9.23073V3.07692H6.15381V0Z" fill="white"/>
+              <path d="M0 0H3.07692V3.07692H0V0Z" fill="white"/>
+              <path d="M0 6.15381H3.07692V9.23073H0V6.15381Z" fill="white"/>
+              <path d="M0 12.3076H3.07692V15.3845H0V12.3076Z" fill="white"/>
+              <path d="M0 18.4614H3.07692V21.5383H0V18.4614Z" fill="white"/>
+              <path d="M0 24.6152H3.07692V27.6922H0V24.6152Z" fill="white"/>
+              <path d="M0 30.769H3.07692V33.846H0V30.769Z" fill="white"/>
+              <path d="M0 36.9229H3.07692V39.9998H0V36.9229Z" fill="white"/>
+            </svg>
+            <span>Паспорт, разворот с фото</span>
+          </label>
+          <label class="file">
+            <input type="file" required>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.6153 35.3848C23.3982 35.3848 22.2084 35.0239 21.1964 34.3477C20.1844 33.6715 19.3956 32.7104 18.9299 31.586C18.4641 30.4615 18.3422 29.2242 18.5797 28.0304C18.8171 26.8367 19.4032 25.7402 20.2639 24.8796C21.1245 24.0189 22.221 23.4328 23.4147 23.1954C24.6084 22.9579 25.8458 23.0798 26.9703 23.5456C28.0947 24.0114 29.0558 24.8001 29.732 25.8121C30.4082 26.8241 30.7691 28.0139 30.7691 29.231C30.7671 30.8625 30.1181 32.4265 28.9645 33.5802C27.8108 34.7338 26.2468 35.3828 24.6153 35.3848ZM24.6153 26.1541C24.0067 26.1541 23.4118 26.3345 22.9058 26.6726C22.3998 27.0107 22.0055 27.4913 21.7726 28.0535C21.5397 28.6157 21.4788 29.2344 21.5975 29.8313C21.7162 30.4281 22.0092 30.9764 22.4396 31.4067C22.8699 31.837 23.4181 32.1301 24.015 32.2488C24.6119 32.3675 25.2305 32.3066 25.7928 32.0737C26.355 31.8408 26.8355 31.4464 27.1736 30.9404C27.5117 30.4344 27.6922 29.8396 27.6922 29.231C27.6914 28.4152 27.3669 27.633 26.7901 27.0562C26.2132 26.4793 25.4311 26.1549 24.6153 26.1541Z" fill="white"/>
+              <path d="M36.923 40.0002H12.3076C11.4916 40.0002 10.709 39.676 10.1319 39.0989C9.55489 38.5219 9.23071 37.7393 9.23071 36.9232V23.0771C9.23071 22.261 9.55489 21.4784 10.1319 20.9014C10.709 20.3243 11.4916 20.0002 12.3076 20.0002H17.3538L18.1892 17.4894C18.3933 16.8764 18.7852 16.3433 19.3093 15.9656C19.8334 15.5878 20.4631 15.3846 21.1092 15.3848H28.1215C28.7675 15.3846 29.3972 15.5878 29.9213 15.9656C30.4454 16.3433 30.8373 16.8764 31.0415 17.4894L31.8769 20.0002H36.923C37.7391 20.0002 38.5217 20.3243 39.0987 20.9014C39.6758 21.4784 39.9999 22.261 39.9999 23.0771V36.9232C39.9999 37.7393 39.6758 38.5219 39.0987 39.0989C38.5217 39.676 37.7391 40.0002 36.923 40.0002ZM12.3076 36.9232H36.923V23.0771H29.6615L28.123 18.4617H21.1076L19.5692 23.0771H12.3076V36.9232Z" fill="white"/>
+              <path d="M36.9231 12.3076H40V15.3845H36.9231V12.3076Z" fill="white"/>
+              <path d="M36.9231 6.15381H40V9.23073H36.9231V6.15381Z" fill="white"/>
+              <path d="M36.9231 0H40V3.07692H36.9231V0Z" fill="white"/>
+              <path d="M30.7693 0H33.8462V3.07692H30.7693V0Z" fill="white"/>
+              <path d="M24.6155 0H27.6924V3.07692H24.6155V0Z" fill="white"/>
+              <path d="M18.4614 0H21.5383V3.07692H18.4614V0Z" fill="white"/>
+              <path d="M12.3076 0H15.3845V3.07692H12.3076V0Z" fill="white"/>
+              <path d="M6.15381 0H9.23073V3.07692H6.15381V0Z" fill="white"/>
+              <path d="M0 0H3.07692V3.07692H0V0Z" fill="white"/>
+              <path d="M0 6.15381H3.07692V9.23073H0V6.15381Z" fill="white"/>
+              <path d="M0 12.3076H3.07692V15.3845H0V12.3076Z" fill="white"/>
+              <path d="M0 18.4614H3.07692V21.5383H0V18.4614Z" fill="white"/>
+              <path d="M0 24.6152H3.07692V27.6922H0V24.6152Z" fill="white"/>
+              <path d="M0 30.769H3.07692V33.846H0V30.769Z" fill="white"/>
+              <path d="M0 36.9229H3.07692V39.9998H0V36.9229Z" fill="white"/>
+            </svg>
+            <span>Паспорт, разворот с регистрацией</span>
+          </label>
+          <label class="file">
+            <input type="file" required>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.6153 35.3848C23.3982 35.3848 22.2084 35.0239 21.1964 34.3477C20.1844 33.6715 19.3956 32.7104 18.9299 31.586C18.4641 30.4615 18.3422 29.2242 18.5797 28.0304C18.8171 26.8367 19.4032 25.7402 20.2639 24.8796C21.1245 24.0189 22.221 23.4328 23.4147 23.1954C24.6084 22.9579 25.8458 23.0798 26.9703 23.5456C28.0947 24.0114 29.0558 24.8001 29.732 25.8121C30.4082 26.8241 30.7691 28.0139 30.7691 29.231C30.7671 30.8625 30.1181 32.4265 28.9645 33.5802C27.8108 34.7338 26.2468 35.3828 24.6153 35.3848ZM24.6153 26.1541C24.0067 26.1541 23.4118 26.3345 22.9058 26.6726C22.3998 27.0107 22.0055 27.4913 21.7726 28.0535C21.5397 28.6157 21.4788 29.2344 21.5975 29.8313C21.7162 30.4281 22.0092 30.9764 22.4396 31.4067C22.8699 31.837 23.4181 32.1301 24.015 32.2488C24.6119 32.3675 25.2305 32.3066 25.7928 32.0737C26.355 31.8408 26.8355 31.4464 27.1736 30.9404C27.5117 30.4344 27.6922 29.8396 27.6922 29.231C27.6914 28.4152 27.3669 27.633 26.7901 27.0562C26.2132 26.4793 25.4311 26.1549 24.6153 26.1541Z" fill="white"/>
+              <path d="M36.923 40.0002H12.3076C11.4916 40.0002 10.709 39.676 10.1319 39.0989C9.55489 38.5219 9.23071 37.7393 9.23071 36.9232V23.0771C9.23071 22.261 9.55489 21.4784 10.1319 20.9014C10.709 20.3243 11.4916 20.0002 12.3076 20.0002H17.3538L18.1892 17.4894C18.3933 16.8764 18.7852 16.3433 19.3093 15.9656C19.8334 15.5878 20.4631 15.3846 21.1092 15.3848H28.1215C28.7675 15.3846 29.3972 15.5878 29.9213 15.9656C30.4454 16.3433 30.8373 16.8764 31.0415 17.4894L31.8769 20.0002H36.923C37.7391 20.0002 38.5217 20.3243 39.0987 20.9014C39.6758 21.4784 39.9999 22.261 39.9999 23.0771V36.9232C39.9999 37.7393 39.6758 38.5219 39.0987 39.0989C38.5217 39.676 37.7391 40.0002 36.923 40.0002ZM12.3076 36.9232H36.923V23.0771H29.6615L28.123 18.4617H21.1076L19.5692 23.0771H12.3076V36.9232Z" fill="white"/>
+              <path d="M36.9231 12.3076H40V15.3845H36.9231V12.3076Z" fill="white"/>
+              <path d="M36.9231 6.15381H40V9.23073H36.9231V6.15381Z" fill="white"/>
+              <path d="M36.9231 0H40V3.07692H36.9231V0Z" fill="white"/>
+              <path d="M30.7693 0H33.8462V3.07692H30.7693V0Z" fill="white"/>
+              <path d="M24.6155 0H27.6924V3.07692H24.6155V0Z" fill="white"/>
+              <path d="M18.4614 0H21.5383V3.07692H18.4614V0Z" fill="white"/>
+              <path d="M12.3076 0H15.3845V3.07692H12.3076V0Z" fill="white"/>
+              <path d="M6.15381 0H9.23073V3.07692H6.15381V0Z" fill="white"/>
+              <path d="M0 0H3.07692V3.07692H0V0Z" fill="white"/>
+              <path d="M0 6.15381H3.07692V9.23073H0V6.15381Z" fill="white"/>
+              <path d="M0 12.3076H3.07692V15.3845H0V12.3076Z" fill="white"/>
+              <path d="M0 18.4614H3.07692V21.5383H0V18.4614Z" fill="white"/>
+              <path d="M0 24.6152H3.07692V27.6922H0V24.6152Z" fill="white"/>
+              <path d="M0 30.769H3.07692V33.846H0V30.769Z" fill="white"/>
+              <path d="M0 36.9229H3.07692V39.9998H0V36.9229Z" fill="white"/>
+            </svg>
+            <span>ИНН</span>
+          </label>
+          <button class="btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js" integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.js")-->
+  <!--script(src="static/js/vendor/jquery-3.3.1.min.js")-->
+  <!--script(src="static/js/vendor/libs.js")-->
+  <script defer src="js/scripts.min.js"></script>
+</body>
+</html>
