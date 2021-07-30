@@ -106,3 +106,109 @@ if ($('.select').length > 0) {
     dropdownParent: $('.select')
   });
 }
+
+if($('.file').length) {
+  $('.file input').dropify({
+      messages: {
+          'default': '',
+          'replace': '',
+          'remove':  '',
+          'error':   ''
+      },
+      tpl: {
+          message: '<div class="align-center upload-status"></div>',
+      }
+  });
+}
+
+function maskInit() {
+  $('.phone-mask').inputmask({
+    mask: "+7(999)999-99-99",
+    "clearIncomplete": true
+  });
+}
+maskInit();
+
+function checkValidate() {
+    var form = $('form');
+
+    $.each(form, function () {
+        $(this).validate({
+            ignore: [],
+            errorClass: 'error',
+            validClass: 'success',
+            rules: {
+                File: {
+                    required: true
+                },
+                Text: {
+                    required: true
+                },
+                Checkbox: {
+                    required: true
+                },
+                FullName: {
+                    required: true
+                },
+                LName: {
+                    required: true
+                },
+                FName: {
+                    required: true
+                },
+                MName: {
+                    required: true
+                },
+                Date: {
+                    required: true
+                },
+                Who: {
+                    required: true
+                },
+                Adress: {
+                    required: true
+                },
+                Numbers: {
+                    required: true
+                },
+                Email: {
+                    required: true,
+                    Email: true
+                },
+                PhoneNumber: {
+                    required: true,
+                    PhoneNumber: true
+                },
+                Message: {
+                    required: true
+                },
+                Password: {
+                    required: true,
+                    normalizer: function normalizer(value) {
+                        return $.trim(value);
+                    }
+                }
+            },
+            errorElement: 'div',
+            errorPlacement: function (error, element) {
+                var placement = $(element).data('error');
+                if (placement) {
+                    $(placement).append(error);
+                } else {
+                    error.insertBefore(element);
+                }
+            },
+            messages: {
+                PhoneNumber: 'Некорректный номер',
+                Email: 'Некорректный e-mail'
+            }
+        });
+    });
+    jQuery.validator.addMethod('Email', function (value, element) {
+        return this.optional(element) || /\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}/.test(value);
+    });
+    jQuery.validator.addMethod('PhoneNumber', function (value, element) {
+        return this.optional(element) || /\+7\(\d+\)\d{3}-\d{2}-\d{2}/.test(value);
+    });
+}
+checkValidate();
