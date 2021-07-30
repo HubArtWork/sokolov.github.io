@@ -69,6 +69,21 @@ $('.anime-item.unactive').click(function () {
   }
 });
 
+//accordeons
+$(".accordeon .accordeon-block").hide().prev().click(function() {
+
+  if($(this).parents(".accordeon").hasClass('accordeon-active'))
+    $(".accordeon").removeClass('accordeon-active');
+  else {
+    $(".accordeon").removeClass('accordeon-active');
+    $(this).parents(".accordeon").addClass('accordeon-active');
+  }
+
+  $(this).parents().find(".accordeon-block").not(this).slideUp().prev();
+  $(this).next().not(":visible").slideDown().prev().parents();
+
+});
+
 if ($('.select').length > 0) {
   $('select').each(function () {
     var $this = $(this).not('.select-search');
