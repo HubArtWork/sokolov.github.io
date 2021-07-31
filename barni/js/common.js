@@ -86,6 +86,7 @@ $(".accordeon .accordeon-block").hide().prev().click(function() {
 
 if ($('.select').length > 0) {
   $('select').each(function () {
+    $(this).valid();
     var $this = $(this).not('.select-search');
     var parent = $(this).not('.select-search').parents('.select');
     $this.select2({
@@ -138,6 +139,9 @@ function checkValidate() {
             errorClass: 'error',
             validClass: 'success',
             rules: {
+                City: {
+                    required: true
+                },
                 File: {
                     required: true
                 },
@@ -201,7 +205,7 @@ function checkValidate() {
             messages: {
                 PhoneNumber: 'Некорректный номер',
                 Email: 'Некорректный e-mail'
-            }
+            },
         });
     });
     jQuery.validator.addMethod('Email', function (value, element) {

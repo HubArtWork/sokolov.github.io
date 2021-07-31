@@ -22,15 +22,16 @@
     <li><a class="pop-op" href="#!" data-popup="address">Адрес</a></li>
     <li><a class="pop-op" href="#!" data-popup="thanks">Спасибо</a></li>
     <li><a class="pop-op" href="#!" data-popup="checks">Ваши данные</a></li>
+    <li><a class="pop-op" href="#!" data-popup="uploading">Загрузка чека</a></li>
   </ul>
   <!-- signIn -->
   <div class="popup" id="signIn">
     <div class="popup__wrap">
       <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
       <div class="popup__inner">
-        <div class="input-text">Неверный логин или пароль</div>
         <div class="popup__title">Вход</div>
         <form>
+          <div class="input-text">Неверный логин или пароль</div>
           <div class="input-block">
             <input type="email" name="email" placeholder="Ваше E-mail" required>
           </div>
@@ -54,9 +55,9 @@
     <div class="popup__wrap">
       <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
       <div class="popup__inner">
-        <div class="input-text">Неверный логин или пароль</div>
         <div class="popup__title">регистрация</div>
         <form>
+          <div class="input-text">Неверный логин или пароль</div>
           <div class="input-block">
             <input type="Text" name="FullName" placeholder="Ваше ФИО" required>
           </div>
@@ -98,7 +99,7 @@
         <div class="popup__title">Загрузка чека</div>
         <form>
           <ul class="popup-list">
-            <li>1. Нажмите на кнопку «Загрузить чек» и сделайте фото чека.  </li>
+            <li>1. Нажмите на кнопку «Загрузить чек» и сделайте фото чека.</li>
             <li>2. Если чек длинный, сделайте несколько последовательных фото.</li>
             <li>3. Если на чеке есть QR-код, сделайте фото отдельным кадром.</li>
             <li>4. Если фото окажется плохого качества, чек принят не будет. </li>
@@ -177,10 +178,10 @@
     <div class="popup__wrap">
       <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
       <div class="popup__inner">
-        <div class="input-text">Неверный логин или пароль</div>
         <div class="popup__title">Адрес</div>
         <div class="popup-text">Оставьте ваш адрес для получения приза</div>
         <form>
+          <div class="input-text">Неверный логин или пароль</div>
           <div class="input-block">
            <input type="text" name="fName" placeholder="Фамилия" required>
           </div>
@@ -192,7 +193,7 @@
           </div>
           <div class="input-block">
             <div class="select">
-              <select name="city" class="select-search" data-placeholder="Регион" required>
+              <select name="city" class="select-search" data-placeholder="Регион" required="required">
                 <option value="1">Регион</option>
                 <option value="2">Регион</option>
                 <option value="3">Регион</option>
@@ -262,7 +263,7 @@
         <div class="popup__title">Спасибо!</div>
         <div class="popup-text">Ваш приз будет отправлен по адресу:</div>
         <form>
-          <div class="popup-descr">123456, Свердловская область,  г. Карпинск, ул. Макарова, д. 18, к. 2, кв. 18</div>
+          <div class="popup-descr">123456, Свердловская область, г. Карпинск, ул. Макарова, д. 18, к. 2, кв. 18</div>
           <div class="popup-buttons">
             <button class="btn">Подтвердить</button>
             <a href="#" class="popup-link">Назад</a>
@@ -281,10 +282,10 @@
         </svg>
       </div>
       <div class="popup__inner">
-        <div class="input-text">Неверный логин или пароль</div>
         <div class="popup__title">Ваши данные</div>
         <p>При сумме призов свыше 4000₽, для их получения необходимо загрузить паспортные данные и ИНН для уплаты организатором налога за участника.</p>
         <form>
+          <div class="input-text">Неверный логин или пароль</div>
           <label>
             <input type="text" name="fName" placeholder="Фамилия" required>
           </label>
@@ -335,6 +336,19 @@
             <span>ИНН</span>
           </label>
           <button class="btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- uploading -->
+  <div class="popup popup-uploading" id="uploading">
+    <div class="popup__wrap">
+      <div class="close-popup js-close-popup"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="2.11768" width="2.9948" height="22.461" rx="1.4974" transform="rotate(-45 0 2.11768)" fill="#F7941D"/><rect x="15.8823" width="2.9948" height="22.461" rx="1.4974" transform="rotate(45 15.8823 0)" fill="#F7941D"/></svg></div>
+      <div class="popup__inner">
+        <div class="popup__title">Загрузка чека</div>
+        <div class="popup-text">Наведите камеру на QR-код, <br>и он будет автоматически остканирован:</div>
+        <form>
+          сюда html для загрузки
         </form>
       </div>
     </div>
