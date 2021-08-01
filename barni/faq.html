@@ -270,15 +270,15 @@
               <span class="faq-subtitle">Отправьте нам сообщение, и мы обязательно ответим!</span>
               <form action="">
                 <div class="input-block">
-                  <input type="text" name="text" placeholder="Ваше имя">
+                  <input type="text" name="mName" placeholder="Ваше имя" required>
                 </div>
                 <div class="input-block">
-                  <input type="text" name="text" placeholder="Ваш E-mail">
+                  <input type="email" name="email" placeholder="Ваш E-mail" required>
                 </div>
                 <div class="input-block">
                   <div class="select">
                     <select name="city" class="select-search" data-placeholder="Выберите тему сообщения" required>
-                      <option value="1">Регион</option>
+                      <option value="">Регион</option>
                       <option value="2">Регион</option>
                       <option value="3">Регион</option>
                       <option value="4">Регион</option>
@@ -287,7 +287,7 @@
                   </div>
                 </div>
                 <div class="input-block">
-                  <textarea name="text" placeholder="Ваше сообщение"></textarea>
+                  <textarea name="message" placeholder="Ваше сообщение" required></textarea>
                 </div>
                 <button class="primary-btn">Отправить</button>
               </form>

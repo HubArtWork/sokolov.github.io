@@ -243,9 +243,16 @@ $('form').on('submit', function(e) {
     
     // Add is-invalid class when select2 element is required
     $select2.parents('.input-block').addClass('is-invalid');
-    
-    // Stop submiting
-    e.preventDefault();
+
+    var th = $(this);
+    if ($(this).valid()) {
+      $(th).parents('.faq-block').addClass('active');
+      setTimeout(function() {
+        $(th).parents('.faq-block').removeClass('active');
+        th.trigger("reset");
+      }, 3000);
+    }
+
     return false;
   }
 });
