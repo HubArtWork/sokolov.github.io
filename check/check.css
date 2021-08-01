@@ -155,29 +155,29 @@ body {
 }
 
 .uf-button-submit.button-submit--custom {
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    font-family: "MDLZ BITE TYPE";
+    display: inline-block;
+    max-width: 280px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 1;
+    background: #F7941D;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 9px 5px 10px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 290px;
-    width: auto;
-    height: 70px;
-    margin: auto;
-    padding: 22px 40px;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;
-    background: #2FBBE5;
-    border-radius: 30px;
-    border: none;
-    z-index: 1;
     transition: all .2s linear;
     outline: none;
-    cursor: pointer;
+    border-radius: 20px;
+    margin: 25px auto;
 }
 
 .uf-button-submit.button-submit--custom:hover,
@@ -313,7 +313,7 @@ zxing-scanner {
     border: 2px solid #fff !important;
     width: 215px !important;
     height: 215px !important;
-    margin: 0 auto 20px !important;
+    margin: 0 auto 30px !important;
     border-radius: 10px;
     background-color: #fff;
 	overflow: hidden;
