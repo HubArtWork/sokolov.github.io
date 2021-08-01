@@ -12,6 +12,10 @@
     background: transparent
 }
 
+iframe#iframe{
+    display: block;
+    min-height: 200px;
+}
 html {
     -ms-overflow-style: none;
     scrollbar-width: none
@@ -27,7 +31,7 @@ body {
     -webkit-overflow-scrolling: touch;
     box-sizing: content-box;
     height: 100%;
-    color: #572A13;
+    color: #fff;
 }
 
 .container.uf-container.container--custom {
@@ -301,12 +305,12 @@ body {
 }
 
 zxing-scanner {
-    border-color: #2FBBE5 !important;
-    border: 2px solid;
-    width: 200px !important;
-    height: 200px !important;
+    border: 2px solid #fff !important;
+    width: 215px !important;
+    height: 215px !important;
     margin: 0 auto 20px !important;
-    border-radius: 30px;
+    border-radius: 10px;
+    background-color: #fff;
 	overflow: hidden;
 }
 
@@ -325,7 +329,7 @@ app-root button {
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
-    padding: 4px 5px 5px;
+    padding: 9px 5px 10px;
     position: relative;
     display: flex;
     align-items: center;
@@ -333,7 +337,7 @@ app-root button {
     transition: all .2s linear;
     outline: none;
     border-radius: 20px;
-    margin: 10px auto 25px;
+    margin: 25px auto;
 }
 
 app-root button:hover {
@@ -382,13 +386,26 @@ app-root dropzone>.dropzone.dz-wrapper.dz-started .dz-message {
 }
 
 app-root select {
-    width: 290px;
-    height: 32px;
-    margin: 0 auto 20px;
-    padding: 0 20px 0 10px;
-    border: 1px solid transparent;
-    background: #A1E2FF;
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    margin: 0 auto 27px;
+    max-width: 280px!important;
+    width: 100%!important;
+    height: 33px;
     border-radius: 20px;
+    background-color: #fff;
+    height: 33px;
+    padding: 0 19px;
+    font-family: "MDLZ BITE TYPE";
+    font-size: 14px;
+    line-height: 17px;
+    color: #F7941D;
+    background: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.78751 6L0.437086 -6.52532e-07L7.13794 -4.68497e-08L3.78751 6Z' fill='%23F7941D'/%3E%3C/svg%3E%0A") #fff no-repeat 97% center;
+    background-size: 8px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 0;
 }
 
 app-root .dropzone .dz-preview.dz-image-preview {
