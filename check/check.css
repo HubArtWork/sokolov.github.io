@@ -81,10 +81,15 @@ body {
 }
 
 .dropzone.dropzone--custom.dz-clickable {
-    background-color: transparent;
-    border: 2px solid #572A13;
+    width: 215px;
+    height: 215px;
+    background-color: #fff;
+    border: 2px solid #fff;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #204A30;
 }
 
 .dropzone.dropzone--custom.dz-clickable.dz-started {
@@ -115,8 +120,8 @@ body {
     right: -10px;
     font-size: 0 !important;
     font-weight: bold;
-    background-color: #E51435;
-    border-color: #E51435;
+    background-color: #F7941D
+    border-color: #F7941D;
     width: 23px;
     height: 23px;
     line-height: 30px;
