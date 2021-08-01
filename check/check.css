@@ -84,6 +84,7 @@ body {
 .dropzone.dropzone--custom.dz-clickable {
     display: flex;
     align-items: center;
+    flex-flow: row wrap;
     justify-content: center;
     width: 215px;
     height: 215px;
@@ -94,7 +95,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #204A30;
-    margin: 0; auto
+    margin: 0 auto;
 }
 
 .dropzone.dropzone--custom.dz-clickable.dz-started {
@@ -116,7 +117,7 @@ body {
 .dropzone .dz-preview .dz-remove {
     width: 23px;
     height: 23px;
-    background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11.5' cy='11.5' r='11.5' fill='%23F7941D'/%3E%3Cpath d='M16.2934 7.10225L7.13086 16.2877L6.73749 15.8934L15.9 6.7079L16.2934 7.10225Z' fill='%2385312C' stroke='white'/%3E%3Cpath d='M7.1 6.71185L16.2625 15.8973L15.8692 16.2917L6.70663 7.1062L7.1 6.71185Z' fill='%2385312C' stroke='white'/%3E%3C/svg%3E%0A")
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11.5' cy='11.5' r='11.5' fill='%23F7941D'/%3E%3Cpath d='M16.2934 7.10225L7.13086 16.2877L6.73749 15.8934L15.9 6.7079L16.2934 7.10225Z' fill='%2385312C' stroke='white'/%3E%3Cpath d='M7.1 6.71185L16.2625 15.8973L15.8692 16.2917L6.70663 7.1062L7.1 6.71185Z' fill='%2385312C' stroke='white'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -125,7 +126,7 @@ body {
     right: -12px;
     font-size: 0 !important;
     font-weight: bold;
-    background-color: #F7941D
+    background-color: #F7941D;
     border: none;
     padding: 0;
     margin: 0;
