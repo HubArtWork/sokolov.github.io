@@ -7,20 +7,20 @@
     font-display: swap;
 }
 
-::-webkit-input-placeholder{
-    color: rgba(#fff, 1);
+*::-webkit-input-placeholder{
+    color: #fff;
 }
 
-:-moz-placeholder{
-    color: rgba(#fff, 1);
+*:-moz-placeholder{
+    color: #fff;
 }
 
-::-moz-placeholder{
-    color: rgba(#fff, 1);
+*::-moz-placeholder{
+    color: #fff;
 }
 
-:-ms-input-placeholder{
-    color: rgba(#fff, 1);
+*:-ms-input-placeholder{
+    color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -47,6 +47,10 @@ body {
     -webkit-overflow-scrolling: touch;
     box-sizing: content-box;
     color: #fff;
+}
+
+.iframe-wrap iframe{
+    height: 400;
 }
 
 .container.uf-container.container--custom {
@@ -190,7 +194,7 @@ body {
 
 .uf-button-submit.button-submit--custom:hover,
 .uf-button-submit.button-submit--custom:focus {
-    background: #A1E2FF;
+    opacity: 0.9;
 }
 
 .uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom {
