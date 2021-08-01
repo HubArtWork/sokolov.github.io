@@ -183,49 +183,55 @@ body {
 }
 
 .dropzone.dz-started .dz-message span {
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    font-family: "MDLZ BITE TYPE";
+    display: inline-block;
+    max-width: 280px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 1;
+    background: #F7941D;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 9px 5px 10px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    height: 30px;
-    margin: auto;
-    padding: 7px 10px;
-    background: transparent;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    color: #572A13;
-    border: 1px solid #572A13;
-    border-radius: 33px;
     transition: all .2s linear;
     outline: none;
-    cursor: pointer;
+    border-radius: 20px;
+    margin: 25px auto;
 }
 
 .uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    font-family: "MDLZ BITE TYPE";
+    display: inline-block;
+    max-width: 280px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 1;
+    background: #F7941D;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 9px 5px 10px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    height: 30px;
-    margin: auto;
-    padding: 7px 10px;
-    background: transparent;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    color: #572A13;
-    border: 1px solid #572A13;
-    border-radius: 33px;
     transition: all .2s linear;
     outline: none;
-    cursor: pointer;
+    border-radius: 20px;
+    margin: 25px auto;
 }
 
 .dropzone.dz-started .dz-message span:hover {
