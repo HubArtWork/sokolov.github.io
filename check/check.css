@@ -1,21 +1,8 @@
 @font-face {
-    font-family: 'a_FuturaRound';
-    src: url('https://магнит.барни.рф/fonts/AFuturaRound.eot');
-    src: url('https://магнит.барни.рф/fonts/AFuturaRound.eot?#iefix') format('embedded-opentype'),
-        url('https://магнит.барни.рф/fonts/AFuturaRound.woff2') format('woff2'),
-        url('https://магнит.барни.рф/fonts/AFuturaRound.woff') format('woff');
+    font-family: 'MDLZ BITE TYPE';
+    src: url("MDLZBITETYPE-Regular.woff2") format("woff2"),
+        url("MDLZBITETYPE-Regular.woff") format("woff");
     font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'a_FuturaRound';
-    src: url('https://магнит.барни.рф/fonts/AFuturaRoundBold.eot');
-    src: url('https://магнит.барни.рф/fonts/AFuturaRoundBold.eot?#iefix') format('embedded-opentype'),
-        url('https://магнит.барни.рф/fonts/AFuturaRoundBold.woff2') format('woff2'),
-        url('https://магнит.барни.рф/fonts/AFuturaRoundBold.woff') format('woff');
-    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -31,7 +18,7 @@ html {
 }
 
 body {
-    font-family: 'a_FuturaRound';
+    font-family: 'MDLZ BITE TYPE';
     font-weight: normal;
     font-style: normal;
     background-color: transparent;
@@ -79,7 +66,10 @@ body {
 }
 
 .container-tutorial__text p {
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 19px;
 }
 
 .dropzone .dz-message {
@@ -321,29 +311,29 @@ zxing-scanner {
 }
 
 app-root button {
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    font-family: "MDLZ BITE TYPE";
+    display: inline-block;
+    max-width: 280px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 1;
+    background: #F7941D;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 5px 5px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 290px;
-    width: auto;
-    height: 70px;
-    margin: auto;
-    padding: 22px 40px;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;
-    background: #2FBBE5;
-    border-radius: 30px;
-    border: none;
-    z-index: 1;
     transition: all .2s linear;
     outline: none;
-    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px auto 25px;
 }
 
 app-root button:hover {
@@ -385,6 +375,10 @@ app-root dropzone>.dropzone.dz-wrapper.dz-started .dz-message {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 19px;
 }
 
 app-root select {
