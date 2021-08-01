@@ -139,7 +139,16 @@ function checkValidate() {
             errorClass: 'error',
             validClass: 'success',
             rules: {
+                Region: {
+                    required: true
+                },
                 City: {
+                    required: true
+                },
+                Street: {
+                    required: true
+                },
+                House: {
                     required: true
                 },
                 File: {
@@ -193,9 +202,12 @@ function checkValidate() {
                     }
                 }
             },
-            errorElement: 'div',
             errorPlacement: function (error, element) {
                 var placement = $(element).data('error');
+                $('.popup.js-popup-show form').addClass('error-form');
+                setTimeout(function() {
+                   $('.popup.js-popup-show form').removeClass('error-form');
+                }, 3000);
                 if (placement) {
                     $(placement).append(error);
                 } else {
@@ -216,3 +228,24 @@ function checkValidate() {
     });
 }
 checkValidate();
+  
+$('form').on('submit', function(e) {
+  var $select2 = $('.select-search', $(this));
+  
+  // Reset
+  $select2.parents('.input-block').removeClass('is-invalid');
+  
+  if ($select2.val() === '') {
+    $('.popup.js-popup-show form').addClass('error-form');
+    setTimeout(function() {
+       $('.popup.js-popup-show form').removeClass('error-form');
+    }, 3000);
+    
+    // Add is-invalid class when select2 element is required
+    $select2.parents('.input-block').addClass('is-invalid');
+    
+    // Stop submiting
+    e.preventDefault();
+    return false;
+  }
+});
