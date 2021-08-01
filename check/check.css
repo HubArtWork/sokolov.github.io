@@ -1,3 +1,48 @@
+@font-face {
+    font-family: 'a_FuturaRound';
+    src: url('https://магнит.барни.рф/fonts/AFuturaRound.eot');
+    src: url('https://магнит.барни.рф/fonts/AFuturaRound.eot?#iefix') format('embedded-opentype'),
+        url('https://магнит.барни.рф/fonts/AFuturaRound.woff2') format('woff2'),
+        url('https://магнит.барни.рф/fonts/AFuturaRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'a_FuturaRound';
+    src: url('https://магнит.барни.рф/fonts/AFuturaRoundBold.eot');
+    src: url('https://магнит.барни.рф/fonts/AFuturaRoundBold.eot?#iefix') format('embedded-opentype'),
+        url('https://магнит.барни.рф/fonts/AFuturaRoundBold.woff2') format('woff2'),
+        url('https://магнит.барни.рф/fonts/AFuturaRoundBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body {
+    font-family: 'a_FuturaRound';
+    font-weight: normal;
+    font-style: normal;
+    background-color: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    height: 100%;
+    color: #572A13;
+}
+
 .container.uf-container.container--custom {
     color: #572A13;
     font-size: 14px;
@@ -26,7 +71,7 @@
 }
 
 .container-tutorial__text {
-    font-family: 'MDLZ BITE TYPE';
+    font-family: 'a_FuturaRound';
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
@@ -76,8 +121,8 @@
     right: -10px;
     font-size: 0 !important;
     font-weight: bold;
-    background: #F7941D;
-    border-color: #F7941D;
+    background-color: #E51435;
+    border-color: #E51435;
     width: 23px;
     height: 23px;
     line-height: 30px;
@@ -209,7 +254,7 @@
     width: 100%;
     height: 48px;
     padding-left: 20px !important;
-    font-family: 'MDLZ BITE TYPE';
+    font-family: 'a_FuturaRound';
     font-size: 14px;
     line-height: 1;
     color: #572A13;
@@ -266,38 +311,39 @@
 }
 
 zxing-scanner {
-    width: 213px!important;
-    height: 213px!important;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: #fff;
-    border-color: #fff!important;
-    margin-bottom: 30px;
+    border-color: #2FBBE5 !important;
+    border: 2px solid;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto 20px !important;
+    border-radius: 30px;
 	overflow: hidden;
 }
 
 app-root button {
-    border: none;
-    font-family: "MDLZ BITE TYPE";
-    display: inline-block;
-    max-width: 280px;
-    width: 100%;
-    font-size: 30px;
-    line-height: 1;
-    background: #F7941D;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    cursor: pointer;
-    padding: 4px 5px 5px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 290px;
+    width: auto;
+    height: 70px;
+    margin: auto;
+    padding: 22px 40px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #2FBBE5;
+    border-radius: 30px;
+    border: none;
+    z-index: 1;
     transition: all .2s linear;
     outline: none;
-    border-radius: 20px;
-    margin: 0 auto;
+    cursor: pointer;
 }
 
 app-root button:hover {
@@ -305,41 +351,28 @@ app-root button:hover {
 }
 
 dropzone {
-    max-width: 215px;
-    min-height: 215px;
-    border: none;
+    max-width: 220px;
+    min-height: 156px;
+    border: 1px solid #572A13;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto 25px;
 }
 
 app-root dropzone>.dropzone.dz-wrapper {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: "MDLZ BITE TYPE";
     font-size: 14px;
-    line-height: 17px;
-    color: #204A30;
+    line-height: 16px;
+    color: #572A13;
     padding: 10px;
-    max-width: 215px!important;
-    width: 100%!important;
-    height: 215px;
-    border-radius: 10px;
-    background-color: #fff;
-    border: 2px solid #fff;
-}
-
-.dz-message {
-    display: block;
-    width: 100%;
 }
 
 app-root dropzone>.dropzone.dz-wrapper .dz-message {
     border: none;
     background: none;
+    margin: 3rem 0;
 }
 
 app-root dropzone>.dropzone.dz-wrapper.dz-started .dz-message {
@@ -355,25 +388,13 @@ app-root dropzone>.dropzone.dz-wrapper.dz-started .dz-message {
 }
 
 app-root select {
-    appearance: none;
-    box-shadow: none;
-    border: none;
-    margin: 0 auto 27px;
-    max-width: 280px!important;
-    width: 100%!important;
-    height: 33px;
+    width: 290px;
+    height: 32px;
+    margin: 0 auto 20px;
+    padding: 0 20px 0 10px;
+    border: 1px solid transparent;
+    background: #A1E2FF;
     border-radius: 20px;
-    background-color: #fff;
-    height: 33px;
-    padding: 0 19px;
-    font-family: "MDLZ BITE TYPE";
-    font-size: 14px;
-    line-height: 17px;
-    color: #F7941D;
-    background: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.78751 6L0.437086 -6.52532e-07L7.13794 -4.68497e-08L3.78751 6Z' fill='%23F7941D'/%3E%3C/svg%3E%0A") #fff no-repeat 97% center;
-    background-size: 8px;
-    border-radius: 20px;
-    background-color: #fff;
 }
 
 app-root .dropzone .dz-preview.dz-image-preview {
@@ -384,8 +405,4 @@ app-root .dropzone .dz-preview.dz-image-preview {
 app-root .dropzone .dz-preview .dz-image {
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
-}
-.angular-uf-container.angular-uf-restrict-message,.angular-uf-container.angular-uf-device-check-err-message{
-    display: none;
 }
