@@ -84,7 +84,7 @@ $(".accordeon .accordeon-block").hide().prev().click(function() {
 
 });
 
-if ($('.select').length > 0) {
+if ($('.select').length > 1) {
   $('select').each(function () {
     $(this).valid();
     var $this = $(this).not('.select-search');
