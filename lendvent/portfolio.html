@@ -31,10 +31,10 @@
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
-					<a href="#" class="header-logIn">Log In</a>
+					<a data-fancybox data-src="#logIn" href="javascript:;" class="header-logIn">Log In</a>
 				</div>
 				<div class="header-actions">
-					<a href="#" class="header-logIn">Log In</a>
+					<a data-fancybox data-src="#logIn" href="javascript:;" class="header-logIn">Log In</a>
 					<a href="#" class="header-phone">646-462-6380</a>
 				</div>
 			</div>
@@ -378,6 +378,24 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<!-- start logIn -->
+	<div style="display: none;" id="logIn" class="popup popup-logIn">
+		<div class="modal-close"></div>
+		<div class="popup-wrap">
+			<h2 class="popup-title">Sign In</h2>
+			<form action="POST">
+				<div class="input-block">
+					<label for="m-1">Email , User name or Account #</label>
+					<input id="m-1" type="email" name="email" placeholder="Example: email@domain.нcom">
+				</div>
+				<div class="input-block">
+					<label for="m-2">Password</label>
+					<input id="m-2" type="password" name="password" placeholder="Password">
+				</div>
+				<button class="primary-btn primary-btn-light">Sign in</button>
+			</form>
+		</div>
+	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 </body>
