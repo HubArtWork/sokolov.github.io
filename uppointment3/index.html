@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link href = "https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<div class="logo-bg"><img src="img/header/logo-bg.svg" alt=""></div>
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Prising</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								User-friendly biiking software
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Smart invoicing
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Live web chat
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Business ready websites
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-5"></i>
+								Email signature Management
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-6"></i>
+								UX Forms
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-7"></i>
+								Email marketing
+							</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="header-mob">
+					<a href="#modal-signIn" class="second-btn modal-btn">Sign In</a>
+					<span class="form-or">or creat an account with</span>
+					<ul class="form-social">
+						<li><a href="#"><i class="hb-ico soc-1"></i></a></li>
+						<li><a href="#"><i class="hb-ico soc-2"></i></a></li>
+						<li><a href="#"><i class="hb-ico soc-3"></i></a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header-row">
+				<a href="#modal-signIn" class="second-btn modal-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-bg"><img src="img/main/main-bg.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="main-text">
+				<h1 class="main-title"><span>Simple and easy way </span>to schedule, reschedule and manage appointments</h1>
+				<p>Ready for use in a few minutes.</p>
+				<a href="#" class="primary-btn">Try it <b>free</b> 30 days</a>
+			</div>
+			<div class="main-img"><img src="img/main/main-img.png" alt=""></div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start advantages -->
+	<section class="advantages">
+		<div class="advantages-bg"><img src="img/advantages/advantages-bg.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Easy and Intuitive. Full scale management.</h2>
+				<p>Quick for your customers, clients or patients to schedule an appointment (class, tour etc.)online Easy for your team to manage appointments and customers.<br>Easy for you to manage team, workflow and read stats. Uppointment designed to work for solo entrepreneur (owner-operators) and for large, multi location businesses as well. Use it as the only CRM for your business or combine with existing software. Integrate it into your website or have your booking form as a separate, fully customizable booking page</p>
+			</div>
+			<div class="advantages-row">
+				<div class="advantages-img"><img src="img/advantages/phone.png" alt=""></div>
+				<div class="advantages-info">
+					<div class="advantages-col">
+						<span class="advantages-subtitle">FOR YOU</span>
+						<ul>
+							<li>Easy Calendar</li>
+							<li>Sales tools and statistics</li>
+							<li>Payment processors</li>
+							<li>Email and Text Campaigns</li>
+							<li>Organized Services and Orders</li>
+							<li>Team and Clients management</li>
+						</ul>
+					</div><!-- col -->
+					<div class="advantages-col">
+						<span class="advantages-subtitle">FOR YOUR CUSTOMERS</span>
+						<ul>
+							<li>Easy to book</li>
+							<li>Fast and intuitive to pay</li>
+							<li>Reschedule in a few seconds</li>
+							<li>Account management</li>
+							<li>Automatic reminders</li>
+							<li>Heads-up for new promos</li>
+						</ul>
+					</div><!-- col -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end advantages -->
+	<!-- start features -->
+	<section class="features">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Features</h2>
+				<p>Uppointment designed to make one of the most important parts of your business -booking and payment for appointments to be as easy as possible for your customers. It’s built with your front desk help in mind, so they can manage appointments faster in optimized and more accurate way.</p>
+			</div>
+			<div class="features-slider swiper-container">
+				<div class="features-slider__wrapper swiper-wrapper">
+					<div class="features-slide swiper-slide">
+						<div class="features-wrap">
+							<div class="features-ico"><img src="img/features/ico-1.svg" alt=""></div>
+							<span class="features-title">Faster booking</span>
+							<p>Your clients can book fast and easy.</p>
+							<p>No calling required - everything online. Simply go to your website and schedule. Your clients/ patients see what’s available.</p>
+						</div>
+					</div><!-- slide -->
+					<div class="features-slide swiper-slide">
+						<div class="features-wrap">
+							<div class="features-ico"><img src="img/features/ico-2.svg" alt=""></div>
+							<span class="features-title">Mobile friendly</span>
+							<p>No apps installation. No ads. </p>
+							<p>Works on all smartphones and mobile devices. No push notifications but automatic text scheduled appointments reminders and confirmations.</p>
+						</div>
+					</div><!-- slide -->
+					<div class="features-slide swiper-slide">
+						<div class="features-wrap">
+							<div class="features-ico"><img src="img/features/ico-3.svg" alt=""></div>
+							<span class="features-title">Easy payments</span>
+							<p>Let your customer choose the way they like to pay when they are booking your services. </p>
+							<p>With uppointment your customers book and pay faster. Free appointments can be scheduled too - it’s up to you.</p>
+						</div>
+					</div><!-- slide -->
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="button-middle">
+				<a href="#" class="primary-btn">Try it <b>free</b></a>
+			</div>
+		</div>
+	</section>
+	<!-- end features -->
+	<!-- start steps -->
+	<section class="steps">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Take your business to the next level!</h2>
+				<p>Uppointment designed to make one of the most important parts of your business - booking and payment for appointments to be as easy as possible for your customers. It’s built with your front desk help in mind, so they can manage appointments faster in optimized and more accurate way.</p>
+			</div>
+			<div class="steps-slider swiper-container">
+				<div class="steps-slider__wrapper swiper-wrapper">
+					<div class="steps-slide swiper-slide">
+						<div class="steps-wrap">
+							<div class="steps-num"><span>1</span></div>
+							<span class="steps-title">Fast and Free Registration</span>
+							<p>We know you are busy, we make our registration as simple as possible. Shouldn't take more than 1 minute.</p>
+							<p>No credit card is required. We recommend to have a payment method on file so your business have no interruption after free trial.</p>
+						</div>
+					</div><!-- slide -->
+					<div class="steps-slide swiper-slide">
+						<div class="steps-wrap">
+							<div class="steps-num"><span>2</span></div>
+							<span class="steps-title">Add business essentials</span>
+							<p>Easy and intuitive add your schedule, services and prices.</p>
+							<p>You can add logo, member of your team, locations, liability waivers/cancellation policies and other business details now or later.</p>
+						</div>
+					</div><!-- slide -->
+					<div class="steps-slide swiper-slide">
+						<div class="steps-wrap">
+							<div class="steps-num"><span>3</span></div>
+							<span class="steps-title">Install on your website</span>
+							<p>Our tech support can quickly install. Don’t worry, we’ll keep up with your website’s style. You can install it yourself using our API or widget.</p>
+							<p><b>No website?</b> <b>No problem.</b> Host your booking form with us at no extra charge.</p>
+						</div>
+					</div><!-- slide -->
+					<div class="steps-slide swiper-slide active">
+						<div class="steps-wrap">
+							<div class="steps-num"><span>4</span></div>
+							<span class="steps-title">Enjoy</span>
+							<p><b>That’s it.</b> Enjoy improved booking experience for your customers/patients and your team/co-workers.</p>
+							<p>Check your Uppointment’s stats in a while and precisely adjust your Services, Prices etc.</p>
+						</div>
+					</div><!-- slide -->
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="steps-text">
+				With Uppointment you got into full control of your booking. Your customers will enjoy new way to book your services.
+			</div>
+			<div class="button-middle">
+				<div class="button-middle__bg"></div>
+				<a href="#" class="primary-btn">Try it <b>free</b></a>
+			</div>
+		</div>
+	</section>
+	<!-- end steps -->
+	<!-- start pricing -->
+	<section class="pricing">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Pricing</h2>
+				<p>All our plans come with free installation to your website, customization and unlimited love & support.</p>
+			</div>
+			<div class="pricing-row row">
+				<div class="pricing-col col-md-4 col-sm-6">
+					<div class="pricing-wrap pricing-wrap-1">
+						<div class="pricing-info">
+							<span class="pricing-title">Owner-operator</span>
+							<span class="pricing-price">$<b>39</b><i>/  month</i></span>
+							<div class="pricing-selects">
+								<div class="input-block">
+									<select name="product" class="select-main">
+										<option value="" selected="true" disabled="disabled">select your product</option>
+										<option value="product-1">email marketing and automation</option>
+										<option value="product-2">appointment scheduling </option>
+										<option value="product-3">web chat and chatbot</option>
+										<option value="product-4">web forns and applications (pdf)</option>
+									</select>
+								</div>
+								<select class="select-second" multiple>
+									<option value="product-1">email marketing and automation</option>
+									<option value="product-2">appointment scheduling </option>
+									<option value="product-3">web chat and chatbot</option>
+									<option value="product-4">web forns and applications (pdf)</option>
+								</select>
+							</div>
+							<ul class="pricing-list">
+								<li>Single user</li>
+								<li>Up to 150 clients</li>
+								<li>Professional invoicing</li>
+							</ul>
+							<div class="pricing-btn">
+								<a href="#" class="primary-btn">Join now</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="pricing-col col-md-4 col-sm-6">
+					<div class="pricing-wrap pricing-wrap-2 range-notActive">
+						<div class="pricing-info">
+							<span class="pricing-title">Growing business</span>
+							<span class="pricing-price">$<b id="range-1-text">59</b><i>/  month</i></span>
+							<div class="pricing-selects">
+								<div class="input-block">
+									<select name="product" class="select-main">
+										<option value="" selected="true" disabled="disabled">select your product</option>
+										<option value="product-1">email marketing and automation</option>
+										<option value="product-2">appointment scheduling </option>
+										<option value="product-3">web chat and chatbot</option>
+										<option value="product-4">web forns and applications (pdf)</option>
+									</select>
+								</div>
+								<select class="select-second" multiple>
+									<option value="product-1">email marketing and automation</option>
+									<option value="product-2">appointment scheduling </option>
+									<option value="product-3">web chat and chatbot</option>
+									<option value="product-4">web forns and applications (pdf)</option>
+								</select>
+							</div>
+							<ul class="pricing-list">
+								<li>Up to 15 users</li>
+								<li>Up to 500 clients</li>
+								<li>Professional invoicing</li>
+							</ul>
+							<div class="pricing-range" data-step="15000">
+								<div class="pricing-range__wrap">
+									<div id="range-1"></div>
+									<p>Up to <span>10 000</span> emails/mo</p>
+								</div>
+							</div>
+							<div class="pricing-btn">
+								<a href="#" class="primary-btn">Join now</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="pricing-col col-md-4 col-sm-6">
+					<div class="pricing-wrap pricing-wrap-3">
+						<div class="pricing-info">
+							<span class="pricing-title">Unlimited</span>
+							<span class="pricing-price">$<b id="range-2-text">99</b><i>/  month</i></span>
+							<ul class="pricing-list">
+								<li>Unlimited user</li>
+								<li>Unlimited clients</li>
+								<li>Unlimited services</li>
+								<li>Professional invoicing</li>
+							</ul>
+							<div class="pricing-range" data-step="15000">
+								<div class="pricing-range__wrap">
+									<div id="range-2"></div>
+									<p>Up to <span>10 000</span> emails/mo</p>
+								</div>
+							</div>
+							<div class="pricing-btn">
+								<a href="#" class="primary-btn">Join now</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end pricing -->
+	<!-- start takeCare -->
+	<section class="takeCare">
+		<div class="takeCare-bg"><img src="img/takeCare/takeCare-bg.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="takeCare-img"><img src="img/takeCare/takeCare-img.png" alt=""></div>
+			<h2 class="section-title">Focus on your business, we will take care of your appointments</h2>
+			<div class="buttons-row">
+				<a href="#" class="primary-btn primary-btn__blue">Try it <b>free</b></a>
+				<a href="#" class="second-btn">See price</a>
+			</div>
+		</div>
+	</section>
+	<!-- end takeCare -->
+	<!-- start toBook -->
+	<section class="toBook">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Uppointment’s</h2>
+				<p>Easy to book, hard to miss. For all types of service providers and their customers at anytime on any device. <br>Your frontdesk would love it too.</p>
+			</div>
+			<div class="toBook-slider swiper-container">
+				<div class="toBook-slider__wrapper swiper-wrapper">
+					<div class="toBook-slide swiper-slide">
+						<div class="toBook-wrap">
+							<div class="toBook-ico"><img src="img/toBook/ico-1.svg" alt=""></div>
+							<span class="toBook-title">Сoffee house</span>
+							<p>Set up interactive menu and have your take out orders ready on time</p>
+						</div>
+					</div><!-- slide -->
+					<div class="toBook-slide swiper-slide">
+						<div class="toBook-wrap">
+							<div class="toBook-ico"><img src="img/toBook/ico-2.svg" alt=""></div>
+							<span class="toBook-title">Beauty salons and Spas</span>
+							<p>Physicians and Dentists, Chiropractors and Physical therapists. Hassle free appointments for your patients 24/7</p>
+						</div>
+					</div><!-- slide -->
+					<div class="toBook-slide swiper-slide">
+						<div class="toBook-wrap">
+							<div class="toBook-ico"><img src="img/toBook/ico-3.svg" alt=""></div>
+							<span class="toBook-title">Yoga studios</span>
+							<p>Yoga studios and After-school programs. Art classes and sport activities for kids and adults. Your students sign up for the next class on the go</p>
+						</div>
+					</div><!-- slide -->
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="button-middle">
+				<a href="#" class="primary-btn">Try it <b>free</b></a>
+			</div>
+		</div>
+	</section>
+	<!-- end toBook -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-logo">
+					<a href="#"><img src="img/footer/logo-small.svg" alt=""></a>
+				</div>
+				<ul class="footer-social">
+					<li><a href="#" class="hb-ico twitter-ico"></a></li>
+					<li><a href="#" class="hb-ico inst-ico"></a></li>
+					<li><a href="#" class="hb-ico youtube-ico"></a></li>
+				</ul>
+				<div class="footer-row">
+					<div class="footer-col footer-col-1">
+						<ul>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">API</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer-col-1">
+						<ul>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Use cases</a></li>
+							<li><a href="#">Features</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer-col-1">
+						<ul>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer-info">
+						<span class="footer-subtitle">Subscribe to our newsletter</span>
+						<p class="footer-text">Be first to know about new products and services and get ecclusive offers.</p>
+						<form action="">
+							<div class="footer-form">
+								<div class="footer-input">
+									<input type="email" name="email" placeholder="Email">
+									<button class="footer-btn"></button>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox">
+									<i class="checkbox-ico"></i>
+									<p>Yes, I would like to receive newsletter and promos</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="footer-block">
+					<p>© 2020 - Uppointment All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<div class="modal-bg"></div>
+	<!-- start signIn -->
+	<div id="modal-signIn" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<!--<div class="form-logo"><a href="#"><img src="img/header/logo.svg" alt=""></a></div>-->
+			<h3 class="form-title">Sign In</h3>
+			<p>New to PractiThink? <a href="#">Create an account</a></p>
+			<form action="POST">
+				<div class="input-block"><!-- input-error -->
+					<label for="m-1">Email </label>
+					<input id="m-1" type="email" name="email" placeholder="Example: email@domain.нcom">
+					<span class="input-text">password must be minimum 8 symbols</span>
+				</div>
+				<div class="input-block"><!-- input-error -->
+					<div class="input-block__top">
+						<label for="m-2">Password</label>
+						<span class="btn-show">Show</span>
+					</div>
+					<input id="m-2" type="password" name="password" placeholder="Password">
+					<span class="input-text">password must be minimum 8 symbols</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<span class="checkbox-ico"></span>
+					<p>Keep me signed in</p>
+				</div>
+				<button class="primary-btn">Sign in</button>
+				<div class="form-forgot">
+					<a href="#">Forgot password?</a>
+				</div>
+				<span class="form-or">or sign in with</span>
+				<ul class="form-social">
+					<li><a href="#"><i class="hb-ico soc-1"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-2"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-3"></i></a></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start create -->
+	<div id="modal-create" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<!--<div class="form-logo"><a href="#"><img src="img/header/logo.svg" alt=""></a></div>-->
+			<h3 class="form-title">Create an account</h3>
+			<p>New to PractiThink? <a href="#">Sign in here</a></p>
+			<form action="POST">
+				<div class="input-block"><!-- input-error -->
+					<label for="n-1">Full name</label>
+					<input class="input-fullName" id="n-1" type="text" name="name">
+					<span class="input-text">password must be minimum 8 symbols</span>
+				</div>
+				<div class="input-block"><!-- input-error -->
+					<label for="n-2">Company Name</label>
+					<input id="n-2" type="text" name="text">
+					<span class="input-text">password must be minimum 8 symbols</span>
+				</div>
+				<div class="input-block"><!-- input-error -->
+					<label for="n-3">Email</label>
+					<input id="n-3" type="email" name="email" placeholder="Example: email@gmail.com">
+					<span class="input-text">password must be minimum 8 symbols</span>
+				</div>
+				<div class="input-block"><!-- input-error -->
+					<div class="input-block__top">
+						<label for="n-4">Password</label>
+						<span class="btn-show">Show</span>
+					</div>
+					<input id="n-4" type="password" name="password" placeholder="Password">
+					<span class="input-text">password must be minimum 8 symbols</span>
+				</div>
+				<button class="primary-btn">Create an account</button>
+				<div class="form-forgot">
+					<a href="#">Forgot password?</a>
+				</div>
+				<span class="form-or">or sign in with</span>
+				<ul class="form-social">
+					<li><a href="#"><i class="hb-ico soc-1"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-2"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-3"></i></a></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-done -->
+	<div style="display: none;" id="modal-done" class="modal modalBig">
+		<div class="wrapper">
+			<div class="modal-wrap">
+				<div class="modalBig-row modalBig-row__big">
+					<div class="modalBig-img"><img src="img/modal/img-1.svg" alt=""></div>
+					<div class="modalBig-info">
+						<h3 class="modalBig-title">Thank you!</h3>
+						<p>Please verify your account by visiting link we sent to <b>frame@gmail.com This</b> prevents robots from abusing our platform.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
