@@ -65,7 +65,7 @@
 			</ul>
 			<div class="sidebar-mob"><a href="#" class="sidebar-link"></a></div>
 		</div>
-		<div class="content">
+		<div class="content invoices">
 			<div class="wrapper">
 				<div class="header">
 					<div class="header-bar"><span></span></div>
@@ -102,134 +102,232 @@
 						</div>
 					</div>
 				</div>
-				<div class="content-top">
-					<div class="content-top__title">
-						<h1>Invoices</h1>
-						<a href="#" class="hb-ico settings-ico"></a>
-					</div>
-					<div class="content-top__row">
-						<div class="input-block search-input">
-							<input type="text" name="search" placeholder="Search">
-							<i class="hb-ico search-ico"></i>
+				<div class="invoices-top">
+					<a href="#" class="back-link">Back</a>
+					<div class="invoices-top__row">
+						<div class="input-block">
+							<select name="text" class="select-drop">
+								<option value="Status">Multi invoice</option>
+								<option value="Status">Multi invoice</option>
+								<option value="Status">Multi invoice</option>
+							</select>
 						</div>
-						<div class="buttons-row">
-							<div class="input-block">
-								<div class="calendar-input">
-									<input type="text" name="text" placeholder="Date">
+						<div class="input-block">
+							<select name="text" class="select-drop">
+								<option value="Status">Plumbing</option>
+								<option value="Status">Plumbing</option>
+								<option value="Status">Plumbing</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<form action="">
+					<div class="invoices-profile">
+						<div class="invoices-profile__top">
+							<div class="invoices-profile__top-main">
+								<div class="dropFile">
+									<input type="file">
+									<div class="dropFile-ico"></div>
+								</div>
+								<a href="#" class="nameYou">
+									<span>Name You</span>
+									<i class="hb-ico nameYou-ico"></i>
+								</a>
+							</div>
+							<div class="invoices-profile__form">
+								<div class="input-block">
+									<div class="input-block__row">
+										<label for="">Invoice#</label>
+										<div class="prompt">
+											<div class="prompt-ico"></div>
+											<div class="prompt-info">
+												<p>Lorem ipsum, dolor sit amet.</p>
+											</div>
+										</div>
+									</div>
+									<input type="text" name="text" placeholder="Invoice #">
+								</div>
+								<div class="input-block">
+									<div class="input-block__row">
+										<label for="">Reference</label>
+									</div>
+									<input type="text" name="text" placeholder="Reference">
+								</div>
+								<div class="input-block">
+									<div class="input-block__row">
+										<label for="">Date</label>
+									</div>
+									<div class="calendar-input">
+										<input type="text" name="text" placeholder="Date">
+									</div>
+								</div>
+								<div class="input-block">
+									<div class="input-block__row">
+										<label for="">Recurring</label>
+									</div>
+									<select name="text">
+										<option value="">Due on receipt</option>
+										<option value="">Due on receipt</option>
+										<option value="">Due on receipt</option>
+									</select>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<i class="checkbox-ico"></i>
+									<p>Due on receipt</p>
 								</div>
 							</div>
-							<a href="#modal-newOrder" class="primary-btn primary-btn-ico modal-btn">
+						</div>
+						<div class="invoices-profile__bill">
+							<div class="invoices-profile__bill-tit">Bill To:</div>
+							<div class="invoices-profile__bill-block">
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Harry Green">
+								</div>
+								<div class="input-block">
+									<select name="text">
+										<option value="">Email address or name</option>
+										<option value="">Email address or name</option>
+									</select>
+								</div>
+								<div class="buttons-row invoices-profile__bill-buttons">
+									<a href="#" class="second-btn second-btn-ico">
+										<i class="hb-ico add-ico-blue"></i>
+										Add Customer
+									</a>
+									<a href="#" class="second-btn second-btn-ico">
+										<i class="hb-ico user-ico-blue"></i>
+										New Customer
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-profile__table">
+							<div class="invoices-profile__table-row invoices-profile__table-top">
+								<div class="invoices-profile__table-col col-1">Item Name</div>
+								<div class="invoices-profile__table-col col-2">Unit</div>
+								<div class="invoices-profile__table-col col-3">Price</div>
+								<div class="invoices-profile__table-col col-4">Tax</div>
+								<div class="invoices-profile__table-col col-5">Amount</div>
+							</div>
+							<div class="invoices-profile__table-row">
+								<div class="invoices-profile__table-col col-1">Item Name</div>
+								<div class="invoices-profile__table-col col-2">1</div>
+								<div class="invoices-profile__table-col col-3">1</div>
+								<div class="invoices-profile__table-col col-4"></div>
+								<div class="invoices-profile__table-col col-5">
+									<div class="invoices-profile__table-amount">1</div>
+								</div>
+								<a href="#" class="hb-ico libraryAdd-ico"></a>
+							</div>
+						</div>
+						<div class="invoices-profile__btn">
+							<a href="#" class="primary-btn primary-btn-ico">
 								<i class="hb-ico plus-ico-white"></i>
-								<span>New</span>
+								<span>New item</span>
 							</a>
 						</div>
-					</div>
-				</div>
-				<div class="content-all allTabs chat">
-					<div class="content-menu">
-						<ul class="content-menu__list tab-list">
-							<li><a href="#tab-1" class="active">All</a></li>
-							<li><a href="#tab-2">Draft</a></li>
-							<li><a href="#tab-3">Schedule</a></li>
-							<li><a href="#tab-4">Past due <b>1</b></a></li>
-							<li><a href="#tab-5">Paid</a></li>
-							<li><a href="#tab-6">Archive</a></li>
-						</ul>
-					</div>
-					<div class="tab tab-active" id="tab-1">
-						<div class="table table-6">
-							<div class="table-wrap">
-								<div class="table-row table-top">
-									<div class="checkbox">
-										<input type="checkbox">
-										<i class="checkbox-ico"></i>
+						<div class="invoices-profile__fees">
+							<div class="invoices-profile__fees-block">
+								<div class="invoices-profile__fees-all">
+									<b>Taxes and fees</b>
+									<a href="#">Add or remove fees</a>
+								</div><!-- all -->
+								<div class="invoices-profile__fees-all">
+									<div class="invoices-profile__fees-row">
+										<b>Subtotal</b>
 									</div>
-									<div class="table-col table-col__1">Date</div>
-									<div class="table-col table-col__2">Invoice#</div>
-									<div class="table-col table-col__3">Recipien</div>
-									<div class="table-col table-col__4">Delivery</div>
-									<div class="table-col table-col__5">Reminders</div>
-									<div class="table-col table-col__6">Amount</div>
-									<div class="table-col table-col__7">Status</div>
+									<b>$0.00</b>
+								</div><!-- all -->
+								<div class="invoices-profile__fees-all">
+									<div class="invoices-profile__fees-row">
+										<b>Shipping</b>
+										<div class="input-block">
+											<input type="text" name="text" placeholder="$0.00">
+										</div>
+									</div>
+									<b>$0.00</b>
+								</div><!-- all -->
+								<div class="invoices-profile__fees-all">
+									<div class="invoices-profile__fees-row">
+										<b>Subtotal</b>
+										<div class="input-block">
+											<input type="text" name="text" placeholder="$0.00">
+										</div>
+										<div class="input-block">
+											<select name="text">
+												<option value="">%</option>
+												<option value="">%</option>
+											</select>
+										</div>
+									</div>
+									<b>$0.00</b>
+								</div><!-- all -->
+								<div class="invoices-profile__fees-bottom">
+									<b>Total</b>
+									<b>$0.00</b>
 								</div>
-								<div class="table-row">
-									<div class="checkbox">
-										<input type="checkbox">
-										<i class="checkbox-ico"></i>
+							</div>
+						</div>
+						<div class="invoices-profile__bottom">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="input-block">
+										<label for="g-1">Invoice Terms</label>
+										<textarea name="text" id="g-1" placeholder="Comments"></textarea>
 									</div>
-									<div class="table-col table-col__1">12-12-2011</div>
-									<div class="table-col table-col__2">123</div>
-									<div class="table-col table-col__3"><a href="#" class="table-link">Name name</a></div>
-									<div class="table-col table-col__4 color-green">Email open</div>
-									<div class="table-col table-col__5"></div>
-									<div class="table-col table-col__6">$3460,00</div>
-									<div class="table-col table-col__7"><i class="hb-ico visibility-ico"></i>Sent</div>
-									<div class="table-drop drop">
-										<div class="drop-top">
-											<i class="hb-ico dots-ico"></i>
-										</div>
-										<div class="drop-info">
-											<ul class="drop-list">
-												<li><a href="#">
-													<i class="hb-ico banUser-ico"></i>
-													<span>Ban user</span>
-												</a></li>
-												<li><a href="#">
-													<i class="hb-ico edit-ico"></i>
-													<span>Edit</span>
-												</a></li>
-												<li><a href="#">
-													<i class="hb-ico delete-ico"></i>
-													<span>Delete</span>
-												</a></li>
-											</ul>
-										</div>
+								</div>
+								<div class="col-md-6">
+									<div class="input-block">
+										<label for="g-2">Note to recipient</label>
+										<textarea name="text" id="g-2" placeholder="Comments"></textarea>
 									</div>
 								</div>
 							</div>
-						</div><!-- table -->
+							<button class="primary-btn primary-btn-yellow">Attach files</button>
+							<div class="checkbox">
+								<input type="checkbox" checked>
+								<i class="checkbox-ico"></i>
+								<p>Require customer to agree to terms of service before paying by credit card. <a href="#">Learn more about how to protect yourself with terms of service</a></p>
+							</div>
+						</div>
 					</div>
-					<div class="tab" id="tab-2">
-						<p>Lorem ipsum dolor, sit amet.</p>
-					</div>
-					<div class="tab" id="tab-3">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Consequatur, voluptates?</p>
-					</div>
-					<div class="tab" id="tab-4">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit dolores error nobis labore ea.</p>
-					</div>
-					<div class="tab" id="tab-5">
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae natus modi reprehenderit incidunt soluta optio quidem odit? Et, provident, ullam.</p>
-					</div>
-					<div class="tab" id="tab-6">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum ad, saepe, iusto nostrum ex beatae illo voluptas nemo dolores provident vero, veritatis molestias voluptatem.</p>
-					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</section>
 	<!-- end page -->
 	<div class="modal-bg"></div>
-	<!-- start newProvider -->
-	<div id="modal-shortcut" class="formModal">
+	<!-- start invoices -->
+	<div id="modal-invoices" class="formModal">
 		<i class="hb-ico close-ico"></i>
 		<div class="form">
-			<h2 class="form-title">New Shortcut</h2>
+			<h2 class="form-title">Creat new customer</h2>
 			<form action="">
-				<div class="input-block">
-					<input type="text" name="text" placeholder="Name">
-				</div>
-				<div class="input-block">
-					<textarea name="text" placeholder="Message"></textarea>
-				</div>
-				<div class="input-block">
-					<input type="text" name="text" placeholder="Tags">
-				</div>
-				<div class="input-block">
-					<select name="text">
-						<option value="">Available for</option>
-						<option value="">Available for</option>
-					</select>
+				<div class="form-wrap">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Name">
+					</div>
+					<div class="input-row">
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Phone">
+						</div>
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Email">
+						</div>
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Address">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="City">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="State">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Zip">
+					</div>
 				</div>
 				<div class="form-btn">
 					<button class="primary-btn">Save</button>

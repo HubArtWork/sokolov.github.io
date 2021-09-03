@@ -118,7 +118,7 @@
 									<input type="text" name="text" placeholder="Date">
 								</div>
 							</div>
-							<a href="#modal-newOrder" class="primary-btn primary-btn-ico modal-btn">
+							<a href="#modal-invoices" class="primary-btn primary-btn-ico modal-btn">
 								<i class="hb-ico plus-ico-white"></i>
 								<span>New</span>
 							</a>
@@ -276,26 +276,36 @@
 	</section>
 	<!-- end page -->
 	<div class="modal-bg"></div>
-	<!-- start newProvider -->
-	<div id="modal-shortcut" class="formModal">
+	<!-- start invoices -->
+	<div id="modal-invoices" class="formModal">
 		<i class="hb-ico close-ico"></i>
 		<div class="form">
-			<h2 class="form-title">New Shortcut</h2>
+			<h2 class="form-title">Creat new customer</h2>
 			<form action="">
-				<div class="input-block">
-					<input type="text" name="text" placeholder="Name">
-				</div>
-				<div class="input-block">
-					<textarea name="text" placeholder="Message"></textarea>
-				</div>
-				<div class="input-block">
-					<input type="text" name="text" placeholder="Tags">
-				</div>
-				<div class="input-block">
-					<select name="text">
-						<option value="">Available for</option>
-						<option value="">Available for</option>
-					</select>
+				<div class="form-wrap">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Name">
+					</div>
+					<div class="input-row">
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Phone">
+						</div>
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Email">
+						</div>
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Address">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="City">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="State">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Zip">
+					</div>
 				</div>
 				<div class="form-btn">
 					<button class="primary-btn">Save</button>
