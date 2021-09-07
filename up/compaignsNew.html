@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link href = "https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<section class="page">
+		<div class="sidebar">
+			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-1"></i>
+					<span>Services</span>
+				</a></li>
+				<li><a href="#" class="active">
+					<i class="hb-ico sidebar-ico-2"></i>
+					<span>Team</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-3"></i>
+					<span>Orders</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-4"></i>
+					<span>Customers</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-5"></i>
+					<span>Compaigns</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-6"></i>
+					<span>Billing</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-7"></i>
+					<span>Chat</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-8"></i>
+					<span>Invoices</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-9"></i>
+					<span>Your Statistic</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-10"></i>
+					<span>Sign out</span>
+				</a></li>
+			</ul>
+			<div class="sidebar-mob"><a href="#" class="sidebar-link"></a></div>
+		</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="header">
+					<div class="header-bar"><span></span></div>
+					<div class="header-btn">
+						<a href="#" class="second-btn second-btn-ico">
+							<i class="hb-ico calendar-ico"></i>
+							<span>Calendar</span>
+						</a>
+					</div>
+					<div class="header-drop drop">
+						<div class="drop-top">
+							<span>Hello, <b>manhattan super fitness club</b></span>
+							<div class="header-user"></div>
+						</div>
+						<div class="drop-info">
+							<ul class="drop-list">
+								<li><a href="#">
+									<i class="hb-ico settings-ico"></i>
+									<span>Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico invoice-ico"></i>
+									<span>Invoice Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico terms-ico"></i>
+									<span>My terms of use</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico signOut-ico"></i>
+									<span>Sign out</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-top">
+					<div class="content-top__title">
+						<h1>New</h1>
+						<a href="#" class="hb-ico pencil-ico"></a>
+						<div class="input-block pencil-input">
+							<input type="text" name="text">
+						</div>
+					</div>
+				</div>
+				<div class="steps">
+					<div class="steps-content">
+						<div class="steps-item">
+							<div class="steps-main">
+								<span class="steps-name">To</span>
+								<p>Who are you sending this campaing to?</p>
+								<div class="input-block">
+									<input type="text">
+								</div>
+							</div>
+							<a href="#" class="primary-btn steps-btn">Add recipients</a>
+						</div>
+						<div class="steps-item">
+							<div class="steps-main">
+								<span class="steps-name">From</span>
+								<p>Who is sending this campaing?</p>
+								<div class="input-block">
+									<input type="text">
+								</div>
+							</div>
+							<a href="#" class="primary-btn steps-btn">Add from</a>
+						</div>
+						<div class="steps-item">
+							<div class="steps-main">
+								<span class="steps-name">Subject</span>
+								<p>What’s the subject line for this campaign?</p>
+								<div class="input-block">
+									<input type="text">
+								</div>
+							</div>
+							<a href="#" class="primary-btn steps-btn">Add subject</a>
+						</div>
+						<div class="steps-item">
+							<div class="steps-main">
+								<span class="steps-name">Content</span>
+								<p>Design the content for you email</p>
+								<img src="img/template/doc.svg" alt="">
+								<div class="input-block">
+									<input type="text">
+								</div>
+							</div>
+							<a href="#modal-recipients2" class="primary-btn modal-btn">Compose and design </a>
+						</div>
+					</div>
+					<div class="steps-bottom">
+						<h3 class="steps-title">Push your campaign beyond just email</h3>
+						<span class="steps-label">Uppointment link to campaign’s web version</span>
+						<div class="steps-input input-block">
+							<input type="text" name="text" value="https//uppointment/company-name-3456">
+							<i class="hb-ico edit-ico"></i>
+						</div>
+						<p>Click <b>pencil</b> icon to set up a custom URL.</p>
+						<div class="steps-all">
+							<h3 class="steps-title">Even further, add a social post to your campaign </h3>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="steps-block">
+										<div class="steps-ico"><i class="hb-ico fb-ico"></i></div>
+										<span class="steps-subtitle">Facebook</span>
+										<p>We noticed you’re not managing any facebook pages. You can only auto-post your campaing to a Facebook page that you manage with <a href="#">the personal profile you’ve connected to Uppointment.</a></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="steps-block">
+										<div class="steps-ico"><i class="hb-ico tw-ico"></i></div>
+										<span class="steps-subtitle">Twitter</span>
+										<p><a href="#">Connected with Twitter</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<div class="modal-bg"></div>
+	<!-- start newProvider -->
+	<div id="modal-newOrder" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">New order</h2>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Full name">
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">Category</option>
+						<option value="">Category</option>
+					</select>
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">SabCategory</option>
+						<option value="">SabCategory</option>
+					</select>
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">Master</option>
+						<option value="">Master</option>
+					</select>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- start newProvider -->
+	<div id="modal-recipients2" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">New Group</h2>
+			<form action="">
+				<div class="form-wrap">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Name this group">
+					</div>
+					<div class="form-checkbox">
+						<span class="form-checkbox__subtitle">Include existing group(s)</span>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>New year</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<i class="checkbox-ico"></i>
+							<p>New year 2</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Age</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>New</p>
+						</div>
+					</div>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
