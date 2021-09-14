@@ -1,16 +1,16 @@
 function myPrizes(){
-  var mySwiper = new Swiper('.myPrizes-slider', {
+  var mySwiper = new Swiper('.myPrizes-col-first .myPrizes-slider', {
     slidesPerView: 1,
     watchOverflow: true,
     effect: "fade",
     navigation: {
-      nextEl: '.myPrizes-col .swiper-button-next',
-      prevEl: '.myPrizes-col .swiper-button-prev',
+      nextEl: '.myPrizes-col-first .swiper-button-next',
+      prevEl: '.myPrizes-col-first .swiper-button-prev',
     },
   });
 }
 function myPrizes2(){
-  var mySwiper = new Swiper('.myPrizes-slider2', {
+  var mySwiper = new Swiper('.myPrizes-col-second .myPrizes-slider', {
     slidesPerView: 1,
     watchOverflow: true,
     effect: "fade",
@@ -26,6 +26,25 @@ if($('.myPrizes-slider').length){
 }
 
 $(document).ready(function(){
+
+  if($('.tournament-slider').length){
+    var mySwiper = new Swiper('.tournament-slider', {
+      slidesPerView: 1,
+      watchOverflow: true,
+      effect: "fade",
+      autoHeight: true,
+      navigation: {
+        nextEl: '.tournament-arrow .swiper-button-next',
+        prevEl: '.tournament-arrow .swiper-button-prev',
+      },
+    });
+
+    $('.tournament-link').click(mySwiper,function(){
+      var attr = $(this).attr('data-slide');
+
+      mySwiper.slideTo(attr);
+    });
+  }
 
   $('.myCodes-content').mCustomScrollbar();
   $('.forecasts-content').mCustomScrollbar();
