@@ -10,18 +10,18 @@ body{
 }
 button,.angular-uf-button-redirect,.uf-button-submit.button-submit--custom{
 	display: block;
-	width: 240px;
+	width: 220px;
 	height: 45px;
 	padding: 10px;
 	text-align: center;
 	font-family: "Myriad Pro";
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 25px;
 	font-weight: bold;
 	color: #fff;
 	white-space: nowrap;
 	background-color: #0460A0;
-	margin: 0 auto;
+	margin: 0 auto 15px;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
@@ -35,12 +35,15 @@ button,.angular-uf-button-redirect,.uf-button-submit.button-submit--custom{
 	padding-bottom: 10px;
 	margin: 0;
 }
+.angular-uf-container.angular-uf-device-check-err-message{
+	padding-bottom: 10px;
+}
 .angular-uf-container.angular-uf-restrict-message,.angular-uf-container.angular-uf-device-check-err-message{
 	text-align: center;
 }
 .dropzone.dropzone--custom.dz-clickable{
 	width: 240px;
-	height: 240px;
+	min-height: 240px;
 	margin: 0 auto;
 	border: 2px solid #F8E711;
 	border-radius: 10px;
@@ -52,7 +55,7 @@ button,.angular-uf-button-redirect,.uf-button-submit.button-submit--custom{
 .angular-uf-select-camera{
 	font-family: "Myriad Pro";
 	display: block;
-	width: 240;
+	width: 240px;
 	height: 48px;
 	border: 1px solid #fff;
 	background-color: #fff;
@@ -64,4 +67,19 @@ button,.angular-uf-button-redirect,.uf-button-submit.button-submit--custom{
 	box-shadow: 0px 3px 7px rgba(104, 39, 0, 0.25);
 	padding-top: 3px;
 	margin: 20px auto;
+}
+.form-control{
+	display: block
+	margin-top: 10px;
+	width: 100%
+	height: 48px
+	border: 1px solid #fff
+	background-color: #fff
+	border-radius: 10px
+	padding: 0 20px
+	font-size: 14px
+	font-weight: 600
+	color: #0460A0
+	box-shadow: 0px 3px 7px rgba(104, 39, 0, 0.25)
+	padding-top: 3px
 }
