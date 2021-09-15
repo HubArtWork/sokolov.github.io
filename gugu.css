@@ -1,3 +1,6 @@
+body{
+	background: transparent!important;
+}
 .angular-uf-device-check-err-message{
 	font-family: "Myriad Pro";
 	font-size: 16px;
@@ -5,9 +8,9 @@
 	font-weight: 600;
 	color: #fff;
 }
-.angular-uf-button-redirect,.uf-button-submit.button-submit--custom{
+button,.angular-uf-button-redirect,.uf-button-submit.button-submit--custom{
 	display: block;
-	width: 160px;
+	width: 240px;
 	height: 45px;
 	padding: 10px;
 	text-align: center;
@@ -19,13 +22,21 @@
 	white-space: nowrap;
 	background-color: #0460A0;
 	margin: 0 auto;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
 }
-.container-tutorial__text p,.angular-uf-container.angular-uf-message{
+.container-tutorial__text p,.angular-uf-container.angular-uf-message, .angular-uf-container.angular-uf-restrict-message{
 	font-family: "Myriad Pro";
 	font-size: 16px;
 	line-height: 19px;
 	font-weight: 600;
 	color: #fff;
+	padding-bottom: 10px;
+	margin: 0;
+}
+.angular-uf-container.angular-uf-restrict-message,.angular-uf-container.angular-uf-device-check-err-message{
+	text-align: center;
 }
 .dropzone.dropzone--custom.dz-clickable{
 	width: 240px;
