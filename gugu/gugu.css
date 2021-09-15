@@ -1,0 +1,37 @@
+.angular-uf-device-check-err-message{
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 600;
+	color: #fff;
+}
+.angular-uf-button-redirect,.uf-button-submit.button-submit--custom{
+	display: block;
+	width: 160px;
+	height: 45px;
+	padding: 10px;
+	text-align: center;
+	font-family: "Myriad Pro";
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+	color: #fff;
+	white-space: nowrap;
+	background-color: #0460A0;
+	margin: 0 auto;
+}
+.container-tutorial__text p{
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 600;
+	color: #fff;
+}
+.dropzone.dropzone--custom.dz-clickable{
+	width: 240px;
+	height: 240px;
+	margin: 0 auto;
+	border: 2px solid #F8E711;
+	border-radius: 10px;
+	overflow: hidden;
+}
