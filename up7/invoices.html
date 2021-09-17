@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<section class="page">
+		<div class="sidebar">
+			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-1"></i>
+					<span>Services</span>
+				</a></li>
+				<li><a href="#" class="active">
+					<i class="hb-ico sidebar-ico-2"></i>
+					<span>Team</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-3"></i>
+					<span>Orders</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-4"></i>
+					<span>Customers</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-5"></i>
+					<span>Compaigns</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-6"></i>
+					<span>Billing</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-7"></i>
+					<span>Chat</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-8"></i>
+					<span>Invoices</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-9"></i>
+					<span>Your Statistic</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-10"></i>
+					<span>Sign out</span>
+				</a></li>
+			</ul>
+			<div class="sidebar-mob"><a href="#" class="sidebar-link"></a></div>
+		</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="header">
+					<div class="header-bar"><span></span></div>
+					<div class="header-btn">
+						<a href="#" class="second-btn second-btn-ico">
+							<i class="hb-ico calendar-ico"></i>
+							<span>Calendar</span>
+						</a>
+					</div>
+					<div class="header-drop drop">
+						<div class="drop-top">
+							<span>Hello, <b>manhattan super fitness club</b></span>
+							<div class="header-user"></div>
+						</div>
+						<div class="drop-info">
+							<ul class="drop-list">
+								<li><a href="#">
+									<i class="hb-ico settings-ico"></i>
+									<span>Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico invoice-ico"></i>
+									<span>Invoice Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico terms-ico"></i>
+									<span>My terms of use</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico signOut-ico"></i>
+									<span>Sign out</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-top">
+					<div class="content-top__title">
+						<h1>Invoices</h1>
+						<a href="#" class="hb-ico settings-ico"></a>
+					</div>
+					<div class="content-top__row">
+						<div class="input-block search-input">
+							<input type="text" name="search" placeholder="Search">
+							<i class="hb-ico search-ico"></i>
+						</div>
+						<div class="buttons-row">
+							<div class="input-block">
+								<div class="calendar-input">
+									<input type="text" name="text" placeholder="Date">
+								</div>
+							</div>
+							<a href="#modal-invoices" class="primary-btn primary-btn-ico modal-btn">
+								<i class="hb-ico plus-ico-white"></i>
+								<span>New</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-all allTabs chat">
+					<div class="content-menu">
+						<ul class="content-menu__list tab-list">
+							<li><a href="#tab-1" class="active">All</a></li>
+							<li><a href="#tab-2">Draft</a></li>
+							<li><a href="#tab-3">Schedule</a></li>
+							<li><a href="#tab-4">Past due <b>1</b></a></li>
+							<li><a href="#tab-5">Paid</a></li>
+							<li><a href="#tab-6">Archive</a></li>
+						</ul>
+					</div>
+					<div class="tab tab-active" id="tab-1">
+						<div class="table table-small">
+							<div class="table-wrap">
+								<ul class="sort">
+									<li><a href="#">Delete</a></li>
+									<li><a href="#">Archive</a></li>
+								</ul>
+								<table class="dataTable dataTable-10">
+									<thead>
+				            <tr>
+				            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
+			                <th>Date</th>
+			                <th>Invoice#</th>
+			                <th>Recipien</th>
+			                <th>Delivery</th>
+			                <th>Reminders</th>
+			                <th>Amount</th>
+			                <th>Status</th>
+			                <th></th>
+				            </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>12-12-2011</td>
+			                <td>123</td>
+			                <td><a href="#" class="table-link">Name name</a></td>
+			                <td><span class="color-red">Deliver</span></td>
+			                <td></td>
+			                <td>$3460,00</td>
+			                <td>
+			                	<i class="hb-ico visibility-ico"></i>
+			                	Sent
+			                </td>
+			                <td>
+				                <div class="table-drop drop">
+													<div class="drop-top">
+														<i class="hb-ico dots-ico"></i>
+													</div>
+													<div class="drop-info">
+														<ul class="drop-list">
+															<li><a href="#">
+																<i class="hb-ico edit-ico"></i>
+																<span>Edit</span>
+															</a></li>
+															<li><a href="#">
+																<i class="hb-ico delete-ico"></i>
+																<span>Delete</span>
+															</a></li>
+															<li><a href="#">
+																<i class="hb-ico remind-ico"></i>
+																<span>Remind</span>
+															</a></li>
+															<li><a href="#">
+																<i class="hb-ico markPaid-ico"></i>
+																<span>Mark paid</span>
+															</a></li>
+															<li><a href="#">
+																<i class="hb-ico copyL-ico"></i>
+																<span>Copy</span>
+															</a></li>
+															<li><a href="#">
+																<i class="hb-ico archive-ico"></i>
+																<span>Archive</span>
+															</a></li>
+															<li><a href="#">
+																<i class="hb-ico download-ico"></i>
+																<span>Download</span>
+															</a></li>
+														</ul>
+													</div>
+												</div>
+											</td>
+			            	</tr>
+			            </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="tab" id="tab-2">
+						<p>Lorem ipsum dolor, sit amet.</p>
+					</div>
+					<div class="tab" id="tab-3">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Consequatur, voluptates?</p>
+					</div>
+					<div class="tab" id="tab-4">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit dolores error nobis labore ea.</p>
+					</div>
+					<div class="tab" id="tab-5">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae natus modi reprehenderit incidunt soluta optio quidem odit? Et, provident, ullam.</p>
+					</div>
+					<div class="tab" id="tab-6">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum ad, saepe, iusto nostrum ex beatae illo voluptas nemo dolores provident vero, veritatis molestias voluptatem.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<div class="modal-bg"></div>
+	<!-- start invoices -->
+	<div id="modal-invoices" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">Creat new customer</h2>
+			<form action="">
+				<div class="form-wrap">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Name">
+					</div>
+					<div class="input-row">
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Phone">
+						</div>
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Email">
+						</div>
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Address">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="City">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="State">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Zip">
+					</div>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
