@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="modals-buttons">
+			<li><a data-fancybox data-src="#modal-registration" href="javascript:;">Регитсрация</a></li>
+			<li><a data-fancybox data-src="#modal-comeIn" href="javascript:;">Вход</a></li>
+			<li><a data-fancybox data-src="#modal-confirmation" href="javascript:;">Регитсрация подтверждение</a></li>
+			<li><a data-fancybox data-src="#modal-success" href="javascript:;">Регитсрация успех</a></li>
+			<li><a data-fancybox data-src="#modal-question" href="javascript:;">поп ап задать вопрос</a></li>
+			<li><a data-fancybox data-src="#modal-info" href="javascript:;">поп ап информация</a></li>
+			<li><a data-fancybox data-src="#modal-registration2" href="javascript:;">Регитсрация ошибка email</a></li>
+		</ul>
+	</div>
+	<!-- modal registration -->
+	<div style="display: none;" id="modal-registration" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Регистрация через:</h3>
+			<ul class="social">
+				<li><a href="#"><img src="img/social/ico-1.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-2.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-3.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-4.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-5.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-6.svg" alt=""></a></li>
+			</ul>
+			<h3 class="modal-title">Или :</h3>
+			<form action="">
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-1">Фамилия</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-1" type="text" name="text">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-2">Имя</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-2" type="text" name="text">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-3">Email</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-3" type="email" name="email">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-4">Пароль</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-4" type="password" name="password">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-5">Повторить пароль</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-5" type="password" name="password">
+				</div><!-- input -->
+				<div class="modal-txt">
+					<a href="#" class="input-link">Согласен с условиями пользовательского соглашения </a>
+				</div>
+				<div class="buttons-row">
+					<button class="primary-btn">Зарегистрироваться</button>
+					<a data-fancybox data-src="#modal-comeIn" href="javascript:;" class="second-btn">Уже есть аккаунт</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- modal comeIn -->
+	<div style="display: none;" id="modal-comeIn" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Войти через:</h3>
+			<ul class="social">
+				<li><a href="#"><img src="img/social/ico-1.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-2.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-3.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-4.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-5.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-6.svg" alt=""></a></li>
+			</ul>
+			<h3 class="modal-title">Или :</h3>
+			<form action="">
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-6">Email</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-6" type="email" name="email">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-7">Пароль</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-7" type="password" name="password">
+				</div><!-- input -->
+				<div class="modal-forgot">
+					<a href="#" class="input-link input-link-small">Забыли пароль ?</a>
+				</div>
+				<div class="buttons-row">
+					<button class="primary-btn">Войти</button>
+					<a data-fancybox data-src="#modal-registration" href="javascript:;" class="second-btn">Зарегистрироваться</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- modal confirmation -->
+	<div style="display: none;" id="modal-confirmation" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Подтвердитие email</h3>
+			<div class="modal-descr">
+				<p>Для завершения регистрации - перейдите по ссылке, которая выслана Вам на электронный ящик</p>
+			</div>
+			<div class="modal-goOver">
+				<span>Перейти на :</span>
+				<a href="#">gmail.com</a>
+			</div>
+		</div>
+	</div>
+	<!-- modal success -->
+	<div style="display: none;" id="modal-success" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Регистрация прошла успешно</h3>
+			<div class="modal-descr">
+				<p>Спасибо за регистрацию ! Теперь вы можете заказывать товары и добавлять их в корзину !</p>
+			</div>
+			<div class="modal-button">
+				<a href="#" class="primary-btn primary-btn-black">Все товары</a>
+			</div>
+		</div>
+	</div>
+	<!-- modal question -->
+	<div style="display: none;" id="modal-question" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Задать вопрос</h3>
+			<p>Вы можете задать свой вопрос и наш консультант свяжется с вами в ближайшее время</p>
+			<form action="">
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-8">Имя:</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-8" type="text" name="text">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-9">Email/Телефон:</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-9" type="text" name="text">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-10">Вопрос:</label>
+						<span class="input-text"></span>
+					</div>
+					<textarea id="m-10" name="text"></textarea>
+				</div><!-- input -->
+				<div class="modal-button modal-button-big">
+					<button class="primary-btn">Задать вопрос</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- modal info -->
+	<div style="display: none;" id="modal-info" class="modal modal-info">
+		<div class="modal-wrap">
+			<h3 class="modal-title modal-title-blue">Письмо на почту отправлено</h3>
+			<p>Письмо содержит ссылку для подтверждения договора.</p>
+			<div class="modal-row">
+				<div class="modal-img">
+					<img src="img/modal-1-min.png" alt="">
+				</div>
+				<div class="modal-block">
+					<span class="modal-subtitle">Способы оплаты:</span>
+					<ul>
+						<li>Оплата онлайн через  WebPay</li>
+						<li>Через систему "Расчет" (ЕРИП).</li>
+						<li>Банковская картой, наличные в пункте самовывоза</li>
+						<li>Касса самообслуживания в пункте самовывоза</li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-button modal-button-big">
+				<a href="#" class="primary-btn">Задать вопрос</a>
+			</div>
+		</div>
+	</div>
+	<!-- modal registration2 -->
+	<div style="display: none;" id="modal-registration2" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Регистрация через:</h3>
+			<ul class="social">
+				<li><a href="#"><img src="img/social/ico-1.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-2.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-3.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-4.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-5.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/social/ico-6.svg" alt=""></a></li>
+			</ul>
+			<h3 class="modal-title">Или :</h3>
+			<form action="">
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-11">Фамилия</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-11" type="text" name="text">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-12">Имя</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-12" type="text" name="text">
+				</div><!-- input -->
+				<div class="input-block error">
+					<div class="input-top">
+						<label for="m-13">Email</label>
+						<span class="input-text">*такой email уже существует</span>
+					</div>
+					<input id="m-13" type="email" name="email">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-14">Пароль</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-14" type="password" name="password">
+				</div><!-- input -->
+				<div class="input-block">
+					<div class="input-top">
+						<label for="m-15">Повторить пароль</label>
+						<span class="input-text"></span>
+					</div>
+					<input id="m-15" type="password" name="password">
+				</div><!-- input -->
+				<div class="modal-txt">
+					<a href="#" class="input-link">Согласен с условиями пользовательского соглашения </a>
+				</div>
+				<div class="buttons-row">
+					<button class="primary-btn">Зарегистрироваться</button>
+					<a data-fancybox data-src="#modal-comeIn" href="javascript:;" class="second-btn">Уже есть аккаунт</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
