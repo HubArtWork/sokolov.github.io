@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<style>
+	.preloader {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: 99999;
+	  transition: 1s all ease;
+	  opacity: 1;
+	  visibility: visible;
+	  background-color: #551C25;
+	  transition-delay: .7s;
+	}
+	.preloader .wrapper {
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
+		height: 100%;
+		position: relative;
+	}
+	.loader {
+		max-width: 346px;
+		width: 100%;
+	}
+  .loader-logo {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-200%);
+  	transition: 1s all ease;
+  }
+  .loader-logo svg{
+  	display: block;
+  	max-width: 346px;
+  }
+  .loader-list {
+  	display: flex;
+  	flex-flow: row nowrap;
+  	align-items: center;
+  	justify-content: space-between;
+  	margin: 30px 0;
+  	transition: opacity 1s ease;
+  }
+  .loader-list li {
+  	font-size: 16px;
+  	line-height: 19px;
+  	color: #D8A380;
+  	letter-spacing: 0.05em;
+  }
+  .loader-row {
+  	height: 22px;
+  	padding: 11px 101px 0 0;
+  	position: relative;
+  	transition: 1s all ease;
+  }
+  .loader-bar {
+  	display: flex;
+  	height: 3px;
+  }
+  .loader-bar span {
+  	display: inline-block;
+  	height: 3px;
+  	background-color: #D8A380;
+  }
+  .preloader .loader #load_prec {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+		display: block;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F7C995;
+    letter-spacing: 0.1em;
+  }
+  .preloader.done {
+  	background-color: transparent;
+  	pointer-events: none;
+  }
+  .preloader.done .loader-list, .preloader.done .loader-row {
+  	opacity: 0;
+  	visibility: hidden;
+  }
+  .preloader.done .loader-logo {
+  	top: 25px;
+  	left: 100px;
+  	transform: translate(0,0);
+  }
+  .preloader.done .loader-logo svg {
+  	max-width: 166px;
+  }
+  @media only screen and (max-width : 720px){
+  	.preloader .wrapper {
+  		padding: 0;
+  	}
+  	.loader {
+  		max-width: 282px;
+  	}
+  	.loader-logo svg{
+	  	display: block;
+	  	max-width: 282px;
+	  }
+	  .loader-list {
+	  	margin: 20px 0;
+	  }
+	  .loader-list li {
+	  	font-size: 14px;
+	  	line-height: 17px;
+	  }
+	  .loader-row {
+	  	padding: 9px 78px 0 0;
+	  }
+	  .preloader .loader #load_prec {
+	    font-size: 18px;
+	    line-height: 22px;
+	  }
+	  .preloader.done .loader-logo {
+	  	top: 0;
+	  	left: 50px;
+	  }
+  	.preloader.done .loader-logo svg {
+	  	max-width: 125px;
+	  }
+  }
+  @media only screen and (max-width : 370px){
+  	.preloader.done .loader-logo {
+	  	left: 30px;
+	  }
+  	.preloader.done .loader-logo svg {
+	  	max-width: 83px;
+	  }
+  }
+</style>
+<body>
+	<div id="page-preloader" class="preloader">
+		<div class="wrapper">
+			<div class="loader">
+				<div class="loader-logo"><svg width="346" height="50" viewBox="0 0 346 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M331.101 -2.80437e-07H345.517V49.2292H331.101V-2.80437e-07ZM297.345 42.5465C304.448 42.5465 309.441 38.1862 309.441 32.7708V29.1852C306.769 31.7878 302.548 32.5625 295.796 33.4755C291.578 34.038 290.38 35.9359 290.38 37.6236C290.38 39.6637 291.788 42.5465 297.345 42.5465ZM291.295 27.4274C308.737 26.0901 309.441 24.6827 309.441 23.3473C309.441 22.012 308.879 20.4645 300.368 20.4645C292.21 20.4645 291.225 21.8719 290.873 23.5575H277.441C277.441 19.1291 278.849 12.3764 301.141 12.3764C322.098 12.3764 323.858 19.3393 323.858 27.2152V38.046C323.858 39.031 324.21 39.8058 325.686 39.8058H327.583V49.2292H318.16C312.887 49.2292 310.707 47.5395 310.142 41.5636C307.541 45.992 301.986 49.8619 292.703 49.8619C281.099 49.8619 276.599 43.9539 276.599 37.4835C276.599 31.0831 280.817 28.2002 291.295 27.4274V27.4274ZM223.499 13.3613H237.215V19.7597C242.488 14.3463 248.466 12.5866 255.85 12.5866C269.425 12.5866 272.591 19.4795 272.591 26.2302V49.2292H258.1V31.013C258.1 25.3874 255.571 21.7297 249.099 21.7297C242.278 21.7297 237.918 25.6697 237.918 31.7878V49.2292H223.499V13.3613ZM203.95 27.1451C203.107 22.7848 199.73 20.4645 191.924 20.4645C185.596 20.4645 181.728 21.9399 180.601 27.1451H203.95ZM191.924 12.3764C214.711 12.3764 218.506 22.7147 218.506 31.2252V33.2633H180.39C181.023 38.7488 184.258 41.9139 193.261 41.9139C201.698 41.9139 203.81 39.8058 204.02 38.1161H218.296C217.946 42.4064 215.203 50 193.261 50C171.95 50 166.114 41.4214 166.114 30.7307C166.114 20.8849 171.389 12.3764 191.924 12.3764V12.3764ZM129.403 38.5385C129.686 40.9289 130.458 41.9139 138.617 41.9139C147.265 41.9139 148.25 40.2262 148.25 38.9609C148.25 31.9279 115.548 40.0841 115.548 23.98C115.548 18.0741 120.118 12.3764 137.139 12.3764C157.251 12.3764 161.473 17.5095 161.473 22.8548H146.705C146.563 21.5195 146.07 20.4645 138.194 20.4645C130.528 20.4645 129.123 21.4494 129.123 22.8548C129.123 29.8178 162.739 20.3243 162.739 38.046C162.739 44.4464 159.011 50 139.179 50C116.532 50 114.494 42.8989 114.494 38.5385H129.403ZM71.1711 13.3613H84.8869V19.9019C89.6676 14.4865 93.8178 12.5866 99.4434 12.5866C109.572 12.5866 112.667 18.2142 112.667 26.02V28.06H98.6707C98.6707 24.6827 97.4054 21.8018 93.043 21.8018C87.98 21.8018 85.5895 25.7377 85.5895 30.2382V49.2292H71.1711V13.3613ZM44.8708 33.053L34.1101 11.1111L23.4214 33.053H44.8708ZM24.2642 0.0700771H43.9559L68.3583 49.5095H62.7327L23.0691 33.6857L15.4735 49.2292H0L24.2642 0.0700771Z" fill="#F7C995"/></svg></div>
+				<ul class="loader-list">
+					<li>Качество</li>
+					<li>Эстестика</li>
+					<li>Комфорт</li>
+				</ul>
+				<div class="loader-row">
+					<div class="loader-bar"><span id="prec_bar" style="width: 0%;"></span></div>
+					<span id="load_prec">0%</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<div class="header-bar">
+				<div class="bar-ico"></div>
+				<span>МЕНЮ</span>
+			</div>
+		</div>
+	</header>
+	<div class="header-menu">
+		<div class="wrapper">
+			<div class="header-row">
+				<div class="header-col">
+					<div class="header-block active">
+						<span class="header-subtitle">Жилая недвижимость</span>
+						<ul class="is-open">
+							<li><a href="#">Все проекты</a></li>
+							<li><a href="#">Modum</a></li>
+							<li><a href="#">Ariosto!</a></li>
+							<li><a href="#">Энфилд</a></li>
+							<li><a href="#">Гольфстрим</a></li>
+							<li><a href="#">Солнечный</a></li>
+							<li><a href="#">YouПитер</a></li>
+							<li><a href="#">Девяткино</a></li>
+						</ul>
+					</div>
+					<div class="header-block">
+						<span class="header-subtitle">Нежилые помещения</span>
+						<ul>
+							<li><a href="#">Коммерческие помещения</a></li>
+							<li><a href="#">Паркинг</a></li>
+							<li><a href="#">Социальные объекты</a></li>
+						</ul>
+					</div>
+					<div class="header-block">
+						<span class="header-subtitle">Качество новостроек</span>
+						<ul>
+							<li><a href="#">Отделка</a></li>
+							<li><a href="#">Благоустройство</a></li>
+							<li><a href="#">Технологии</a></li>
+							<li><a href="#">Входные группы</a></li>
+							<li><a href="#">Умный дом</a></li>
+							<li><a href="#">Proformat</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+				<div class="header-col">
+					<div class="header-block">
+						<span class="header-subtitle">Застройщик</span>
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Арсенал - детям</a></li>
+							<li><a href="#">Проектная документация</a></li>
+						</ul>
+					</div>
+					<div class="header-block">
+						<span class="header-subtitle">Как купить</span>
+						<ul>
+							<li><a href="#">Условия покупки</a></li>
+							<li><a href="#">Онлайн-покупка</a></li>
+							<li><a href="#">Ипотека</a></li>
+							<li><a href="#">Военная ипотека</a></li>
+							<li><a href="#">Трейд ин</a></li>
+							<li><a href="#">Рассрочка</a></li>
+							<li><a href="#">Субсидии</a></li>
+							<li><a href="#">Акции и скидки</a></li>
+							<li><a href="#">Материнский капитал</a></li>
+							<li><a href="#">Предложения от партнеров</a></li>
+						</ul>
+					</div>
+					<div class="header-block">
+						<span class="header-subtitle">Свяжитесь с нами</span>
+						<ul>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Обратная связь</a></li>
+						</ul>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="wrapper">
+			<a href="#" class="main-link main-link-projects">Проекты</a>
+			<a href="#" class="main-link main-link-about">О компании</a>
+			<div class="main-slider swiper-container">
+				<div class="swiper-wrapper">
+					<div class="main-slide swiper-slide">
+						<div class="main-wrap">
+							<div class="main-bg" style="background-image: url(img/img-1-min.jpg);"></div>
+							<div class="main-descr">
+								<div class="main-block">
+									<div class="main-logo"><img src="img/logo-2.svg" alt=""></div>
+									<span class="main-text">Квартал бизнес-класса в Приморском районе с собственным SPA-комплексом и приватными террасами</span>
+									<div class="main-line"><a href="#" class="main-arrow"></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="main-info">
+							<span class="main-name" id="main-name-1">ЖК Модум</span>
+							<span class="main-district">Приморский район</span>
+						</div>
+					</div><!-- slide -->
+					<div class="main-slide swiper-slide">
+						<div class="main-wrap">
+							<div class="main-bg" style="background-image: url(img/img-2-min.jpg);"></div>
+							<div class="main-descr">
+								<div class="main-block">
+									<div class="main-logo"><img src="img/logo-3.svg" alt=""></div>
+									<span class="main-text">Квартал комфорт-класса в Приморской районе c собственным парком и уникальными планировками.</span>
+									<div class="main-line"><a href="#" class="main-arrow"></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="main-info">
+							<span class="main-name" id="main-name-2">ЖК Ariosto</span>
+							<span class="main-district">Приморский район</span>
+						</div>
+					</div><!-- slide -->
+					<div class="main-slide swiper-slide">
+						<div class="main-wrap">
+							<div class="main-bg" style="background-image: url(img/img-3-min.jpg);"></div>
+							<div class="main-descr">
+								<div class="main-block">
+									<div class="main-logo"><img src="img/logo-4.svg" alt=""></div>
+									<span class="main-text">Квартал комфорт-класса в Выборгском районе c английской школой и аллеей с фонтанами</span>
+									<div class="main-line"><a href="#" class="main-arrow"></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="main-info">
+							<span class="main-name" id="main-name-3">ЖК Энфилд</span>
+							<span class="main-district">Выборгский район</span>
+						</div>
+					</div><!-- slide -->
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<a href="tel:+78122107835" class="footer-phone">+7 812 210-7-835</a>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script>
+		window.addEventListener("load", function() {
+		  var
+				preloader = document.getElementById('page-preloader'),
+				prec_display = document.getElementById('load_prec');
+				prec_bar = document.getElementById('prec_bar'),
+				gog = 0;
+
+			var interval = setInterval(counter,15);
+
+			function counter(){
+				prec_display.innerHTML = sum() + '%';
+				prec_bar.style.width = sum() + '%';
+
+				if(gog == 102){
+					clearInterval(interval);
+					preloader.classList.add('done');
+				}
+			}
+
+			function sum(){
+				return gog++;
+			}
+
+		});
+	</script>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
