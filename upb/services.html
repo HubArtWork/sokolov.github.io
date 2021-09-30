@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<section class="page">
+		<div class="sidebar">
+			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-0"></i>
+					<span>Calendar</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-1"></i>
+					<span>Services</span>
+				</a></li>
+				<li><a href="#" class="active">
+					<i class="hb-ico sidebar-ico-2"></i>
+					<span>Team</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-3"></i>
+					<span>Orders</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-4"></i>
+					<span>Customers</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-5"></i>
+					<span>Compaigns</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-6"></i>
+					<span>Billing</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-7"></i>
+					<span>Chat</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-8"></i>
+					<span>Invoices</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-9"></i>
+					<span>Your Statistic</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-10"></i>
+					<span>Sign out</span>
+				</a></li>
+			</ul>
+			<div class="sidebar-mob"></div>
+		</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="header">
+					<div class="header-bar"><span></span></div>
+					<div class="header-drop drop">
+						<div class="drop-top">
+							<span>Hello, <b>manhattan super fitness club</b></span>
+							<div class="header-user"></div>
+						</div>
+						<div class="drop-info">
+							<ul class="drop-list">
+								<li><a href="#">
+									<i class="hb-ico settings-ico"></i>
+									<span>Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico invoice-ico"></i>
+									<span>Invoice Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico terms-ico"></i>
+									<span>My terms of use</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico signOut-ico"></i>
+									<span>Sign out</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-top">
+					<div class="content-top__title">
+						<h1>Service</h1>
+						<a href="#" class="hb-ico pencil-ico"></a>
+						<div class="input-block pencil-input">
+							<input type="text" name="text">
+						</div>
+					</div>
+					<div class="content-top__row content-top__row-big">
+						<div class="content-top__inputs">
+							<div class="input-block">
+								<select name="text" class="select-drop">
+									<option value="Category">Category</option>
+									<option value="Category">Category</option>
+									<option value="Category">Category</option>
+								</select>
+							</div>
+							<div class="input-block search-input">
+								<input type="text" name="search" placeholder="Search">
+								<i class="hb-ico search-ico"></i>
+							</div>
+						</div>
+						<div class="buttons-row">
+							<a href="#modal-addService" class="primary-btn primary-btn-ico modal-btn">
+								<i class="hb-ico plus-ico-white"></i>
+								<span>Service</span>
+							</a>
+							<a href="#modal-addCategory" class="second-btn second-btn-ico modal-btn">
+								<i class="hb-ico plus-ico-blue"></i>
+								<span>Category</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-all allTabs">
+					<div class="content-menu">
+						<ul class="content-menu__list tab-list">
+							<li><a href="#tab-1" class="active">All</a></li>
+							<li><a href="#tab-2">Shop 1</a></li>
+							<li><a href="#tab-3">Shop Flowers 1</a></li>
+						</ul>
+					</div>
+					<div class="tab tab-active" id="tab-1">
+						<div class="table">
+							<div class="table-wrap">
+								<ul class="sort">
+									<li><a href="#">Delete</a></li>
+									<li><a href="#">Archive</a></li>
+								</ul>
+								<ul class="actions-list">
+									<li><a href="#">
+										<i class="hb-ico edit-ico"></i>
+										<span>Edit</span>
+									</a></li>
+									<li><a href="#">
+										<i class="hb-ico delete-ico"></i>
+										<span>Delete</span>
+									</a></li>
+									<li><a href="#">
+										<i class="hb-ico resume-ico"></i>
+										<span>Resume</span>
+									</a></li>
+									<li><a href="#">
+										<i class="hb-ico pause-ico"></i>
+										<span>Pause</span>
+									</a></li>
+								</ul>
+								<div class="actions-mob">
+									<div class="input-block">
+										<select name="text">
+											<option value="">Edit</option>
+											<option value="">Delete</option>
+											<option value="">Resume</option>
+											<option value="">Pause</option>
+										</select>
+									</div>
+								</div>
+								<table class="dataTable">
+									<thead>
+				            <tr>
+				            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
+			                <th>Category</th>
+			                <th>Service</th>
+			                <th>Duration, min</th>
+			                <th>Price, $</th>
+			                <th>Slots</th>
+			                <th>Payment</th>
+			                <th>Provider</th>
+				            </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>Home cleaning</td>
+			                <td>Service 1</td>
+			                <td>60</td>
+			                <td>$10,00</td>
+			                <td>1</td>
+			                <td>No</td>
+			                <td>Name</td>
+			            	</tr>
+			            	<tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>Home cleaning</td>
+			                <td>Service 1</td>
+			                <td>60</td>
+			                <td>$10,00</td>
+			                <td>1</td>
+			                <td>No</td>
+			                <td>Name</td>
+			            	</tr>
+			            	<tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>Home cleaning</td>
+			                <td>Service 1</td>
+			                <td>60</td>
+			                <td>$10,00</td>
+			                <td>1</td>
+			                <td>No</td>
+			                <td>Name</td>
+			            	</tr>
+			            </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="tab" id="tab-2">
+						<p>Lorem, ipsum.</p>
+					</div>
+					<div class="tab" id="tab-3">
+						<p>Lorem, ipsum, dolor.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<div class="modal-bg"></div>
+	<!-- start addCategory -->
+	<div id="modal-addCategory" class="formModal addCategory">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<div class="addCategory-top">
+				<h2 class="form-title">Add category for you services</h2>
+				<p>If your business provides a lot of services for different client's groups, dividing these services into categories will improve UX (user's experience) on your website.</p>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<input class="addCategory-input" type="text" name="text" placeholder="Category">
+				</div>
+				<div class="input-block">
+					<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+					  <option value="AL">Alabama</option>
+					  <option value="AL">Alabama</option>
+					  <option value="WY">Wyoming</option>
+					</select>
+				</div>
+				<div class="addCategory-block"></div>
+				<div class="addCategory-btn">
+					<a href="#" class="second-btn second-btn-ico">
+						<i class="hb-ico plus-ico-blue"></i>
+						<span>Add another category</span>
+					</a>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+				<ul class="tags">
+					<li>lorEWem-1 DFADSSA<i class="hb-ico close-ico"></i></li>
+					<li>lorewedsm-2 EW<i class="hb-ico close-ico"></i></li>
+					<li>lorem-3 <i class="hb-ico close-ico"></i></li>
+					<li>loremdfFS-4 <i class="hb-ico close-ico"></i></li>
+					<li>lorem-1 <i class="hb-ico close-ico"></i></li>
+					<li>loCDSrem-2 <i class="hb-ico close-ico"></i></li>
+					<li>lorem-3 <i class="hb-ico close-ico"></i></li>
+					<li>lorWEGFVSASDem-4 <i class="hb-ico close-ico"></i></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start addService -->
+	<div id="modal-addService" class="formModal formModal-big newServices">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">New Provider</h2>
+			<form action="">
+				<div class="form-wrap">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Service name">
+					</div>
+					<div class="input-block">
+						<select name="text">
+							<option value="">Select category</option>
+							<option value="">Select category</option>
+						</select>
+					</div>
+					<div class="input-block">
+						<select name="text">
+							<option value="">Service length</option>
+							<option value="">Service length</option>
+						</select>
+					</div>
+					<div class="input-row">
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Prise ($)">
+						</div>
+						<div class="input-block input-50">
+							<input type="email" name="email" placeholder="Slots within length">
+						</div>
+						<div class="prompt">
+							<div class="prompt-ico"></div>
+							<div class="prompt-info">
+								<p>Lorem ipsum, dolor sit amet.</p>
+							</div>
+						</div>
+					</div>
+					<div class="input-block">
+						<select name="text">
+							<option value="">Service length</option>
+							<option value="">Service length</option>
+						</select>
+					</div>
+					<div class="input-block">
+						<div class="inputs-checkbox">
+							<div class="checkbox">
+								<input type="radio" name="mm" checked>
+								<i class="checkbox-ico"></i>
+								<p>Active</p>
+							</div>
+							<div class="checkbox">
+								<input type="radio" name="mm">
+								<i class="checkbox-ico"></i>
+								<p>Payment required</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="addNote">
+					<a href="#">Add note</a> (for you only)
+				</div>
+				<div class="statistics">
+					<div class="statistics-row">
+						<div class="statistics-col active">
+							<span class="statistics-bar"></span>
+							<span class="statistics-tit">Sun</span>
+							<span class="statistics-block">09 am</span>
+							<span class="statistics-block">10 am</span>
+						</div><!-- col -->
+						<div class="statistics-col active">
+							<span class="statistics-bar"></span>
+							<span class="statistics-tit">Mon</span>
+							<span class="statistics-block">09 am</span>
+							<span class="statistics-block">10 am</span>
+						</div><!-- col -->
+						<div class="statistics-col active">
+							<span class="statistics-bar"></span>
+							<span class="statistics-tit">Tue</span>
+							<span class="statistics-block">09 am</span>
+							<span class="statistics-block">10 am</span>
+						</div><!-- col -->
+						<div class="statistics-col active">
+							<span class="statistics-bar"></span>
+							<span class="statistics-tit">Wed</span>
+							<span class="statistics-block">09 am</span>
+							<span class="statistics-block">10 am</span>
+						</div><!-- col -->
+						<div class="statistics-col active">
+							<span class="statistics-bar"></span>
+							<span class="statistics-tit">Thu</span>
+							<span class="statistics-block">09 am</span>
+							<span class="statistics-block">10 am</span>
+						</div><!-- col -->
+						<div class="statistics-col">
+							<span class="statistics-bar"></span>
+							<span class="statistics-tit">Fri</span>
+							<span class="statistics-block">0 am</span>
+							<span class="statistics-block">0 am</span>
+						</div><!-- col -->
+						<div class="statistics-col">
+							<span class="statistics-bar"></span>
+							<span class="statistics-tit">Sat</span>
+							<span class="statistics-block">0 am</span>
+							<span class="statistics-block">0 am</span>
+						</div><!-- col -->
+					</div>
+					<div class="statistics-row statistics-bottom">
+						<a href="#modal-break" class="statistics-col active modal-btn">
+							<i class="hb-ico break-ico"></i>
+							<div class="prompt-info">
+								<p>add a break</p>
+							</div>
+						</a><!-- col -->
+						<a href="#modal-break" class="statistics-col active modal-btn">
+							<i class="hb-ico break-ico"></i>
+							<div class="prompt-info">
+								<p>add a break</p>
+							</div>
+						</a><!-- col -->
+						<a href="#modal-break" class="statistics-col active modal-btn">
+							<i class="hb-ico break-ico"></i>
+							<div class="prompt-info">
+								<p>add a break</p>
+							</div>
+						</a><!-- col -->
+						<a href="#modal-break" class="statistics-col active modal-btn">
+							<i class="hb-ico break-ico"></i>
+							<div class="prompt-info">
+								<p>add a break</p>
+							</div>
+							<span class="break-block">
+								<span class="break-subtitle">Break 1:</span>
+								<p>10 am - 2 pm</p>
+							</span>
+						</a><!-- col -->
+						<a href="#modal-break" class="statistics-col active current modal-btn">
+							<i class="hb-ico break-ico"></i>
+							<div class="prompt-info">
+								<p>add a break</p>
+							</div>
+							<span class="break-block">
+								<span class="break-subtitle">Break 1:</span>
+								<p>10 am - 2 pm</p>
+							</span>
+							<span class="break-block">
+								<span class="break-subtitle">Break 1:</span>
+								<p>10 am - 2 pm</p>
+							</span>
+						</a><!-- col -->
+						<a href="#modal-break" class="statistics-col modal-btn">
+							<i class="hb-ico break-ico"></i>
+							<div class="prompt-info">
+								<p>add a break</p>
+							</div>
+						</a><!-- col -->
+						<a href="#modal-break" class="statistics-col modal-btn">
+							<i class="hb-ico break-ico"></i>
+							<div class="prompt-info">
+								<p>add a break</p>
+							</div>
+						</a><!-- col -->
+					</div>
+				</div>
+				<div class="form-wrap">
+					<div class="form-btn">
+						<button class="primary-btn">Save</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- fancybox suggestions -->
+	<div id="modal-break" class="popup popup-break">
+		<div class="popup-wrap">
+			<div class="popup-top">
+				<h3 class="popup-title">Tuesday’s <span>coffee break</span></h3>
+				<p>Clients will see slots between these ours as “booked”</p>
+			</div>
+			<div class="popup-content">
+				<div class="popup-row">
+					<div class="popup-inputs">
+						<div class="input-block">
+							<input type="text" name="text" placeholder="09:30 am">
+						</div>
+						<div class="popup-txt">-</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="11: 40 am">
+						</div>
+					</div>
+					<i class="hb-ico trash-ico"></i>
+				</div>
+				<div class="popup-row">
+					<div class="popup-inputs">
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Begins">
+						</div>
+						<div class="popup-txt">-</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Ends">
+						</div>
+					</div>
+					<i class="hb-ico plus-ico-blue"></i>
+				</div>
+			</div>
+			<div class="buttons-row">
+				<a href="#" class="primary-btn">Save</a>
+				<a href="#" class="second-btn">Cancel</a>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

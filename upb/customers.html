@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<section class="page">
+		<div class="sidebar">
+			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-0"></i>
+					<span>Calendar</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-1"></i>
+					<span>Services</span>
+				</a></li>
+				<li><a href="#" class="active">
+					<i class="hb-ico sidebar-ico-2"></i>
+					<span>Team</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-3"></i>
+					<span>Orders</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-4"></i>
+					<span>Customers</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-5"></i>
+					<span>Compaigns</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-6"></i>
+					<span>Billing</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-7"></i>
+					<span>Chat</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-8"></i>
+					<span>Invoices</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-9"></i>
+					<span>Your Statistic</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-10"></i>
+					<span>Sign out</span>
+				</a></li>
+			</ul>
+			<div class="sidebar-mob"></div>
+		</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="header">
+					<div class="header-bar"><span></span></div>
+					<div class="header-drop drop">
+						<div class="drop-top">
+							<span>Hello, <b>manhattan super fitness club</b></span>
+							<div class="header-user"></div>
+						</div>
+						<div class="drop-info">
+							<ul class="drop-list">
+								<li><a href="#">
+									<i class="hb-ico settings-ico"></i>
+									<span>Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico invoice-ico"></i>
+									<span>Invoice Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico terms-ico"></i>
+									<span>My terms of use</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico signOut-ico"></i>
+									<span>Sign out</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-top">
+					<div class="content-top__title">
+						<h1>Customers</h1>
+						<a href="#" class="hb-ico pencil-ico"></a>
+						<div class="input-block pencil-input">
+							<input type="text" name="text">
+						</div>
+					</div>
+					<div class="content-top__row">
+						<div class="input-block search-input">
+							<input type="text" name="search" placeholder="Search">
+							<i class="hb-ico search-ico"></i>
+						</div>
+						<div class="buttons-row">
+							<a href="#modal-newProvider" class="primary-btn primary-btn-ico modal-btn">
+								<i class="hb-ico plus-ico-white"></i>
+								<span>New</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<h4 class="content-subtitle">List of Orders</h4>
+				<div class="table">
+					<div class="table-wrap">
+						<ul class="sort">
+							<li><a href="#">Delete</a></li>
+							<li><a href="#">Archive</a></li>
+						</ul>
+						<ul class="actions-list">
+							<li><a href="#">
+								<i class="hb-ico edit-ico"></i>
+								<span>Edit</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico reserve-ico"></i>
+								<span>Reserve</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico delete-ico"></i>
+								<span>Delete</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico password-ico"></i>
+								<span>Password</span>
+							</a></li>
+						</ul>
+						<div class="actions-mob">
+							<div class="input-block">
+								<select name="text">
+									<option value="">Edit</option>
+									<option value="">Reserve</option>
+									<option value="">Delete</option>
+									<option value="">Password</option>
+								</select>
+							</div>
+						</div>
+						<table class="dataTable dataTable-4">
+							<thead>
+		            <tr>
+		            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
+	                <th>Full name</th>
+	                <th>Joined</th>
+	                <th>Services</th>
+	                <th>Master</th>
+	                <th>Order / Cance</th>
+		            </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+	                <td>Name name</td>
+	                <td>03-05-2021</td>
+	                <td>Spa, mASSAGE,</td>
+	                <td>
+	                	<div class="table-user" style="background-image: url(img/user-min.jpg);"></div>
+										Name name
+	                </td>
+	                <td>25/<span class="color-red">10</span> (<span class="color-green">40%</span>)</td>
+	            	</tr>
+	            </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<div class="modal-bg"></div>
+	<!-- start newProvider -->
+	<div id="modal-newOrder" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">New order</h2>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Full name">
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">Category</option>
+						<option value="">Category</option>
+					</select>
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">SabCategory</option>
+						<option value="">SabCategory</option>
+					</select>
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">Master</option>
+						<option value="">Master</option>
+					</select>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
