@@ -81,86 +81,125 @@
 										<input type="text" name="text" placeholder="Name">
 									</div>
 									<div class="checkbox">
-										<input type="file">
+										<input type="checkbox">
 										<i class="checkbox-ico"></i>
-										<p>Package template</p>
-									</div>
-									<div class="checkbox">
-										<input type="file">
-										<i class="checkbox-ico"></i>
-										<p>Tracking or Order (scan or enter number)</p>
+										<p>VIN</p>
 									</div>
 									<div class="template-row">
 										<div class="new-point">
-											<input type="file">
+											<input type="checkbox">
 											<i class="hb-ico photo-ico"></i>
 											<span>Add new point</span>
 										</div>
 										<div class="checkbox">
-											<input type="file">
+											<input type="checkbox">
 											<i class="checkbox-ico"></i>
 											<p>Required</p>
 										</div>
 									</div>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Vehicle condition</p>
+									</div>
 								</div>
 								<div class="template-block">
-									<div class="checkbox">
-										<input type="file">
-										<i class="checkbox-ico"></i>
-										<p>Package condition</p>
+									<div class="template-checkbox">
+										<div class="template-checkbox__ico"><i class="hb-ico keys-ico"></i></div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Car keys</p>
+										</div>
 									</div>
-									<div class="checkbox">
-										<input type="file">
-										<i class="checkbox-ico"></i>
-										<p>Add description</p>
-									</div>
-									<div class="checkbox">
-										<input type="file">
-										<i class="checkbox-ico"></i>
-										<p>Items inside (Number of items)</p>
+									<div class="template-checkbox">
+										<div class="template-checkbox__ico"><i class="hb-ico title-ico"></i></div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Title</p>
+										</div>
+										<div class="radios">
+											<div class="radio">
+												<input type="radio" name="title" checked>
+												<i class="radio-ico"></i>
+												<p>Yes</p>
+											</div>
+											<div class="radio">
+												<input type="radio" name="title">
+												<i class="radio-ico"></i>
+												<p>No</p>
+											</div>
+										</div>
 									</div>
 									<div class="template-checkbox">
 										<div class="template-checkbox__ico"><i class="hb-ico weight-ico"></i></div>
 										<div class="checkbox">
-											<input type="file">
+											<input type="checkbox">
 											<i class="checkbox-ico"></i>
-											<p>Weight</p>
+											<p>Floor mats</p>
 										</div>
 										<div class="radios">
 											<div class="radio">
-												<input type="radio" name="weight" checked>
+												<input type="radio" name="mats" checked>
 												<i class="radio-ico"></i>
-												<p>Kg</p>
+												<p>Yes</p>
 											</div>
 											<div class="radio">
-												<input type="radio" name="weight">
+												<input type="radio" name="mats">
 												<i class="radio-ico"></i>
-												<p>Id</p>
+												<p>No</p>
 											</div>
 										</div>
 									</div>
 									<div class="template-checkbox">
-										<div class="template-checkbox__ico"><i class="hb-ico dimensions-ico"></i></div>
+										<div class="template-checkbox__ico"><i class="hb-ico tire-ico"></i></div>
 										<div class="checkbox">
-											<input type="file">
+											<input type="checkbox">
 											<i class="checkbox-ico"></i>
-											<p>Dimensions (W*H*L)</p>
+											<p>Spare tire</p>
+										</div>
+										<div class="radios">
+											<div class="radio">
+												<input type="radio" name="tire" checked>
+												<i class="radio-ico"></i>
+												<p>Yes</p>
+											</div>
+											<div class="radio">
+												<input type="radio" name="tire">
+												<i class="radio-ico"></i>
+												<p>No</p>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="template-block">
-									<div class="checkbox">
-										<input type="file">
-										<i class="checkbox-ico"></i>
-										<p>Accepted By</p>
+								<div class="template-block template-last">
+									<div class="row">
+										<div class="col-6">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+												<p>Milage</p>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+												<p>Required</p>
+											</div>
+										</div>
 									</div>
 									<div class="checkbox">
-										<input type="file">
+										<input type="checkbox">
 										<i class="checkbox-ico"></i>
-										<p>Signature</p>
+										<p>Description</p>
 									</div>
-									<div class="signature"><img src="img/signature-min.png" alt=""></div>
-									<a href="#" class="add-link">Add new point</a>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Accept by</p>
+									</div>
 								</div>
 								<div class="button-row">
 									<button class="primary-btn">Add location</button>
@@ -169,22 +208,38 @@
 							</div>
 						</div>
 						<div class="template-sidebar">
+							<div class="template-sidebar__img"><img src="img/template.svg" alt=""></div>
 							<h3 class="template-title">Template name232</h3>
-							<div class="input-block">
-								<label for="">Tracking</label>
-								<div class="input-scan">
-									<input type="text" name="text" placeholder="Add Tracking">
-									<button class="primary-btn">Scan</button>
+							<div class="input-block input-key">
+								<label for="">Keys</label>
+								<select name="text">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+							</div>
+							<ul class="checks">
+								<li>Title</li>
+								<li>Floor mats</li>
+								<li>Spare tire</li>
+							</ul>
+							<div class="row">
+								<div class="col-6">
+									<div class="input-block">
+										<label for="">Milage</label>
+										<input type="text" name="text" placeholder="Out">
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="input-block">
+										<label for=""></label>
+										<input type="text" name="text" placeholder="Out">
+									</div>
 								</div>
 							</div>
 							<div class="input-block">
-								<label for="">Weight</label>
-								<input type="text" name="text" placeholder="7 kg">
-							</div>
-							<div class="add-photo">
-								<input type="file">
-								<i class="hb-ico add-photo-ico"></i>
-								<p>Add photo</p>
+								<label for="">Description</label>
+								<textarea name="text" placeholder="Description..."></textarea>
 							</div>
 						</div>
 					</div>
