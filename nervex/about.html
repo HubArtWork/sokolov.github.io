@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header header-2">
+		<div class="wrapper">
+			<div class="header-wrap">
+				<div class="header-logo"><a href="#"><svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M32.2154 12.2359V12.7641C29.6866 14.3895 27.0269 15.9715 24.5541 17.6402L21.6301 19.4606C21.3496 19.6392 21.0458 19.7769 20.7275 19.8696C20.0572 20.0648 19.3424 20.0314 18.6926 19.7748C18.0935 19.5439 17.5852 19.1206 17.2453 18.5693C17.1223 18.3695 17.0271 18.1535 16.9622 17.9273C16.8465 17.5362 16.8154 17.1243 16.8712 16.7198C16.9269 16.3154 17.0682 15.928 17.2854 15.5841C17.6859 14.9096 18.3829 14.2296 19.459 13.5714L27.0536 8.83887L27.5316 9.10976C28.1671 9.47276 28.8294 9.84388 29.5424 10.234C30.1993 10.5915 30.9123 10.9708 31.7027 11.3798L32.2101 11.6507V12.2277L32.2154 12.2359ZM23.5848 16.0284L29.4249 12.3117L28.6665 11.9189C28.1324 11.6318 27.6224 11.3419 27.099 11.0439L20.423 15.1994C19.6219 15.7006 19.1226 16.153 18.8769 16.5701C18.796 16.6955 18.7426 16.8371 18.7205 16.9853C18.6984 17.1335 18.708 17.2848 18.7487 17.4289C18.7679 17.4912 18.7939 17.5512 18.8262 17.6077C18.9547 17.8044 19.1418 17.9543 19.3602 18.0357C19.6353 18.1401 19.9365 18.1496 20.2174 18.0628C20.3741 18.016 20.524 17.9486 20.6634 17.8623L23.5848 16.0284Z" fill="#43B0FF" class="path-1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M32.2021 9.37827L23.5849 3.96042L20.6688 2.14543C20.5301 2.05791 20.38 1.99044 20.2229 1.94497C19.942 1.85814 19.6407 1.86766 19.3657 1.97206C19.1464 2.05184 18.9589 2.20214 18.8316 2.40007C18.7993 2.45655 18.7733 2.51652 18.7542 2.57886C18.7136 2.72296 18.7041 2.87421 18.7262 3.02237C18.7483 3.17053 18.8016 3.31213 18.8823 3.43759C19.128 3.85477 19.622 4.30716 20.4285 4.80831L20.6021 4.91667C24.5916 7.40346 27.5744 9.25095 31.7055 11.3964L30.8616 13.0787C26.7012 10.9278 23.6783 9.04507 19.6461 6.52577L19.4752 6.41741C18.407 5.74831 17.702 5.0792 17.3015 4.40468C17.0843 4.06079 16.9431 3.67336 16.8873 3.26892C16.8315 2.86448 16.8626 2.45258 16.9784 2.06146C17.0398 1.83584 17.1315 1.61982 17.2507 1.41944C17.5892 0.869107 18.0955 0.445861 18.6927 0.21397C19.3453 -0.0403317 20.0622 -0.0698402 20.7329 0.129993C21.0491 0.22506 21.351 0.363599 21.6301 0.54175L24.5676 2.35402L32.2582 7.19758H32.2155V9.36472L32.2021 9.37827Z" fill="#43B0FF" class="path-1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.76397V7.23573C2.52884 5.62392 5.18853 4.02836 7.66396 2.35966L10.58 0.541974C10.8611 0.363854 11.1647 0.225333 11.4826 0.130217C12.1516 -0.0685943 12.8665 -0.0390914 13.5174 0.214194C14.1164 0.446637 14.6251 0.869546 14.9674 1.41967C15.0885 1.62013 15.1828 1.83603 15.2478 2.06168C15.3636 2.45281 15.3947 2.8647 15.3389 3.26914C15.2831 3.67358 15.1418 4.06102 14.9247 4.4049C14.5241 5.07943 13.8272 5.75937 12.7537 6.41764L5.15648 11.1474L4.67849 10.8765C4.04561 10.5108 3.38069 10.1397 2.67037 9.75232C2.01079 9.39474 1.2978 9.0155 0.510041 8.60645L0 8.34097V7.76397ZM8.63063 3.97147L2.79321 7.68L3.54892 8.08904C4.08299 8.37619 4.59303 8.66604 5.11643 8.96403L11.7923 4.80853C12.5935 4.30738 13.0901 3.85499 13.3358 3.43782C13.4173 3.31265 13.4709 3.17103 13.493 3.02275C13.5152 2.87448 13.5052 2.7231 13.464 2.57909C13.446 2.51631 13.42 2.4562 13.3866 2.4003C13.2593 2.20237 13.0718 2.05206 12.8525 1.97229C12.5775 1.86788 12.2762 1.85836 11.9953 1.9452C11.8382 1.99066 11.6881 2.05813 11.5493 2.14566L8.63063 3.97147Z" fill="white" class="path-2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.6137L8.63063 16.0315L11.5467 17.8492C11.6861 17.9355 11.836 18.0029 11.9926 18.0497C12.2735 18.1365 12.5748 18.127 12.8498 18.0226C13.0682 17.9413 13.2553 17.7913 13.3839 17.5946C13.4173 17.5387 13.4433 17.4786 13.4613 17.4158C13.5028 17.2718 13.5127 17.1204 13.4906 16.9721C13.4685 16.8238 13.4147 16.6822 13.3331 16.5571C13.0875 16.1399 12.5935 15.6875 11.7897 15.1864L11.6161 15.078C7.61055 12.5912 4.6411 10.7437 0.512711 8.59826L1.35655 6.91602C5.51431 9.0669 8.53716 10.9496 12.5721 13.4689L12.7457 13.5773C13.8138 14.2464 14.5161 14.9155 14.9167 15.59C15.1338 15.9339 15.2751 16.3213 15.3309 16.7258C15.3866 17.1302 15.3556 17.5421 15.2398 17.9332C15.1748 18.1589 15.0805 18.3748 14.9594 18.5752C14.6183 19.122 14.1126 19.5428 13.5174 19.7753C12.8665 20.0286 12.1516 20.0581 11.4826 19.8593C11.1645 19.766 10.8607 19.6284 10.58 19.4502L7.66395 17.6461L0 12.8296V10.6137Z" fill="white" class="path-2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.2368 11.5239C13.5342 11.5239 13.8248 11.4344 14.0721 11.2668C14.3193 11.0993 14.512 10.8611 14.6258 10.5824C14.7396 10.3037 14.7693 9.99706 14.7113 9.70122C14.6533 9.40537 14.5101 9.13362 14.2999 8.92033C14.0896 8.70704 13.8217 8.56179 13.5301 8.50294C13.2385 8.44409 12.9362 8.47429 12.6615 8.58973C12.3868 8.70516 12.152 8.90064 11.9868 9.15144C11.8216 9.40225 11.7334 9.69711 11.7334 9.99876C11.7334 10.4032 11.8918 10.7912 12.1737 11.0772C12.4557 11.3632 12.8381 11.5239 13.2368 11.5239Z" fill="#43B0FF" class="path-1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.7544 11.5239C19.0517 11.5239 19.3424 11.4344 19.5896 11.2668C19.8369 11.0993 20.0296 10.8611 20.1434 10.5824C20.2572 10.3037 20.2869 9.99706 20.2289 9.70122C20.1709 9.40537 20.0277 9.13362 19.8175 8.92033C19.6072 8.70704 19.3393 8.56179 19.0477 8.50294C18.7561 8.44409 18.4538 8.47429 18.1791 8.58973C17.9043 8.70516 17.6695 8.90064 17.5043 9.15144C17.3392 9.40225 17.251 9.69711 17.251 9.99876C17.2517 10.403 17.4103 10.7905 17.6921 11.0764C17.9739 11.3623 18.3559 11.5232 18.7544 11.5239Z" fill="white" class="path-2"/></g><defs><clipPath id="clip0"><rect width="33" height="20" fill="white"/></clipPath></defs></svg><span>Nervex</span></a></div>
+				<ul class="header-list">
+					<li class="drop">
+						<a href="#" class="drop-link">Products</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								<span class="drop-title">NERVEX unit</span>
+								<span class="drop-text">Multi language application server from NERVEX.</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								<span class="drop-title">NERVEX app protect</span>
+								<span class="drop-text">Modern app security solution that works seamlessly in DevOps environments.</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								<span class="drop-title">NERVEX instance manager</span>
+								<span class="drop-text">Configure and manage NGINX Open Source and NGINX Plus instances in your enterprise.</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								<span class="drop-title">NERVEX plus</span>
+								<span class="drop-text">Software load balancer, API gateway, and reverse proxy built on top of NGINX.</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-5"></i>
+								<span class="drop-title">NERVEX service mesh</span>
+								<span class="drop-text">Multi language application server from NERVEX.</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-6"></i>
+								<span class="drop-title">NERVEX amplify</span>
+								<span class="drop-text">Lightweight SaaS monitoring and static analysis for NGINX Open Source.</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-7"></i>
+								<span class="drop-title">NERVEX open source</span>
+								<span class="drop-text">Enterprise-grade Ingress load balancing on Kubernetes platforms.</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-8"></i>
+								<span class="drop-title">NERVEX controler</span>
+								<span class="drop-text">Multi language application server from NERVEX.</span>
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Solutions</a></li>
+					<li><a href="#">Learn</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+				<a href="#" class="header-link">Free trial</a>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start technologies -->
+	<section class="technologies">
+		<div class="wrapper">
+			<h1 class="technologies-title">Suite of technologies for developing and delivering modern applications</h1>
+			<div class="technologies-wrap">
+				<div class="technologies-row">
+					<div class="technologies-col">
+						<p>NERVEX, now a part of F5, Inc., is the company behind the popular open source project, NGINX. We offer a suite of technologies for developing and delivering modern applications.</p>
+					</div>
+					<div class="technologies-col">
+						<p>Together with F5, our combined solution bridges the gap between NetOps and DevOps, with multi‑cloud application services that span from code to customer.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="technologies-bg">
+			<picture>
+			 	<source srcset="img/technologies-min.png" media="(min-width: 769px)">
+			 	<img src="img/technologies-mob-min.png" alt="MDN">
+			</picture>
+		</div>
+	</section>
+	<!-- end technologies -->
+	<!-- start team -->
+	<section class="team">
+		<div class="wrapper">
+			<div class="team-top">
+				<h2 class="team-title">Meet the F5 leadership team</h2>
+				<div class="team-info">
+					<p>Learn more about the passionate minds responsible for nurturing, building, and sharing the software that powers the world's busiest websites.</p>
+					<div class="team-btn">
+						<a href="#" class="second-btn">
+							Meet our leadership team
+							<i class="hb-ico arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="team-row">
+				<div class="team-col">
+					<div class="team-wrap">
+						<span>26K</span>
+						<p>customers</p>
+					</div>
+				</div><!-- col -->
+				<div class="team-col">
+					<div class="team-wrap">
+						<span>81M</span>
+						<p>product questions answered per year by users</p>
+					</div>
+				</div><!-- col -->
+				<div class="team-col">
+					<div class="team-wrap">
+						<span>+50%</span>
+						<p>growth in weekly active users in 2021</p>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end team -->
+	<!-- start vacancy -->
+	<section class="vacancy">
+		<div class="wrapper">
+			<div class="section-info">
+				<h2 class="section-title">Free vacancy</h2>
+				<p>Jobs that are available from us and looking for their own people! Browse our vacancies and find the one that is right for you!</p>
+			</div>
+			<div class="vacancy-wrap">
+				<div class="vacancy-row vacancy-top">
+					<div class="vacancy-col vacancy-col-1">Position</div>
+					<div class="vacancy-col vacancy-col-2">Department</div>
+					<div class="vacancy-col vacancy-col-3">Location</div>
+				</div>
+				<div class="vacancy-row">
+					<div class="vacancy-col vacancy-col-1">Motion Designer</div>
+					<div class="vacancy-col vacancy-col-2">Design</div>
+					<div class="vacancy-col vacancy-col-3"><i class="hb-ico location-ico"></i>San Francisco</div>
+					<a href="#" class="vacancy-arrow"></a>
+				</div>
+				<div class="vacancy-row">
+					<div class="vacancy-col vacancy-col-1">Art Director</div>
+					<div class="vacancy-col vacancy-col-2">Design</div>
+					<div class="vacancy-col vacancy-col-3"><i class="hb-ico location-ico"></i>San Francisco</div>
+					<a href="#" class="vacancy-arrow"></a>
+				</div>
+				<div class="vacancy-row">
+					<div class="vacancy-col vacancy-col-1">Customer Relations</div>
+					<div class="vacancy-col vacancy-col-2">Support</div>
+					<div class="vacancy-col vacancy-col-3"><i class="hb-ico location-ico"></i>New York</div>
+					<a href="#" class="vacancy-arrow"></a>
+				</div>
+				<div class="vacancy-row">
+					<div class="vacancy-col vacancy-col-1">React Developer</div>
+					<div class="vacancy-col vacancy-col-2">Engineering</div>
+					<div class="vacancy-col vacancy-col-3"><i class="hb-ico location-ico"></i>San Francisco</div>
+					<a href="#" class="vacancy-arrow"></a>
+				</div>
+			</div>
+			<div class="vacancy-button">
+				<a href="#" class="second-btn">
+					<span>Don't see a good fit? Submit your resume</span>
+					<b>Submit your resume</b>
+					<i class="hb-ico arrow-right"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- end vacancy -->
+	<!-- start partners -->
+	<section class="partners">
+		<div class="wrapper">
+			<div class="section-info">
+				<span class="section-subtitle">
+					<i class="hb-ico section-ico-5"></i>
+					TRUSTED BY THE BEST
+				</span>
+				<h2 class="section-title">Our partners</h2>
+				<p>You can be confident working with participants in the NERVEX Partner Program – they’re certified to have the skills and capabilities to bring additional value to your deployments. Combine the power and performance of NGINX with a rich ecosystem of solutions, services, and deployment options.</p>
+				<ul class="section-list">
+					<li><a href="#">
+						<span>Read success stories</span>
+						<i class="hb-ico arrow-right"></i>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="partners-bg">
+			<picture>
+			 	<source srcset="img/partners.svg" media="(min-width: 769px)">
+			 	<img src="img/partners-mob.svg" alt="MDN">
+			</picture>
+		</div>
+	</section>
+	<!-- end partners -->
+	<!-- start blog -->
+	<section class="blog">
+		<div class="wrapper">
+			<div class="section-info section-center">
+				<h2 class="section-title">Resources</h2>
+			</div>
+			<div class="blog-row">
+				<div class="blog-col">
+					<div class="blog-wrap">
+						<a href="#" class="blog-img" style="background-image: url(img/img-3-min.jpg);"></a>
+						<div class="blog-info">
+							<span class="blog-date">Ebooks <b>July 6, 2021</b></span>
+							<h3 class="blog-title"><a href="#">How to manage sudden traffic surges and server overload</a></h3>
+							<p>Traffic surges and server overload are serious concerns for online retailers anytime, but especially during the year-end.</p>
+							<a href="#" class="read-link">Read article</a>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="blog-col">
+					<div class="blog-wrap">
+						<a href="#" class="blog-img" style="background-image: url(img/img-4-min.jpg);"></a>
+						<div class="blog-info">
+							<span class="blog-date">Ebooks <b>July 6, 2021</b></span>
+							<h3 class="blog-title"><a href="#">NERVEX is available in AWS marketplace for containers</a></h3>
+							<p>Purchase the NERVEX Plus-based version of NERVEX Ingress Controller, with or without NERVEX App Protect,</p>
+							<a href="#" class="read-link">Read article</a>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="blog-col">
+					<div class="blog-wrap">
+						<a href="#" class="blog-img" style="background-image: url(img/img-5-min.jpg);"></a>
+						<div class="blog-info">
+							<span class="blog-date">Ebooks <b>July 6, 2021</b></span>
+							<h3 class="blog-title"><a href="#">Our roadmap for QUIC and HTTP/3 support in NERVEX</a></h3>
+							<p>We describe the state of our QUIC+HTTP/3 implementation, starting with a review of the work we've done so far.</p>
+							<a href="#" class="read-link">Read article</a>
+						</div>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end blog -->
+	<!-- start build -->
+	<section class="build">
+		<div class="wrapper">
+			<div class="section-info">
+				<span class="section-subtitle">
+					<i class="hb-ico section-ico-2"></i>
+					TRUSTED BY THE BEST
+				</span>
+				<h2 class="section-title">Build Better Products</h2>
+				<p>CPU-Optimized, or Memory-Optimized configurations provide flexibility to build, test, and grow your app from startup to scale.</p>
+				<ul class="section-list">
+					<li><a href="#">
+						<span>NERVEX plus free trial</span>
+						<i class="hb-ico arrow-right"></i>
+					</a></li>
+					<li><a href="#">
+						<span>NERVEX controller free trial</span>
+						<i class="hb-ico arrow-right"></i>
+					</a></li>
+					<li><a href="#">
+						<span>Ask us a question</span>
+						<i class="hb-ico arrow-right"></i>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="build-bg">
+			<picture>
+			 	<source srcset="img/bg-4.svg" media="(min-width: 769px)">
+			 	<img src="img/mob-3.svg" alt="MDN">
+			</picture>
+		</div>	
+	</section>
+	<!-- end build -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-col footer-col-1">
+					<div class="footer-main">
+						<div class="footer-logo">
+							<a href="#"><img src="img/logo-2.svg" alt=""><span>Nervex</span></a>
+						</div>
+						<p>Is an open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more.</p>
+					</div>
+					<div class="footer-block">
+						<ul class="footer-social">
+							<li><a href="#" class="hb-ico dribbble-ico"></a></li>
+							<li><a href="#" class="hb-ico facebook-ico"></a></li>
+							<li><a href="#" class="hb-ico twitter-ico"></a></li>
+							<li><a href="#" class="hb-ico youtube-ico"></a></li>
+						</ul>
+						<p>Copyright © F5, Inc. All rights reserved.</p>
+					</div>
+				</div>
+				<div class="footer-col footer-col-2">
+					<span class="footer-title">PRODUCTS</span>
+					<ul>
+						<li><a href="#">NERVEX Plus</a></li>
+						<li><a href="#">NERVEX Controller</a></li>
+						<li><a href="#">NERVEX Instance Manager</a></li>
+						<li><a href="#">NERVEX App Protect</a></li>
+						<li><a href="#">NERVEX Service Mesh</a></li>
+						<li><a href="#">NERVEX Unit</a></li>
+						<li><a href="#">NERVEX Amplify</a></li>
+						<li><a href="#">F5 DNS Cloud Services</a></li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col-3">
+					<span class="footer-title">SOLUTIONS</span>
+					<ul>
+						<li><a href="#">NERVEX Plus</a></li>
+						<li><a href="#">NERVEX Controller</a></li>
+						<li><a href="#">NERVEX Instance Manager</a></li>
+						<li><a href="#">NERVEX App Protect</a></li>
+						<li><a href="#">NERVEX Service Mesh</a></li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col-4">
+					<span class="footer-title">RESOURCES</span>
+					<ul>
+						<li><a href="#">NERVEX Plus</a></li>
+						<li><a href="#">NERVEX Controller</a></li>
+						<li><a href="#">NERVEX Instance Manager</a></li>
+						<li><a href="#">NERVEX App Protect</a></li>
+						<li><a href="#">NERVEX Service Mesh</a></li>
+						<li><a href="#">NERVEX Unit</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
