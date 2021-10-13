@@ -99,8 +99,8 @@
 							<span>Documentation</span>
 						</a>
 						<ul>
-							<li><a href="#">NERVEX Open source</a></li>
-							<li><a href="#">NERVEX Plus</a></li>
+							<li><a href="#scroll-1">NERVEX Open source</a></li>
+							<li><a href="#scroll-2">NERVEX Plus</a></li>
 							<li><a href="#">NERVEX Controller</a></li>
 							<li><a href="#">NERVEX Instance manager</a></li>
 							<li><a href="#">NERVEX App protect</a></li>
@@ -172,26 +172,30 @@
 							<i class="hb-ico arrow-ico"></i>
 						</a>
 					</div>
-					<h2>01. Installing NERVEX</h2>
-					<p>If some special functionality is required, not available with packages and ports, nginx can also be compiled from source files. While more flexible, this approach may be complex for a beginner. For more information, see Building nginx from Sources.</p>
-					<h3>Building from Sources</h3>
-					<p>NERVEX Core is an 8 hour course that provides the foundation you need to administer, configure, and manage NERVEX using best practices. Through lecture and hands‑on activities, you’ll implement NERVEX as a web server, load balancer, and reverse proxy.</p>
-					<hr>
-					<h2>02. Building NERVEX from sources</h2>
-					<p>The build is configured using the configure command. It defines various aspects of the system, including the methods nginx is allowed to use for connection processing. At the end it creates a Makefile.</p>
-					<p><b>The configure command supports the following parameters:</b></p>
-					<div class="learn-command">
-						<div class="learn-command-row">
-							<span>--help</span>
-							<p>prints a help message.</p>
-						</div>
-						<div class="learn-command-row">
-							<span>--prefix=path</span>
-							<p>defines a directory that will keep server files. This same directory will also be used for all relative paths set by configure (except for paths to libraries sources) and in the nginx.conf configuration file. It is set to the /usr/local/nginx directory by default.</p>
-						</div>
-						<div class="learn-command-row">
-							<span>--sbin-path=path</span>
-							<p>sets the name of an nginx executable file. This name is used only during installation. By default the file is named prefix/sbin/nginx.</p>
+					<div id="scroll-1">
+						<h2>01. Installing NERVEX</h2>
+						<p>If some special functionality is required, not available with packages and ports, nginx can also be compiled from source files. While more flexible, this approach may be complex for a beginner. For more information, see Building nginx from Sources.</p>
+						<h3>Building from Sources</h3>
+						<p>NERVEX Core is an 8 hour course that provides the foundation you need to administer, configure, and manage NERVEX using best practices. Through lecture and hands‑on activities, you’ll implement NERVEX as a web server, load balancer, and reverse proxy.</p>
+						<hr>
+					</div>
+					<div id="scroll-2">
+						<h2>02. Building NERVEX from sources</h2>
+						<p>The build is configured using the configure command. It defines various aspects of the system, including the methods nginx is allowed to use for connection processing. At the end it creates a Makefile.</p>
+						<p><b>The configure command supports the following parameters:</b></p>
+						<div class="learn-command">
+							<div class="learn-command-row">
+								<span>--help</span>
+								<p>prints a help message.</p>
+							</div>
+							<div class="learn-command-row">
+								<span>--prefix=path</span>
+								<p>defines a directory that will keep server files. This same directory will also be used for all relative paths set by configure (except for paths to libraries sources) and in the nginx.conf configuration file. It is set to the /usr/local/nginx directory by default.</p>
+							</div>
+							<div class="learn-command-row">
+								<span>--sbin-path=path</span>
+								<p>sets the name of an nginx executable file. This name is used only during installation. By default the file is named prefix/sbin/nginx.</p>
+							</div>
 						</div>
 					</div>
 					<h3>Build steps</h3>
