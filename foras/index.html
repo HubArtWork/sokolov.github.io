@@ -41,7 +41,7 @@
 			<div class="main-info">
 				<h1 class="main-title">Зарабатывайте на Forex <br>с ботом-аналитиком Foras Trade</h1>
 				<p>Получайте прибыль от 1-2% в неделю с алгоритмами от лучших аналитиков Forex!</p>
-				<a href="#" class="primary-btn">Попробовать бота</a>
+				<a data-fancybox data-src="#modal-contact" href="javascript:;" class="primary-btn">Попробовать бота</a>
 			</div>
 		</div>
 		<div class="main-img"><img src="img/img-1-min.png" alt=""></div>
@@ -75,7 +75,7 @@
 			</div>
 			<div class="section-row">
 				<span class="section-subtitle">Узнайте сколько зарабатывают наши клиенты!</span>
-				<a href="#" class="primary-btn">Подробнее</a>
+				<a data-fancybox data-src="#modal-contact" href="javascript:;" class="primary-btn">Подробнее</a>
 			</div>
 			<div class="advantage-info">
 				<div class="advantage-item">
@@ -137,7 +137,7 @@
 							<li>Депозит <span>от 90 000 Р</span></li>
 						</ul>
 						<div class="tariffs-button">
-							<a href="#" class="primary-btn">Попробовать бота</a>
+							<a data-fancybox data-src="#modal-contact" href="javascript:;" class="primary-btn">Попробовать бота</a>
 						</div>
 					</div>
 				</div><!-- col -->
@@ -151,7 +151,7 @@
 							<li>Депозит <span>от 750 000 Р</span></li>
 						</ul>
 						<div class="tariffs-button">
-							<a href="#" class="primary-btn">Попробовать бота</a>
+							<a data-fancybox data-src="#modal-contact" href="javascript:;" class="primary-btn">Попробовать бота</a>
 						</div>
 					</div>
 				</div><!-- col -->
@@ -165,7 +165,7 @@
 							<li>Депозит <span>от 50 000 Р</span></li>
 						</ul>
 						<div class="tariffs-button">
-							<a href="#" class="primary-btn">Попробовать бота</a>
+							<a data-fancybox data-src="#modal-contact" href="javascript:;" class="primary-btn">Попробовать бота</a>
 						</div>
 					</div>
 				</div><!-- col -->
@@ -175,14 +175,13 @@
 			</div>
 			<div class="section-row">
 				<span class="section-subtitle">Все просто – вы выбираете тариф, а мы устанавливаем настройки за вас!</span>
-				<a href="#" class="primary-btn">Получить консультацию</a>
+				<a data-fancybox data-src="#modal-contact" href="javascript:;" class="primary-btn">Получить консультацию</a>
 			</div>
 		</div>
 	</section>
 	<!-- end tariffs -->
 	<!-- start profit -->
 	<section class="profit">
-		<div class="profit-bg"><svg width="1920" height="1401" viewBox="0 0 1920 1401" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="-38" width="2031" height="1401" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="977.5" y1="198.2" x2="977.5" y2="1401" gradientUnits="userSpaceOnUse"><stop offset="0.0708332" stop-color="white"/><stop offset="1" stop-color="#B6B8BD" stop-opacity="0"/></linearGradient></defs></svg></div>
 		<div class="wrapper">
 			<div class="section-info">
 				<h2 class="section-title">Прибыль</h2>
@@ -225,6 +224,7 @@
 	<!-- end profit -->
 	<!-- start faq -->
 	<section class="faq" id="faq">
+		<div class="faq-bg"><svg width="1920" height="1401" viewBox="0 0 1920 1401" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="-38" width="2031" height="1401" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="977.5" y1="198.2" x2="977.5" y2="1401" gradientUnits="userSpaceOnUse"><stop offset="0.0708332" stop-color="white"/><stop offset="1" stop-color="#B6B8BD" stop-opacity="0"/></linearGradient></defs></svg></div>
 		<div class="wrapper">
 			<div class="section-info">
 				<h2 class="section-title">Не нашли ответ на свой вопрос?</h2>
@@ -273,7 +273,7 @@
 				<h2 class="section-title">Получите консультацию и протестируйте бота</h2>
 				<p>Наши клиенты не тратят время на изучение рынка и настройку программы – за них уже все сделали аналитики Foras Trade.</p>
 			</div>
-			<a href="#" class="primary-btn">Попробовать бота</a>
+			<a data-fancybox data-src="#modal-contact" href="javascript:;" class="primary-btn">Попробовать бота</a>
 		</div>
 		<div class="consultation-img"><img src="img/img-3-min.png" alt=""></div>
 	</section>
@@ -308,6 +308,25 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-contact" class="modal">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<div class="section-info">
+				<h2 class="section-title">Получите консультацию!</h2>
+				<p>Наш специалист перезвонит Вам в течении 5 минут!</p>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Имя">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Телефон">
+				</div>
+				<button class="primary-btn">Заказать</button>
+			</form>
+		</div>
+	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 </body>
