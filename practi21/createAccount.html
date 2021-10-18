@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start form -->
+	<div class="form" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="form-logo"><a href="#"><img src="img/modal/logo-big.svg" alt=""></a></div>
+			<p>New to PractiThink? <a href="#">Sign in here</a></p>
+			<h2 class="form-title">Create an account</h2>
+			<ul class="form-buttons">
+				<li><a href="#">
+					<i class="hb-ico soc-3"></i>
+					Sign in with Google
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico soc-1"></i>
+					Sign in with Amazon
+				</a></li>
+			</ul>
+			<form action="POST">
+				<div class="input-block">
+					<label for="n-1">Name <b class="label-fullName"></b></label>
+					<input class="input-fullName" id="n-1" type="text" name="name" placeholder="Example: your name">
+				</div>
+				<div class="input-block">
+					<label for="n-2">Email</label>
+					<input id="n-2" type="email" name="email" placeholder="Example: email@gmail.com">
+				</div>
+				<div class="input-block">
+					<label for="n-3">Role</label>
+					<div class="select">
+						<div class="select-top">
+							<span class="select-text">Teacher</span>
+						</div>
+						<div class="select-info">
+							<ul>
+								<li><a href="#">Teacher</a></li>
+								<li><a href="#">Child</a></li>
+								<li><a href="#">Parents</a></li>
+							</ul>
+						</div>
+						<input type="text" class="select-value">
+					</div>
+				</div>
+				<div class="input-block input-block__age">
+					<label for="n-3">Age</label>
+					<div class="select">
+						<div class="select-top">
+							<span class="select-text">I’m 8</span>
+						</div>
+						<div class="select-info">
+							<ul>
+								<li><a href="#">I’m 8</a></li>
+								<li><a href="#">I’m 9</a></li>
+								<li><a href="#">I’m 10</a></li>
+							</ul>
+						</div>
+						<input type="text" class="select-value">
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block__top">
+						<label for="n-5">Password</label>
+						<span class="btn-show">Show</span>
+					</div>
+					<input id="n-5" type="password" name="password" placeholder="Password">
+				</div>
+				<p class="text-big">By creating an account, you accept the following Practithink <a href="#">Terms of service</a> and <a href="#">Privacy policy</a></p>
+				<button class="primary-btn">Create an account</button>
+				<div class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox-ico"></span>
+					<p>Keep me signed in</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end form -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

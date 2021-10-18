@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Home</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								Printables
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Online learning
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Test preparation
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Private tutoring
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="header-mob">
+					<a href="#" class="second-btn">Sign In</a>
+				</div>
+			</nav>
+			<div class="header-row">
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico like-ico"></i>
+						<span>15</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Favorite list
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico basket-ico"></i>
+						<span>3</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Shopping Cart
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="second-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start info -->
+	<section class="info" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="info-wrap">
+				<div class="info-bg" style="background-image: url(img/info-bg.svg);"></div>
+				<div class="info-img info-img__small"><img src="img/info-14.svg" alt=""></div>
+				<div class="info-info">
+					<h3 class="info-title">Sitemap</h3>
+					<ul>
+						<li>Lesson plans: 8</li>
+						<li>Printable woksheets: 4561 (pages)</li>
+						<li>Practices: 542</li>
+						<li>General pages:12</li>
+					</ul>
+					<p><b>Total pages: 431</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+	<!-- start sitemap -->
+	<section class="sitemap">
+		<div class="wrapper">
+			<div class="sitemap-all">
+				<div class="sitemap-sidebar">
+					<div class="hb-ico close-ico"></div>
+					<div class="sitemap-sidebar__wrap">
+						<div class="sitemap-block">
+							<a href="#" class="sitemap-link">
+								<i class="hb-ico sitemap-ico-1"></i>
+								Shortcuts
+							</a>
+						</div><!-- block -->
+						<div class="sitemap-block">
+							<a href="#" class="sitemap-link">
+								<i class="hb-ico sitemap-ico-2"></i>
+								General 
+							</a>
+						</div><!-- block -->
+						<div class="sitemap-block">
+							<a href="#" class="sitemap-link">
+								<i class="hb-ico sitemap-ico-3"></i>
+								Printable Worksheet
+							</a>
+						</div><!-- block -->
+						<div class="sitemap-block active">
+							<div class="sitemap-drop">
+								<a href="#" class="sitemap-link">
+									<i class="hb-ico sitemap-ico-4"></i>
+									Bitesize Lessons
+									<i class="hb-ico drop-arrow"></i>
+								</a>
+								<ul class="sitemap-list">
+									<li><a href="#" class="active">Kindergarten</a></li>
+									<li><a href="#">Pre-K</a></li>
+									<li><a href="#">Grade 1</a></li>
+									<li><a href="#">Grade 2</a></li>
+									<li><a href="#">Grade 3</a></li>
+									<li><a href="#">Grade 4</a></li>
+									<li><a href="#">Grade 5</a></li>
+									<li><a href="#">Grade 6</a></li>
+									<li><a href="#">Grade 7</a></li>
+									<li><a href="#">Grade 8</a></li>
+								</ul>
+							</div>
+						</div><!-- block -->
+						<div class="sitemap-block">
+							<a href="#" class="sitemap-link">
+								<i class="hb-ico sitemap-ico-5"></i>
+								Self-directed practice
+							</a>
+						</div><!-- block -->
+						<div class="sitemap-block active">
+							<div class="sitemap-drop">
+								<a href="#" class="sitemap-link">
+									<i class="hb-ico sitemap-ico-6"></i>
+									Experienced teachers
+									<i class="hb-ico drop-arrow"></i>
+								</a>
+								<ul class="sitemap-list">
+									<li><a href="#" class="active">Math</a></li>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Logic</a></li>
+									<li><a href="#">Science</a></li>
+									<li><a href="#">Social studies</a></li>
+								</ul>
+							</div>
+						</div><!-- block -->
+					</div>
+				</div>
+				<div class="sitemap-content">
+					<h2 class="section-title">Bitesize Lessons</h2>
+					<div class="sitemap-table">
+						<div class="sitemap-row sitemap-top">
+							<div class="sitemap-col sitemap-col__1">Page :</div>
+							<div class="sitemap-col sitemap-col__2">Created:</div>
+							<div class="sitemap-col sitemap-col__3">Last updated:</div>
+							<div class="sitemap-col sitemap-col__4">C: </div>
+						</div>
+						<div class="sitemap-row">
+							<div class="sitemap-col sitemap-col__1"><a href="#">Appositives and Appositive Phrases</a></div>
+							<div class="sitemap-col sitemap-col__2"> 2 month ago</div>
+							<div class="sitemap-col sitemap-col__3">12-05-2019</div>
+							<div class="sitemap-col sitemap-col__4">12</div>
+						</div>
+						<div class="sitemap-row">
+							<div class="sitemap-col sitemap-col__1"><a href="#">Similar Triangles - Triangles similarity for kids.</a></div>
+							<div class="sitemap-col sitemap-col__2">2 month ago</div>
+							<div class="sitemap-col sitemap-col__3">05-15-2021</div>
+							<div class="sitemap-col sitemap-col__4">12345</div>
+						</div>
+						<div class="sitemap-row">
+							<div class="sitemap-col sitemap-col__1"><a href="#">Comparing numbers. Helping kids to understand comparison in math.</a></div>
+							<div class="sitemap-col sitemap-col__2"><b>LU:</b> 2 month ago</div>
+							<div class="sitemap-col sitemap-col__3">07-06-2021</div>
+							<div class="sitemap-col sitemap-col__4">1234</div>
+						</div>
+						<div class="sitemap-row">
+							<div class="sitemap-col sitemap-col__1"><a href="#">Word problems. Helping kids solve math word problems.</a></div>
+							<div class="sitemap-col sitemap-col__2"><b>LU:</b> 2 month ago</div>
+							<div class="sitemap-col sitemap-col__3">12-05-2019</div>
+							<div class="sitemap-col sitemap-col__4"> 123</div>
+						</div>
+						<div class="sitemap-row">
+							<div class="sitemap-col sitemap-col__1"><a href="#">Learning the Times Table!</a></div>
+							<div class="sitemap-col sitemap-col__2"><b>LU:</b> 2 month ago</div>
+							<div class="sitemap-col sitemap-col__3">02-15-2021</div>
+							<div class="sitemap-col sitemap-col__4">1</div>
+						</div>
+						<div class="sitemap-row">
+							<div class="sitemap-col sitemap-col__1"><a href="#">Learning the Times Table!</a></div>
+							<div class="sitemap-col sitemap-col__2"><b>LU:</b> 2 month ago</div>
+							<div class="sitemap-col sitemap-col__3">12-05-2019</div>
+							<div class="sitemap-col sitemap-col__4">1234</div>
+						</div>
+					</div>
+				</div>
+				<div class="sitemap-btn">
+					<a href="#" class="primary-btn open-sidebar">Open sidebar</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end sitemap -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<span class="footer-subtitle">Social channels</span>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/bxl-twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-instagram-alt.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-facebook-square.svg" alt=""></a></li>
+				</ul>
+				<p>PractiThink © 2020 | All Rights Reserved</p>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col">
+					<span class="footer-subtitle">Useful Links</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Test your math</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Legal</span>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Support</span>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</div><!-- col -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox trigger -->
+	<!--<a data-options='{"touch" : false}'  data-fancybox data-src="#modal-wait" href="javascript:;" id="modal-trigger"></a>-->
+	<!-- fancybox youtube -->
+	<!--<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="link-youtube"></a>-->
+	<!-- fancybox modal -->
+	<!--<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn main-btn-second">fancybox</a>-->
+	<div style="display: none;" id="modal-test" class="modal modal-transparent">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

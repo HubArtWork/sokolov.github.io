@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#"><img src="img/header/logo.svg" alt=""></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Home</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Products
+							<i class="hb-ico drop-arrow"></i>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">
+								<i class="hb-ico drop-ico-1"></i>
+								Printables
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-2"></i>
+								Online learning
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-3"></i>
+								Test preparation
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico drop-ico-4"></i>
+								Private tutoring
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="header-mob">
+					<a href="#" class="second-btn">Sign In</a>
+				</div>
+			</nav>
+			<div class="header-row">
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico like-ico"></i>
+						<span>15</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Favorite list
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-add"></a>
+								<a href="#" class="hb-ico close-circle"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-link">
+					<div class="header-link__top">
+						<i class="hb-ico basket-ico"></i>
+						<span>3</span>
+					</div>
+					<div class="header-drop">
+						<div class="header-drop__top">
+							<span class="header-name">
+								Shopping Cart
+								<b>2</b>
+							</span>
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="header-products scrollbar-outer">
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+							<div class="header-product">
+								<div class="header-product__img"><img src="img/product-small.jpg" alt=""></div>
+								<div class="header-product__info">
+									<span class="header-product__name">Name 1234</span>
+									<span class="header-product__by">by <a href="#">Kate Bee</a></span>
+									<span class="header-product__price">$0.99</span>
+								</div>
+								<a href="#" class="hb-ico basket-line"></a>
+							</div>
+						</div>
+						<div class="header-total">
+							<span>Total:</span>
+							<b>$1.98</b>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="second-btn">Sign In</a>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start info -->
+	<section class="info" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="info-wrap">
+				<div class="info-bg" style="background-image: url(img/info-bg.svg);"></div>
+				<div class="info-img info-img__small"><img src="img/info-12.svg" alt=""></div>
+				<div class="info-info">
+					<h3 class="info-title">Learn French Online - Finding Tutors</h3>
+					<p>French Tutors If you have a good French tutor who understands all the nuances of foreign speech, then you can learn to write, read, understand and speak in no time. The best option is to choose a teacher with solid experience or a native speaker, communication with whom will allow you not only to study. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end info -->
+	<!-- start listTeachers -->
+	<section class="listTeachers" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="products-row row">
+				<div class="products-col col-lg-3 col-md-4 col-sm-6">
+					<a href="#" class="grades active"><span>Pre K - Kindergarten</span>2-6 Years</a>
+				</div><!-- col -->
+				<div class="products-col col-lg-3 col-md-4 col-sm-6">
+					<a href="#" class="grades"><span>1st - 4th Grade</span>6-10 Years</a>
+				</div><!-- col -->
+				<div class="products-col col-lg-3 col-md-4 col-sm-6">
+					<a href="#" class="grades"><span>5th - 8th Grade</span>10-14 Years</a>
+				</div><!-- col -->
+				<div class="products-col col-lg-3 col-md-4 col-sm-6">
+					<a href="#" class="grades"><span>8th - 12th Grade</span>15-18 Years</a>
+				</div><!-- col -->
+			</div>
+			<div class="listTeachers-row row">
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-1.svg" alt=""></div>
+							<h3 class="listTeachers-title">Socail Studies</h3>
+							<span class="listTeachers-subtitle">Teachers and tutors</span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>Gymnastics</li>
+							<li>Basketball</li>
+							<li>Breakdancing</li>
+							<li>Football tennis</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-2.svg" alt=""></div>
+							<h3 class="listTeachers-title">Mathematics</h3>
+							<span class="listTeachers-subtitle">Teachers and tutors</span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>Gymnastics</li>
+							<li>Basketball</li>
+							<li>Breakdancing</li>
+							<li>Football tennis</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-3.svg" alt=""></div>
+							<h3 class="listTeachers-title">Science</h3>
+							<span class="listTeachers-subtitle">Сoaches and local programms</span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>Chemistry</li>
+							<li>Biology</li>
+							<li>Space science</li>
+							<li>Physics</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-4.svg" alt=""></div>
+							<h3 class="listTeachers-title">Foreign languages</h3>
+							<span class="listTeachers-subtitle">Professional linguists and native speakers  </span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>English</li>
+							<li>Russian</li>
+							<li>French</li>
+							<li>German</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-5.svg" alt=""></div>
+							<h3 class="listTeachers-title">Geography</h3>
+							<span class="listTeachers-subtitle">Teachers and tutors</span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>Biogeography</li>
+							<li>Geomorphology</li>
+							<li>Breakdancing</li>
+							<li>Oceanography</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-6.svg" alt=""></div>
+							<h3 class="listTeachers-title">Test preparation</h3>
+							<span class="listTeachers-subtitle">Teachers and tutors</span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>Anatomy</li>
+							<li>Physics</li>
+							<li>Math</li>
+							<li>English</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-7.svg" alt=""></div>
+							<h3 class="listTeachers-title">History</h3>
+							<span class="listTeachers-subtitle">Teachers and tutors and </span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>Dinosaurs</li>
+							<li>Castles</li>
+							<li>Art</li>
+							<li>Pyramids</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+				<div class="listTeachers-col col-lg-3 col-md-4 col-sm-6">
+					<div class="listTeachers-wrap">
+						<div class="listTeachers-top">
+							<div class="listTeachers-ico"><img src="img/listTeachers/ico-8.svg" alt=""></div>
+							<h3 class="listTeachers-title">Sport</h3>
+							<span class="listTeachers-subtitle">Сoaches and local programms</span>
+						</div>
+						<ul class="listTeachers-list">
+							<li>Gymnastics</li>
+							<li>Basketball</li>
+							<li>Breakdancing</li>
+							<li>Football tennis</li>
+						</ul>
+						<span class="listTeachers-more">
+							<i class="hb-ico plus-ico"></i>
+							And more
+						</span>
+						<a href="#" class="second-btn">Find a teacher</a>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end listTeachers -->
+	<!-- start welcome -->
+	<section class="welcome" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="welcome-row">
+				<div class="welcome-img"><img src="img/welcome-2.svg" alt=""></div>
+				<div class="welcome-info">
+					<h2 class="section-title">Authors are welcome!</h2>
+					<p>Our printable worksheets for school grades from pre-K to 3rd grade help students master basic math. </p>
+					<a href="#" class="primary-btn primary-btn__big">
+						<i class="hb-ico plus-ico"></i>
+						Add your products
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end education -->
+	<!-- start education -->
+	<section class="education" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<h2 class="section-title">Printables are important part of children education</h2>
+			<p>Over 12,000 worksheets in more than 60 categories for Math, Science, Social studies, Enflish and ESL for kids from Kindergarten to 5th grade.</p>
+			<p>Worksheets are a very important part of learning. Children learn in different ways and engaging them with coloring, drawing, exercises and puzzles really helps them develop their lerning habits, discipline, fine motors skills and handwriting.  Printables helps to build selfconfidence, teaching kids how to work at their own pace and direction. No adds, no interuption, no stress involved in this simple but very effective part of education.  <br>Yep, worksheets are proven to work... for centuries .</p>
+			<p>Having a short worksheet time during your lesson allows students to have quiet time whilst doing some fun individual activities. The teacher can ask questions as students are doing their worksheets (e.g. What's this? Do you like apples? etc.), the worksheets can be used as a review aid, they can be put on the classroom walls and be given for homework.</p>
+		</div>
+	</section>
+	<!-- end education -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<span class="footer-subtitle">Social channels</span>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/social/bxl-twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-instagram-alt.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/social/bxl-facebook-square.svg" alt=""></a></li>
+				</ul>
+				<p>PractiThink © 2020 | All Rights Reserved</p>
+			</div>
+			<div class="footer-row">
+				<div class="footer-col">
+					<span class="footer-subtitle">Useful Links</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Test your math</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Legal</span>
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Cookie Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Support</span>
+					<ul>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</div><!-- col -->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox trigger -->
+	<!--<a data-options='{"touch" : false}'  data-fancybox data-src="#modal-wait" href="javascript:;" id="modal-trigger"></a>-->
+	<!-- fancybox youtube -->
+	<!--<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="link-youtube"></a>-->
+	<!-- fancybox modal -->
+	<!--<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn main-btn-second">fancybox</a>-->
+	<div style="display: none;" id="modal-test" class="modal modal-transparent">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

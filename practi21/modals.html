@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start pageButtons -->
+	<div class="pageButtons">
+		<div class="wrapper">
+			<span class="section-title">Not fancybox</span>
+			<ul>
+				<li><a href="#modal-signIn" class="primary-btn modal-btn">Sign In</a></li>
+				<li><a href="#modal-create" class="primary-btn modal-btn">Create an account</a></li>
+			</ul>
+			<span class="section-title">Fancybox</span>
+			<ul>
+				<li><a data-fancybox data-src="#сookies" href="javascript:;" class="primary-btn">сookies</a></li>
+				<li><a data-fancybox data-src="#modal-email" href="javascript:;" class="primary-btn">Let’s confirm your email!</a></li>
+				<li><a data-fancybox data-src="#modal-preferences" href="javascript:;" class="primary-btn">preferences</a></li>
+				<li><a data-fancybox data-src="#modal-thanks" href="javascript:;" class="primary-btn">thanks</a></li>
+				<li><a data-fancybox data-src="#modal-test" href="javascript:;" class="primary-btn">test</a></li>
+				<li><a data-fancybox data-src="#modal-faq" href="javascript:;" class="primary-btn">FAQ</a></li>
+				<li><a data-fancybox data-src="#modal-review" href="javascript:;" class="primary-btn">Review</a></li>
+				<li><a data-fancybox data-src="#modal-level" href="javascript:;" class="primary-btn">Level</a></li>
+				<li><a data-fancybox data-src="#modal-basket" href="javascript:;" class="primary-btn">Basket</a></li>
+				<li><a data-fancybox data-src="#modal-report" href="javascript:;" class="primary-btn">Report</a></li>
+				<li><a data-fancybox data-src="#modal-account" href="javascript:;" class="primary-btn">account</a></li>
+			</ul>
+			<span class="section-title">Animation</span>
+			<ul>
+				<li><a href="#modalAnimation-1" class="primary-btn animation-btn">Animation-1</a></li>
+				<li><a href="#modalAnimation-2" class="primary-btn animation-btn">Animation-2</a></li>
+				<li><a href="#modalAnimation-3" class="primary-btn animation-btn">Animation-3</a></li>
+				<li><a href="#modalAnimation-4" class="primary-btn animation-btn">Animation-4</a></li>
+				<li><a href="#modalAnimation-5" class="primary-btn animation-btn">Animation-5</a></li>
+				<li><a href="#modalAnimation-6" class="primary-btn animation-btn">Animation-6</a></li>
+				<li><a href="#modalAnimation-7" class="primary-btn animation-btn">Animation-7</a></li>
+				<li><a href="#modalAnimation-8" class="primary-btn animation-btn">Animation-8</a></li>
+				<li><a href="#modalAnimation-9" class="primary-btn animation-btn">Animation-9</a></li>
+				<li><a href="#modalAnimation-10" class="primary-btn animation-btn">Animation-10</a></li>
+				<li><a href="#modalAnimation-11" class="primary-btn animation-btn">Animation-11</a></li>
+				<li><a href="#modalAnimation-12" class="primary-btn animation-btn">Animation-12</a></li>
+				<li><a href="#modalAnimation-13" class="primary-btn animation-btn">Animation-13</a></li>
+			</ul>
+			<span class="section-title">Animation new</span>
+			<ul>
+				<li><a href="#modalMonkey-1" class="primary-btn animation-btn">Monkey-green</a></li>
+				<li><a href="#modalMonkey-2" class="primary-btn animation-btn">Monkey-orange</a></li>
+				<li><a href="#modalMonkey-3" class="primary-btn animation-btn">Monkey-red</a></li>
+			</ul>
+			<span class="section-title">Modals new</span>
+			<ul>
+				<li><a data-fancybox data-src="#popap-1" href="javascript:;" class="primary-btn">popap-1</a></li>
+				<li><a data-fancybox data-src="#popap-2" href="javascript:;" class="primary-btn">popap-2</a></li>
+				<li><a data-fancybox data-src="#popap-3" href="javascript:;" class="primary-btn">popap-3</a></li>
+				<li><a data-fancybox data-src="#popap-4" href="javascript:;" class="primary-btn">popap-4</a></li>
+				<li><a data-fancybox data-src="#popap-5" href="javascript:;" class="primary-btn">popap-5</a></li>
+				<li><a data-fancybox data-src="#popap-6" href="javascript:;" class="primary-btn">popap-6</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end footer -->
+	<div class="modal-bg"></div>
+	<!-- start signIn -->
+	<div id="modal-signIn" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<div class="form-logo"><a href="#"><img src="img/header/logo.svg" alt=""></a></div>
+			<p>New to PractiThink? <a href="#">Create an account</a></p>
+			<h2 class="form-title">Sign In</h2>
+			<form action="POST">
+				<div class="input-block">
+					<label for="m-1">Email , User name or Account #</label>
+					<input id="m-1" type="email" name="email" placeholder="Example: email@domain.нcom">
+				</div>
+				<div class="input-block">
+					<div class="input-block__top">
+						<label for="m-2">Password</label>
+						<span class="btn-show">Show</span>
+					</div>
+					<input id="m-2" type="password" name="password" placeholder="Password">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox-ico"></span>
+					<p>Keep me signed in</p>
+				</div>
+				<button class="primary-btn">Sign in</button>
+				<a href="#" class="form-link">Forgot password?</a>
+				<span class="form-or">or sign in with</span>
+				<ul class="form-social">
+					<li><a href="#"><i class="hb-ico soc-1"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-2"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-3"></i></a></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start create -->
+	<div id="modal-create" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<div class="form-logo"><a href="#"><img src="img/header/logo.svg" alt=""></a></div>
+			<p>New to PractiThink? <a href="#">Sign in here</a></p>
+			<h2 class="form-title">Create an account</h2>
+			<form action="POST">
+				<div class="input-block">
+					<label for="n-1">Full name</label>
+					<input class="input-fullName" id="n-1" type="text" name="name" placeholder="First and Last name">
+				</div>
+				<div class="input-block">
+					<label for="n-2">Email</label>
+					<input id="n-2" type="email" name="email" placeholder="Example: email@gmail.com">
+				</div>
+				<div class="input-block">
+					<label for="n-3">Your role <span class="label-fullName"></span>?</label>
+					<div class="select">
+						<div class="select-top">
+							<span class="select-text">Teacher</span>
+						</div>
+						<div class="select-info">
+							<ul>
+								<li><a href="#">Teacher</a></li>
+								<li><a href="#">Child</a></li>
+								<li><a href="#">Parents</a></li>
+							</ul>
+						</div>
+						<input type="text" class="select-value">
+					</div>
+				</div>
+				<div class="input-block input-block__age">
+					<label for="n-3">Age</label>
+					<div class="select">
+						<div class="select-top">
+							<span class="select-text">I’m 8</span>
+						</div>
+						<div class="select-info">
+							<ul>
+								<li><a href="#">I’m 8</a></li>
+								<li><a href="#">I’m 9</a></li>
+								<li><a href="#">I’m 10</a></li>
+							</ul>
+						</div>
+						<input type="text" class="select-value">
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block__top">
+						<label for="n-5">Password</label>
+						<span class="btn-show">Show</span>
+					</div>
+					<input id="n-5" type="password" name="password" placeholder="Password">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<span class="checkbox-ico"></span>
+					<p>Keep me signed in</p>
+				</div>
+				<button class="primary-btn">Create an account</button>
+				<p>By creating an account, you accept the following <a href="#">Practithink Terms of service</a> and <a href="#">Privacy policy</a></p>
+				<span class="form-or">or creat an account with</span>
+				<ul class="form-social">
+					<li><a href="#"><i class="hb-ico soc-1"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-2"></i></a></li>
+					<li><a href="#"><i class="hb-ico soc-3"></i></a></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start сookies -->
+	<div style="display: none;" id="сookies" class="modal modal-сookies">
+		<div class="modal-close"></div>
+		<div class="modal-wrap">
+			<div class="сookiesAll">
+				<div class="allTabs">
+					<ul class="tab-list сookiesAll-list">
+						<li><a href="#coo-1" class="active">Essential Cookies</a></li>
+						<li><a href="#coo-2">Performance Cookies</a></li>
+						<li><a href="#coo-3">Advertising Cookies</a></li>
+						<li><a href="#coo-4">Analytics Cookies</a></li>
+					</ul>
+					<form action="POST">
+						<div class="tab tab-active" id="coo-1">
+							<div class="сookiesAll-wrap">
+								<div class="checkbox">
+									<input type="checkbox" disabled="disabled">
+									<i class="hb-ico checkbox-ico"></i>
+									<p>Essential Cookies</p>
+								</div>
+								<p>Our website cookies are required to provide uninterrupted services on the PractiThink website. These cookies help you use some of the website's features like access to secure areas. Since these cookies are strictly required to deliver the website purposes, you cannot refuse them without impacting its functions. </p>
+							</div>
+						</div>
+						<div class="tab" id="coo-2">
+							<div class="сookiesAll-wrap">
+								<div class="checkbox">
+									<input type="checkbox">
+									<i class="hb-ico checkbox-ico"></i>
+									<p>Performance Cookies</p>
+								</div>
+								<p>With these cookies, we improve the performance and functionality of our website. They allow us to check the pages that are popular among our users from least to the most. They also help us see the actions of the visitors on the PractiThink website. It is not necessary to allow these cookies. However, they might cause dysfunctionality in some of the website features. </p>
+							</div>
+						</div>
+						<div class="tab" id="coo-3">
+							<div class="сookiesAll-wrap">
+								<div class="checkbox">
+									<input type="checkbox">
+									<i class="hb-ico checkbox-ico"></i>
+									<p>Advertising Cookies</p>
+								</div>
+								<p>We use advertising cookies to deliver more related ad messages to you and your interests. They make sure that the ads are efficiently displayed, and select some of the advertising that is of your interests. These cookies also block the repetitive ads from reoccurring.</p>
+							</div>
+						</div>
+						<div class="tab" id="coo-4">
+							<div class="сookiesAll-wrap">
+								<div class="checkbox">
+									<input type="checkbox">
+									<i class="hb-ico checkbox-ico"></i>
+									<p>Analytics and customization cookies</p>
+								</div>
+								<p>With the analytics and customization cookies, we understand how visitors use our website and how effective are our marketing campaigns. These cookies also improve the customization of the PractiThink website to make your experience better. They might be set either by PractiThink or by third-party providers the services of which we use on our pages. effectiv</p>
+							</div>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="primary-btn">Confirm My Choices review</a>
+							<a href="#" class="second-btn">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-email -->
+	<div style="display: none;" id="modal-email" class="modal modalBig">
+		<div class="wrapper">
+			<div class="modal-wrap">
+				<div class="modalBig-row">
+					<div class="modalBig-img"><img src="img/modal/img-1.svg" alt=""></div>
+					<div class="modalBig-info">
+						<h3 class="modalBig-title">Let’s confirm your email!</h3>
+						<p>Please verify your account by visiting link we sent to <br><b>frame@gmail.com </b> <br>This prevents robots from abusing our platform.</p>
+						<p class="small-text">Didn't receive the email?  <a href="#">Send again</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-preferences -->
+	<div style="display: none;" id="modal-preferences" class="modal modalBig">
+		<div class="wrapper">
+			<div class="modal-wrap">
+				<div class="modalBig-row modalBig-row__big">
+					<div class="modalBig-img"><img src="img/modal/img-2.svg" alt=""></div>
+					<div class="modalBig-info">
+						<h3 class="modalBig-title">You’re all set!</h3>
+						<p>Your preferences were successfully updated. Your changes may take up to 48 hours to appear</p>
+						<div class="buttons-row">
+							<a href="#" class="primary-btn">Practice now</a>
+							<a href="#" class="second-btn">My account</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-thanks -->
+	<div style="display: none;" id="modal-thanks" class="modal modalBig">
+		<div class="wrapper">
+			<div class="modal-wrap">
+				<div class="modalBig-row">
+					<div class="modalBig-img"><img src="img/modal/img-3.svg" alt=""></div>
+					<div class="modalBig-info">
+						<h3 class="modalBig-title">Purchase Complete- Thanks!</h3>
+						<p class="small-text">We’ve e-mailed you a receipt, but you can dowload it <a href="#">here</a> as well.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-test -->
+	<div style="display: none;" id="modal-test" class="modal modalTest">
+		<div class="modal-wrap">
+			<div class="modalTest-top">
+				<span class="modalTest-title">Hint</span>
+				<p>какой - то текст мб</p>
+			</div>
+			<div class="modalTest-bottom">
+				<p>I think all people like holidays, because they don’t work and have a good time. They can visit their friends and relatives, invite guests and have a lot of fun.</p>
+				<p>There are many different holidays. On the first of January we celebrate New Year. On the  twenty-fifth of December we have Christmas. <br>Our favourite holidays are Christmas and New Year. They are full of magic, presents and hopes.</p>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-faq -->
+	<div style="display: none;" id="modal-faq" class="modal modalTest modalFaq">
+		<div class="modal-wrap">
+			<div class="modalTest-top">
+				<span class="modalTest-title">Questions? We are here to help!</span>
+				<p>Existing customer? Please contact support <a href="#">here</a></p>
+			</div>
+			<div class="modalTest-bottom">
+				<form action="POST">
+					<div class="modalFaq-wrap">
+						<div class="modalFaq-row row">
+							<div class="modalFaq-col col-md-6">
+								<div class="input-block">
+									<label for="q-1">Full name</label>
+									<input id="q-1" type="text" name="name" placeholder="First and Last name">
+								</div>
+							</div><!-- col -->
+							<div class="modalFaq-col col-md-6">
+								<div class="input-block">
+									<label for="q-2">Email</label>
+									<input id="q-2" type="email" name="email" placeholder="Example: email@gmail.com">
+								</div>
+							</div><!-- col -->
+							<div class="modalFaq-col col-md-6">
+								<div class="input-block">
+									<label for="q-3">I’m interested</label>
+									<div class="select">
+										<div class="select-top">
+											<span class="select-text">Teacher</span>
+										</div>
+										<div class="select-info">
+											<ul>
+												<li><a href="#">Teacher</a></li>
+												<li><a href="#">Teacher12</a></li>
+												<li><a href="#">Teacher13</a></li>
+											</ul>
+										</div>
+										<input type="text" class="select-value">
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="modalFaq-col col-md-6">
+								<div class="input-block">
+									<label for="q-4">I’m</label>
+									<div class="select">
+										<div class="select-top">
+											<span class="select-text">Teacher</span>
+										</div>
+										<div class="select-info">
+											<ul>
+												<li><a href="#">Teacher</a></li>
+												<li><a href="#">Teacher12</a></li>
+												<li><a href="#">Teacher13</a></li>
+											</ul>
+										</div>
+										<input type="text" class="select-value">
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="modalFaq-col col-12">
+								<div class="input-block">
+									<label for="q-5">Question</label>
+									<textarea id="q-5" name="text" placeholder="Your questions go here."></textarea>
+								</div>
+							</div><!-- col -->
+						</div>
+						<div class="modalFaq-bottom">
+							<button class="primary-btn">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-review -->
+	<div style="display: none;" id="modal-review" class="modal modalTest modalReview">
+		<div class="modal-wrap">
+			<div class="modalTest-top">
+				<span class="modalTest-title">Review  Kid's Book by Nastya Cats</span>
+			</div>
+			<div class="modalTest-bottom">
+				<form action="POST">
+					<div class="modalReview-wrap">
+						<div class="modalReview-sidebar">
+							<div class="modalReview-img"><img src="img/product-1-min.jpg" alt=""></div>
+							<ul>
+								<li>Kid's Book</li>
+							  <li><span>by</span> Nastyas Cats</li>
+							</ul>
+						</div>
+						<div class="modalReview-content">
+							<div class="rating">
+								<span class="rating-title">Rating:*</span>
+								<div class="rating-row">
+								 	<input type="radio" id="5-stars" name="rating" value="5" />
+								  <label for="5-stars" class="star">&#9733;</label>
+								  <input type="radio" id="4-stars" name="rating" value="4" />
+								  <label for="4-stars" class="star">&#9733;</label>
+								  <input type="radio" id="3-stars" name="rating" value="3" />
+								  <label for="3-stars" class="star">&#9733;</label>
+								  <input type="radio" id="2-stars" name="rating" value="2" />
+								  <label for="2-stars" class="star">&#9733;</label>
+								  <input type="radio" id="1-star" name="rating" value="1" />
+								  <label for="1-star" class="star">&#9733;</label>
+								</div>
+								<span class="rating-text">Click to rate!</span>
+							</div>
+							<div class="modalFaq-row row">
+								<div class="modalFaq-col col-12">
+									<div class="input-block">
+										<label for="x-1">Review Title:</label>
+										<input id="x-1" type="text" name="name" placeholder="Example: Great!">
+									</div>
+								</div>
+								<div class="modalFaq-col col-12">
+									<div class="input-block">
+										<label for="x-2">Review:</label>
+										<textarea id="x-2" name="text" placeholder="Example: Thank you for great job! :)"></textarea>
+									</div>
+								</div>
+								<div class="modalFaq-col col-12">
+									<div class="input-block">
+										<label for="x-33">Would you recommend this product?</label>
+										<div class="yesNo">
+											<div class="yesNo-col">
+												<input type="radio" name="yesNo">
+												<span>Yes</span>
+											</div>
+											<div class="yesNo-col">
+												<input type="radio" name="yesNo">
+												<span>No</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modalFaq-col col-md-4 col-sm-6">
+									<div class="input-block">
+										<label for="x-3">Nickname:*</label>
+										<input id="x-3" type="text" name="name" placeholder="Example: Sun12">
+									</div>
+								</div>
+								<div class="modalFaq-col col-md-4 col-sm-6">
+									<div class="input-block">
+										<label for="x-4">City*</label>
+										<input id="x-4" type="text" name="name" placeholder="City, State">
+									</div>
+								</div>
+								<div class="modalFaq-col col-md-4 col-sm-6">
+									<div class="input-block">
+										<label for="x-5">Email:*</label>
+										<input id="x-5" type="email" name="email" placeholder="example@domain.com">
+									</div>
+								</div>
+							</div>
+							<div class="modalReview-bottom">
+								<p>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</p>
+								<button class="primary-btn">Post review</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-level -->
+	<div style="display: none;" id="modal-level" class="modal modalLevel">
+		<div class="modal-wrap">
+			<div class="modalLevel-bg"><img src="img/modal-bg.png" alt=""></div>
+			<div class="modalLevel-info">
+				<h3 class="modalBig-title">Check yor math level</h3>
+				<div class="modalLevel-row yesNo">
+					<div class="modalLevel-col yesNo-col">
+						<div>
+						  <input type="radio" name="modalLevel">
+						  <span>Pre-K</span>
+						</div>
+					</div>
+					<div class="modalLevel-col yesNo-col">
+						<div>
+						  <input type="radio" name="modalLevel">
+						  <span>Kindergarten</span>
+						</div>
+					</div>
+					<div class="modalLevel-col yesNo-col">
+						<div>
+						  <input type="radio" name="modalLevel">
+						  <span>1 Grade</span>
+						</div>
+					</div>
+					<div class="modalLevel-col yesNo-col">
+						<div>
+						  <input type="radio" name="modalLevel">
+						  <span>2 Grade</span>
+						</div>
+					</div>
+					<div class="modalLevel-col yesNo-col">
+						<div>
+						  <input type="radio" name="modalLevel">
+						  <span>3 Grade</span>
+						</div>
+					</div>
+					<div class="modalLevel-col yesNo-col">
+						<div>
+						  <input type="radio" name="modalLevel">
+						  <span>4 Grade</span>
+						 </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-basket -->
+	<div style="display: none;" id="modal-basket" class="modal modalBasket">
+		<div class="modal-wrap">
+			<div class="modalBasket-top">
+				<div class="wrapper">
+					<div class="modalBasket-col modalBasket-col__1">
+						<div class="modalBasket-col__top">
+							<span class="modalBasket-subtitle modalBasket-subtitle__blue">
+								<i class="hb-ico check-ico"></i>
+								1 item added to your cart
+							</span>
+						</div>
+						<div class="modalBasket-item">
+							<a href="#" class="modalBasket-img"><img src="img/card-1-min.jpg" alt=""></a>
+							<div class="modalBasket-item__info">
+								<span class="modalBasket-name">Name 1234</span>
+								<span class="modalBasket-by">by <a href="#">Kate Bee</a></span>
+								<span class="modalBasket-price">$0.99</span>
+							</div>
+						</div>
+					</div>
+					<div class="modalBasket-col modalBasket-col__2">
+						<div class="modalBasket-col__top">
+							<span class="modalBasket-subtitle">Your card: 3 items</span>
+						</div>
+						<ul>
+							<li>
+								Order Subtotal:
+								<span>$0.99</span>
+							</li>
+							<li>
+								<b>Subtotal:</b>
+								<b>$0.99</b>
+							</li>
+						</ul>
+						<div class="buttons-row">
+							<a href="#" class="second-btn">Сontinue shopping</a>
+							<a href="#" class="primary-btn">Checkout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modalBasket-content">
+				<div class="wrapper">
+					<span class="modalBasket-viewed">People also viewed</span>
+					<div class="products-row row">
+						<div class="products-col col-lg-3 col-md-4 col-sm-6">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-1-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="products-col col-lg-3 col-md-4 col-sm-6">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-2-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="products-col col-lg-3 col-md-4 col-sm-6">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-3-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+						<div class="products-col col-lg-3 col-md-4 col-sm-6">
+							<div class="product">
+								<div class="product-img">
+									<img src="img/product-1-min.jpg" alt="">
+									<a href="#" class="hb-ico favorite-ico"></a>
+								</div>
+								<div class="product-info">
+									<div class="product-row">
+										<div>
+											<a href="#" class="product-title">Name 1234</a>
+											<span class="product-name">by <a href="#">Kate Bee</a></span>
+										</div>
+										<i class="hb-ico star-ico star-ico-4"></i>
+									</div>
+									<div class="product-bottom">
+										<span class="product-price">$0.99</span>
+										<a href="#" class="hb-ico basketB-ico"></a>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-report -->
+	<div style="display: none;" id="modal-report" class="modal modalTest modalReport">
+		<div class="modal-wrap">
+			<div class="modalTest-top">
+				<span class="modalTest-title">We really appreciate your concerns - Thanks!</span>
+			</div>
+			<div class="modalTest-bottom">
+				<form action="POST">
+					<div class="modalReport-wrap">
+						<span class="modalReport-subtitle">Please select reason:</span>
+						<ul>
+							<li>
+								<div class="radio">
+									<input type="radio" name="rep" checked>
+									<span class="radio-ico"></span>
+									<p>Bad quality</p>
+								</div>
+							</li>
+							<li>
+								<div class="radio">
+									<input type="radio" name="rep">
+									<span class="radio-ico"></span>
+									<p>Wrong category</p>
+								</div>
+							</li>
+							<li>
+								<div class="radio">
+									<input type="radio" name="rep">
+									<span class="radio-ico"></span>
+									<p>Inappropriate content</p>
+								</div>
+							</li>
+						</ul>
+						<div class="modalFaq-bottom">
+							<button class="primary-btn">Report now</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-account -->
+	<div style="display: none;" id="modal-account" class="modal modalTest modalAccount">
+		<div class="modal-wrap">
+			<div class="modalTest-top">
+				<span class="modalTest-title">Select account type</span>
+			</div>
+			<div class="modalAccount-all">
+				<div class="modalAccount-row row">
+					<div class="modalAccount-col col-md-3 col-6">
+						<a href="#" class="modalAccount-wrap">
+							<i class="hb-ico account-ico-1"></i>
+							<span class="modalAccount-name">I’m student</span>
+						</a>
+					</div><!-- col -->
+					<div class="modalAccount-col col-md-3 col-6">
+						<a href="#" class="modalAccount-wrap">
+							<i class="hb-ico account-ico-2"></i>
+							<span class="modalAccount-name">I’m parent</span>
+						</a>
+					</div><!-- col -->
+					<div class="modalAccount-col col-md-3 col-6">
+						<a href="#" class="modalAccount-wrap">
+							<i class="hb-ico account-ico-3"></i>
+							<span class="modalAccount-name">I’m teacher</span>
+						</a>
+					</div><!-- col -->
+					<div class="modalAccount-col col-md-3 col-6">
+						<a href="#" class="modalAccount-wrap">
+							<i class="hb-ico account-ico-4"></i>
+							<span class="modalAccount-name">I’m author</span>
+						</a>
+					</div><!-- col -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-1">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-1.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">Wonderful!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-2">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-2.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">You got it!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-3">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-3.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">How did you do that?</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-4">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-4.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">You make me smile</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-5">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-5.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">Awesome!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-6">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-6.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">Way to go!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-7">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-7.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">Nice going!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-8">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-8.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">Good job!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-9">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-9.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">Absolutely!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-10">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-10.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-check"></i>
+				<span class="modalAnimation-title">Now you have it!</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-11">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-11.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-close"></i>
+				<span class="modalAnimation-title">Nope...</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation modalAnimation-big" id="modalAnimation-12">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-12.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-close"></i>
+				<span class="modalAnimation-title">I’m excited to see what you do</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-animation -->
+	<div class="modalAnimation" id="modalAnimation-13">
+		<div class="modalAnimation-wrap">
+			<div class="modalAnimation-img"><img src="img/animation/animation-13.svg" alt=""></div>
+			<div class="modalAnimation-row">
+				<i class="hb-ico modalAnimation-close"></i>
+				<span class="modalAnimation-title">Nope...</span>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div class="modalAnimation modalMonkey modalMonkey-green" id="modalMonkey-1">
+		<div class="modalAnimation-wrap">
+			<div class="modalMonkey-img"><img src="img/modalMonkey/img-1.svg" alt=""></div>
+			<div class="modalMonkey-info">
+				<div class="modalAnimation-row">
+					<i class="hb-ico modalMonkey-check"></i>
+					<span>Wonderful!</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div class="modalAnimation modalMonkey modalMonkey-orange" id="modalMonkey-2">
+		<div class="modalAnimation-wrap">
+			<div class="modalMonkey-img"><img src="img/modalMonkey/img-2.svg" alt=""></div>
+			<div class="modalMonkey-info">
+				<div class="modalAnimation-row">
+					<i class="hb-ico modalMonkey-check"></i>
+					<span>Now you’ve got it!</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div class="modalAnimation modalMonkey modalMonkey-red" id="modalMonkey-3">
+		<div class="modalAnimation-wrap">
+			<div class="modalMonkey-img"><img src="img/modalMonkey/img-3.svg" alt=""></div>
+			<div class="modalMonkey-info">
+				<div class="modalAnimation-row">
+					<i class="hb-ico modalMonkey-close"></i>
+					<span>I’m sure you can do it</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div style="display: none;" id="popap-1" class="modal popap">
+		<div class="modal-wrap">
+			<div class="popap-logo"><img src="img/popap/logo.svg" alt=""></div>
+			<div class="popap-img"><img src="img/popap/img-1.svg" alt=""></div>
+			<h3 class="popap-title">Almost out of battery!</h3>
+			<p>Don’t wait! Get most of your studies today</p>
+			<a href="#" class="primary-btn">Upgrade now</a>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div style="display: none;" id="popap-2" class="modal popap">
+		<div class="modal-wrap">
+			<div class="popap-logo"><img src="img/popap/logo.svg" alt=""></div>
+			<div class="popap-img"><img src="img/popap/img-2.svg" alt=""></div>
+			<h3 class="popap-title">Almost out of battery!</h3>
+			<p>Don’t wait! Get most of your studies today</p>
+			<a href="#" class="primary-btn">Upgrade now</a>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div style="display: none;" id="popap-3" class="modal popap">
+		<div class="modal-wrap">
+			<div class="popap-logo"><img src="img/popap/logo.svg" alt=""></div>
+			<div class="popap-img"><img src="img/popap/img-3.svg" alt=""></div>
+			<h3 class="popap-title"> Wait or upgrade!ng!</h3>
+			<p>You have run out of free practices. Upgrade now and continue practithink without limits</p>
+			<a href="#" class="primary-btn">Upgrade now</a>
+			<div class="popap-time">
+				<p>or wait for a while and your access will be renewed in:</p>
+				<div class="popap-time__row">
+					<div class="popap-time__col"><b>0</b> hr</div>
+					<div class="popap-time__dots">:</div>
+					<div class="popap-time__col active"><b>40</b> min</div>
+					<div class="popap-time__dots">:</div>
+					<div class="popap-time__col active"><b>55</b> sec</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div style="display: none;" id="popap-4" class="modal popap">
+		<div class="modal-wrap">
+			<div class="popap-logo"><img src="img/popap/logo.svg" alt=""></div>
+			<div class="popap-img"><img src="img/popap/img-4.svg" alt=""></div>
+			<h3 class="popap-title">Save your progress!</h3>
+			<p>Nobody wants to go through already mastered topics again and again</p>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Name">
+				</div>
+				<button class="primary-btn">Join now </button>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div style="display: none;" id="popap-5" class="modal popap">
+		<div class="modal-wrap">
+			<div class="popap-logo"><img src="img/popap/logo.svg" alt=""></div>
+			<div class="popap-img"><img src="img/popap/img-5.svg" alt=""></div>
+			<h3 class="popap-title">It’s time to unlock!</h3>
+			<div class="popap-info">
+				<p>You have run out of free practices preview. Please add a payment method to your account to continue practithink. Full membership get you: </p>
+				<ul>
+					<li>Unlimited practices</li>
+					<li>Personalized, results-based recommendations</li>
+					<li>Full access to PractiThink printables and learning resources</li>
+					<li>Report cards and progress tracking for skills studied</li>
+				</ul>
+			</div>
+			<a href="#" class="primary-btn">Join now </a>
+		</div>
+	</div>
+	<!-- start modal-modalMonkey -->
+	<div style="display: none;" id="popap-6" class="modal popap">
+		<div class="modal-wrap">
+			<div class="popap-logo"><img src="img/popap/logo.svg" alt=""></div>
+			<div class="popap-img"><img src="img/popap/img-6.svg" alt=""></div>
+			<h3 class="popap-title">FREE and quick registration!g!</h3>
+			<p>Join Practithink for access worksheets, online learning and test preparation </p>
+			<div class="popap-choice">
+				<div class="yesNo">
+					<div class="yesNo-col">
+						<div class="yesNo-wrap">
+							<input type="radio" name="why">
+							<span>
+								<b>Myself</b>
+								<i>I’m a student</i>
+							</span>
+						</div>
+					</div>
+					<div class="yesNo-col">
+						<div class="yesNo-wrap">
+							<input type="radio" name="why">
+							<span>
+								<b>My child</b>
+								<i>I’m a parent</i>
+							</span>
+						</div>
+					</div>
+					<div class="yesNo-col">
+						<div class="yesNo-wrap">
+							<input type="radio" name="why" checked>
+							<span>
+								<b>My student</b>
+								<i>I’m a teacher</i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
