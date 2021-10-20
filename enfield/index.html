@@ -32,23 +32,27 @@
 						<ul class="header-menu">
 							<li class="drop">
 								<a href="#" class="drop-text">О проекте</a>
-								<ul class="drop-list">
-									<li><a href="#">Инфраструктура</a></li>
-									<li><a href="#">Общественные пространства</a></li>
-									<li><a href="#">Отделка</a></li>
-									<li><a href="#">Ходстроительства</a></li>
-								</ul>
+								<div class="drop-list">
+									<ul>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Общественные пространства</a></li>
+										<li><a href="#">Отделка</a></li>
+										<li><a href="#">Ходстроительства</a></li>
+									</ul>
+								</div>
 							</li>
 							<li><a href="#">Как купить</a></li>
 							<li><a href="#">Акции</a></li>
 							<li class="drop drop-2">
 								<a href="#" class="drop-text">Центр образования</a>
-								<ul class="drop-list">
-									<li><a href="#">Инфраструктура</a></li>
-									<li><a href="#">Общественные пространства</a></li>
-									<li><a href="#">Отделка</a></li>
-									<li><a href="#">Ходстроительства</a></li>
-								</ul>
+								<div class="drop-list">
+									<ul>
+										<li><a href="#">Инфраструктура</a></li>
+										<li><a href="#">Общественные пространства</a></li>
+										<li><a href="#">Отделка</a></li>
+										<li><a href="#">Ходстроительства</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -62,17 +66,46 @@
 	</header>
 	<!-- end header -->
 	<!-- start main -->
-	<section class="main" style="background-image: url(img/img-1-min.jpg);">
-		<div class="wrapper">
-			<div class="main-wrap">
-				<h1 class="main-title">Семейная ипотека 0,2%</h1>
-				<p>На весь срок!</p>
-				<a href="#" class="primary-btn primary-btn-white">Подробнее</a>
+	<section class="main">
+		<div class="main-slider swiper-container">
+			<div class="main-slider__wrapper swiper-wrapper">
+				<div class="main-slide swiper-slide">
+					<div class="main-bg" style="background-image: url(img/img-1-min.jpg);"></div>
+					<div class="wrapper">
+						<div class="main-wrap">
+							<h1 class="main-title">Ипотека 0%</h1>
+							<p>На весь срок!</p>
+							<a href="#" class="primary-btn primary-btn-white">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- slide -->
+				<div class="main-slide swiper-slide">
+					<div class="main-bg" style="background-image: url(img/img-10-min.jpg);"></div>
+					<div class="wrapper">
+						<div class="main-wrap">
+							<h1 class="main-title">Первый взнос 0%</h1>
+							<p>На весь срок!</p>
+							<a href="#" class="primary-btn primary-btn-white">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- slide -->
+				<div class="main-slide swiper-slide">
+					<div class="main-bg" style="background-image: url(img/img-15-min.jpg);"></div>
+					<div class="wrapper">
+						<div class="main-wrap">
+							<h1 class="main-title">Семейная ипотека 0,2%</h1>
+							<p>На весь срок!</p>
+							<a href="#" class="primary-btn primary-btn-white">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- slide -->
 			</div>
+		</div>
+		<div class="wrapper wrapper-second">
 			<ul class="main-list">
-				<li><a href="#">Ипотека 0%</a></li>
-				<li><a href="#">Первый взнос 0%</a></li>
-				<li><a href="#" class="active">Cемейная ипотека 0,2%</a></li>
+				<li data-slide="1" class="active">Ипотека 0%</li>
+				<li data-slide="2">Первый взнос 0%</li>
+				<li data-slide="3">Cемейная ипотека 0,2%</li>
 			</ul>
 		</div>
 	</section>
@@ -133,7 +166,7 @@
 						<div class="energy-wrap">
 							<div class="energy-img" style="background-image: url(img/img-3-min.jpg);"></div>
 							<div class="energy-info">
-								<h3 class="energy-ttile">Беговые и велодорожки </h3>
+								<h3 class="energy-title">Беговые и велодорожки </h3>
 								<span class="energy-subtitle">Мы спроектировали целую трассу, которая охватит весь квартал, пройдет через парковую зону с фонтанами, зелеными насаждениями и альпийскими горками.</span>
 								<p>Много проще завести и поддерживать привычку к спорту, когда все для этого начинается прямо за окном, прямо за дверью. Минимум сборов, минимум препятствий, максимум бодрости и здоровья.</p>
 								<div class="energy-row">
@@ -184,41 +217,58 @@
 				<p>Мы уделили особое внимание разделению пешеходных и автомобильных потоков. Под кварталом оборудован паркинг на 1000 автомобилей, в него можно спуститься на лифте, не выходя на улицу. Зеленые зоны для прогулок, детские площадки и места для занятий спортом максимально закрыты от автомобилей.</p>
 			</div>
 		</div>
-		<div class="leisure-row">
-			<div class="leisure-main">
-				<div class="education-img" style="background-image: url(img/img-6-min.jpg);"><span>Террасы на крышах</span></div>
-			</div>
-			<div class="leisure-sidebar">
-				<div class="education-img" style="background-image: url(img/img-7-min.jpg);"></div>
-				<div class="leisure-slider swiper-container">
-					<div class="leisure-slider__wrapper swiper-wrapper">
-						<div class="leisure-slide swiper-slide">
-							<div class="leisure-info">
-								<span class="leisure-title"><b>На открытых террасах</b> регулярно проходят занятия йогой и растяжке. Вы свободном можете устроить на террасе вечеринку с друзьями или просто добавить немного романтики в свой вечер и полюбоваться заказатом.</span>
-								<a href="#" class="more more-white">Подробнее</a>
+		<div class="leisure-slider swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="leisure-row">
+						<div class="leisure-main">
+							<div class="education-img" style="background-image: url(img/img-6-min.jpg);"><span>Террасы на крышах</span></div>
+						</div>
+						<div class="leisure-sidebar">
+							<div class="education-img" style="background-image: url(img/img-7-min.jpg);"></div>
+							<div class="leisure-item">
+								<div class="leisure-slide">
+									<div class="leisure-info">
+										<span class="leisure-title"><b>На открытых террасах</b> регулярно проходят занятия йогой и растяжке. Вы свободном можете устроить на террасе вечеринку с друзьями или просто добавить немного романтики в свой вечер и полюбоваться заказатом.</span>
+										<a href="#" class="more more-white">Подробнее</a>
+									</div>
+								</div><!-- slide -->
+								<div class="slider-row">
+									<div class="swiper-pagination"></div>
+									<div class="slider-arrow">
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+								</div>
 							</div>
-						</div><!-- slide -->
-						<div class="leisure-slide swiper-slide">
-							<div class="leisure-info">
-								<span class="leisure-title"><b>На открытых террасах</b> регулярно проходят занятия йогой и растяжке. Вы свободном можете устроить на террасе вечеринку с друзьями или просто добавить немного романтики в свой вечер и полюбоваться заказатом.</span>
-								<a href="#" class="more more-white">Подробнее</a>
-							</div>
-						</div><!-- slide -->
-						<div class="leisure-slide swiper-slide">
-							<div class="leisure-info">
-								<span class="leisure-title"><b>На открытых террасах</b> регулярно проходят занятия йогой и растяжке. Вы свободном можете устроить на террасе вечеринку с друзьями или просто добавить немного романтики в свой вечер и полюбоваться заказатом.</span>
-								<a href="#" class="more more-white">Подробнее</a>
-							</div>
-						</div><!-- slide -->
-					</div>
-					<div class="slider-row">
-						<div class="swiper-pagination"></div>
-						<div class="slider-arrow">
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
 						</div>
 					</div>
-				</div>
+				</div><!-- slide -->
+				<div class="swiper-slide">
+					<div class="leisure-row">
+						<div class="leisure-main">
+							<div class="education-img" style="background-image: url(img/img-15-min.jpg);"><span>Лофт</span></div>
+						</div>
+						<div class="leisure-sidebar">
+							<div class="education-img" style="background-image: url(img/img-16-min.jpg);"></div>
+							<div class="leisure-item">
+								<div class="leisure-slide">
+									<div class="leisure-info">
+										<span class="leisure-title"><b>В чистовую отделку</b> входит полный комплекст работ: Вам останется только подобрать и расставить мебель. Наши партнеры предлагают специальные цены на полную мебилировку под ключ для того чтобы вы могли въехать как можно скорее.</span>
+										<a href="#" class="more more-white">Подробнее</a>
+									</div>
+								</div><!-- slide -->
+								<div class="slider-row">
+									<div class="swiper-pagination"></div>
+									<div class="slider-arrow">
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- slide -->
 			</div>
 		</div>
 	</section>
@@ -340,41 +390,58 @@
 				<p>Все наши квартиры сдаются с дизайнерской чистовой отделкой. Мы проработали три стилевых решения от сдержанной классики до модерна. Выберите свой и переезжайте в новый дом сразу.</p>
 			</div>
 		</div>
-		<div class="leisure-row">
-			<div class="leisure-main">
-				<div class="education-img" style="background-image: url(img/img-15-min.jpg);"><span>Лофт</span></div>
-			</div>
-			<div class="leisure-sidebar">
-				<div class="education-img" style="background-image: url(img/img-16-min.jpg);"></div>
-				<div class="leisure-slider swiper-container">
-					<div class="leisure-slider__wrapper swiper-wrapper">
-						<div class="leisure-slide swiper-slide">
-							<div class="leisure-info">
-								<span class="leisure-title"><b>В чистовую отделку</b> входит полный комплекст работ: от стяжки пола и установки сантехники до оклейки обоев и монтажа плинтусов. Вам останется только подобрать и расставить мебель. Наши партнеры предлагают специальные цены на полную мебилировку под ключ для того чтобы вы могли въехать как можно скорее.</span>
-								<a href="#" class="more more-white">Подробнее</a>
+		<div class="leisure-slider2 swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="leisure-row">
+						<div class="leisure-main">
+							<div class="education-img" style="background-image: url(img/img-15-min.jpg);"><span>Лофт</span></div>
+						</div>
+						<div class="leisure-sidebar">
+							<div class="education-img" style="background-image: url(img/img-16-min.jpg);"></div>
+							<div class="leisure-item">
+								<div class="leisure-slide">
+									<div class="leisure-info">
+										<span class="leisure-title"><b>В чистовую отделку</b> входит полный комплекст работ: от стяжки пола и установки сантехники до оклейки обоев и монтажа плинтусов. Вам останется только подобрать и расставить мебель. Наши партнеры предлагают специальные цены на полную мебилировку под ключ для того чтобы вы могли въехать как можно скорее.</span>
+										<a href="#" class="more more-white">Подробнее</a>
+									</div>
+								</div><!-- slide -->
+								<div class="slider-row">
+									<div class="swiper-pagination"></div>
+									<div class="slider-arrow">
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+								</div>
 							</div>
-						</div><!-- slide -->
-						<div class="leisure-slide swiper-slide">
-							<div class="leisure-info">
-								<span class="leisure-title"><b>В чистовую отделку</b> входит полный комплекст работ: от стяжки пола и установки сантехники до оклейки обоев и монтажа плинтусов. Вам останется только подобрать и расставить мебель. Наши партнеры предлагают специальные цены на полную мебилировку под ключ для того чтобы вы могли въехать как можно скорее.</span>
-								<a href="#" class="more more-white">Подробнее</a>
-							</div>
-						</div><!-- slide -->
-						<div class="leisure-slide swiper-slide">
-							<div class="leisure-info">
-								<span class="leisure-title"><b>В чистовую отделку</b> входит полный комплекст работ: от стяжки пола и установки сантехники до оклейки обоев и монтажа плинтусов. Вам останется только подобрать и расставить мебель. Наши партнеры предлагают специальные цены на полную мебилировку под ключ для того чтобы вы могли въехать как можно скорее.</span>
-								<a href="#" class="more more-white">Подробнее</a>
-							</div>
-						</div><!-- slide -->
-					</div>
-					<div class="slider-row">
-						<div class="swiper-pagination"></div>
-						<div class="slider-arrow">
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
 						</div>
 					</div>
-				</div>
+				</div><!-- slide -->
+				<div class="swiper-slide">
+					<div class="leisure-row">
+						<div class="leisure-main">
+							<div class="education-img" style="background-image: url(img/img-6-min.jpg);"><span>Террасы на крышах</span></div>
+						</div>
+						<div class="leisure-sidebar">
+							<div class="education-img" style="background-image: url(img/img-7-min.jpg);"></div>
+							<div class="leisure-item">
+								<div class="leisure-slide">
+									<div class="leisure-info">
+										<span class="leisure-title"><b>Lorem, ipsum, dolor</b> sit amet consectetur adipisicing elit. Cumque ab maiores numquam facilis tenetur accusamus et, quibusdam. Eum accusantium ducimus reiciendis voluptatem qui quam.</span>
+										<a href="#" class="more more-white">Подробнее</a>
+									</div>
+								</div><!-- slide -->
+								<div class="slider-row">
+									<div class="swiper-pagination"></div>
+									<div class="slider-arrow">
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- slide -->
 			</div>
 		</div>
 	</section>
@@ -516,7 +583,7 @@
 			</div>
 		</div>
 	</div>
-	<!--<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&load=Map&lang=ru_RU" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&load=Map&lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript">
 	  ymaps.ready(function () {  
 	    var map = new ymaps.Map("map", {
@@ -530,7 +597,7 @@
 	      });
 	    }
 	  });
-	</script>-->
+	</script>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 </body>
