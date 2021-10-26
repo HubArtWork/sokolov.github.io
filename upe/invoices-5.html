@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start details -->
+	<section class="details">
+		<div class="wrapper">
+			<div class="details-top">
+				<h1 class="details-title">Invoices Details</h1>
+				<span class="details-subtitle">Choose a payment option below</span>
+				<div class="payment">
+					<div class="details-row">
+						<ul class="details-buttons">
+							<li><a href="#">
+								<i class="hb-ico link-ico"></i>
+								<span>Copy</span>
+							</a></li>
+							<li><a href="#">
+								<i class="hb-ico print-ico"></i>
+								<span>PDF</span>
+							</a></li>
+						</ul>
+						<ul class="payment-list">
+							<li><a href="#payment-1">
+								<div>
+									<i class="close-ico"></i>
+									<i class="hb-ico credit-ico"></i>
+									<span>Card</span>
+								</div>
+								<div class="payment-more"><span>Pay now</span></div>
+							</a></li>
+							<li><a href="#payment-2">
+								<div>
+									<i class="close-ico"></i>
+									<i class="hb-ico payPal-ico"></i>
+									<span>PayPal</span>
+								</div>
+								<div class="payment-more"><span>Pay now</span></div>
+							</a></li>
+							<li><a href="#payment-3">
+								<div>
+									<i class="close-ico"></i>
+									<i class="hb-ico transfer-ico"></i>
+									<span>Bank transfer</span>
+								</div>
+								<div class="payment-more"><span>Pay now</span></div>
+							</a></li>
+						</ul>
+					</div>
+					<div class="payment-block" id="payment-1">
+						<div class="details-block">
+							<form action="">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="input-block">
+											<input type="text" name="text" placeholder="Cardholder Name">
+										</div>
+									</div><!-- col -->
+									<div class="col-sm-12">
+										<div class="input-block">
+											<input type="text" name="text" placeholder="0000 0000 0000 0000">
+										</div>
+									</div><!-- col -->
+									<div class="col-sm-6">
+										<span class="details-total">Total: <b>$76.00</b></span>
+									</div><!-- col -->
+									<div class="col-sm-6">
+										<button class="primary-btn">Pay</button>
+									</div><!-- col -->
+								</div>
+							</form>
+						</div>
+					</div><!-- tab -->
+					<div class="payment-block" id="payment-2">
+						<div class="details-block">
+							<p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, soluta?</p>
+						</div>
+					</div><!-- tab -->
+					<div class="payment-block" id="payment-3">
+						<div class="details-block">
+							<p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, soluta?</p>
+						</div>
+					</div><!-- tab -->
+				</div>
+			</div>
+			<div class="invoices-wrap">
+				<div class="invoices-wrap__top">
+					<div class="invoices-wrap__top-main">
+						<img src="img/logo-2.svg" alt="">
+						<span>email@email.com</span>
+					</div>
+					<h3 class="invoices-wrap__top-title">Invoice</h3>
+				</div>
+				<div class="invoices-wrap__amount">
+					<div class="invoices-wrap__amount-block">
+						<ul>
+							<li>
+								<span>Invoice #</span>
+								<span>123</span>
+							</li>
+							<li>
+								<span>Invoice data</span>
+								<span>09/09/2009</span>
+							</li>
+							<li>
+								<span>Due data</span>
+								<span>09/09/2009</span>
+							</li>
+						</ul>
+						<div class="invoices-wrap__amount-bottom">
+							<span>Amount Due</span>
+							<b>$76.00</b>
+						</div>
+					</div>
+				</div>
+				<div class="invoices-wrap__descr">
+					<h3>To</h3>
+					<ul>
+						<li>United VIP Limo</li>
+						<li>New York, 123</li>
+						<li>Email: email@gmail.com</li>
+					</ul>
+				</div>
+				<div class="invoices-wrap__table">
+					<div class="invoices-wrap__table-row invoices-wrap__table-top">
+						<div class="invoices-wrap__table-col col-1">
+							<span>Amount Due</span>
+						</div>
+						<div class="invoices-wrap__table-col col-2">
+							<span>Quanty</span>
+						</div>
+						<div class="invoices-wrap__table-col col-3">
+							<span>Price</span>
+						</div>
+					</div>
+					<div class="invoices-wrap__table-row">
+						<div class="invoices-wrap__table-col col-1">
+							<span>name 1234</span>
+						</div>
+						<div class="invoices-wrap__table-col col-2">
+							<span>2</span>
+						</div>
+						<div class="invoices-wrap__table-col col-3">
+							<span>$1234,98</span>
+						</div>
+					</div>
+				</div>
+				<div class="invoices-wrap__total">
+					<ul>
+						<li>
+							<span>Subtotal</span>
+							<span>$2334.00</span>
+						</li>
+						<li>
+							<span>Taxes:</span>
+							<span>$0.00</span>
+						</li>
+						<li>
+							<span>Fees:</span>
+							<span>$0.00</span>
+						</li>
+						<li>
+							<span>Shipping:</span>
+							<span>$0.00</span>
+						</li>
+						<li>
+							<span>Total</span>
+							<span>$2367.00</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end details -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
