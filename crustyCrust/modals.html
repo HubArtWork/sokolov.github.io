@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- modal-Registration -->
+	<div id="modal-registration" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<h3 class="modal-title">Registration</h3>
+				<p>Let’s create your account</p>
+			</div>
+			<form action="">
+				<div class="inputs-row">
+					<div class="input-block">
+						<label for="h-1">First name<i>*</i></label>
+						<input id="h-1" type="text" name="text">
+					</div>
+					<div class="input-block">
+						<label for="h-2">Last name<i>*</i></label>
+						<input id="h-2" type="text" name="text">
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="h-3">Email address<i>*</i></label>
+					<input id="h-3" type="email" name="email">
+				</div>
+				<div class="input-block">
+					<label for="h-4">Password<i>*</i></label>
+					<input id="h-4" type="password" name="password">
+				</div>
+				<div class="input-block">
+					<label for="h-5">Repeat password<i>*</i></label>
+					<input id="h-5" type="password" name="password">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<i class="checkbox-ico"></i>
+					<p>I agree <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+				</div>
+				<button class="primary-btn">REGISTRATION</button>
+			</form>
+		</div>
+	</div>
+	<!-- modal-Login -->
+	<div id="modal-login" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<h3 class="modal-title">Login</h3>
+				<p>Nice to see your again</p>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<label for="j-1">Email address<i>*</i></label>
+					<input id="j-1" type="email" name="email">
+				</div>
+				<div class="input-block">
+					<label for="j-2">Password<i>*</i></label>
+					<input id="j-2" type="password" name="password">
+				</div>
+				<div class="modal-remember">
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<i class="checkbox-ico"></i>
+						<p>Remember me</p>
+					</div>
+					<a href="#" class="modal-link">Forgot password?</a>
+				</div>
+				<button class="primary-btn">LOGIN</button>
+			</form>
+		</div>
+	</div>
+	<!-- modal-Forgot password -->
+	<div id="modal-forgot" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<h3 class="modal-title">Forgot password</h3>
+				<p>Type you email address and we will send instructions</p>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<label for="k-1">Email address<i>*</i></label>
+					<input id="k-1" type="email" name="email">
+				</div>
+				<button class="primary-btn">SEND INSTRUCTIONS</button>
+			</form>
+		</div>
+	</div>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
