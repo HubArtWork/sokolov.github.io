@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Order - CrustyCrust</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<a href="#" class="items">
+		<i class="items-ico"></i>
+		<span class="items-txt">2 items</span>
+	</a>
+	<!-- start header -->
+	<header class="header header-second">
+		<div class="header-bg" style="background-image: url(img/header-bg.svg);"></div>
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<div class="header-row">
+				<ul class="header-list">
+					<li><a href="#">order online</a></li>
+					<li><a href="#">menu</a></li>
+					<li><a href="#">faq</a></li>
+					<li><a href="#">store locator</a></li>
+					<li><a href="#">contacts</a></li>
+				</ul>
+				<div class="header-actions">
+					<a href="#" class="header-link">login</a>
+					<div class="header-block">
+						<a href="#" class="header-lang">fr</a>
+						<a href="#" class="header-basket"><b>1</b></a>
+					</div>
+					<div class="header-mob">
+						<a href="#">order pickup</a>
+						<span>or</span>
+						<a href="#">order delivery</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-bar"><span></span><b>1</b></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start order -->
+	<section class="order">
+		<div class="wrapper">
+			<h1 class="profile-title">Order checkout</h1>
+			<div class="order-row">
+				<div class="order-content">
+					<form action="">
+						<div class="order-block">
+							<span class="order-title">ORDER TYPE</span>
+							<label for="">Choose your order type</label>
+							<div class="order-type">
+								<div class="order-col">
+									<div class="order-wrap active" id="type-1">
+										<i class="address-ico"></i>
+										<div class="order-ico"><img src="img/order-1.svg" alt=""></div>
+										<span class="order-tit">Takeout</span>
+									</div>
+								</div><!-- col -->
+								<div class="order-col">
+									<div class="order-wrap" id="type-2">
+										<i class="address-ico"></i>
+										<div class="order-ico"><img src="img/order-2.svg" alt=""></div>
+										<span class="order-tit">Delivery</span>
+									</div>
+								</div><!-- col -->
+							</div>
+						</div>
+						<div class="order-block">
+							<span class="order-title">SELECT TIME:</span>
+							<div class="input-block">
+								<label for="x-1">Time <i>*</i></label>
+								<select name="text" id="x-1">
+									<option value="">01:00 PM</option>
+									<option value="">01:00 PM</option>
+								</select>
+							</div>
+						</div>
+						<div class="order-block order-item">
+							<div class="order-top">
+								<span class="order-title">ADDRESSES</span>
+								<a href="#" class="order-link">Add new address</a>
+							</div>
+							<div class="address">
+								<label for="">Current address</label>
+								<div class="address-content">
+									<div class="address-item">
+										<input type="radio" name="addressc" checked="">
+										<div class="address-wrap">
+											<i class="address-ico"></i>
+											<p>4315 Boulevard Saint-Jean, <br>Dollard-des-Ormeaux, Québec, H9H 2A4</p>
+										</div>
+									</div>
+									<div class="address-item">
+										<input type="radio" name="addressc">
+										<div class="address-wrap">
+											<i class="address-ico"></i>
+											<p>4315 Boulevard Saint-Jean, <br>Dollard-des-Ormeaux, Québec, H9H 2A4</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-block">
+							<span class="order-title">MAIN INFO</span>
+							<div class="inputs-row">
+								<div class="input-block">
+									<label for="x-2">First name <i>*</i></label>
+									<input id="x-2" type="text" name="text">
+								</div>
+								<div class="input-block">
+									<label for="x-3">Last name <i>*</i></label>
+									<input id="x-3" type="text" name="text">
+								</div>
+							</div>
+							<div class="input-block">
+								<label for="x-4">Email address <i>*</i></label>
+								<input id="x-4" type="email" name="email">
+							</div>
+							<div class="input-block">
+								<label for="x-5">Phone <i>*</i></label>
+								<input id="x-5" type="text" name="text">
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" checked>
+								<i class="checkbox-ico"></i>
+								<p>Receive a confirmation of your order by SMS</p>
+							</div>
+						</div>
+						<div class="order-block">
+							<span class="order-title">PAYMENT TYPE</span>
+							<div class="address">
+								<label for="">Select type</label>
+								<div class="address-content">
+									<div class="address-item">
+										<input type="radio" name="address" checked="">
+										<div class="address-wrap">
+											<i class="address-ico"></i>
+											<p>Pay with Cash</p>
+										</div>
+									</div>
+									<div class="address-item">
+										<input type="radio" name="address">
+										<div class="address-wrap">
+											<i class="address-ico"></i>
+											<p>Pay with Credit Card</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-block">
+							<div class="order-top">
+								<span class="order-title">CREDIT CARDS <b>2 CARDS</b></span>
+								<a href="#" class="order-link">Add new card</a>
+							</div>
+							<div class="address">
+								<label for="">Current card</label>
+								<div class="address-content address-card">
+									<div class="address-item">
+										<input type="radio" name="card" checked="">
+										<div class="address-wrap">
+											<i class="address-ico"></i>
+											<span class="address-num">**** **** **** 7890</span>
+											<div class="address-img"><img src="img/mastercard.svg" alt=""></div>
+										</div>
+									</div>
+									<div class="address-item">
+										<input type="radio" name="card">
+										<div class="address-wrap">
+											<i class="address-ico"></i>
+											<span class="address-num">**** **** **** 3456</span>
+											<div class="address-img"><img src="img/visa.svg" alt=""></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-block">
+							<span class="order-title">TIP FOR THE COUNTER</span>
+							<ul class="choice">
+								<li>
+									<input type="radio" name="choice" checked>
+									<span>0%</span>
+								</li>
+								<li>
+									<input type="radio" name="choice">
+									<span>15%</span>
+								</li>
+								<li>
+									<input type="radio" name="choice">
+									<span>18%</span>
+								</li>
+								<li>
+									<input type="radio" name="choice">
+									<span>20%</span>
+								</li>
+								<li>
+									<input type="radio" name="choice">
+									<span>Other</span>
+								</li>
+							</ul>
+							<div class="input-block">
+								<label for="x-6">Notes for counters</label>
+								<textarea name="text" id="x-6"></textarea>
+							</div>
+						</div>
+						<div class="order-block">
+							<span class="order-title">COMMENT (OPTIONALLY)</span>
+							<div class="input-block">
+								<label for="x-7">Leave your comment</label>
+								<textarea name="text" id="x-7"></textarea>
+							</div>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<i class="checkbox-ico"></i>
+							<p>I accept the terms of sales*</p>
+						</div>
+						<div class="order-bottom">
+							<button class="primary-btn">PAY</button>
+							<div class="order-secure"><img src="img/order-3.svg" alt="">100% SECURE PAYMENT</div>
+						</div>
+					</form>
+				</div>
+				<div class="catalog-sidebar">
+					<div class="catalog-order">
+						<div class="catalog-bg" style="background-image: url(img/order-bg.svg);"></div>
+						<div class="catalog-order-wrap">
+							<h3 class="catalog-order-title">ORDER READY FOR</h3>
+							<span class="catalog-order-pm">2:55 PM</span>
+							<span class="catalog-order-in">In 20 minutes</span>
+							<div class="catalog-order-content">
+								<div class="catalog-order-block">
+									<i class="hb-ico close-ico"></i>
+									<span class="catalog-order-tit">All Dressed</span>
+									<span class="catalog-order-subtitle">Small</span>
+									<ul>
+										<li>+ Crusty Crust<span>$1.99</span></li>
+										<li>+ Crusty Crust<span>$1.99</span></li>
+									</ul>
+									<div class="catalog-order-total">Modify<span>$12.99 </span></div>
+								</div><!-- block -->
+								<div class="catalog-order-block">
+									<i class="hb-ico close-ico"></i>
+									<span class="catalog-order-tit">All Dressed</span>
+									<span class="catalog-order-subtitle">Small</span>
+									<ul>
+										<li>+ Crusty Crust<span>$1.99</span></li>
+										<li>+ Crusty Crust<span>$1.99</span></li>
+									</ul>
+									<div class="catalog-order-total">Modify<span>$12.99 </span></div>
+								</div><!-- block -->
+								<div class="catalog-order-block">
+									<ol>
+										<li>Subtotal<i>$1.99</i></li>
+										<li>Gst<i>$1.99</i></li>
+										<li>Gst<i>$1.99</i></li>
+									</ol>
+								</div><!-- block -->
+								<div class="catalog-order-block">
+									<ol>
+										<li>Tip <i>$1.99</i></li>
+										<li><span>TOTAL</span><b>$1.99</b></li>
+									</ol>
+								</div><!-- block -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end order -->
+	<!-- start subscribe -->
+	<section class="subscribe">
+		<div class="subscribe-bg" style="background-image: url(img/pattern-min.jpg);"></div>
+		<div class="wrapper">
+			<div class="subscribe-wrap">
+				<div class="subscribe-img subscribe-img-1"><img src="img/bg-1.svg" alt=""></div>
+				<div class="subscribe-img subscribe-img-2"><img src="img/bg-2.svg" alt=""></div>
+				<div class="subscribe-mob"><img src="img/mob-bg.svg" alt=""></div>
+				<div class="subscribe-info">
+					<h2 class="subscribe-title"><span>SUBSCRIBE</span> TO CRUSTY CRUST</h2>
+					<p>A beautifully written story is about to be read.</p>
+				</div>
+				<form action="">
+					<div class="subscribe-form">
+						<input type="email" name="email" placeholder="Enter email address">
+						<button class="primary-btn primary-btn-yellow">SUBSCRIBE</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end subscribe -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-col footer-col-1">
+					<span class="footer-title">CRUSTY CRUST</span>
+					<p>Crusty Crust is your favourite place to experience pizza. Order now and have delicious pizza delivered to your door in no time! Menu includeshealthy options, sweetsand more.</p>
+				</div><!-- col -->
+				<div class="footer-col footer-col-2">
+					<span class="footer-title">NAVIGATION</span>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col footer-col-3">
+					<div class="footer-logo"><a href="#"><img src="img/logo-big.svg" alt=""></a></div>
+				</div><!-- col -->
+				<div class="footer-col footer-col-4">
+					<span class="footer-title">ESSENTIAL</span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">Order Online</a></li>
+						<li><a href="#">Store Locator</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col footer-col-5">
+					<span class="footer-title">INFORMATION</span>
+					<p>Dollard-des-Ormeaux 4315 Boul. Saint-Jean, Dollard-des-Ormeaux, <br>Montreal, QC, H9H 2A4</p>
+					<ol>
+						<li><b>Sunday-Wednesday:</b> 11 am – 12am</li>
+						<li><b>Thursday-Saturday:</b> 11 am – 3am</li>
+					</ol>
+					<p>Bois-des-Filion <br>406 Bd Adolphe-Chapleau,  <br>Bois-des-Filion, QC J6Z 1H7</p>
+					<ol>
+						<li><b>Sunday-Wednesday:</b> 11am – 10pm</li>
+						<li><b>Thursday-Saturday:</b> 11am – 12am</li>
+					</ol>
+				</div><!-- col -->
+			</div>
+			<div class="footer-bottom">
+				<p>© 2021 Crusty Crust</p>
+				<ul class="footer-social">
+					<li><a href="#" class="hb-ico git-ico"></a></li>
+					<li><a href="#" class="hb-ico twitter-ico"></a></li>
+					<li><a href="#" class="hb-ico inst-ico"></a></li>
+				</ul>
+				<p><a href="#">TripleOne</a>™ company</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

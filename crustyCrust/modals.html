@@ -17,8 +17,39 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
+	<div class="messages">
+		<div class="message">
+			<i class="hb-ico close-ico"></i>
+			<div class="message-top">
+				<i class="hb-ico sent-ico"></i>
+				<h3 class="message-title">Message sent</h3>
+			</div>
+			<p>Thank you for your message!</p>
+		</div>
+		<div class="message">
+			<i class="hb-ico close-ico"></i>
+			<div class="message-top">
+				<i class="hb-ico error-ico"></i>
+				<h3 class="message-title">Message error</h3>
+			</div>
+			<p>Thank you for your message!</p>
+		</div>
+	</div>
+	<div class="buttonsD">
+		<div class="wrapper">
+			<ul>
+				<li><a href="modal-registration" class="button-modal">registration</a></li>
+				<li><a href="modal-login" class="button-modal">login</a></li>
+				<li><a href="modal-forgot" class="button-modal">forgot</a></li>
+				<li><a href="modal-card" class="button-modal">card</a></li>
+				<li><a href="modal-order" class="button-modal">order</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="overlay"></div>
 	<!-- modal-Registration -->
 	<div id="modal-registration" class="modal">
+		<i class="hb-ico modal-close"></i>
 		<div class="modal-wrap">
 			<div class="modal-top">
 				<h3 class="modal-title">Registration</h3>
@@ -58,6 +89,7 @@
 	</div>
 	<!-- modal-Login -->
 	<div id="modal-login" class="modal">
+		<i class="hb-ico modal-close"></i>
 		<div class="modal-wrap">
 			<div class="modal-top">
 				<h3 class="modal-title">Login</h3>
@@ -86,6 +118,7 @@
 	</div>
 	<!-- modal-Forgot password -->
 	<div id="modal-forgot" class="modal">
+		<i class="hb-ico modal-close"></i>
 		<div class="modal-wrap">
 			<div class="modal-top">
 				<h3 class="modal-title">Forgot password</h3>
@@ -97,6 +130,262 @@
 					<input id="k-1" type="email" name="email">
 				</div>
 				<button class="primary-btn">SEND INSTRUCTIONS</button>
+			</form>
+		</div>
+	</div>
+	<!-- modal-card password -->
+	<div id="modal-card" class="modal modal-card">
+		<i class="hb-ico modal-close"></i>
+		<form action="">
+			<div class="modal-wrap">
+				<div class="modal-content">
+					<div class="modal-top">
+						<h3 class="modal-title">All Dressed</h3>
+						<p>Cheese, ham & pineapple</p>
+						<div class="inputs-row inputs-row-small">
+							<label for="pf-1">Regular</label>
+							<div class="input-block">
+								<select name="text" id="pf-1">
+									<option value="">Small size</option>
+									<option value="">Small size</option>
+								</select>
+							</div>
+							<div class="input-block">
+								<select name="text">
+									<option value="">Regular</option>
+									<option value="">Regular</option>
+								</select>
+							</div>
+						</div>
+						<div class="modal-mob">
+							<ul class="modal-choice">
+								<li>
+									<input type="radio" name="size" checked>
+									<span>Small</span>
+								</li>
+								<li>
+									<input type="radio" name="size">
+									<span>Med</span>
+								</li>
+								<li>
+									<input type="radio" name="size">
+									<span>Large</span>
+								</li>
+								<li>
+									<input type="radio" name="size">
+									<span>XL</span>
+								</li>
+							</ul>
+							<ul class="modal-choice">
+								<li>
+									<input type="radio" name="cat" checked>
+									<span>Regular</span>
+								</li>
+								<li>
+									<input type="radio" name="cat">
+									<span>Thin</span>
+								</li>
+								<li>
+									<input type="radio" name="cat">
+									<span>Crusty</span>
+								</li>
+							</ul>
+						</div>
+						<span class="modal-subtitle">toppings</span>
+					</div>
+					<div class="modal-toppings">
+						<div class="product-all">
+							<div class="product-col">
+								<div class="product-wrap">
+									<div class="product-img"><img src="img/img-28-min.png" alt=""></div>
+									<div class="product-info">
+										<div class="product-top">
+											<h3 class="product-name">Jalapeno</h3>
+											<span>x2</span>
+										</div>
+										<div class="product-row">
+											<a href="#" class="product-btn">
+												<i class="hb-ico minus-ico"></i>
+												<i class="hb-ico plus-ico"></i>
+											</a>
+											<div class="product-price">$2.50</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="product-col">
+								<div class="product-wrap">
+									<div class="product-img"><img src="img/img-29-min.png" alt=""></div>
+									<div class="product-info">
+										<div class="product-top">
+											<h3 class="product-name">Mozzarella</h3>
+										</div>
+										<div class="product-row">
+											<a href="#" class="product-btn active">
+												<i class="hb-ico minus-ico"></i>
+												<i class="hb-ico plus-ico"></i>
+											</a>
+											<div class="product-price">$2.50</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="product-col">
+								<div class="product-wrap">
+									<div class="product-img"><img src="img/img-30-min.png" alt=""></div>
+									<div class="product-info">
+										<div class="product-top">
+											<h3 class="product-name">Mushrooms</h3>
+											<span>x2</span>
+										</div>
+										<div class="product-row">
+											<a href="#" class="product-btn">
+												<i class="hb-ico minus-ico"></i>
+												<i class="hb-ico plus-ico"></i>
+											</a>
+											<div class="product-price">$2.50</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="product-col">
+								<div class="product-wrap">
+									<div class="product-img"><img src="img/img-31-min.png" alt=""></div>
+									<div class="product-info">
+										<div class="product-top">
+											<h3 class="product-name">Jalapeno</h3>
+											<span>x2</span>
+										</div>
+										<div class="product-row">
+											<a href="#" class="product-btn">
+												<i class="hb-ico minus-ico"></i>
+												<i class="hb-ico plus-ico"></i>
+											</a>
+											<div class="product-price">$2.50</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="product-col">
+								<div class="product-wrap">
+									<div class="product-img"><img src="img/img-32-min.png" alt=""></div>
+									<div class="product-info">
+										<div class="product-top">
+											<h3 class="product-name">Jalapeno</h3>
+											<span>x2</span>
+										</div>
+										<div class="product-row">
+											<a href="#" class="product-btn">
+												<i class="hb-ico minus-ico"></i>
+												<i class="hb-ico plus-ico"></i>
+											</a>
+											<div class="product-price">$2.50</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="product-col">
+								<div class="product-wrap">
+									<div class="product-img"><img src="img/img-33-min.png" alt=""></div>
+									<div class="product-info">
+										<div class="product-top">
+											<h3 class="product-name">Jalapeno</h3>
+											<span>x2</span>
+										</div>
+										<div class="product-row">
+											<a href="#" class="product-btn">
+												<i class="hb-ico minus-ico"></i>
+												<i class="hb-ico plus-ico"></i>
+											</a>
+											<div class="product-price">$2.50</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="product-col">
+								<div class="product-wrap">
+									<div class="product-img"><img src="img/img-33-min.png" alt=""></div>
+									<div class="product-info">
+										<div class="product-top">
+											<h3 class="product-name">Jalapeno</h3>
+											<span>x2</span>
+										</div>
+										<div class="product-row">
+											<a href="#" class="product-btn">
+												<i class="hb-ico minus-ico"></i>
+												<i class="hb-ico plus-ico"></i>
+											</a>
+											<div class="product-price">$2.50</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+						</div>
+					</div>
+				</div>
+				<div class="modal-sidebar">
+					<div class="modal-bg" style="background-image: url(img/modal-bg.svg);"></div>
+					<div class="modal-sidebar-wrap">
+						<div class="modal-sidebar-img"><img src="img/fgf.png" alt=""></div>
+						<div class="modal-sidebar-content">
+							<ul class="modal-sidebar-list">
+								<li><b>Small size</b>$23.75</li>
+								<li><b>Regular</b><span>+$4.50</span></li>
+							</ul>
+							<div class="modal-sidebar-toppings">
+								<!--<p>No toppings selected</p>-->
+								<ul>
+									<li>
+										<i class="hb-ico close-ico"></i>
+										Jalapeno
+										<span>$2.50</span>
+									</li>
+									<li>
+										<i class="hb-ico close-ico"></i>
+										Mozzarella
+										<span>$2.50</span>
+									</li>
+								</ul>
+							</div>
+							<div class="modal-sidebar-total">
+								TOTAL
+								<span>$1.99</span>
+							</div>
+							<div class="modal-sidebar-btn">
+								<a href="#" class="primary-btn">ADD TO CART</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- modal-order password -->
+	<div id="modal-order" class="modal">
+		<i class="hb-ico modal-close"></i>
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<h3 class="modal-title">Add a recently Ordered Pizza</h3>
+				<p>Skip the pizza builder and add recently ordered pizza directly to your cart</p>
+			</div>
+			<form action="">
+				<div class="address-content">
+					<div class="address-item">
+						<input type="radio" name="order" checked>
+						<div class="address-wrap">
+							<i class="address-ico"></i>
+							<p><b>12”Handmade Pizza</b><br>Cheese, Tomatos, etc.</p>
+						</div>
+					</div>
+					<div class="address-item">
+						<input type="radio" name="order">
+						<div class="address-wrap">
+							<i class="address-ico"></i>
+							<p><b>12”Handmade Pizza</b><br>Cheese, Tomatos, etc.</p>
+						</div>
+					</div>
+				</div>
+				<button class="primary-btn">ADD PIZZA TO ORDER</button>
 			</form>
 		</div>
 	</div>
