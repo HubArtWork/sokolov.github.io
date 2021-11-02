@@ -20,12 +20,35 @@
 	<!-- start header -->
 	<header class="header">
 		<div class="wrapper">
-			<div class="header-logo"><a href="#"><img src="img/logo-min.png" alt=""></a></div>
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+					<span class="header-logo-text">Генеральный партнёр Heine</span>
+				</a>
+			</div>
 			<div class="header-row">
+				<div class="header-mob">
+					<div class="header-mob-search">
+						<form action="">
+							<div class="header-mob-search-row">
+								<i class="hb-ico search-ico"></i>
+								<input type="text" name="text" placeholder="Поиск">
+							</div>
+						</form>
+					</div>
+					<div class="header-mob-comparison">
+						<a href="#">
+							<i class="hb-ico comparison-ico"></i>
+							<b>8</b>
+							Сравнение
+						</a>
+					</div>
+				</div>
 				<ul class="header-menu">
-					<li class="drop">
+					<li class="drop drop-catalog">
 						<a href="#" class="drop-top">Каталог</a>
 						<ul class="drop-list">
+							<li><a href="#">Источники света и питания</a></li>
 							<li><a href="#">Проктологические инструменты</a></li>
 							<li><a href="#">Ларингоскопы</a></li>
 							<li><a href="#">Отоскопы</a></li>
@@ -39,24 +62,40 @@
 						</ul>
 					</li>
 					<li><a href="#">Услуги</a></li>
-					<li><a href="#">О компании</a></li>
+					<li class="drop">
+						<a href="#" class="drop-top">О компании</a>
+						<ul class="drop-list">
+							<li><a href="#">О HEINE</a></li>
+							<li><a href="">О HealthCare</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Бренд</a></li>
 					<li><a href="#">Блог</a></li>
 					<li><a href="#">Покупателям</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
+				<div class="header-mob header-mob-second">
+					<div class="header-lang">
+						<div class="header-lang-top">Русский</div>
+						<ul class="header-lang-list">
+							<li><a href="#">English - EN</a></li>
+							<li><a href="#" class="active">Русский - RU</a></li>
+							<li><a href="#">Deutsch - DE</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="header-actions">
 				<ul class="header-list">
-					<li><a href="#"><i class="hb-ico search-ico"></i></a></li>
-					<li><a href="#"><i class="hb-ico basket-ico"></i><b>6</b></a></li>
-					<li><a href="#"><i class="hb-ico settings-ico"></i><b>8</b></a></li>
+					<li class="header-list-search"><a href="#"><i class="hb-ico search-ico"></i></a></li>
+					<li class="header-list-basket"><a href="#"><i class="hb-ico basket-ico"></i><b>6</b></a></li>
+					<li class="header-list-comparison"><a href="#"><i class="hb-ico comparison-ico"></i><b>8</b></a></li>
 				</ul>
 				<div class="header-lang">
 					<div class="header-lang-top">Русский</div>
 					<ul class="header-lang-list">
 						<li><a href="#">English - EN</a></li>
-						<li><a href="#">Русский - RU</a></li>
+						<li><a href="#" class="active">Русский - RU</a></li>
 						<li><a href="#">Deutsch - DE</a></li>
 					</ul>
 				</div>
@@ -83,7 +122,7 @@
 							<span class="main-name">Heine omega 600 indirect ophthalmoscope</span>
 						</div>
 						<div class="main-info">
-							<h1 class="main-title">Скидка 10% на налобные лампы </h1>
+							<span class="main-title">Скидка 10% на налобные лампы </span>
 							<p>Акция действует до 15 июля при покупке онлайн.</p>
 							<a href="#" class="primary-btn">Подробнее</a>
 						</div>
@@ -101,7 +140,7 @@
 							<span class="main-name">Heine omega 600 indirect ophthalmoscope</span>
 						</div>
 						<div class="main-info">
-							<h1 class="main-title">Скидка 10% на налобные лампы </h1>
+							<span class="main-title">Скидка 10% на налобные лампы </span>
 							<p>Акция действует до 15 июля при покупке онлайн.</p>
 							<a href="#" class="primary-btn">Подробнее</a>
 						</div>
@@ -119,7 +158,7 @@
 							<span class="main-name">Heine omega 600 indirect ophthalmoscope</span>
 						</div>
 						<div class="main-info">
-							<h1 class="main-title">Скидка 10% на налобные лампы </h1>
+							<span class="main-title">Скидка 10% на налобные лампы </span>
 							<p>Акция действует до 15 июля при покупке онлайн.</p>
 							<a href="#" class="primary-btn">Подробнее</a>
 						</div>
@@ -137,7 +176,7 @@
 							<span class="main-name">Heine omega 600 indirect ophthalmoscope</span>
 						</div>
 						<div class="main-info">
-							<h1 class="main-title">Скидка 10% на налобные лампы </h1>
+							<span class="main-title">Скидка 10% на налобные лампы </span>
 							<p>Акция действует до 15 июля при покупке онлайн.</p>
 							<a href="#" class="primary-btn">Подробнее</a>
 						</div>
@@ -155,7 +194,7 @@
 	<!-- start catalog -->
 	<section class="catalog">
 		<div class="wrapper">
-			<h2 class="section-title">Каталог</h2>
+			<span class="section-title">Каталог</span>
 			<div class="catalog-row">
 				<div class="catalog-col">
 					<a href="#" class="catalog-card">
@@ -221,10 +260,10 @@
 						</div>
 					</a>
 				</div><!-- col -->
-				<div class="catalog-col">
+				<div class="catalog-col catalog-col-article">
 					<div class="catalog-article">
 						<div class="catalog-bg" style="background-image: url(img/bg-2.svg);"></div>
-						<h3 class="catalog-article-title">Более 10 000 товаров</h3>
+						<span class="catalog-article-title">Более 10 000 товаров</span>
 						<p>В доступном и удобном каталоге</p>
 						<a href="#" class="primary-btn primary-btn-yellow">Посмотреть все товары</a>
 						<span class="catalog-article-img"><img src="img/img-10-min.png" alt=""></span>
@@ -245,25 +284,21 @@
 	<!-- start blog -->
 	<section class="blog">
 		<div class="wrapper">
-			<h2 class="section-title">Блог</h2>
+			<span class="section-title">Блог</span>
 			<div class="blog-all">
 				<div class="blog-content">
 					<div class="blog-row">
 						<div class="post">
 							<div class="post-wrap">
-								<a href="#" class="post-img" style="background-image: url(img/img-12-min.jpg);">
-									<iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</a>
-								<h3 class="post-name"><a href="#">MEDICA – World Forum for Medicine</a></h3>
+								<a href="#" class="post-img" style="background-image: url(img/img-12-min.jpg);"></a>
+								<span class="post-name"><a href="#">MEDICA – World Forum for Medicine</a></span>
 								<p>Однако основополагающие принципы, такие как независимость и максимально высокие требования по качеству, сохранились за все годы неизменными</p>
 							</div>
 						</div><!-- post -->
 						<div class="post">
-							<a href="#" class="post-img" style="background-image: url(img/img-13-min.jpg);">
-								<iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</a>
-								<div class="post-wrap">
-								<h3 class="post-name"><a href="#">Вертикальная интеграция</a></h3>
+							<div class="post-wrap">
+								<a href="#" class="post-img" style="background-image: url(img/img-13-min.jpg);"></a>
+								<span class="post-name"><a href="#">Вертикальная интеграция</a></span>
 								<p>В 2016 году компания HEINE отмечает семидесятилетний юбилей.</p>
 							</div>
 						</div><!-- post -->
@@ -272,7 +307,7 @@
 								<a href="#" class="post-img" data-url="https://www.youtube.com/embed/RkglBn86G2g" style="background-image: url(img/img-14-min.jpg);">
 									<iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</a>
-								<h3 class="post-name"><a href="#">HEINE Optotechnik – Quality Made in Germany</a></h3>
+								<span class="post-name"><a href="#">HEINE Optotechnik – Quality Made in Germany</a></span>
 							</div>
 						</div><!-- post -->
 						<div class="post video">
@@ -280,7 +315,7 @@
 								<a href="#" class="post-img" data-url="https://www.youtube.com/embed/RkglBn86G2g" style="background-image: url(img/img-15-min.jpg);">
 									<iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</a>
-								<h3 class="post-name"><a href="#">HEINE EasyClean LED Laryngoscope Handle — How...</a></h3>
+								<span class="post-name"><a href="#">HEINE EasyClean LED Laryngoscope Handle — How...</a></span>
 							</div>
 						</div><!-- post -->
 					</div>
@@ -296,7 +331,7 @@
 					<div class="blog-article">
 						<div class="catalog-bg" style="background-image: url(img/bg-2.svg);"></div>
 						<div class="blog-article-info">
-							<h2 class="blog-article-title">Выпишите гарантию на 5 лет</h2>
+							<span class="blog-article-title">Выпишите гарантию на 5 лет</span>
 							<p>Гарантия распространяется на всю продукцию</p>
 							<a href="#" class="primary-btn primary-btn-yellow">Подать заявку</a>
 						</div>
@@ -318,11 +353,11 @@
 				<div class="about-images">
 					<div class="about-col">
 						<div class="about-human">
+							<img src="img/img-17-min.jpg" alt="">
 							<div class="about-text">
 								<span class="about-name">Оливер Х. Хайне</span>
 								<p>Стратегический директор</p>
 							</div>
-							<img src="img/img-17-min.jpg" alt="">
 						</div>
 						<a href="#" class="about-link">
 							<i class="hb-ico play-yellow-ico"></i>
@@ -340,7 +375,7 @@
 					</div>
 				</div>
 				<div class="about-info">
-					<h2 class="about-title">О компании</h2>
+					<h1 class="about-title">О компании</h1>
 					<h3 class="about-subtitle">Теперь уже третье поколение действует по всё тем же принципам первого часа. Для нового времени очень важны развитие новых технологий и инновационных продуктов.</h3>
 					<p>Эти определяющие будущее перемены, а также развитие структуры сбыта и маркетинга определяли лицо предприятия в прошедшие 10 лет и стали основой его дальнейшего успеха. </p>
 					<p>Основой для достижения высоких требования к качеству инструментов и дальше остаётся производственная база в Германии. Мы с гордостью смотрим на нашу историю и рады возможности ответить на вызовы будущего, с полной отдачей вместе с нашими сотрудниками и партнёрами.</p>
@@ -376,15 +411,6 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<!-- fancybox youtube -->
-	<!--<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="link-youtube"></a>-->
-	<!-- fancybox modal -->
-	<!--<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn main-btn-second">fancybox</a>-->
-	<div style="display: none;" id="modal-test" class="modal modal-transparent">
-		<div class="modal-close"></div>
-		<div class="modal-wrap">
-		</div>
-	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 </body>
