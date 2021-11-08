@@ -11,6 +11,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -104,78 +105,126 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<!-- start cooperation -->
-	<section class="cooperation cooperation-contacts">
+	<!-- start catalog -->
+	<div class="filters-btn">
+		<i class="hb-ico filters-ico"></i>
+		Фильтры
+	</div>
+	<section class="catalog catalog-add catalog-products">
 		<div class="wrapper">
 			<div class="page-top">
 				<ul class="breadCrumbs">
 					<li><a href="#">Главная</a></li>
-					<li>Контакты</li>
+					<li><a href="#">Каталог</a></li>
+					<li>Ларингоскопы</li>
 				</ul>
-				<h1 class="page-title">Контакты</h1>
+				<h1 class="page-title">Ларингоскопы</h1>
+				<ul class="filters">
+					<li><a href="#" class="active">Все приборы</a></li>
+					<li><a href="#">Одноразовые</a></li>
+					<li><a href="#">Многоразовые</a></li>
+					<li><a href="#">Рукоядки</a></li>
+					<li><a href="#">Для детей</a></li>
+					<li><a href="#">Изогнутые</a></li>
+					<li><a href="#">Прямые</a></li>
+					<li><a href="#">Наборы</a></li>
+				</ul>
 			</div>
-			<div class="cooperation-row">
-				<div class="cooperation-info">
-					<div class="cooperation-block">
-						<h2 class="cooperation-title">TTT HEALTHCARE генеральный партнёр HEINE</h2>
-						<ul class="cooperation-list">
-							<li><i class="hb-ico phone-ico-green"></i><a href="tel:+4915115353792">+49 151 15353792</a></li>
-							<li><i class="hb-ico mail-ico-green"></i><a href="mailto:info@ttt-gmbh.com">info@ttt-gmbh.com</a></li>
-							<li><i class="hb-ico local-ico-green"></i>Heimat 89 D-14165, Berlin, Germany</li>
-						</ul>
-					</div>
-					<div class="cooperation-block">
-						<h2 class="cooperation-title">HEINE OPTOTECHNIK <br> GmbH Co. & KG</h2>
-						<ul class="cooperation-list">
-							<li><i class="hb-ico phone-ico-green"></i><a href="tel:+4915115353792">+49 151 15353792</a></li>
-							<li><i class="hb-ico mail-ico-green"></i><a href="mailto:info@ttt-gmbh.com">info@ttt-gmbh.com</a></li>
-							<li><i class="hb-ico local-ico-green"></i>Heimat 89 D-14165, Berlin, Germany</li>
-						</ul>
-					</div>
-					<div class="cooperation-block">
-						<h2 class="cooperation-title">Социальные сети</h2>
-						<ul class="cooperation-social">
-							<li><a href="#" class="hb-ico tg-ico-green"></a></li>
-							<li><a href="#" class="hb-ico watsapp-ico-green"></a></li>
-							<li><a href="#" class="hb-ico vider-ico-green"></a></li>
-							<li><a href="#" class="hb-ico google-ico-green"></a></li>
-							<li><a href="#" class="hb-ico discord-ico-green"></a></li>
-						</ul>
+			<div class="catalog-all">
+				<div class="catalog-content">
+					<div class="message">
+						<div class="message-info">
+							<span class="message-title">Подходящих приборов нет</span>
+							<p>Попробуйте <a href="#">очистить фильтры</a> или выбрать <a href="#">другой раздел</a></p>
+						</div>
 					</div>
 				</div>
-				<div class="cooperation-form">
-					<div class="cooperation-form-wrap"><!-- add class active -->
-						<div class="cooperation-form-bg" style="background-image: url(img/cooperation-bg.svg);"></div>
-						<div class="cooperation-form-content">
-							<form action="">
-								<div class="cooperation-form-descr">
-									<span class="cooperation-form-title">Обратная связь</span>
-									<p>Задайте вопрос или выразите своё мнение о качесве услуг.</p>
-									<div class="input-block">
-										<label for="t-1">Email</label>
-										<input id="t-1" type="email" name="email">
-									</div>
-									<div class="input-block">
-										<label for="t-2">Сообщение</label>
-										<textarea id="t-2" name="text"></textarea>
-									</div>
-									<div class="cooperation-form-btn">
-										<button class="primary-btn">Отправить</button>
-									</div>
-								</div>
-							</form>
-							<div class="cooperation-form-message">
-								<span class="cooperation-form-subtitle">Спасибо за заявку </span>
-								<p>В ближайшее время вы получите ответ на почту. Читайте больше о нас в <a href="#">блоге</a>.</p>
+				<div class="catalog-sidebar">
+					<div class="sidebar-close">
+						<span>Закрыть</span>
+						<i class="hb-ico close-ico"></i>
+					</div>
+					<div class="catalog-sidebar-wrap">
+						<span class="catalog-sidebar-title">Фильтры</span>
+						<div class="catalog-sidebar-block catalog-sidebar-block-1">
+							<span class="catalog-sidebar-subtitle">Материал</span>
+							<div class="radio">
+								<input type="radio" name="material" checked>
+								<i class="radio-ico"></i>
+								<p>Все</p>
+							</div>
+							<div class="radio">
+								<input type="radio" name="material">
+								<i class="radio-ico"></i>
+								<p>Пластик</p>
+							</div>
+							<div class="radio">
+								<input type="radio" name="material">
+								<i class="radio-ico"></i>
+								<p>Силикон</p>
+							</div>
+							<div class="radio">
+								<input type="radio" name="material">
+								<i class="radio-ico"></i>
+								<p>Металл</p>
 							</div>
 						</div>
-						<div class="cooperation-form-img"><img src="img/img-41-min.png" alt=""></div>
+						<div class="catalog-sidebar-block">
+							<span class="catalog-sidebar-subtitle">Тип</span>
+							<div class="input-block">
+								<select name="text">
+									<option value="">Прямой</option>
+									<option value="">Прямой</option>
+								</select>
+							</div>
+						</div>
+						<div class="catalog-sidebar-block">
+							<span class="catalog-sidebar-subtitle">Цвет</span>
+							<div class="checkbox">
+								<input type="checkbox" name="color" checked>
+								<i class="checkbox-ico"></i>
+								<p>Хром</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="color">
+								<i class="checkbox-ico"></i>
+								<p>Золото</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" name="color">
+								<i class="checkbox-ico"></i>
+								<p>Платина</p>
+							</div>
+						</div>
+						<div class="catalog-sidebar-block">
+							<span class="catalog-sidebar-subtitle">Размер клинка, мм</span>
+							<div class="catalog-range">
+								<div id="range-1"></div>
+								<div class="catalog-range-text">
+									<span class="catalog-range-1">3</span>
+									<span class="catalog-range-2">5</span>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-sidebar-block">
+							<span class="catalog-sidebar-subtitle">Длина носика</span>
+							<div class="inputs">
+								<input type="number" name="text" value="3">
+								<span class="inputs-sym">-</span>
+								<input type="number" name="text" value="6">
+							</div>
+						</div>
+						<div class="catalog-sidebar-bottom">
+							<a href="#" class="primary-btn">Показать результаты</a>
+							<span class="catalog-sidebar-txt">Найдено 4 товара</span>
+							<a href="#" class="catalog-sidebar-link">Очистить фильтры</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end cooperation -->
+	<!-- end catalog -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
@@ -196,6 +245,8 @@
 	</footer>
 	<!-- end footer -->
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 </body>
 </html>

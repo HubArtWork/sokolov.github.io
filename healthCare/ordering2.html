@@ -104,78 +104,118 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<!-- start cooperation -->
-	<section class="cooperation cooperation-contacts">
+	<!-- start ordering -->
+	<section class="ordering">
 		<div class="wrapper">
 			<div class="page-top">
 				<ul class="breadCrumbs">
 					<li><a href="#">Главная</a></li>
-					<li>Контакты</li>
+					<li><a href="#">Услуги</a></li>
+					<li>Выписка гарантии</li>
 				</ul>
-				<h1 class="page-title">Контакты</h1>
+				<h1 class="page-title">Выписка гарантии</h1>
 			</div>
-			<div class="cooperation-row">
-				<div class="cooperation-info">
-					<div class="cooperation-block">
-						<h2 class="cooperation-title">TTT HEALTHCARE генеральный партнёр HEINE</h2>
-						<ul class="cooperation-list">
-							<li><i class="hb-ico phone-ico-green"></i><a href="tel:+4915115353792">+49 151 15353792</a></li>
-							<li><i class="hb-ico mail-ico-green"></i><a href="mailto:info@ttt-gmbh.com">info@ttt-gmbh.com</a></li>
-							<li><i class="hb-ico local-ico-green"></i>Heimat 89 D-14165, Berlin, Germany</li>
-						</ul>
-					</div>
-					<div class="cooperation-block">
-						<h2 class="cooperation-title">HEINE OPTOTECHNIK <br> GmbH Co. & KG</h2>
-						<ul class="cooperation-list">
-							<li><i class="hb-ico phone-ico-green"></i><a href="tel:+4915115353792">+49 151 15353792</a></li>
-							<li><i class="hb-ico mail-ico-green"></i><a href="mailto:info@ttt-gmbh.com">info@ttt-gmbh.com</a></li>
-							<li><i class="hb-ico local-ico-green"></i>Heimat 89 D-14165, Berlin, Germany</li>
-						</ul>
-					</div>
-					<div class="cooperation-block">
-						<h2 class="cooperation-title">Социальные сети</h2>
-						<ul class="cooperation-social">
-							<li><a href="#" class="hb-ico tg-ico-green"></a></li>
-							<li><a href="#" class="hb-ico watsapp-ico-green"></a></li>
-							<li><a href="#" class="hb-ico vider-ico-green"></a></li>
-							<li><a href="#" class="hb-ico google-ico-green"></a></li>
-							<li><a href="#" class="hb-ico discord-ico-green"></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="cooperation-form">
-					<div class="cooperation-form-wrap"><!-- add class active -->
-						<div class="cooperation-form-bg" style="background-image: url(img/cooperation-bg.svg);"></div>
-						<div class="cooperation-form-content">
-							<form action="">
-								<div class="cooperation-form-descr">
-									<span class="cooperation-form-title">Обратная связь</span>
-									<p>Задайте вопрос или выразите своё мнение о качесве услуг.</p>
-									<div class="input-block">
-										<label for="t-1">Email</label>
-										<input id="t-1" type="email" name="email">
-									</div>
-									<div class="input-block">
-										<label for="t-2">Сообщение</label>
-										<textarea id="t-2" name="text"></textarea>
-									</div>
-									<div class="cooperation-form-btn">
-										<button class="primary-btn">Отправить</button>
-									</div>
-								</div>
-							</form>
-							<div class="cooperation-form-message">
-								<span class="cooperation-form-subtitle">Спасибо за заявку </span>
-								<p>В ближайшее время вы получите ответ на почту. Читайте больше о нас в <a href="#">блоге</a>.</p>
+			<form action="">
+				<div class="ordering-row">
+					<div class="ordering-content">
+						<div class="ordering-block">
+							<span class="ordering-head">Информация об оборудовании</span>
+							<div class="input-block input-block-small">
+								<label for="d-1">Каталожный номер или название товара<i>*</i></label>
+								<input id="d-1" type="text" name="text">
+								<span class="text-error">Поле не заполнено</span>
+								<a href="#" class="input-link">Как найти каталожный номер</a>
 							</div>
+							<div class="input-block input-block-small">
+								<label for="d-2">Серийный номер<i>*</i></label>
+								<div class="input-block-icon">
+									<input id="d-2" type="text" name="text">
+									<i class="hb-ico number-plus"></i>
+								</div>
+								<span class="text-error">Поле не заполнено</span>
+								<a href="#" class="input-link">Как найти серийный номер</a>
+							</div>
+						</div><!-- block -->
+						<div class="ordering-block allTabs">
+							<ul class="ordering-tabs tab-list">
+								<li><a href="#tab-1" class="active">Торгующая организация</a></li>
+								<li><a href="#tab-2">Клиника/Больница</a></li>
+								<li><a href="#tab-3">Частное лицо</a></li>
+							</ul>
+							<div class="tab tab-active" id="tab-1">
+								<div class="input-block">
+									<label for="h-1">Название компании<i>*</i></label>
+									<input id="h-1" type="text" name="text">
+									<span class="text-error">Поле не заполнено</span>
+								</div>
+								<div class="input-block input-block-small"><!-- add class input-error -->
+									<label for="h-2">ИНН<i>*</i></label>
+									<input id="h-2" type="text" name="text">
+									<span class="text-error">Поле не заполнено</span>
+								</div>
+								<div class="input-block input-block-small">
+									<label for="h-3">Адрес<i>*</i></label>
+									<input id="h-3" type="text" name="text">
+									<span class="text-error">Поле не заполнено</span>
+								</div>
+								<div class="input-block">
+									<label for="h-4">ФИО<i>*</i></label>
+									<input id="h-4" type="text" name="text">
+									<span class="text-error">Поле не заполнено</span>
+								</div>
+								<div class="input-block input-block-small">
+									<label for="h-5">Телефон<i>*</i></label>
+									<input id="h-5" type="text" name="text">
+									<span class="text-error">Поле не заполнено</span>
+								</div>
+								<div class="input-block input-block-small">
+									<label for="h-6">Email<i>*</i></label>
+									<input id="h-6" type="email" name="email">
+									<span class="text-error">Поле не заполнено</span>
+								</div>
+							</div>
+							<div class="tab" id="tab-2">
+								<p>2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas exercitationem dicta labore aut adipisci deserunt eveniet et consequuntur fuga optio.</p>
+							</div>
+							<div class="tab" id="tab-3">
+								<p>33Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas exercitationem dicta labore aut adipisci deserunt eveniet et consequuntur fuga optio.</p>
+							</div>
+						</div><!-- block -->
+						<div class="ordering-block">
+							<span class="ordering-head">Об учереждении, в которое отправлено оборудование</span>
+							<div class="input-block">
+								<label for="g-1">Название</label>
+								<input id="g-1" type="text" name="text">
+								<span class="text-error">Поле не заполнено</span>
+							</div>
+							<div class="input-block input-block-small">
+								<label for="g-2">ИНН<i>*</i></label>
+								<input id="g-2" type="text" name="text">
+								<span class="text-error">Поле не заполнено</span>
+							</div>
+							<div class="input-block input-block-small">
+								<label for="g-3">Направление медицины</label>
+								<input id="g-3" type="text" name="text">
+								<span class="text-error">Поле не заполнено</span>
+							</div>
+							<div class="input-block input-block-small">
+								<label for="g-4">Отделение</label>
+								<input id="g-4" type="text" name="text">
+								<span class="text-error">Поле не заполнено</span>
+							</div>
+						</div><!-- block -->
+					</div>
+					<div class="ordering-sidebar ordering-sidebar-second">
+						<div class="ordering-sidebar-wrap">
+							<a href="#" class="primary-btn disabled">Выписать гарантию</a>
+							<p>Заполните каталожный номер, серийный номер, название компании, страну, город, адрес, ФИО, телефон, email, информацию о медицинском учереждении</p>
 						</div>
-						<div class="cooperation-form-img"><img src="img/img-41-min.png" alt=""></div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</section>
-	<!-- end cooperation -->
+	<!-- end ordering -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
