@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start application -->
+	<section class="application">
+		<div class="application-all">
+			<h1 class="application-title">Commercial Loan Application</h1>
+			<div class="application-wrap">
+				<form action="">
+					<div class="application-item">
+						<span class="application-head">1. FINANCING REQUEST</span>
+						<div class="application-block">
+							<div class="application-row">
+								<div class="application-col">
+									<div class="input-block">
+										<label for="">Requested Loan Amount</label>
+										<div class="input-sym">
+											<span>$</span>
+											<input type="text" name="text">
+										</div>
+									</div>
+								</div><!-- col -->
+								<div class="application-col">
+									<label for="">Purpose of Loan:</label>
+									<div class="radios">
+										<div class="radio">
+											<input type="radio" name="purpose">
+											<i class="radio-ico"></i>
+											<p>Purchase</p>
+										</div>
+										<div class="radio">
+											<input type="radio" name="purpose">
+											<i class="radio-ico"></i>
+											<p>Refinance</p>
+										</div>
+									</div>
+								</div><!-- col -->
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="application-item">
+						<span class="application-head">2. PROPERTY INFORMATION</span>
+						<div class="application-block">
+							<div class="application-row">
+								<div class="application-col">
+									<span class="application-tit">Subject Property Address:</span>
+									<div class="input-block">
+										<label for="">Street:</label>
+										<input type="text" name="text">
+									</div>
+									<div class="inputs-row inputs-nowrap">
+										<div class="inputs-col inputs-col-full">
+											<div class="input-block">
+												<label for="">City:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="inputs-col inputs-col-small">
+											<div class="input-block">
+												<label for="">State:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+									</div>
+									<div class="inputs-row">
+										<div class="inputs-col">
+											<div class="input-block">
+												<label for="">Zip code:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="inputs-col">
+											<div class="input-block">
+												<label for=""># of Units:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+									</div>
+									<div class="input-block">
+										<label for="">Will title be held in an entity?</label>
+										<div class="radios">
+											<div class="radio">
+												<input type="radio" name="purpose">
+												<i class="radio-ico"></i>
+												<p>YES</p>
+											</div>
+											<div class="radio">
+												<input type="radio" name="purpose">
+												<i class="radio-ico"></i>
+												<p>NO</p>
+											</div>
+										</div>
+									</div>
+									<div class="input-block">
+										<label for="">If YES, Entity Name:</label>
+										<input type="text" name="text">
+									</div>
+								</div><!-- col -->
+								<div class="application-col">
+									<span class="application-tit">Property Type:</span>
+									<div class="checkboxs2">
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>1-4 residential units</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>5+ residential units</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Mixed use</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Retail</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Warehouse</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Office</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Auto service</p>
+										</div>
+									</div>
+									<div class="checkbox-inputs">
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Other</p>
+										</div>
+										<div class="input-block">
+											<input type="text" name="text">
+										</div>
+									</div>
+								</div><!-- col -->
+								<div class="application-col">
+									<div class="input-block">
+										<label for="">Refinance:</label>
+										<div class="input-text">
+											<div class="radio">
+												<input type="radio" name="year">
+												<i class="radio-ico"></i>
+											</div>
+											<span>Year acquired:</span>
+											<input type="text">
+											<span>Cost:</span>
+											<input type="text">
+										</div>
+									</div>
+									<div class="input-block">
+										<label for="">Purchase:</label>
+										<div class="input-text">
+											<div class="radio">
+												<input type="radio" name="year">
+												<i class="radio-ico"></i>
+											</div>
+											<span>Purchase Price:</span>
+											<input type="text">
+										</div>
+									</div>
+								</div><!-- col -->
+								<div class="application-col">
+									<label for="">Improvements:</label>
+									<div class="radios">
+										<div class="radio">
+											<input type="radio" name="purpose">
+											<i class="radio-ico"></i>
+											<p>Made or</p>
+										</div>
+										<div class="radio">
+											<input type="radio" name="purpose">
+											<i class="radio-ico"></i>
+											<p>To be made</p>
+										</div>
+									</div>
+									<div class="input-block">
+										<div class="input-sym">
+											<span>$</span>
+											<input type="text" name="text">
+										</div>
+									</div>
+								</div><!-- col -->
+								<div class="application-col">
+									<div class="input-block">
+										<label for="">Does Applicant intend to live in the subject property for more than 14 days per year?</label>
+										<div class="radios">
+											<div class="radio">
+												<input type="radio" name="radio1">
+												<i class="radio-ico"></i>
+												<p>YES</p>
+											</div>
+											<div class="radio">
+												<input type="radio" name="radio1">
+												<i class="radio-ico"></i>
+												<p>NO</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- col -->
+								<div class="application-col">
+									<div class="input-block">
+										<label for="">Does Applicant intend to live in the subject property for more than 14 days per year?</label>
+										<div class="radios">
+											<div class="radio">
+												<input type="radio" name="radio2">
+												<i class="radio-ico"></i>
+												<p>YES</p>
+											</div>
+											<div class="radio">
+												<input type="radio" name="radio2">
+												<i class="radio-ico"></i>
+												<p>NO</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- col -->
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="application-item">
+						<span class="application-head">3. APPLICANT INFORMATION</span>
+						<div class="application-block">
+							<div class="application-row">
+								<div class="application-col">
+									<span class="application-tit">Applicant’s Name:</span>
+									<div class="inputs">
+										<div class="input-33 input-block">
+											<label for="">SSN #:</label>
+											<input type="text" name="text">
+										</div>
+										<div class="input-33 input-block">
+											<label for="">Phone Number:</label>
+											<input type="text" name="text">
+										</div>
+										<div class="input-33 input-block">
+											<label for="">DOB:</label>
+											<input type="text" name="text">
+										</div>
+									</div>
+									<div class="application-row application-row-2">
+										<div class="application-col">
+											<div class="application-col-wrap">
+												<label for="">Marital Status:</label>
+												<div class="radio">
+													<input type="radio" name="status">
+													<i class="radio-ico"></i>
+													<p>Married</p>
+												</div>
+												<div class="radio">
+													<input type="radio" name="status">
+													<i class="radio-ico"></i>
+													<p>Unmarried</p>
+												</div>
+											</div>
+										</div>
+										<div class="application-col">
+											<div class="application-col-wrap">
+												<label for="">Residency Status:</label>
+												<div class="radio">
+													<input type="radio" name="us">
+													<i class="radio-ico"></i>
+													<p>Residency Status:</p>
+												</div>
+												<div class="radio">
+													<input type="radio" name="us">
+													<i class="radio-ico"></i>
+													<p>Permanent Resident Alien</p>
+												</div>
+												<div class="radio">
+													<input type="radio" name="us">
+													<i class="radio-ico"></i>
+													<p>Non‐permanent Resident Alien</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="input-block">
+										<label for="">Primary Residence (Street, City, State, Zip):</label>
+										<input type="text" name="text">
+									</div>
+									<div class="radios">
+										<div class="radio">
+											<input type="radio" name="own">
+											<i class="radio-ico"></i>
+											<p>Own</p>
+										</div>
+										<div class="radio">
+											<input type="radio" name="own">
+											<i class="radio-ico"></i>
+											<p>Rent</p>
+										</div>
+									</div>
+									<div class="input-block">
+										<label for="">Number of Years:</label>
+										<input type="text" name="text">
+									</div>
+								</div><!-- col -->
+								<div class="application-col">
+									<span class="application-tit">Co‐Applicant’s Name:</span>
+									<div class="inputs">
+										<div class="input-33 input-block">
+											<label for="">SSN #:</label>
+											<input type="text" name="text">
+										</div>
+										<div class="input-33 input-block">
+											<label for="">Phone Number:</label>
+											<input type="text" name="text">
+										</div>
+										<div class="input-33 input-block">
+											<label for="">DOB:</label>
+											<input type="text" name="text">
+										</div>
+									</div>
+									<div class="application-row application-row-2">
+										<div class="application-col">
+											<div class="application-col-wrap">
+												<label for="">Marital Status:</label>
+												<div class="radio">
+													<input type="radio" name="status">
+													<i class="radio-ico"></i>
+													<p>Married</p>
+												</div>
+												<div class="radio">
+													<input type="radio" name="status">
+													<i class="radio-ico"></i>
+													<p>Unmarried</p>
+												</div>
+											</div>
+										</div>
+										<div class="application-col">
+											<div class="application-col-wrap">
+												<label for="">Residency Status:</label>
+												<div class="radio">
+													<input type="radio" name="us">
+													<i class="radio-ico"></i>
+													<p>Residency Status:</p>
+												</div>
+												<div class="radio">
+													<input type="radio" name="us">
+													<i class="radio-ico"></i>
+													<p>Permanent Resident Alien</p>
+												</div>
+												<div class="radio">
+													<input type="radio" name="us">
+													<i class="radio-ico"></i>
+													<p>Non‐permanent Resident Alien</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="input-block">
+										<label for="">Primary Residence (Street, City, State, Zip):</label>
+										<input type="text" name="text">
+									</div>
+									<div class="radios">
+										<div class="radio">
+											<input type="radio" name="own">
+											<i class="radio-ico"></i>
+											<p>Own</p>
+										</div>
+										<div class="radio">
+											<input type="radio" name="own">
+											<i class="radio-ico"></i>
+											<p>Rent</p>
+										</div>
+									</div>
+									<div class="input-block">
+										<label for="">Number of Years:</label>
+										<input type="text" name="text">
+									</div>
+								</div><!-- col -->
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="application-item">
+						<span class="application-head">4. Employment Information</span>
+						<div class="application-block">
+							<div class="application-gog application-gog-main">
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<div class="input-block">
+												<label for="">Employer Name:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="application-gog-small">
+											<div class="input-block">
+												<label for="">Yrs. On Job:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<div class="input-block">
+												<label for="">Employer Name:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="application-gog-small">
+											<div class="input-block">
+												<label for="">Yrs. On Job:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<div class="input-block">
+												<label for="">Address (Street, City, State & Zip):</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="application-gog-small">
+											<div class="input-block">
+												<label for="">Monthly Income:</label>
+												<div class="input-sym">
+													<span>$</span>
+													<input type="text" name="text">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<div class="input-block">
+												<label for="">Address (Street, City, State & Zip):</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="application-gog-small">
+											<div class="input-block">
+												<label for="">Monthly Income:</label>
+												<div class="input-sym">
+													<span>$</span>
+													<input type="text" name="text">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<div class="input-block">
+												<label for="">Business Phone:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="application-gog-small">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+												<p>Self‐employed:</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<div class="input-block">
+												<label for="">Business Phone:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="application-gog-small">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+												<p>Self‐employed:</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="application-item">
+						<span class="application-head">5. Real Estate Owned</span>
+						<div class="application-block">
+							<div class="application-table">
+								<table>
+									<thead>
+										<tr>
+											<th>Property Address:</th>
+											<th>Type of Property</th>
+											<th>Existing Mortgage</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1.</td>
+											<td></td>
+											<td>$</td>
+										</tr>
+										<tr>
+											<td>2.</td>
+											<td></td>
+											<td>$</td>
+										</tr>
+										<tr>
+											<td>3.</td>
+											<td></td>
+											<td>$</td>
+										</tr>
+										<tr>
+											<td>4.</td>
+											<td></td>
+											<td>$</td>
+										</tr>
+										<tr>
+											<td>5.</td>
+											<td></td>
+											<td>$</td>
+										</tr>
+										<tr>
+											<td>6.</td>
+											<td></td>
+											<td>$</td>
+										</tr>
+										<tr>
+											<td>7.</td>
+											<td></td>
+											<td>$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="application-item">
+						<span class="application-head">6. Agreement & Acknowledgement</span>
+						<div class="application-block application-block-big">
+							<p class="application-small">Each of the undersigned specifically represents to Lender and to Lender's actual or potential agents, brokers, processors, attorneys, insurers, servicers, successors and assigns and agrees and acknowledges that: (1) the information provided in this application is true and correct as of the date set forth opposite my signature and that any intentional or negligent misrepresentation of this information contained in this application may result in civil liability, including monetary damages to any person who may suffer any loss due to reliance upon any misrepresentation that I have made on this application, and/or in criminal penalties including, but not limited to, fine or imprisonment or both under the provisions of Title 18, United States Code, Sec. 1001, et seq.; (2) the loan requested pursuant to this application (the "Loan") will be secured by a mortgage or deed of trust on the property described in this application; (3) the property will not be used for any illegal or prohibited purpose or use; (4) all statements made in this application are made for the purpose of obtaining a business purpose mortgage loan; (5) the property will be occupied as indicated in this application; (6) the Lender, its servicers, successors or assigns may retain the original and/or an electronic record of this application, whether or not the Loan is approved; (7) the Lender and its agents, brokers, insurers, servicers, successors, and assigns may continuously rely on the information contained in the application, and I am obligated to amend and/or supplement the information provided in this application if any of the material facts that I have represented should change prior to closing of the Loan; (8) in the event that my payments on the Loan become delinquent, the Lender, its servicers, successors or assigns may, in addition to any other rights and remedies that it may have relating to such delinquency, report my name and account information to one or more consumer reporting agencies; (9) ownership of the Loan and/or administration of the Loan account may be transferred with such notice as may be required by law; (10) neither Lender nor its agents, brokers, insurers, servicers, successors or assigns has made any representation or warranty, express or implied, to me regarding the property or the condition or value of the property; and (11) my transmission of this application as an "electronic record" containing my "electronic signature," as those terms are defined in applicable federal and/or state laws (excluding audio and video recordings), or my facsimile transmission of this application containing a facsimile of my signature, shall be as effective, enforceable and valid as if a paper version of this application were delivered containing my original written signature.</p>
+							<p class="application-small"><a href="#">Acknowledgement:</a> Each of the undersigned hereby acknowledges that any owner of the Loan, its servicers, successors and assigns, may verify any information contained in this application or obtain any information or data relating to the Loan, for any legitimate business purpose through any source, including a source named in this application or a consumer reporting agency.</p>
+							<div class="application-gog">
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<label for="">Applicant Signature</label>
+											<div class="signature"></div>
+										</div>
+										<div class="application-gog-small">
+											<div class="input-block">
+												<label for="">Date:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="application-gog-col">
+									<div class="application-gog-wrap">
+										<div class="application-gog-big">
+											<label for="">Applicant Signature</label>
+											<div class="signature"></div>
+										</div>
+										<div class="application-gog-small">
+											<div class="input-block">
+												<label for="">Date:</label>
+												<input type="text" name="text">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="application-item">
+						<span class="application-head">7. Government Monitoring Information</span>
+						<div class="application-block application-block-big">
+							<p>The following information is requested by the Federal Government for certain types of loans related to a dwelling in order to monitor the lender's compliance with Equal Credit Opportunity, Fair Housing and Home Mortgage Disclosure laws. You are not required to furnish this in formation, but are encouraged to do so. The law provides that a lender may not discriminate either on the bas is of this information, or on whether you choose to furnish it. If you furnish the information, please provide both ethnicity and race. For race, you may check more than one designation. If you do not furnish ethnicity, race, or sex, under Federal regulations, this lender is required to note the information on the basis of visual observation and surname if you have made this application in person. If you do not wish to furnish the information, please check the box below.</p>
+							<div class="application-block application-block-second">
+								<div class="application-row">
+									<div class="application-col">
+										<span class="application-tit">Co‐Applicant:</span>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>I do not wish to furnish this information</p>
+										</div>
+									</div>
+									<div class="application-col">
+										<span class="application-tit">Co‐Applicant:</span>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>I do not wish to furnish this information</p>
+										</div>
+									</div>
+									<div class="application-col">
+										<span class="application-tit">Ethnicity:</span>
+										<div class="radios">
+											<div class="radio">
+												<input type="radio" name="Ethnicity">
+												<i class="radio-ico"></i>
+												<p>Hispanic or Latino</p>
+											</div>
+											<div class="radio">
+												<input type="radio" name="Ethnicity">
+												<i class="radio-ico"></i>
+												<p>Not Hispanic or Latino</p>
+											</div>
+										</div>
+									</div>
+									<div class="application-col">
+										<span class="application-tit">Ethnicity:</span>
+										<div class="radios">
+											<div class="radio">
+												<input type="radio" name="Ethnicity2">
+												<i class="radio-ico"></i>
+												<p>Hispanic or Latino</p>
+											</div>
+											<div class="radio">
+												<input type="radio" name="Ethnicity2">
+												<i class="radio-ico"></i>
+												<p>Not Hispanic or Latino</p>
+											</div>
+										</div>
+									</div>
+									<div class="application-col">
+										<span class="application-tit">Race:</span>
+										<div class="checkbox">
+											<input type="checkbox" name="Race">
+											<i class="checkbox-ico"></i>
+											<p>American Indian or Alaska Native</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race">
+											<i class="checkbox-ico"></i>
+											<p>Asian</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race">
+											<i class="checkbox-ico"></i>
+											<p>Black or African American</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race">
+											<i class="checkbox-ico"></i>
+											<p>White</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race">
+											<i class="checkbox-ico"></i>
+											<p>Native Hawaiian or Other Pacific Islander</p>
+										</div>
+									</div>
+									<div class="application-col">
+										<span class="application-tit">Race:</span>
+										<div class="checkbox">
+											<input type="checkbox" name="Race2">
+											<i class="checkbox-ico"></i>
+											<p>American Indian or Alaska Native</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race2">
+											<i class="checkbox-ico"></i>
+											<p>Asian</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race2">
+											<i class="checkbox-ico"></i>
+											<p>Black or African American</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race2">
+											<i class="checkbox-ico"></i>
+											<p>White</p>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="Race2">
+											<i class="checkbox-ico"></i>
+											<p>Native Hawaiian or Other Pacific Islander</p>
+										</div>
+									</div>
+									<div class="application-col">
+										<span class="application-tit">Sex:</span>
+										<div class="checkboxs">
+											<div class="checkbox">
+												<input type="checkbox" name="sex">
+												<i class="checkbox-ico"></i>
+												<p>Female</p>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" name="sex">
+												<i class="checkbox-ico"></i>
+												<p>Male</p>
+											</div>
+										</div>
+									</div>
+									<div class="application-col">
+										<span class="application-tit">Sex:</span>
+										<div class="checkboxs">
+											<div class="checkbox">
+												<input type="checkbox" name="sex2">
+												<i class="checkbox-ico"></i>
+												<p>Female</p>
+											</div>
+											<div class="checkbox">
+												<input type="checkbox" name="sex2">
+												<i class="checkbox-ico"></i>
+												<p>Male</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- item -->
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end application -->
+</body>
+</html>
