@@ -61,7 +61,7 @@
 								<div class="application-col">
 									<span class="application-tit">Subject Property Address:</span>
 									<div class="input-block">
-										<label for="">Street:</label>
+										<label for="">street address:</label>
 										<input type="text" name="text">
 									</div>
 									<div class="inputs-row inputs-nowrap">
@@ -77,84 +77,80 @@
 												<input type="text" name="text">
 											</div>
 										</div>
-									</div>
-									<div class="inputs-row">
-										<div class="inputs-col">
+										<div class="inputs-col inputs-col-small">
 											<div class="input-block">
 												<label for="">Zip code:</label>
 												<input type="text" name="text">
 											</div>
 										</div>
-										<div class="inputs-col">
-											<div class="input-block">
-												<label for=""># of Units:</label>
-												<input type="text" name="text">
-											</div>
-										</div>
 									</div>
-									<div class="input-block">
+									<div class="input-block input-block-min">
+										<label for=""># of Units:</label>
+										<input type="text" name="text">
+									</div>
+									<div class="entity choice">
 										<label for="">Will title be held in an entity?</label>
 										<div class="radios">
-											<div class="radio">
+											<div class="radio" data-choice="main">
 												<input type="radio" name="purpose">
 												<i class="radio-ico"></i>
 												<p>YES</p>
 											</div>
 											<div class="radio">
-												<input type="radio" name="purpose">
+												<input type="radio" name="purpose" checked>
 												<i class="radio-ico"></i>
 												<p>NO</p>
 											</div>
 										</div>
-									</div>
-									<div class="input-block">
-										<label for="">If YES, Entity Name:</label>
-										<input type="text" name="text">
+										<div class="input-block choice-block">
+											<label for="">Entity Name:</label>
+											<input type="text" name="text">
+										</div>
 									</div>
 								</div><!-- col -->
-								<div class="application-col">
+								<div class="application-col application-property">
 									<span class="application-tit">Property Type:</span>
 									<div class="checkboxs2">
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+										<div class="radio">
+											<input type="radio" name="property">
+											<i class="radio-ico"></i>
 											<p>1-4 residential units</p>
 										</div>
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+										<div class="radio">
+											<input type="radio" name="property">
+											<i class="radio-ico"></i>
 											<p>5+ residential units</p>
 										</div>
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+										<div class="radio">
+											<input type="radio" name="property">
+											<i class="radio-ico"></i>
 											<p>Mixed use</p>
 										</div>
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+										<div class="radio">
+											<input type="radio" name="property">
+											<i class="radio-ico"></i>
 											<p>Retail</p>
 										</div>
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+										<div class="radio">
+											<input type="radio" name="property">
+											<i class="radio-ico"></i>
 											<p>Warehouse</p>
 										</div>
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+										<div class="radio">
+											<input type="radio" name="property">
+											<i class="radio-ico"></i>
 											<p>Office</p>
 										</div>
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+										<div class="radio">
+											<input type="radio" name="property">
+											<i class="radio-ico"></i>
 											<p>Auto service</p>
 										</div>
 									</div>
-									<div class="checkbox-inputs">
-										<div class="checkbox">
-											<input type="checkbox">
-											<i class="checkbox-ico"></i>
+									<div class="checkbox-inputs other">
+										<div class="radio">
+											<input type="radio" name="property" class="property-other">
+											<i class="radio-ico"></i>
 											<p>Other</p>
 										</div>
 										<div class="input-block">
@@ -164,12 +160,12 @@
 								</div><!-- col -->
 								<div class="application-col">
 									<div class="input-block">
-										<label for="">Refinance:</label>
-										<div class="input-text">
-											<div class="radio">
-												<input type="radio" name="year">
-												<i class="radio-ico"></i>
-											</div>
+										<div class="radio radio-ref">
+											<input type="radio" name="ref" checked>
+											<i class="radio-ico"></i>
+											<p>Refinance</p>
+										</div>
+										<div class="input-text active">
 											<span>Year acquired:</span>
 											<input type="text">
 											<span>Cost:</span>
@@ -177,12 +173,12 @@
 										</div>
 									</div>
 									<div class="input-block">
-										<label for="">Purchase:</label>
-										<div class="input-text">
-											<div class="radio">
-												<input type="radio" name="year">
-												<i class="radio-ico"></i>
-											</div>
+										<div class="radio radio-ref">
+											<input type="radio" name="ref">
+											<i class="radio-ico"></i>
+											<p>Purchase</p>
+										</div>
+										<div class="input-text input-text-second">
 											<span>Purchase Price:</span>
 											<input type="text">
 										</div>
@@ -288,11 +284,6 @@
 												<div class="radio">
 													<input type="radio" name="us">
 													<i class="radio-ico"></i>
-													<p>Residency Status:</p>
-												</div>
-												<div class="radio">
-													<input type="radio" name="us">
-													<i class="radio-ico"></i>
 													<p>Permanent Resident Alien</p>
 												</div>
 												<div class="radio">
@@ -319,7 +310,7 @@
 											<p>Rent</p>
 										</div>
 									</div>
-									<div class="input-block">
+									<div class="input-block input-block-min">
 										<label for="">Number of Years:</label>
 										<input type="text" name="text">
 									</div>
@@ -352,7 +343,7 @@
 												<div class="radio">
 													<input type="radio" name="status">
 													<i class="radio-ico"></i>
-													<p>Unmarried</p>
+													<p>Single</p>
 												</div>
 											</div>
 										</div>
@@ -393,7 +384,7 @@
 											<p>Rent</p>
 										</div>
 									</div>
-									<div class="input-block">
+									<div class="input-block input-block-min">
 										<label for="">Number of Years:</label>
 										<input type="text" name="text">
 									</div>
@@ -526,39 +517,39 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>1.</td>
-											<td></td>
-											<td>$</td>
+											<td><div>1.<input type="text"></div></td>
+											<td><div><input type="text"></div></td>
+											<td><div>$<input type="text"></div></td>
 										</tr>
 										<tr>
-											<td>2.</td>
-											<td></td>
-											<td>$</td>
+											<td><div>2.<input type="text"></div></td>
+											<td><div><input type="text"></div></td>
+											<td><div>$<input type="text"></div></td>
 										</tr>
 										<tr>
-											<td>3.</td>
-											<td></td>
-											<td>$</td>
+											<td><div>3.<input type="text"></div></td>
+											<td><div><input type="text"></div></td>
+											<td><div>$<input type="text"></div></td>
 										</tr>
 										<tr>
-											<td>4.</td>
-											<td></td>
-											<td>$</td>
+											<td><div>4.<input type="text"></div></td>
+											<td><div><input type="text"></div></td>
+											<td><div>$<input type="text"></div></td>
 										</tr>
 										<tr>
-											<td>5.</td>
-											<td></td>
-											<td>$</td>
+											<td><div>5.<input type="text"></div></td>
+											<td><div><input type="text"></div></td>
+											<td><div>$<input type="text"></div></td>
 										</tr>
 										<tr>
-											<td>6.</td>
-											<td></td>
-											<td>$</td>
+											<td><div>6.<input type="text"></div></td>
+											<td><div><input type="text"></div></td>
+											<td><div>$<input type="text"></div></td>
 										</tr>
 										<tr>
-											<td>7.</td>
-											<td></td>
-											<td>$</td>
+											<td><div>7.<input type="text"></div></td>
+											<td><div><input type="text"></div></td>
+											<td><div>$<input type="text"></div></td>
 										</tr>
 									</tbody>
 								</table>
@@ -574,13 +565,13 @@
 								<div class="application-gog-col">
 									<div class="application-gog-wrap">
 										<div class="application-gog-big">
-											<label for="">Applicant Signature</label>
+											<label for="">Co‐Applicant’s Signature</label>
 											<div class="signature"></div>
 										</div>
 										<div class="application-gog-small">
 											<div class="input-block">
 												<label for="">Date:</label>
-												<input type="text" name="text">
+												<input type="date" name="text">
 											</div>
 										</div>
 									</div>
@@ -588,13 +579,13 @@
 								<div class="application-gog-col">
 									<div class="application-gog-wrap">
 										<div class="application-gog-big">
-											<label for="">Applicant Signature</label>
+											<label for="">Co‐Applicant’s Signature</label>
 											<div class="signature"></div>
 										</div>
 										<div class="application-gog-small">
 											<div class="input-block">
 												<label for="">Date:</label>
-												<input type="text" name="text">
+												<input type="date" name="text">
 											</div>
 										</div>
 									</div>
@@ -656,71 +647,39 @@
 									</div>
 									<div class="application-col">
 										<span class="application-tit">Race:</span>
-										<div class="checkbox">
-											<input type="checkbox" name="Race">
-											<i class="checkbox-ico"></i>
-											<p>American Indian or Alaska Native</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race">
-											<i class="checkbox-ico"></i>
-											<p>Asian</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race">
-											<i class="checkbox-ico"></i>
-											<p>Black or African American</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race">
-											<i class="checkbox-ico"></i>
-											<p>White</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race">
-											<i class="checkbox-ico"></i>
-											<p>Native Hawaiian or Other Pacific Islander</p>
+										<div class="input-block">
+											<select name="Race" class="select-small">
+												<option value="">American Indian or Alaska Native</option>
+												<option value="">Asian</option>
+												<option value="">Black or African American</option>
+												<option value="">White</option>
+												<option value="">Native Hawaiian or Other Pacific Islander</option>
+											</select>
 										</div>
 									</div>
 									<div class="application-col">
 										<span class="application-tit">Race:</span>
-										<div class="checkbox">
-											<input type="checkbox" name="Race2">
-											<i class="checkbox-ico"></i>
-											<p>American Indian or Alaska Native</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race2">
-											<i class="checkbox-ico"></i>
-											<p>Asian</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race2">
-											<i class="checkbox-ico"></i>
-											<p>Black or African American</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race2">
-											<i class="checkbox-ico"></i>
-											<p>White</p>
-										</div>
-										<div class="checkbox">
-											<input type="checkbox" name="Race2">
-											<i class="checkbox-ico"></i>
-											<p>Native Hawaiian or Other Pacific Islander</p>
+										<div class="input-block">
+											<select name="Race" class="select-small">
+												<option value="">American Indian or Alaska Native</option>
+												<option value="">Asian</option>
+												<option value="">Black or African American</option>
+												<option value="">White</option>
+												<option value="">Native Hawaiian or Other Pacific Islander</option>
+											</select>
 										</div>
 									</div>
 									<div class="application-col">
 										<span class="application-tit">Sex:</span>
 										<div class="checkboxs">
-											<div class="checkbox">
-												<input type="checkbox" name="sex">
-												<i class="checkbox-ico"></i>
+											<div class="radio">
+												<input type="radio" name="sex">
+												<i class="radio-ico"></i>
 												<p>Female</p>
 											</div>
-											<div class="checkbox">
-												<input type="checkbox" name="sex">
-												<i class="checkbox-ico"></i>
+											<div class="radio">
+												<input type="radio" name="sex">
+												<i class="radio-ico"></i>
 												<p>Male</p>
 											</div>
 										</div>
@@ -728,14 +687,14 @@
 									<div class="application-col">
 										<span class="application-tit">Sex:</span>
 										<div class="checkboxs">
-											<div class="checkbox">
-												<input type="checkbox" name="sex2">
-												<i class="checkbox-ico"></i>
+											<div class="radio">
+												<input type="radio" name="sex2">
+												<i class="radio-ico"></i>
 												<p>Female</p>
 											</div>
-											<div class="checkbox">
-												<input type="checkbox" name="sex2">
-												<i class="checkbox-ico"></i>
+											<div class="radio">
+												<input type="radio" name="sex2">
+												<i class="radio-ico"></i>
 												<p>Male</p>
 											</div>
 										</div>
@@ -749,5 +708,7 @@
 		</div>
 	</section>
 	<!-- end application -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
 </body>
 </html>
