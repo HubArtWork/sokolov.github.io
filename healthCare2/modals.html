@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<ul class="sitemap-list">
+				<li><a data-fancybox data-src="#modal-serial" href="javascript:;">serial</a></li>
+				<li><a data-fancybox data-src="#modal-serial2" href="javascript:;">serial2</a></li>
+				<li><a data-fancybox data-src="#modal-form" href="javascript:;">form</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-serial" class="modal">
+		<div class="sidebar-close">
+			<span>Закрыть</span>
+			<i class="hb-ico close-ico"></i>
+		</div>
+		<div class="modal-wrap">
+			<span class="modal-title">Где найти серийный номер?</span>
+			<div class="modal-row">
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="md-1">Тип оборудования</label>
+						<select name="text" id="md-1">
+							<option value="">Выберите оборудование</option>
+						</select>
+					</div>
+					<div class="input-block">
+						<label for="md-2">Модель</label>
+						<select name="text" id="md-2">
+							<option value="">Выберите модель</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-img"><img src="img/mod.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-serial2" class="modal">
+		<div class="sidebar-close">
+			<span>Закрыть</span>
+			<i class="hb-ico close-ico"></i>
+		</div>
+		<div class="modal-wrap">
+			<span class="modal-title">Где найти серийный номер?</span>
+			<div class="modal-row">
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="md-1">Тип оборудования</label>
+						<select name="text" id="md-1">
+							<option value="">Выберите оборудование</option>
+						</select>
+					</div>
+					<div class="input-block">
+						<label for="md-2">Модель</label>
+						<select name="text" id="md-2">
+							<option value="">Выберите модель</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-img"><img src="img/mod.png" alt=""></div>
+			</div>
+			<span class="modal-subtitle">Серийный номер распологается на боковой поверхности клинка.</span>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-form" class="modal modal-form">
+		<div class="sidebar-close">
+			<span>Закрыть</span>
+			<i class="hb-ico close-ico"></i>
+		</div>
+		<div class="modal-wrap">
+			<div class="testimonials-form">
+				<h1 class="testimonials-title">Напишите отзыв</h1>
+				<form action="">
+					<div class="input-block">
+						<label for="g-1">ФИО</label>
+						<input id="g-1" type="text" name="text">
+						<span class="text-error">Поле не заполнено</span>
+					</div>
+					<div class="input-block input-block-small">
+						<label for="g-2">Email<i>*</i></label>
+						<input id="g-2" type="email" name="email">
+						<span class="text-error">Поле не заполнено</span>
+					</div>
+					<div class="input-block">
+						<label for="g-3">Название организации</label>
+						<input id="g-3" type="text" name="text">
+						<span class="text-error">Поле не заполнено</span>
+					</div>
+					<div class="input-block input-block-small">
+						<label for="g-4">Направление медицины<i>*</i></label>
+						<input id="g-4" type="text" name="text">
+						<span class="text-error">Поле не заполнено</span>
+					</div>
+					<div class="input-block input-block-small">
+						<label for="g-5">Должность<i>*</i></label>
+						<input id="g-5" type="text" name="text">
+						<span class="text-error">Поле не заполнено</span>
+					</div>
+					<div class="input-block input-block-small">
+						<label for="g-6">Каталожный номер или название товара<i>*</i></label>
+						<input id="g-6" type="email" name="email">
+						<span class="text-error">Поле не заполнено</span>
+					</div>
+					<div class="input-stars">
+						<div class="input-stars-label">
+							<label for="">Количество звёзд</label>
+						</div>
+						<div class="rating-box">
+						  <div class="rating-container">
+							  <input type="radio" name="rating" value="5" id="star-5"> <label for="star-5">&#9733;</label>
+							  <input type="radio" name="rating" value="4" id="star-4"> <label for="star-4">&#9733;</label>
+							  <input type="radio" name="rating" value="3" id="star-3"> <label for="star-3">&#9733;</label>
+							  <input type="radio" name="rating" value="2" id="star-2"> <label for="star-2">&#9733;</label>
+							  <input type="radio" name="rating" value="1" id="star-1"> <label for="star-1">&#9733;</label>
+							</div>
+						</div>
+					</div>
+					<div class="input-block input-block-big">
+						<label for="g-7">Отзыв</label>
+						<textarea name="text" id="g-7"></textarea>
+					</div>
+					<div class="download">
+						<div class="download-wrap">
+							<input type="file">
+							<span class="link">Загрузить фото или документ</span>
+						</div>
+					</div>
+					<button class="primary-btn">Отправить отзыв</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
