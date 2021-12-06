@@ -127,6 +127,9 @@
 					<div class="ordering-content">
 						<div class="ordering-block">
 							<span class="ordering-head">Информация об оборудовании</span>
+							<div class="ordering-mob-link">
+								<a data-fancybox data-src="#modal-qr" href="javascript:;">Отсканировать  QR  код</a>
+							</div>
 							<div class="input-block input-block-small">
 								<label for="d-1">Каталожный номер или название товара<i>*</i></label>
 								<input id="d-1" type="text" name="text">
@@ -226,7 +229,12 @@
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
-			<div class="footer-logo"><a href="#"><img src="img/logo-white-min.png" alt=""></a></div>
+			<div class="header-logo footer-logo">
+				<a href="#">
+					<img src="img/logo-white.svg" alt="">
+					<span class="header-logo-text">Генеральный партнёр HEINE в СНГ</span>
+				</a>
+			</div>
 			<ul class="footer-list">
 				<li><a href="tel:+4915115353792"><i class="hb-ico phone-ico"></i>+49 151 15353792</a></li>
 				<li><a href="mailto:info@ttt-gmbh.com"><i class="hb-ico mail-ico"></i>info@ttt-gmbh.com</a></li>
@@ -242,7 +250,35 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<div style="display: none;" id="modal-qr" class="modal">
+		<div class="sidebar-close">
+			<span>Закрыть</span>
+			<i class="hb-ico close-ico"></i>
+		</div>
+		<div class="modal-wrap">
+			<span class="modal-title">Скан</span>
+			<div class="modal-qr">
+				<video id="preview"></video>
+			</div>
+		</div>
+	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
+	<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+	<script type="text/javascript">
+      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+      scanner.addListener('scan', function (content) {
+        alert(content);
+      });
+      Instascan.Camera.getCameras().then(function (cameras) {
+        if (cameras.length > 0) {
+          scanner.start(cameras[0]);
+        } else {
+          console.error('No cameras found.');
+        }
+      }).catch(function (e) {
+        console.error(e);
+      });
+    </script>
 </body>
 </html>
