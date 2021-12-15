@@ -26,7 +26,7 @@
 			</ul>
 		</div>
 	</div>
-	<div style="display: none;" id="modal-serial" class="modal">
+	<div style="display: none;" id="modal-serial" class="modal" tabindex="0">
 		<div class="sidebar-close">
 			<span>Закрыть</span>
 			<i class="hb-ico close-ico"></i>
@@ -35,13 +35,13 @@
 			<span class="modal-title">Где найти серийный номер?</span>
 			<div class="modal-row">
 				<div class="modal-content">
-					<div class="input-block">
+					<div class="input-block" id="select-1">
 						<label for="md-1">Тип оборудования</label>
 						<select name="text" id="md-1">
 							<option value="">Выберите оборудование</option>
 						</select>
 					</div>
-					<div class="input-block">
+					<div class="input-block" id="select-2">
 						<label for="md-2">Модель</label>
 						<select name="text" id="md-2">
 							<option value="">Выберите модель</option>
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="display: none;" id="modal-serial2" class="modal">
+	<div style="display: none;" id="modal-serial2" class="modal" tabindex="0">
 		<div class="sidebar-close">
 			<span>Закрыть</span>
 			<i class="hb-ico close-ico"></i>
@@ -61,16 +61,19 @@
 			<span class="modal-title">Где найти серийный номер?</span>
 			<div class="modal-row">
 				<div class="modal-content">
-					<div class="input-block">
+					<div class="input-block" id="select-3">
 						<label for="md-1">Тип оборудования</label>
 						<select name="text" id="md-1">
 							<option value="">Выберите оборудование</option>
+							<option value="">Выберите модель</option>
 						</select>
 					</div>
-					<div class="input-block">
+					<div class="input-block" id="select-4">
 						<label for="md-2">Модель</label>
 						<select name="text" id="md-2">
 							<option value="">Выберите модель</option>
+							<option value="">Выберите модель2</option>
+							<option value="">Выберите оборудование</option>
 						</select>
 					</div>
 				</div>
@@ -79,7 +82,7 @@
 			<span class="modal-subtitle">Серийный номер распологается на боковой поверхности клинка.</span>
 		</div>
 	</div>
-	<div style="display: none;" id="modal-form" class="modal modal-form">
+	<div style="display: none;" id="modal-form" class="modal modal-form" tabindex="0">
 		<div class="sidebar-close">
 			<span>Закрыть</span>
 			<i class="hb-ico close-ico"></i>
