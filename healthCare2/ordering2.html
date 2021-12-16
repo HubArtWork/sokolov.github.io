@@ -217,7 +217,7 @@
 					</div>
 					<div class="ordering-sidebar ordering-sidebar-second">
 						<div class="ordering-sidebar-wrap">
-							<a href="#" class="primary-btn disabled">Выписать гарантию</a>
+							<a href="#" class="primary-btn primary-btn-small disabled">Выписать гарантию</a>
 							<p>Заполните каталожный номер, серийный номер, название компании, страну, город, адрес, ФИО, телефон, email, информацию о медицинском учереждении</p>
 						</div>
 					</div>
@@ -271,11 +271,19 @@
         alert(content);
       });
       Instascan.Camera.getCameras().then(function (cameras) {
-        if (cameras.length > 0) {
-          scanner.start(cameras[0]);
-        } else {
-          console.error('No cameras found.');
+       if (cameras.length > 0) {
+    var selectedCam = cameras[0];
+    $.each(cameras, (i, c) => {
+        if (c.name.indexOf('back') != -1) {
+            selectedCam = c;
+            return false;
         }
+    });
+
+    scanner.start(selectedCam);
+} else {
+    console.error('No cameras found.');
+}
       }).catch(function (e) {
         console.error(e);
       });
