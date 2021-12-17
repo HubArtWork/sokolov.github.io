@@ -23,6 +23,10 @@
 			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
 			<ul class="sidebar-menu">
 				<li><a href="#">
+					<i class="hb-ico sidebar-ico-0"></i>
+					<span>Calendar</span>
+				</a></li>
+				<li><a href="#">
 					<i class="hb-ico sidebar-ico-1"></i>
 					<span>Services</span>
 				</a></li>
@@ -63,18 +67,12 @@
 					<span>Sign out</span>
 				</a></li>
 			</ul>
-			<div class="sidebar-mob"><a href="#" class="sidebar-link"></a></div>
+			<div class="sidebar-mob"></div>
 		</div>
 		<div class="content ">
 			<div class="wrapper">
 				<div class="header">
 					<div class="header-bar"><span></span></div>
-					<div class="header-btn">
-						<a href="#" class="second-btn second-btn-ico">
-							<i class="hb-ico calendar-ico"></i>
-							<span>Calendar</span>
-						</a>
-					</div>
 					<div class="header-drop drop">
 						<div class="drop-top">
 							<span>Hello, <b>manhattan super fitness club</b></span>
@@ -138,56 +136,83 @@
 								</ul>
 							</div>
 							<div class="tab tab-active" id="tab-1">
-								<div class="table table-12">
+								<div class="table table-small">
 									<div class="table-wrap">
-										<div class="table-row table-top">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1">Name of Campaigns</div>
-											<div class="table-col table-col__2">Status</div>
-											<div class="table-col table-col__3">Stats</div>
-											<div class="table-col table-col__4">Sent <span>(times)</span></div>
-											<div class="table-col table-col__5">Recepients</div>
-										</div>
-										<div class="table-row">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1"><span>Contest</span><b>Created by 8-9-20 - 8am</b></div>
-											<div class="table-col table-col__2 color-blue">Draft</div>
-											<div class="table-col table-col__3">
-												<ul class="table-list">
-													<li><span><b>30.2%</b> Opens</span></li>
-													<li><span><b>30.2%</b> Clicks</span></li>
-												</ul>
-											</div>
-											<div class="table-col table-col__4">1</div>
-											<div class="table-col table-col__5">1249</div>
-											<div class="table-drop drop">
-												<div class="drop-top">
-													<i class="hb-ico dots-ico"></i>
-												</div>
-												<div class="drop-info">
-													<ul class="drop-list">
-														<li><a href="#">
-															<i class="hb-ico edit-ico"></i>
-															<span>Edit</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico delete-ico"></i>
-															<span>Delete</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico pause-ico"></i>
-															<span>Pause</span>
-														</a></li>
-													</ul>
-												</div>
+										<ul class="actions-list">
+											<li><a href="#">
+												<i class="hb-ico edit-ico"></i>
+												<span>Edit</span>
+											</a></li>
+											<li><a href="#">
+												<i class="hb-ico delete-ico"></i>
+												<span>Delete</span>
+											</a></li>
+											<li><a href="#">
+												<i class="hb-ico pause-ico"></i>
+												<span>Pause</span>
+											</a></li>
+										</ul>
+										<div class="actions-mob">
+											<div class="input-block">
+												<select name="text">
+													<option value="">Edit</option>
+													<option value="">Delete</option>
+													<option value="">Pause</option>
+												</select>
 											</div>
 										</div>
+										<table class="dataTable dataTable-12">
+											<thead>
+						            <tr>
+						            	<th></th>
+						            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
+					                <th>Name of Campaigns</th>
+					                <th>Status</th>
+					                <th>Stats</th>
+					                <th>Sent <span>(times)</span></th>
+					                <th>Recepients</th>
+						            </tr>
+							        </thead>
+							        <tbody>
+							          <tr>
+							          	<td>
+							          		<i class="hb-ico dots-ico dots-ico-mob"></i>
+						                <div class="table-drop drop">
+															<div class="drop-top">
+																<i class="hb-ico dots-ico"></i>
+															</div>
+															<div class="drop-info">
+																<ul class="drop-list">
+																	<li><a href="#">
+																		<i class="hb-ico edit-ico"></i>
+																		<span>Edit</span>
+																	</a></li>
+																	<li><a href="#">
+																		<i class="hb-ico delete-ico"></i>
+																		<span>Delete</span>
+																	</a></li>
+																	<li><a href="#">
+																		<i class="hb-ico pause-ico"></i>
+																		<span>Pause</span>
+																	</a></li>
+																</ul>
+															</div>
+														</div>
+													</td>
+							          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+					                <td><span>Contest</span><b>Created by 8-9-20 - 8am</b></td>
+					                <td>Draft</td>
+					                <td>
+					                	<ul class="table-list">
+															<li><span><b>30.2%</b> Opens</span></li>
+															<li><span><b>30.2%</b> Clicks</span></li>
+														</ul>
+					                </td>
+					                <td>1</td>
+					                <td>1249</td>
+					            	</tr>
+					            </tbody>
+										</table>
 									</div>
 								</div>
 							</div>
@@ -229,164 +254,114 @@
 								</ul>
 							</div>
 							<div class="tab tab-active" id="tab-4">
-								<div class="table table-13">
+								<div class="table">
 									<div class="table-wrap">
-										<div class="table-row table-top">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1">Groups name</div>
-											<div class="table-col table-col__2">Created</div>
-											<div class="table-col table-col__3">Campaigns</div>
-											<div class="table-col table-col__4">Recepients</div>
-											<div class="table-col table-col__5">Stats </div>
-										</div>
-										<div class="table-row">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1">Название группы</div>
-											<div class="table-col table-col__2">03-05-2021</div>
-											<div class="table-col table-col__3">Новый год, промо, mASSAGE (+3)</div>
-											<div class="table-col table-col__4">56902</div>
-											<div class="table-col table-col__5"><span class="color-green">40%</span>/<span class="color-green">40%</span></div>
-											<div class="table-drop drop">
-												<div class="drop-top">
-													<i class="hb-ico dots-ico"></i>
-												</div>
-												<div class="drop-info">
-													<ul class="drop-list">
-														<li><a href="#">
-															<i class="hb-ico edit-ico"></i>
-															<span>Edit</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico delete-ico"></i>
-															<span>Delete</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico pause-ico"></i>
-															<span>Pause</span>
-														</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1">Название группы</div>
-											<div class="table-col table-col__2">03-05-2021</div>
-											<div class="table-col table-col__3">Новый год, промо, mASSAGE (+3)</div>
-											<div class="table-col table-col__4">56902</div>
-											<div class="table-col table-col__5"><span class="color-green">40%</span>/<span class="color-green">40%</span></div>
-											<div class="table-drop drop">
-												<div class="drop-top">
-													<i class="hb-ico dots-ico"></i>
-												</div>
-												<div class="drop-info">
-													<ul class="drop-list">
-														<li><a href="#">
-															<i class="hb-ico edit-ico"></i>
-															<span>Edit</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico delete-ico"></i>
-															<span>Delete</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico pause-ico"></i>
-															<span>Pause</span>
-														</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
+										<ul class="sort">
+											<li><a href="#">Delete</a></li>
+											<li><a href="#">Archive</a></li>
+										</ul>
+										<table class="dataTable dataTable-3">
+											<thead>
+						            <tr>
+						            	<th></th>
+						            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
+					                <th>Groups name</th>
+					                <th>Created</th>
+					                <th>Campaigns</th>
+					                <th>Recepients</th>
+					                <th>Stats</th>
+					                <th></th>
+						            </tr>
+							        </thead>
+							        <tbody>
+							          <tr>
+							          	<td>
+					                	<i class="hb-ico dots-ico dots-ico-mob"></i>
+						                <div class="table-drop drop">
+															<div class="drop-top">
+																<i class="hb-ico dots-ico"></i>
+															</div>
+															<div class="drop-info">
+																<ul class="drop-list">
+																	<li><a href="#">
+																		<i class="hb-ico edit-ico"></i>
+																		<span>Edit</span>
+																	</a></li>
+																	<li><a href="#">
+																		<i class="hb-ico delete-ico"></i>
+																		<span>Delete</span>
+																	</a></li>
+																	<li><a href="#">
+																		<i class="hb-ico pause-ico"></i>
+																		<span>Pause</span>
+																	</a></li>
+																</ul>
+															</div>
+														</div>
+													</td>
+							          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+					                <td>Название группы</td>
+					                <td>03-05-2021</td>
+					                <td>Новый год, промо, mASSAGE (+3)</td>
+					                <td>56902</td>
+					                <td><span class="color-green">40%</span>/<span class="color-green">40%</span></td>
+					            	</tr>
+					            </tbody>
+										</table>
 									</div>
 								</div>
 							</div>
 							<div class="tab" id="tab-5">
-								<div class="table table-14">
+								<div class="table table-small">
 									<div class="table-wrap">
-										<div class="table-row table-top">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1">Full name</div>
-											<div class="table-col table-col__2">Joined</div>
-											<div class="table-col table-col__3">Services</div>
-											<div class="table-col table-col__4">Groups</div>
-											<div class="table-col table-col__5">Order / Cancel</div>
-										</div>
-										<div class="table-row">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1"><a href="#" class="table-link">Name name</a></div>
-											<div class="table-col table-col__2">03-05-2021</div>
-											<div class="table-col table-col__3">Spa, mASSAGE, mASSAGE (+3)</div>
-											<div class="table-col table-col__4">New year</div>
-											<div class="table-col table-col__5">25/<span class="color-red">10</span> (<span class="color-green">40%</span>)</div>
-											<div class="table-drop drop">
-												<div class="drop-top">
-													<i class="hb-ico dots-ico"></i>
-												</div>
-												<div class="drop-info">
-													<ul class="drop-list">
-														<li><a href="#">
-															<i class="hb-ico edit-ico"></i>
-															<span>Edit</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico delete-ico"></i>
-															<span>Delete</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico pause-ico"></i>
-															<span>Pause</span>
-														</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="checkbox">
-												<input type="checkbox">
-												<i class="checkbox-ico"></i>
-											</div>
-											<div class="table-col table-col__1"><a href="#" class="table-link">Name name</a></div>
-											<div class="table-col table-col__2">03-05-2021</div>
-											<div class="table-col table-col__3">Spa, mASSAGE, mASSAGE (+3)</div>
-											<div class="table-col table-col__4">New year</div>
-											<div class="table-col table-col__5">25/<span class="color-red">10</span> (<span class="color-green">40%</span>)</div>
-											<div class="table-drop drop">
-												<div class="drop-top">
-													<i class="hb-ico dots-ico"></i>
-												</div>
-												<div class="drop-info">
-													<ul class="drop-list">
-														<li><a href="#">
-															<i class="hb-ico edit-ico"></i>
-															<span>Edit</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico delete-ico"></i>
-															<span>Delete</span>
-														</a></li>
-														<li><a href="#">
-															<i class="hb-ico pause-ico"></i>
-															<span>Pause</span>
-														</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
+										<table class="dataTable dataTable-3">
+											<thead>
+						            <tr>
+						            	<th></th>
+						            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
+					                <th>Full name</th>
+					                <th>Joined</th>
+					                <th>Services</th>
+					                <th>Groups</th>
+					                <th>Order / Cancel</th>
+					                <th></th>
+						            </tr>
+							        </thead>
+							        <tbody>
+							          <tr>
+							          	 <td>
+					                	<i class="hb-ico dots-ico dots-ico-mob"></i>
+						                <div class="table-drop drop">
+															<div class="drop-top">
+																<i class="hb-ico dots-ico"></i>
+															</div>
+															<div class="drop-info">
+																<ul class="drop-list">
+																	<li><a href="#">
+																		<i class="hb-ico edit-ico"></i>
+																		<span>Edit</span>
+																	</a></li>
+																	<li><a href="#">
+																		<i class="hb-ico delete-ico"></i>
+																		<span>Delete</span>
+																	</a></li>
+																	<li><a href="#">
+																		<i class="hb-ico pause-ico"></i>
+																		<span>Pause</span>
+																	</a></li>
+																</ul>
+															</div>
+														</div>
+													</td>
+							          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+					                <td><a href="#" class="table-link">Name name</a></td>
+					                <td>03-05-2021</td>
+					                <td>Spa, mASSAGE, mASSAGE (+3)</td>
+					                <td>New year</td>
+					                <td>25/<span class="color-red">10</span> (<span class="color-green">40%</span>)</td>
+					            	</tr>
+					            </tbody>
+										</table>
 									</div>
 								</div>
 							</div>

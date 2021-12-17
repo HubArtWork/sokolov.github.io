@@ -124,14 +124,17 @@
 						<div class="invoices-profile__top">
 							<div class="invoices-profile__top-all">
 								<div class="invoices-profile__top-main">
-									<div class="dropFile">
-										<input type="file">
-										<div class="dropFile-ico"></div>
+									<div class="dropFileLogo">
+										<div class="dropFile-all">
+											<span class="dropFile-title">Сustomer's photo or logo</span>
+											<div class="dropFile">
+												<i class="dropFile-ico"></i>
+												<p><span>Browse</span> or drop image here. <br>Maximum 5MB in size. <br>JPG or PNG <br>Recommended size: 300 x 200 pixels.</p>
+												<div class="imagePreview" id="imagePreview"></div>
+												<input type="file" id="uploadFile">
+											</div>
+										</div>
 									</div>
-									<a href="#" class="nameYou">
-										<span>Name You</span>
-										<i class="hb-ico nameYou-ico"></i>
-									</a>
 								</div>
 								<div class="invoices-profile__info">
 									<ul>
@@ -140,19 +143,11 @@
 										<li>lorem3 lorem</li>
 										<li>lorem4 lorem</li>
 									</ul>
-								</div>
-								<div class="invoices-profile__change">
-									<div class="input-block">
-										<input type="text" name="text" value="lorem lorem">
-									</div>
-									<div class="input-block">
-										<input type="text" name="text" value="lorem2 lorem">
-									</div>
-									<div class="input-block">
-										<input type="text" name="text" value="lorem3 lorem">
-									</div>
-									<div class="input-block">
-										<input type="text" name="text" value="lorem4 lorem">
+									<div class="invoices-profile__info-top">
+										<a href="#modal-editInfo" class="nameYou modal-btn">
+											<i class="hb-ico edit-ico"></i>
+											<span>Edit</span>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -180,7 +175,7 @@
 										<label for="">Date</label>
 									</div>
 									<div class="calendar-input">
-										<input type="text" name="text" placeholder="Date">
+										<input type="date" name="date" placeholder="Date">
 									</div>
 								</div>
 								<div class="input-block">
@@ -204,14 +199,19 @@
 							<div class="invoices-profile__bill-tit">Bill To:</div>
 							<div class="invoices-profile__bill-block">
 								<div class="input-block">
-									<input type="text" name="text" placeholder="Email address or name">
+									<select class="mySelect" name="states[]">
+										<option value=""></option>
+									  <option value="AL">Alabama</option>
+									  <option value="AL">Alabama</option>
+									  <option value="WY">Wyoming</option>
+									</select>
 								</div>
 								<div class="buttons-row invoices-profile__bill-buttons">
 									<a href="#" class="second-btn second-btn-ico">
 										<i class="hb-ico add-ico-blue"></i>
 										Add Customer
 									</a>
-									<a href="#" class="second-btn second-btn-ico">
+									<a href="#modal-invoices2" class="second-btn second-btn-ico modal-btn">
 										<i class="hb-ico user-ico-blue"></i>
 										New Customer
 									</a>
@@ -312,7 +312,11 @@
 									</div>
 								</div>
 							</div>
-							<button class="primary-btn primary-btn-yellow">Attach files</button>
+							<form action="#" name="form" method="get">
+				        <div class="file">
+				          <div class="file__input" id="file__input"><input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]" /><button class="primary-btn primary-btn-yellow">Attach files</button></div>
+				        </div>
+					    </form>
 							<div class="checkbox">
 								<input type="checkbox" checked>
 								<i class="checkbox-ico"></i>
@@ -347,12 +351,16 @@
 								</select>
 							</div>
 							<a href="#" class="primary-btn">Send</a>
-							<div class="input-block">
-								<select class="blockFix-select" name="states[]" multiple="multiple">
-								  <option value="AL">Preview</option>
-								  <option value="AL">Mark paid</option>
-								  <option value="WY">Discard changes</option>
-								</select>
+							<div class="blockFix-row">
+								<a href="#" class="primary-btn">Save</a>
+								<div class="blockFix-drop drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#">Preview</a></li>
+										<li><a href="#">Mark paid</a></li>
+										<li><a href="#">Discard changes</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -391,6 +399,118 @@
 					</div>
 					<div class="input-block">
 						<input type="text" name="text" placeholder="Zip">
+					</div>
+					<div class="input-row">
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="City">
+						</div>
+						<div class="input-block input-25">
+							<select name="text">
+								<option value="">ST</option>
+								<option value="">ST</option>
+								<option value="">ST</option>
+							</select>
+						</div>
+						<div class="input-block input-25">
+							<input type="text" name="text" placeholder="Zip">
+						</div>
+					</div>
+					<div class="dropFile-all">
+						<span class="dropFile-title">Сustomer's photo or logo</span>
+						<div class="dropFile">
+							<i class="dropFile-ico"></i>
+							<p><span>Browse</span> or drop image here. <br>Maximum 5MB in size. <br>JPG or PNG <br>Recommended size: 300 x 200 pixels.</p>
+							<div class="imagePreview" id="imagePreview"></div>
+							<input type="file" id="uploadFile">
+						</div>
+					</div>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- start invoices -->
+	<div id="modal-invoices2" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">Creat new customer</h2>
+			<form action="">
+				<div class="form-wrap">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Name">
+					</div>
+					<div class="input-row">
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Phone">
+						</div>
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="Email">
+						</div>
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Address">
+					</div>
+					<div class="input-all">
+						<div class="input-block input-50">
+							<input type="text" name="text" placeholder="City">
+						</div>
+						<div class="input-block input-small input-small-p">
+							<select name="text">
+								<option value="">ST</option>
+								<option value="">ST</option>
+								<option value="">ST</option>
+							</select>
+						</div>
+						<div class="input-block input-small input-small-mob">
+							<input type="text" name="text" placeholder="Zip">
+						</div>
+					</div>
+					<div class="input-block input-block-password">
+						<div class="input-block__top">
+							<label for="pp-1">Password</label>
+							<span class="btn-show">Show</span>
+						</div>
+						<input id="pp-1" type="password" name="password">
+						<p>Password must be minimum 8 symbols</p>
+					</div>
+					<div class="dropFileLogo">
+						<div class="dropFile-all">
+							<span class="dropFile-title">Сustomer's photo or logo</span>
+							<div class="dropFile">
+								<i class="dropFile-ico"></i>
+								<p><span>Browse</span> or drop image here. <br>Maximum 5MB in size. <br>JPG or PNG <br>Recommended size: 300 x 200 pixels.</p>
+								<div class="imagePreview" id="imagePreview"></div>
+								<input type="file" id="uploadFile">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- start editInfo -->
+	<div id="modal-editInfo" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">Change info</h2>
+			<form action="">
+				<div class="form-wrap">
+					<div class="input-block">
+						<input type="text" name="text" value="lorem lorem">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" value="lorem2 lorem">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" value="lorem3 lorem">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" value="lorem4 lorem">
 					</div>
 				</div>
 				<div class="form-btn">
@@ -443,14 +563,24 @@
 						<div class="col-1"><input type="text" name="text" placeholder="1"></div>
 						<div class="col-2"><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></div>
 						<div class="col-3"><input type="text" name="text" placeholder="Taxes name"></div>
-						<div class="col-4">%</div>
+						<div class="col-4">
+							<select name="text">
+								<option value="">$</option>
+								<option value="">%</option>
+							</select>
+						</div>
 						<div class="col-5"><input type="text" name="text" placeholder="1"></div>
 					</div>
 					<div class="fees-row">
 						<div class="col-1"><input type="text" name="text" placeholder="1"></div>
 						<div class="col-2"><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></div>
 						<div class="col-3"><input type="text" name="text" placeholder="Taxes name"></div>
-						<div class="col-4">%</div>
+						<div class="col-4">
+							<select name="text">
+								<option value="">$</option>
+								<option value="">%</option>
+							</select>
+						</div>
 						<div class="col-5"><input type="text" name="text" placeholder="1"></div>
 						<div class="fees-icons">
 							<i class="hb-ico delete-ico"></i>
