@@ -137,7 +137,7 @@
 								<a href="#" class="input-link">Как найти каталожный номер</a>
 							</div>
 							<div class="input-block input-block-small">
-								<label for="d-2">Серийный номер<i>*</i></label>
+								<label for="d-2" id="gog">Серийный номер<i>*</i></label>
 								<div class="input-block-icon">
 									<input id="d-2" type="text" name="text">
 									<i class="hb-ico number-plus"></i>
@@ -266,16 +266,26 @@
 	<script defer src="js/scripts.min.js"></script>
 	<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
 	<script type="text/javascript">
-      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+		 	var scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5, mirror: false });
       scanner.addListener('scan', function (content) {
+      	$('#gog').html(content);
         alert(content);
+        $.fancybox.close();
       });
       Instascan.Camera.getCameras().then(function (cameras) {
-        if (cameras.length > 0) {
-          scanner.start(cameras[0]);
-        } else {
-          console.error('No cameras found.');
+       if (cameras.length > 0) {
+    var selectedCam = cameras[0];
+    $.each(cameras, (i, c) => {
+        if (c.name.indexOf('back') != -1) {
+            selectedCam = c;
+            return false;
         }
+    });
+
+    scanner.start(selectedCam);
+} else {
+    console.error('No cameras found.');
+}
       }).catch(function (e) {
         console.error(e);
       });
