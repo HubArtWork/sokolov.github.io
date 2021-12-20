@@ -106,10 +106,9 @@
 				</div>
 				<div class="content-top">
 					<div class="customer-user">
-						<input type="file">
 						<span class="customer-user-sub"><-to customers</span>
 						<span class="customer-user-name">Vasya Pupkin</span>
-						<div class="customer-user-img dropFile">D</div>
+						<a href="#modal-avatar" class="customer-user-img dropFile modal-btn">D</a>
 					</div>
 					<div class="customer-text">
 						<div class="customer-text-row">
@@ -462,6 +461,27 @@
 	</section>
 	<!-- end page -->
 	<div class="modal-bg"></div>
+	<!-- start avatar -->
+	<div id="modal-avatar" class="formModal formModal-avatar">
+		<div class="modal-wrap">
+			<div class="dropFileLogo">
+				<div class="dropFile-all">
+					<span class="dropFile-title">Сustomer's photo or logo</span>
+					<div class="dropFile">
+						<i class="dropFile-ico"></i>
+						<p><span>Browse</span> or drop image here. <br>Maximum 5MB in size. <br>JPG or PNG <br>Recommended size: 300 x 200 pixels.</p>
+						<div class="imagePreview" id="imagePreview"></div>
+						<input type="file" id="uploadFile">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start customer -->
+	<div id="modal-customer" class="formModal formModal-customer">
+		<i class="hb-ico close-ico"></i>
+		
+	</div>
 	<!-- start newNotes -->
 	<div id="modal-newNotes" class="formModal formModal-cust formModal-newNotes">
 		<i class="hb-ico close-ico"></i>
@@ -555,6 +575,11 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<!-- start customer -->
+	<div id="modal-customer" class="formModal formModal-customer">
+		<i class="hb-ico close-ico"></i>
+		
 	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
