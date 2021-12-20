@@ -13,8 +13,6 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
 	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
 	<link href = "https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel = "stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js"></script>
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -112,17 +110,8 @@
 						<div class="customer-user-img dropFile">D</div>
 					</div>
 					<div class="customer-text">
-						<div class="customer-text-row">
-							<span class="customer-price">Spent up to date: <a href="#">$420.85</a></span>
-							<div class="customer-top">Top 10</div>
-						</div>
-						<div class="customer-pay-block">
-							<div class="customer-pay-block-img"><img src="img/mastercard-2.svg" alt=""></div>
-							<div class="customer-pay-block-info">
-								<span class="customer-pay-block-num">Mastercard...9975 <i>Default</i></span>
-								<span class="customer-pay-block-date">Expires Jul 2025</span>
-							</div>
-						</div>
+						<span class="customer-price">Spent up to date: <a href="#">$420.85</a></span>
+						<div class="customer-top">Top 10</div>
 					</div>
 				</div>
 				<div class="content-all allTabs">
@@ -228,40 +217,10 @@
 											<span>New</span>
 										</a>
 									</div>
-									<div class="customer-notes-item orange">
-										<div class="customer-notes-info">
-											<span class="customer-notes-name">Note by: <b>Operator name</b></span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-										</div>
-										<div class="customer-notes-sidebar">
-											<div>
-												<span>9:00 am</span>
-												<span>12-12-2020</span>
-											</div>
-										</div>
-									</div>
-									<div class="customer-notes-item red">
-										<div class="customer-notes-info">
-											<span class="customer-notes-name">Note by: <b>Operator name</b></span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-										</div>
-										<div class="customer-notes-sidebar">
-											<div>
-												<span>9:00 am</span>
-												<span>12-12-2020</span>
-											</div>
-										</div>
-									</div>
-									<div class="customer-notes-item green">
-										<div class="customer-notes-info">
-											<span class="customer-notes-name">Note by: <b>Operator name</b></span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-										</div>
-										<div class="customer-notes-sidebar">
-											<div>
-												<span>9:00 am</span>
-												<span>12-12-2020</span>
-											</div>
+									<div class="customer-notes-record">
+										<div>
+											<p>No notes/comments for [customer name] yet.</p>
+											<p>Something for a record? <a href="#">Add it here</a></p>
 										</div>
 									</div>
 								</div>
@@ -272,189 +231,16 @@
 						</form>
 					</div>
 					<div class="tab" id="tab-2">
-						<div class="customer-calendar">
-							<div class="customer-calendar-top">
-								<div class="input-block">
-									<label for="">Toggle?</label>
-									<select name="text">
-										<option value="">Monthly view</option>
-									</select>
-								</div>
-								<div class="input-block">
-									<label for="">Booking limit:</label>
-									<select name="text">
-										<option value="">Regular</option>
-									</select>
-								</div>
-								<div class="colors">
-									<div class="colors-col colors-gray">Scheduled</div>
-									<div class="colors-col colors-orange">Canceled</div>
-									<div class="colors-col colors-blue">Done</div>
-									<div class="colors-col colors-red">No-show</div>
-								</div>
-							</div>
-							<div class="customer-calendar-content">
-								<div id="calendar"></div>
-							</div>
+						<div class="colors">
+							<div class="colors-col colors-greay">Scheduled</div>
+							<div class="colors-col colors-orange">Canceled</div>
+							<div class="colors-col colors-blue">Done</div>
+							<div class="colors-col colors-red">No-show</div>
 						</div>
-						
 					</div>
 					<div class="tab" id="tab-3">
-						<div class="content-top__row content-top__row-big customer-hd">
-							<div class="customer-bog">
-								<span class="customer-tit">5 Unread</span>
-								<div class="input-block">
-									<select name="text" class="select-drop">
-										<option value="Category">All</option>
-										<option value="Category">All</option>
-										<option value="Category">All</option>
-									</select>
-								</div>
-							</div>
-							<div class="content-top__inputs">
-								<div class="input-block search-input">
-									<input type="text" name="search" placeholder="Search">
-									<i class="hb-ico search-ico"></i>
-								</div>
-							</div>
-						</div>
-						<div class="table">
-							<div class="table-wrap">
-								<table class="dataTable dataTable-15">
-									<thead>
-				            <tr>
-				            	<th></th>
-			                <th>Date/time</th>
-			                <th>Department/agent</th>
-			                <th>Status</th>
-			                <th>Time</th>
-			                <th>Subject/Message</th>
-				            </tr>
-					        </thead>
-					        <tbody>
-					          <tr>
-					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
-			                <td>09/18/2021  3:35 pm</td>
-			                <td>Harry</td>
-			                <td><span class="status">New</span></td>
-			                <td>31 min</td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			            	</tr>
-			            	<tr>
-					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
-			                <td>09/18/2021  3:35 pm</td>
-			                <td>Harry</td>
-			                <td><span class="status missed">New</span></td>
-			                <td>31 min</td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			            	</tr>
-			            	<tr>
-					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
-			                <td>09/18/2021  3:35 pm</td>
-			                <td>Harry</td>
-			                <td><span class="status answered">New</span></td>
-			                <td>31 min</td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			            	</tr>
-			            	<tr>
-					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
-			                <td>09/18/2021  3:35 pm</td>
-			                <td>Harry</td>
-			                <td><span class="status resolved">New</span></td>
-			                <td>31 min</td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			            	</tr>
-			            	<tr>
-					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
-			                <td>09/18/2021  3:35 pm</td>
-			                <td>Harry</td>
-			                <td><span class="status notResoved">New</span></td>
-			                <td>31 min</td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			            	</tr>
-			            </tbody>
-								</table>
-							</div>
-						</div>
 					</div>
 					<div class="tab" id="tab-4">
-						<div class="content-top__row content-top__row-big customer-hd">
-							<div class="customer-bog">
-								<span class="customer-tit">1 Failed</span>
-								<a href="#" class="customer-bog-link">
-									<i class="hb-ico sidebar-ico-5"></i>
-									Prepare receipt
-								</a>
-							</div>
-							<div class="content-top__inputs">
-								<div class="input-block">
-									<select name="text" class="select-drop">
-										<option value="Category">All</option>
-										<option value="Category">All</option>
-										<option value="Category">All</option>
-									</select>
-								</div>
-								<div class="input-block search-input">
-									<input type="text" name="search" placeholder="Search">
-									<i class="hb-ico search-ico"></i>
-								</div>
-							</div>
-						</div>
-						<div class="table">
-							<div class="table-wrap">
-								<table class="dataTable dataTable-16">
-									<thead>
-				            <tr>
-				            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
-			                <th>Date/time</th>
-			                <th>Type</th>
-			                <th>Status</th>
-			                <th>Description</th>
-			                <th></th>
-				            </tr>
-					        </thead>
-					        <tbody>
-					          <tr>
-					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
-			                <td>Feb 18  3:35 pm </td>
-			                <td>Invoice</td>
-			                <td><span class="status">Paid</span></td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			                <td><i class="hb-ico sidebar-ico-5"></i></td>
-			            	</tr>
-			            	<tr>
-					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
-			                <td>Feb 18  3:35 pm </td>
-			                <td>Invoice</td>
-			                <td><span class="status red">Failed</span></td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			                <td><i class="hb-ico sidebar-ico-5"></i></td>
-			            	</tr>
-			            	<tr>
-					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
-			                <td>Feb 18  3:35 pm </td>
-			                <td>Invoice</td>
-			                <td><span class="status">Paid</span></td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			                <td><i class="hb-ico sidebar-ico-5"></i></td>
-			            	</tr>
-			            	<tr>
-					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
-			                <td>Feb 18  3:35 pm </td>
-			                <td>Invoice</td>
-			                <td><span class="status red">Failed</span></td>
-			                <td>Hi, ipsum dolor sit amet, cons...</td>
-			                <td><i class="hb-ico sidebar-ico-5"></i></td>
-			            	</tr>
-			            </tbody>
-								</table>
-							</div>
-						</div>
-						<div class="pagination pagination-second">
-							<a href="#" class="pagination-prev"></a>
-							<span class="pagination-num">1/24</span>
-							<a href="#" class="pagination-next"></a>
-						</div>
 					</div>
 				</div>
 			</div>
