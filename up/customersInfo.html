@@ -104,9 +104,9 @@
 						</div>
 					</div>
 				</div>
+				<a href="#" class="back-link">Back to customers</a>
 				<div class="content-top">
 					<div class="customer-user">
-						<span class="customer-user-sub"><-to customers</span>
 						<span class="customer-user-name">Vasya Pupkin</span>
 						<a href="#modal-avatar" class="customer-user-img dropFile modal-btn">D</a>
 					</div>
@@ -189,16 +189,15 @@
 									<div class="customer-pay">
 										<div class="customer-pay-top">
 											<span class="customer-pay-title">Payment methods</span>
-											<a href="#"> Add  method</a>
+											<a href="#modal-newPay" class="modal-btn">Add  method</a>
 										</div>
 										<div class="customer-pay-content">
 											<div class="customer-pay-block">
 												<div class="customer-pay-block-img"><img src="img/mastercard-2.svg" alt=""></div>
 												<div class="customer-pay-block-info">
-													<span class="customer-pay-block-num">Mastercard...9975</span>
+													<span class="customer-pay-block-num">Mastercard...9975 <i>Default</i></span>
 													<span class="customer-pay-block-date">Expires Jul 2025</span>
 												</div>
-												<span class="customer-pay-block-status">Backup card</span>
 												<ul>
 													<li><a href="#modal-newPay" class="modal-btn"><i class="hb-ico edit-ico"></i></a></li>
 													<li><a href="#"><i class="hb-ico delete-ico"></i></a></li>
@@ -207,10 +206,9 @@
 											<div class="customer-pay-block">
 												<div class="customer-pay-block-img"><img src="img/mastercard-2.svg" alt=""></div>
 												<div class="customer-pay-block-info">
-													<span class="customer-pay-block-num">Mastercard...9975</span>
+													<span class="customer-pay-block-num">Mastercard...9975 <i class="active">Default</i></span>
 													<span class="customer-pay-block-date">Expires Jul 2025</span>
 												</div>
-												<span class="customer-pay-block-status active">Backup card</span>
 												<ul>
 													<li><a href="#modal-newPay" class="modal-btn"><i class="hb-ico edit-ico"></i></a></li>
 													<li><a href="#"><i class="hb-ico delete-ico"></i></a></li>
@@ -449,11 +447,15 @@
 								</table>
 							</div>
 						</div>
-						<div class="pagination pagination-second">
-							<a href="#" class="pagination-prev"></a>
-							<span class="pagination-num">1/24</span>
-							<a href="#" class="pagination-next"></a>
-						</div>
+						<ul class="pagination">
+							<li><a href="#"><</a></li>
+							<li><a href="#">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li>...</li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -463,24 +465,34 @@
 	<div class="modal-bg"></div>
 	<!-- start avatar -->
 	<div id="modal-avatar" class="formModal formModal-avatar">
+		<i class="hb-ico close-ico"></i>
 		<div class="modal-wrap">
-			<div class="dropFileLogo">
-				<div class="dropFile-all">
-					<span class="dropFile-title">Сustomer's photo or logo</span>
-					<div class="dropFile">
-						<i class="dropFile-ico"></i>
-						<p><span>Browse</span> or drop image here. <br>Maximum 5MB in size. <br>JPG or PNG <br>Recommended size: 300 x 200 pixels.</p>
-						<div class="imagePreview" id="imagePreview"></div>
-						<input type="file" id="uploadFile">
+			<!-- Upload image -->
+			<div id="sectionDragAndDrop">
+		    <div class="drop" id="drop">
+		      <div class="dropFileLogo">
+						<div class="dropFile-all">
+							<span class="dropFile-title">Сustomer's photo or logo</span>
+							<div class="dropFile">
+								<i class="dropFile-ico"></i>
+								<p><span>Browse</span> or drop image here. <br>Maximum 5MB in size. <br>JPG or PNG <br>Recommended size: 300 x 200 pixels.</p>
+								<div class="imagePreview" id="imagePreview"></div>
+							</div>
+						</div>
 					</div>
-				</div>
+		    </div>
+		    <input class="file-upload hidden" id="fileUpload" type="file">
+			</div>
+			<!-- Resize image -->
+			<div class="hidden" id="sectionResize">
+			    <div class="image-resize" id="imageResize"></div>
+			  <button class="btn primary-btn" id="crop">Crop</button>
+			</div>
+			<!-- Insert thumbnail -->
+			<div class="hidden" id="sectionThumbnail">
+			    <div class="thumbnail" id="thumbnail"></div>
 			</div>
 		</div>
-	</div>
-	<!-- start customer -->
-	<div id="modal-customer" class="formModal formModal-customer">
-		<i class="hb-ico close-ico"></i>
-		
 	</div>
 	<!-- start newNotes -->
 	<div id="modal-newNotes" class="formModal formModal-cust formModal-newNotes">
@@ -575,11 +587,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- start customer -->
-	<div id="modal-customer" class="formModal formModal-customer">
-		<i class="hb-ico close-ico"></i>
-		
 	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
