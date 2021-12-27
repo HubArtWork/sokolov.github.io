@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<p>Онлайн-сервис по бронированию санаториев</p>
+				<div class="header-selects">
+					<div class="header-selects-col">
+						<label>Показать цены в</label>
+						<select class="js-example-basic-single" id="price" name="RU">
+						  <option value="AL">RU</option>
+						  <option value="WY">RU</option>
+						</select>
+					</div>
+					<div class="header-selects-col">
+						<label>Выбор языка</label>
+						<select class="js-example-basic-single" id="lang" name="RU">
+						  <option value="AL">EUR</option>
+						  <option value="WY">EUR</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="wrapper">
+				<div class="header-bar"></div>
+				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+				<div class="header-row">
+					<ul class="header-social">
+						<li><a href="#" class="hb-ico tg-ico"></a></li>
+						<li><a href="#" class="hb-ico wat-ico"></a></li>
+						<li><a href="#" class="hb-ico vib-ico"></a></li>
+						<li><a href="#" class="hb-ico sky-ico"></a></li>
+					</ul>
+					<a href="mailto:info@kurort.life" class="header-link">info@kurort.life</a>
+					<a href="#" class="primary-btn">Заказать звонок</a>
+				</div>
+				<a href="#" class="header-phone"></a>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<ul class="header-menu">
+					<li class="drop">
+						<a href="#" class="drop-top">Курорты</a>
+						<div class="drop-wrap">
+							<ul class="drop-list">
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-1.svg" alt="">Чехия</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-2.svg" alt="">Словакия</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-3.svg" alt="">Венгрия</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-4.svg" alt="">Словения</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-5.svg" alt="">Литва</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-6.svg" alt="">Латвия</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-7.svg" alt="">Италия</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="drop-li">
+									<a href="#" class="drop-link"><img src="img/lang-8.svg" alt="">Израиль</a>
+									<div class="drop-block">
+										<ul>
+											<li><a href="#">Карловары Вары<span>4 санатория</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>2 санатория</span></a></li>
+											<li><a href="#">Либверда<span>10 санаториев</span></a></li>
+											<li><a href="#">Константиновы Лазни<span>10 санаториев</span></a></li>
+											<li><a href="#">Либверда<span>4 санатория</span></a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#advantage" class="header-ml link-scroll">о нас</a></li>
+					<li><a href="#blog" class="header-ml link-scroll">Блог</a></li>
+					<li><a href="#" class="header-ml">faq</a></li>
+					<li><a href="#testimonials" class="header-ml link-scroll">отзывы</a></li>
+					<li><a href="#subscription" class="header-ml link-scroll">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-top" style="background-image: url(img/main-bg-min.jpg);"></div>
+		<div class="wrapper">
+			<h1 class="main-title">Выберите курорт</h1>
+			<div class="main-wrap allTabs">
+				<ul class="tab-list">
+					<li><a href="#tab-1" class="active">Лечение</a></li>
+					<li><a href="#tab-2">СПА Релакс</a></li>
+					<li><a href="#tab-3">Туры</a></li>
+				</ul>
+				<div class="tab tab-active" id="tab-1">
+					<div class="main-block">
+						<div class="main-row">
+							<div class="main-col main-col-big">
+								<div class="main-label"><i class="hb-ico local-ico"></i>Город, курорт, санаторий</div>
+								<select class="js-select2" multiple="multiple">
+									<option value="O1" data-badge="">Карловы вары</option>
+									<option value="O2" data-badge="">Константиновы Лазни</option>
+									<option value="O3" data-badge="">Либверда</option>
+									<option value="O4" data-badge="">Константиновы Лазни</option>
+									<option value="O5" data-badge="">Либверда</option>
+								</select>
+							</div><!-- col -->
+							<div class="main-col main-col-small">
+								<div class="main-label"><i class="hb-ico period-ico"></i>Период</div>
+								<input type="text" id="txtDateRange" name="txtDateRange" class="inputField shortInputField dateRangeField" data-from-field="txtDateFrom" data-to-field="txtDateTo" placeholder="05.12 - 18.12"/>
+								<input type="hidden" id="txtDateFrom" value="" />
+								<input type="hidden" id="txtDateTo" value="" />
+							</div><!-- col -->
+							<div class="main-col main-col-small">
+								<div class="main-label"><i class="hb-ico time-ico"></i>Длительность</div>
+								<div class="main-drop">
+									<div class="main-drop-top">
+										<i class="inputs-from-text">6</i> - <i class="inputs-to-text">15</i> ночей
+									</div>
+									<div class="main-drop-wrap main-drop-wrap-big">
+										<div class="inputs">
+											<div class="inputs-label">от</div>
+											<div class="inputs-row inputs-from">
+												<div class="inputs-plus">+</div>
+												<div class="inputs-num">6</div>
+												<div class="inputs-minus">–</div>
+											</div>
+										</div>
+										<div class="inputs">
+											<div class="inputs-label">до</div>
+											<div class="inputs-row inputs-to">
+												<div class="inputs-plus">+</div>
+												<div class="inputs-num">15</div>
+												<div class="inputs-minus">–</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+						</div><!-- row -->
+						<div class="main-row">
+							<div class="main-col">
+								<div class="main-label"><i class="hb-ico quantity-ico"></i>Количество человек</div>
+								<div class="main-drop">
+									<div class="main-drop-top">
+										Номеров: <i class="inputs-rooms-text">1</i>, взрослых: <i class="inputs-from-text">2</i>, детей: <i class="inputs-to-text">0</i>
+									</div>
+									<div class="main-drop-wrap">
+										<div class="inputs">
+											<div class="inputs-label">Номера</div>
+											<div class="inputs-row inputs-rooms">
+												<div class="inputs-plus">+</div>
+												<div class="inputs-num">1</div>
+												<div class="inputs-minus">–</div>
+											</div>
+										</div>
+										<div class="inputs">
+											<div class="inputs-label">Взрослые</div>
+											<div class="inputs-row inputs-from">
+												<div class="inputs-plus">+</div>
+												<div class="inputs-num">2</div>
+												<div class="inputs-minus">–</div>
+											</div>
+										</div>
+										<div class="inputs">
+											<div class="inputs-label">Дети <span>( от 0 до 17 лет)</span></div>
+											<div class="inputs-row inputs-to">
+												<div class="inputs-plus">+</div>
+												<div class="inputs-num">0</div>
+												<div class="inputs-minus">–</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="main-col">
+								<div class="main-label"><i class="hb-ico nutrition-ico"></i>Питание и лечение</div>
+								<select class="js-select3" id="nutritionAndTreatment" multiple="multiple">
+									<option value="O1" data-badge="">3-х разовое питание с лечением</option>
+									<option value="O2" data-badge="">3-х разовое питание без лечения</option>
+									<option value="O3" data-badge="">2-х разовое питание c лечением</option>
+									<option value="O4" data-badge="">2-х разовое питание без лечения</option>
+								</select>
+							</div><!-- col -->
+							<div class="main-buttons">
+								<a href="#" class="primary-btn">Найти</a>
+							</div>
+						</div>
+					</div><!-- block -->
+				</div>
+				<div class="tab" id="tab-2">
+					<div class="main-block"></div>
+				</div>
+				<div class="tab" id="tab-3">
+					<div class="main-block"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start advantage -->
+	<section class="advantage">
+		<div class="wrapper">
+			<div class="advantage-wrap">
+				<div class="advantage-bg"><img src="img/bg-1.svg" alt=""></div>
+				<div class="advantage-row">
+					<div class="advantage-col">
+						<div class="advantage-ico"><img src="img/ico-1.svg" alt=""></div>
+						<span class="advantage-title">Без предоплаты</span>
+						<p>Вы платите при </p>
+					</div><!-- col -->
+					<div class="advantage-col">
+						<div class="advantage-ico"><img src="img/ico-2.svg" alt=""></div>
+						<span class="advantage-title">Консультация врача</span>
+						<p>Бесплатная помощь врача - курортолога</p>
+					</div><!-- col -->
+					<div class="advantage-col">
+						<div class="advantage-ico"><img src="img/ico-3.svg" alt=""></div>
+						<span class="advantage-title">Трансферы</span>
+						<p>Бронируйте и платите </p>
+					</div><!-- col -->
+					<div class="advantage-col">
+						<div class="advantage-ico"><img src="img/ico-4.svg" alt=""></div>
+						<span class="advantage-title">Авиабилеты</span>
+						<p>Удобный поиск авиабилетов</p>
+					</div><!-- col -->
+					<div class="advantage-col">
+						<div class="advantage-ico"><img src="img/ico-5.svg" alt=""></div>
+						<span class="advantage-title">Визовая помощь</span>
+						<p>Оформление ваучеров</p>
+					</div><!-- col -->
+					<div class="advantage-col">
+						<div class="advantage-ico"><img src="img/ico-6.svg" alt=""></div>
+						<span class="advantage-title">Видеоролики</span>
+						<p>Авторские видео о </p>
+					</div><!-- col -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end advantage -->
+	<!-- start stock -->
+	<section class="stock">
+		<div class="wrapper">
+			<div class="stock-slider swiper-container">
+				<div class="swiper-wrapper">
+					<div class="stock-slide swiper-slide" style="background-image: url(img/img-1-min.jpg);">
+						<span class="stock-subtitle">Карловы Вары, Чехия﻿</span>
+						<span class="stock-title">СКИДКА 50%</span>
+						<a href="#" class="primary-btn">Подробнее</a>
+					</div><!-- slide -->
+					<div class="stock-slide swiper-slide" style="background-image: url(img/img-1-min.jpg);">
+						<span class="stock-subtitle">Карловы Вары, Чехия﻿</span>
+						<span class="stock-title">СКИДКА 50%</span>
+						<a href="#" class="primary-btn">Подробнее</a>
+					</div><!-- slide -->
+					<div class="stock-slide swiper-slide" style="background-image: url(img/img-1-min.jpg);">
+						<span class="stock-subtitle">Карловы Вары, Чехия﻿</span>
+						<span class="stock-title">СКИДКА 50%</span>
+						<a href="#" class="primary-btn">Подробнее</a>
+					</div><!-- slide -->
+					<div class="stock-slide swiper-slide" style="background-image: url(img/img-1-min.jpg);">
+						<span class="stock-subtitle">Карловы Вары, Чехия﻿</span>
+						<span class="stock-title">СКИДКА 50%</span>
+						<a href="#" class="primary-btn">Подробнее</a>
+					</div><!-- slide -->
+					<div class="stock-slide swiper-slide" style="background-image: url(img/img-1-min.jpg);">
+						<span class="stock-subtitle">Карловы Вары, Чехия﻿</span>
+						<span class="stock-title">СКИДКА 50%</span>
+						<a href="#" class="primary-btn">Подробнее</a>
+					</div><!-- slide -->
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end stock -->
+	<!-- start popular -->
+	<section class="popular">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Популярные курорты</h2>
+				<div class="section-button">
+					<a href="#" class="second-btn">Смотреть все курорты</a>
+				</div>
+			</div>
+			<div class="popular-row">
+				<div class="popular-sidebar">
+					<div class="popular-select">
+						<div class="popular-select-top"><img src="img/lang-1.svg" alt="">Чехия <span>14</span></div>
+						<div class="popular-drop">
+							<div class="drop-li"><a href="#" class="active"><img src="img/lang-1.svg" alt="">Чехия <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-2.svg" alt="">Словакия <span>8</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-3.svg" alt="">Венгрия <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-4.svg" alt="">Словения <span>8</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-5.svg" alt="">Литва <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-6.svg" alt="">Латвия <span>8</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-7.svg" alt="">Италия <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-8.svg" alt="">Израиль <span>8</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-1.svg" alt="">Чехия <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-2.svg" alt="">Словакия <span>8</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-3.svg" alt="">Венгрия <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-4.svg" alt="">Словения <span>8</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-5.svg" alt="">Литва <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-6.svg" alt="">Латвия <span>8</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-7.svg" alt="">Италия <span>14</span></a></div>
+							<div class="drop-li"><a href="#"><img src="img/lang-8.svg" alt="">Израиль <span>8</span></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="popular-content">
+					<div class="popular-slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="popular-slide swiper-slide">
+								<div class="post">
+									<div class="post-wrap">
+										<span class="post-tit"><b>1 место</b> в категории</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-2-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Карловы Вары | Чехия</span>
+											<div class="post-row">
+												<div>
+													<div class="price">от <b>37 €</b></div>
+													<span>за 1 ночь 3-х разовое питание с лечением</span>
+												</div>
+												<div>
+													<span>от 3 ночей</span>
+													<span>с 01 ЯНВАРЯ 2021</span>
+												</div>
+											</div>
+											<p>Главной специализацией Карловых Вар является лечение заболеваний желудочно-кишечного тракта с помощью термальной минеральной воды. На курорте также лечат заболевания опорно-двигательного аппарата, органов дыхания, частично проблемы сердечно-сосудистой системы.</p>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="popular-slide swiper-slide">
+								<div class="post">
+									<div class="post-wrap">
+										<span class="post-tit"><b>2 место</b> в категории</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-3-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Марианские Лазни | Чехия</span>
+											<div class="post-row">
+												<div>
+													<div class="price">от <b>37 €</b></div>
+													<span>за 1 ночь 3-х разовое питание с лечением</span>
+												</div>
+												<div>
+													<span>от 3 ночей</span>
+													<span>с 01 ЯНВАРЯ 2021</span>
+												</div>
+											</div>
+											<p>Специализацией курорта Марианские Лазни является лечение заболеваний почек и мочевыводящих путей, опорно-двигательного аппарата, ЖКТ, органов дыхания. Лечебные факторы курорта – минеральная вода, торфяная грязь и природный углекислый газ.</p>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="popular-slide swiper-slide">
+								<div class="post">
+									<div class="post-wrap">
+										<span class="post-tit"><b>3 место</b> в категории</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-4-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Друскининкай | Литва</span>
+											<div class="post-row">
+												<div>
+													<div class="price">от <b>37 €</b></div>
+													<span>за 1 ночь 3-х разовое питание с лечением</span>
+												</div>
+												<div>
+													<span>от 3 ночей</span>
+													<span>с 01 ЯНВАРЯ 2021</span>
+												</div>
+											</div>
+											<p>Главной специализацией Карловых Вар является лечение заболеваний желудочно-кишечного тракта с помощью термальной минеральной воды. На курорте также лечат заболевания опорно-двигательного аппарата, органов дыхания, частично проблемы сердечно-сосудистой системы.</p>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="popular-slide swiper-slide">
+								<div class="post">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-5-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Марианские Лазни | Чехия</span>
+											<div class="post-row">
+												<div>
+													<div class="price">от <b>37 €</b></div>
+													<span>за 1 ночь 3-х разовое питание с лечением</span>
+												</div>
+												<div>
+													<span>от 3 ночей</span>
+													<span>с 01 ЯНВАРЯ 2021</span>
+												</div>
+											</div>
+											<p>Главной специализацией Карловых Вар является лечение заболеваний желудочно-кишечного тракта с помощью термальной минеральной воды. На курорте также лечат заболевания опорно-двигательного аппарата, органов дыхания, частично проблемы сердечно-сосудистой системы.</p>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section-mob">
+				<a href="#" class="second-btn">Смотреть все курорты</a>
+			</div>
+		</div>
+	</section>
+	<!-- end popular -->
+	<!-- start sanatoriums -->
+	<section class="sanatoriums">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Лучшие санатории со всего мира</h2>
+				<div class="section-button">
+					<a href="#" class="second-btn">Смотреть все санатории</a>
+				</div>
+			</div>
+			<div class="allTabs">
+				<div class="sanatoriums-head">
+					<div class="sanatoriums-head-wrap">
+						<div class="sanatoriums-head-mob">ТОП самых продаваемых</div>
+						<ul class="tab-list">
+							<li><a href="#sanatoriums-1" class="sanatoriums-li active">ТОП самых продаваемых</a></li>
+							<li><a href="#sanatoriums-2" class="sanatoriums-li ">ТОП по отзывам</a></li>
+							<li><a href="#sanatoriums-3" class="sanatoriums-li ">ТОП рекомендуемых</a></li>
+							<li><a href="#sanatoriums-4" class="sanatoriums-li local-map">Показать на карте</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab tab-active" id="sanatoriums-1">
+					<div class="sanatoriums-slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade excellent">Отлично</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade okay">Хорошо</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade fine">Нормально</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="tab" id="sanatoriums-2">
+					<div class="sanatoriums-slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade excellent">Отлично</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade okay">Хорошо</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade fine">Нормально</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="tab" id="sanatoriums-3">
+					<div class="sanatoriums-slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade excellent">Отлично</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade okay">Хорошо</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<span class="post-grade fine">Нормально</span>
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="sanatoriums-slide swiper-slide">
+								<div class="post post-second">
+									<div class="post-wrap">
+										<div class="post-img"><div class="post-img-wrap" style="background-image: url(img/img-6-min.jpg);"></div><div class="post-review">23 отзыва</div></div>
+										<div class="post-info">
+											<span class="post-title">Санаторий Richmond</span>
+											<div class="post-locate">Карловы Вары, Чехия</div>
+											<div class="post-stars">
+												<img src="img/star-4.svg" alt="">
+												<span>8.9/10</span>
+											</div>
+											<p>Санаторий Richmond расположен в стороне от курортной зоны, в 1400 метрах от лечебных термальных источников.</p>
+											<div class="post-block">
+												<div class="price">от <b>37 €</b></div>
+												<span>за 1 ночь 3-х разовое питание с лечением</span>
+											</div>
+											<a href="#" class="more">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- slide -->
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="tab" id="sanatoriums-4">
+					<div class="map">
+						<div id="map" class="map-wrap"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-mob">
+				<a href="#" class="second-btn">Смотреть все санатории</a>
+			</div>
+		</div>
+	</section>
+	<!-- end sanatoriums -->
+	<!-- start testimonials -->
+	<section class="testimonials" id="testimonials">
+		<div class="testimonials-bg"><img src="img/bg-2.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Отзывы о компании Kurort.life</h2>
+				<div class="section-button">
+					<a href="#" class="second-btn">Смотреть все отзывы</a>
+				</div>
+			</div>
+			<div class="testimonials-text">
+				<p>Реальные отзывы клиентов помогают пользователям сделать правильный выбор и указывают нам на ошибки. Если вы воспользовались нашими услугами – не забудьте оставить свой отзыв, он появится здесь в тот же день!</p>
+			</div>
+			<div class="testimonials-all">
+				<div class="testimonials-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<span class="date">18 марта, 2021</span>
+								<div class="testimonials-main">
+									<div class="testimonials-user" style="background-image: url(img/user-min.png);"></div>
+									<div class="testimonials-info">
+										<span class="testimonials-name">Надежда Черняева</span>
+										<div class="testimonials-star"><img src="img/star-4.svg" alt=""></div>
+									</div>
+								</div>
+								<p>Я уже не первый раз оформляю маме с ее подругой поездку в санаторий через этот сервис. Все очень понятно. Огромный выбор санаториев. Четкие разъяснения по всем услугам. Хорошие...</p>
+								<a href="#" class="link">Развернуть</a>
+							</div>
+						</div><!-- slide -->
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<span class="date">18 марта, 2021</span>
+								<div class="testimonials-main">
+									<div class="testimonials-user" style="background-image: url(img/user-min.png);"></div>
+									<div class="testimonials-info">
+										<span class="testimonials-name">Надежда Черняева</span>
+										<div class="testimonials-star"><img src="img/star-5.svg" alt=""></div>
+									</div>
+								</div>
+								<p>Очень довольна. Спасибо большое за отличный отдых!!!😁</p>
+								<a href="#" class="link">Развернуть</a>
+							</div>
+						</div><!-- slide -->
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<span class="date">18 марта, 2021</span>
+								<div class="testimonials-main">
+									<div class="testimonials-user" style="background-image: url(img/user-min.png);"></div>
+									<div class="testimonials-info">
+										<span class="testimonials-name">Надежда Черняева</span>
+										<div class="testimonials-star"><img src="img/star-4.svg" alt=""></div>
+									</div>
+								</div>
+								<p>Я уже не первый раз оформляю маме с ее подругой поездку в санаторий через этот сервис. Все очень понятно. Огромный выбор санаториев. Четкие разъяснения по всем услугам. Хорошие...</p>
+								<a href="#" class="link">Развернуть</a>
+							</div>
+						</div><!-- slide -->
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<span class="date">18 марта, 2021</span>
+								<div class="testimonials-main">
+									<div class="testimonials-user" style="background-image: url(img/user-min.png);"></div>
+									<div class="testimonials-info">
+										<span class="testimonials-name">Надежда Черняева</span>
+										<div class="testimonials-star"><img src="img/star-5.svg" alt=""></div>
+									</div>
+								</div>
+								<p>Очень довольна. Спасибо большое за отличный отдых!!!😁</p>
+								<a href="#" class="link">Развернуть</a>
+							</div>
+						</div><!-- slide -->
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="section-mob">
+				<a href="#" class="second-btn">Смотреть все отзывы</a>
+			</div>
+		</div>
+	</section>
+	<!-- end testimonials -->
+	<!-- start blog -->
+	<section class="blog" id="blog">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Новостной блог</h2>
+				<div class="section-button">
+					<a href="#" class="second-btn">Смотреть все новости</a>
+				</div>
+			</div>
+			<div class="blog-all">
+				<div class="blog-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="blog-slide swiper-slide">
+							<div class="blog-wrap">
+								<div class="blog-img"><div class="blog-img-wrap" style="background-image: url(img/img-7-min.jpg);"></div></div>
+								<span class="date">18 марта, 2021</span>
+								<span class="blog-title">Чехия начала пускать граждан Украины</span>
+								<p>Напоминаем, что Чешская Республика открыла границы для украинцев, завершивших полный курс вакцинации не ранее чем за 14 дней до поездки</p>
+								<a href="#" class="more">Подробнее</a>
+							</div>
+						</div><!-- slide -->
+						<div class="blog-slide swiper-slide">
+							<div class="blog-wrap">
+								<div class="blog-img"><div class="blog-img-wrap" style="background-image: url(img/img-7-min.jpg);"></div></div>
+								<span class="date">18 марта, 2021</span>
+								<span class="blog-title">Чехия начала пускать граждан Украины</span>
+								<p>Напоминаем, что Чешская Республика открыла границы для украинцев, завершивших полный курс вакцинации не ранее чем за 14 дней до поездки</p>
+								<a href="#" class="more">Подробнее</a>
+							</div>
+						</div><!-- slide -->
+						<div class="blog-slide swiper-slide">
+							<div class="blog-wrap">
+								<div class="blog-img"><div class="blog-img-wrap" style="background-image: url(img/img-7-min.jpg);"></div></div>
+								<span class="date">18 марта, 2021</span>
+								<span class="blog-title">Чехия начала пускать граждан Украины</span>
+								<p>Напоминаем, что Чешская Республика открыла границы для украинцев, завершивших полный курс вакцинации не ранее чем за 14 дней до поездки</p>
+								<a href="#" class="more">Подробнее</a>
+							</div>
+						</div><!-- slide -->
+						<div class="blog-slide swiper-slide">
+							<div class="blog-wrap">
+								<div class="blog-img"><div class="blog-img-wrap" style="background-image: url(img/img-7-min.jpg);"></div></div>
+								<span class="date">18 марта, 2021</span>
+								<span class="blog-title">Чехия начала пускать граждан Украины</span>
+								<p>Напоминаем, что Чешская Республика открыла границы для украинцев, завершивших полный курс вакцинации не ранее чем за 14 дней до поездки</p>
+								<a href="#" class="more">Подробнее</a>
+							</div>
+						</div><!-- slide -->
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<div class="section-mob">
+				<a href="#" class="second-btn">Смотреть все новости</a>
+			</div>
+		</div>
+	</section>
+	<!-- end blog -->
+	<!-- start subscription -->
+	<section class="subscription" id="subscription">
+		<div class="wrapper">
+			<div class="subscription-wrap" style="background-image: url(img/img-8-min.jpg);">
+				<span class="subscription-title">ПОДПИСЫВАЙТЕСЬ НА НАШУ НОВОСТНУЮ РАССЫЛКУ﻿</span>
+				<p>Получайте всю последнюю информацию о курортных предложениях!</p>
+				<form action="">
+					<div class="subscription-form">
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Имя">
+						</div>
+						<div class="input-block">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<button class="primary-btn primary-btn-white">Подписаться</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end subscription -->
+	<!-- start footer -->
+	<footer class="footer" style="background-image: url(img/bg-3-min.jpg);">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-main">
+					<div class="footer-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+					<div class="footer-menu">
+						<ul class="footer-menu-list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Отзыв</a></li>
+						</ul>
+						<ul class="footer-menu-list">
+							<li><a href="#">Курорты</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Визовая</a></li>
+							<li><a href="#">Видеоролики</a></li>
+						</ul>
+					</div>
+					<div class="footer-info">
+						<p>Мы на связи через мессенджеры</p>
+						<ul class="footer-list">
+							<li><a href="#" class="hb-ico tg-ico"></a></li>
+							<li><a href="#" class="hb-ico wat-ico"></a></li>
+							<li><a href="#" class="hb-ico vib-ico"></a></li>
+							<li><a href="#" class="hb-ico sky-ico"></a></li>
+						</ul>
+						<ul class="footer-links">
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Использование куки</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-block">
+				<div class="footer-actions">
+					<a href="mailto: info@kurort.life" class="footer-link"> info@kurort.life</a>
+					<a href="#" class="primary-btn">Заказать звонок</a>
+				</div>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/inst-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/fb-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/you-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/vk-ico.svg" alt=""></a></li>
+				</ul>
+				<div class="footer-text">
+					<p>Создание сайта — «АБВ сайт»</p>
+					<p>© 2021, Kurort.life </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOlA2b3wMEPHqs4h7NzXPuCgQtA0gK9zs&callback=initMap" async defer></script>
+	<script>
+		function initMap() {
+	    var myLatLng = {lat: 50.44734469, lng: 30.53580546};
+	    var myLatLng1 = {lat: 51.44734469, lng: 32.53580546};
+
+	    // Create a map object and specify the DOM element for display.
+	    var map = new google.maps.Map(document.getElementById('map'), {
+	      center: myLatLng,
+	      scrollwheel: false,
+	      zoom: 12
+	    });
+
+	    // Create a marker and set its position.
+	    var marker = new google.maps.Marker({
+	      map: map,
+	      position: myLatLng,
+	      title: 'Hello World!'
+	    });
+	    var marker1 = new google.maps.Marker({
+	      map: map,
+	      position: myLatLng1,
+	      title: 'Hello World1!'
+	    });
+	  }
+	</script>
+</body>
+</html>
