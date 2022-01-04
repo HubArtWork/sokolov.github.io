@@ -50,7 +50,7 @@
 	  	position: absolute;
 	  	top: 50%;
 	  	left: 50%;
-	  	transform: translate(-50%,-220%);
+	  	transform: translate(-50%,-250%) scale(2);
 	  	transition: 1s all ease;
 	  }
 	  .loader-img{
@@ -120,7 +120,7 @@
 	  .preloader.done .loader-logo {
 	  	top: 20px;
 	  	left: 40px;
-	  	transform: translate(0,0);
+	  	transform: translate(0,0) scale(1);
 	  }
 	  .preloader.done .loader-logo svg {
 	  	max-width: 166px;
@@ -210,9 +210,9 @@
 				<li><a href="news.html">News</a></li>
 				<li><a href="contacts.html">Contacts</a></li>
 			</ul>
-			<a href="#" class="header-ico">
-				<i class="hb-ico phone-ico"></i>
-			</a>
+			<div class="header-button">
+				<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn">Get in touch</a>
+			</div>
 			<div class="header-bar"><span></span></div>
 		</div>
 	</header>
@@ -223,7 +223,7 @@
 		<div class="wrapper">
 			<div class="main-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 				<h1 class="main-title">We renovate buildings into new unique concepts</h1>
-				<a href="#" class="primary-btn">Get in touch</a>
+				<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn second-btn-white">Get in touch</a>
 			</div>
 			<a href="#project" class="main-link link-scroll">Open project</a>
 		</div>
@@ -234,7 +234,7 @@
 		<div class="wrapper">
 			<div class="about-row">
 				<div class="about-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
-					<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="about-img__wrap link-youtube video" style="background-image: url(img/img-1.jpeg);">
+					<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="about-img__wrap link-youtube video" style="background-image: url(img/img-3.jpeg);">
 						<div class="about-play"><svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="80" rx="40" fill="black"/><path d="M35 51V31.5385V29L51 40L35 51Z" fill="white"/></svg></div>
 					</a>
 				</div>
@@ -292,9 +292,9 @@
 				<div class="project-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 					<h2 class="section-title">Park Avenue 684</h2>
 					<p>Located in the very heart of New York with the roughly overall area in 12000 square feet new renovated project Park Avenue 684 will become the new hot spot for the local community with premises for an art gallery, business club, events, and offices.</p>
-					<a href="#" class="primary-btn">All projects</a>
+					<a href="#" class="second-btn">All projects</a>
 				</div>
-				<div class="project-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><div class="project-img-wrap" style="background-image: url(img/img-1.jpeg);"></div></div>
+				<div class="project-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><div class="project-img-wrap" style="background-image: url(img/img-2.jpeg);"></div></div>
 			</div>
 		</div>
 	</section>
@@ -309,7 +309,7 @@
 			<div class="articles-all">
 				<div class="article" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 					<div class="article-images">
-						<img class="article-img" src="img/img-1.jpeg" alt="">
+						<img class="article-img" src="img/img-4.jpeg" alt="">
 						<span class="article-bg"><img src="img/article-bg.svg" alt=""></span>
 					</div>
 					<div class="article-info">
@@ -321,7 +321,7 @@
 				</div>
 				<div class="article" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 					<div class="article-images">
-						<img class="article-img" src="img/img-1.jpeg" alt="">
+						<img class="article-img" src="img/img-3.jpeg" alt="">
 						<span class="article-bg"><img src="img/article-bg.svg" alt=""></span>
 					</div>
 					<div class="article-info">
@@ -333,7 +333,7 @@
 				</div>
 				<div class="article" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
 					<div class="article-images">
-						<img class="article-img" src="img/img-1.jpeg" alt="">
+						<img class="article-img" src="img/img-5.jpeg" alt="">
 						<span class="article-bg"><img src="img/article-bg.svg" alt=""></span>
 					</div>
 					<div class="article-info">
@@ -360,10 +360,10 @@
 	</section>
 	<!-- end articles -->
 	<!-- start contacts -->
-	<section class="contacts">
+	<section class="contacts" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
 		<div class="wrapper">
 			<div class="contacts-row">
-				<div class="contacts-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<div class="contacts-info">
 					<h2 class="section-title">Contacts</h2>
 					<ul class="contacts-list">
 						<li><a href="tel:+12015499090">+1 (201) 549-90-90</a></li>
@@ -377,12 +377,12 @@
 						<li><a href="#"><i class="hb-ico youtube-ico"></i></a></li>
 					</ul>
 					<div class="contacts-bottom">
-						<p>© Copyright 2020. All rights reserved</p>
+						<p>© Copyright 2022. All rights reserved</p>
 						<a href="mailto:office@argodev.com">office@argodev.com</a>
 					</div>
 				</div>
-				<div class="contacts-form" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
-					<h3 class="contacts-title">Write to us:</h3>
+				<div class="contacts-form">
+					<h3 class="contacts-title">We would love to hear them out:</h3>
 					<form action="">
 						<div class="contacts-form__row">
 							<div class="contacts-col">
@@ -404,7 +404,7 @@
 						</div>
 						<div class="contacts-form__bottom">
 							<p>By clicking "Send", I give my consent to the processing of personal data</p>
-							<button class="primary-btn"><span>Send</span></button>
+							<button class="second-btn">Send</button>
 						</div>
 					</form>
 				</div>
@@ -439,6 +439,28 @@
 
 		});
 	</script>
+	<!-- fancybox modal -->
+	<a data-fancybox data-src="#modal-form" href="javascript:;" class="call-btn"></a>
+	<div style="display: none;" id="modal-form" class="modal">
+		<div class="modal-wrap">
+			<h3 class="modal-title">Make request</h3>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Name:">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Phone:">
+				</div>
+				<div class="input-block">
+					<input type="email" name="email" placeholder="Email:">
+				</div>
+				<div class="input-block">
+					<textarea name="text" placeholder="Message"></textarea>
+				</div>
+				<button class="second-btn">Send</button>
+			</form>
+		</div>
+	</div>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
