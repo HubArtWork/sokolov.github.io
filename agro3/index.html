@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="shortcut icon" href="img/favicon.svg">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<style>
+		.preloader {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  z-index: 99999;
+		  transition: 1s all ease;
+		  opacity: 1;
+		  visibility: visible;
+		  background-color: #1b67b0;
+		  transition-delay: .7s;
+		  overflow: hidden;
+		}
+		.preloader .wrapper {
+			display: flex;
+		  align-items: center;
+		  justify-content: center;
+			height: 100%;
+			position: relative;
+		}
+		.loader {
+			max-width: 366px;
+			width: 100%;
+		}
+	  .loader-logo {
+	  	display: flex;
+	  	flex-flow: row nowrap;
+	  	align-items: center;
+	  	position: absolute;
+	  	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%,-250%) scale(2);
+	  	transition: 1s all ease;
+	  }
+	  .loader-img{
+	  	min-width: 37px;
+	  	margin-right: 10px;
+	  }
+	  .loader-logo svg{
+	  	display: block;
+	  }
+	  .loader-txt{
+	  	display: block;
+	  	font-size: 16px;
+	  	line-height: 1.2;
+	  	font-weight: bold;
+	  	color: #fff;
+	  }
+	  .loader-txt b{
+	  	display: block;
+	  	text-transform: uppercase;
+	  }
+	  .loader-list {
+	  	display: flex;
+	  	flex-flow: row nowrap;
+	  	align-items: center;
+	  	justify-content: space-between;
+	  	margin: 30px 0;
+	  	transition: opacity 1s ease;
+	  }
+	  .loader-list li {
+	  	font-size: 12px;
+	  	line-height: 16px;
+	  	color: #fff;
+	  }
+	  .loader-row {
+	  	height: 22px;
+	  	padding: 11px 101px 0 0;
+	  	position: relative;
+	  	transition: 1s all ease;
+	  }
+	  .loader-bar {
+	  	display: flex;
+	  	height: 3px;
+	  }
+	  .loader-bar span {
+	  	display: inline-block;
+	  	height: 3px;
+	  	background-color: #fff;
+	  }
+	  .preloader .loader #load_prec {
+	  	position: absolute;
+	  	top: 0;
+	  	right: 0;
+			display: block;
+	    font-size: 24px;
+	    line-height: 29px;
+	    color: #fff;
+	    letter-spacing: 0.1em;
+	  }
+	  .preloader.done {
+	  	background-color: transparent;
+	  	pointer-events: none;
+	  }
+	  .preloader.done .loader-list, .preloader.done .loader-row {
+	  	opacity: 0;
+	  	visibility: hidden;
+	  }
+	  .preloader.done .loader-logo {
+	  	top: 20px;
+	  	left: 40px;
+	  	transform: translate(0,0) scale(1);
+	  }
+	  .preloader.done .loader-logo svg {
+	  	max-width: 166px;
+	  }
+	  .preloader.done-all .loader-logo {
+	  	display: none;
+	  }
+	  @media only screen and (max-width : 1200px){
+	  	.preloader.done .loader-logo {
+		  	left: 30px;
+		  }
+	  }
+	  @media only screen and (max-width : 920px){
+	  	.preloader.done .loader-logo {
+		  	left: 20px;
+		  }
+	  }
+	  @media only screen and (max-width : 768px){
+	  	.preloader .wrapper {
+	  		padding: 0;
+	  	}
+	  	.loader {
+	  		max-width: 282px;
+	  	}
+	  	.loader-logo svg{
+		  	display: block;
+		  	max-width: 282px;
+		  }
+		  .loader-list {
+		  	margin: 20px 0;
+		  }
+		  .loader-list li {
+		  	font-size: 11px;
+		  	line-height: 17px;
+		  }
+		  .loader-row {
+		  	padding: 9px 78px 0 0;
+		  }
+		  .preloader .loader #load_prec {
+		    font-size: 18px;
+		    line-height: 22px;
+		  }
+		  .preloader.done .loader-logo {
+		  	top: 10px;
+		  	left: 20px;
+		  }
+	  }
+	  @media only screen and (max-width : 370px){
+	  	.preloader.done .loader-logo {
+		  	left: 15px;
+		  }
+	  	.preloader.done .loader-logo svg {
+		  	max-width: 83px;
+		  }
+	  }
+	</style>
+	<div id="page-preloader" class="preloader">
+		<div class="wrapper">
+			<div class="loader">
+				<div class="loader-logo">
+					<span class="loader-img"><svg width="37" height="40" viewBox="0 0 37 40" fill="none"><path d="M30.47 0H19.393L0 40h11.075L30.47 0z" fill="#FAFAFC"></path><path d="M37 25.263H26.116l5.44-10.526L37 25.263z" fill="#FAFAFC"></path></svg></span>
+					<span class="loader-txt"><b>Agro</b>Construction</span>
+				</div>
+				<ul class="loader-list">
+					<li>General Contracting</li>
+					<li>Expertizing</li>
+					<li>Project Development</li>
+				</ul>
+				<div class="loader-row">
+					<div class="loader-bar"><span id="prec_bar" style="width: 101%;"></span></div>
+					<span id="load_prec">100%</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="index.html">
+				<span class="loader-img"><svg width="37" height="40" viewBox="0 0 37 40" fill="none"><path d="M30.47 0H19.393L0 40h11.075L30.47 0z" fill="#FAFAFC"></path><path d="M37 25.263H26.116l5.44-10.526L37 25.263z" fill="#FAFAFC"></path></svg></span>
+				<span class="loader-txt"><b>Agro</b>Construction</span>
+			</a></div>
+			<div class="header-wrap">
+				<ul class="header-list">
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="expertize.html">Expertize</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+				<div class="header-mob">
+					<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn">Get in touch</a>
+				</div>
+			</div>
+			<div class="header-button">
+				<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn">Get in touch</a>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-bg" style="background-image: url(img/img-1.jpeg);"></div>
+		<div class="wrapper">
+			<div class="main-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<h1 class="main-title">We renovate buildings into new unique concepts</h1>
+				<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn second-btn-white">Get in touch</a>
+			</div>
+			<a href="#project" class="main-link link-scroll">Open project</a>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<div class="about-row">
+				<div class="about-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="about-img__wrap link-youtube video" style="background-image: url(img/img-3.jpeg);">
+						<div class="about-play"><svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="80" rx="40" fill="black"/><path d="M35 51V31.5385V29L51 40L35 51Z" fill="white"/></svg></div>
+					</a>
+				</div>
+				<div class="about-info">
+					<span class="about-subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">About Us</span>
+					<h2 class="about-title" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">We have been building Manhattan since 2003</h2>
+					<div data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<p>With more than 15 years in the residential and commercial construction industry, Argo Construction understands that each project is unique and we work closely with our clients to identify their requirements and develop a construction program that fits their scheduling and budgetary constraints. This hands-on approach in the early stages provides a clear picture of the final results, thereby ensuring that we meet our customer’s needs and exceed their expectations.</p>
+					</div>
+					<div class="about-btn" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+						<a href="#" class="second-btn">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="about-list">
+				<div class="about-col" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="about-ico">
+						<img src="img/ico-1.svg" alt="">
+					</div>
+					<h4 class="about-col__title">General Contracting</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div><!-- col-->
+				<div class="about-col" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="about-ico">
+						<img src="img/ico-2.svg" alt="">
+					</div>
+					<h4 class="about-col__title">Expertizing</h4>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic possimus quas, repellat.</p>
+				</div><!-- col-->
+				<div class="about-col" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="about-ico">
+						<img src="img/ico-3.png" alt="">
+					</div>
+					<h4 class="about-col__title">Project Development</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Amet voluptas est consectetur ipsam.</p>
+				</div><!-- col-->
+				<div class="about-col" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="about-ico">
+						<img src="img/ico-4.svg" alt="">
+					</div>
+					<h4 class="about-col__title">Real Estate Development</h4>
+					<p>Lorem ipsum dolor sit amet consectetur.</p>
+				</div><!-- col-->
+			</div>
+			<div class="about-mob" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<a href="#" class="second-btn">Read more</a>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start project -->
+	<section class="project" id="project">
+		<div class="wrapper">
+			<div class="project-row">
+				<div class="project-info" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<h2 class="section-title">Park Avenue 684</h2>
+					<p>Located in the very heart of New York with the roughly overall area in 12000 square feet new renovated project Park Avenue 684 will become the new hot spot for the local community with premises for an art gallery, business club, events, and offices.</p>
+					<a href="#" class="second-btn">All projects</a>
+				</div>
+				<div class="project-img" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"><div class="project-img-wrap" style="background-image: url(img/img-2.jpeg);"></div></div>
+			</div>
+		</div>
+	</section>
+	<!-- end project -->
+	<!-- start articles -->
+	<section class="articles">
+		<div class="wrapper">
+			<div class="articles-top" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+				<h2 class="section-title">Featured news</h2>
+				<svg width="256" height="17" viewBox="0 0 256 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 17V9.14546C0 9.14546 184.957 -8.24673 256 4.93767V8.86494C256 8.86494 154.947 -2.63635 0 17Z" fill="#3C67FF"/></svg>
+			</div>
+			<div class="articles-all">
+				<div class="article" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="article-images">
+						<img class="article-img" src="img/img-4.jpeg" alt="">
+						<span class="article-bg"><img src="img/article-bg.svg" alt=""></span>
+					</div>
+					<div class="article-info">
+						<span class="article-date">27.01.2020 by Andrew Norton</span>
+						<h3 class="article-title"><a href="#">Argo gives a new apart complex in New York City the Go-Ahead</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia nobis veritatis cum at, id dolore reiciendis consequatur voluptates expedita vero necessitatibus quo illo fugiat mollitia placeat error perspiciatis. Temporibus, nihil.</p>
+						<a href="#" class="article-link"></a>
+					</div>
+				</div>
+				<div class="article" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="article-images">
+						<img class="article-img" src="img/img-3.jpeg" alt="">
+						<span class="article-bg"><img src="img/article-bg.svg" alt=""></span>
+					</div>
+					<div class="article-info">
+						<span class="article-date">27.01.2020 by Andrew Norton</span>
+						<h3 class="article-title"><a href="#">Argo gives a new apart complex in New York City the Go-Ahead</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia nobis veritatis cum at, id dolore reiciendis consequatur voluptates expedita vero necessitatibus quo illo fugiat mollitia placeat error perspiciatis. Temporibus, nihil.</p>
+						<a href="#" class="article-link"></a>
+					</div>
+				</div>
+				<div class="article" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="article-images">
+						<img class="article-img" src="img/img-5.jpeg" alt="">
+						<span class="article-bg"><img src="img/article-bg.svg" alt=""></span>
+					</div>
+					<div class="article-info">
+						<span class="article-date">27.01.2020 by Andrew Norton</span>
+						<h3 class="article-title"><a href="#">Argo gives a new apart complex in New York City the Go-Ahead</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia nobis veritatis cum at, id dolore reiciendis consequatur voluptates expedita vero necessitatibus quo illo fugiat mollitia placeat error perspiciatis. Temporibus, nihil.</p>
+						<a href="#" class="article-link"></a>
+					</div>
+				</div>
+				<div class="article" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+					<div class="article-images">
+						<img class="article-img" src="img/img-1.jpeg" alt="">
+						<span class="article-bg"><img src="img/article-bg.svg" alt=""></span>
+					</div>
+					<div class="article-info">
+						<span class="article-date">27.01.2020 by Andrew Norton</span>
+						<h3 class="article-title"><a href="#">Argo gives a new apart complex in New York City the Go-Ahead</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia nobis veritatis cum at, id dolore reiciendis consequatur voluptates expedita vero necessitatibus quo illo fugiat mollitia placeat error perspiciatis. Temporibus, nihil.</p>
+						<a href="#" class="article-link"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end articles -->
+	<!-- start contacts -->
+	<section class="contacts" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+		<div class="wrapper">
+			<div class="contacts-row">
+				<div class="contacts-info">
+					<h2 class="section-title">Contacts</h2>
+					<ul class="contacts-list">
+						<li><a href="tel:+12015499090">+1 (201) 549-90-90</a></li>
+						<li><a href="mailto:office@argodev.com">office@argodev.com</a></li>
+					  <li><span>95 Chestnut Ridge Rd, Montvale, NJ 07645 — Text map</span></li>
+					</ul>
+					<a href="#" class="contacts-link">For legal entities</a>
+					<ul class="social">
+						<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico whatsapp-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico youtube-ico"></i></a></li>
+					</ul>
+					<div class="contacts-bottom">
+						<p>© Copyright 2022. All rights reserved</p>
+						<a href="mailto:office@argodev.com">office@argodev.com</a>
+					</div>
+				</div>
+				<div class="contacts-form">
+					<h3 class="contacts-title">We would love to hear them out:</h3>
+					<form action="">
+						<div class="contacts-form__row">
+							<div class="contacts-col">
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Name:">
+								</div>
+							</div><!-- col -->
+							<div class="contacts-col">
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Phone:">
+								</div>
+							</div><!-- col -->
+						</div>
+						<div class="input-block">
+							<input type="email" name="email" placeholder="Email:">
+						</div>
+						<div class="input-block">
+							<textarea name="text" placeholder="Message"></textarea>
+						</div>
+						<div class="contacts-form__bottom">
+							<p>By clicking "Send", I give my consent to the processing of personal data</p>
+							<button class="second-btn">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contacts -->
+	<script>
+		window.addEventListener("load", function() {
+		  var
+				preloader = document.getElementById('page-preloader'),
+				prec_display = document.getElementById('load_prec');
+				prec_bar = document.getElementById('prec_bar'),
+				gog = 0;
+
+			var interval = setInterval(counter,15);
+
+			function counter(){
+				prec_display.innerHTML = sum() + '%';
+				prec_bar.style.width = sum() + '%';
+
+				if(gog == 102){
+					clearInterval(interval);
+					preloader.classList.add('done');
+					setTimeout(function(){preloader.classList.add('done-all');}, 1000);
+				}
+			}
+
+			function sum(){
+				return gog++;
+			}
+
+		});
+	</script>
+	<!-- fancybox modal -->
+	<a data-fancybox data-src="#modal-form2" href="javascript:;" class="call-btn"></a>
+	<div style="display: none;" id="modal-form" class="modal">
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<h3 class="modal-title">Make request</h3>
+				<form action="">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Name:">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Phone:">
+					</div>
+					<div class="input-block">
+						<input type="email" name="email" placeholder="Email:">
+					</div>
+					<div class="input-block">
+						<textarea name="text" placeholder="Message"></textarea>
+					</div>
+					<button class="second-btn">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
