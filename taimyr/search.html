@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">
+					<picture>
+						<source srcset="img/logo.svg" media="(min-width: 901px)">
+						<img src="img/logo-mob.svg" alt="MDN">
+					</picture>
+				</a>
+			</div>
+			<div class="header-wrap">
+				<ul class="header-list">
+					<li><a href="#" class="active">Новости</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li class="link-mob"><a href="#">Войти</a></li>
+				</ul>
+				<ul class="header-social">
+					<li><a href="#" class="hb-ico tg-ico"></a></li>
+					<li><a href="#" class="hb-ico wat-ico"></a></li>
+				</ul>
+			</div>
+			<div class="header-actions">
+				<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn second-btn-white">Сообщить новость</a>
+				<a href="#" class="header-link">Войти</a>
+				<ul class="header-social">
+					<li><a href="#" class="hb-ico tg-ico"></a></li>
+					<li><a href="#" class="hb-ico wat-ico"></a></li>
+				</ul>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<div class="search-bg"></div>
+	<section class="main main-search">
+		<div class="main-head">
+			<div class="wrapper">
+				<div class="search">
+					<form action="">
+						<div class="search-input">
+							<input type="text" name="text" placeholder="Поиск">
+							<button class="primary-btn">Найти</button>
+						</div>
+					</form>
+					<div class="search-row">
+						<div class="search-col">
+							<span class="search-label">Показать</span>
+							<div class="search-drop">
+								<div class="search-drop-top">За всё время</div>
+								<div class="search-drop-wrap">
+									<ul>
+										<li class="active"><span>За всё время</span></li>
+										<li><span>За час</span></li>
+										<li><span>За 24 часа</span></li>
+										<li><span>За неделю</span></li>
+										<li><span>За месяц</span></li>
+										<li><span>За год</span></li>
+										<li class="search-drop-date">
+											<span>За определенный период</span>
+											<div class="search-date">
+												<div class="search-date-sidebar">
+													<div class="search-date-input">
+														<span>С</span>
+														<input type="text" name="text" placeholder="06/09/2021" class="active">
+													</div>
+													<div class="search-date-input">
+														<span>ПО</span>
+														<input type="text" name="text" placeholder="дд/мм/гггг">
+													</div>
+													<div class="search-date-btn">
+														<a href="#" class="primary-btn disabled">Поиск</a>
+													</div>
+												</div>
+												<div class="search-date-content">
+													<div class="search-date-row">
+														<div class="search-date-col">
+															<span>С</span>
+															<select name="text">
+																<option value="">Сентябрь</option>
+															</select>
+														</div>
+														<div class="search-date-col">
+															<span>ПО</span>
+															<select name="text">
+																<option value="">2021</option>
+															</select>
+														</div>
+													</div>
+													<div id="txtDateRange"></div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-col">
+							<span class="search-label">Сортировать</span>
+							<div class="search-drop">
+								<div class="search-drop-top">По дате</div>
+								<div class="search-drop-wrap">
+									<ul>
+										<li class="active"><span>По дате</span><i class="hb-ico up-arrow"></i></li>
+										<li><span>По дате</span><i class="hb-ico up-down"></i></li>
+										<li><span>По соответствию</span><i class="hb-ico up-arrow"></i></li>
+										<li><span>По соответствию</span><i class="hb-ico up-down"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search-hr"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="main-block">
+				<div class="main-year">2021</div>
+				<div class="main-top">
+					<div class="main-top-wrap">
+						<div class="main-top-block">
+							<span class="main-date">20 октябряя</span>
+							<span class="main-time">12:39</span>
+							<div class="main-share">
+								<div class="main-share-link">Поделиться</div>
+								<ul>
+									<li><a href="#"><b><i class="hb-ico Whatsapp-ico"></i></b><span>Whatsapp</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Telegram-ico"></i></b><span>Telegram</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Facebook-ico"></i></b><span>Facebook</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Twitter-ico"></i></b><span>Twitter</span></a></li>
+									<li><a href="#"><b><i class="hb-ico VK-ico"></i></b><span>Вконтакте</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Classmates-ico"></i></b><span>Одноклассники</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="main-tag">#Таймыр #Дудинка #ТДНТ</a>
+					</div>
+					<ul class="main-list">
+						<li><a href="#" class="active">rus</a></li>
+						<li><a href="#">dol</a></li>
+						<li><a href="#">nga</a></li>
+						<li><a href="#">nen</a></li>
+						<li><a href="#">eve</a></li>
+						<li><a href="#">ene</a></li>
+					</ul>
+					<select name="text">
+						<option value="rus">rus</option>
+						<option value="dol">dol</option>
+						<option value="nga">nga</option>
+						<option value="nen">nen</option>
+						<option value="eve">eve</option>
+						<option value="ene">ene</option>
+					</select>
+				</div>
+				<p>В поселке Носок торжественно открыли обновленную смотровую площадку на «Катиной сопке». Строительство площадки – это первый этап проекта «Поселок Носок – наш общий дом», который стал победителем грантового конкурса «Мир Таймыра», организованного компанией «Норильский никель». Местные мастера Иван Ямкин, Александр Ямкин и Иван Яр демонтировали старую площадку и установили новую. При входе на площадку добавили элемент в виде арки. Отремонтировали лестницу – подъем с причала. Заменили доски на тротуаре, ведущем к смотровой площадке. На открытии перед жителями выступили танцевальные коллективы «Ритм» и «Хаерко». Во время праздника резко ухудшилась погода, поэтому конкурсы и игры для детей пришлось отменить – им просто раздали сладкие подарки. Вторую часть проекта «Поселок Носок – наш общий дом» реализуют следующим летом – нанесут на перила смотровой площадки ненецкие орнаменты, установят беседку для отдыха, установят вывеску «Добро пожаловать» и проведут ряд субботников по очистке берега.</p>
+				<div class="main-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="img/img-4-min.jpg" data-fancybox="images" style="background-image: url(img/img-4-min.jpg);"></a></div>
+		        <div class="swiper-slide"><a href="img/img-5-min.jpg" data-fancybox="images" style="background-image: url(img/img-5-min.jpg);"></a></div>
+		        <div class="swiper-slide"><a href="img/img-6-min.jpg" data-fancybox="images" style="background-image: url(img/img-6-min.jpg);"></a></div>
+		        <div class="swiper-slide"><a href="img/img-7-min.jpg" data-fancybox="images" style="background-image: url(img/img-7-min.jpg);"></a></div>
+		        <div class="swiper-slide"><a href="img/img-8-min.jpg" data-fancybox="images" style="background-image: url(img/img-8-min.jpg);"></a></div>
+		     	</div>
+		     	<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div><!-- block -->
+			<div class="main-block">
+				<div class="main-year">2021</div>
+				<div class="main-top">
+					<div class="main-top-wrap">
+						<div class="main-top-block">
+							<span class="main-date">04 ноября</span>
+							<span class="main-time">12:39</span>
+							<div class="main-share">
+								<div class="main-share-link">Поделиться</div>
+								<ul>
+									<li><a href="#"><b><i class="hb-ico Whatsapp-ico"></i></b><span>Whatsapp</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Telegram-ico"></i></b><span>Telegram</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Facebook-ico"></i></b><span>Facebook</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Twitter-ico"></i></b><span>Twitter</span></a></li>
+									<li><a href="#"><b><i class="hb-ico VK-ico"></i></b><span>Вконтакте</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Classmates-ico"></i></b><span>Одноклассники</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="main-tag">#Таймыр #Дудинка #ТДНТ</a>
+					</div>
+					<ul class="main-list">
+						<li><a href="#" class="active">rus</a></li>
+						<li><a href="#">dol</a></li>
+						<li><a href="#">nga</a></li>
+						<li><a href="#">nen</a></li>
+						<li><a href="#">eve</a></li>
+						<li><a href="#">ene</a></li>
+					</ul>
+					<select name="text">
+						<option value="rus">rus</option>
+						<option value="dol">dol</option>
+						<option value="nga">nga</option>
+						<option value="nen">nen</option>
+						<option value="eve">eve</option>
+						<option value="ene">ene</option>
+					</select>
+				</div>
+				<p>В Дудинку опять пришли песцы. Видео, на котором песец бегает по проезжей части возле городской ветеринарной станции, выложил один из пользователей сети ВКонтакте. Напомним, самое крупное нашествие песцов на город было два года назад. Эти зверьки целыми семьями жили под домами и контейнерами, питаясь отходами. Больше всего песцов тогда зимовали возле рыбоперерабатывающего цеха.</p>
+				<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="link-youtube"><img src="img/img-2-min.jpg" alt=""></a>
+			</div><!-- block -->
+			<div class="main-action">
+				<ul class="main-tags">
+					<li><a href="#">#Таймыр</a></li>
+					<li><a href="#">#Хатанга</a></li>
+					<li><a href="#">#Якутия</a></li>
+					<li><a href="#">#конкурс</a></li>
+					<li><a href="#">#Норильск</a></li>
+					<li><a href="#">#Дудинка</a></li>
+					<li><a href="#">#ПОРА</a></li>
+					<li><a href="#">#дороги</a></li>
+					<li><a href="#">#COVID</a></li>
+					<li><a href="#">#население</a></li>
+					<li><a href="#">#жильё</a></li>
+					<li><a href="#">#Красноярский Край</a></li>
+					<li><a href="#">#выплаты</a></li>
+					<li><a data-fancybox data-src="#modal-theme" href="javascript:;" class="themes-btn">Другие темы</a></li>
+				</ul>
+				<div class="main-action-block">
+					<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn second-btn-white">Сообщить новость</a>
+				</div>
+			</div>
+			<div class="main-block">
+				<div class="main-year">2021</div>
+				<div class="main-top">
+					<div class="main-top-wrap">
+						<div class="main-top-block">
+							<span class="main-date">04 ноября</span>
+							<span class="main-time">12:39</span>
+							<div class="main-share">
+								<div class="main-share-link">Поделиться</div>
+								<ul>
+									<li><a href="#"><b><i class="hb-ico Whatsapp-ico"></i></b><span>Whatsapp</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Telegram-ico"></i></b><span>Telegram</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Facebook-ico"></i></b><span>Facebook</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Twitter-ico"></i></b><span>Twitter</span></a></li>
+									<li><a href="#"><b><i class="hb-ico VK-ico"></i></b><span>Вконтакте</span></a></li>
+									<li><a href="#"><b><i class="hb-ico Classmates-ico"></i></b><span>Одноклассники</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="main-tag">#Таймыр #Дудинка #ТДНТ</a>
+					</div>
+					<ul class="main-list">
+						<li><a href="#" class="active">rus</a></li>
+						<li><a href="#">dol</a></li>
+						<li><a href="#">nga</a></li>
+						<li><a href="#">nen</a></li>
+						<li><a href="#">eve</a></li>
+						<li><a href="#">ene</a></li>
+					</ul>
+					<select name="text">
+						<option value="rus">rus</option>
+						<option value="dol">dol</option>
+						<option value="nga">nga</option>
+						<option value="nen">nen</option>
+						<option value="eve">eve</option>
+						<option value="ene">ene</option>
+					</select>
+				</div>
+				<p>Михаил Михайлов из Хатанги стал одним из победителей всероссийского фотоконкурса «Мир глазами коренных народов». Его фотография ребенка в национальной долганской одежде, сделанная в поселке Кресты, стала лучшей в специальной номинации «Таймыр – сердце Арктики». <br>В этом конкурсе, организованном МОО КМНСОЮЗ, жители Таймыра приняли самое активное участие – половина заявок поступила именно из этого района. В основной конкурсной борьбе первое место заняла студентка с Ямала Дарья Вануйто, второе место досталось фотографу Альберту Григорьеву из Якутска, а третье место присудили учительнице из Сындасско Клавдии Чуприной. Фотографии победителей можно увидеть на <a href="#">сайте</a> МОО КМНСОЮЗ.</p>
+				<div class="main-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="img/img-3-min.jpg" data-fancybox="images" class="swiper-slide" style="background-image: url(img/img-3-min.jpg);"></a></div>
+		     	</div>
+		     	<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div><!-- block -->
+			<div class="button-center">
+				<a href="#" class="second-btn">Загрузить еще</a>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-wrap">
+				<div class="footer-logo">
+					<a href="#">
+						<picture>
+							<source srcset="img/logo-2.svg" media="(min-width: 901px)">
+							<img src="img/logo-mob.svg" alt="MDN">
+						</picture>
+					</a>
+				</div>
+				<ul class="footer-menu">
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Поиск</a></li>
+				</ul>
+				<div class="footer-block">
+					<div class="footer-buttons">
+						<a href="#" class="primary-btn primary-btn-white">Сообщить новость</a>
+						<a href="#" class="second-btn second-btn-white">Личный кабинет</a>
+					</div>
+					<div class="footer-row">
+						<ul class="footer-social">
+							<li><a href="#" class="hb-ico tg-ico"></a></li>
+							<li><a href="#" class="hb-ico wat-ico"></a></li>
+						</ul>
+						<p>© 2021 Наш Таймыр</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox modal-theme -->
+	<div style="display: none;" id="modal-theme" class="modal modal-theme">
+		<div class="modal-wrap">
+			<ul class="main-tags">
+				<li><a href="#">#Таймыр</a></li>
+				<li><a href="#">#Хатанга</a></li>
+				<li><a href="#">#Якутия</a></li>
+				<li><a href="#">#конкурс</a></li>
+				<li><a href="#">#Норильск</a></li>
+				<li><a href="#">#Дудинка</a></li>
+				<li><a href="#">#ПОРА</a></li>
+				<li><a href="#">#дороги</a></li>
+				<li><a href="#">#COVID</a></li>
+				<li><a href="#">#население</a></li>
+				<li><a href="#">#жильё</a></li>
+				<li><a href="#">#Красноярский Край</a></li>
+				<li><a href="#">#выплаты</a></li>
+				<li><a href="#">#Норильск</a></li>
+				<li><a href="#">#Дудинка</a></li>
+				<li><a href="#">#ПОРА</a></li>
+				<li><a href="#">#дороги</a></li>
+				<li><a href="#">#COVID</a></li>
+				<li><a href="#">#население</a></li>
+				<li><a href="#">#жильё</a></li>
+				<li><a href="#">#Красноярский Край</a></li>
+				<li><a href="#">#выплаты</a></li>
+			</ul>
+			<div class="modal-btn">
+				<a href="#">Другие темы</a>
+			</div>
+		</div>
+	</div>
+	<!-- fancybox modal-form -->
+	<div style="display: none;" id="modal-form" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<span class="modal-title">Сообщить новость</span>
+			</div>
+			<div class="modal-content">
+				<form action="">
+					<div class="input-block">
+						<textarea name="text" placeholder="Введите текст новости *"></textarea>
+					</div>
+					<div class="modal-all">
+						<div class="modal-row">
+							<div class="file">
+								<input type="file">
+								Прикрепите фото, видео файлы или документы при необходимости
+							</div>
+						</div>
+						<div class="modal-files">
+							<ul>
+								<li>Таймыр_01.pdf <i class="hb-ico close-ico"></i></li>
+								<li>Таймыр_01.pdf <i class="hb-ico close-ico"></i></li>
+							</ul>
+							<div class="modal-list">
+								<div class="modal-item">
+									<div class="modal-bar"><span style="width: 60%;"></span></div>
+									<span>photo_01.jpg</span>
+								</div>
+							</div>
+						</div>
+						<div class="modal-btn">
+							<a href="#">Прикрепить</a>
+						</div>
+						<span class="modal-txt"><i>*</i>необходимо указать</span>
+					</div>
+					<div class="modal-main">
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Ваше имя">
+						</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Teлефон">
+						</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Email">
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Даю согласие на обработку и хранение моих персональный данных</p>
+						</div>
+						<div class="modal-button">
+							<button class="primary-btn primary-btn-big">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script>
+		if($('#txtDateRange').length != 0){
+		$( "#txtDateRange" ).datepicker();
+
+		( function( factory ) {
+		"use strict";
+
+		if ( typeof define === "function" && define.amd ) {
+
+			// AMD. Register as an anonymous module.
+			define( [ "../widgets/datepicker" ], factory );
+		} else {
+
+			// Browser globals
+			factory( jQuery.datepicker );
+		}
+		} )( function( datepicker ) {
+		"use strict";
+
+		datepicker.regional.ru = {
+			closeText: "Закрыть",
+			prevText: "&#x3C;Пред",
+			nextText: "След&#x3E;",
+			currentText: "Сегодня",
+			monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+			"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+			monthNamesShort: [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+			"Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+			dayNames: [ "воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота" ],
+			dayNamesShort: [ "вск", "пнд", "втр", "срд", "чтв", "птн", "сбт" ],
+			dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
+			weekHeader: "Нед",
+			dateFormat: "dd.mm.yy",
+			firstDay: 1,
+			isRTL: false,
+			showMonthAfterYear: false,
+			yearSuffix: "" };
+		datepicker.setDefaults( datepicker.regional.ru );
+
+		return datepicker.regional.ru;
+
+	} );
+
+	(function($) {
+		  function compareDates(startDate, endDate, format) {
+		    var temp, dateStart, dateEnd;
+		    try {
+		      dateStart = $.datepicker.parseDate(format, startDate);
+		      dateEnd = $.datepicker.parseDate(format, endDate);
+		      if (dateEnd < dateStart) {
+		        temp = startDate;
+		        startDate = endDate;
+		        endDate = temp;
+		      }
+		    } catch (ex) {}
+		    return { start: startDate, end: endDate };
+		  }
+
+		  $.fn.dateRangePicker = function (options) {
+		    options = $.extend({
+		      "changeMonth": false,
+		      "changeYear": false,
+		      "numberOfMonths": 2,
+		      "rangeSeparator": " - ",
+					"useHiddenAltFields": false
+		    }, options || {});
+
+				var myDateRangeTarget = $(this);
+		    var onSelect = options.onSelect || $.noop;
+		    var onClose = options.onClose || $.noop;
+		    var beforeShow = options.beforeShow || $.noop;
+		    var beforeShowDay = options.beforeShowDay;
+		    var lastDateRange;
+
+		    function storePreviousDateRange(dateText, dateFormat) {
+		      var start, end;
+		      dateText = dateText.split(options.rangeSeparator);
+		      if (dateText.length > 0) {
+		        start = $.datepicker.parseDate(dateFormat, dateText[0]);
+		        if (dateText.length > 1) {
+		          end = $.datepicker.parseDate(dateFormat, dateText[1]);
+		        }
+		        lastDateRange = {start: start, end: end};
+		      } else {
+		        lastDateRange = null;
+		      }
+		    }
+				
+		    options.beforeShow = function(input, inst) {
+		      var dateFormat = myDateRangeTarget.datepicker("option", "dateFormat");
+		      storePreviousDateRange($(input).val(), dateFormat);
+		      beforeShow.apply(myDateRangeTarget, arguments);
+		    };
+				
+		    options.beforeShowDay = function(date) {
+		      var out = [true, ""], extraOut;
+		      if (lastDateRange && lastDateRange.start <= date) {
+		        if (lastDateRange.end && date <= lastDateRange.end) {
+		          out[1] = "ui-datepicker-range";
+		        }
+		      }
+
+		      if (beforeShowDay) {
+		        extraOut = beforeShowDay.apply(myDateRangeTarget, arguments);
+		        out[0] = out[0] && extraOut[0];
+		        out[1] = out[1] + " " + extraOut[1];
+		        out[2] = extraOut[2];
+		      }
+		      return out;
+		    };
+
+		    options.onSelect = function(dateText, inst) {
+		      var textStart;
+		      if (!inst.rangeStart) {
+		        inst.inline = true;
+		        inst.rangeStart = dateText;
+		      } else {
+		        inst.inline = false;
+		        textStart = inst.rangeStart;
+		        if (textStart !== dateText) {
+		          var dateFormat = myDateRangeTarget.datepicker("option", "dateFormat");
+		          var dateRange = compareDates(textStart, dateText, dateFormat);
+		          myDateRangeTarget.val(dateRange.start + options.rangeSeparator + dateRange.end);
+		          inst.rangeStart = null;
+							if (options.useHiddenAltFields){
+								var myToField = myDateRangeTarget.attr("data-to-field");
+								var myFromField = myDateRangeTarget.attr("data-from-field");
+								$("#"+myFromField).val(dateRange.start);
+								$("#"+myToField).val(dateRange.end);
+							}
+		        }
+		      }
+		      onSelect.apply(myDateRangeTarget, arguments);
+		    };
+
+		    options.onClose = function(dateText, inst) {
+		      inst.rangeStart = null;
+		      inst.inline = false;
+		      onClose.apply(myDateRangeTarget, arguments);
+		    };
+
+		    return this.each(function() {
+		      if (myDateRangeTarget.is("input")) {
+		        myDateRangeTarget.datepicker(options);
+		      }
+					myDateRangeTarget.wrap("<div class=\"dateRangeWrapper\"></div>");
+		    });
+		  };
+		}(jQuery));
+
+	if($(window).outerWidth() > 530){
+
+			$("#txtDateRange").dateRangePicker({
+				showOn: "focus",
+				rangeSeparator: " - ",
+				dateFormat: "yy-mm-dd",
+				useHiddenAltFields: true,
+				constrainInput: true
+			});
+	}
+	else{
+		$("#txtDateRange").dateRangePicker({
+			showOn: "focus",
+			rangeSeparator: " - ",
+			dateFormat: "yy-mm-dd",
+			useHiddenAltFields: true,
+			constrainInput: true,
+			numberOfMonths: 1
+		});
+	}
+	}
+	</script>
+</body>
+</html>

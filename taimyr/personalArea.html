@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">
+					<picture>
+						<source srcset="img/logo.svg" media="(min-width: 901px)">
+						<img src="img/logo-mob.svg" alt="MDN">
+					</picture>
+				</a>
+			</div>
+			<div class="header-wrap">
+				<ul class="header-list">
+					<li><a href="#" class="active">Новости</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li class="link-mob"><a href="#">Войти</a></li>
+				</ul>
+				<ul class="header-social">
+					<li><a href="#" class="hb-ico tg-ico"></a></li>
+					<li><a href="#" class="hb-ico wat-ico"></a></li>
+				</ul>
+			</div>
+			<div class="header-actions">
+				<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn second-btn-white">Сообщить новость</a>
+				<a href="#" class="header-link">Войти</a>
+				<ul class="header-social">
+					<li><a href="#" class="hb-ico tg-ico"></a></li>
+					<li><a href="#" class="hb-ico wat-ico"></a></li>
+				</ul>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start personalArea -->
+	<section class="personalArea">
+		<div class="wrapper">
+			<div class="personalArea-top">
+				<h1 class="personalArea-title">Личный кабинет</h1>
+				<div class="personalArea-txt"><i class="hb-ico user-ico"></i><span>Константинов Константин Константинович</span></div>
+				<a href="#" class="personalArea-exit">Выйти</a>
+			</div>
+			<div class="allTabs">
+				<ul class="tab-list">
+					<li><a href="#tab-1" class="active">Мой профиль</a></li>
+					<li><a href="#tab-2">Пароль и доступ</a></li>
+					<li><a href="#tab-3">Мои новости</a></li>
+					<li><a href="#tab-4">Сообщить новость</a></li>
+				</ul>
+				<div class="tab tab-active" id="tab-1">
+					<div class="tab-wrap">
+						<i class="hb-ico close-ico"></i>
+						<div class="tab-mob">мой профиль</div>
+						<div class="tab-content">
+							<form action="">
+								<div class="input-block"><!-- add calss input-error -->
+									<label for="">Логин</label>
+									<input type="text" name="text" value="Константинов Константин Константинович">
+									<span class="input-text">ошибка</span>
+								</div>
+								<div class="input-block"><!-- add calss input-error -->
+									<label for="">Email</label>
+									<input type="text" name="text" value="konstantinov@gmail.com">
+									<span class="input-text">ошибка</span>
+								</div>
+								<div class="input-block"><!-- add calss input-error -->
+									<label for="">Имя</label>
+									<input type="text" name="text" value="Константинов Константин">
+									<span class="input-text">ошибка</span>
+								</div>
+								<div class="input-block"><!-- add calss input-error -->
+									<label for="">Телефон</label>
+									<input type="text" name="text" value="+7 903 334 77 52">
+									<span class="input-text">ошибка</span>
+								</div>
+								<div class="personalArea-btns">
+									<a href="#" class="second-btn second-btn-blue">Редактировать</a>
+									<a href="#" class="second-btn second-btn-blue">Сохранить</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="tab" id="tab-2">
+					<div class="tab-wrap">
+						<i class="hb-ico close-ico"></i>
+						<div class="tab-mob">пароль и доступ</div>
+						<div class="tab-content">
+							<p>Чтобы изменить пароль, пожалуйста, наберите сначала свой старый пароль. Затем введите новый пароль два раза. </p>
+							<form action="">
+								<div class="input-block"><!-- add calss input-error -->
+									<input type="text" name="text" placeholder="Старый пароль *">
+									<span class="input-text">ошибка</span>
+								</div>
+								<div class="input-block"><!-- add calss input-error -->
+									<input type="text" name="text" placeholder="Новый пароль *">
+									<span class="input-text">ошибка</span>
+								</div>
+								<div class="input-block"><!-- add calss input-error -->
+									<input type="text" name="text" placeholder="Новый пароль еще раз *">
+									<span class="input-text">ошибка</span>
+								</div>
+								<div class="personalArea-info">
+									<span><i>*</i>необходимо указать</span>
+									<a href="#" class="link">Забыли пароль?</a>
+								</div>
+								<div class="personalArea-block">
+									<i class="hb-ico close-ico"></i>
+									<div class="personalArea-block-wrap">
+										<span class="personalArea-block-tit">Отправить ссылку на восстановление пароля.</span>
+										<div class="personalArea-block-form">
+											<div class="input-block">
+												<div class="input-wrap">
+													<input type="text" name="text" value="konstantinov@gmail.com">
+													<a href="#" class="primary-btn primary-btn-big disabled">Отправить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="personalArea-btns">
+									<a href="#" class="second-btn">Отменить</a>
+									<a href="#" class="second-btn second-btn-blue">Сохранить</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end personalArea -->
+	<!-- fancybox modal-theme -->
+	<div style="display: none;" id="modal-theme" class="modal modal-theme">
+		<div class="modal-wrap">
+			<ul class="main-tags">
+				<li><a href="#">#Таймыр</a></li>
+				<li><a href="#">#Хатанга</a></li>
+				<li><a href="#">#Якутия</a></li>
+				<li><a href="#">#конкурс</a></li>
+				<li><a href="#">#Норильск</a></li>
+				<li><a href="#">#Дудинка</a></li>
+				<li><a href="#">#ПОРА</a></li>
+				<li><a href="#">#дороги</a></li>
+				<li><a href="#">#COVID</a></li>
+				<li><a href="#">#население</a></li>
+				<li><a href="#">#жильё</a></li>
+				<li><a href="#">#Красноярский Край</a></li>
+				<li><a href="#">#выплаты</a></li>
+				<li><a href="#">#Норильск</a></li>
+				<li><a href="#">#Дудинка</a></li>
+				<li><a href="#">#ПОРА</a></li>
+				<li><a href="#">#дороги</a></li>
+				<li><a href="#">#COVID</a></li>
+				<li><a href="#">#население</a></li>
+				<li><a href="#">#жильё</a></li>
+				<li><a href="#">#Красноярский Край</a></li>
+				<li><a href="#">#выплаты</a></li>
+			</ul>
+			<div class="modal-btn">
+				<a href="#">Другие темы</a>
+			</div>
+		</div>
+	</div>
+	<!-- fancybox modal-form -->
+	<div style="display: none;" id="modal-form" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<span class="modal-title">Сообщить новость</span>
+			</div>
+			<div class="modal-content">
+				<form action="">
+					<div class="input-block">
+						<textarea name="text" placeholder="Введите текст новости *"></textarea>
+					</div>
+					<div class="modal-all">
+						<div class="modal-row">
+							<div class="file">
+								<input type="file">
+								Прикрепите фото, видео файлы или документы при необходимости
+							</div>
+						</div>
+						<div class="modal-files">
+							<ul>
+								<li>Таймыр_01.pdf <i class="hb-ico close-ico"></i></li>
+								<li>Таймыр_01.pdf <i class="hb-ico close-ico"></i></li>
+							</ul>
+							<div class="modal-list">
+								<div class="modal-item">
+									<div class="modal-bar"><span style="width: 60%;"></span></div>
+									<span>photo_01.jpg</span>
+								</div>
+							</div>
+						</div>
+						<div class="modal-btn">
+							<a href="#">Прикрепить</a>
+						</div>
+						<span class="modal-txt"><i>*</i>необходимо указать</span>
+					</div>
+					<div class="modal-main">
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Ваше имя">
+						</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Teлефон">
+						</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Email">
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Даю согласие на обработку и хранение моих персональный данных</p>
+						</div>
+						<div class="modal-button">
+							<button class="primary-btn primary-btn-big">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
