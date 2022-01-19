@@ -259,6 +259,7 @@
 			<span class="modal-title">Скан</span>
 			<div class="modal-qr">
 				<div id="reader"></div>
+				<div id="qr-reader-results"></div>
 			</div>
 		</div>
 	</div>
@@ -273,14 +274,28 @@
 		import {Html5Qrcode} from "html5-qrcode"
 	</script>
 	<script>
-		const html5QrCode = new Html5Qrcode("reader", { fps: 10, qrbox: 250 });
-		const qrCodeSuccessCallback = (decodedText, decodedResult) => {
-    	alert(`Scan result: ${decodedText}`, decodedResult);
-		};
-		const config = { fps: 10, qrbox: { width: 250, height: 250 } };
-		html5QrCode.start({ facingMode: "environment" }, config, qrCodeSuccessCallback);
-
-		//html5QrcodeScanner.render(onScanSuccess);
+var resultContainer = document.getElementById('qr-reader-results');
+        var lastResult, countResults = 0;
+ 
+        function onScanSuccess(decodedText, decodedResult) {
+            if (decodedText !== lastResult) {
+                ++countResults;
+                lastResult = decodedText;
+                // Handle on success condition with the decoded message.
+                console.log(`Scan result ${decodedText}`, decodedResult);
+ 
+                alert(decodedText, decodedResult);
+ 
+  
+            }
+        }
+ 
+             var html5QrcodeScanner = new Html5QrcodeScanner
+            (
+                "reader", { fps: 10, qrbox: 750 }
+            );
+            //html5QrcodeScanner.render(onScanSuccess);
+            html5QrcodeScanner.render({ facingMode: { exact: "environment" } }, onScanSuccess);
 	</script>
 </body>
 </html>
