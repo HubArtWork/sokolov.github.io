@@ -273,7 +273,7 @@
 		import {Html5Qrcode} from "html5-qrcode"
 	</script>
 	<script>
-		const html5QrCode = new Html5Qrcode("reader");
+		const html5QrCode = new Html5Qrcode("reader", { fps: 10, qrbox: 250 });
 		const qrCodeSuccessCallback = (decodedText, decodedResult) => {
     /* handle success */
 		};
