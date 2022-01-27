@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link href = "https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel = "stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js"></script>
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<section class="page">
+		<div class="sidebar">
+			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-0"></i>
+					<span>Calendar</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-1"></i>
+					<span>Services</span>
+				</a></li>
+				<li><a href="#" class="active">
+					<i class="hb-ico sidebar-ico-2"></i>
+					<span>Team</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-3"></i>
+					<span>Orders</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-4"></i>
+					<span>Customers</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-5"></i>
+					<span>Compaigns</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-6"></i>
+					<span>Billing</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-7"></i>
+					<span>Chat</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-8"></i>
+					<span>Invoices</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-9"></i>
+					<span>Your Statistic</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-10"></i>
+					<span>Sign out</span>
+				</a></li>
+			</ul>
+			<div class="sidebar-mob"></div>
+		</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="header">
+					<div class="header-bar"><span></span></div>
+					<div class="header-drop drop">
+						<div class="drop-top">
+							<span>Hello, <b>manhattan super fitness club</b></span>
+							<div class="header-user"></div>
+						</div>
+						<div class="drop-info">
+							<ul class="drop-list">
+								<li><a href="#">
+									<i class="hb-ico settings-ico"></i>
+									<span>Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico invoice-ico"></i>
+									<span>Invoice Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico terms-ico"></i>
+									<span>My terms of use</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico signOut-ico"></i>
+									<span>Sign out</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="back-link">Back to customers</a>
+				<div class="content-top">
+					<div class="customer-head">
+						<div class="customer-user">
+							<span class="customer-user-name">Vasya Pupkin</span>
+							<a href="#modal-avatar" class="customer-user-img dropFile modal-btn">D</a>
+						</div>
+						<div class="customer-text">
+							<div class="customer-text-row">
+								<span class="customer-price">Spent up to date: <a href="#">$420.85</a></span>
+								<div class="customer-top">Top 10</div>
+							</div>
+							<div class="customer-pay-block">
+								<div class="customer-pay-block-img"><img src="img/mastercard-2.svg" alt=""></div>
+								<div class="customer-pay-block-info">
+									<span class="customer-pay-block-num">Mastercard...9975 <i>Default</i></span>
+									<span class="customer-pay-block-date">Expires Jul 2025</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-all allTabs">
+					<div class="content-menu">
+						<ul class="content-menu__list tab-list">
+							<li><a href="#tab-1" class="active">Customer details</a></li>
+							<li><a href="#tab-2">Services</a></li>
+							<li><a href="#tab-3">Email/Chat</a></li>
+							<li><a href="#tab-4">Purchases</a></li>
+						</ul>
+					</div>
+					<div class="tab tab-active" id="tab-1">
+						<form action="">
+							<div class="customer-row">
+								<div class="customer-form">
+									<div class="customer-form-block">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Phone">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Email">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="customer-form-block">
+										<div class="input-block">
+											<input type="text" name="text" placeholder="Address">
+										</div>
+										<div class="input-all">
+											<div class="input-block input-full">
+												<input type="text" name="text" placeholder="City">
+											</div>
+											<div class="input-block input-small">
+												<select name="text">
+													<option value="">SТ</option>
+													<option value="">SТ</option>
+													<option value="">SТ</option>
+												</select>
+											</div>
+											<div class="input-block input-small">
+												<input type="text" name="text" placeholder="Zip">
+											</div>
+										</div>
+									</div>
+									<div class="customer-form-block">
+										<div class="input-block">
+											<div class="input-block__top">
+												<label for="">Password</label>
+												<span class="btn-show">Show</span>
+											</div>
+											<input type="password" name="password" placeholder="Password">
+											<span class="input-block-password"><p>password must be minimum 8 symbols</p></span>
+										</div>
+									</div>
+									<div class="customer-pay">
+										<div class="customer-pay-top">
+											<span class="customer-pay-title">Payment methods</span>
+											<a href="#modal-newPay" class="modal-btn">Add  method</a>
+										</div>
+										<div class="customer-pay-content">
+											<div class="customer-pay-block">
+												<div class="customer-pay-block-img"><img src="img/mastercard-2.svg" alt=""></div>
+												<div class="customer-pay-block-info">
+													<span class="customer-pay-block-num">Mastercard...9975 <i>Default</i></span>
+													<span class="customer-pay-block-date">Expires Jul 2025</span>
+												</div>
+												<ul>
+													<li><a href="#modal-newPay" class="modal-btn"><i class="hb-ico edit-ico"></i></a></li>
+													<li><a href="#"><i class="hb-ico delete-ico"></i></a></li>
+												</ul>
+											</div>
+											<div class="customer-pay-block">
+												<div class="customer-pay-block-img"><img src="img/mastercard-2.svg" alt=""></div>
+												<div class="customer-pay-block-info">
+													<span class="customer-pay-block-num">Mastercard...9975 <i class="active">Default</i></span>
+													<span class="customer-pay-block-date">Expires Jul 2025</span>
+												</div>
+												<ul>
+													<li><a href="#modal-newPay" class="modal-btn"><i class="hb-ico edit-ico"></i></a></li>
+													<li><a href="#"><i class="hb-ico delete-ico"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="customer-notes">
+									<div class="customer-notes-top">
+										<span class="customer-notes-title">Notes/Comments</span>
+										<a href="#modal-newNotes" class="primary-btn primary-btn-ico modal-btn">
+											<i class="hb-ico plus-ico-white"></i>
+											<span>New</span>
+										</a>
+									</div>
+									<div class="customer-notes-record">
+										<div>
+											<p>No notes/comments for [customer name] yet.</p>
+											<p>Something for a record? <a href="#">Add it here</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="buttons-center">
+								<a href="#" class="primary-btn">Save</a>
+							</div>
+						</form>
+					</div>
+					<div class="tab" id="tab-2">
+						<div class="customer-calendar">
+							<div class="customer-calendar-top">
+								<div class="input-block">
+									<label for="">Toggle?</label>
+									<select name="text">
+										<option value="">Monthly view</option>
+									</select>
+								</div>
+								<div class="input-block">
+									<label for="">Booking limit:</label>
+									<select name="text">
+										<option value="">Regular</option>
+									</select>
+								</div>
+								<div class="colors">
+									<div class="colors-col colors-gray">Scheduled</div>
+									<div class="colors-col colors-orange">Canceled</div>
+									<div class="colors-col colors-blue">Done</div>
+									<div class="colors-col colors-red">No-show</div>
+								</div>
+							</div>
+							<div class="customer-calendar-content">
+								<div id="calendar"></div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="tab" id="tab-3">
+						<div class="content-top__row content-top__row-big customer-hd">
+							<div class="customer-bog">
+								<span class="customer-tit">5 Unread</span>
+								<div class="input-block">
+									<select name="text" class="select-drop">
+										<option value="Category">All</option>
+										<option value="Category">All</option>
+										<option value="Category">All</option>
+									</select>
+								</div>
+							</div>
+							<div class="content-top__inputs">
+								<div class="input-block search-input">
+									<input type="text" name="search" placeholder="Search">
+									<i class="hb-ico search-ico"></i>
+								</div>
+							</div>
+						</div>
+						<div class="table">
+							<div class="table-wrap">
+								<table class="dataTable dataTable-15">
+									<thead>
+				            <tr>
+				            	<th></th>
+			                <th>Date/time</th>
+			                <th>Department/agent</th>
+			                <th>Status</th>
+			                <th>Time</th>
+			                <th>Subject/Message</th>
+				            </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
+			                <td>09/18/2021  3:35 pm</td>
+			                <td>Harry</td>
+			                <td><span class="status">New</span></td>
+			                <td>31 min</td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			            	</tr>
+			            	<tr>
+					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
+			                <td>09/18/2021  3:35 pm</td>
+			                <td>Harry</td>
+			                <td><span class="status missed">New</span></td>
+			                <td>31 min</td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			            	</tr>
+			            	<tr>
+					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
+			                <td>09/18/2021  3:35 pm</td>
+			                <td>Harry</td>
+			                <td><span class="status answered">New</span></td>
+			                <td>31 min</td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			            	</tr>
+			            	<tr>
+					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
+			                <td>09/18/2021  3:35 pm</td>
+			                <td>Harry</td>
+			                <td><span class="status resolved">New</span></td>
+			                <td>31 min</td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			            	</tr>
+			            	<tr>
+					          	<td><i class="hb-ico sidebar-ico-7"></i></td>
+			                <td>09/18/2021  3:35 pm</td>
+			                <td>Harry</td>
+			                <td><span class="status notResoved">New</span></td>
+			                <td>31 min</td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			            	</tr>
+			            </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="tab" id="tab-4">
+						<div class="content-top__row content-top__row-big customer-hd">
+							<div class="customer-bog">
+								<span class="customer-tit">1 Failed</span>
+								<a href="#" class="customer-bog-link">
+									<i class="hb-ico sidebar-ico-5"></i>
+									Prepare receipt
+								</a>
+							</div>
+							<div class="content-top__inputs">
+								<div class="input-block">
+									<select name="text" class="select-drop">
+										<option value="Category">All</option>
+										<option value="Category">All</option>
+										<option value="Category">All</option>
+									</select>
+								</div>
+								<div class="input-block search-input">
+									<input type="text" name="search" placeholder="Search">
+									<i class="hb-ico search-ico"></i>
+								</div>
+							</div>
+						</div>
+						<div class="table">
+							<div class="table-wrap">
+								<table class="dataTable dataTable-16">
+									<thead>
+				            <tr>
+				            	<th><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></th>
+			                <th>Date/time</th>
+			                <th>Type</th>
+			                <th>Status</th>
+			                <th>Description</th>
+			                <th></th>
+				            </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>Feb 18  3:35 pm </td>
+			                <td>Invoice</td>
+			                <td><span class="status">Paid</span></td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			                <td><i class="hb-ico sidebar-ico-5"></i></td>
+			            	</tr>
+			            	<tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>Feb 18  3:35 pm </td>
+			                <td>Invoice</td>
+			                <td><span class="status red">Failed</span></td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			                <td><i class="hb-ico sidebar-ico-5"></i></td>
+			            	</tr>
+			            	<tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>Feb 18  3:35 pm </td>
+			                <td>Invoice</td>
+			                <td><span class="status">Paid</span></td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			                <td><i class="hb-ico sidebar-ico-5"></i></td>
+			            	</tr>
+			            	<tr>
+					          	<td><div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div></td>
+			                <td>Feb 18  3:35 pm </td>
+			                <td>Invoice</td>
+			                <td><span class="status red">Failed</span></td>
+			                <td>Hi, ipsum dolor sit amet, cons...</td>
+			                <td><i class="hb-ico sidebar-ico-5"></i></td>
+			            	</tr>
+			            </tbody>
+								</table>
+							</div>
+						</div>
+						<ul class="pagination">
+							<li><a href="#"><</a></li>
+							<li><a href="#">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li>...</li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<div class="modal-bg"></div>
+	<!-- start avatar -->
+	<div id="modal-avatar" class="formModal formModal-avatar">
+		<i class="hb-ico close-ico"></i>
+		<div class="modal-wrap">
+			<!-- Upload image -->
+			<div id="sectionDragAndDrop">
+		    <div class="drop" id="drop">
+		      <div class="dropFileLogo">
+						<div class="dropFile-all">
+							<span class="dropFile-title">Сustomer's photo or logo</span>
+							<div class="dropFile">
+								<i class="dropFile-ico"></i>
+								<p><span>Browse</span> or drop image here. <br>Maximum 5MB in size. <br>JPG or PNG <br>Recommended size: 300 x 200 pixels.</p>
+								<div class="imagePreview" id="imagePreview"></div>
+							</div>
+						</div>
+					</div>
+		    </div>
+		    <input class="file-upload hidden" id="fileUpload" type="file">
+			</div>
+			<!-- Resize image -->
+			<div class="hidden" id="sectionResize">
+			    <div class="image-resize" id="imageResize"></div>
+			  <button class="btn primary-btn" id="crop">Crop</button>
+			</div>
+			<!-- Insert thumbnail -->
+			<div class="hidden" id="sectionThumbnail">
+			    <div class="thumbnail" id="thumbnail"></div>
+			</div>
+		</div>
+	</div>
+	<!-- start newNotes -->
+	<div id="modal-newNotes" class="formModal formModal-cust formModal-newNotes">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">Add comments</h2>
+			<form action="">
+				<div class="input-block">
+					<textarea name="text" placeholder="Please, write "></textarea>
+				</div>
+				<div class="colors colors-radios">
+					<div class="colors-col colors-red"><input type="radio" name="color"><span>Critical</span></div>
+					<div class="colors-col colors-yellow"><input type="radio" name="color"><span>Moderate</span></div>
+					<div class="colors-col colors-green"><input type="radio" name="color"><span>Informational</span></div>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- start newProvider -->
+	<div id="modal-newPay" class="formModal formModal-cust">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">Add/edit payment method</h2>
+			<div class="payment">
+				<ul class="payment-list">
+					<li><a href="#payment-1" class="active"><span>Credit card</span></a></li>
+					<li><a href="#payment-2"><span>PayPal</span></a></li>
+				</ul>
+				<div class="payment-content">
+					<div class="payment-block active" id="payment-1">
+						<div class="payment-wrap">
+							<div class="payment-top">
+								<span>Payment method</span>
+								<div class="payment-top__row">
+									<i class="hb-ico card-ico"></i>
+									<select name="text">
+										<option value="">8254</option>
+										<option value="">8254</option>
+									</select>
+								</div>
+							</div>
+							<form action="">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="input-block">
+											<input type="text" name="text" placeholder="Cardholder Name">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="input-block">
+											<input type="text" name="text" placeholder="0000 0000 0000 0000">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="input-block">
+											<input type="text" name="text" placeholder="MM/YY">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="input-block">
+											<input type="text" name="text" placeholder="CVV">
+										</div>
+									</div>
+								</div>
+								<button class="primary-btn">Save</button>
+							</form>
+						</div>
+					</div>
+					<div class="payment-block" id="payment-2">
+						<div class="payment-wrap">
+							<div class="payment-top">
+								<span>Payment method</span>
+								<div class="payment-top__row">
+									<i class="hb-ico payP-ico"></i>
+									<select name="text">
+										<option value="">8254</option>
+										<option value="">8254</option>
+									</select>
+								</div>
+							</div>
+							<form action="">
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Cardholder Name">
+								</div>
+								<button class="primary-btn">Save</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>

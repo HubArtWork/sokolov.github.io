@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<section class="page">
+		<div class="sidebar">
+			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-0"></i>
+					<span>Calendar</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-1"></i>
+					<span>Services</span>
+				</a></li>
+				<li><a href="#" class="active">
+					<i class="hb-ico sidebar-ico-2"></i>
+					<span>Team</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-3"></i>
+					<span>Orders</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-4"></i>
+					<span>Customers</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-5"></i>
+					<span>Compaigns</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-6"></i>
+					<span>Billing</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-7"></i>
+					<span>Chat</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-8"></i>
+					<span>Invoices</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-9"></i>
+					<span>Your Statistic</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-10"></i>
+					<span>Sign out</span>
+				</a></li>
+			</ul>
+			<div class="sidebar-mob"></div>
+		</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="header">
+					<div class="header-bar"><span></span></div>
+					<div class="header-drop drop">
+						<div class="drop-top">
+							<span>Hello, <b>manhattan super fitness club</b></span>
+							<div class="header-user"></div>
+						</div>
+						<div class="drop-info">
+							<ul class="drop-list">
+								<li><a href="#">
+									<i class="hb-ico settings-ico"></i>
+									<span>Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico invoice-ico"></i>
+									<span>Invoice Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico terms-ico"></i>
+									<span>My terms of use</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico signOut-ico"></i>
+									<span>Sign out</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-top">
+					<div class="content-top__title">
+						<h1>Invoices</h1>
+					</div>
+				</div>
+				<div class="content-all allTabs">
+					<div class="content-menu">
+						<ul class="content-menu__list tab-list">
+							<li><a href="#tab-1" class="active">Invoices setting</a></li>
+							<li><a href="#tab-2">Payment option</a></li>
+						</ul>
+					</div>
+					<div class="tab tab-active" id="tab-1">
+						<div class="settings">
+							<div class="row settings-row">
+								<div class="col-md-6">
+									<h3 class="settings-title">Templets</h3>
+									<div class="templets-row">
+										<div class="templets-col">
+											<a data-fancybox data-src="#modal-classic" href="javascript:;" class="templets-item" style="background-image: url(img/img-24-min.jpg);"><span class="pale"><i class="hb-ico pale-ico"></i></span></a>
+											<div class="radio">
+												<input type="radio" name="templets" checked>
+												<i class="radio-ico"></i>
+												<p>Classic</p>
+											</div>
+										</div><!-- col -->
+										<div class="templets-col">
+											<a data-fancybox data-src="#modal-standart" href="javascript:;" class="templets-item" style="background-image: url(img/img-27-min.jpg);"><span class="pale"><i class="hb-ico pale-ico"></i></span></a>
+											<div class="radio">
+												<input type="radio" name="templets">
+												<i class="radio-ico"></i>
+												<p>Standart</p>
+											</div>
+										</div><!-- col -->
+										<div class="templets-col">
+											<a data-fancybox data-src="#modal-modern" href="javascript:;" class="templets-item" style="background-image: url(img/img-26-min.jpg);"><span class="pale"><i class="hb-ico pale-ico"></i></span></a>
+											<div class="radio">
+												<input type="radio" name="templets">
+												<i class="radio-ico"></i>
+												<p>Modern</p>
+											</div>
+										</div><!-- col -->
+									</div>
+									<div class="templets-checkbox">
+										<div class="templets-checkbox-col">
+											<div class="color">
+												<input type="color">
+												<span>Accent color</span>
+											</div>
+										</div>
+										<div class="templets-checkbox-col">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+												<p>Display logo</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<h3 class="settings-title">Default Options</h3>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="input-block">
+												<input type="text" name="text" placeholder="Title">
+												<p>You can change on each invoice.</p>
+											</div>
+										</div><!-- col -->
+										<div class="col-sm-6">
+											<div class="input-block">
+												<input type="text" name="text" placeholder="Subheading">
+												<p>This will be displayed of each invoice.</p>
+											</div>
+										</div><!-- col -->
+										<div class="col-sm-6">
+											<div class="input-block">
+												<select name="text">
+													<option value="">Payment terms</option>
+													<option value="">Payment terms2</option>
+												</select>
+												<p>This will be displayed of each invoice.</p>
+											</div>
+										</div><!-- col -->
+										<div class="col-sm-6">
+											<div class="input-block">
+												<input type="number" name="text" placeholder="Invoice start number">
+												<p>The number invoices starts numbering.</p>
+											</div>
+										</div><!-- col -->
+									</div>
+									<div class="input-block">
+										<textarea name="text" placeholder="Standard memo"></textarea>
+										<p>Appears on each invoice. You can choose to override it when you create an invoice.</p>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Customer must agree with invoice terms before payment</p>
+									</div>
+								</div>
+							</div>
+							<div class="settings-block">
+								<div class="settings-block__top">
+									<h3 class="settings-title">Fees</h3>
+									<div class="prompt">
+										<div class="prompt-ico"></div>
+										<div class="prompt-info">
+											<p>Lorem ipsum, dolor sit amet.</p>
+										</div>
+									</div>
+								</div>
+								<div class="settings-table">
+									<div class="settings-table-row settings-table-top">
+										<div class="settings-table-col settings-table-col-1">Position</div>
+										<div class="settings-table-col settings-table-col-2">Show/Hide</div>
+										<div class="settings-table-col settings-table-col-3">Name</div>
+										<div class="settings-table-col settings-table-col-4">Type</div>
+										<div class="settings-table-col settings-table-col-5">Value</div>
+									</div>
+									<div class="settings-table-row">
+										<div class="settings-table-col settings-table-col-1"><input type="text" name="text"></div>
+										<div class="settings-table-col settings-table-col-2">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+											</div>
+										</div>
+										<div class="settings-table-col settings-table-col-3"><input type="text" name="text" placeholder="Taxes name"></div>
+										<div class="settings-table-col settings-table-col-4">%</div>
+										<div class="settings-table-col settings-table-col-5"><input type="text" name="text"></div>
+									</div>
+									<div class="settings-table-row">
+										<div class="settings-table-col settings-table-col-1"><input type="text" name="text"></div>
+										<div class="settings-table-col settings-table-col-2">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+											</div>
+										</div>
+										<div class="settings-table-col settings-table-col-3"><input type="text" name="text" placeholder="Taxes name"></div>
+										<div class="settings-table-col settings-table-col-4">%</div>
+										<div class="settings-table-col settings-table-col-5"><input type="text" name="text"></div>
+									</div>
+								</div>
+							</div>
+							<div class="settings-block">
+								<div class="settings-block__top">
+									<h3 class="settings-title">Templets</h3>
+									<div class="prompt">
+										<div class="prompt-ico"></div>
+										<div class="prompt-info">
+											<p>Lorem ipsum, dolor sit amet.</p>
+										</div>
+									</div>
+								</div>
+								<div class="settings-table">
+									<div class="settings-table-row settings-table-top">
+										<div class="settings-table-col settings-table-col-1">Position</div>
+										<div class="settings-table-col settings-table-col-2">Show/Hide</div>
+										<div class="settings-table-col settings-table-col-3">Name</div>
+										<div class="settings-table-col settings-table-col-4">Type</div>
+										<div class="settings-table-col settings-table-col-5">Value</div>
+									</div>
+									<div class="settings-table-row">
+										<div class="settings-table-col settings-table-col-1"><input type="text" name="text"></div>
+										<div class="settings-table-col settings-table-col-2">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+											</div>
+										</div>
+										<div class="settings-table-col settings-table-col-3"><input type="text" name="text" placeholder="Taxes name"></div>
+										<div class="settings-table-col settings-table-col-4">
+											<select name="text">
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="settings-table-col settings-table-col-5"><input type="text" name="text"></div>
+									</div>
+									<div class="settings-table-row">
+										<div class="settings-table-col settings-table-col-1"><input type="text" name="text"></div>
+										<div class="settings-table-col settings-table-col-2">
+											<div class="checkbox">
+												<input type="checkbox">
+												<i class="checkbox-ico"></i>
+											</div>
+										</div>
+										<div class="settings-table-col settings-table-col-3"><input type="text" name="text" placeholder="Taxes name"></div>
+										<div class="settings-table-col settings-table-col-4">
+											<select name="text">
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="settings-table-col settings-table-col-5"><input type="text" name="text"></div>
+										<i class="hb-ico delete-ico"></i>
+										<i class="hb-ico libraryAdd-ico"></i>
+									</div>
+								</div>
+								<div class="settings-table-btn">
+									<a href="#" class="primary-btn primary-btn-ico">
+										<i class="hb-ico plus-ico-white"></i>
+										<span>New item</span>
+									</a>
+								</div>
+							</div>
+							<div class="settings-bottom">
+								<h3 class="settings-title">Reminder Settings</h3>
+								<p>Uppointment will follow up on overdue invoices by sending gentleeditablereminders to your customers.</p>
+								<div class="checkbox">
+									<input type="checkbox">
+									<i class="checkbox-ico"></i>
+									<p>3 calendar days after due date</p>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox">
+									<i class="checkbox-ico"></i>
+									<p>1 week after due date</p>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox">
+									<i class="checkbox-ico"></i>
+									<p>2 week after due date</p>
+								</div>
+								<p>You can send individual reminders on any invoices anytime.</p>
+								<a href="#" class="primary-btn">Save</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab" id="tab-2">
+						<div class="method">
+							<ul class="method-list">
+								<li><a href="#method-1" class="active">Credit cards</a></li>
+								<li><a href="#method-2">PayPal account</a></li>
+								<li><a href="#method-3">Bank or wire instruction</a></li>
+								<li><a href="#method-4">Zelle instruction</a></li>
+							</ul>
+							<div class="method-block active" id="method-1">
+								<div class="payment">
+									<div class="payment-sidebar">
+										<ul class="payment-list">
+											<li><a href="#payment-1" class="active">
+												<div>
+													<i class="hb-ico payPal-ico"></i>
+													<span>PayPal</span>
+												</div>
+											</a></li>
+											<li><a href="#payment-2">
+												<div>
+													<i class="hb-ico credit-ico"></i>
+													<span>authorize.net</span>
+												</div>
+											</a></li>
+											<li><a href="#payment-3">
+												<div>
+													<i class="hb-ico credit-ico"></i>
+													<span>Brainthree</span>
+												</div>
+											</a></li>
+											<li><a href="#payment-4">
+												<div>
+													<i class="hb-ico credit-ico"></i>
+													<span>Stripe</span>
+												</div>
+											</a></li>
+										</ul>
+									</div>
+									<div class="payment-content">
+										<div class="payment-block active" id="payment-1">
+											<div class="payment-form">
+												<form action="">
+													<div class="input-block">
+														<input type="text" name="text" placeholder="Public Key">
+													</div>
+													<div class="input-block">
+														<input type="text" name="text" placeholder="Secret Key">
+													</div>
+													<div class="input-block">
+														<input type="text" name="text" placeholder="Credit Card Limit">
+													</div>
+													<div class="checkbox">
+														<input type="checkbox">
+														<i class="checkbox-ico"></i>
+														<p>Use default</p>
+													</div>
+													<h4 class="payment-title">Processing fee paid by:</h4>
+													<div class="payment-radios">
+														<div class="radio">
+															<input type="radio" name="payment">
+															<i class="radio-ico"></i>
+															<p>Me</p>
+														</div>
+														<div class="radio">
+															<input type="radio" name="payment">
+															<i class="radio-ico"></i>
+															<p>Customer</p>
+														</div>
+													</div>
+													<div class="payment-inputs">
+														<div class="input-block">
+															<input type="text" name="text" placeholder="Processing Fee">
+														</div>
+														<div class="input-block input-block__small">
+															<select name="text">
+																<option value="%">%</option>
+																<option value="%">%</option>
+															</select>
+														</div>
+													</div>
+													<button class="primary-btn">Save</button>
+												</form>
+											</div>
+										</div>
+										<div class="payment-block" id="payment-2">
+											<p>2Lorem, ipsum dolor.</p>
+										</div>
+										<div class="payment-block" id="payment-3">
+											<p>3Lorem, ipsum dolor.</p>
+										</div>
+										<div class="payment-block" id="payment-4">
+											<p>4Lorem, ipsum dolor.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="method-block" id="method-2">
+								<div class="payment payment-second">
+									<div class="payment-sidebar"></div>
+									<div class="payment-content">
+										<div class="payment-form">
+											<form action="">
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Public Key">
+												</div>
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Secret Key">
+												</div>
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Credit Card Limit">
+												</div>
+												<div class="checkbox">
+													<input type="checkbox">
+													<i class="checkbox-ico"></i>
+													<p>Use default</p>
+												</div>
+												<h4 class="payment-title">Processing fee paid by:</h4>
+												<div class="payment-radios">
+													<div class="radio">
+														<input type="radio" name="payment">
+														<i class="radio-ico"></i>
+														<p>Me</p>
+													</div>
+													<div class="radio">
+														<input type="radio" name="payment">
+														<i class="radio-ico"></i>
+														<p>Customer</p>
+													</div>
+												</div>
+												<div class="payment-inputs">
+													<div class="input-block">
+														<input type="text" name="text" placeholder="Processing Fee">
+													</div>
+													<div class="input-block input-block__small">
+														<select name="text">
+															<option value="%">%</option>
+															<option value="%">%</option>
+														</select>
+													</div>
+												</div>
+												<button class="primary-btn">Save</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="method-block" id="method-3">
+								<div class="payment payment-second">
+									<div class="payment-sidebar"></div>
+									<div class="payment-content">
+										<div class="payment-form">
+											<form action="">
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Public Key">
+												</div>
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Secret Key">
+												</div>
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Credit Card Limit">
+												</div>
+												<div class="input-block">
+													<textarea name="text" placeholder="Text"></textarea>
+												</div>
+												<div class="checkbox">
+													<input type="checkbox">
+													<i class="checkbox-ico"></i>
+													<p>Use default</p>
+												</div>
+												<h4 class="payment-title">Processing fee paid by:</h4>
+												<div class="payment-radios">
+													<div class="radio">
+														<input type="radio" name="payment">
+														<i class="radio-ico"></i>
+														<p>Me</p>
+													</div>
+													<div class="radio">
+														<input type="radio" name="payment">
+														<i class="radio-ico"></i>
+														<p>Customer</p>
+													</div>
+												</div>
+												<div class="payment-inputs">
+													<div class="input-block">
+														<input type="text" name="text" placeholder="Processing Fee">
+													</div>
+													<div class="input-block input-block__small">
+														<select name="text">
+															<option value="%">%</option>
+															<option value="%">%</option>
+														</select>
+													</div>
+												</div>
+												<button class="primary-btn">Save</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="method-block" id="method-4">
+								<div class="payment payment-second">
+									<div class="payment-sidebar"></div>
+									<div class="payment-content">
+										<div class="payment-form">
+											<form action="">
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Public Key">
+												</div>
+												<div class="input-block">
+													<input type="text" name="text" placeholder="Secret Key">
+												</div>
+												<div class="input-block">
+													<textarea name="text" placeholder="Text"></textarea>
+												</div>
+												<div class="checkbox">
+													<input type="checkbox">
+													<i class="checkbox-ico"></i>
+													<p>Use default</p>
+												</div>
+												<h4 class="payment-title">Processing fee paid by:</h4>
+												<div class="payment-radios">
+													<div class="radio">
+														<input type="radio" name="payment">
+														<i class="radio-ico"></i>
+														<p>Me</p>
+													</div>
+													<div class="radio">
+														<input type="radio" name="payment">
+														<i class="radio-ico"></i>
+														<p>Customer</p>
+													</div>
+												</div>
+												<div class="payment-inputs">
+													<div class="input-block">
+														<input type="text" name="text" placeholder="Processing Fee">
+													</div>
+													<div class="input-block input-block__small">
+														<select name="text">
+															<option value="%">%</option>
+															<option value="%">%</option>
+														</select>
+													</div>
+												</div>
+												<button class="primary-btn">Save</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<div style="display: none;" id="modal-classic" class="modal modalTemplate modal-classic">
+		<div class="modal-wrap">
+			<div class="modalTemplate-top">
+				<span class="modalTemplate-title">Classic</span>
+			</div>
+			<div class="modalTemplate-all">
+				<div class="invoices-wrap">
+					<div class="modalTemplate-content">
+						<div class="invoices-wrap__head">
+							<div class="invoices-wrap__head-main">
+								<div class="invoices-wrap__logo">
+									<img src="img/logo.svg" alt="">
+								</div>
+								<div class="invoices-wrap__info">
+									<h3 class="invoices-wrap__head-subtitle">EW General Consulting Inc.</h3>
+									<ul>
+										<li>New York</li>
+										<li>Cropsey ave. #3b</li>
+										<li>Tel: 808852255880</li>
+										<li>fedx@gmail.col</li>
+									</ul>
+								</div>
+							</div>
+							<div class="invoices-wrap__amount">
+								<h3 class="invoices-wrap__head-title">Invoice</h3>
+								<div class="invoices-wrap__amount-block">
+									<ul>
+										<li>
+											<span>Invoice #</span>
+											<span>123</span>
+										</li>
+										<li>
+											<span>Invoice data</span>
+											<span>09/09/2009</span>
+										</li>
+										<li>
+											<span>Due data</span>
+											<span>09/09/2009</span>
+										</li>
+									</ul>
+									<div class="invoices-wrap__amount-bottom">
+										<span>Amount Due</span>
+										<b>$76.00</b>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__descr">
+							<h3>To <span>Jimmy Band</span></h3>
+							<ul>
+								<li>jimmy@company.com</li>
+							</ul>
+						</div>
+						<div class="invoices-wrap__table">
+							<div class="invoices-wrap__table-row invoices-wrap__table-top">
+								<div class="invoices-wrap__table-col col-1"></div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>Quanty</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>Price</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>Amount</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design <br>responsive design + bootstrap</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__total">
+							<ul>
+								<li>
+									<span>Subtotal</span>
+									<span>$2334.00</span>
+								</li>
+								<li>
+									<span>Sales Tax(8.875%))</span>
+									<span>$7.76</span>
+								</li>
+								<li>
+									<span>Total</span>
+									<span>$2367.00</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-standart" class="modal modalTemplate modal-standart">
+		<div class="modal-wrap">
+			<div class="modalTemplate-top">
+				<span class="modalTemplate-title">Classic</span>
+			</div>
+			<div class="modalTemplate-all">
+				<div class="invoices-wrap">
+					<div class="modalTemplate-content">
+						<div class="invoices-wrap__head">
+							<div class="invoices-wrap__head-main">
+								<div class="invoices-wrap__logo">
+									<img src="img/logo.svg" alt="">
+								</div>
+								<div class="invoices-wrap__info">
+									<h3 class="invoices-wrap__head-subtitle">EW General Consulting Inc.</h3>
+									<ul>
+										<li>New York</li>
+										<li>Cropsey ave. #3b</li>
+										<li>Tel: 808852255880</li>
+										<li>fedx@gmail.col</li>
+									</ul>
+									<div class="invoices-wrap__descr">
+										<h3>To <span>Jimmy Band</span></h3>
+										<ul>
+											<li>jimmy@company.com</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="invoices-wrap__amount">
+								<h3 class="invoices-wrap__head-title">Invoice</h3>
+								<div class="invoices-wrap__amount-block">
+									<ul>
+										<li>
+											<span>Invoice #</span>
+											<span>123</span>
+										</li>
+										<li>
+											<span>Invoice data</span>
+											<span>09/09/2009</span>
+										</li>
+										<li>
+											<span>Due data</span>
+											<span>09/09/2009</span>
+										</li>
+									</ul>
+									<div class="invoices-wrap__amount-bottom">
+										<span>Amount Due</span>
+										<b>$76.00</b>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__text">Invoice</div>
+						<div class="invoices-wrap__table">
+							<div class="invoices-wrap__table-row invoices-wrap__table-top">
+								<div class="invoices-wrap__table-col col-1"></div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>Quanty</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>Price</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>Amount</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design <br>responsive design + bootstrap</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__total">
+							<ul>
+								<li>
+									<span>Subtotal</span>
+									<span>$2334.00</span>
+								</li>
+								<li>
+									<span>Sales Tax(8.875%))</span>
+									<span>$7.76</span>
+								</li>
+								<li>
+									<span>Total</span>
+									<span>$2367.00</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-modern" class="modal modalTemplate modal-modern">
+		<div class="modal-wrap">
+			<div class="modalTemplate-top">
+				<span class="modalTemplate-title">Modern</span>
+			</div>
+			<div class="modalTemplate-all">
+				<div class="invoices-wrap">
+					<div class="modalTemplate-content">
+						<div class="modalTemplate-head">
+							<span class="modalTemplate-head__title">EW General Consulting Inc.</span>
+							<div class="modalTemplate-head__row">
+								<ul>
+									<li>New York</li>
+									<li>Cropsey ave. #3b</li>
+									<li>Tel: 808852255880</li>
+									<li>fedx@gmail.col</li>
+								</ul>
+								<div class="modalTemplate-head__block">
+									<div class="invoices-wrap__descr">
+										<h3>To <span>Jimmy Band</span></h3>
+										<ul>
+											<li>jimmy@company.com</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modalTemplate-block">
+							<h3 class="modalTemplate-block__title">Invoice</h3>
+							<div class="modalTemplate-row">
+								<div class="modalTemplate-col modalTemplate-col-main">
+									<span>Amount Due:</span>
+									<b>$182.56</b>
+								</div>
+								<div class="modalTemplate-col">
+									<span>Invoice #:</span>
+									<b>UPINV0067</b>
+								</div>
+								<div class="modalTemplate-col">
+									<span>Invoice Date:</span>
+									<b>May 14, 2020</b>
+								</div>
+								<div class="modalTemplate-col">
+									<span>Due Date:</span>
+									<b>May 14, 2020</b>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__table">
+							<div class="invoices-wrap__table-row invoices-wrap__table-top">
+								<div class="invoices-wrap__table-col col-1"></div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>Quanty</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>Price</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>Amount</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design <br>responsive design + bootstrap</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__total">
+							<ul>
+								<li>
+									<span>Subtotal</span>
+									<span>$2334.00</span>
+								</li>
+								<li>
+									<span>Sales Tax(8.875%))</span>
+									<span>$7.76</span>
+								</li>
+								<li>
+									<span>Total</span>
+									<span>$2367.00</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-bg"></div>
+	<!-- start newProvider -->
+	<div id="modal-shortcut" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">New Shortcut</h2>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Name">
+				</div>
+				<div class="input-block">
+					<textarea name="text" placeholder="Message"></textarea>
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Tags">
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">Available for</option>
+						<option value="">Available for</option>
+					</select>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
