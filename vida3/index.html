@@ -11,12 +11,87 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
-	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
+	<style>
+		.preloader {
+			display: none;
+			align-items: flex-end;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  z-index: 99999;
+		  transition: opacity 1.5s ease, visibility 1.5s ease, transform 1.5s ease, border-radius 0.1s linear;
+		  opacity: 1;
+		  visibility: visible;
+		  background-color: #181616;
+		  transition-delay: .7s;
+		  overflow: hidden;
+		  padding: 60px 30px;
+		  background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+		.loader {
+			width: 100%;
+		}
+	  .loader-row {
+	  	display: flex;
+	  	flex-flow: row nowrap;
+	  	align-items: center;
+	  	position: relative;
+	  	transition: 1s all ease;
+	  }
+	  .loader-bar {
+	  	display: flex;
+	  	width: 100%;
+	  	height: 2px;
+	  	background-color: rgba(255, 255, 255, 0.6);
+	  }
+	  .loader-bar span {
+	  	display: inline-block;
+	  	height: 2px;
+	  	background-color: #fff;
+	  }
+	  .preloader .loader #load_prec {
+			display: block;
+	    font-size: 62px;
+	    line-height: 1;
+	    color: #fff;
+	    text-transform: uppercase;
+	    padding-left: 71px;
+	  }
+	  .preloader.done {
+	  	transform: translate(0,-110%);
+	  	border-radius: 0 0 50% 50%;
+	  }
+	  .preloader.done .loader-row{
+	  	opacity: 0;
+	  	visibility: hidden;
+	  }
+	  @media only screen and (max-width : 768px){
+	  	.loader {
+	  		max-width: 282px;
+	  	}
+		  .preloader .loader #load_prec {
+		    font-size: 18px;
+		    line-height: 22px;
+		  }
+	  }
+	</style>
+	<div id="page-preloader" class="preloader" style="background-image: url(img/preloader-min.jpg);">
+		<div class="loader">
+			<div class="loader-row">
+				<div class="loader-bar"><span id="prec_bar" style="width: 101%;"></span></div>
+				<span id="load_prec">0%</span>
+			</div>
+		</div>
+	</div>
 	<div class="body-bg" style="background-image: url(img/body-bg-min.png);"></div>
 	<div class="menu">
 		<div class="menu-wrap">
@@ -241,7 +316,41 @@
 			      					</div>
 			      				</div>
 			      				<div class="advantage-block">
-			      					<span class="advantage-price">202 700 ₽</span>
+			      					<span class="advantage-price">202 70 ₽</span>
+			      					<span class="advantage-status">в наличии - обновлено вчера</span>
+			      				</div>
+			      				<div class="buttons-row">
+			      					<a href="#" class="primary-btn"><span>заказать товар</span></a>
+			      					<a href="#" class="second-btn"><span>подробнее</span></a>
+			      				</div>
+			      			</div>
+			      			<div class="advantage-img"><img src="img/img-2-min.png" alt=""></div>
+			      		</div>
+			        </div><!-- slide -->
+			        <div class="swiper-slide">
+			      		<div class="advantage-row">
+			      			<div class="advantage-info">
+			      				<span class="advantage-name">VG4-CX7000T</span>
+			      				<div class="advantage-specifications">
+			      					<div class="advantage-specifications-col col-1">
+			      						<span>Производитель</span>
+			      						<b>CGM TRUST<br>YOUR POWER</b>
+			      					</div>
+			      					<div class="advantage-specifications-col col-2">
+			      						<span>Страна</span>
+			      						<b>Германия</b>
+			      					</div>
+			      					<div class="advantage-specifications-col col-3">
+			      						<span>Мощность двигателя, л.с. / кВт:</span>
+			      						<b>8,6 (6,4)</b>
+			      					</div>
+			      					<div class="advantage-specifications-col col-4">
+			      						<span>Габариты, мм:</span>
+			      						<b>825х550х530</b>
+			      					</div>
+			      				</div>
+			      				<div class="advantage-block">
+			      					<span class="advantage-price">202 7 ₽</span>
 			      					<span class="advantage-status">в наличии - обновлено вчера</span>
 			      				</div>
 			      				<div class="buttons-row">
@@ -275,7 +384,7 @@
 			      					</div>
 			      				</div>
 			      				<div class="advantage-block">
-			      					<span class="advantage-price">202 700 ₽</span>
+			      					<span class="advantage-price">202 ₽</span>
 			      					<span class="advantage-status">в наличии - обновлено вчера</span>
 			      				</div>
 			      				<div class="buttons-row">
@@ -309,7 +418,7 @@
 			      					</div>
 			      				</div>
 			      				<div class="advantage-block">
-			      					<span class="advantage-price">202 700 ₽</span>
+			      					<span class="advantage-price">20 ₽</span>
 			      					<span class="advantage-status">в наличии - обновлено вчера</span>
 			      				</div>
 			      				<div class="buttons-row">
@@ -343,41 +452,7 @@
 			      					</div>
 			      				</div>
 			      				<div class="advantage-block">
-			      					<span class="advantage-price">202 700 ₽</span>
-			      					<span class="advantage-status">в наличии - обновлено вчера</span>
-			      				</div>
-			      				<div class="buttons-row">
-			      					<a href="#" class="primary-btn"><span>заказать товар</span></a>
-			      					<a href="#" class="second-btn"><span>подробнее</span></a>
-			      				</div>
-			      			</div>
-			      			<div class="advantage-img"><img src="img/img-1-min.png" alt=""></div>
-			      		</div>
-			        </div><!-- slide -->
-			        <div class="swiper-slide">
-			      		<div class="advantage-row">
-			      			<div class="advantage-info">
-			      				<span class="advantage-name">VG4-CX7000T</span>
-			      				<div class="advantage-specifications">
-			      					<div class="advantage-specifications-col col-1">
-			      						<span>Производитель</span>
-			      						<b>CGM TRUST<br>YOUR POWER</b>
-			      					</div>
-			      					<div class="advantage-specifications-col col-2">
-			      						<span>Страна</span>
-			      						<b>Германия</b>
-			      					</div>
-			      					<div class="advantage-specifications-col col-3">
-			      						<span>Мощность двигателя, л.с. / кВт:</span>
-			      						<b>8,6 (6,4)</b>
-			      					</div>
-			      					<div class="advantage-specifications-col col-4">
-			      						<span>Габариты, мм:</span>
-			      						<b>825х550х530</b>
-			      					</div>
-			      				</div>
-			      				<div class="advantage-block">
-			      					<span class="advantage-price">202 700 ₽</span>
+			      					<span class="advantage-price">2 ₽</span>
 			      					<span class="advantage-status">в наличии - обновлено вчера</span>
 			      				</div>
 			      				<div class="buttons-row">
@@ -592,6 +667,34 @@
 		</div>
 	</section>
 	<!-- end contacts -->
+	<script>
+		window.addEventListener("load", function() {
+		  var
+				preloader = document.getElementById('page-preloader'),
+				prec_display = document.getElementById('load_prec');
+				prec_bar = document.getElementById('prec_bar'),
+				gog = 0;
+
+			var interval = setInterval(counter,15);
+
+			function counter(){
+				prec_display.innerHTML = sum() + '%';
+				prec_bar.style.width = sum() + '%';
+
+				if(gog == 102){
+					clearInterval(interval);
+					preloader.classList.add('done');
+					setTimeout(function(){preloader.classList.add('done-all');}, 1000);
+				}
+			}
+
+			function sum(){
+				return gog++;
+			}
+
+		});
+	</script>
+	<link rel="stylesheet" href="css/main.min.css">
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOlA2b3wMEPHqs4h7NzXPuCgQtA0gK9zs&callback=initMap" async defer></script>
