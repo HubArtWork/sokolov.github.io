@@ -19,8 +19,118 @@
 <body>
 	<!-- start header -->
 	<header class="header">
-		<div class="wrapper"></div>
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-logo"><a href="#"><img src="img/logo-min.png" alt=""></a></div>
+				<div class="header-wrap">
+					<div class="header-search">
+						<form action="">
+							<div class="header-search-row">
+								<input type="text" name="text" placeholder="Что вы ищите?">
+								<button class="header-search-btn"></button>
+							</div>
+						</form>
+					</div>
+					<div class="header-local">
+						<div class="header-local-top"><span>Беларусь</span></div>
+						<ul class="header-local-list">
+							<li><a href="#">Беларусь</a></li>
+							<li><a href="#">Беларусь2</a></li>
+						</ul>
+					</div>
+					<ul class="header-list">
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Клиенту</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+					<a href="tel:80292345676" class="header-phone">8 029 234 56 76</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="header-bar"><span></span></div>
+			<div class="wrapper">
+				<ul class="header-menu">
+					<li class="drop">
+						<a href="#" class="drop-top">Кофе</a>
+						<ul class="drop-list">
+							<li><a href="#">Свежеобжаренный</a></li>
+							<li><a href="#">Растворимый</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Добавки к кофе</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Кофемашины</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Мастер-классы</a></li>
+				</ul>
+				<ul class="header-actions">
+					<li><a href="#"><i class="hb-ico user-ico"></i><b>2</b></a></li>
+					<li><a href="#"><i class="hb-ico comparison-ico"></i><b>2</b></a></li>
+					<li class="dropBasket">
+						<a href="#" class="dropBasket-top"><i class="hb-ico basket-ico"></i><b>2</b></a>
+						<div class="dropBasket-block">
+							<b>Куба, средняя обжарка (1)</b>
+							<span>Добавлен в корзину</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</header>
+	<div class="menu-bg"></div>
+	<div class="menu">
+		<div class="menu-all">
+			<div class="menu-wrap">
+				<div class="header-search">
+					<form action="">
+						<div class="header-search-row">
+							<input type="text" name="text" placeholder="Что вы ищите?">
+							<button class="header-search-btn"></button>
+						</div>
+					</form>
+				</div>
+				<ul class="menu-list">
+					<li class="drop">
+						<a href="#" class="drop-text">Кофе</a>
+						<ul class="drop-list">
+							<li><a href="#">Свежеобжаренный</a></li>
+							<li><a href="#">Растворимый</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Добавки к кофе</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Кофемашины</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Мастер-классы</a></li>
+				</ul>
+				<ul class="menu-links">
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Клиенту</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-bottom">
+			<div class="menu-row">
+				<div class="menu-logo"><a href="#"><img src="img/logo-min.png" alt=""></a></div>
+				<div class="menu-block">
+					<a href="tel:80292345676" class="header-phone">8 029 234 56 76</a>
+					<div class="header-local">
+						<div class="header-local-top"><span>Беларусь</span></div>
+						<ul class="header-local-list">
+							<li><a href="#">Беларусь</a></li>
+							<li><a href="#">Беларусь2</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- end header -->
 	<!-- start catalog -->
 	<section class="catalog">
@@ -39,84 +149,98 @@
 						<i class="hb-ico close-ico"></i>
 						<div class="catalog-filter-wrap">
 							<span class="catalog-filter-title">Фильтры</span>
-							<p>Найдено 4000 статей</p>
 							<div class="catalog-filter-item">
 								<span class="catalog-filter-subtitle">Особенности</span>
-								<ul class="page-tags">
-									<li><a href="#">Новинка</a></li>
-									<li><a href="#">Бестселлеры</a></li>
-									<li><a href="#">Скидка</a></li>
-								</ul>
+								<div class="catalog-filter-block">
+									<ul class="page-tags">
+										<li><a href="#">Новинка</a></li>
+										<li><a href="#">Бестселлеры</a></li>
+										<li><a href="#">Скидка</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="catalog-filter-item">
 								<span class="catalog-filter-subtitle">Страна</span>
-								<ul class="page-tags">
-									<li><a href="#">Куба</a></li>
-									<li><a href="#" class="disabled">Джимбар</a></li>
-									<li><a href="#">Танзания</a></li>
-									<li><a href="#">Гватемала</a></li>
-								</ul>
+								<div class="catalog-filter-block">
+									<ul class="page-tags">
+										<li><a href="#">Куба</a></li>
+										<li><a href="#" class="disabled">Джимбар</a></li>
+										<li><a href="#">Танзания</a></li>
+										<li><a href="#">Гватемала</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="catalog-filter-item">
 								<span class="catalog-filter-subtitle">Вид</span>
-								<ul class="page-tags">
-									<li><a href="#">Арабика</a></li>
-									<li><a href="#">Робуста</a></li>
-								</ul>
+								<div class="catalog-filter-block">
+									<ul class="page-tags">
+										<li><a href="#">Арабика</a></li>
+										<li><a href="#">Робуста</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="catalog-filter-item">
 								<span class="catalog-filter-subtitle">Способ заваривания</span>
-								<ul class="page-tags">
-									<li><a href="#" class="active">Кружка</a></li>
-									<li><a href="#">Турка</a></li>
-									<li><a href="#">Экспрессо</a></li>
-									<li><a href="#">Френч-пресс</a></li>
-									<li><a href="#">Мока</a></li>
-									<li><a href="#">Фильтр</a></li>
-								</ul>
+								<div class="catalog-filter-block">
+									<ul class="page-tags">
+										<li><a href="#" class="active">Кружка</a></li>
+										<li><a href="#">Турка</a></li>
+										<li><a href="#">Экспрессо</a></li>
+										<li><a href="#">Френч-пресс</a></li>
+										<li><a href="#">Мока</a></li>
+										<li><a href="#">Фильтр</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="catalog-filter-item">
 								<span class="catalog-filter-subtitle">Чекбоксы</span>
-								<div class="checkbox">
-									<input type="checkbox" checked>
-									<i class="checkbox-ico"></i>
-									<p>Высокая кислотность</p>
-								</div>
-								<div class="checkbox">
-									<input type="checkbox">
-									<i class="checkbox-ico"></i>
-									<p>Насыщенно</p>
-								</div>
-								<div class="checkbox">
-									<input type="checkbox">
-									<i class="checkbox-ico"></i>
-									<p>Классика</p>
-								</div>
-								<div class="checkbox">
-									<input type="checkbox">
-									<i class="checkbox-ico"></i>
-									<p>Горький</p>
+								<div class="catalog-filter-block">
+									<div class="checkbox">
+										<input type="checkbox" checked>
+										<i class="checkbox-ico"></i>
+										<p>Высокая кислотность</p>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Насыщенно</p>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Классика</p>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Горький</p>
+									</div>
 								</div>
 							</div>
 							<div class="catalog-filter-item">
 								<span class="catalog-filter-subtitle">Радиокнопки</span>
-								<div class="radio">
-									<input type="radio" name="radio" checked>
-									<i class="radio-ico"></i>
-									<p>Все</p>
-								</div>
-								<div class="radio">
-									<input type="radio" name="radio">
-									<i class="radio-ico"></i>
-									<p>средняя обжарка</p>
-								</div>
-								<div class="radio">
-									<input type="radio" name="radio">
-									<i class="radio-ico"></i>
-									<p>сильная обжарка</p>
+								<div class="catalog-filter-block">
+									<div class="radio">
+										<input type="radio" name="radio" checked>
+										<i class="radio-ico"></i>
+										<p>Все</p>
+									</div>
+									<div class="radio">
+										<input type="radio" name="radio">
+										<i class="radio-ico"></i>
+										<p>средняя обжарка</p>
+									</div>
+									<div class="radio">
+										<input type="radio" name="radio">
+										<i class="radio-ico"></i>
+										<p>сильная обжарка</p>
+									</div>
 								</div>
 							</div>
-							<a href="#" class="reset">Сбросить</a>
+							<div class="catalog-filter-bottom">
+								<p>Найдено 4000 товаров</p>
+								<a href="#" class="reset">Сбросить</a>
+							</div>
 						</div>
 					</div>
 					<div class="novelty">
