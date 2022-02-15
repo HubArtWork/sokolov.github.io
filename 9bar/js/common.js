@@ -82,7 +82,7 @@ $(document).ready(function(){
 	  },
 	});
 	var swiper = new Swiper('.beforeAfter-slider', {
-	  slidesPerView: 2,
+	  slidesPerView: 1,
 	  freeMode: true,
 	  watchSlidesVisibility: true,
 	  watchOverflow: true,
@@ -173,6 +173,26 @@ $(document).ready(function(){
 	  }
 	});
 
+	var swiper = new Swiper('.aboutUs-slider', {
+	  slidesPerView: 2,
+	  freeMode: true,
+	  watchSlidesVisibility: true,
+	  watchOverflow: true,
+	  spaceBetween: 20,
+	  navigation: {
+	    nextEl: '.aboutUs .swiper-button-next',
+	    prevEl: '.aboutUs .swiper-button-prev',
+	  },
+	  breakpoints: {
+	  	10: {
+	      spaceBetween: 15,
+	    },
+	    651: {
+	      spaceBetween: 20,
+	    },
+	  }
+	});
+
 	/* -- end sliders -- */
 
 	/* -- start products cards -- */
@@ -192,7 +212,7 @@ $(document).ready(function(){
 	});
 
 	//menu mob
-	$('.product-bottom .second-btn, .product-block .second-btn').on('click', function(e){
+	$('.product-bottom .second-btn, .product-block .second-btn, .product-block .close-ico').on('click', function(e){
 		e.preventDefault();
 
 		$(this).parents('.product-wrap').toggleClass('active');
@@ -202,7 +222,7 @@ $(document).ready(function(){
 	/* -- start catalog -- */
 
 	//catalog
-	$('.catalog-mob .primary-btn, .catalog-filter .close-ico').on('click', function(e){
+	$('.catalog-mob .primary-btn, .catalog-filter .close-ico,.catalog-bg').on('click', function(e){
 		e.preventDefault();
 		$('.catalog-filter,.catalog-bg').toggleClass('active');
 	});
