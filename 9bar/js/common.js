@@ -315,11 +315,29 @@ $(document).ready(function(){
 		});
 	}
 
-	$(document).on('click', function (e){
-		var block = $(".select");
-		if (!block.is(e.target) && block.has(e.target).length === 0)
-			$('.select').removeClass('active');
-	});
+	if($( "select" ).length != 0){
+		$('select').select2();
+		if($( "#select-1" ).length != 0)
+			$("#select-1 select").select2({dropdownParent: $("#select-1")});
+		if($( "#select-2" ).length != 0)
+			$("#select-2 select").select2({dropdownParent: $("#select-2")});
+		if($( "#select-3" ).length != 0)
+			$("#select-3 select").select2({dropdownParent: $("#select-3")});
+		if($( "#select-4" ).length != 0)
+			$("#select-4 select").select2({dropdownParent: $("#select-4")});
+		if($( "#select-5" ).length != 0)
+			$("#select-5 select").select2({dropdownParent: $("#select-5")});
+		if($( "#select-6" ).length != 0)
+			$("#select-6 select").select2({dropdownParent: $("#select-6")});
+		if($( "#select-7" ).length != 0)
+			$("#select-7 select").select2({dropdownParent: $("#select-7")});
+		if($( "#select-8" ).length != 0)
+			$("#select-8 select").select2({dropdownParent: $("#select-8")});
+		if($( "#select-9" ).length != 0)
+			$("#select-9 select").select2({dropdownParent: $("#select-9")});
+		if($( "#select-10" ).length != 0)
+			$("#select-10 select").select2({dropdownParent: $("#select-10")});
+	}
 
 	//fancybox
 	$('[data-fancybox=""]').fancybox({
