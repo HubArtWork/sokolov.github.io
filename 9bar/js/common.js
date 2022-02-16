@@ -37,6 +37,17 @@ $(document).ready(function(){
 	    prevEl: '.products-second .swiper-button-prev',
 	  },
 	});
+	var swiper = new Swiper('.products-slider3', {
+	  slidesPerView: 'auto',
+	  freeMode: true,
+	  watchSlidesVisibility: true,
+	  watchOverflow: true,
+	  spaceBetween: 20,
+	  navigation: {
+	    nextEl: '.cards-products .swiper-button-next',
+	    prevEl: '.cards-products .swiper-button-prev',
+	  },
+	});
 	var swiper = new Swiper('.catalog-slider', {
 	  slidesPerView: 'auto',
 	  freeMode: true,
@@ -192,6 +203,54 @@ $(document).ready(function(){
 	    },
 	  }
 	});
+	var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 20,
+    slidesPerView: 3,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper,
+    },
+    navigation: {
+	    nextEl: '.mySwiper2 .swiper-button-next',
+	    prevEl: '.mySwiper2 .swiper-button-prev',
+	  },
+  });
+  var swiper = new Swiper('.cards-slider', {
+	  slidesPerView: 'auto',
+	  freeMode: true,
+	  watchSlidesVisibility: true,
+	  watchOverflow: true,
+	  spaceBetween: 20,
+	  navigation: {
+	    nextEl: '.cards-main-middle .swiper-button-next',
+	    prevEl: '.cards-main-middle .swiper-button-prev',
+	  },
+	});
+	var swiper = new Swiper('.cards-slider2', {
+	  slidesPerView: 'auto',
+	  freeMode: true,
+	  watchSlidesVisibility: true,
+	  watchOverflow: true,
+	  spaceBetween: 20,
+	  navigation: {
+	    nextEl: '.cards-main-middle2 .swiper-button-next',
+	    prevEl: '.cards-main-middle2 .swiper-button-prev',
+	  },
+	});
+	var swiper = new Swiper('.ways-slider', {
+	  slidesPerView: 'auto',
+	  freeMode: true,
+	  watchSlidesVisibility: true,
+	  watchOverflow: true,
+	  spaceBetween: 20,
+	  navigation: {
+	    nextEl: '.ways .swiper-button-next',
+	    prevEl: '.ways .swiper-button-prev',
+	  },
+	});
 
 	/* -- end sliders -- */
 
@@ -233,6 +292,15 @@ $(document).ready(function(){
 	});
 
 	/* -- end catalog -- */
+	/* -- start cards -- */
+
+	//catalog-filter-subtitle
+	$('.specifications-accordeon-top').on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('active').next('.specifications-accordeon-block').slideToggle();
+	});
+
+	/* -- end cards -- */
 
 	//disabled
 	$('.disabled').on('click', function(e){
