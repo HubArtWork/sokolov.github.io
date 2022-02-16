@@ -71,9 +71,49 @@
 					<li><a href="#"><i class="hb-ico comparison-ico"></i><b>2</b></a></li>
 					<li class="dropBasket">
 						<a href="#" class="dropBasket-top"><i class="hb-ico basket-ico"></i><b>2</b></a>
-						<div class="dropBasket-block">
-							<b>Куба, средняя обжарка (1)</b>
-							<span>Добавлен в корзину</span>
+						<div class="dropBasket-block dropBasket-block-second">
+							<div class="dropBasket-title">Корзина</div>
+							<div class="dropBasket-content">
+								<div class="dropBasket-product">
+									<i class="hb-ico close-ico"></i>
+									<div class="dropBasket-product-img"><img src="img/basket-1-min.png" alt=""></div>
+									<div class="dropBasket-product-info">
+										<div class="dropBasket-product-name"><a href="#">Куба, средняя обжарка</a></div>
+										<p>Средниий помол, 400г в несколько строк</p>
+										<div class="inputs">
+											<span class="inputs-minus"></span>
+											<input type="text" value="1">
+											<span class="inputs-plus"></span>
+										</div>
+										<div class="dropBasket-product-price">
+											<b>100,50 BYN</b>
+											<span>120,80 BYN</span>
+										</div>
+									</div>
+								</div><!-- product -->
+								<div class="dropBasket-product">
+									<i class="hb-ico close-ico"></i>
+									<div class="dropBasket-product-img"><img src="img/basket-2-min.png" alt=""></div>
+									<div class="dropBasket-product-info">
+										<div class="dropBasket-product-name"><a href="#">Арабика Джимба</a></div>
+										<p>Средниий помол, 400г</p>
+										<div class="inputs">
+											<span class="inputs-minus"></span>
+											<input type="text" value="1">
+											<span class="inputs-plus"></span>
+										</div>
+										<div class="dropBasket-product-price">
+											<b>100,50 BYN</b>
+											<span>120,80 BYN</span>
+										</div>
+									</div>
+								</div><!-- product -->
+							</div>
+							<div class="dropBasket-bottom">
+								<div class="dropBasket-total">Итого 100.23 BYN</div>
+								<div class="dropBasket-txt">Ваша скидка 80 BYN</div>
+								<a href="#" class="primary-btn">Перейти к оформлению</a>
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -224,29 +264,40 @@
 							<b>Способ доставки</b>
 							<a href="#">Узнать зону доставки</a>
 						</div>
-						<div class="radios">
+						<div class="radios radios-way">
 							<div class="radio">
-								<input type="radio" name="way">
+								<input type="radio" name="way" data-way="way-1" checked>
 								<i class="radio-ico"></i>
 								<p>Самовывоз</p>
 							</div>
 							<div class="radio">
-								<input type="radio" name="way" checked>
+								<input type="radio" name="way" data-way="way-2">
 								<i class="radio-ico"></i>
 								<p>По Минску</p>
 							</div>
 							<div class="radio">
-								<input type="radio" name="way">
+								<input type="radio" name="way" data-way="way-3">
 								<i class="radio-ico"></i>
 								<p>Доставка за пределы МКАД</p>
 							</div>
 							<div class="radio">
-								<input type="radio" name="way">
+								<input type="radio" name="way" data-way="way-4">
 								<i class="radio-ico"></i>
 								<p>Доставка по РБ</p>
 							</div>
 						</div>
-						<div class="basket-form">
+						<div class="basket-form active" id="way-1">
+							<form action="">
+								<div class="basket-map">
+									<div class="map" id="map"></div>
+								</div>
+								<div class="input-block">
+									<label for="gh-1">Адресс точки самовыввоза</label>
+									<input id="gh-1" type="text" name="text">
+								</div>
+							</form>
+						</div>
+						<div class="basket-form" id="way-2">
 							<form action="">
 								<div class="input-block">
 									<label for="nl-1">Адресс</label>
@@ -256,26 +307,90 @@
 									<div class="basket-form-col">
 										<div class="input-block">
 											<label for="nl-2">Дом</label>
-											<input id="nl-2" type="text" name="text" placeholder="Ваше имя">
+											<input id="nl-2" type="text" name="text">
 										</div>
 									</div>
 									<div class="basket-form-col">
 										<div class="input-block">
 											<label for="nl-3">Квартира</label>
-											<input id="nl-3" type="text" name="text" placeholder="Ваше имя">
+											<input id="nl-3" type="text" name="text">
 										</div>
 									</div>
 								</div>
-								<div class="input-block input-block-last">
-									<label for="nl-4">Комментарии</label>
-									<textarea id="nl-4" name="text" placeholder="Напишите комментарий к заказу, например: Когда будет удобно получить заказ?"></textarea>
+							</form>
+						</div>
+						<div class="basket-form" id="way-3">
+							<form action="">
+								<div class="input-block">
+									<label for="nll-1">Населенный пункт</label>
+									<input id="nll-1" type="text" name="text" placeholder="Ваш населенный пункт">
+								</div>
+								<div class="input-block">
+									<label for="nll-2">Улица</label>
+									<input id="nll-2" type="text" name="text" placeholder="Ваша улица">
+								</div>
+								<div class="basket-form-row">
+									<div class="basket-form-col">
+										<div class="input-block">
+											<label for="nll-3">Дом</label>
+											<input id="nll-3" type="text" name="text">
+										</div>
+									</div>
+									<div class="basket-form-col">
+										<div class="input-block">
+											<label for="nll-4">Квартира</label>
+											<input id="nll-4" type="text" name="text">
+										</div>
+									</div>
 								</div>
 							</form>
+						</div>
+						<div class="basket-form" id="way-4">
+							<form action="">
+								<div class="input-block">
+									<label for="nld-1">Область</label>
+									<input id="nld-1" type="text" name="text" placeholder="Ваша область проживания">
+								</div>
+								<div class="input-block">
+									<label for="nld-2">Город</label>
+									<input id="nld-2" type="text" name="text" placeholder="Ваше город">
+								</div>
+								<div class="input-block">
+									<label for="nld-3">Адресс</label>
+									<input id="nld-3" type="text" name="text" placeholder="Ваш адрес">
+								</div>
+								<div class="basket-form-row">
+									<div class="basket-form-col">
+										<div class="input-block">
+											<label for="nld-4">Дом</label>
+											<input id="nld-4" type="text" name="text">
+										</div>
+									</div>
+									<div class="basket-form-col">
+										<div class="input-block">
+											<label for="nld-5">Квартира</label>
+											<input id="nld-5" type="text" name="text">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="input-block input-block-last">
+							<label for="nk-4">Комментарии</label>
+							<textarea id="nk-4" name="text" placeholder="Напишите комментарий к заказу, например: Когда будет удобно получить заказ?"></textarea>
 						</div>
 					</div>
 					<div class="basket-pay">
 						<span class="section-title">Оплата</span>
-						<a href="#" class="more">Ввести сертификат</a>
+						<div class="basket-pay-all">
+							<a href="#" class="more">Ввести сертификат</a>
+							<div class="basket-pay-block">
+								<div class="input-block">
+									<label for="rl-1">Номер сертификата</label>
+									<input id="rl-1" type="text" name="text" placeholder="Введите номер сертификата">
+								</div>
+							</div>
+						</div>
 						<div class="basket-radios">
 							<div class="radio">
 								<input type="radio" name="pay" checked>
