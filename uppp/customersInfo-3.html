@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link href = "https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel = "stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js"></script>
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<section class="page">
+		<div class="sidebar">
+			<div class="sidebar-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<ul class="sidebar-menu">
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-0"></i>
+					<span>Calendar</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-1"></i>
+					<span>Services</span>
+				</a></li>
+				<li><a href="#" class="active">
+					<i class="hb-ico sidebar-ico-2"></i>
+					<span>Team</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-3"></i>
+					<span>Orders</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-4"></i>
+					<span>Customers</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-5"></i>
+					<span>Compaigns</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-6"></i>
+					<span>Billing</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-7"></i>
+					<span>Chat</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-8"></i>
+					<span>Invoices</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-9"></i>
+					<span>Your Statistic</span>
+				</a></li>
+				<li><a href="#">
+					<i class="hb-ico sidebar-ico-10"></i>
+					<span>Sign out</span>
+				</a></li>
+			</ul>
+			<div class="sidebar-mob"></div>
+		</div>
+		<div class="content">
+			<div class="wrapper">
+				<div class="header">
+					<div class="header-bar"><span></span></div>
+					<div class="header-drop drop">
+						<div class="drop-top">
+							<span>Hello, <b>manhattan super fitness club</b></span>
+							<div class="header-user"></div>
+						</div>
+						<div class="drop-info">
+							<ul class="drop-list">
+								<li><a href="#">
+									<i class="hb-ico settings-ico"></i>
+									<span>Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico invoice-ico"></i>
+									<span>Invoice Settings</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico terms-ico"></i>
+									<span>My terms of use</span>
+								</a></li>
+								<li><a href="#">
+									<i class="hb-ico signOut-ico"></i>
+									<span>Sign out</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="back-link">Back to customers</a>
+				<div class="content-top">
+					<div class="customer-head">
+						<div class="customer-user">
+							<span class="customer-user-name">Vasya Pupkin</span>
+							<a href="#modal-avatar" class="customer-user-img dropFile modal-btn">D</a>
+						</div>
+						<div class="customer-text">
+							<div class="customer-text-row">
+								<span class="customer-price">Spent up to date: <a href="#">$420.85</a></span>
+								<div class="customer-top">Top 10</div>
+							</div>
+							<div class="customer-pay-block">
+								<div class="customer-pay-block-img"><img src="img/mastercard-2.svg" alt=""></div>
+								<div class="customer-pay-block-info">
+									<span class="customer-pay-block-num">Mastercard...9975 <i>Default</i></span>
+									<span class="customer-pay-block-date">Expires Jul 2025</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul>
+					<li><a href="#modal-overview" class="modal-btn primary-btn">modal-1</a></li>
+					<li><br></li>
+					<li><a href="#modal-history" class="modal-btn primary-btn">modal-2</a></li>
+					<li><br></li>
+					<li><a href="#modal-history2" class="modal-btn primary-btn">modal-3</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<div class="modal-bg"></div>
+	<!-- start Overview -->
+	<div id="modal-overview" class="formModal formModal-overview">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<div class="formModal-head">
+				<span class="formModal-head-sub">customer</span>
+				<span class="formModal-head-name">Vasya Pupkin</span>
+				<span class="formModal-head-date">Fri, oct 4 <b>- 2019</b> <a href="#">Add new </a></span>
+			</div>
+			<div class="allTabs">
+				<div class="content-menu">
+					<ul class="content-menu__list tab-list">
+						<li><a href="#content-1" class="active">Overview</a></li>
+						<li><a href="#content-2">Booking limit</a></li>
+					</ul>
+				</div>
+				<div class="tab tab-active" id="content-1">
+					<div class="overview-block">
+						<div class="overview-time">9:00 am</div>
+						<div class="overview-block-wrap">
+							<span class="overview-subtitle">Service type/name</span>
+							<span class="overview-provider">Provider: Sergey M.</span>
+							<ul>
+								<li>60 min.</li>
+								<li>$100.00</li>
+							</ul>
+							<span class="overview-cat">Scheduled</span>
+						</div>
+					</div>
+					<div class="overview-block">
+						<div class="overview-time">9:00 am</div>
+						<div class="overview-block-wrap">
+							<span class="overview-subtitle">Service type/name</span>
+							<span class="overview-provider">Provider: Sergey M.</span>
+							<ul>
+								<li>60 min.</li>
+								<li>$100.00</li>
+							</ul>
+							<span class="overview-cat">Scheduled</span>
+						</div>
+					</div>
+					<div class="overview-block canceled">
+						<div class="overview-time">9:00 am</div>
+						<div class="overview-block-wrap">
+							<span class="overview-subtitle">Service type/name</span>
+							<span class="overview-provider">Provider: Sergey M.</span>
+							<ul>
+								<li>60 min.</li>
+								<li>$100.00</li>
+							</ul>
+							<span class="overview-cat">Canceled</span>
+						</div>
+					</div>
+					<div class="overview-block">
+						<div class="overview-time">9:00 am</div>
+						<div class="overview-block-wrap">
+							<span class="overview-subtitle">Service type/name</span>
+							<span class="overview-provider">Provider: Sergey M.</span>
+							<ul>
+								<li>60 min.</li>
+								<li>$100.00</li>
+							</ul>
+							<span class="overview-cat">Scheduled</span>
+						</div>
+					</div>
+					<div class="overview-block">
+						<div class="overview-time">9:00 am</div>
+						<div class="overview-block-wrap">
+							<span class="overview-subtitle">Service type/name</span>
+							<span class="overview-provider">Provider: Sergey M.</span>
+							<ul>
+								<li>60 min.</li>
+								<li>$100.00</li>
+							</ul>
+							<span class="overview-cat">Scheduled</span>
+						</div>
+					</div>
+				</div>
+				<div class="tab" id="content-2">
+					<div class="booking">
+						<div class="booking-table">
+							<div class="booking-row">
+								<div>Стрижка собак</div>
+								<div> 8 slots/ weekly</div>
+								<a href="#" class="hb-ico delete-ico"></a>
+							</div>
+							<div class="booking-row">
+								<div>Стрижка собак</div>
+								<div> 8 slots/ weekly</div>
+								<a href="#" class="hb-ico delete-ico"></a>
+							</div>
+							<div class="booking-row">
+								<div>Стрижка собак</div>
+								<div> 8 slots/ weekly</div>
+								<a href="#" class="hb-ico delete-ico"></a>
+							</div>
+						</div>
+						<a href="#" class="primary-btn primary-btn-ico">
+							<i class="hb-ico plus-ico-white"></i>
+							<span>New</span>
+						</a>
+					</div>
+					<div class="booking-form">
+						<a href="#" class="formModal-link">Standard limits</a>
+						<form action="">
+							<div class="input-block">
+								<select name="text">
+									<option value="">Select service </option>
+								</select>
+							</div>
+							<div class="row">
+								<div class="col-sm-7">
+									<div class="input-block">
+										<input type="text" name="text" placeholder="Number of slots">
+									</div>
+								</div>
+								<div class="col-sm-5">
+									<div class="input-block">
+										<select name="text">
+											<option value="">8 hours</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<button class="primary-btn">Save</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start history -->
+	<div id="modal-history" class="formModal formModal-history">
+		<div class="support support-small">
+			<i class="hb-ico close-ico"></i>
+			<span class="support-title">Friday  09/18/2021  3:35 pm </span>
+			<div class="support-list">
+				<div class="support-li"><i class="hb-ico alarm-ico"></i>Hold Time <b>0 min.</b></div>
+				<div class="support-li"><i class="hb-ico time-ico"></i>Chat <b>0:00 min</b></div>
+			</div>
+			<div class="support-all">
+				<div class="support-li">
+					<span class="support-status open">Not resoved</span>
+				</div>
+				<div class="support-li">
+					<img src="img/star-3.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="form">
+			<div class="chat">
+				<div class="chat-wrap">
+					<div class="chat-block chat-your">
+						<div class="chat-block-wrap">
+							<span class="chat-text"><b>Alona</b> Apr 02, 2021 12:46 PM</span>
+							<div class="chat-message">Alona has started chat conversation</div>
+						</div>
+					</div>
+					<div class="chat-block">
+						<div class="chat-block-wrap">
+							<span class="chat-text"><b>Alona</b> Apr 02, 2021 12:46 PM</span>
+							<div class="chat-message">Alona has started chat conversation</div>
+						</div>
+					</div>
+					<div class="chat-block chat-your">
+						<div class="chat-block-wrap">
+							<span class="chat-text"><b>Alona</b> Apr 02, 2021 12:46 PM</span>
+							<div class="chat-message">Alona has started chat conversation</div>
+						</div>
+					</div>
+					<div class="chat-block">
+						<div class="chat-block-wrap">
+							<span class="chat-text"><b>Alona</b> Apr 02, 2021 12:46 PM</span>
+							<div class="chat-message">Alona has started chat conversation conversation conversation conversation conversation conversation</div>
+						</div>
+					</div>
+					<div class="chat-block chat-your">
+						<div class="chat-block-wrap">
+							<span class="chat-text"><b>Alona</b> Apr 02, 2021 12:46 PM</span>
+							<div class="chat-message">Alona has started chat conversation</div>
+						</div>
+					</div>
+				</div>
+				<div class="chat-bottom">
+					<span class="chat-bottom-title">End of conversation 3:35 pm </span>
+					<span class="chat-bottom-subtitle">Operator left chat </span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start history -->
+	<div id="modal-history2" class="formModal formModal-historyBig">
+		<div class="support">
+			<i class="hb-ico close-ico"></i>
+			<div class="support-top">
+				<div class="support-block">
+					<span class="support-tit">Category:  <b>Tech support</b></span>
+					<span class="support-status">Answered</span>
+					<!--<span class="support-status">Open</span>-->
+				</div>
+				<div class="support-info">
+					<span>Started:  09/18/2021   3:35 pm</span>
+					<span>Closed:  09/18/2021  12:35 pm</span>
+				</div>
+			</div>
+			<div class="support-bottom">
+				<div class="pagination pagination-second">
+					<a href="#" class="pagination-prev"></a>
+					<span class="pagination-num">1/24</span>
+					<a href="#" class="pagination-next"></a>
+				</div>
+				<span class="support-time">Friday  09/18/2021  3:35 pm </span>
+			</div>
+		</div>
+		<div class="form">
+			<div class="history">
+				<div class="history-item">
+					<div class="history-info">
+						<p>Subject: <b>Help me asap,  nothing works</b></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+					</div>
+					<div class="history-images">
+						<div class="history-img"><img src="img/img-24-min.jpg" alt=""></div>
+						<div class="history-img"><img src="img/img-24-min.jpg" alt=""></div>
+						<div class="history-img"><img src="img/img-24-min.jpg" alt=""></div>
+					</div>
+					<div class="history-item">
+						<div class="history-item-top">
+							<span class="history-item-name">Vasya Kakobychno</span>
+							<span class="history-item-time">Replied in: <b>20 min.</b></span>
+						</div>
+						<div class="history-info">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <b>labore et dolore magna aliqua.</b> Ut enim ad minim veniam elit, sed do eiusmod tempor incididunt <a href="#">ut labore et dolore</a> magna aliqua. Ut enim ad minim veniam...</p>
+						</div>
+					</div>
+				</div>
+				<div class="history-form">
+					<div class="input-block">
+						<textarea name="text" placeholder="Post our reply here"></textarea>
+					</div>
+					<div class="files">
+						<input type="file">
+						<span>Attach file(s)</span>
+					</div>
+					<div class="history-buttons buttons-row">
+						<a href="#" class="second-btn">Cancel</a>
+						<a href="#" class="primary-btn">Send</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
