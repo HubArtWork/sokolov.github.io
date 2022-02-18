@@ -61,20 +61,35 @@
 					<div class="form-block">
 						<form action="">
 							<div class="input-block">
-								<input type="text" name="text" placeholder="Ваше Имя*">
-							</div>
+								<span class="input-label">Ваше Имя*</span>
+								<div class="input-wrap">
+									<input type="text" name="text">
+								</div>
+							</div><!-- input -->
 							<div class="input-block">
-								<input type="text" name="text" placeholder="Компания*">
-							</div>
+								<span class="input-label">Компания*</span>
+								<div class="input-wrap">
+									<input type="text" name="text">
+								</div>
+							</div><!-- input -->
 							<div class="input-block">
-								<input type="text" name="text" placeholder="Телефон / е-мейл*">
-							</div>
+								<span class="input-label">Телефон / е-мейл*</span>
+								<div class="input-wrap">
+									<input type="text" name="text">
+								</div>
+							</div><!-- input -->
 							<div class="input-block">
-								<input type="text" name="text" placeholder="Город*">
-							</div>
+								<span class="input-label">Город*</span>
+								<div class="input-wrap">
+									<input type="text" name="text">
+								</div>
+							</div><!-- input -->
 							<div class="input-block">
-								<textarea name="text" placeholder="Сообщение"></textarea>
-							</div>
+								<span class="input-label">Сообщение*</span>
+								<div class="input-wrap">
+									<textarea name="text"></textarea>
+								</div>
+							</div><!-- input -->
 							<div class="contacts-bottom">
 								<div class="contacts-bottom-wrap">
 									<div class="checkbox checkbox-white">
@@ -97,7 +112,7 @@
 		<div class="wrapper">
 			<div class="blog-row">
 				<div class="blog-col">
-					<a href="#" class="blog-wrap" style="background-image: url(img/map-min.jpg);">
+					<a href="#modal-map" class="blog-wrap modal-link" style="background-image: url(img/map-min.jpg);">
 						<div class="blog-block">
 							<div class="blog-ico"><img src="img/map-ico.svg" alt=""></div>
 							<span class="blog-name">Карта проезда</span>
@@ -123,6 +138,26 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-map">
+		<div class="map">
+			<div class="map-wrap" id="map"></div>
+		</div>
+	</div>
 	<script defer src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+  <script>
+		ymaps.ready(init);
+
+		function init() {
+		    var myMap = new ymaps.Map("map", {
+		            center: [55.73, 37.75],
+		            zoom: 10
+		        }, {
+		            searchControlProvider: 'yandex#search'
+		        });
+
+		}
+	</script>
 </body>
 </html>
