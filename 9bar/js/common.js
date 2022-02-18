@@ -21,6 +21,7 @@ $(document).ready(function(){
 	  watchSlidesVisibility: true,
 	  watchOverflow: true,
 	  spaceBetween: 20,
+	  allowTouchMove: false,
 	  navigation: {
 	    nextEl: '.products-first .swiper-button-next',
 	    prevEl: '.products-first .swiper-button-prev',
@@ -32,6 +33,7 @@ $(document).ready(function(){
 	  watchSlidesVisibility: true,
 	  watchOverflow: true,
 	  spaceBetween: 20,
+	  allowTouchMove: false,
 	  navigation: {
 	    nextEl: '.products-second .swiper-button-next',
 	    prevEl: '.products-second .swiper-button-prev',
@@ -43,6 +45,7 @@ $(document).ready(function(){
 	  watchSlidesVisibility: true,
 	  watchOverflow: true,
 	  spaceBetween: 20,
+	  allowTouchMove: false,
 	  navigation: {
 	    nextEl: '.cards-products .swiper-button-next',
 	    prevEl: '.cards-products .swiper-button-prev',
@@ -348,6 +351,9 @@ $(document).ready(function(){
 	//disabled
 	$('.disabled').on('click', function(e){
 		e.preventDefault();
+	});
+	$('.link').on('click', function(e){
+		$.fancybox.close();
 	});
 
 	//local

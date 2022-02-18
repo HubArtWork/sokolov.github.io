@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">Модалки</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-form" href="javascript:;">Покупка в один клик</a></li>
+				<li>2.<a data-fancybox data-src="#modal-entrance" href="javascript:;">Вход</a></li>
+				<li>3.<a data-fancybox data-src="#modal-registration" href="javascript:;">Регистрация</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-form" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<span class="modal-title">Покупка в один клик</span>
+				<p>Для оформления заказа с вами свяжется наш менеджер</p>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<label for="md-1">Имя</label>
+					<input id="md-1" type="text" name="text" placeholder="Ваше имя">
+				</div>
+				<div class="input-block">
+					<label for="md-2">Телефон</label>
+					<div class="input-wrap">
+						<i class="hb-ico bl-ico"></i>
+						<input id="md-2" type="text" name="text" value="+375">
+					</div>
+				</div>
+				<button class="primary-btn">Заказать</button>
+			</form>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-entrance" class="modal modal-big">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<span class="modal-title">Вход</span>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<label for="mk-1">Email</label>
+					<div class="input-block-wrap">
+						<input id="mk-1" type="email" name="email" placeholder="Ваше имя">
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="mk-2">Пароль</label>
+					<div class="input-block-wrap">
+						<input id="mk-2" type="password" name="password" value="Ваш пароль">
+						<a href="#" class="forgot">Забыли пароль?</a>
+					</div>
+				</div>
+				<div class="links">
+					<button class="primary-btn">Войти</button>
+					<a data-fancybox data-src="#modal-registration" href="javascript:;" class="link">Регистрация</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-registration" class="modal modal-big">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<span class="modal-title">Регистрация</span>
+			</div>
+			<form action="">
+				<div class="input-block">
+					<label for="ml-1">Имя</label>
+					<div class="input-block-wrap">
+						<input id="ml-1" type="text" name="text" placeholder="Ваше имя">
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="ml-2">Email</label>
+					<div class="input-block-wrap">
+						<input id="ml-2" type="email" name="email" placeholder="Ваш Email">
+					</div>
+				</div>
+				<div class="links">
+					<button class="primary-btn">Зарегистрироваться</button>
+					<a data-fancybox data-src="#modal-entrance" href="javascript:;" class="link">Авторизоваться</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+	<script defer src="js/common.js"></script>
+</body>
+</html>
