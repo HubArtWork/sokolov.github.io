@@ -812,98 +812,256 @@
 							</div>
 						</div>
 					</div>
-					<div class="tab" id="tab-7">
-						<div class="method">
-							<ul class="method-list">
-								<li><a href="#" class="active">Credit cards</a></li>
-								<li><a href="#">PayPal account</a></li>
-								<li><a href="#">Bank or wire instruction</a></li>
-								<li><a href="#">Zelle instruction</a></li>
+					<div class="tab" id="tab-6">
+						<div class="scrolls booking">
+							<ul class="links scroll-links">
+								<li><a href="#sect-7">Settings</a></li>
+								<li><a href="#sect-8">Checkout page</a></li>
+								<li><a href="#sect-9">Messages</a></li>
 							</ul>
-							<div class="payment">
-								<div class="payment-sidebar">
-									<ul class="payment-list">
-										<li><a href="#payment-1" class="active">
-											<div>
-												<i class="hb-ico payPal-ico"></i>
-												<span>PayPal</span>
+							<div id="sect-7" class="settings-bl">
+								<h3 class="account-title">Invoice Settings</h3>
+								<div class="booking-settings">
+									<div class="input-block">
+										<div class="input-block__top">
+											<label for="">Maximum slots per day</label>
+											<div class="prompt">
+												<div class="prompt-ico"></div>
+												<div class="prompt-info">
+													<p>Once this number is reached for a single date, customers can't make new appointments for this particular day. <br><br>For unlimited appointments per day, leave this field empty.</p>
+												</div>
 											</div>
-										</a></li>
-										<li><a href="#payment-2">
-											<div>
-												<i class="hb-ico credit-ico"></i>
-												<span>authorize.net</span>
+										</div>
+										<input type="text" name="text" placeholder="Total slots for all providers">
+									</div>
+									<div class="input-block input-block-small">
+										<div class="input-block__top">
+											<label for="">Single slot time frame</label>
+											<div class="prompt">
+												<div class="prompt-ico"></div>
+												<div class="prompt-info">
+													<p>Default slot time frame. You can set specific time frame per service in Services. </p>
+												</div>
 											</div>
-										</a></li>
-										<li><a href="#payment-3">
-											<div>
-												<i class="hb-ico credit-ico"></i>
-												<span>Brainthree</span>
+										</div>
+										<select name="text" class="select-second">
+											<option value="">30 minutes</option>
+											<option value="">Refundable</option>
+											<option value="">Non-refundable</option>
+										</select>
+									</div>
+									<div class="input-block">
+										<div class="input-block__top">
+											<label for="">Maximum slots per hour/per provider</label>
+											<div class="prompt">
+												<div class="prompt-ico"></div>
+												<div class="prompt-info">
+													<p>This is how many customers can book an appointment for a single provider within a time frame. <br><br>For unlimited appointments per time frame, leave this field empty. </p>
+												</div>
 											</div>
-										</a></li>
-										<li><a href="#payment-4">
-											<div>
-												<i class="hb-ico credit-ico"></i>
-												<span>Stripe</span>
+										</div>
+										<input type="text" name="text" placeholder="Slots per provider">
+									</div>
+									<div class="input-block">
+										<label for="">Payment options</label>
+										<select name="text" class="select-second">
+											<option value="">Full payment required</option>
+											<option value="">Deposit required</option>
+											<option value="">Payment optional</option>
+											<option value="">No paymemnt</option>
+										</select>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="input-block">
+												<label for="">Deposit</label>
+												<select name="text" class="select-second">
+													<option value="">Not required</option>
+													<option value="">Refundable</option>
+													<option value="">Non-refundable</option>
+												</select>
 											</div>
-										</a></li>
-									</ul>
-								</div>
-								<div class="payment-content">
-									<div class="payment-block active" id="payment-1">
-										<div class="payment-form">
-											<form action="">
-												<div class="input-block">
-													<input type="text" name="text" placeholder="Public Key">
-												</div>
-												<div class="input-block">
-													<input type="text" name="text" placeholder="Secret Key">
-												</div>
-												<div class="input-block">
-													<input type="text" name="text" placeholder="Credit Card Limit">
-												</div>
-												<div class="checkbox">
-													<input type="checkbox">
-													<i class="checkbox-ico"></i>
-													<p>Use default</p>
-												</div>
-												<h4 class="payment-title">Processing fee paid by:</h4>
-												<div class="payment-radios">
-													<div class="radio">
-														<input type="radio" name="payment">
-														<i class="radio-ico"></i>
-														<p>Me</p>
-													</div>
-													<div class="radio">
-														<input type="radio" name="payment">
-														<i class="radio-ico"></i>
-														<p>Customer</p>
-													</div>
-												</div>
-												<div class="payment-inputs">
-													<div class="input-block">
-														<input type="text" name="text" placeholder="Processing Fee">
-													</div>
-													<div class="input-block input-block__small">
-														<select name="text">
-															<option value="%">%</option>
-															<option value="%">%</option>
-														</select>
-													</div>
-												</div>
-												<button class="primary-btn">Save</button>
-											</form>
+										</div>
+										<div class="col-sm-6">
+											<div class="input-block">
+												<label for="">Must be cancelled</label>
+												<select name="text" class="select-second">
+													<option value="">1 week</option>
+													<option value="">5 days</option>
+													<option value="">48 hours</option>
+													<option value="">24 hours</option>
+													<option value="">12 hours</option>
+												</select>
+											</div>
 										</div>
 									</div>
-									<div class="payment-block" id="payment-2">
-										<p>2Lorem, ipsum dolor.</p>
+									<div class="booking-deposit">
+										<div class="input-block">
+											<label for="">Deposit amount</label>
+											<input type="text" name="text">
+										</div>
+										<div class="input-block input-block-bl">
+											<label for="">Fixed/No</label>
+											<select name="text" class="select-second">
+												<option value="">$</option>
+											</select>
+										</div>
 									</div>
-									<div class="payment-block" id="payment-3">
-										<p>3Lorem, ipsum dolor.</p>
+								</div>
+							</div>
+							<div id="sect-8" class="settings-bl">
+								<h3 class="account-title">Checkout page</h3>
+								<div class="booking-content">
+									<div class="booking-block">
+										<div class="booking-row">
+											<div class="booking-col">
+												<div class="input-block">
+													<label for="">Field name</label>
+													<input type="text" name="text" placeholder="Full name">
+												</div>
+											</div>
+											<div class="booking-col booking-col-small">
+												<div class="input-block">
+													<label for="">Type</label>
+													<select name="text" class="select-second">
+														<option value="">Text</option>
+														<option value="">Text</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Required</p>
+										</div>
 									</div>
-									<div class="payment-block" id="payment-4">
-										<p>4Lorem, ipsum dolor.</p>
+									<div class="booking-block">
+										<div class="booking-row">
+											<div class="booking-col">
+												<div class="input-block">
+													<label for="">Email  address</label>
+													<input type="text" name="text" placeholder="Email  address">
+												</div>
+											</div>
+											<div class="booking-col booking-col-small">
+												<div class="input-block">
+													<label for="">Type</label>
+													<select name="text" class="select-second">
+														<option value="">Text</option>
+														<option value="">Text</option>
+													</select>
+												</div>
+											</div>
+											<i class="hb-ico delete-ico"></i>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Required</p>
+										</div>
 									</div>
+									<div class="booking-block">
+										<div class="booking-row">
+											<div class="booking-col">
+												<div class="input-block">
+													<label for="">Phone number</label>
+													<input type="text" name="text" placeholder="Phone number">
+												</div>
+											</div>
+											<div class="booking-col booking-col-small">
+												<div class="input-block">
+													<label for="">Type</label>
+													<select name="text" class="select-second">
+														<option value="">Text</option>
+														<option value="">Text</option>
+													</select>
+												</div>
+											</div>
+											<i class="hb-ico delete-ico"></i>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Required</p>
+										</div>
+									</div>
+									<div class="booking-block">
+										<div class="booking-row">
+											<div class="booking-col">
+												<div class="input-block">
+													<label for="">Field name</label>
+													<input type="text" name="text" placeholder="Email  address">
+												</div>
+											</div>
+											<div class="booking-col booking-col-small">
+												<div class="input-block">
+													<label for="">Type</label>
+													<select name="text" class="select-second">
+														<option value="">Text</option>
+														<option value="">Text</option>
+													</select>
+												</div>
+											</div>
+											<i class="hb-ico delete-ico"></i>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Required</p>
+										</div>
+									</div>
+									<div class="booking-add">
+										<a href="#">+ Add one more</a>
+									</div>
+									<div class="booking-terms">
+										<div class="input-block">
+											<label for="">Terms and disclaimers</label>
+											<select name="text" class="select-second">
+												<option value="">Select policy</option>
+												<option value="">Terms of Use</option>
+												<option value="">Cancelation Policy</option>
+											</select>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox">
+											<i class="checkbox-ico"></i>
+											<p>Customer must accept</p>
+										</div>
+										<div class="booking-add">
+											<a href="#">+ Add new policy</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="sect-9" class="settings-bl">
+								<h3 class="account-title">Messages</h3>
+								<div class="booking-messages">
+									<div class="input-block">
+										<div class="input-block__top">
+											<label for="">Welcome message, description or instruction</label>
+										</div>
+										<textarea name="text" placeholder="Welcome! Please follow the instructions  to book a new  appointment. "></textarea>
+									</div>
+									<div class="input-block">
+										<div class="input-block__top">
+											<label for="">After booking message, description or instruction</label>
+											<div class="prompt">
+												<div class="prompt-ico"></div>
+												<div class="prompt-info">
+													<p>After appointment was scheduled.   <br><br>You may add  ONLY following variables to your message: [name], [date], [time], [service], [product]. These variables must be enclosed into brackets [ ]</p>
+												</div>
+											</div>
+										</div>
+										<textarea name="text" placeholder="Thank you! Your appointment is scheduled  and we cant wait to see you on [date],  [time]"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="bottom-btn">
+								<div class="buttons-row">
+									<a href="#" class="second-btn">Preview</a>
+									<button class="primary-btn">Save</button>
+									<a href="#" class="second-btn">Cancel</a>
 								</div>
 							</div>
 						</div>
@@ -939,6 +1097,420 @@
 					<select name="text">
 						<option value="">Master</option>
 						<option value="">Master</option>
+					</select>
+				</div>
+				<div class="form-btn">
+					<button class="primary-btn">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-classic" class="modal modalTemplate modal-classic">
+		<div class="modal-wrap">
+			<div class="modalTemplate-top">
+				<span class="modalTemplate-title">Classic</span>
+			</div>
+			<div class="modalTemplate-all">
+				<div class="invoices-wrap">
+					<div class="modalTemplate-content">
+						<div class="invoices-wrap__head">
+							<div class="invoices-wrap__head-main">
+								<div class="invoices-wrap__logo">
+									<img src="img/logo.svg" alt="">
+								</div>
+								<div class="invoices-wrap__info">
+									<h3 class="invoices-wrap__head-subtitle">EW General Consulting Inc.</h3>
+									<ul>
+										<li>New York</li>
+										<li>Cropsey ave. #3b</li>
+										<li>Tel: 808852255880</li>
+										<li>fedx@gmail.col</li>
+									</ul>
+								</div>
+							</div>
+							<div class="invoices-wrap__amount">
+								<h3 class="invoices-wrap__head-title">Invoice</h3>
+								<div class="invoices-wrap__amount-block">
+									<ul>
+										<li>
+											<span>Invoice #</span>
+											<span>123</span>
+										</li>
+										<li>
+											<span>Invoice data</span>
+											<span>09/09/2009</span>
+										</li>
+										<li>
+											<span>Due data</span>
+											<span>09/09/2009</span>
+										</li>
+									</ul>
+									<div class="invoices-wrap__amount-bottom">
+										<span>Amount Due</span>
+										<b>$76.00</b>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__descr">
+							<h3>To <span>Jimmy Band</span></h3>
+							<ul>
+								<li>jimmy@company.com</li>
+							</ul>
+						</div>
+						<div class="invoices-wrap__table">
+							<div class="invoices-wrap__table-row invoices-wrap__table-top">
+								<div class="invoices-wrap__table-col col-1"></div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>Quanty</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>Price</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>Amount</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design <br>responsive design + bootstrap</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__total">
+							<ul>
+								<li>
+									<span>Subtotal</span>
+									<span>$2334.00</span>
+								</li>
+								<li>
+									<span>Sales Tax(8.875%))</span>
+									<span>$7.76</span>
+								</li>
+								<li>
+									<span>Total</span>
+									<span>$2367.00</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-standart" class="modal modalTemplate modal-standart">
+		<div class="modal-wrap">
+			<div class="modalTemplate-top">
+				<span class="modalTemplate-title">Classic</span>
+			</div>
+			<div class="modalTemplate-all">
+				<div class="invoices-wrap">
+					<div class="modalTemplate-content">
+						<div class="invoices-wrap__head">
+							<div class="invoices-wrap__head-main">
+								<div class="invoices-wrap__logo">
+									<img src="img/logo.svg" alt="">
+								</div>
+								<div class="invoices-wrap__info">
+									<h3 class="invoices-wrap__head-subtitle">EW General Consulting Inc.</h3>
+									<ul>
+										<li>New York</li>
+										<li>Cropsey ave. #3b</li>
+										<li>Tel: 808852255880</li>
+										<li>fedx@gmail.col</li>
+									</ul>
+									<div class="invoices-wrap__descr">
+										<h3>To <span>Jimmy Band</span></h3>
+										<ul>
+											<li>jimmy@company.com</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="invoices-wrap__amount">
+								<h3 class="invoices-wrap__head-title">Invoice</h3>
+								<div class="invoices-wrap__amount-block">
+									<ul>
+										<li>
+											<span>Invoice #</span>
+											<span>123</span>
+										</li>
+										<li>
+											<span>Invoice data</span>
+											<span>09/09/2009</span>
+										</li>
+										<li>
+											<span>Due data</span>
+											<span>09/09/2009</span>
+										</li>
+									</ul>
+									<div class="invoices-wrap__amount-bottom">
+										<span>Amount Due</span>
+										<b>$76.00</b>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__text">Invoice</div>
+						<div class="invoices-wrap__table">
+							<div class="invoices-wrap__table-row invoices-wrap__table-top">
+								<div class="invoices-wrap__table-col col-1"></div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>Quanty</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>Price</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>Amount</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design <br>responsive design + bootstrap</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__total">
+							<ul>
+								<li>
+									<span>Subtotal</span>
+									<span>$2334.00</span>
+								</li>
+								<li>
+									<span>Sales Tax(8.875%))</span>
+									<span>$7.76</span>
+								</li>
+								<li>
+									<span>Total</span>
+									<span>$2367.00</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-modern" class="modal modalTemplate modal-modern">
+		<div class="modal-wrap">
+			<div class="modalTemplate-top">
+				<span class="modalTemplate-title">Modern</span>
+			</div>
+			<div class="modalTemplate-all">
+				<div class="invoices-wrap">
+					<div class="modalTemplate-content">
+						<div class="modalTemplate-head">
+							<span class="modalTemplate-head__title">EW General Consulting Inc.</span>
+							<div class="modalTemplate-head__row">
+								<ul>
+									<li>New York</li>
+									<li>Cropsey ave. #3b</li>
+									<li>Tel: 808852255880</li>
+									<li>fedx@gmail.col</li>
+								</ul>
+								<div class="modalTemplate-head__block">
+									<div class="invoices-wrap__descr">
+										<h3>To <span>Jimmy Band</span></h3>
+										<ul>
+											<li>jimmy@company.com</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modalTemplate-block">
+							<h3 class="modalTemplate-block__title">Invoice</h3>
+							<div class="modalTemplate-row">
+								<div class="modalTemplate-col modalTemplate-col-main">
+									<span>Amount Due:</span>
+									<b>$182.56</b>
+								</div>
+								<div class="modalTemplate-col">
+									<span>Invoice #:</span>
+									<b>UPINV0067</b>
+								</div>
+								<div class="modalTemplate-col">
+									<span>Invoice Date:</span>
+									<b>May 14, 2020</b>
+								</div>
+								<div class="modalTemplate-col">
+									<span>Due Date:</span>
+									<b>May 14, 2020</b>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__table">
+							<div class="invoices-wrap__table-row invoices-wrap__table-top">
+								<div class="invoices-wrap__table-col col-1"></div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>Quanty</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>Price</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>Amount</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design <br>responsive design + bootstrap</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+							<div class="invoices-wrap__table-row">
+								<div class="invoices-wrap__table-col col-1">
+									<span>Design</span>
+								</div>
+								<div class="invoices-wrap__table-col col-2">
+									<span>1</span>
+								</div>
+								<div class="invoices-wrap__table-col col-3">
+									<span>$100</span>
+								</div>
+								<div class="invoices-wrap__table-col col-4">
+									<span>$100</span>
+								</div>
+							</div>
+						</div>
+						<div class="invoices-wrap__total">
+							<ul>
+								<li>
+									<span>Subtotal</span>
+									<span>$2334.00</span>
+								</li>
+								<li>
+									<span>Sales Tax(8.875%))</span>
+									<span>$7.76</span>
+								</li>
+								<li>
+									<span>Total</span>
+									<span>$2367.00</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-bg"></div>
+	<!-- start newProvider -->
+	<div id="modal-shortcut" class="formModal">
+		<i class="hb-ico close-ico"></i>
+		<div class="form">
+			<h2 class="form-title">New Shortcut</h2>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Name">
+				</div>
+				<div class="input-block">
+					<textarea name="text" placeholder="Message"></textarea>
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Tags">
+				</div>
+				<div class="input-block">
+					<select name="text">
+						<option value="">Available for</option>
+						<option value="">Available for</option>
 					</select>
 				</div>
 				<div class="form-btn">
