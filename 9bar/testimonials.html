@@ -151,7 +151,7 @@
 			</div>
 			<div class="testimonials-top">
 				<p>Хотите высказать свое мнение о сервисе или кофе? </p>
-				<a href="#" class="primary-btn">Оставить отзыв</a>
+				<a data-fancybox data-src="#modal-testimonials" href="javascript:;" class="primary-btn">Оставить отзыв</a>
 				<div class="catalog-sort">
 					<div class="catalog-sort-row">
 						<span class="catalog-sort-tit">Выводить отзыы</span>
@@ -173,7 +173,7 @@
 			<div class="testimonials-content">
 				<div class="testimonials-item">
 					<div class="testimonials-main">
-						<div class="testimonials-user" style="background-image: url(img/testimonials-1-min.jpg);"></div>
+						<a href="img/testimonials-1-min.jpg" data-fancybox="images" class="testimonials-user" style="background-image: url(img/testimonials-1-min.jpg);"></a>
 						<div class="testimonials-info">
 							<span class="testimonials-name">Филипп Джей Фрай</span>
 							<span class="testimonials-date">01.05.2060</span>
@@ -212,7 +212,7 @@
 				</div><!-- item -->
 				<div class="testimonials-item">
 					<div class="testimonials-main">
-						<div class="testimonials-user" style="background-image: url(img/testimonials-1-min.jpg);"></div>
+						<a href="img/testimonials-1-min.jpg" data-fancybox="images" class="testimonials-user" style="background-image: url(img/testimonials-1-min.jpg);"></a>
 						<div class="testimonials-info">
 							<span class="testimonials-name">Филипп Джей Фрай</span>
 							<span class="testimonials-date">01.05.2060</span>
@@ -235,7 +235,7 @@
 				</div><!-- item -->
 				<div class="testimonials-item">
 					<div class="testimonials-main">
-						<div class="testimonials-user" style="background-image: url(img/testimonials-2-min.png);"></div>
+						<a href="img/testimonials-1-min.jpg" data-fancybox="images" class="testimonials-user" style="background-image: url(img/testimonials-1-min.jpg);"></a>
 						<div class="testimonials-info">
 							<span class="testimonials-name">Филипп Джей Фрай</span>
 							<span class="testimonials-date">01.05.2060</span>
@@ -266,7 +266,7 @@
 				</div><!-- item -->
 				<div class="testimonials-item">
 					<div class="testimonials-main">
-						<div class="testimonials-user" style="background-image: url(img/testimonials-1-min.jpg);"></div>
+						<a href="img/testimonials-1-min.jpg" data-fancybox="images" class="testimonials-user" style="background-image: url(img/testimonials-1-min.jpg);"></a>
 						<div class="testimonials-info">
 							<span class="testimonials-name">Филипп Джей Фрай</span>
 							<span class="testimonials-date">01.05.2060</span>
@@ -285,8 +285,8 @@
 						</div>
 						<p>Давненько я, друзья, подбирался к такому формату кофе, потому как являюсь давним и неисправимым кофеманом и для меня утро без чашки ароматного кофе - это день насмарку.</p>
 						<div class="testimonials-images">
-							<div class="testimonials-col"><div class="testimonials-img" style="background-image: url(img/testimonials-3-min.png);"></div></div>
-							<div class="testimonials-col"><div class="testimonials-img" style="background-image: url(img/testimonials-4-min.png);"></div></div>
+							<div class="testimonials-col"><a href="img/testimonials-1-min.jpg" data-fancybox="images" class="testimonials-img" style="background-image: url(img/testimonials-3-min.png);"></a></div>
+							<div class="testimonials-col"><a href="img/testimonials-1-min.jpg" data-fancybox="images" class="testimonials-img" style="background-image: url(img/testimonials-4-min.png);"></a></div>
 						</div>
 						<a href="#" class="testimonials-answer">Ответить</a>
 					</div>
@@ -367,6 +367,81 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-testimonials" class="modal modal-testimonials">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<span class="modal-title">Отзывы</span>
+			</div>
+			<form action="">
+				<div class="modal-block">
+					<span class="modal-tit">Оценка товара</span>
+					<div class="star-rating">
+					  <input id="star-5" type="radio" name="rating" value="star-5" />
+					  <label for="star-5" title="5 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-4" type="radio" name="rating" value="star-4" />
+					  <label for="star-4" title="4 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-3" type="radio" name="rating" value="star-3" />
+					  <label for="star-3" title="3 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-2" type="radio" name="rating" value="star-2" />
+					  <label for="star-2" title="2 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-1" type="radio" name="rating" value="star-1" />
+					  <label for="star-1" title="1 star">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					</div>
+					<span class="modal-tit">Оценка сервиса</span>
+					<div class="star-rating">
+					  <input id="star-10" type="radio" name="rating" value="star-5" />
+					  <label for="star-10" title="5 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-9" type="radio" name="rating" value="star-4" />
+					  <label for="star-9" title="4 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-8" type="radio" name="rating" value="star-3" />
+					  <label for="star-8" title="3 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-7" type="radio" name="rating" value="star-2" />
+					  <label for="star-7" title="2 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-6" type="radio" name="rating" value="star-1" />
+					  <label for="star-6" title="1 star">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					</div>
+				</div>
+				<div class="input-block">
+					<textarea name="text" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="file">
+					<div class="file-top">
+						<input type="file">
+						Прикрепить фотографию товара
+					</div>
+					<div class="file-row">
+						<div class="file-wrap" style="background-image: url(img/testimonials-3-min.png);"></div>
+						<div class="file-wrap" style="background-image: url(img/testimonials-4-min.png);"></div>
+					</div>
+				</div>
+				<div class="buttons-row">
+					<button class="primary-btn">Отправить</button>
+					<a href="#" class="second-btn">Отмена</a>
+				</div>
+			</form>
+		</div>
+	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
 	<script defer src="js/common.js"></script>

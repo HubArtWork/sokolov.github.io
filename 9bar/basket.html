@@ -183,10 +183,21 @@
 				<h1 class="page-title">Корзина</h1>
 			</div>
 			<div class="basket-top">
-				<a href="#" class="second-btn">Ввести промокод</a>
-				<a href="#" class="more">Перейти к оформлению</a>
+				<div class="basket-promo"><!-- add class error or active -->
+					<div class="input-block">
+						<label for="gh-1">Промокод</label>
+						<div class="basket-promo-row">
+							<input id="gh-1" type="text" name="text">
+							<p>Промокод введен неверно или его не существует </p>
+						</div>
+					</div>
+				</div>
+				<div class="basket-top-row">
+					<a href="#" class="second-btn">Ввести промокод</a>
+					<a href="#basket-customer" class="more scroll-link">Перейти к оформлению</a>
+				</div>
 			</div>
-			<div class="basket-row sidebarPos">
+			<div class="basket-row">
 				<div class="basket-content">
 					<div class="basket-product">
 						<a href="#" class="hb-ico favourite-ico"></a>
@@ -233,7 +244,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="basket-customer">
+					<div class="basket-customer" id="basket-customer">
 						<div class="basket-customer-top">
 							<span class="section-title">Покупатель</span>
 							<a href="#" class="second-btn">Авторизоваться</a>
@@ -410,8 +421,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="basket-sidebar sidebar">
-					<div class="basket-sidebar-wrap sidebar-wrap">
+				<div class="basket-sidebar">
+					<div class="basket-sidebar-wrap">
 						<span class="section-title">Ваша корзина</span>
 						<ul>
 							<li><span>Товары, 3шт.</span> 180.23 BYN</li>

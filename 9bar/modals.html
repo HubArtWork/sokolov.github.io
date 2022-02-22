@@ -24,6 +24,7 @@
 				<li>1.<a data-fancybox data-src="#modal-form" href="javascript:;">Покупка в один клик</a></li>
 				<li>2.<a data-fancybox data-src="#modal-entrance" href="javascript:;">Вход</a></li>
 				<li>3.<a data-fancybox data-src="#modal-registration" href="javascript:;">Регистрация</a></li>
+				<li>4.<a data-fancybox data-src="#modal-testimonials" href="javascript:;">Отзывы</a></li>
 			</ul>
 		</div>
 	</div>
@@ -96,9 +97,96 @@
 						<input id="ml-2" type="email" name="email" placeholder="Ваш Email">
 					</div>
 				</div>
+				<div class="input-block">
+					<label for="ml-3">Пароль</label>
+					<div class="input-block-wrap">
+						<input id="ml-3" type="password" name="password" placeholder="Ваш паороль">
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="ml-4">Повторите пароль</label>
+					<div class="input-block-wrap">
+						<input id="ml-4" type="password" name="password" placeholder="По">
+					</div>
+				</div>
 				<div class="links">
 					<button class="primary-btn">Зарегистрироваться</button>
 					<a data-fancybox data-src="#modal-entrance" href="javascript:;" class="link">Авторизоваться</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-testimonials" class="modal modal-testimonials">
+		<div class="modal-wrap">
+			<div class="modal-top">
+				<span class="modal-title">Отзывы</span>
+			</div>
+			<form action="">
+				<div class="modal-block">
+					<span class="modal-tit">Оценка товара</span>
+					<div class="star-rating">
+					  <input id="star-5" type="radio" name="rating" value="star-5" />
+					  <label for="star-5" title="5 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-4" type="radio" name="rating" value="star-4" />
+					  <label for="star-4" title="4 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-3" type="radio" name="rating" value="star-3" />
+					  <label for="star-3" title="3 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-2" type="radio" name="rating" value="star-2" />
+					  <label for="star-2" title="2 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-1" type="radio" name="rating" value="star-1" />
+					  <label for="star-1" title="1 star">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					</div>
+					<span class="modal-tit">Оценка сервиса</span>
+					<div class="star-rating">
+					  <input id="star-10" type="radio" name="rating" value="star-5" />
+					  <label for="star-10" title="5 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-9" type="radio" name="rating" value="star-4" />
+					  <label for="star-9" title="4 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-8" type="radio" name="rating" value="star-3" />
+					  <label for="star-8" title="3 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-7" type="radio" name="rating" value="star-2" />
+					  <label for="star-7" title="2 stars">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					  <input id="star-6" type="radio" name="rating" value="star-1" />
+					  <label for="star-6" title="1 star">
+					    <i class="active hb-ico star-ico" aria-hidden="true"></i>
+					  </label>
+					</div>
+				</div>
+				<div class="input-block">
+					<textarea name="text" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="file">
+					<div class="file-top">
+						<input type="file">
+						Прикрепить фотографию товара
+					</div>
+					<div class="file-row">
+						<div class="file-wrap" style="background-image: url(img/testimonials-3-min.png);"></div>
+						<div class="file-wrap" style="background-image: url(img/testimonials-4-min.png);"></div>
+					</div>
+				</div>
+				<div class="buttons-row">
+					<button class="primary-btn">Отправить</button>
+					<a href="#" class="second-btn">Отмена</a>
 				</div>
 			</form>
 		</div>
