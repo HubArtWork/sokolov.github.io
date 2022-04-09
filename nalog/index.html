@@ -29,7 +29,7 @@
 					<span class="header-sub">Звонок по России бесплатный</span>
 				</div>
 				<div class="header-btn">
-					<a href="#" class="second-btn">Заказать звонок</a>
+					<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 				</ul>
 				<div class="header-mob">
 					<p>Получите бесплатную консультацию</p>
-					<a href="#" class="second-btn">Заказать звонок</a>
+					<a data-fancybox data-src="#modal-form" href="javascript:;" class="second-btn">Заказать звонок</a>
 					<p>Задайте вопрос эксперту напрямую</p>
 					<ul class="header-social">
 						<li><a href="#"><img src="img/ft-1.svg" alt=""></a></li>
@@ -70,7 +70,7 @@
 					<h1 class="main-title">Получите налоговый вычет</h1>
 					<p>Оставьте заявку онлайн<br>и получите налоговый вычет</p>
 					<div class="main-row">
-						<a href="#" class="primary-btn">Подробнее</a>
+						<a data-fancybox data-src="#modal-steps" href="javascript:;" class="primary-btn">Подробнее</a>
 						<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video-link link-youtube">Посмотреть</a>
 					</div>
 				</div>
@@ -140,7 +140,7 @@
 						<span class="actions-title">Вы получаете налоговый вычет</span>
 						<span class="actions-subtitle">Деньги придут на карту в течение 4 месяцев</span>
 					</div>
-					<a href="#" class="primary-btn"><span>Получить налоговый вычет</span><i>Получить вычет</i></a>
+					<a data-fancybox data-src="#modal-form2" href="javascript:;" class="primary-btn"><span>Получить налоговый вычет</span><i>Получить вычет</i></a>
 				</div>
 			</div>
 		</div>
@@ -1223,16 +1223,289 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<!-- fancybox modal -->
-	<!--<a data-fancybox data-src="#modal-test" href="javascript:;" class="main-btn main-btn-second">fancybox</a>-->
-	<div style="display: none;" id="modal-steps" class="modal">
-		<div class="modal-close"></div>
-		<div class="modal-wrap">
+	<!-- fancybox modal-steps -->
+	<div style="display: none;" id="modal-steps" class="modal modal-steps">
+		<form action="">
+			<div class="modal-step active">
+				<div class="modal-top">
+					<span class="modal-title">Выберите свою ситуацию </span>
+					<p>Одну или несколько</p>
+				</div>
+				<div class="modal-content">
+					<div class="modal-checkbox">
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Приобрели квартиру или дом </p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Платили за ипотеку </p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Платили за лечение </p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Платили за обучение</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Платили за занятие спортом</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Открыли инвестиционный счет </p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Приобрели страхования жизни </p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-step-bottom">
+					<a href="#" class="modal-step-link">Нет моей ситуации</a>
+					<a href="#" class="second-btn second-btn-red btn-next">Далее<i class="hb-ico arrow-right"></i></a>
+				</div>
+			</div><!-- step -->
+			<div class="modal-step">
+				<div class="modal-top">
+					<span class="modal-title">Имущественный вычет</span>
+				</div>
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="">Приобретение жилья</label>
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма расходов ">
+						</div>
+					</div>
+					<div class="checkbox checkbox-second">
+						<input type="checkbox">
+						<i class="checkbox-ico"></i>
+						<p>Проценты по кредиту на жилье (ипотеке)</p>
+					</div>
+					<div class="input-block">
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма процентов">
+						</div>
+					</div>
+				</div>
+				<div class="modal-step-bottom">
+					<a href="#" class="second-btn second-btn-red btn-prev"><i class="hb-ico arrow-left"></i>Назад</a>
+					<a href="#" class="second-btn second-btn-red btn-next">Далее<i class="hb-ico arrow-right"></i></a>
+				</div>
+			</div><!-- step -->
+			<div class="modal-step">
+				<div class="modal-top">
+					<span class="modal-title">Вычет на лечение</span>
+				</div>
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="">Лечение, покупка лекарств или ДМС</label>
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма расходов">
+						</div>
+					</div>
+					<div class="checkbox checkbox-second">
+						<input type="checkbox">
+						<i class="checkbox-ico"></i>
+						<p>Дорогостоящее лечение (особый перечень) </p>
+					</div>
+					<div class="input-block">
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма расходов">
+						</div>
+					</div>
+				</div>
+				<div class="modal-step-bottom">
+					<a href="#" class="second-btn second-btn-red btn-prev"><i class="hb-ico arrow-left"></i>Назад</a>
+					<a href="#" class="second-btn second-btn-red btn-next">Далее<i class="hb-ico arrow-right"></i></a>
+				</div>
+			</div><!-- step -->
+			<div class="modal-step">
+				<div class="modal-top">
+					<span class="modal-title">Вычет на обучение </span>
+				</div>
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="">Свое обучение</label>
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма расходов">
+						</div>
+					</div>
+					<div class="input-block">
+						<label for="">Обучение ребенка</label>
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма расходов">
+						</div>
+					</div>
+				</div>
+				<div class="modal-step-bottom">
+					<a href="#" class="second-btn second-btn-red btn-prev"><i class="hb-ico arrow-left"></i>Назад</a>
+					<a href="#" class="second-btn second-btn-red btn-next">Далее<i class="hb-ico arrow-right"></i></a>
+				</div>
+			</div><!-- step -->
+			<div class="modal-step">
+				<div class="modal-top">
+					<span class="modal-title">Вычет за занятия спортом</span>
+				</div>
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="">Фитнес, спортивные школы и секции</label>
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма расходов">
+						</div>
+					</div>
+				</div>
+				<div class="modal-step-bottom">
+					<a href="#" class="second-btn second-btn-red btn-prev"><i class="hb-ico arrow-left"></i>Назад</a>
+					<a href="#" class="second-btn second-btn-red btn-next">Далее<i class="hb-ico arrow-right"></i></a>
+				</div>
+			</div><!-- step -->
+			<div class="modal-step">
+				<div class="modal-top">
+					<span class="modal-title">Инвестиционный вычет</span>
+				</div>
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="">Взносы на инвестиционный счет (ИИС)</label>
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма взносов">
+						</div>
+					</div>
+				</div>
+				<div class="modal-step-bottom">
+					<a href="#" class="second-btn second-btn-red btn-prev"><i class="hb-ico arrow-left"></i>Назад</a>
+					<a href="#" class="second-btn second-btn-red btn-next">Далее<i class="hb-ico arrow-right"></i></a>
+				</div>
+			</div><!-- step -->
+			<div class="modal-step">
+				<div class="modal-top">
+					<span class="modal-title">Вычет на страхование жизни </span>
+				</div>
+				<div class="modal-content">
+					<div class="input-block">
+						<label for="">Взносы на страхование жизни</label>
+						<div class="input-sum">
+							<input type="text" name="text" placeholder="Сумма взносов">
+						</div>
+					</div>
+				</div>
+				<div class="modal-step-bottom">
+					<a href="#" class="second-btn second-btn-red btn-prev"><i class="hb-ico arrow-left"></i>Назад</a>
+					<a href="#" class="second-btn second-btn-red btn-next">Далее<i class="hb-ico arrow-right"></i></a>
+				</div>
+			</div><!-- step -->
+			<div class="modal-step modal-step-last">
+				<div class="modal-step-wrap">
+					<span class="modal-step-tit">Вы можете вернуть до </span>
+					<span class="modal-step-price">ХХХ ХХХ ₽ </span>
+					<a href="#" class="primary-btn">Получить вычет</a>
+					<p>Информация носит справочный характер </p>
+				</div>
+			</div><!-- step -->
+		</form>
+	</div>
+	<!-- fancybox modal-form -->
+	<div style="display: none;" id="modal-form" class="modal modal-form">
+		<div class="modal-wrap"><!-- add class form-done -->
+			<form action="">
+				<div class="modal-form-main">
+					<div class="modal-top">
+						<span class="modal-title">Оставьте заявку, дальше действовать будем мы</span>
+						<p>Эксперт свяжется с вами в течение 15 минут</p>
+					</div>
+					<div class="input-block"><!-- add calss input-error -->
+						<label for="">Введите имя *</label>
+						<div class="input-wrap">
+							<i class="hb-ico input-ico-1"></i>
+							<input type="text" name="text" placeholder="Имя">
+						</div>
+						<span class="input-txt">Поле не заполнено</span>
+					</div>
+					<div class="input-block"><!-- add calss input-error -->
+						<label for="">Введите телефон *</label>
+						<div class="input-wrap">
+							<i class="hb-ico input-ico-2"></i>
+							<input type="text" name="text" placeholder="+7 (900) 000-0000">
+						</div>
+						<span class="input-txt">Поле не заполнено</span>
+					</div>
+					<div class="modal-buttons">
+						<button class="primary-btn">Отправить</button>
+						<div class="contacts-bl"><img src="img/ico-21.svg" alt="">Консультация бесплатная</div>
+					</div>
+					<div class="modal-text">
+						<p>Заполняя форму, я принимаю условия Публичной оферты и Политикой конфиденциальности, даю согласие на <a href="#">обработку персональных данных.</a></p>
+					</div>
+				</div>
+				<div class="modal-form-done">
+					<div class="modal-form-wrap">
+						<div class="modal-top">
+							<span class="modal-title">Спасибо</span>
+							<p>В течение 15 мунут с вами свяжется наш эксперт</p>
+						</div>
+						<a href="#" class="primary-btn">Отлично!</a>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
-	<div style="display: none;" id="modal-form" class="modal">
-		<div class="modal-close"></div>
-		<div class="modal-wrap">
+	<!-- fancybox modal-form2 -->
+	<div style="display: none;" id="modal-form2" class="modal modal-form">
+		<div class="modal-wrap"><!-- add class form-done -->
+			<form action="">
+				<div class="modal-form-main">
+					<div class="modal-top">
+						<span class="modal-title">Станьте нашим партнёром</span>
+						<p>Зарабатывайте вместе с нами</p>
+					</div>
+					<div class="input-block"><!-- add calss input-error -->
+						<label for="">Введите имя *</label>
+						<div class="input-wrap">
+							<i class="hb-ico input-ico-1"></i>
+							<input type="text" name="text" placeholder="Имя">
+						</div>
+						<span class="input-txt">Поле не заполнено</span>
+					</div>
+					<div class="input-block"><!-- add calss input-error -->
+						<label for="">Введите телефон *</label>
+						<div class="input-wrap">
+							<i class="hb-ico input-ico-2"></i>
+							<input type="text" name="text" placeholder="+7 (900) 000-0000">
+						</div>
+						<span class="input-txt">Поле не заполнено</span>
+					</div>
+					<div class="input-block"><!-- add calss input-error -->
+						<label for="">Введите почту*</label>
+						<div class="input-wrap">
+							<i class="hb-ico input-ico-4"></i>
+							<input type="text" name="text" placeholder="Example@mail.ru*">
+						</div>
+						<span class="input-txt">Поле не заполнено</span>
+					</div>
+					<button class="primary-btn">Отправить </button>
+					<div class="modal-text">
+						<p>Заполняя форму, я принимаю условия Публичной оферты и Политикой конфиденциальности, даю согласие на <a href="#">обработку персональных данных.</a></p>
+					</div>
+				</div>
+				<div class="modal-form-done">
+					<div class="modal-form-wrap">
+						<div class="modal-top">
+							<span class="modal-title">Спасибо</span>
+							<p>В течение 15 мунут с вами свяжется наш эксперт</p>
+						</div>
+						<a href="#" class="primary-btn">Отлично!</a>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
