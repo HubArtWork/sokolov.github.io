@@ -17,24 +17,73 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
-	<div class="sitemap">
-		<div class="wrapper">
-			<h2 class="sitemap-title">Main Pages</h2>
-			<ul class="sitemap-list">
-				<li>1.<a href="http://hubartwork.github.io/blissfull/" target="_blank">Blissfull - MainPage</a></li>
-				<li>2.<a href="http://hubartwork.github.io/blissfull/catalog.html" target="_blank">Catalog</a></li>
-				<li>3.<a href="http://hubartwork.github.io/blissfull/catalog2.html" target="_blank">Catalog 2</a></li>
-				<li>4.<a href="http://hubartwork.github.io/blissfull/catalog3.html" target="_blank">Catalog 3</a></li>
-				<li>5.<a href="http://hubartwork.github.io/blissfull/catalog4.html" target="_blank">Catalog 4</a></li>
-				<li>6.<a href="http://hubartwork.github.io/blissfull/catalog5.html" target="_blank">Catalog 5</a></li>
-				<li>7.<a href="http://hubartwork.github.io/blissfull/product.html" target="_blank">Product page</a></li>
-				<li>8.<a href="http://hubartwork.github.io/blissfull/basket.html" target="_blank">Shopping cart - Empty</a></li>
-				<li>9.<a href="http://hubartwork.github.io/blissfull/basket2.html" target="_blank">Shopping cart - Added</a></li>
-				<li>10.<a href="http://hubartwork.github.io/blissfull/search.html" target="_blank">Search - Results</a></li>
-				<li>11.<a href="http://hubartwork.github.io/blissfull/profile.html" target="_blank">Profile</a></li>
-				<li>12.<a href="http://hubartwork.github.io/blissfull/mission.html" target="_blank">Blissfull - Our mission</a></li>
-				<li>13.<a href="http://hubartwork.github.io/blissfull/modals.html" target="_blank">Modals</a></li>
-			</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="wrapper">
+		<a class="button-modal primary-btn" href="login">Login</a>
+		<br><br>
+		<a class="button-modal primary-btn" href="register">Register</a>
+		<br><br>
+		<a class="button-modal primary-btn" href="leaveUs">Want to leave us?</a>
+		<br>
+	</div>
+	<div id="overlay"></div>
+	<div id="login" class="modal">
+		<div class="modal-wrap">
+			<span class="modal-title">Login</span>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Email">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Password">
+				</div>
+				<div class="modal-row">
+					<div class="checkbox">
+						<input type="checkbox">
+						<i class="checkbox-ico"></i>
+						<p>Remember me</p>
+					</div>
+					<a href="#" class="modal-forgot">Forgot your password?</a>
+				</div>
+				<button class="primary-btn">Sign in</button>
+				<a href="register" class="button-modal modal-link">Register</a>
+			</form>
+		</div>
+	</div>
+	<div id="register" class="modal">
+		<div class="modal-wrap">
+			<span class="modal-title">Register</span>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="First name">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Last name">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Email">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Password">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<i class="checkbox-ico"></i>
+					<p>I agree with Terms of Use</p>
+				</div>
+				<button class="primary-btn">Create</button>
+				<a href="login" class="button-modal modal-link">Sign in</a>
+			</form>
+		</div>
+	</div>
+	<div id="login" class="modal">
+		<div class="modal-wrap">
+			<span class="modal-title">Want to leave us?</span>
+			<button class="primary-btn">No way, I’m staying here</button>
+			<a href="register" class="button-modal modal-link">Log out</a>
 		</div>
 	</div>
 	<script src="js/scripts.min.js"></script>
