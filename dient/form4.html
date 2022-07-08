@@ -17,7 +17,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body class="form-body">
-	<div class="form">
+	<div class="form form-second">
 		<div class="form-bg"><img src="img/bg.svg" alt=""></div>
 		<div class="wrapper">
 			<div class="form-block">
@@ -31,8 +31,20 @@
 			<div class="form-sidebar">
 				<div class="form-wrap">
 					<a href="#" class="back-link">На главную</a>
-					<span class="form-title">Вход в аккаунт</span>
-					<span class="form-txt">Для входа в аккаунт необходима авторизация</span>
+					<span class="form-title">Востановление входа в аккаунт</span>
+					<span class="form-txt">Вы можете восстановить как пароль, так и адрес электронной почты</span>
+					<div class="radios">
+						<div class="radio">
+							<input type="radio" name="password" checked>
+							<i class="radio-ico"></i>
+							<p>Восстановить пароль</p>
+						</div>
+						<div class="radio">
+							<input type="radio" name="password">
+							<i class="radio-ico"></i>
+							<p>Восстановить логин (электронную почту)</p>
+						</div>
+					</div>
 					<form action="">
 						<div class="input-block">
 							<div class="input-fix">
@@ -40,22 +52,11 @@
 								<span class="input-placeholder">Электронная почта</span>
 							</div>
 						</div>
-						<div class="input-block">
-							<div class="input-fix">
-								<input type="password" name="password">
-								<span class="input-placeholder">Пароль</span>
-								<i class="hb-ico password-ico"></i>
-							</div>
-						</div>
+						<span class="form-txt">Вы можете восстановить как пароль, так и адрес электронной почты</span>
 						<div class="form-actions">
 							<button class="primary-btn">Войти в аккаунт</button>
-							<a href="#" class="form-link">Забыли пароль или логин?</a>
 						</div>
 					</form>
-				</div>
-				<div class="form-bottom">
-					<span class="form-gl">Все еще нет своего аккаунта?</span>
-					<a href="#">Создайте аккаунт</a>
 				</div>
 			</div>
 		</div>
