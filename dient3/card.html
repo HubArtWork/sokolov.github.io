@@ -1073,7 +1073,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="add-testimonials">
+	<div class="modal add-testimonials" id="add-testimonials">
 		<div class="modal-top">
 			<span class="modal-title">Новый отзыв</span>
 			<i class="hb-ico close-ico"></i>
@@ -1082,38 +1082,54 @@
 			<div class="modal-testimonials-row">
 				<div class="modal-testimonials-content">
 					<form action="">
-						<span class="modal-testimonials-tit">Общая информация</span>
-						<div class="input-block">
-							<div class="input-fix">
-								<input type="text" name="text">
-								<span class="input-placeholder">Фамилия</span>
+						<div class="modal-testimonials-content-w">
+							<span class="modal-testimonials-tit">Общая информация</span>
+							<div class="input-block">
+								<div class="input-fix">
+									<input type="text" name="text">
+									<span class="input-placeholder">Фамилия</span>
+								</div>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<i class="checkbox-ico"></i>
+								<p>Товар куплен в интернет-магазине ГЕРМЕС</p>
+							</div>
+							<div class="rating">
+								<span class="rating-tit">Общая оценка</span>
+								<div class="rating-box">
+								  <div class="rating-container">
+									  <input type="radio" name="rating" value="5" id="star-5"> <label for="star-5">&#9733;</label>
+									  <input type="radio" name="rating" value="4" id="star-4"> <label for="star-4">&#9733;</label>
+									  <input type="radio" name="rating" value="3" id="star-3"> <label for="star-3">&#9733;</label>
+									  <input type="radio" name="rating" value="2" id="star-2"> <label for="star-2">&#9733;</label>
+									  <input type="radio" name="rating" value="1" id="star-1"> <label for="star-1">&#9733;</label>
+									</div>
+								</div>
+							</div>
+							<span class="modal-testimonials-tit">Отзыв о товаре</span>
+							<div class="input-block">
+								<div class="input-fix textarea-fix">
+									<textarea name="text"></textarea>
+									<span class="input-placeholder">Достоинства</span>
+								</div>
+							</div>
+							<div class="input-block">
+								<div class="input-fix textarea-fix">
+									<textarea name="text"></textarea>
+									<span class="input-placeholder">Недостатки</span>
+								</div>
+							</div>
+							<div class="input-block">
+								<div class="input-fix textarea-fix">
+									<textarea name="text"></textarea>
+									<span class="input-placeholder">Комментарий</span>
+								</div>
 							</div>
 						</div>
-						<div class="checkbox">
-							<input type="checkbox">
-							<i class="checkbox-ico"></i>
-							<p>Товар куплен в интернет-магазине ГЕРМЕС</p>
+						<div class="modal-testimonials-btn">
+							<button class="primary-btn">Оставить отзыв</button>
 						</div>
-						<span class="modal-testimonials-tit">Отзыв о товаре</span>
-						<div class="input-block">
-							<div class="input-fix textarea-fix">
-								<textarea name="text"></textarea>
-								<span class="input-placeholder">Достоинства</span>
-							</div>
-						</div>
-						<div class="input-block">
-							<div class="input-fix textarea-fix">
-								<textarea name="text"></textarea>
-								<span class="input-placeholder">Недостатки</span>
-							</div>
-						</div>
-						<div class="input-block">
-							<div class="input-fix textarea-fix">
-								<textarea name="text"></textarea>
-								<span class="input-placeholder">Комментарий</span>
-							</div>
-						</div>
-						<button class="primary-btn">Оставить отзыв</button>
 					</form>
 				</div>
 				<div class="modal-testimonials-sidebar">
@@ -1138,7 +1154,7 @@
 	</div>
 	<div class="modal modal-subscription" id="subscription">
 		<div class="modal-top">
-			<span class="modal-title">Новый отзыв</span>
+			<span class="modal-title">Подписка на товар</span>
 			<i class="hb-ico close-ico"></i>
 		</div>
 		<div class="modal-wrap">
