@@ -69,7 +69,12 @@
 	<!-- start main -->
 	<section class="main">
 		<div class="wrapper">
-			<div class="main-circle" data-aos="fade-in" data-aos-duration="500" data-aos-once="true"><div class="main-circle-wrap" style="background-image: url(img/main.svg);"><div><b>94%</b><span>фиксируют улучшение своего эмоционального состояния</span></div></div></div>
+			<div class="main-wrap">
+				<div class="main-info"><b>94%</b><span>фиксируют улучшение своего эмоционального состояния</span></div>
+				<div class="main-cr"><div class="main-cr-wrap"><img src="img/cr.svg" alt=""></div></div>
+				<canvas id="canvas"></canvas>
+			</div>
+			<!--<div class="main-circle" data-aos="fade-in" data-aos-duration="500" data-aos-once="true"><div class="main-circle-wrap" style="background-image: url(img/main.svg);"><div><b>94%</b><span>фиксируют улучшение своего эмоционального состояния</span></div></div></div>-->
 			<div class="main-text" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
 				<span>Нейроресурс</span>
 				<h1 class="main-title">Ментальные решения для работы и бизнеса</h1>
@@ -397,5 +402,70 @@
 	<!-- end footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/scripts.min.js"></script>
+  <script>
+ var cvs = document.getElementById('canvas'),
+    context = cvs.getContext("2d");
+
+var numDots = 4200,
+    n = numDots,
+    currDot,
+    maxRad = 200,
+    minRad = 140,
+    radDiff = maxRad-minRad,
+    dots = [],
+    PI = Math.PI,
+    centerPt = {x:0, y:0};
+
+resizeHandler();
+window.onresize = resizeHandler;
+
+while(n--){
+  currDot = {};
+  currDot.radius = minRad+Math.random()*radDiff;
+  currDot.ang = (1-Math.random()*2.5)*PI;
+  currDot.speed = (1-Math.random()*3)*0.005;
+  currDot.intensity = Math.round(Math.random()*55);
+  currDot.fillColor = "rgb("+255+","+255+","+255+")";
+  dots.push(currDot);
+}
+
+function drawPoints(){
+  n = numDots;
+  var _centerPt = centerPt,
+      _context = context,
+      dX = 0,
+      dY = 0;
+  
+  _context.clearRect(0, 0, cvs.width, cvs.height);
+  
+  //draw dots
+  while(n--){
+    currDot = dots[n];
+    dX = _centerPt.x+Math.sin(currDot.ang)*currDot.radius;
+    dY = _centerPt.y+Math.cos(currDot.ang)*currDot.radius;
+    
+    currDot.ang += currDot.speed;
+    
+    //console.log(currDot);
+    _context.fillStyle= currDot.fillColor;
+    _context.fillRect(dX, dY, 1, 1);
+    
+  } //draw dot
+  window.requestAnimationFrame(drawPoints);
+}
+
+function resizeHandler(){
+  var box = cvs.getBoundingClientRect();
+  var w = 650;
+  var h = 650;
+  cvs.width = w;
+  cvs.height = h;
+  centerPt.x = Math.round(w/2);
+  centerPt.y = Math.round(h/2);
+}
+
+drawPoints();
+
+  </script>
 </body>
 </html>
