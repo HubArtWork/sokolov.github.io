@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Нейроресурс | Сфера комфорта</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="/css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="/"><img src="/img/logo.svg" alt=""></a></div>
+			<div class="header-info">
+				<a href="#" class="primary-btn">Войти</a>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start productivity -->
+	<section class="productivity">
+		<div class="wrapper">
+			<div class="productivity-step active" id="step-1">
+				<ul class="crumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Список продуктов</a></li>
+					<li>Сфера комфорта</li>
+				</ul>
+				<div class="productivity-row">
+					<div class="productivity-main">
+						<h1 class="productivity-title">Сфера комфорта</h1>
+						<ul class="productivity-links">
+							<li><a data-fancybox data-src="#modal-txt" href="javascript:;">Читать инструкцию ></a></li>
+							<li><a data-fancybox data-src="#modal-video" href="javascript:;">Видео инструкция ></a></li>
+						</ul>
+						<span class="productivity-subtitle">Выбрать пол</span>
+						<div class="productivity-form">
+							<div class="checkbox">
+								<input type="radio" name="productivityRadio" id="productivityMan" data-gender="male">
+								<div class="checkbox-ico"></div>
+								<p>Мужской</p>
+							</div>
+							<div class="checkbox">
+								<input type="radio" name="productivityRadio" id="productivityWoman" data-gender="female">
+								<div class="checkbox-ico"></div>
+								<p>Женский</p>
+							</div>
+						</div>
+						<div class="productivity-btn">
+							<a href="#" class="primary-btn disabled">Остановить действие тренажера OXE 12</a>
+						</div>
+					</div>
+					<div class="productivity-descr">
+						<div class="productivity-block">
+							<span class="productivity-subtitle">Описание</span>
+							<p>Раскрывает состояние, при котором окружающее Вас пространство воспринимается как безопасное и стабильное. Подходит, когда хочется быть свободным от внешнего шума и создать сферу комфорта.</p>
+							<p>Время на запуск тренажера - 2 минуты. Длительность эффекта составляет до 6 часов. При желании, эффект может быть остановлен нажатием кнопки «Остановить действие тренажера».</p>
+						</div>
+						<div class="start-btn disabled">
+							<div class="start-answer">
+	              <span>Пожалуйста, укажите свой пол</span>
+	            </div>
+							<a href="#" class="start-btn-wrap next-btn hook-btn comfort-btn" style="background-image: url(/img/btn-bg.svg);">
+								<span>
+									Открыть<br>OXE 12
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="productivity-step" id="step-2">
+				<div class="productivity-info">
+					<span class="productivity-title productivity-title-second">Сфера комфорта</span>
+					<span class="productivity-tit">Отметьте свое состояние</span>
+					<p>Оцените по шкале, насколько вы сейчас соответствуете этим качествам. <br>Значение -10 - не соответствую совсем, значение +10 - соответствую полностью. <br>Затем нажмите на кнопку ниже</p>
+				</div>
+				<div class="condition">
+					<div class="condition-vertical__item">
+						<div class="condition-vertical__item-wrap" id="condition-1">
+	            <div class="condition__tooltip condition-vertical__tooltip" id="condition-vertical__tooltip_1"></div>
+	            <div class="condition-vertical__arrows">
+	              <div class="condition-vertical__arrow condition-vertical__arrow-up condition-vertical__arrow-up-1">
+	                <i class="condition-vertical__answer-icon condition-vertical__answer-icon-up"></i>
+	              </div>
+	              <span class="condition-vertical__num condition-vertical__num-plus">+10</span>
+	              <div class="condition-vertical__arrow condition-vertical__arrow-down condition-vertical__arrow-down-1">
+	                <i class="condition-vertical__answer-icon condition-vertical__answer-icon-down"></i>
+	              </div>
+	              <span class="condition-vertical__num condition-vertical__num-minus">-10</span>
+	            </div>
+	          </div>
+            <div class="condition__answer">
+              <i class="condition__answer-icon"></i>
+              <div class="start-answer">
+	              <a data-fancybox data-src="#modal-txt2" href="javascript:;">Не знаю как определить свое состояние на шкале ></a>
+	            </div>
+            </div>
+          </div>
+          <div class="condition-main">
+          	<div class="condition-main-wrap">
+          		<div class="start-btn disabled">
+								<a href="#" class="start-btn-wrap next-btn" style="background-image: url(/img/btn-bg.svg);">
+									<span>
+										Начать<br>OXE 12
+									</span>
+								</a>
+							</div>
+          	</div>
+          	<a href="#" class="condition-link prev-btn">< Вернуться</a>
+          </div>
+        </div>
+			</div>
+			<div class="productivity-step" id="step-3">
+				<audio controls id="audio">
+				  <source src="/video/audio-comfort.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio>
+				<div class="productivity-info productivity-info-second">
+					<span class="productivity-title productivity-title-second">Сфера комфорта</span>
+					<span class="productivity-sub">Дышите ртом</span>
+				</div>
+				<div class="productivity-video">
+          <video muted playsinline poster="/video/comfort.jpg">
+            <source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="/video/comfort.mp4">
+          </video>
+      	</div>
+			</div>
+			<div class="productivity-step" id="step-4">
+				<div class="productivity-info productivity-info-second">
+					<span class="productivity-title productivity-title-second">Сфера комфорта</span>
+					<span class="productivity-sub">Закройте глаза и дождитесь окончания музыки.</span>
+				</div>
+				<div class="music__timer">
+          <div class="music__timer-text">
+            <span id="timer">60</span>
+            <span id="timerText">секунд</span>
+          </div>
+          <div class="music__timer-round"></div>
+        </div>
+			</div>
+			<div class="productivity-step" id="step-5">
+				<div class="productivity-info">
+					<span class="productivity-title productivity-title-second">Сфера комфорта</span>
+					<span class="productivity-tit">Отметьте свое состояние после активации</span>
+					<p>Оцените по шкале, насколько вы сейчас соответствуете этим качествам. <br>Значение -10 - не соответствую совсем, значение +10 - соответствую полностью. <br>Затем нажмите на кнопку ниже</p>
+				</div>
+				<div class="condition">
+					<div class="condition-vertical__item">
+						<div class="condition-vertical__item-wrap" id="condition-2">
+	            <div class="condition__tooltip condition-vertical__tooltip" id="condition-vertical__tooltip_2"></div>
+	            <div class="condition-vertical__arrows">
+	              <div class="condition-vertical__arrow condition-vertical__arrow-up condition-vertical__arrow-up-1">
+	              	<i class="condition-vertical__answer-icon condition-vertical__answer-icon-up"></i>
+	              </div>
+	              <span class="condition-vertical__num condition-vertical__num-plus">+10</span>
+	              <div class="condition-vertical__arrow condition-vertical__arrow-down condition-vertical__arrow-down-1">
+	              	<i class="condition-vertical__answer-icon condition-vertical__answer-icon-down"></i>
+	              </div>
+	              <span class="condition-vertical__num condition-vertical__num-minus">-10</span>
+	            </div>
+	          </div>
+            <div class="condition__answer">
+              <i class="condition__answer-icon"></i>
+              <div class="start-answer">
+	              <a data-fancybox data-src="#modal-txt3" href="javascript:;">Не знаю как определить свое состояние на шкале ></a>
+	            </div>
+            </div>
+          </div>
+          <div class="condition-main">
+          	<div class="condition-main-wrap">
+          		<div class="start-btn disabled">
+								<a href="#" class="start-btn-wrap next-btn" style="background-image: url(/img/btn-bg.svg);">
+									<span>
+										Далее
+									</span>
+								</a>
+							</div>
+          	</div>
+          	<a href="#" class="condition-link prev-btn">< Вернуться</a>
+          </div>
+        </div>
+			</div>
+			<div class="productivity-step" id="step-6">
+				<div class="productivity-info results">
+					<span class="productivity-title productivity-title-second">Сфера комфорта</span>
+					<span class="productivity-tit">Ваш результат до и после</span>
+					<div class="results-row">
+						<div class="results-scale">
+							<div class="results-scale-bar"></div>
+							<span class="results-scale-num results-scale-num-plus">+10</span>
+							<span class="results-scale-num results-scale-num-neutral">0</span>
+							<span class="results-scale-num results-scale-num-minus">-10</span>
+						</div>
+						<div class="results-info">
+							<div class="results-col results-col-first">
+								<div class="results__line results__line-down results__line-10"><b></b></div>
+								<div class="results__line results__line-down results__line-9"><b></b></div>
+								<div class="results__line results__line-down results__line-8"><b></b></div>
+								<div class="results__line results__line-down results__line-7"><b></b></div>
+								<div class="results__line results__line-down results__line-6"><b></b></div>
+								<div class="results__line results__line-down results__line-5"><b></b></div>
+								<div class="results__line results__line-down results__line-4"><b></b></div>
+								<div class="results__line results__line-down results__line-3"><b></b></div>
+								<div class="results__line results__line-down results__line-2"><b></b></div>
+								<div class="results__line results__line-down results__line-1"><b></b></div>
+								<div class="results__line results__line-down results__line-0"><b></b></div>
+								<div class="results__line results__line-down results__line--1"><b></b></div>
+								<div class="results__line results__line-down results__line--2"><b></b></div>
+								<div class="results__line results__line-down results__line--3"><b></b></div>
+								<div class="results__line results__line-down results__line--4"><b></b></div>
+								<div class="results__line results__line-down results__line--5"><b></b></div>
+								<div class="results__line results__line-down results__line--6"><b></b></div>
+								<div class="results__line results__line-down results__line--7"><b></b></div>
+								<div class="results__line results__line-down results__line--8"><b></b></div>
+								<div class="results__line results__line-down results__line--9"><b></b></div>
+								<div class="results__line results__line-down results__line--10"><b></b></div>
+							</div>
+							<div class="results-col results-col-last">
+								<div class="results__line results__line-up results__line-10"><b></b></div>
+								<div class="results__line results__line-up results__line-9"><b></b></div>
+								<div class="results__line results__line-up results__line-8"><b></b></div>
+								<div class="results__line results__line-up results__line-7"><b></b></div>
+								<div class="results__line results__line-up results__line-6"><b></b></div>
+								<div class="results__line results__line-up results__line-5"><b></b></div>
+								<div class="results__line results__line-up results__line-4"><b></b></div>
+								<div class="results__line results__line-up results__line-3"><b></b></div>
+								<div class="results__line results__line-up results__line-2"><b></b></div>
+								<div class="results__line results__line-up results__line-1"><b></b></div>
+								<div class="results__line results__line-up results__line-0"><b></b></div>
+								<div class="results__line results__line-up results__line--1"><b></b></div>
+								<div class="results__line results__line-up results__line--2"><b></b></div>
+								<div class="results__line results__line-up results__line--3"><b></b></div>
+								<div class="results__line results__line-up results__line--4"><b></b></div>
+								<div class="results__line results__line-up results__line--5"><b></b></div>
+								<div class="results__line results__line-up results__line--6"><b></b></div>
+								<div class="results__line results__line-up results__line--7"><b></b></div>
+								<div class="results__line results__line-up results__line--8"><b></b></div>
+								<div class="results__line results__line-up results__line--9"><b></b></div>
+								<div class="results__line results__line-up results__line--10"><b></b></div>
+							</div>
+						</div>
+					</div>
+					<div class="results-bottom">
+						<p>Нажмите «Зафиксировать» для активации результата на 6 часов и сохранения прогресса в личном кабинете</p>
+						<a href="#" class="primary-btn primary-btn-green reload-btn">Зафиксировать OXE 12</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end productivity -->
+	<div style="display: none;" id="modal-txt" class="modal modal-txt">
+		<div class="modal-wrap">
+			<span class="modal-title">Инструкция по работе с тренажером</span>
+      <p>Вы на странице тренажера – короткой медитации, созданной по специальной технологии. Он
+          тренирует эмоциональный интеллект, помогая развивать навык раскрытия желаемого состояния.
+          Для максимального эффекта рекомендуем следовать инструкции.
+      </p>
+      <p>Работа с тренажером состоит из трех важных этапов: фиксация состояния до, запуск тренажера и
+          фиксация состояния после.</p>
+      <p>Определение состояния перед работой с тренажером запускает синхронизацию вашего интеллекта с
+          подсознанием, внимание фиксируется на вашей внутренней реальности: на спектре чувств и
+          ощущений. Именно с ней идет работа тренажера.</p>
+      <p>1. Определите свое состояние до запуска:</p>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой</li>
+          <li>Переведите внимание в область груди</li>
+          <li>Определите по внутренней интуитивной шкале ваше состояние: где -10 максимальный
+              негатив или отсутствие качества, или состояния, +10 полный позитив или их максимальное
+              раскрытие.</li>
+          <li>Отметьте на шкале состояние. Выставляя значение опирайтесь на чувства удовлетворения и
+              завершения как показателей точности. Доверяйте себе и не бойтесь ошибиться.</li>
+      </ul>
+      <p>2. Запустите тренажер.
+          На этом этапе от вас требуется держать внимание на видео, дышать ртом и быть в наушниках.
+          Специальный контент в течение первой минуты начнет раскрывать выбранное вами состояние или
+          качество. На второй минуте закройте глаза. Состояние или качество продолжит раскрываться.
+          Оставайтесь с закрытыми глазами в наушниках до момента окончания музыки.
+      </p>
+      <p>3. Откройте глаза и отметьте изменения.</p>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой.</li>
+          <li>Обратите внимание на то, что изменилось в вашем визуальном восприятии. Постарайтесь
+              определить и назвать эти изменения. </li>
+          <li>Обратите внимание на ощущения во всём теле. Сравните их с теми, что были до активации
+              тренажера</li>
+          <li>Теперь определите изменения своего состояния в целом и отметьте его на шкале.</li>
+          <li>Сохраните результат.</li>
+      </ul>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Хорошо</a>
+      </div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-txt2" class="modal modal-txt">
+		<div class="modal-wrap">
+			<span class="modal-title">Инструкция по работе с тренажером</span>
+			<p>Определите свое состояние до запуска:</p>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой</li>
+          <li>Переведите внимание в область груди</li>
+          <li>Определите по внутренней интуитивной шкале ваше состояние: где -10 максимальный
+              негатив или отсутствие качества, или состояния, +10 полный позитив или их максимальное
+              раскрытие.</li>
+          <li>Отметьте на шкале состояние. Выставляя значение опирайтесь на чувства удовлетворения и
+              завершения как показателей точности. Доверяйте себе и не бойтесь ошибиться.</li>
+      </ul>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Хорошо</a>
+      </div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-txt3" class="modal modal-txt">
+		<div class="modal-wrap">
+			<span class="modal-title">Инструкция по работе с тренажером</span>
+      <p>Откройте глаза и отметьте изменения.</p>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой.</li>
+          <li>Обратите внимание на то, что изменилось в вашем визуальном восприятии. Постарайтесь
+              определить и назвать эти изменения. </li>
+          <li>Обратите внимание на ощущения во всём теле. Сравните их с теми, что были до активации
+              тренажера</li>
+          <li>Теперь определите изменения своего состояния в целом и отметьте его на шкале.</li>
+          <li>Сохраните результат.</li>
+      </ul>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Хорошо</a>
+      </div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-txt4" class="modal modal-txt">
+		<div class="modal-wrap">
+      <p>Пожалуйста, обратите внимание, что сейчас Ваше состояние уже выше среднего позитивного (от +5 и более). В этом случае после запуска тренажера изменения могут восприниматься неярко.</p>
+      <br>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Принято</a>
+      </div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-video" class="modal modal-video">
+		<div class="modal-wrap">
+			<video controls>
+        <source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="/video/instruction.mp4">
+      </video>
+		</div>
+	</div>
+	<form class="callback">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Нейроресурс">
+		<input type="hidden" name="admin_email" value="otcetpoaktivaciiprodukta@gmail.com">
+		<input type="hidden" name="form_subject" value="" id="form_subject">
+		<!-- END Hidden Required Fields -->
+		<input type="text" name="Слово" id="input_word">
+		<input type="text" name="Время" id="input_time">
+		<input type="text" name="Пол" id="input_gender">
+		<input type="text" name="До" id="input_before">
+		<input type="text" name="После" id="input_after">
+		<button>send</button>
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script>
+      $(function () {
+
+          $("#condition-vertical__tooltip_1").slider({
+              orientation: "vertical",
+              range: "min",
+              min: -10,
+              max: 10,
+              value: 0,
+              change: function (event, ui) {
+                  $('#condition-1 .ui-block-answer').css('bottom', $('#condition-1 .ui-slider-handle').css('bottom'));
+                  $('#condition-vertical__tooltip_1 .ui-slider-range.ui-corner-all.ui-widget-header.ui-slider-range-min').css('height', '100%');
+              },
+              start: function (event, ui) {
+                  $(".ui-block-link").removeClass("active");
+              },
+              stop: function (event, ui) {
+                  $(".ui-block-link").addClass("active");
+              },
+              slide: function (event, ui) {
+              	$("#condition-vertical__tooltip_1 .ui-value").html((ui.value > '0') ? ('+'+ ui.value) : ui.value);
+              }
+          });
+          $("#condition-vertical__tooltip_2").slider({
+              orientation: "vertical",
+              range: "min",
+              min: -10,
+              max: 10,
+              value: 0,
+              change: function (event, ui) {
+                  $('#condition-2 .ui-block-answer').css('bottom', $('#condition-2 .ui-slider-handle').css('bottom'));
+                  $('#condition-vertical__tooltip_2 .ui-slider-range.ui-corner-all.ui-widget-header.ui-slider-range-min').css('height', '100%');
+              },
+              start: function (event, ui) {
+                  $(".ui-block-link").removeClass("active");
+              },
+              stop: function (event, ui) {
+                  $(".ui-block-link").addClass("active");
+              },
+              slide: function (event, ui) {
+              	$("#condition-vertical__tooltip_2 .ui-value").html((ui.value > '0') ? ('+'+ ui.value) : ui.value);
+              }
+          });
+
+          $('#condition-1 .ui-slider-handle').html(`<span class="ui-value"></span>`)
+          $(`<div class="ui-block-answer answer-popup"><span href="#" class="ui-block-link answer-text">Я уверен в точности определения<span class="ui-block-buttons"><span class="ui-block-agree primary-btn">Да</span><a data-fancybox data-src="#modal-txt2" href="javascript:;" class="ui-block-no primary-btn primary-btn-gray">Подсказка</a></span></span></div>`).insertAfter('#condition-1 .condition-vertical__tooltip');
+          $('#condition-2 .ui-slider-handle').html(`<span class="ui-value"></span>`)
+          $(`<div class="ui-block-answer answer-popup"><span href="#" class="ui-block-link answer-text">Я уверен в точности определения<span class="ui-block-buttons"><span class="ui-block-agree primary-btn">Да</span><a data-fancybox data-src="#modal-txt3" href="javascript:;" class="ui-block-no primary-btn primary-btn-gray">Подсказка</a></span></span></div>`).insertAfter('#condition-2 .condition-vertical__tooltip');
+					
+					$(".ui-value").html($("#condition-vertical__tooltip_1").slider("value"));
+          $(".ui-agree").html($("#condition-vertical__tooltip_1").slider("value"));
+
+          document.querySelector(".condition-vertical__arrow-up").addEventListener("click", () => {
+              $("#condition-vertical__tooltip_1").slider("value", $("#condition-vertical__tooltip_1").slider("value") + 1);
+              $(".ui-value").html($("#condition-vertical__tooltip_1").slider("value"));
+          })
+          document.querySelector(".condition-vertical__arrow-down").addEventListener("click", () => {
+              $("#condition-vertical__tooltip_1").slider("value", $("#condition-vertical__tooltip_1").slider("value") - 1);
+              $(".ui-value").html($("#condition-vertical__tooltip_1").slider("value"));
+          });
+
+          $(".ui-block-agree").on('click', function () {
+              $(".ui-block-link").removeClass("active");
+              $(".start").addClass("active");
+              $(this).parents(".condition").find('.start-btn').removeClass("disabled");
+              $(this).parents(".condition").find('.start-btn').addClass("active");
+
+              if($('#step-2').hasClass('active') && parseInt($('#condition-1 .ui-value').html()) >= 5){
+              	$.fancybox.open({
+              		src: '#modal-txt4', 
+						      modal: true
+              	});
+              }
+          });
+
+          /*$(".ui-block-no").on('click', function () {
+              $(".ui-block-link").removeClass("active");
+              $(".start").removeClass("active");
+          });*/
+          $('.ui-slider-range.ui-corner-all.ui-widget-header.ui-slider-range-min').css('height', '100%')
+      });
+  </script>
+  <script>
+  	let productivityRadio = document.querySelectorAll('input[name=productivityRadio]')
+	    productivityRadio.forEach((elem) => {
+	        elem.addEventListener('click', () => {
+	            if (elem.getAttribute('data-gender') == 'male') {
+	                localStorage.setItem('getGender', JSON.stringify(elem.getAttribute('data-gender')));
+	            } else {
+	                localStorage.setItem('getGender', JSON.stringify(elem.getAttribute('data-gender')));
+	            }
+	        })
+	    });
+  </script>
+  <script src="/js/scripts.min.js"></script>
+</body>
+</html>
