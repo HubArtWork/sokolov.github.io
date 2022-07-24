@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">Модалки</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-videoM" href="javascript:;">Видео</a></li>
+				<li>2.<a data-fancybox data-src="#modal-signIn" href="javascript:;">Войдите или зарегистрируйтесь</a></li>
+				<li>3.<a data-fancybox data-src="#modal-code" href="javascript:;">Введите код</a></li>
+				<li>4.<a data-fancybox data-src="#modal-editProfile" href="javascript:;">Редактировать профиль</a></li>
+				<li>5.<a data-fancybox data-src="#modal-delEmployee" href="javascript:;">Удалить сотрудника ?</a></li>
+				<li>6.<a data-fancybox data-src="#modal-addEmployee" href="javascript:;">Добавить сотрудника</a></li>
+				<li>7.<a data-fancybox data-src="#modal-removeSubscription" href="javascript:;">Вы действительно хотите отменить подписку ?</a></li>
+				<li>8.<a data-fancybox data-src="#modal-exceeded" href="javascript:;">Вы превысили количество сотрудников</a></li>
+				<li>9.<a data-fancybox data-src="#modal-editObjective" href="javascript:;">Редактировать цель</a></li>
+				<li>10.<a data-fancybox data-src="#modal-addObjective" href="javascript:;">Добавить цель</a></li>
+				<li>11.<a data-fancybox data-src="#modal-idea" href="javascript:;">Предложить идею визуализации графика</a></li>
+				<li>12.<a data-fancybox data-src="#modal-thanks" href="javascript:;">Подписка оформлена.</a></li>
+				<li>13.<a data-fancybox data-src="#modal-thanks2" href="javascript:;">Скоро ответим Вам.</a></li>
+				<li>14.<a data-fancybox data-src="#modal-thanks3" href="javascript:;">Благодарим за доверие!</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-videoM" class="modal modal-video">
+		<div class="modal-wrap">
+			<video controls>
+        <source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="video/main.mp4">
+      </video>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-signIn" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-head">Войдите или зарегистрируйтесь</span>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Номер телефона">
+				</div>
+				<div class="modal-actions">
+					<button class="primary-btn primary-btn-gray">Войти или зарегистрироваться</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-code" class="modal modal-small modal-relocade">
+		<div class="modal-wrap">
+			<span class="modal-head">Введите код</span>
+			<div class="modal-inf">
+				<p>Мы отправили код подтверждения на номер <br>+7 939 319 33 38 <a data-fancybox data-src="#modal-signIn" href="javascript:;">Изменить</a></p>
+			</div>
+			<form action="">
+				<div class="modal-code-row">
+					<div class="modal-code-col">
+						<input class="number_input number_input-1" type="number" max_n=1 tabindex=1>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-2" type="number" max_n=1 tabindex=2>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-3" type="number" max_n=1 tabindex=3>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-4" type="number" max_n=1 tabindex=4>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-5" type="number" max_n=1 tabindex=5>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-6" type="number" max_n=1 tabindex=6>
+					</div>
+				</div>
+			</form>
+			<a href="#" class="modal-l">Отправить код повторно</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-editProfile" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Редактировать профиль</span>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="ФИО">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Номер телефона ">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Почта">
+				</div>
+				<div class="inputs-row">
+					<div class="input-block modal-select">
+						<select name="text" id="gender">
+							<option value="">Мужской</option>
+							<option value="">Женский</option>
+						</select>
+					</div>
+					<div class="input-block">
+						<div class="input-block-wrap">
+							<input type="text" name="text" placeholder="Дата рождения" class="datepicker" autocomplete="off">
+							<i class="hb-ico data-ico"></i>
+						</div>
+					</div>
+				</div>
+				<div class="modal-actions">
+					<button class="primary-btn primary-btn-gray">Сохранить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-delEmployee" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Удалить сотрудника ?</span>
+			<div class="modal-btns">
+				<div class="modal-btns-col">
+					<a href="#" class="primary-btn modal-btn">Удалить</a>
+				</div>
+				<div class="modal-btns-col">
+					<a href="#" class="primary-btn primary-btn-gray modal-btn">Отмена</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-addEmployee" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Добавить сотрудника</span>
+			<form action="">
+				<div class="input-block">
+					<select name="text" id="role">
+						<option value="">Роль</option>
+						<option value="">Роль</option>
+					</select>
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="ФИО">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Почта">
+				</div>
+				<div class="modal-actions">
+					<button class="primary-btn primary-btn-gray">Сохранить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-removeSubscription" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Вы действительно хотите отменить подписку ?</span>
+			<div class="modal-btns">
+				<div class="modal-btns-col">
+					<a href="#" class="primary-btn modal-btn">Оставить</a>
+				</div>
+				<div class="modal-btns-col">
+					<a href="#" class="primary-btn primary-btn-gray modal-btn">Отменить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-exceeded" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Вы превысили количество сотрудников</span>
+			<div class="modal-actions">
+				<a href="#" class="primary-btn primary-btn-gray modal-btn">Хорошо</a>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-editObjective" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Редактировать цель</span>
+			<form action="">
+				<div class="input-block">
+					<select name="text" id="objective">
+						<option value="">Выбрать цель</option>
+						<option value="">Концентрация</option>
+						<option value="">Внимательность</option>
+						<option value="">Креативность</option>
+					</select>
+				</div>
+				<div class="input-block input-block-selectData">
+					<select name="text" id="objective2">
+						<option value="">Выбрать срок выполнения цели</option>
+						<option value="">Месяц</option>
+						<option value="">2 месяца</option>
+						<option value="">6 месяцев</option>
+					</select>
+				</div>
+				<div class="modal-btns">
+					<div class="modal-btns-col">
+						<a href="#" class="primary-btn modal-btn modal-btn">Сохранить</a>
+					</div>
+					<div class="modal-btns-col">
+						<a href="#" class="primary-btn primary-btn-gray modal-btn">Удалить цель</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-addObjective" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Добавить цель</span>
+			<form action="">
+				<div class="input-block">
+					<select name="text" id="objective3">
+						<option value="">Выбрать цель</option>
+						<option value="">Концентрация</option>
+						<option value="">Внимательность</option>
+						<option value="">Креативность</option>
+					</select>
+				</div>
+				<div class="input-block input-block-selectData">
+					<select name="text" id="objective4">
+						<option value="">Выбрать срок выполнения цели</option>
+						<option value="">Месяц</option>
+						<option value="">2 месяца</option>
+						<option value="">6 месяцев</option>
+					</select>
+				</div>
+				<div class="modal-txt">
+					<p>Чтобы добиться цели вам необходимо использовать продукты:</p>
+					<p>Продукт: Концентрация <br>кол-во запусков: 10</p>
+				</div>
+				<div class="modal-actions">
+					<a href="#" class="primary-btn primary-btn-gray modal-btn">Добавить</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-idea" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Предложить идею визуализации графика</span>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="ФИО">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Ваш вопрос">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Номер телефона / Почта">
+				</div>
+				<div class="download">
+					<input type="file">
+					<div class="download-wrap">
+						<i class="hb-ico download-ico"></i>
+						<span>Загрузить файл</span>
+					</div>
+				</div>
+				<div class="modal-actions">
+					<a href="#" class="primary-btn primary-btn-gray">Отправить</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-thanks" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-success">Отправлено</span>
+			<span class="modal-subhead">Спасибо за Ваш интерес!<br>Подписка оформлена.</span>
+			<div class="modal-actions">
+				<a href="#" class="primary-btn primary-btn-gray modal-btn">Понятно</a>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-thanks2" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-success">Отправлено</span>
+			<span class="modal-subhead">Спасибо! <br>Скоро ответим Вам.</span>
+			<div class="modal-actions">
+				<a href="#" class="primary-btn primary-btn-gray modal-btn">Понятно</a>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-thanks3" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-success">Успешно</span>
+			<div class="modal-t">
+				<span class="modal-subhead">Благодарим за доверие!</span>
+				<p>Мы оповестим Вас об активации подписки. <br>Обычно это занимает 1 рабочий день.</p>
+			</div>
+			<div class="modal-actions">
+				<a href="#" class="primary-btn primary-btn-gray modal-btn">Спасибо, будем ждать</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>

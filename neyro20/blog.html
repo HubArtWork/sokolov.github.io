@@ -215,9 +215,40 @@
 					<input type="text" name="text" placeholder="Номер телефона">
 				</div>
 				<div class="modal-actions">
-					<button class="primary-btn primary-btn-gray">Войти или зарегистрироваться</button>
+					<a data-fancybox data-src="#modal-code" href="javascript:;" class="primary-btn primary-btn-gray">Войти или зарегистрироваться</a>
 				</div>
 			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-code" class="modal modal-small modal-relocade">
+		<div class="modal-wrap">
+			<span class="modal-head">Введите код</span>
+			<div class="modal-inf">
+				<p>Мы отправили код подтверждения на номер <br>+7 939 319 33 38 <a data-fancybox data-src="#modal-signIn" href="javascript:;">Изменить</a></p>
+			</div>
+			<form action="">
+				<div class="modal-code-row">
+					<div class="modal-code-col">
+						<input class="number_input number_input-1" type="number" max_n=1 tabindex=1>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-2" type="number" max_n=1 tabindex=2>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-3" type="number" max_n=1 tabindex=3>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-4" type="number" max_n=1 tabindex=4>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-5" type="number" max_n=1 tabindex=5>
+					</div>
+					<div class="modal-code-col">
+						<input class="number_input number_input-6" type="number" max_n=1 tabindex=6>
+					</div>
+				</div>
+			</form>
+			<a href="#" class="modal-l">Отправить код повторно</a>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
