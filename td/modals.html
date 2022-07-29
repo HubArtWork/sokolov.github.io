@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">Основные страницы</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-review" href="javascript:;">Отзыв о товаре</a></li>
+				<li>2.<a data-fancybox data-src="#modal-cancellation" href="javascript:;">Отмена заказа №127</a></li>
+				<li>3.<a data-fancybox data-src="#modal-done" href="javascript:;">Заказ №137 отменен (done)</a></li>
+				<li>4.<a data-fancybox data-src="#modal-formed" href="javascript:;">Заказ сформирован</a></li>
+				<li>5.<a data-fancybox data-src="#modal-buy" href="javascript:;">Купить в один клик</a></li>
+				<li>6.<a data-fancybox data-src="#modal-onOrder" href="javascript:;">Товар под заказ</a></li>
+				<li>7.<a data-fancybox data-src="#modal-redirected" href="javascript:;">Вы перенаправляетесь</a></li>
+				<li>8.<a data-fancybox data-src="#modal-backCall" href="javascript:;">Обратный звонок</a></li>
+				<li>9.<a data-fancybox data-src="#modal-writeToUs" href="javascript:;">Написать нам</a></li>
+				<li>10.<a data-fancybox data-src="#modal-done2" href="javascript:;">Ваше сообщение отправлено</a></li>
+				<li>11.<a data-fancybox data-src="#modal-authorization" href="javascript:;">Авторизация</a></li>
+				<li>12.<a data-fancybox data-src="#modal-registration" href="javascript:;">Регистрация</a></li>
+				<li>13.<a data-fancybox data-src="#modal-recovery" href="javascript:;">Восстановление пароля</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-review" class="modal modal-review">
+		<div class="modal-wrap">
+			<span class="modal-title">Отзыв о товаре</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Ваше имя*</label>
+					<input type="text" name="text" placeholder="Введите имя">
+				</div>
+				<div class="input-block">
+					<label for="">E-mail*</label>
+					<input type="email" name="email" placeholder="Введите e-mail">
+				</div>
+				<div class="input-block">
+					<label for="">Отзыв*</label>
+					<textarea name="text" placeholder="Напишите отзыв о товаре"></textarea>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<i class="checkbox-ico"></i>
+					<p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных , в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ</p>
+				</div>
+				<a href="#" class="primary-btn primary-btn-big">Оставить отзыв</a>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-cancellation" class="modal modal-orange-close">
+		<div class="modal-wrap">
+			<span class="modal-title">Отмена заказа №127</span>
+			<div class="modal-txt">
+				<span>Вы уверены, что хотите отменить заказ №127?</span>
+				Отмена заказа необратима
+			</div>
+			<form action="">
+				<div class="input-block input-block-second">
+					<label for="">Укажите пожалуйста причину отказа:</label>
+					<textarea name="text" placeholder="Введите причину отмены"></textarea>
+				</div>
+				<a href="#" class="primary-btn primary-btn-big">Отменить заказ</a>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-done" class="modal modal-done">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal/done.svg" alt=""></div>
+			<span class="modal-title">Заказ №137 отменен</span>
+			<a href="#" class="primary-btn primary-btn-big modal-btn">Закрыть</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-formed" class="modal modal-orange-close modal-done">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal/done-2.svg" alt=""></div>
+			<span class="modal-title">Заказ сформирован. <br>Скоро с вами свяжется менеджер</span>
+			<div class="modal-text">
+				<p>Ваш заказ №194 от 26.07.2022 12:56 успешно создан</p>
+				<p>Вы можете следить за выполнением своего заказа в <a href="#">Персональном разделе сайта</a></p>
+				<p>Обратите внимание, что для входа в этот раздел вам необходимо будет ввестим лоин и пароль подьзователя сайта</p>
+			</div>
+			<div class="modal-link"><a href="#" class="link modal-btn">Вернуться</a></div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-buy" class="modal modal-orange-close modal-buy">
+		<div class="modal-wrap">
+			<span class="modal-title">Купить в один клик</span>
+			<form action="">
+				<div class="modal-card">
+					<div class="modal-card-img"><img src="img/products/img-1-min.png" alt=""></div>
+					<div class="modal-card-info">
+						<div class="modal-card-subs">
+							<span>Арт: КЭП-16П</span>
+							<span>Код: 00000407965</span>
+						</div>
+						<span class="modal-card-name">Насадка для лапшерезок Imperia Т.З</span>
+						<div class="modal-card-bottom">
+							<div class="amount">
+								<i class="amount-minus"></i>
+								<input type="text" name="amount" value="23">
+								<i class="amount-plus"></i>
+							</div>
+							<span class="modal-card-price">404 401.00 ₽</span>
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="">Ваше имя*</label>
+					<input type="text" name="text" placeholder="Введите имя">
+				</div>
+				<div class="input-block">
+					<label for="">Телефон*</label>
+					<input type="text" name="text" placeholder="Введите e-mail">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<i class="checkbox-ico"></i>
+					<p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных , в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ</p>
+				</div>
+				<a href="#" class="primary-btn primary-btn-big">Отправить</a>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-onOrder" class="modal modal-orange-close modal-buy">
+		<div class="modal-wrap">
+			<span class="modal-title">Товар под заказ</span>
+			<form action="">
+				<div class="modal-card">
+					<div class="modal-card-img"><img src="img/products/img-1-min.png" alt=""></div>
+					<div class="modal-card-info">
+						<div class="modal-card-subs">
+							<span>Арт: КЭП-16П</span>
+							<span>Код: 00000407965</span>
+						</div>
+						<span class="modal-card-name">Насадка для лапшерезок Imperia Т.З</span>
+						<div class="modal-card-bottom">
+							<div class="amount">
+								<i class="amount-minus"></i>
+								<input type="text" name="amount" value="23">
+								<i class="amount-plus"></i>
+							</div>
+							<span class="modal-card-price">404 401.00 ₽</span>
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="">Ваше имя*</label>
+					<input type="text" name="text" placeholder="Введите имя">
+				</div>
+				<div class="input-block">
+					<label for="">Телефон*</label>
+					<input type="text" name="text" placeholder="Введите e-mail">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<i class="checkbox-ico"></i>
+					<p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных , в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ</p>
+				</div>
+				<a href="#" class="primary-btn primary-btn-big">Отправить</a>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-redirected" class="modal modal-orange-close modal-done">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal/done-2.svg" alt=""></div>
+			<span class="modal-title">Вы перенаправляетесь <br>на наш сайт по запчастям</span>
+			<div class="modal-logo"><img src="img/modal/logo-min.png" alt=""></div>
+			<div class="modal-t">Если этого не произошло, нажмите кнопку</div>
+			<a href="#" class="primary-btn primary-btn-big">Перейти на сайт</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-backCall" class="modal modal-orange-close modal-backCall">
+		<div class="modal-wrap">
+			<span class="modal-title">Обратный звонок</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Ваше имя*</label>
+					<input type="text" name="text" placeholder="Введите имя">
+				</div>
+				<div class="input-block">
+					<label for="">Название компании*</label>
+					<input type="text" name="text" placeholder="Введите название компании">
+				</div>
+				<div class="input-block">
+					<label for="">E-mail*</label>
+					<input type="email" name="email" placeholder="Введите e-mail">
+				</div>
+				<div class="input-block">
+					<label for="">Телефон*</label>
+					<input type="text" name="text" placeholder="Введите Телефон">
+				</div>
+				<div class="input-block">
+					<label for="">Сообщение</label>
+					<textarea name="text" placeholder="Введите сообщение"></textarea>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<i class="checkbox-ico"></i>
+					<p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных , в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ</p>
+				</div>
+				<a href="#" class="primary-btn primary-btn-big">Отправить</a>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-writeToUs" class="modal modal-orange-close modal-backCall">
+		<div class="modal-wrap">
+			<span class="modal-title">Написать нам</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Ваше имя*</label>
+					<input type="text" name="text" placeholder="Введите имя">
+				</div>
+				<div class="input-block">
+					<label for="">Название компании*</label>
+					<input type="text" name="text" placeholder="Введите название компании">
+				</div>
+				<div class="input-block">
+					<label for="">E-mail*</label>
+					<input type="email" name="email" placeholder="Введите e-mail">
+				</div>
+				<div class="input-block">
+					<label for="">Телефон*</label>
+					<input type="text" name="text" placeholder="Введите Телефон">
+				</div>
+				<div class="input-block">
+					<label for="">Сообщение</label>
+					<textarea name="text" placeholder="Введите сообщение"></textarea>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<i class="checkbox-ico"></i>
+					<p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных , в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ</p>
+				</div>
+				<a href="#" class="primary-btn primary-btn-big">Отправить</a>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-done2" class="modal modal-done">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal/done.svg" alt=""></div>
+			<span class="modal-title">Ваше сообщение отправлено</span>
+			<span class="modal-t">В ближайшее врем с вами свяжется менеджер</span>
+			<a href="#" class="primary-btn primary-btn-big modal-btn">Закрыть</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-authorization" class="modal modal-orange-close">
+		<div class="modal-wrap">
+			<span class="modal-title modal-title-big">Авторизация</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Логин</label>
+					<input type="text" name="text" placeholder="Введите логин">
+				</div>
+				<div class="input-block">
+					<label for="">Пароль</label>
+					<input type="password" name="password" placeholder="Введите пароль">
+					<span class="inputs-link">
+						<a data-fancybox data-src="#modal-recovery" href="javascript:;">Восстановить пароль</a>
+					</span>
+				</div>
+				<a href="#" class="primary-btn primary-btn-big">Войти</a>
+				<div class="modal-link modal-link-second"><a data-fancybox data-src="#modal-registration" href="javascript:;" class="link">Зарегистрироваться</a></div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-registration" class="modal modal-orange-close">
+		<div class="modal-wrap">
+			<span class="modal-title modal-title-big">Регистрация</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">E-mail</label>
+					<input type="email" name="email" placeholder="E-mail">
+				</div>
+				<div class="input-block">
+					<label for="">Пароль</label>
+					<input type="password" name="password" placeholder="Придумайте пароль">
+				</div>
+				<div class="input-block">
+					<label for="">Подтвердить пароль</label>
+					<input type="password" name="password" placeholder="Повторите пароль">
+				</div>
+				<div class="checkbox checkbox-second">
+					<input type="checkbox" checked>
+					<i class="checkbox-ico"></i>
+					<p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных , в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ</p>
+				</div>
+				<div class="modal-captcha"><img src="img/modal/captcha-min.png" alt=""></div>
+				<a href="#" class="primary-btn primary-btn-big">Зарегистрироваться</a>
+				<div class="modal-link modal-link-second"><a data-fancybox data-src="#modal-authorization" href="javascript:;" class="link">Авторизоваться</a></div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-recovery" class="modal modal-orange-close">
+		<div class="modal-wrap">
+			<span class="modal-title modal-title-big">Восстановление пароля</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">E-mail</label>
+					<input type="email" name="email" placeholder="E-mail">
+				</div>
+				<div class="modal-captcha"><img src="img/modal/captcha-min.png" alt=""></div>
+				<a href="#" class="primary-btn primary-btn-big">Отправить</a>
+				<div class="modal-link modal-link-second"><a data-fancybox data-src="#modal-authorization" href="javascript:;" class="link">Авторизоваться</a></div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
