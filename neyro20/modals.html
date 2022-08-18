@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>title</title>
+	<title>Нейроресурс | Модалки</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,7 +16,7 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
-<body>
+<body class="body-p">
 	<div class="sitemap">
 		<div class="wrapper">
 			<h2 class="sitemap-title">Модалки</h2>
@@ -35,6 +35,11 @@
 				<li>12.<a data-fancybox data-src="#modal-thanks" href="javascript:;">Подписка оформлена.</a></li>
 				<li>13.<a data-fancybox data-src="#modal-thanks2" href="javascript:;">Скоро ответим Вам.</a></li>
 				<li>14.<a data-fancybox data-src="#modal-thanks3" href="javascript:;">Благодарим за доверие!</a></li>
+				<li>15.<a data-fancybox data-src="#modal-study" href="javascript:;">Хочу участвовать в исследовании</a></li>
+				<li>16.<a data-fancybox data-src="#modal-txt" href="javascript:;">Инструкция по работе с тренажером</a></li>
+				<li>17.<a data-fancybox data-src="#modal-txt2" href="javascript:;">Как определить свое состояние до запуска</a></li>
+				<li>18.<a data-fancybox data-src="#modal-txt3" href="javascript:;">Как определить изменения после запуска</a></li>
+				<li>19.<a data-fancybox data-src="#modal-txt4" href="javascript:;">Обратите внимание</a></li>
 			</ul>
 		</div>
 	</div>
@@ -142,7 +147,9 @@
 				<div class="input-block">
 					<select name="text" id="role">
 						<option value="">Роль</option>
-						<option value="">Роль</option>
+						<option value="">Владельцы</option>
+						<option value="">Руководители</option>
+						<option value="">Сотрудники</option>
 					</select>
 				</div>
 				<div class="input-block">
@@ -295,7 +302,121 @@
 			</div>
 		</div>
 	</div>
+	<div style="display: none;" id="modal-study" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Участвуйте в исследованиях продуктов Нейроресурса</span>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="ФИО">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Номер телефона ">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Ваш вопрос">
+				</div>
+				<div class="modal-actions">
+					<button class="primary-btn primary-btn-gray">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-txt" class="modal modal-txt">
+		<div class="modal-wrap">
+			<span class="modal-title">Инструкция по работе с тренажером</span>
+      <p>Вы на странице тренажера – короткой медитации, созданной по специальной технологии. Он
+          тренирует эмоциональный интеллект, помогая развивать навык раскрытия желаемого состояния.
+          Для максимального эффекта рекомендуем следовать инструкции.
+      </p>
+      <p>Работа с тренажером состоит из трех важных этапов: фиксация состояния до, запуск тренажера и
+          фиксация состояния после.</p>
+      <p>Определение состояния перед работой с тренажером запускает синхронизацию вашего интеллекта с
+          подсознанием, внимание фиксируется на вашей внутренней реальности: на спектре чувств и
+          ощущений. Именно с ней идет работа тренажера.</p>
+      <p>1. Определите свое состояние до запуска:</p>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой</li>
+          <li>Переведите внимание в область груди</li>
+          <li>Определите по внутренней интуитивной шкале ваше состояние: где -10 максимальный
+              негатив или отсутствие качества, или состояния, +10 полный позитив или их максимальное
+              раскрытие.</li>
+          <li>Отметьте на шкале состояние. Выставляя значение опирайтесь на чувства удовлетворения и
+              завершения как показателей точности. Доверяйте себе и не бойтесь ошибиться.</li>
+      </ul>
+      <p>2. Запустите тренажер.
+          На этом этапе от вас требуется держать внимание на видео, дышать ртом и быть в наушниках.
+          Специальный контент в течение первой минуты начнет раскрывать выбранное вами состояние или
+          качество. На второй минуте закройте глаза. Состояние или качество продолжит раскрываться.
+          Оставайтесь с закрытыми глазами в наушниках до момента окончания музыки.
+      </p>
+      <p>3. Откройте глаза и отметьте изменения.</p>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой.</li>
+          <li>Обратите внимание на то, что изменилось в вашем визуальном восприятии. Постарайтесь
+              определить и назвать эти изменения. </li>
+          <li>Обратите внимание на ощущения во всём теле. Сравните их с теми, что были до активации
+              тренажера</li>
+          <li>Теперь определите изменения своего состояния в целом и отметьте его на шкале.</li>
+          <li>Сохраните результат.</li>
+      </ul>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Хорошо</a>
+      </div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-txt2" class="modal modal-txt">
+		<div class="modal-wrap">
+			<span class="modal-title">Как определить свое состояние до запуска</span>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой.</li>
+          <li>Переведите внимание в область груди.</li>
+          <li>Определите по внутренней интуитивной шкале ваше состояние: где -10 максимальный
+              негатив или отсутствие качества, или состояния, +10 полный позитив или их максимальное
+              раскрытие.</li>
+          <li>Отметьте на шкале состояние. Выставляя значение опирайтесь на чувства удовлетворения и
+              завершения как показателей точности. Доверяйте себе и не бойтесь ошибиться.</li>
+      </ul>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Хорошо</a>
+      </div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-txt3" class="modal modal-txt">
+		<div class="modal-wrap">
+			<span class="modal-title">Как определить изменения после запуска</span>
+      <ul>
+          <li>Встаньте, зафиксируйте взгляд перед собой.</li>
+          <li>Обратите внимание на то, что изменилось в вашем визуальном восприятии. Постарайтесь
+              определить и назвать эти изменения. </li>
+          <li>Обратите внимание на ощущения во всём теле. Сравните их с теми, что были до активации
+              тренажера.</li>
+          <li>Теперь определите изменения своего состояния в целом и отметьте его на шкале.</li>
+          <li>Сохраните результат.</li>
+      </ul>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Хорошо</a>
+      </div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-txt4" class="modal modal-txt">
+		<div class="modal-wrap">
+      <p>Пожалуйста, обратите внимание, что сейчас Ваше состояние уже выше среднего позитивного (от +5 и более). В этом случае после запуска тренажера изменения могут восприниматься неярко.</p>
+      <br>
+      <div class="modal-bottom">
+      	<a href="#" class="primary-btn primary-btn-gray modal-btn">Принято</a>
+      </div>
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script>
+		$('.datepicker').datepicker({
+			dateFormat : "yy-mm-dd",
+			minDate: new Date($('#hiddendelivdate').val()),
+			monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+			dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		});
+	</script>
   <script src="js/scripts.min.js"></script>
 </body>
 </html>

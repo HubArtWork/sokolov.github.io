@@ -63,6 +63,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="menu-bg"></div>
 	<!-- end header -->
 	<!-- start blog -->
 	<section class="page blog">
@@ -124,7 +125,7 @@
 			</div>
 			<div class="message">
 				<span class="message-title">Участвуйте в исследованиях продуктов Нейроресурса</span>
-				<a href="#" class="primary-btn">Хочу участвовать в исследовании</a>
+				<a data-fancybox data-src="#modal-study" href="javascript:;" class="primary-btn">Хочу участвовать в исследовании</a>
 			</div>
 		</div>
 	</section>
@@ -249,6 +250,25 @@
 				</div>
 			</form>
 			<a href="#" class="modal-l">Отправить код повторно</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-study" class="modal modal-small">
+		<div class="modal-wrap">
+			<span class="modal-subhead">Участвуйте в исследованиях продуктов Нейроресурса</span>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="ФИО">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Номер телефона ">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Ваш вопрос">
+				</div>
+				<div class="modal-actions">
+					<button class="primary-btn primary-btn-gray">Отправить</button>
+				</div>
+			</form>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

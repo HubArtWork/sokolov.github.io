@@ -63,10 +63,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="menu-bg"></div>
 	<!-- end header -->
 	<!-- start tariff -->
-	<section class="page tariff">
-		<div class="bg bg-2"><img src="img/bg/bg-5.svg" alt=""></div>
+	<section class="page tariff page-bg">
+		<div class="bg bg-2 bg-b" style="background-image: url(img/bg/bg-5.svg);"></div>
 		<div class="bg bg-5"><img src="img/bg/circle-3.svg" alt=""></div>
 		<div class="wrapper">
 			<ul class="crumbs">
@@ -85,7 +86,9 @@
 			</div>
 			<div class="tariff-txt">
 				<p>Введите количество сотрудников, для которых Вы хотите оформить подписку</p>
-				<span>Сотрудники</span>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Сотрудники" autocomplete="off">
+				</div>
 			</div>
 			<div class="tariff-actions">
 				<span class="tariff-bar-num">0</span>
@@ -341,6 +344,14 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="js/scripts.min.js"></script>
   <script>
+  	function countSum(a){
+  		$('.tariff-txt input').val(a);
+  		$('.tariff-price-1').html((5640 * a).toLocaleString());
+    	$('.tariff-price-2').html((7800 * a).toLocaleString());
+    	$('.tariff-price-3').html((17640 * a).toLocaleString());
+    	$('.tariff-price-4').html((56400 * a).toLocaleString());
+    	return a;
+  	}
   	var handle = $( "#handle" );
     $( "#handle" ).slider({
       range: "min",
@@ -353,12 +364,20 @@
       },
       slide: function( event, ui ) {
       	$('.ui-slider-handle').html( "<span>" + ui.value + "</span>" );
-      	$('.tariff-price-1').html((5640 * ui.value).toLocaleString());
-      	$('.tariff-price-2').html((7800 * ui.value).toLocaleString());
-      	$('.tariff-price-3').html((17640 * ui.value).toLocaleString());
-      	$('.tariff-price-4').html((56400 * ui.value).toLocaleString());
+      	countSum(ui.value);
       }
     });
+    $('.tariff-txt input').on('change keyup input', function(){
+			if (this.value.match(/[^0-9]/g)) {
+				this.value = this.value.replace(/[^0-9]/g, '');
+			}
+			if ($('.tariff-txt input').val() > 200)
+				$('.tariff-txt input').val(200);
+
+			$('.ui-slider-handle').html( "<span>" + $('.tariff-txt input').val() + "</span>" );
+			$('#handle').slider("value", +$('.tariff-txt input').val());
+			countSum($('.tariff-txt input').val());
+		});
   </script>
 </body>
 </html>
