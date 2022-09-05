@@ -17,6 +17,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
+	<div class="arrow-top"></div>
 	<!-- start header -->
 	<header class="header">
 		<div class="wrapper">
@@ -80,6 +81,17 @@
 			</div>
 		</div>
 	</header>
+	<div class="header-search">
+		<div class="wrapper">
+			<form action="">
+				<div class="header-search-wrap">
+					<i class="hb-ico search-ico"></i>
+					<input type="text" name="search" placeholder="Start typing your search query">
+					<i class="hb-ico close-ico"></i>
+				</div>
+			</form>
+		</div>
+	</div>
 	<div class="store">
 		<div class="wrapper">
 			<div class="store-row">
@@ -179,8 +191,8 @@
 			<ul class="forms-menu">
 				<li><a href="#">Cart</a></li>
 				<li><a href="#">Information</a></li>
-				<li><a href="#" class="active">Shipping</a></li>
-				<li><a href="#">Payment</a></li>
+				<li><a href="#">Shipping</a></li>
+				<li><a href="#" class="active">Payment</a></li>
 			</ul>
 			<div class="checkout-row">
 				<div class="checkout-content">
@@ -207,18 +219,16 @@
 							<div class="checkout-radio radio">
 								<input type="radio" name="checkout" checked>
 								<i class="radio-ico"></i>
-								<span>Standart</span>
-								<span>Free</span>
+								<span>Same as shipping address</span>
 							</div>
 							<div class="checkout-radio radio">
 								<input type="radio" name="checkout">
 								<i class="radio-ico"></i>
-								<span>Standart</span>
-								<span>$7.00</span>
+								<span>Use a different billing address</span>
 							</div>
 						</div>
 						<div class="checkout-btns">
-							<button class="primary-btn">Continue to shipping</button>
+							<button class="primary-btn">Complete order</button>
 							<a href="#" class="checkout-link">Return to basket</a>
 						</div>
 					</form>

@@ -17,6 +17,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
+	<div class="arrow-top"></div>
 	<!-- start header -->
 	<header class="header">
 		<div class="wrapper">
@@ -80,6 +81,17 @@
 			</div>
 		</div>
 	</header>
+	<div class="header-search">
+		<div class="wrapper">
+			<form action="">
+				<div class="header-search-wrap">
+					<i class="hb-ico search-ico"></i>
+					<input type="text" name="search" placeholder="Start typing your search query">
+					<i class="hb-ico close-ico"></i>
+				</div>
+			</form>
+		</div>
+	</div>
 	<div class="store">
 		<div class="wrapper">
 			<div class="store-row">
@@ -212,7 +224,10 @@
 								<p>For example, let’s break down this label: 30 / 01 RL LT – T</p>
 							</div>
 							<div class="article-info-block">
-								<span class="article-title">30/01 RL LT - T</span>
+								<div class="article-title-wrap">
+									<span class="article-title">30/01 RL LT - T</span>
+									<img src="img/line-1.svg" alt="">
+								</div>
 								<p><b>30</b> – Diameter of a single needle in a grouping</p>
 								<p><b>01</b> – Quantity of needles in a grouping</p>
 								<p><b>RL</b> – How needles are grouped together</p>
