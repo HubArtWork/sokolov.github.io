@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="arrow-top"></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><svg width="150" height="50" viewBox="0 0 150 50" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_20_12)"><path d="M2.11719 48.2102H3.55138C3.58456 48.4299 3.7379 48.6079 4.01197 48.7437C4.28632 48.8799 4.62257 48.9479 5.02015 48.9479C5.41439 48.9479 5.73558 48.8837 5.98344 48.7549C6.23131 48.6265 6.35538 48.4623 6.35538 48.2623C6.35538 48.0878 6.26337 47.9467 6.07963 47.8395C5.89534 47.732 5.58837 47.6422 5.15789 47.57L4.23168 47.4164C2.9274 47.2041 2.27499 46.7013 2.27499 45.907C2.27499 45.4128 2.52899 45.0134 3.03642 44.7089C3.54413 44.4043 4.19683 44.252 4.99534 44.252C5.81671 44.252 6.47192 44.4003 6.96179 44.6958C7.4511 44.9916 7.70231 45.3856 7.71597 45.8774H6.32108C6.29794 45.6503 6.16578 45.4708 5.92406 45.3401C5.68261 45.2087 5.3748 45.1431 5.00008 45.1431C4.63233 45.1431 4.33567 45.2045 4.11095 45.3267C3.88567 45.4492 3.77331 45.6104 3.77331 45.81C3.77331 45.9746 3.86448 46.1081 4.04683 46.2106C4.22889 46.3128 4.52554 46.4003 4.93595 46.4727L5.79859 46.6113C6.51151 46.7259 7.03065 46.9051 7.35603 47.1486C7.68112 47.3922 7.84367 47.7195 7.84367 48.1316C7.84367 48.656 7.58382 49.0721 7.06523 49.3803C6.5458 49.6888 5.8446 49.8426 4.96105 49.8426C4.1037 49.8426 3.4209 49.6975 2.91346 49.4066C2.40548 49.1159 2.14033 48.717 2.11719 48.2102Z" fill="#1B1B1B" class="path-f"/><path d="M12.5188 47.566H9.28125V46.6113H12.5188V47.566Z" fill="#1B1B1B" class="path-f"/><path d="M17.6858 49.7493H15.8922L13.502 44.3457H15.1678L16.7939 48.5845H16.8282L18.4547 44.3457H20.076L17.6858 49.7493Z" fill="#1B1B1B" class="path-f"/><path d="M22.7927 49.7493H21.3047V44.3457H22.7927V49.7493Z" fill="#1B1B1B" class="path-f"/><path d="M27.6932 49.7493H26.2046V45.2781H24.125V44.3457H29.7775V45.2781H27.6932V49.7493Z" fill="#1B1B1B" class="path-f"/><path d="M32.9931 45.3792L32.0816 47.5923H33.9394L33.0279 45.3792H32.9931ZM34.8014 49.7493L34.2597 48.4383H31.7613L31.219 49.7493H29.6914L32.1606 44.3457H33.9095L36.3834 49.7493H34.8014Z" fill="#1B1B1B" class="path-f"/><path d="M43.4283 49.8426C42.39 49.8426 41.5697 49.5939 40.967 49.0958C40.3639 48.5975 40.0625 47.914 40.0625 47.0456C40.0625 46.1795 40.3647 45.4971 40.9695 44.9992C41.5739 44.5011 42.3934 44.252 43.4283 44.252C43.9934 44.252 44.507 44.3371 44.9685 44.5066C45.4299 44.6763 45.8004 44.9164 46.0795 45.2257C46.3592 45.5352 46.5164 45.8884 46.5526 46.2852H45.104C45.0348 45.9532 44.8466 45.6875 44.5394 45.4878C44.2324 45.2882 43.8621 45.1882 43.4283 45.1882C42.8665 45.1882 42.4179 45.3556 42.0833 45.6899C41.7479 46.0246 41.5803 46.475 41.5803 47.0416C41.5803 47.6185 41.7462 48.0731 42.078 48.4068C42.4101 48.7401 42.8618 48.9066 43.4336 48.9066C43.8736 48.9066 44.2433 48.8142 44.5421 48.6297C44.841 48.4447 45.0303 48.1926 45.1087 47.8734H46.5577C46.4757 48.4748 46.152 48.9536 45.5869 49.3092C45.0217 49.6649 44.3021 49.8426 43.4283 49.8426Z" fill="#1B1B1B" class="path-f"/><path d="M52.5773 45.6973C52.2324 45.3628 51.7691 45.1956 51.1877 45.1956C50.6064 45.1956 50.1422 45.3628 49.7956 45.6973C49.4488 46.0318 49.2757 46.4822 49.2757 47.0494C49.2757 47.6134 49.448 48.0623 49.7928 48.3952C50.1377 48.7289 50.6031 48.8954 51.1877 48.8954C51.7691 48.8954 52.2324 48.7289 52.5773 48.3952C52.9222 48.0623 53.0951 47.6134 53.0951 47.0494C53.0951 46.4822 52.9222 46.0318 52.5773 45.6973ZM48.6818 45.0047C49.298 44.5026 50.1333 44.252 51.1877 44.252C52.2422 44.252 53.0772 44.5026 53.6934 45.0047C54.3096 45.5066 54.6174 46.1875 54.6174 47.0494C54.6174 47.9081 54.3087 48.5884 53.6912 49.0901C53.0733 49.5918 52.2389 49.8424 51.1877 49.8424C50.1333 49.8424 49.298 49.5918 48.6818 49.0901C48.0656 48.5884 47.7578 47.9081 47.7578 47.0494C47.7578 46.1875 48.0656 45.5066 48.6818 45.0047Z" fill="#1B1B1B" class="path-f"/><path d="M57.502 49.7493H56.0781V44.3457H57.3197L60.6411 47.8654H60.6807V44.3457H62.1046V49.7493H60.8728L57.5461 46.2105H57.502V49.7493Z" fill="#1B1B1B" class="path-f"/><path d="M63.5273 48.2102H64.9615C64.9944 48.4299 65.1481 48.6079 65.4221 48.7437C65.6965 48.8799 66.0327 48.9479 66.43 48.9479C66.8243 48.9479 67.1457 48.8837 67.3936 48.7549C67.6415 48.6265 67.7655 48.4623 67.7655 48.2623C67.7655 48.0878 67.6735 47.9467 67.4898 47.8395C67.3055 47.732 66.9983 47.6422 66.5681 47.57L65.6416 47.4164C64.3376 47.2041 63.6851 46.7013 63.6851 45.907C63.6851 45.4128 63.9391 45.0134 64.4466 44.7089C64.954 44.4043 65.6067 44.252 66.4055 44.252C67.2269 44.252 67.8821 44.4003 68.372 44.6958C68.8613 44.9916 69.1125 45.3856 69.1259 45.8774H67.731C67.7078 45.6503 67.5759 45.4708 67.3339 45.3401C67.0928 45.2087 66.785 45.1431 66.4102 45.1431C66.0425 45.1431 65.7458 45.2045 65.5208 45.3267C65.2958 45.4492 65.1835 45.6104 65.1835 45.81C65.1835 45.9746 65.2744 46.1081 65.457 46.2106C65.6391 46.3128 65.9357 46.4003 66.3461 46.4727L67.2088 46.6113C67.9217 46.7259 68.4405 46.9051 68.7659 47.1486C69.091 47.3922 69.2536 47.7195 69.2536 48.1316C69.2536 48.656 68.994 49.0721 68.4754 49.3803C67.956 49.6888 67.2548 49.8426 66.3712 49.8426C65.5136 49.8426 64.8311 49.6975 64.3236 49.4066C63.8156 49.1159 63.5505 48.717 63.5273 48.2102Z" fill="#1B1B1B" class="path-f"/><path d="M72.156 44.3457V47.7273C72.156 48.079 72.2865 48.358 72.5477 48.5639C72.809 48.7701 73.1761 48.8728 73.649 48.8728C74.1191 48.8728 74.4846 48.7701 74.7456 48.5639C75.0071 48.358 75.1373 48.079 75.1373 47.7273V44.3457H76.6253V47.8393C76.6253 48.4383 76.3554 48.9222 75.8151 49.2906C75.275 49.6588 74.5529 49.8425 73.649 49.8425C72.7426 49.8425 72.0185 49.6588 71.4785 49.2906C70.9381 48.9222 70.668 48.4383 70.668 47.8393V44.3457H72.156Z" fill="#1B1B1B" class="path-f"/><path d="M82.912 48.8131V49.7493H78.3145V44.3457H79.8025V48.8131H82.912Z" fill="#1B1B1B" class="path-f"/><path d="M86.5997 49.7493H85.1109V45.2781H83.0312V44.3457H88.6841V45.2781H86.5997V49.7493Z" fill="#1B1B1B" class="path-f"/><path d="M91.4997 49.7493H90.0117V44.3457H91.4997V49.7493Z" fill="#1B1B1B" class="path-f"/><path d="M94.6114 49.7493H93.1875V44.3457H94.429L97.7505 47.8654H97.7898V44.3457H99.214V49.7493H97.9822L94.6554 46.2105H94.6114V49.7493Z" fill="#1B1B1B" class="path-f"/><path d="M107.259 47.4797C107.259 48.2166 106.98 48.7943 106.423 49.2136C105.867 49.6329 105.093 49.8424 104.104 49.8424C103.04 49.8424 102.203 49.5933 101.594 49.0939C100.984 48.5948 100.68 47.9068 100.68 47.0306C100.68 46.1666 100.983 45.4878 101.589 44.9935C102.195 44.4992 103.022 44.252 104.069 44.252C104.898 44.252 105.599 44.4219 106.174 44.7613C106.749 45.1007 107.09 45.5437 107.195 46.0905H105.701C105.593 45.8083 105.395 45.5875 105.107 45.4276C104.82 45.2681 104.476 45.1882 104.075 45.1882C103.486 45.1882 103.027 45.349 102.695 45.6712C102.363 45.9933 102.198 46.4416 102.198 47.0155C102.198 47.5996 102.37 48.06 102.718 48.3971C103.064 48.7344 103.535 48.9028 104.129 48.9028C104.616 48.9028 105.012 48.7994 105.32 48.5918C105.626 48.3846 105.789 48.114 105.804 47.7793L105.81 47.6933H104.262V46.8693H107.259V47.4797Z" fill="#1B1B1B" class="path-f"/><path d="M117.774 47.4797C117.774 48.2166 117.495 48.7943 116.939 49.2136C116.381 49.6329 115.609 49.8424 114.62 49.8424C113.556 49.8424 112.718 49.5933 112.109 49.0939C111.5 48.5948 111.195 47.9068 111.195 47.0306C111.195 46.1666 111.498 45.4878 112.104 44.9935C112.711 44.4992 113.537 44.252 114.585 44.252C115.413 44.252 116.115 44.4219 116.69 44.7613C117.265 45.1007 117.605 45.5437 117.71 46.0905H116.216C116.109 45.8083 115.91 45.5875 115.623 45.4276C115.335 45.2681 114.991 45.1882 114.59 45.1882C114.003 45.1882 113.543 45.349 113.21 45.6712C112.879 45.9933 112.713 46.4416 112.713 47.0155C112.713 47.5996 112.886 48.06 113.233 48.3971C113.579 48.7344 114.05 48.9028 114.645 48.9028C115.131 48.9028 115.527 48.7994 115.835 48.5918C116.142 48.3846 116.304 48.114 116.32 47.7793L116.325 47.6933H114.778V46.8693H117.774V47.4797Z" fill="#1B1B1B" class="path-f"/><path d="M120.748 45.2292V46.9521H122.054C122.428 46.9521 122.72 46.8758 122.929 46.7235C123.137 46.5713 123.241 46.3603 123.241 46.0906C123.241 45.8285 123.133 45.6194 122.917 45.4635C122.699 45.3076 122.407 45.2292 122.039 45.2292H120.748ZM120.748 47.772V49.7493H119.26V44.3457H122.197C123.008 44.3457 123.64 44.4987 124.091 44.8044C124.544 45.1103 124.769 45.5317 124.769 46.0682C124.769 46.4203 124.655 46.734 124.426 47.0099C124.198 47.2857 123.882 47.4838 123.478 47.6033L124.976 49.7493H123.291L121.965 47.772H120.748Z" fill="#1B1B1B" class="path-f"/><path d="M130.847 45.6973C130.502 45.3628 130.039 45.1956 129.458 45.1956C128.876 45.1956 128.412 45.3628 128.065 45.6973C127.718 46.0318 127.545 46.4822 127.545 47.0494C127.545 47.6134 127.717 48.0623 128.063 48.3952C128.407 48.7289 128.873 48.8954 129.458 48.8954C130.039 48.8954 130.502 48.7289 130.847 48.3952C131.192 48.0623 131.365 47.6134 131.365 47.0494C131.365 46.4822 131.192 46.0318 130.847 45.6973ZM126.951 45.0047C127.568 44.5026 128.403 44.252 129.458 44.252C130.511 44.252 131.347 44.5026 131.963 45.0047C132.58 45.5066 132.887 46.1875 132.887 47.0494C132.887 47.9081 132.579 48.5884 131.961 49.0901C131.343 49.5918 130.509 49.8424 129.458 49.8424C128.403 49.8424 127.568 49.5918 126.951 49.0901C126.335 48.5884 126.027 47.9081 126.027 47.0494C126.027 46.1875 126.335 45.5066 126.951 45.0047Z" fill="#1B1B1B" class="path-f"/><path d="M135.837 44.3457V47.7273C135.837 48.079 135.966 48.358 136.228 48.5639C136.489 48.7701 136.856 48.8728 137.33 48.8728C137.799 48.8728 138.165 48.7701 138.425 48.5639C138.687 48.358 138.817 48.079 138.817 47.7273V44.3457H140.306V47.8393C140.306 48.4383 140.036 48.9222 139.495 49.2906C138.955 49.6588 138.233 49.8425 137.33 49.8425C136.423 49.8425 135.699 49.6588 135.158 49.2906C134.618 48.9222 134.348 48.4383 134.348 47.8393V44.3457H135.837Z" fill="#1B1B1B" class="path-f"/><path d="M143.481 45.2406V47.1616H144.56C144.987 47.1616 145.318 47.0781 145.555 46.911C145.792 46.7436 145.91 46.5065 145.91 46.1991C145.91 45.8921 145.792 45.6559 145.558 45.4898C145.323 45.3239 144.992 45.2406 144.564 45.2406H143.481ZM141.992 44.3457H144.959C145.692 44.3457 146.285 44.5154 146.74 44.855C147.195 45.1942 147.423 45.6415 147.423 46.1957C147.423 46.7474 147.188 47.1934 146.718 47.5343C146.248 47.8752 145.637 48.0455 144.885 48.0455H143.481V49.7493H141.992V44.3457Z" fill="#1B1B1B" class="path-f"/><path d="M54.0078 9.32715V32.1194H95.9997V27.561H60.0067V13.8856H95.9997V9.32715H54.0078Z" fill="#1B1B1B" class="path-f"/><path d="M60.0067 0.210938H54.0078V4.76942H60.0067V0.210938Z" fill="#1B1B1B" class="path-f"/><path d="M78.0028 0.210938H72.0039V4.76942H78.0028V0.210938Z" fill="#1B1B1B" class="path-f"/><path d="M90 4.76942H95.9989V0.210938H90V4.76942Z" fill="#1B1B1B" class="path-f"/><path d="M0.0175781 9.32715V23.0025H36.0107V27.561H0.0175781V32.1194H42.0096V18.4441H6.01646V13.8856H42.0096V9.32715H0.0175781Z" fill="#1B1B1B" class="path-f"/><path d="M113.997 13.8856H149.99V9.32715H107.998V32.1192H149.99V18.4441H119.996V23.0025H143.991V27.561H113.997V13.8856Z" fill="#1B1B1B" class="path-f"/></g><defs><clipPath id="clip0_20_12"><rect width="150" height="50" fill="white"/></clipPath></defs></svg></a></div>
+			<div class="header-menu">
+				<div class="header-main">
+					<ul class="header-list">
+						<li><a href="#main">Сопровождение</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#suggestions">Цены</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+					<ul class="header-social">
+						<li><a href="#"><i class="hb-ico in-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico fb-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+					</ul>
+					<a href="mailto:btx24@s-vitagroup.ru" class="header-link">btx24@s-vitagroup.ru</a>
+				</div>
+				<div class="header-mob">
+					<div class="header-btn">
+						<a href="#" class="primary-btn">Получить консультацию</a>
+					</div>
+					<div class="header-phone">
+						<a href="tel:+78002224110" class="header-tel">+7 (800) 222-41-10</a>
+					</div>
+					<a href="mailto:btx24@s-vitagroup.ru" class="header-link">btx24@s-vitagroup.ru</a>
+				</div>
+			</div>
+			<a href="tel:+78002224110" class="header-tel">+7 (800) 222-41-10</a>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main" id="main">
+		<div class="wrapper">
+			<div class="main-info">
+				<h1 class="main-title">поможем увеличить вашу прибыль <span>от 30% до 70%</span></h1>
+				<div class="main-img">
+					<picture>
+					  <source media="(min-width:961px)" srcset="img/img-1-min.png">
+					  <img src="img/img-1-mob-min.png" alt="">
+					</picture>
+				</div>
+				<p>Начните управлять бизнесом на основе цифр уже через неделю</p>
+				<div class="buttons-row">
+					<a href="#contacts" class="primary-btn scroll-link">Получить бесплатную консультацию</a>
+					<a href="#services" class="border-btn scroll-link">Наши Услуги</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start about -->
+	<section class="about">
+		<div class="about-top">
+			<div class="wrapper">
+				<h2 class="section-title">Что такое Битрикс24?</h2>
+				<div class="about-row">
+					<div class="about-col">
+						<span class="about-title">Битрикс24 — это полноценная система для управления бизнесом, которая позволяет увеличить доход вашей компании и тратить меньше времени на операционку</span>
+					</div><!-- col -->
+					<div class="about-col">
+						<span class="about-subtitle">Что мы делаем</span>
+						<p>В течение 15 лет мы помогаем руководителям компаний автоматизировать бизнес процессы, оптимизировать расходы и эффективность сотрудников, за счёт внедрения инструментов Битрикс24</p>
+					</div><!-- col -->
+					<div class="about-col">
+						<span class="about-subtitle">Зачем вам Битрикс24</span>
+						<p>Часто руководители компаний тратят слишком много времени на рутинные задачи, недовольства эффективностью сотрудников или низкой окупаемостью маркетинговых вложений. Данные проблемы отлично решает Битрикс24</p>
+					</div><!-- col -->
+				</div>
+			</div>
+		</div>
+		<div class="about-bottom">
+			<img src="img/img-2-min.jpg" alt="">
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start solution -->
+	<section class="solution">
+		<div class="wrapper">
+			<div class="solution-wrap">
+				<div class="solution-col">
+					<h2 class="section-title">ГОТОВЫЕ РЕШЕНИЯ</h2>
+					<div class="solution-block">
+						<span class="solution-title">CRM система</span>
+						<p>Автоматизируйте продажи, контролируйте коммуникацию с клиентами и не теряйте ни одной заявки с Битрикс24</p>
+					</div>
+					<div class="solution-block">
+						<span class="solution-title">Сайты и интернет магазины</span>
+						<p>Сайты и онлайн-магазины прямо внутри CRM. Контакты клиентов, обратившихся через CRM-форму, бесплатный чат или обратный звонок, сразу попадают в CRM</p>
+					</div>
+				</div>
+				<div class="solution-col">
+					<div class="solution-block solution-mob">
+						<span class="solution-title">CRM система</span>
+						<p>Автоматизируйте продажи, контролируйте коммуникацию с клиентами и не теряйте ни одной заявки с Битрикс24</p>
+					</div>
+					<div class="solution-block">
+						<span class="solution-title">Задачи и проекты</span>
+						<p>Ставьте задачи и контролируйте исполнение. Доступен анализ эффективности каждого сотрудника и отдела</p>
+					</div>
+					<div class="solution-block solution-mob">
+						<span class="solution-title">Сайты и интернет магазины</span>
+						<p>Сайты и онлайн-магазины прямо внутри CRM. Контакты клиентов, обратившихся через CRM-форму, бесплатный чат или обратный звонок, сразу попадают в CRM</p>
+					</div>
+					<div class="solution-block">
+						<span class="solution-title">Автоматизация бизнеса</span>
+						<p>Автоматизация продаж, выставления счетов, согласование отпусков, отправка писем клиенту, напоминание о задачах</p>
+					</div>
+					<div class="solution-block">
+						<span class="solution-title">Единая система коммуникаций</span>
+						<p>Коммуникации с клиентами в одном окне, e-mail рассылки, корпоративный мессенджер, видеозвонки, чаты проектов, облачный диск и база знаний</p>
+					</div>
+				</div>
+			</div>
+			<div class="solution-bottom">
+				<span class="solution-subtitle">В результате внедрения Битрикс24 наши клиенты увеличивают прибыль от 30% до 70% уже в первые месяцы работы</span>
+			</div>
+		</div>
+	</section>
+	<!-- end solution -->
+	<!-- start problems -->
+	<section class="problems">
+		<div class="wrapper">
+			<div class="problems-all">
+				<div class="problems-circle"><img src="img/circle.svg" alt=""></div>
+				<h2 class="section-title">Какие проблемы решает внедрение Битрикс24</h2>
+				<div class="problems-row">
+					<div class="problems-col">
+						<div class="problems-wrap">
+							<div class="problems-ico"><img src="img/problems-ico-1.svg" alt=""></div>
+							<span class="problems-title">Отсутствие времени на развитие компании</span>
+							<p>Автоматизация операционных и рутинных задач освободит время на развитие и масштабирование бизнеса</p>
+						</div>
+					</div><!-- col -->
+					<div class="problems-col">
+						<div class="problems-wrap">
+							<div class="problems-ico"><img src="img/problems-ico-2.svg" alt=""></div>
+							<span class="problems-title">Неэффективное распределение маркетингового бюджета</span>
+							<p>Единая система аналитики покажет, какие каналы привлечения клиентов работают лучше, и как стоит распределять бюджет на маркетинг</p>
+						</div>
+					</div><!-- col -->
+					<div class="problems-col">
+						<div class="problems-wrap">
+							<div class="problems-ico"><img src="img/problems-ico-3.svg" alt=""></div>
+							<span class="problems-title">Непонимание эффективности сотрудников</span>
+							<p>Вы поймете, какую систему KPI и премирования выбрать, и как стоит оптимизировать работу команды</p>
+						</div>
+					</div><!-- col -->
+					<div class="problems-col">
+						<div class="problems-wrap">
+							<div class="problems-ico"><img src="img/problems-ico-4.svg" alt=""></div>
+							<span class="problems-title">Потерянные клиенты</span>
+							<p>Все клиенты в единой базе. Менеджеры помнят про договоренности с каждым, а вы можете отслеживать все этапы взаимодействия клиента с вашей компанией</p>
+						</div>
+					</div><!-- col -->
+					<div class="problems-col">
+						<div class="problems-wrap">
+							<div class="problems-ico"><img src="img/problems-ico-5.svg" alt=""></div>
+							<span class="problems-title">Недополученная прибыль</span>
+							<p>Вы поймете, на каком этапе воронки и сколько теряете денег</p>
+						</div>
+					</div><!-- col -->
+					<div class="problems-col">
+						<div class="problems-wrap">
+							<div class="problems-ico"><img src="img/problems-ico-6.svg" alt=""></div>
+							<span class="problems-title">Беспорядок в документах</span>
+							<p>Ни один документ не будет потерян. В любой момент времени вы можете быстро найти нужные файлы</p>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end problems -->
+	<!-- start services -->
+	<section class="services" id="services">
+		<div class="wrapper">
+			<h2 class="section-title">Наши Услуги</h2>
+			<div class="services-row">
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-1.svg" alt=""></div>
+						<span class="services-title">АУДИТ ТЕКУЩИХ БИЗНЕС-ПРОЦЕССОВ</span>
+						<p>Проводим анализ бизнес-процессов вашей компании, предлагаем решения по оптимизации.</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-2.svg" alt=""></div>
+						<span class="services-title">НАСТРОЙКА И ВНЕДРЕНИЕ</span>
+						<p>Разрабатываем ТЗ, настраиваем систему под цели и задачи вашего бизнеса. Подключаем сайт, почту, мессенджеры.</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-3.svg" alt=""></div>
+						<span class="services-title">ДОРАБОТКА КОРОБОЧНОЙ ВЕРСИИ</span>
+						<p>Разрабатываем уникальные модули для коробочной версии.</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-4.svg" alt=""></div>
+						<span class="services-title">ИНТЕГРАЦИИ С сЕРВИСАМИ</span>
+						<p>Настраиваем интеграции вашего продукта с 1С, МойСклад, мессенджерами, аналитикой и другими программами</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-5.svg" alt=""></div>
+						<span class="services-title">ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</span>
+						<p>Поддерживем бесперебойную работу вашего продукта, решаем возникающие проблемы</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-6.svg" alt=""></div>
+						<span class="services-title">ОБУЧЕНИЕ СОТРУДНИКОВ</span>
+						<p>Обучаем сотрудников и руководителей работе в системе, разрабатываем регламенты и инструкции для быстрого онбординга новых сотрудников</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-7.svg" alt=""></div>
+						<span class="services-title">Автоматизация бизнес‑процессов</span>
+						<p>Оцифровываем и автоматизируем бизнес-процессы в компании. Освобождаем время на развитие бизнеса</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+				<div class="services-col">
+					<div class="services-wrap">
+						<div class="services-ico"><img src="img/services-ico-8.svg" alt=""></div>
+						<span class="services-title">IT-АУТСОРСИНГ</span>
+						<p>Обеспечиваем бесперебойную работу компьютеров, серверов, сети, систем безопасности и телефонии</p>
+						<a href="#contacts" class="primary-btn scroll-link">Оставить заявку</a>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end services -->
+	<!-- start suggestions -->
+	<section class="suggestions" id="suggestions">
+		<div class="wrapper">
+			<h2 class="section-title">Пакетные предложения на внедрение Битрикс24</h2>
+			<div class="suggestions-all">
+				<div class="suggestions-table">
+					<div class="suggestions-row suggestions-top">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Тарифы</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Базовый</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Стандартный</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Расширенный</div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Количество сотрудников</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">до 5</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">до 10</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">от 10</div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Сроки внедрения</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">5 дней</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">от 7 дней</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">от 15 дней</div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Аудит бизнес-процесса продаж</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Добавление сотрудников на портал</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Создание структуры компании</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Настройка воронки продаж</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Разработка полей в сущностях (сделка, контакт, компания)</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Настройка автозадач</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Вводное обучение по функционалу Битрикс24 (1час)</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Подключение сайта</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Подключение и настройка IP-телефонии</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Подключение WhatsApp к CRM</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Настройка взаимодействий между воронками (мультиворонки)</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">1 месяц сопровождения после внедрения</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Настройка бизнес-процессов</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Разработка ТЗ на внедрение</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap">Документооборот (счета, договора, акты)</div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="minus-ico"></i></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><i class="check-ico"></i></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row suggestions-bottom">
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><span>Стоимость</span></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><span>от 29 900 руб.</span></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><span>от 59 900 руб.</span></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><span>от 89 900 руб.</span></div>
+						</div>
+					</div><!-- row -->
+					<div class="suggestions-row suggestions-last">
+						<div class="suggestions-col"></div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><a href="#" class="primary-btn">Выбрать</a></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><a href="#" class="primary-btn">Выбрать</a></div>
+						</div>
+						<div class="suggestions-col">
+							<div class="suggestions-wrap"><a href="#" class="primary-btn">Выбрать</a></div>
+						</div>
+					</div><!-- row -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end suggestions -->
+	<!-- start working -->
+	<section class="working">
+		<div class="wrapper">
+			<div class="working-top">
+				<div class="working-block">
+					<div class="working-block-wrap">
+						<div class="working-block-ico"><img src="img/working-ico-1.svg" alt=""></div>
+						<span class="working-block-title">CОПРОВОЖДЕНИЕ БИТРИКС24</span>
+						<p>После внедрения портала, мы продолжаем поддерживать его работоспособность и развивать в соответствии с изменениями в вашей компании.</p>
+						<a href="#" class="primary-btn">Оставить заявку</a>
+					</div>
+				</div>
+				<div class="working-img"><a href="#"><img src="img/img-3-min.png" alt=""></a></div>
+			</div>
+			<div class="working-items">
+				<div class="working-item">
+					<div class="working-item-wrap">
+						<div>
+							<span class="working-item-tit">Дорабатываем и видоизменяем систему под меняющиеся процессы в вашей компании</span>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="working-item">
+					<div class="working-item-wrap">
+						<div>
+							<span class="working-item-tit">Внедряем в ваш портал обновления Битрикс24, ускоряя работу бизнеса</span>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="working-item">
+					<div class="working-item-wrap">
+						<div>
+							<span class="working-item-tit">Оперативно консультируем по техническим вопросам</span>
+						</div>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="working-bottom">
+				<div class="working-block">
+					<div class="working-block-wrap">
+						<div class="working-block-ico"><img src="img/working-ico-2.svg" alt=""></div>
+						<span class="working-block-title">КАК МЫ РАБОТАЕМ</span>
+						<p>Приходите на бесплатную онлайн-встречу, где мы покажем возможности Битрикс24 на примере нашего портала. Вы сможете оценить наши компетенции и принять решение о дальнейшем сотрудничестве.</p>
+						<a href="#" class="primary-btn">Записаться на встречу</a>
+					</div>
+				</div>
+				<div class="working-faq">
+					<div class="accordeon">
+						<div class="accordeon-top">ПРЕДПРОЕКТНОЕ ИССЛЕДОВАНИЕ</div>
+						<div class="accordeon-block">
+							<p>Погружаемся в специфику вашего бизнеса, выстраиваем логику бизнес-процессов. Формулируем цели и задачи, разрабатываем ТЗ на внедрение</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="accordeon">
+						<div class="accordeon-top">НАСТРОЙКА И ИНТЕГРАЦИЯ</div>
+						<div class="accordeon-block">
+							<p>Погружаемся в специфику вашего бизнеса, выстраиваем логику бизнес-процессов. Формулируем цели и задачи, разрабатываем ТЗ на внедрение</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="accordeon">
+						<div class="accordeon-top">ОБУЧЕНИЕ СОТРУДНИКОВ И РУКОВОДИТЕЛЕЙ</div>
+						<div class="accordeon-block">
+							<p>Погружаемся в специфику вашего бизнеса, выстраиваем логику бизнес-процессов. Формулируем цели и задачи, разрабатываем ТЗ на внедрение</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="accordeon">
+						<div class="accordeon-top">ДОРАБОТКА ПОРТАЛА</div>
+						<div class="accordeon-block">
+							<p>Погружаемся в специфику вашего бизнеса, выстраиваем логику бизнес-процессов. Формулируем цели и задачи, разрабатываем ТЗ на внедрение</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="accordeon">
+						<div class="accordeon-top">ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</div>
+						<div class="accordeon-block">
+							<p>Погружаемся в специфику вашего бизнеса, выстраиваем логику бизнес-процессов. Формулируем цели и задачи, разрабатываем ТЗ на внедрение</p>
+						</div>
+					</div><!-- accordeon -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end working -->
+	<!-- start advantage -->
+	<section class="advantage">
+		<div class="wrapper">
+			<div class="advantage-top">
+				<h2 class="section-title">Почему обращаются к нам?</h2>
+				<p>S-Vita Consulting Group более 14 лет оказывает профессиональную поддержку для развития и устойчивого функционирования бизнеса. Сегодня в нашей компании работает более 300 высококвалифицированных сотрудников, компетентность которых является залогом успешного решения сложных задач. Накопленный опыт, индивидуальный подход к клиентам, знание различных отраслей деятельности помогают нам оказывать услуги на высочайшем уровне</p>
+			</div>
+			<div class="advantage-row">
+				<div class="advantage-col">
+					<div class="advantage-wrap">
+						<span class="advantage-title">Погружаемся в ВАШ БИЗНЕС</span>
+						<p>Прежде, чем начать работу, мы детально изучаем специфику вашего бизнеса, погружаясь во все процессы. Обсуждаем ваше видение автоматизации бизнеса и только потом приступаем к работе</p>
+					</div>
+				</div><!-- col -->
+				<div class="advantage-col">
+					<div class="advantage-wrap">
+						<span class="advantage-title">Ориентируемся на результат </span>
+						<p>Наш успех - оптимизация ваших ключевых бизнес-показателей. По результатам анализа мы сразу говорим, какой результат в деньгах может принести вам внедрение системы</p>
+					</div>
+				</div><!-- col -->
+				<div class="advantage-col">
+					<div class="advantage-wrap">
+						<span class="advantage-title">Сдаем проект в срок</span>
+						<p>Над каждым проектом работает отдельная команда. Это позволяет нам всегда соблюдать сроки</p>
+					</div>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end advantage -->
+	<!-- start team -->
+	<section class="team">
+		<div class="wrapper">
+			<h2 class="section-title">Наша Команда</h2>
+			<div class="team-row">
+				<div class="team-col">
+					<div class="team-wrap">
+						<div class="team-img"><img src="img/team-1-min.png" alt=""></div>
+						<div class="team-info">
+							<span class="team-name">Эдуард Прусак</span>
+							<span class="team-status">Руководитель отдела разработки и внедрения</span>
+							<ul class="team-social">
+								<li><a href="#"><i class="hb-ico in-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico fb-ico"></i></a></li>
+							</ul>
+							<p>Современные технологии достигли такого уровня, что сплочённость команды профессионалов обеспечивает широкому кругу (специалистов) участие в формировании </p>
+							<div class="team-bottom">
+								<span class="team-sub">Достижение сотрудника</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="team-col">
+					<div class="team-wrap">
+						<div class="team-img"><img src="img/team-2-min.png" alt=""></div>
+						<div class="team-info">
+							<span class="team-name">Надежда Прокопенко</span>
+							<span class="team-status">Главный аналитик</span>
+							<ul class="team-social">
+								<li><a href="#"><i class="hb-ico in-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico fb-ico"></i></a></li>
+							</ul>
+							<p>Современные технологии достигли такого уровня, что сплочённость команды профессионалов обеспечивает широкому кругу (специалистов) участие в формировании </p>
+							<div class="team-bottom">
+								<span class="team-sub">Достижение сотрудника</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="team-col">
+					<div class="team-wrap">
+						<div class="team-img"><img src="img/team-3-min.png" alt=""></div>
+						<div class="team-info">
+							<span class="team-name">Павел Хлестов</span>
+							<span class="team-status">Главный разработчик</span>
+							<ul class="team-social">
+								<li><a href="#"><i class="hb-ico in-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico fb-ico"></i></a></li>
+							</ul>
+							<p>Современные технологии достигли такого уровня, что сплочённость команды профессионалов обеспечивает широкому кругу (специалистов) участие в формировании </p>
+							<div class="team-bottom">
+								<span class="team-sub">Достижение сотрудника</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="team-col">
+					<div class="team-wrap">
+						<div class="team-img"><img src="img/team-4-min.png" alt=""></div>
+						<div class="team-info">
+							<span class="team-name">Савелий Станкевич</span>
+							<span class="team-status">Инженер технической поддержки</span>
+							<ul class="team-social">
+								<li><a href="#"><i class="hb-ico in-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico fb-ico"></i></a></li>
+							</ul>
+							<p>Современные технологии достигли такого уровня, что сплочённость команды профессионалов обеспечивает широкому кругу (специалистов) участие в формировании </p>
+							<div class="team-bottom">
+								<span class="team-sub">Достижение сотрудника</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+				<div class="team-col">
+					<div class="team-wrap">
+						<div class="team-img"><img src="img/team-5-min.png" alt=""></div>
+						<div class="team-info">
+							<span class="team-name">Ярослав Климович</span>
+							<span class="team-status">Руководитель 1-ой линии поддержки</span>
+							<ul class="team-social">
+								<li><a href="#"><i class="hb-ico in-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+								<li><a href="#"><i class="hb-ico fb-ico"></i></a></li>
+							</ul>
+							<p>Современные технологии достигли такого уровня, что сплочённость команды профессионалов обеспечивает широкому кругу (специалистов) участие в формировании </p>
+							<div class="team-bottom">
+								<span class="team-sub">Достижение сотрудника</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="main-slider swiper-container">
+				<div class="main-slider__wrapper swiper-wrapper">
+					<div class="main-slide swiper-slide">
+
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end team -->
+	<!-- start action -->
+	<section class="action">
+		<div class="wrapper">
+			<form action="">
+				<div class="action-all">
+					<div class="action-sidebar">
+						<span class="action-title">Ответьте на 3 простых вопроса, и мы предложим план работы для решения вашей задачи</span>
+						<ul class="action-list">
+							<li>Ориентированы на индивидуальный подход для каждой сферы</li>
+							<li>Гибкий переход на единую систему ведения бизнеса</li>
+							<li>Работаем с любым количеством пользоваетелей</li>
+						</ul>
+						<div class="action-logo"><img src="img/logo-2.svg" alt=""></div>
+						<ul class="action-stars">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<p>95% бизнеса уже перешли на автоматизацию</p>
+					</div><!-- sidebar -->
+					<div class="action-content">
+						<div class="action-wrap">
+							<ul class="action-tabs">
+								<li><a data-tab="#tab-1" href="#tab-1" class="active">Сфера деятельности вашей компании</a></li>
+								<li><a data-tab="#tab-2" href="#tab-2">Где ведется учет клиентской базы?</a></li>
+								<li><a data-tab="#tab-3" href="#tab-3">Количество сотрудников</a></li>
+								<li><a data-tab="#tab-4" href="#tab-4">Отправить заявку</a></li>
+							</ul>
+							<div class="action-tab active" id="tab-1">
+								<div class="action-items">
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">Розничная торговля</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">Строительство</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">Логистика</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">Услуги</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">Оптовая торговля</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">Другое</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+								</div>
+								<div class="action-bottom">
+									<div class="buttons-row">
+										<a href="#tab-2" class="primary-btn next-btn">Далее</a>
+									</div>
+								</div>
+							</div><!-- tab -->
+							<div class="action-tab" id="tab-2">
+								<div class="action-items">
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">EXEL</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">GOOGLE DOCS</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">Блокнот</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">дРУГАЯ crm</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">НИГДЕ</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+								</div>
+								<div class="action-bottom">
+									<div class="buttons-row">
+										<a href="#tab-1" class="primary-btn prev-btn">нАЗАД</a>
+										<a href="#tab-3" class="primary-btn next-btn">Далее</a>
+									</div>
+								</div>
+							</div><!-- tab -->
+							<div class="action-tab" id="tab-3">
+								<div class="action-items">
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">ДО 5</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">ОТ 50 ДО 100</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">ОТ 5 ДО 10</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">ОТ 100</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+									<div class="action-item">
+										<div class="action-item-wrap">
+											<span class="action-tit">ОТ 10 ДО 50</span>
+											<div class="toggle"><i></i></div>
+										</div>
+									</div><!-- item -->
+								</div>
+								<div class="action-bottom">
+									<div class="buttons-row">
+										<a href="#tab-2" class="primary-btn prev-btn">нАЗАД</a>
+										<a href="#tab-4" class="primary-btn next-btn">ПОСЛЕДНИЙ ШАГ</a>
+									</div>
+								</div>
+							</div><!-- tab -->
+							<div class="action-tab" id="tab-4">
+								<div class="action-form">
+									<div class="inputs-row">
+										<div class="inputs-col">
+											<div class="input-block">
+												<input type="text" name="text" placeholder="Имя:">
+											</div>
+											<div class="input-block">
+												<input type="text" name="text" placeholder="Ваш телефон:">
+											</div>
+										</div><!-- col -->
+										<div class="inputs-col">
+											<div class="input-block">
+												<input type="text" name="text" placeholder="Компания:">
+											</div>
+											<div class="input-block">
+												<input type="email" name="email" placeholder="Ваш E-mail:">
+											</div>
+										</div><!-- col -->
+									</div>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>С политикой конфиденциальности ознакомлен(а)</p>
+									</div>
+								</div>
+								<div class="action-bottom">
+									<div class="buttons-row">
+										<a href="#" class="primary-btn">Отправить</a>
+									</div>
+								</div>
+							</div><!-- tab -->
+						</div>
+					</div><!-- content -->
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start contacts -->
+	<section class="contacts" id="contacts">
+		<div class="wrapper">
+			<div class="contacts-top">
+				<h2 class="section-title">Свяжитесь с нами</h2>
+				<p>Остались дополнительные вопросы? Тогда заполните форму и расскажите нам о своих проблемах.</p>
+			</div>
+			<div class="contacts-wrap">
+				<div class="contacts-img"></div>
+				<form action="">
+					<span class="contacts-title">Остались вопросы?</span>
+					<div class="inputs-row">
+						<div class="inputs-col">
+							<div class="input-block">
+								<label for="">Имя:</label>
+								<input type="text" name="text" placeholder="Имя">
+							</div>
+							<div class="input-block">
+								<label for="">Номер телефона:</label>
+								<input type="text" name="text" placeholder="Номер телефона">
+							</div>
+						</div><!-- col -->
+						<div class="inputs-col">
+							<div class="input-block">
+								<label for="">Компания:</label>
+								<input type="text" name="text" placeholder="Компания">
+							</div>
+							<div class="input-block">
+								<label for="">E-mail:</label>
+								<input type="email" name="email" placeholder="E-mail">
+							</div>
+						</div><!-- col -->
+					</div>
+					<div class="input-block">
+						<label for="">Ваша проблема:</label>
+						<textarea name="text" placeholder="Ваша проблема"></textarea>
+					</div>
+					<div class="contacts-btn">
+						<button class="primary-btn">Отправить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end contacts -->
+	<!-- start findUs -->
+	<section class="findUs">
+		<div class="wrapper">
+			<h2 class="section-title">Как нас найти?</h2>
+			<div class="findUs-row">
+				<div class="findUs-col">
+					<span class="findUs-title">Адрес</span>
+					<p>Санкт-Петербург, Петровская коса, <br>д. 1, корп. 1, лит. Р <br>(БЦ «Петровский»)</p>
+				</div><!-- col -->
+				<div class="findUs-col">
+					<span class="findUs-title">Почта</span>
+					<p><a href="mailto:btx24@s-vitagroup.ru">btx24@s-vitagroup.ru</a></p>
+				</div><!-- col -->
+				<div class="findUs-col">
+					<span class="findUs-title">Номер</span>
+					<p><a href="tel:+78002224110">+7 (800) 222-41-10</a></p>
+				</div><!-- col -->
+			</div>
+			<div class="findUs-map">
+				<div id="map" class="map"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end findUs -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-main">
+					<div class="footer-logo"><a href="#"><img src="img/logo-3.svg" alt=""></a></div>
+					<p>Санкт-Петербург, Петровская коса, д. 1, корп. 1, лит. Р (БЦ «Петровский»)</p>
+				</div>
+				<div class="footer-middle">
+					<ul class="footer-list">
+						<li><a href="#main">Сопровождение</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#suggestions">Цены</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+					<ul class="footer-social">
+						<li><a href="#"><i class="hb-ico in-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico fb-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer-actions">
+					<a href="#" class="primary-btn">Оставить заявку</a>
+					<div class="footer-mob">
+						<p>Санкт-Петербург, Петровская коса, д. 1, корп. 1, лит. Р (БЦ «Петровский»)</p>
+					</div>
+					<ul>
+						<li><a href="tel:+78002224110">+7 (800) 222-41-10</a></li>
+						<li><a href="mailto:btx24@s-vitagroup.ru">btx24@s-vitagroup.ru</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Группа полного цикла © 2022 Все права защищены</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+	  ymaps.ready(function () {  
+	    var map = new ymaps.Map("map", {
+	      center: [55.76, 37.64], 
+	      zoom: 10
+	    });
+
+	    if (map) {
+	      ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+	        var placemark = new Placemark([55.37, 35.45]);
+	      });
+	    }
+	  });
+	</script>
+</body>
+</html>
