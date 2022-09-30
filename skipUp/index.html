@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<div class="header-buttons">
+				<a href="#" class="border-btn border-btn-ico"><i class="hb-ico eye-ico"></i><span>Посмотреть</span></a>
+				<a href="#" class="primary-btn primary-btn-ico"><i class="hb-ico fileArr-ico"></i><span>Скачать и отправить счет</span></a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="wrapper">
+			<h1 class="main-title">Выставить счет онлайн (бесплатно)</h1>
+			<div class="main-all">
+				<div class="main-content">
+					<div class="main-block">
+						<div class="main-block-top">
+							<span class="main-block-title">Основная информация</span>
+							<div class="download-btn download-logo"><i class="hb-ico img-ico"></i><span>Загрузить логотип</span></div>
+						</div>
+						<div class="inputs-row">
+							<div class="input-block">
+								<label>Номер счета</label>
+								<input type="text" name="text" placeholder="Введите номер счета">
+							</div>
+							<div class="input-block">
+								<label>Валюта счета</label>
+								<select name="text">
+									<option value="">РУБ (Российский рубль)</option>
+									<option value="">РУБ (Российский рубль)</option>
+								</select>
+							</div>
+							<div class="input-block">
+								<label>Дата выставления счета</label>
+								<div class="input-datepicker">
+									<input type="text" name="text" placeholder="Выберите дату" class="datepicker" autocomplete="off">
+								</div>
+							</div>
+							<div class="input-block">
+								<label>Оплатить до (при необходимости)</label>
+								<div class="input-datepicker">
+									<input type="text" name="text" placeholder="Выберите дату" class="datepicker" autocomplete="off">
+								</div>
+							</div>
+							<div class="input-block">
+								<label>Руководитель</label>
+								<input type="text" name="text" placeholder="Введите ФИО">
+							</div>
+							<div class="input-block">
+								<label>Главный бухгалтер</label>
+								<input type="text" name="text" placeholder="Введите ФИО">
+							</div>
+						</div>
+						<div class="buttons-row">
+							<div class="download-btn"><i class="hb-ico img-ico"></i><span>Загрузить подпись</span></div>
+							<div class="download-btn"><i class="hb-ico img-ico"></i><span>Загрузить печать</span></div>
+						</div>
+					</div><!-- block -->
+					<div class="main-block">
+						<div class="main-block-top">
+							<span class="main-block-title">Ваша компания:</span>
+							<span class="main-ms green-bg">Введите ИНН, остальные реквизиты заполнятся автоматически</span>
+						</div>
+						<div class="inputs-row">
+							<div class="input-block">
+								<label>Получатель:</label>
+								<input type="text" name="text" placeholder="Введите название компании">
+							</div>
+							<div class="input-block">
+								<label>ИНН:</label>
+								<input type="text" name="text" placeholder="Введите ИНН">
+							</div>
+							<div class="input-block">
+								<label>Адрес:</label>
+								<input type="text" name="text" placeholder="Введите адрес">
+							</div>
+							<div class="input-block">
+								<label>КПП:</label>
+								<input type="text" name="text" placeholder="Введите КПП">
+							</div>
+							<div class="input-block">
+								<label>Телефон:</label>
+								<input type="text" name="text" placeholder="Введите телефон">
+							</div>
+							<div class="input-block">
+								<div class="input-top">
+									<label>Почта:</label>
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Отправить счет на почту</p>
+									</div>
+								</div>
+								<input type="text" name="text" placeholder="Введите почту">
+							</div>
+						</div>
+						<span class="main-block-title">Банковские реквизиты:</span>
+						<div class="inputs-row">
+							<div class="input-block">
+								<label>Расчетный счет:</label>
+								<input type="text" name="text" placeholder="Введите расчетный счет">
+							</div>
+							<div class="input-block">
+								<label>Наименование банка:</label>
+								<input type="text" name="text" placeholder="Введите название банка">
+							</div>
+							<div class="input-block">
+								<label>Корреспондентский счет:</label>
+								<input type="text" name="text" placeholder="Введите корреспондентский счет">
+							</div>
+							<div class="input-block">
+								<label>БИК банка:</label>
+								<input type="text" name="text" placeholder="Введите БИК банка">
+							</div>
+						</div>
+					</div><!-- block -->
+					<div class="main-block">
+						<div class="main-block-top">
+							<span class="main-block-title">Клиент (Компания):</span>
+							<span class="main-ms yellow-bg">Реквизиты заполнены автоматически, проверьте их правильность</span>
+						</div>
+						<div class="inputs-row">
+							<div class="input-block">
+								<label>Плательщик:</label>
+								<input type="text" name="text" placeholder="Введите название компании">
+							</div>
+							<div class="input-block">
+								<label>ИНН:</label>
+								<input type="text" name="text" placeholder="Введите ИНН">
+							</div>
+							<div class="input-block">
+								<label>Адрес:</label>
+								<input type="text" name="text" placeholder="Введите адрес">
+							</div>
+							<div class="input-block">
+								<label>КПП:</label>
+								<input type="text" name="text" placeholder="Введите КПП">
+							</div>
+							<div class="input-block">
+								<label>Телефон:</label>
+								<input type="text" name="text" placeholder="Введите телефон">
+							</div>
+							<div class="input-block">
+								<div class="input-top">
+									<label>Почта:</label>
+									<div class="checkbox">
+										<input type="checkbox" checked>
+										<i class="checkbox-ico"></i>
+										<p>Отправить счет на почту</p>
+									</div>
+								</div>
+								<input type="text" name="text" placeholder="Введите почту">
+							</div>
+						</div>
+					</div><!-- block -->
+					<div class="main-block">
+						<div class="main-block-top">
+							<span class="main-block-title">Товары и услуги</span>
+						</div>
+						<div class="products">
+							<div class="products-row products-top">
+								<div class="products-col"><span><i class="hb-ico bar-ico"></i>Наименование</span></div>
+								<div class="products-col"><span>кол-во</span></div>
+								<div class="products-col"><span>Ед.</span></div>
+								<div class="products-col"><span>Цена</span></div>
+								<div class="products-col"><span>Сумма</span></div>
+							</div>
+							<div class="products-row">
+								<div class="products-col"><span>Дизайн концепция</span></div>
+								<div class="products-col"><span>1</span></div>
+								<div class="products-col"><span>шт</span></div>
+								<div class="products-col"><span>40 000₽</span></div>
+								<div class="products-col"><span>40 000₽</span></div>
+							</div>
+							<div class="products-row">
+								<div class="products-col"><span>Дизайн макеты</span></div>
+								<div class="products-col"><span>35</span></div>
+								<div class="products-col"><span>шт</span></div>
+								<div class="products-col"><span>10 000₽</span></div>
+								<div class="products-col"><span>350 000₽</span></div>
+							</div>
+							<div class="products-row">
+								<div class="products-col">
+									<div class="input-block">
+										<input type="text" name="text" placeholder="Описание">
+									</div>
+								</div>
+								<div class="products-col">
+									<div class="input-block">
+										<input type="text" name="text" placeholder="0">
+									</div>
+								</div>
+								<div class="products-col">
+									<div class="input-block">
+										<input type="text" name="text" placeholder="шт">
+									</div>
+								</div>
+								<div class="products-col">
+									<div class="input-block">
+										<input type="text" name="text" placeholder="0">
+									</div>
+								</div>
+								<div class="products-col"><span>0.00₽</span></div>
+							</div>
+							<div class="products-bottom">
+								<div class="products-row">
+									<div class="products-main">
+										<div class="input-block">
+											<a href="#" class="products-link">Добавить товар или услугу</a>
+											<textarea name="text" placeholder="Напишите комментарий..."></textarea>
+										</div>
+									</div>
+									<div class="products-col">
+										<div class="products-text">
+											<span>Итого</span>
+											<span>390 000₽</span>
+										</div>
+										<div class="products-text">
+											<span>Скидка</span>
+											<div class="input-block">
+												<input type="text" name="text" value="0%">
+											</div>
+										</div>
+										<div class="products-text">
+											<span>Ставка НДС</span>
+											<div class="input-block">
+												<select name="text">
+													<option value="">Без НДС</option>
+													<option value="">Без НДС</option>
+												</select>
+											</div>
+										</div>
+										<div class="products-total">
+											<span>Всего к оплате</span>
+											<span>390 000₽</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- block -->
+					<div class="main-block">
+						<div class="main-block-t">
+							<div class="main-block-head">
+								<span class="main-block-title">Формируйте, сохраняйте и выставляйте счета онлайн беcплатно</span>
+							</div>
+							<p>ИП и ООО могут выставить онлайн-счет на оплату товаров или услуг без ограничений. Процедура выставления счета очень проста, ниже читайте пошаговую инструкцию по формированию и отправке счетов онлайн с нашего сайта. Возможность бесплатного создания и отправки счетов через интернет представлена СкипАп — онлайн-сервисом для ведения своего бизнеса в онлайн формате. </p>
+						</div>
+						<div class="main-block-t">
+							<div class="main-block-head">
+								<span class="main-block-title">Правила использования сервиса выставления счетов</span>
+							</div>
+							<p class="text-small">Шаг 1: Чтобы сформировать счет на оплату онлайн, нужно заполнить реквизиты покупателя и продавца. Это возможно сделать автоматически по ИНН компаний или вручную. Так же укажите номер счета, выберите сроки и загрузите логотип, подпись и печать, при необходимости. <br>Шаг 2: Если в вашем счете несколько товаров или услуг, вы можете добавить дополнительные строчки нажав на соответствующую кнопку. <br>Шаг 3: После того, как данные занесены, вы можете скачать счет на оплату в формате PDF, а так же отправить счет на указанные E-mail адреса по почте.</p>
+						</div>
+						<div class="main-block-row">
+							<div class="main-block-col">
+								<div class="main-block-wrap">
+									<div class="main-block-ico"><img src="img/user.svg" alt=""></div>
+									<span class="main-block-sub">Удобен в пользовании</span>
+									<p>Печатайте и отправляйте документы из сервиса. Экономьте время</p>
+								</div>
+							</div><!-- col -->
+							<div class="main-block-col">
+								<div class="main-block-wrap">
+									<div class="main-block-ico"><img src="img/user.svg" alt=""></div>
+									<span class="main-block-sub">Надежен</span>
+									<p>Ваши счета не попадут в чужие руки: после отправки они автоматически удаляются</p>
+								</div>
+							</div><!-- col -->
+							<div class="main-block-col">
+								<div class="main-block-wrap">
+									<div class="main-block-ico"><img src="img/user.svg" alt=""></div>
+									<span class="main-block-sub">Прост и понятен</span>
+									<p>Выставить счет онлайн в сервисе может даже новичок, знания в бухучете не нужны</p>
+								</div>
+							</div><!-- col -->
+							<div class="main-block-col">
+								<div class="main-block-wrap">
+									<div class="main-block-ico"><img src="img/user.svg" alt=""></div>
+									<span class="main-block-sub">Быстр и функционален</span>
+									<p>Заполним реквизиты автоматически по ИНН, мгновенно оценим контрагентов</p>
+								</div>
+							</div><!-- col -->
+							<div class="main-block-col">
+								<div class="main-block-wrap">
+									<div class="main-block-ico"><img src="img/user.svg" alt=""></div>
+									<span class="main-block-sub">Экономит ваши деньги</span>
+									<p>Не нужно тратить бумагу, устанавливать дополнительные платные программы</p>
+								</div>
+							</div><!-- col -->
+							<div class="main-block-col">
+								<div class="main-block-wrap">
+									<div class="main-block-ico"><img src="img/user.svg" alt=""></div>
+									<span class="main-block-sub">Доступен</span>
+									<p>Пользуйтесь сервисом в любой точке мира, где есть интернет</p>
+								</div>
+							</div><!-- col -->
+						</div>
+					</div><!-- block -->
+				</div>
+				<div class="main-sidebar">
+					<div class="main-sidebar-wrap">
+						<div class="main-sidebar-block">
+							<span class="main-sidebar-title">Главные фишки сервиса</span>
+							<ul class="main-tags">
+								<li><a href="#" class="tag-green">Автозаполнение данных по ИНН </a></li>
+								<li><a href="#" class="tag-orange">Все бесплатно</a></li>
+								<li><a href="#" class="tag-yellow">Отправка на почту</a></li>
+								<li><a href="#" class="tag-violet">Скачать счет в PDF</a></li>
+								<li><a href="#" class="tag-blue">Загрузка своего логотипа, подписи и печати</a></li>
+							</ul>
+						</div><!-- block -->
+						<div class="main-sidebar-item">
+							<span class="main-sidebar-title">Для формирования счета на оплату заполните форму</span>
+							<p>Онлайн-сервис “Выставить счет онлайн” предоставляется бесплатно и не требует регистрации. Все введенные данные сохраняются в формах только до обновления страницы.</p>
+							<p class="small-text">Мы используем cookies для корректной работы сайта, персонализации пользователей и других целей, предусмотренных Политикой обработки персональных данных.</p>
+						</div><!-- block -->
+						<div class="main-sidebar-block">
+							<span class="main-sidebar-title">Скачайте бланк счета на оплату в word бесплатно</span>
+							<p>Если вам по какой-то причине требуется оформление счета на оплату офлайн, скачайте готовый бланк счета на оплату в формате “word” и заполните его у себя на компьютере.</p>
+							<div class="btn">
+								<a href="#" class="border-btn border-btn-ico"><i class="hb-ico fileArrD-ico"></i><span>Скачать бланк счета (doc)</span></a>
+							</div>
+						</div><!-- block -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<p>© 2020-2022 «СкипАп»</p>
+			<div class="footer-link"><a href="#">Построен на ёнгер</a></div>
+			<div class="footer-link"><a href="#">Политика обработки персональных данных</a></div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header header-2 header-3">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+			<div class="header-row">
+				<h1 class="header-tit">Счета</h1>
+				<div class="header-actions">
+					<a href="#" class="header-search"></a>
+					<a href="#" class="header-bell active"></a>
+					<div class="header-user">
+						<span class="header-user-ava" style="background-image: url(img/ava.png);"></span>
+						<span class="header-user-name">Владимир</span>
+					</div>
+				</div>
+			</div>
+			<div class="header-bar"><span></span></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main main-2 invoice">
+		<div class="wrapper">
+			<div class="main-all">
+				<div class="main-menu">
+					<div class="main-menu-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+					<ul class="main-menu-main">
+						<li><a href="#">
+							<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8248 19.4583H5.17484C2.8915 19.4583 1.0415 17.6 1.0415 15.3167V9.14166C1.0415 8.00833 1.7415 6.58333 2.6415 5.88333L7.13317 2.38333C8.48317 1.33333 10.6415 1.28333 12.0415 2.26667L17.1915 5.875C18.1832 6.56666 18.9582 8.05 18.9582 9.25833V15.325C18.9582 17.6 17.1082 19.4583 14.8248 19.4583ZM7.89984 3.36667L3.40817 6.86666C2.8165 7.33333 2.2915 8.39166 2.2915 9.14166V15.3167C2.2915 16.9083 3.58317 18.2083 5.17484 18.2083H14.8248C16.4165 18.2083 17.7082 16.9167 17.7082 15.325V9.25833C17.7082 8.45833 17.1332 7.35 16.4748 6.9L11.3248 3.29167C10.3748 2.625 8.80817 2.65833 7.89984 3.36667Z" fill="#718096"/><path d="M10 16.125C9.65833 16.125 9.375 15.8417 9.375 15.5V13C9.375 12.6583 9.65833 12.375 10 12.375C10.3417 12.375 10.625 12.6583 10.625 13V15.5C10.625 15.8417 10.3417 16.125 10 16.125Z" fill="#718096"/></svg>
+							<span>Dashboard</span>
+						</a></li>
+						<li><a href="#" class="active">
+							<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.25016 13.3333L13.7502 7.83333L8.25016 13.3333ZM8.7085 8.29167H8.71766H8.7085ZM13.2918 12.875H13.301H13.2918ZM17.4168 19.75V5.08333C17.4168 4.5971 17.2237 4.13079 16.8799 3.78697C16.536 3.44315 16.0697 3.25 15.5835 3.25H6.41683C5.9306 3.25 5.46428 3.44315 5.12047 3.78697C4.77665 4.13079 4.5835 4.5971 4.5835 5.08333V19.75L7.79183 17.9167L11.0002 19.75L14.2085 17.9167L17.4168 19.75ZM9.16683 8.29167C9.16683 8.41322 9.11854 8.5298 9.03259 8.61576C8.94663 8.70171 8.83005 8.75 8.7085 8.75C8.58694 8.75 8.47036 8.70171 8.38441 8.61576C8.29845 8.5298 8.25016 8.41322 8.25016 8.29167C8.25016 8.17011 8.29845 8.05353 8.38441 7.96758C8.47036 7.88162 8.58694 7.83333 8.7085 7.83333C8.83005 7.83333 8.94663 7.88162 9.03259 7.96758C9.11854 8.05353 9.16683 8.17011 9.16683 8.29167ZM13.7502 12.875C13.7502 12.9966 13.7019 13.1131 13.6159 13.1991C13.53 13.285 13.4134 13.3333 13.2918 13.3333C13.1703 13.3333 13.0537 13.285 12.9677 13.1991C12.8818 13.1131 12.8335 12.9966 12.8335 12.875C12.8335 12.7534 12.8818 12.6369 12.9677 12.5509C13.0537 12.465 13.1703 12.4167 13.2918 12.4167C13.4134 12.4167 13.53 12.465 13.6159 12.5509C13.7019 12.6369 13.7502 12.7534 13.7502 12.875Z" stroke="#718096" class="pt-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span>Invoices</span>
+						</a></li>
+						<li><a href="#">
+							<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6665 19.75V7.83331C3.6665 7.10397 3.95624 6.40449 4.47196 5.88877C4.98769 5.37304 5.68716 5.08331 6.4165 5.08331H15.5832C16.3125 5.08331 17.012 5.37304 17.5277 5.88877C18.0434 6.40449 18.3332 7.10397 18.3332 7.83331V13.3333C18.3332 14.0627 18.0434 14.7621 17.5277 15.2779C17.012 15.7936 16.3125 16.0833 15.5832 16.0833H7.33317L3.6665 19.75Z" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.33301 8.75H14.6663" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.33301 12.4166H12.833" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span>Messages</span>
+							<i>5</i>
+						</a></li>
+						<li><a href="#">
+							<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.6665 7.58746H18.3332" stroke="#718096" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 14.2542H6.66667" stroke="#718096" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.75 14.2542H12.0833" stroke="#718096" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.3665 3.42078H14.6248C17.5915 3.42078 18.3332 4.15411 18.3332 7.07911V13.9208C18.3332 16.8458 17.5915 17.5791 14.6332 17.5791H5.3665C2.40817 17.5874 1.6665 16.8541 1.6665 13.9291V7.07911C1.6665 4.15411 2.40817 3.42078 5.3665 3.42078Z" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span>My Wallets</span>
+						</a></li>
+						<li><a href="#" class="drop-arr">
+							<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 5.13336H18.3333" stroke="#718096" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.85 2.16669H16.4833C17.9667 2.16669 18.3333 2.53335 18.3333 4.00002V7.42502C18.3333 8.89169 17.9667 9.25835 16.4833 9.25835H11.85C10.3667 9.25835 10 8.89169 10 7.42502V4.00002C10 2.53335 10.3667 2.16669 11.85 2.16669Z" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.6665 14.7167H9.99984" stroke="#718096" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5165 11.75H8.14984C9.63317 11.75 9.99984 12.1167 9.99984 13.5833V17.0083C9.99984 18.475 9.63317 18.8417 8.14984 18.8417H3.5165C2.03317 18.8417 1.6665 18.475 1.6665 17.0083V13.5833C1.6665 12.1167 2.03317 11.75 3.5165 11.75Z" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.3333 13C18.3333 16.225 15.725 18.8333 12.5 18.8333L13.375 17.375" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.6665 8.00002C1.6665 4.77502 4.27484 2.16669 7.49984 2.16669L6.62485 3.62502" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span>Activity</span>
+						</a></li>
+						<li><a href="#">
+							<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.14292 9.00146V14.7182" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.0316 6.26593V14.7182" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.8568 12.0224V14.7182" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.9046 2.16669H6.09508C3.37285 2.16669 1.6665 4.09342 1.6665 6.82098V14.1791C1.6665 16.9066 3.36492 18.8334 6.09508 18.8334H13.9046C16.6348 18.8334 18.3332 16.9066 18.3332 14.1791V6.82098C18.3332 4.09342 16.6348 2.16669 13.9046 2.16669Z" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span>Analytics</span>
+						</a></li>
+					</ul>
+					<ul class="main-menu-list">
+						<li><a href="#">
+							<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1.875C5.68477 1.875 1.375 6.18477 1.375 11.5C1.375 16.8152 5.68477 21.125 11 21.125C16.3152 21.125 20.625 16.8152 20.625 11.5C20.625 6.18477 16.3152 1.875 11 1.875ZM11 19.4922C6.58711 19.4922 3.00781 15.9129 3.00781 11.5C3.00781 7.08711 6.58711 3.50781 11 3.50781C15.4129 3.50781 18.9922 7.08711 18.9922 11.5C18.9922 15.9129 15.4129 19.4922 11 19.4922Z" fill="#718096"/><path d="M13.3977 7.3041C12.7531 6.73906 11.9023 6.42969 11 6.42969C10.0977 6.42969 9.24687 6.74121 8.60234 7.3041C7.93203 7.89063 7.5625 8.6791 7.5625 9.52344V9.68672C7.5625 9.78125 7.63984 9.85859 7.73437 9.85859H8.76562C8.86016 9.85859 8.9375 9.78125 8.9375 9.68672V9.52344C8.9375 8.57598 9.86348 7.80469 11 7.80469C12.1365 7.80469 13.0625 8.57598 13.0625 9.52344C13.0625 10.1916 12.5898 10.8039 11.8572 11.0854C11.4018 11.2594 11.015 11.5645 10.7379 11.9641C10.4564 12.3723 10.3104 12.8621 10.3104 13.3584V13.8203C10.3104 13.9148 10.3877 13.9922 10.4822 13.9922H11.5135C11.608 13.9922 11.6854 13.9148 11.6854 13.8203V13.3326C11.6865 13.124 11.7504 12.9207 11.8688 12.749C11.9872 12.5773 12.1547 12.4453 12.3492 12.3701C13.6168 11.8824 14.4354 10.7652 14.4354 9.52344C14.4375 8.6791 14.068 7.89063 13.3977 7.3041ZM10.1406 16.2266C10.1406 16.4545 10.2312 16.6731 10.3923 16.8342C10.5535 16.9954 10.7721 17.0859 11 17.0859C11.2279 17.0859 11.4465 16.9954 11.6077 16.8342C11.7688 16.6731 11.8594 16.4545 11.8594 16.2266C11.8594 15.9986 11.7688 15.7801 11.6077 15.6189C11.4465 15.4577 11.2279 15.3672 11 15.3672C10.7721 15.3672 10.5535 15.4577 10.3923 15.6189C10.2312 15.7801 10.1406 15.9986 10.1406 16.2266Z" fill="#718096"/></svg>
+							<span>Get Help</span>
+						</a></li>
+						<li><a href="#">
+							<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.46458 4.45725C9.85508 2.84758 12.1449 2.84758 12.5354 4.45725C12.594 4.69907 12.7089 4.92363 12.8707 5.11267C13.0324 5.3017 13.2366 5.44987 13.4664 5.5451C13.6963 5.64033 13.9454 5.67995 14.1935 5.66071C14.4415 5.64148 14.6816 5.56394 14.894 5.43442C16.3084 4.57275 17.9282 6.19158 17.0665 7.60692C16.9372 7.81927 16.8597 8.05914 16.8406 8.30704C16.8214 8.55494 16.8609 8.80387 16.9561 9.0336C17.0512 9.26332 17.1992 9.46736 17.388 9.62913C17.5768 9.7909 17.8012 9.90583 18.0428 9.96458C19.6524 10.3551 19.6524 12.6449 18.0428 13.0354C17.8009 13.094 17.5764 13.2089 17.3873 13.3707C17.1983 13.5324 17.0501 13.7366 16.9549 13.9664C16.8597 14.1963 16.8201 14.4454 16.8393 14.6935C16.8585 14.9415 16.9361 15.1816 17.0656 15.394C17.9273 16.8084 16.3084 18.4282 14.8931 17.5665C14.6807 17.4372 14.4409 17.3597 14.193 17.3406C13.9451 17.3214 13.6961 17.3609 13.4664 17.4561C13.2367 17.5512 13.0326 17.6992 12.8709 17.888C12.7091 18.0768 12.5942 18.3012 12.5354 18.5428C12.1449 20.1524 9.85508 20.1524 9.46458 18.5428C9.40599 18.3009 9.29113 18.0764 9.12935 17.8873C8.96757 17.6983 8.76344 17.5501 8.53357 17.4549C8.3037 17.3597 8.0546 17.3201 7.80653 17.3393C7.55846 17.3585 7.31844 17.4361 7.106 17.5656C5.69158 18.4273 4.07183 16.8084 4.9335 15.3931C5.06284 15.1807 5.14025 14.9409 5.15944 14.693C5.17863 14.4451 5.13906 14.1961 5.04393 13.9664C4.94881 13.7367 4.80082 13.5326 4.612 13.3709C4.42318 13.2091 4.19885 13.0942 3.95725 13.0354C2.34758 12.6449 2.34758 10.3551 3.95725 9.96458C4.19907 9.90599 4.42363 9.79113 4.61267 9.62935C4.8017 9.46757 4.94987 9.26344 5.0451 9.03357C5.14033 8.8037 5.17995 8.5546 5.16071 8.30653C5.14148 8.05846 5.06394 7.81844 4.93442 7.606C4.07275 6.19158 5.69158 4.57183 7.10692 5.4335C8.02358 5.99083 9.21158 5.49767 9.46458 4.45725Z" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 14.25C12.5188 14.25 13.75 13.0188 13.75 11.5C13.75 9.98122 12.5188 8.75 11 8.75C9.48122 8.75 8.25 9.98122 8.25 11.5C8.25 13.0188 9.48122 14.25 11 14.25Z" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span>Settings</span>
+						</a></li>
+					</ul>
+				</div>
+				<div class="main-content invoice-content">
+					<div class="invoice-top">
+						<div class="input-block input-search">
+							<i class="hb-ico search-ico"></i>
+							<input type="text" name="text" placeholder="Search invoice...">
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="primary-btn"><i class="hb-ico invoice-ico"></i><span>Create invoice</span></a>
+							<a href="#" class="border-btn"><i class="hb-ico filters-ico"></i><span>Filters</span></a>
+						</div>
+					</div>
+					<div class="invoice-table">
+						<div class="invoice-table-row invoice-table-top">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col"><span class="table-arr">Name</span></div>
+							<div class="invoice-table-col"><span class="table-arr">Date</span></div>
+							<div class="invoice-table-col"><span class="table-arr">Client</span></div>
+							<div class="invoice-table-col"><span class="table-arr">Price</span></div>
+							<div class="invoice-table-col"><span>Status</span></div>
+							<div class="invoice-table-col"><span>Actions</span></div>
+						</div><!-- row -->
+						<div class="invoice-table-row">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col">
+								<div class="invoice-table-block">
+									<div class="invoice-table-main"><i class="hb-ico check-ico"></i></div>
+									<div class="invoice-table-info">
+										<div class="invoice-table-name">New Design Project</div>
+										<div class="invoice-table-code">INV110XXX</div>
+									</div>
+								</div>
+							</div>
+							<div class="invoice-table-col">
+								<span>January 05, 2022</span>
+							</div>
+							<div class="invoice-table-col">
+								<span>Biffco Enterprises</span>
+							</div>
+							<div class="invoice-table-col">
+								<b>$1,240.00</b>
+							</div>
+							<div class="invoice-table-col">
+								<div class="status">Unpaid</div>
+							</div>
+							<div class="invoice-table-col">
+								<div class="drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#"><i class="hb-ico copy-ico"></i>Copy</a></li>
+										<li><a href="#"><i class="hb-ico print-ico"></i>Print</a></li>
+										<li><a href="#"><i class="hb-ico pdf-ico"></i>Download PDF</a></li>
+										<li><a href="#"><i class="hb-ico share-ico"></i>Share Link</a></li>
+										<li><a href="#"><i class="hb-ico archive-ico"></i>Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- row -->
+						<div class="invoice-table-row">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col">
+								<div class="invoice-table-block">
+									<div class="invoice-table-main"><i class="hb-ico check-ico"></i></div>
+									<div class="invoice-table-info">
+										<div class="invoice-table-name">New Design Project</div>
+										<div class="invoice-table-code">INV110XXX</div>
+									</div>
+								</div>
+							</div>
+							<div class="invoice-table-col">
+								<span>January 05, 2022</span>
+							</div>
+							<div class="invoice-table-col">
+								<span>Biffco Enterprises</span>
+							</div>
+							<div class="invoice-table-col">
+								<b>$1,240.00</b>
+							</div>
+							<div class="invoice-table-col">
+								<div class="status">Unpaid</div>
+							</div>
+							<div class="invoice-table-col">
+								<div class="drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#"><i class="hb-ico copy-ico"></i>Copy</a></li>
+										<li><a href="#"><i class="hb-ico print-ico"></i>Print</a></li>
+										<li><a href="#"><i class="hb-ico pdf-ico"></i>Download PDF</a></li>
+										<li><a href="#"><i class="hb-ico share-ico"></i>Share Link</a></li>
+										<li><a href="#"><i class="hb-ico archive-ico"></i>Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- row -->
+						<div class="invoice-table-row">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col">
+								<div class="invoice-table-block">
+									<div class="invoice-table-main"><i class="hb-ico check-ico"></i></div>
+									<div class="invoice-table-info">
+										<div class="invoice-table-name">New Design Project</div>
+										<div class="invoice-table-code">INV110XXX</div>
+									</div>
+								</div>
+							</div>
+							<div class="invoice-table-col">
+								<span>January 05, 2022</span>
+							</div>
+							<div class="invoice-table-col">
+								<span>Biffco Enterprises</span>
+							</div>
+							<div class="invoice-table-col">
+								<b>$1,240.00</b>
+							</div>
+							<div class="invoice-table-col">
+								<div class="status status-red">Pending</div>
+							</div>
+							<div class="invoice-table-col">
+								<div class="drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#"><i class="hb-ico copy-ico"></i>Copy</a></li>
+										<li><a href="#"><i class="hb-ico print-ico"></i>Print</a></li>
+										<li><a href="#"><i class="hb-ico pdf-ico"></i>Download PDF</a></li>
+										<li><a href="#"><i class="hb-ico share-ico"></i>Share Link</a></li>
+										<li><a href="#"><i class="hb-ico archive-ico"></i>Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- row -->
+						<div class="invoice-table-row">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col">
+								<div class="invoice-table-block">
+									<div class="invoice-table-main"><i class="hb-ico check-ico"></i></div>
+									<div class="invoice-table-info">
+										<div class="invoice-table-name">New Design Project</div>
+										<div class="invoice-table-code">INV110XXX</div>
+									</div>
+								</div>
+							</div>
+							<div class="invoice-table-col">
+								<span>January 05, 2022</span>
+							</div>
+							<div class="invoice-table-col">
+								<span>Biffco Enterprises</span>
+							</div>
+							<div class="invoice-table-col">
+								<b>$1,240.00</b>
+							</div>
+							<div class="invoice-table-col">
+								<div class="status status-yellow">Refund</div>
+							</div>
+							<div class="invoice-table-col">
+								<div class="drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#"><i class="hb-ico copy-ico"></i>Copy</a></li>
+										<li><a href="#"><i class="hb-ico print-ico"></i>Print</a></li>
+										<li><a href="#"><i class="hb-ico pdf-ico"></i>Download PDF</a></li>
+										<li><a href="#"><i class="hb-ico share-ico"></i>Share Link</a></li>
+										<li><a href="#"><i class="hb-ico archive-ico"></i>Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- row -->
+						<div class="invoice-table-row">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col">
+								<div class="invoice-table-block">
+									<div class="invoice-table-main"><i class="hb-ico check-ico"></i></div>
+									<div class="invoice-table-info">
+										<div class="invoice-table-name">New Design Project</div>
+										<div class="invoice-table-code">INV110XXX</div>
+									</div>
+								</div>
+							</div>
+							<div class="invoice-table-col">
+								<span>January 05, 2022</span>
+							</div>
+							<div class="invoice-table-col">
+								<span>Biffco Enterprises</span>
+							</div>
+							<div class="invoice-table-col">
+								<b>$1,240.00</b>
+							</div>
+							<div class="invoice-table-col">
+								<div class="status status-green">Paid</div>
+							</div>
+							<div class="invoice-table-col">
+								<div class="drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#"><i class="hb-ico copy-ico"></i>Copy</a></li>
+										<li><a href="#"><i class="hb-ico print-ico"></i>Print</a></li>
+										<li><a href="#"><i class="hb-ico pdf-ico"></i>Download PDF</a></li>
+										<li><a href="#"><i class="hb-ico share-ico"></i>Share Link</a></li>
+										<li><a href="#"><i class="hb-ico archive-ico"></i>Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- row -->
+						<div class="invoice-table-row">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col">
+								<div class="invoice-table-block">
+									<div class="invoice-table-main"><i class="hb-ico check-ico"></i></div>
+									<div class="invoice-table-info">
+										<div class="invoice-table-name">New Design Project</div>
+										<div class="invoice-table-code">INV110XXX</div>
+									</div>
+								</div>
+							</div>
+							<div class="invoice-table-col">
+								<span>January 05, 2022</span>
+							</div>
+							<div class="invoice-table-col">
+								<span>Biffco Enterprises</span>
+							</div>
+							<div class="invoice-table-col">
+								<b>$1,240.00</b>
+							</div>
+							<div class="invoice-table-col">
+								<div class="status status-green">Paid</div>
+							</div>
+							<div class="invoice-table-col">
+								<div class="drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#"><i class="hb-ico copy-ico"></i>Copy</a></li>
+										<li><a href="#"><i class="hb-ico print-ico"></i>Print</a></li>
+										<li><a href="#"><i class="hb-ico pdf-ico"></i>Download PDF</a></li>
+										<li><a href="#"><i class="hb-ico share-ico"></i>Share Link</a></li>
+										<li><a href="#"><i class="hb-ico archive-ico"></i>Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- row -->
+						<div class="invoice-table-row">
+							<div class="checkbox"><input type="checkbox"><i class="checkbox-ico"></i></div>
+							<div class="invoice-table-col">
+								<div class="invoice-table-block">
+									<div class="invoice-table-main"><i class="hb-ico check-ico"></i></div>
+									<div class="invoice-table-info">
+										<div class="invoice-table-name">New Design Project</div>
+										<div class="invoice-table-code">INV110XXX</div>
+									</div>
+								</div>
+							</div>
+							<div class="invoice-table-col">
+								<span>January 05, 2022</span>
+							</div>
+							<div class="invoice-table-col">
+								<span>Biffco Enterprises</span>
+							</div>
+							<div class="invoice-table-col">
+								<b>$1,240.00</b>
+							</div>
+							<div class="invoice-table-col">
+								<div class="status status-green">Paid</div>
+							</div>
+							<div class="invoice-table-col">
+								<div class="drop">
+									<div class="drop-top"></div>
+									<ul class="drop-list">
+										<li><a href="#"><i class="hb-ico copy-ico"></i>Copy</a></li>
+										<li><a href="#"><i class="hb-ico print-ico"></i>Print</a></li>
+										<li><a href="#"><i class="hb-ico pdf-ico"></i>Download PDF</a></li>
+										<li><a href="#"><i class="hb-ico share-ico"></i>Share Link</a></li>
+										<li><a href="#"><i class="hb-ico archive-ico"></i>Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- row -->
+					</div>
+					<div class="invoice-bottom">
+						<div class="invoice-result">
+							<span class="invoice-result-txt">Show result:</span>
+							<div class="input-block">
+								<select name="text">
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</div>
+						</div>
+						<div class="pagination">
+							<a href="#" class="pagination-arrow pagination-prev"></a>
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#" class="active">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><span>...</span></li>
+								<li><a href="#">50</a></li>
+							</ul>
+							<a href="#" class="pagination-arrow pagination-next"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
