@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="arrow-top"></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><svg width="195" height="36" viewBox="0 0 195 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M188.496 7.28976V2.57709H190.195C190.564 2.57709 190.871 2.63999 191.114 2.76578C191.36 2.89158 191.543 3.0657 191.664 3.28814C191.785 3.50904 191.845 3.76446 191.845 4.0544C191.845 4.34281 191.784 4.5967 191.661 4.81607C191.54 5.03391 191.357 5.20342 191.112 5.32461C191.067 5.34682 191.021 5.367 190.972 5.38514L192.027 7.28976H191.207L190.239 5.50608C190.224 5.50629 190.208 5.5064 190.193 5.5064H189.215V7.28976H188.496ZM190.127 4.89431H189.215V3.18689H190.118C190.356 3.18689 190.547 3.22217 190.693 3.29274C190.84 3.36177 190.948 3.46149 191.017 3.59188C191.086 3.72228 191.121 3.87645 191.121 4.0544C191.121 4.23082 191.087 4.38193 191.019 4.50772C190.951 4.63351 190.843 4.72939 190.695 4.79536C190.55 4.86132 190.36 4.89431 190.127 4.89431Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M190.084 9.71987C192.799 9.71987 195 7.544 195 4.85993C195 2.17587 192.799 0 190.084 0C187.369 0 185.168 2.17587 185.168 4.85993C185.168 7.544 187.369 9.71987 190.084 9.71987ZM190.084 9.07188C192.437 9.07188 194.345 7.18613 194.345 4.85993C194.345 2.53374 192.437 0.647991 190.084 0.647991C187.731 0.647991 185.824 2.53374 185.824 4.85993C185.824 7.18613 187.731 9.07188 190.084 9.07188Z" fill="#191919"/><path d="M11.0765 6.19308C14.8947 6.19308 17.01 8.39635 17.5903 9.49798C17.5903 8.63454 17.3802 6.90765 16.4497 5.89534C15.5191 4.88302 11.2866 3.0171 6.96409 4.77377C2.64155 6.53043 0 9.49798 0 15.1253C0 20.7525 4.45353 25.3055 6.93407 27.4814C9.18539 29.4564 15.7192 33.6149 18.9411 35.6395C20.8622 34.2898 25.4189 30.971 28.2766 28.4938C31.8487 25.3973 32.1489 22.5289 31.8787 19.363C31.5577 15.6016 26.8358 11.8799 21.7628 12.7731C16.6898 13.6663 16.7799 16.7926 16.8099 16.7926C21.0724 12.8029 25.2448 14.3809 27.1059 15.5421C28.967 16.7033 31.0682 20.8121 28.967 24.2063C27.286 26.9217 21.5827 30.9154 18.9411 32.5728C17.2001 31.5009 13.1897 28.9821 11.0765 27.4814C8.43495 25.6057 3.19965 20.8037 2.91171 15.9589C2.64155 11.4134 6.3037 6.19308 11.0765 6.19308Z" fill="#191919"/><path d="M52.9712 9.85085C52.8374 9.43563 52.6574 9.06376 52.4312 8.73523C52.2097 8.40214 51.9443 8.11924 51.635 7.88654C51.3258 7.64927 50.9727 7.46903 50.5758 7.34584C50.1835 7.22264 49.7519 7.16104 49.2811 7.16104C48.4827 7.16104 47.7626 7.36409 47.1211 7.77018C46.4795 8.17628 45.9718 8.77173 45.598 9.55655C45.2287 10.3368 45.0441 11.2927 45.0441 12.4243C45.0441 13.5605 45.231 14.521 45.6049 15.3058C45.9788 16.0906 46.4911 16.686 47.1419 17.0921C47.7926 17.4982 48.5334 17.7013 49.3642 17.7013C50.135 17.7013 50.8065 17.5461 51.3789 17.2359C51.9558 16.9256 52.4012 16.4876 52.7151 15.9218C53.0193 15.3769 53.1782 14.7403 53.1918 14.0122H49.6896V12.2669H55.2628V13.8616C55.2628 15.0388 55.0089 16.0609 54.5012 16.9279C53.9982 17.7903 53.3012 18.4564 52.4104 18.9264C51.5243 19.3964 50.5089 19.6314 49.3642 19.6314C48.0811 19.6314 46.9549 19.3394 45.9857 18.7553C45.021 18.1713 44.2687 17.3431 43.7287 16.2708C43.1887 15.194 42.9187 13.9164 42.9187 12.438C42.9187 11.3201 43.0756 10.3163 43.3895 9.42651C43.7033 8.53675 44.1441 7.78159 44.7118 7.16104C45.2841 6.53592 45.9557 6.0591 46.7265 5.73058C47.5019 5.39749 48.3488 5.23094 49.2673 5.23094C50.0335 5.23094 50.7465 5.34273 51.4066 5.56631C52.0712 5.78989 52.662 6.10701 53.1789 6.51767C53.7005 6.92833 54.132 7.41656 54.4736 7.98236C54.8151 8.54359 55.0459 9.16642 55.1659 9.85085H52.9712Z" fill="#191919"/><path d="M67.1841 9.85085C67.0503 9.43563 66.8703 9.06376 66.6441 8.73523C66.4226 8.40214 66.1572 8.11924 65.8479 7.88654C65.5387 7.64927 65.1856 7.46903 64.7887 7.34584C64.3964 7.22264 63.9648 7.16104 63.494 7.16104C62.6955 7.16104 61.9755 7.36409 61.334 7.77018C60.6924 8.17628 60.1847 8.77173 59.8109 9.55655C59.4416 10.3368 59.257 11.2927 59.257 12.4243C59.257 13.5605 59.4439 14.521 59.8178 15.3058C60.1917 16.0906 60.704 16.686 61.3548 17.0921C62.0055 17.4982 62.7463 17.7013 63.5771 17.7013C64.3479 17.7013 65.0194 17.5461 65.5918 17.2359C66.1687 16.9256 66.6141 16.4876 66.9279 15.9218C67.2322 15.3769 67.3911 14.7403 67.4047 14.0122H63.9025V12.2669H69.4757V13.8616C69.4757 15.0388 69.2218 16.0609 68.7141 16.9279C68.2111 17.7903 67.5141 18.4564 66.6233 18.9264C65.7372 19.3964 64.7217 19.6314 63.5771 19.6314C62.294 19.6314 61.1678 19.3394 60.1986 18.7553C59.2339 18.1713 58.4816 17.3431 57.9416 16.2708C57.4016 15.194 57.1316 13.9164 57.1316 12.438C57.1316 11.3201 57.2885 10.3163 57.6024 9.42651C57.9162 8.53675 58.357 7.78159 58.9247 7.16104C59.497 6.53592 60.1686 6.0591 60.9394 5.73058C61.7148 5.39749 62.5617 5.23094 63.4802 5.23094C64.2464 5.23094 64.9594 5.34273 65.6195 5.56631C66.2841 5.78989 66.8749 6.10701 67.3918 6.51767C67.9134 6.92833 68.3449 7.41656 68.6864 7.98236C69.028 8.54359 69.2588 9.16642 69.3788 9.85085H67.1841Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M71.8014 19.4397V5.42258H76.9938C78 5.42258 78.8331 5.58685 79.4931 5.91537C80.1531 6.23934 80.647 6.67965 80.9747 7.23633C81.3024 7.78843 81.4662 8.41127 81.4662 9.10482C81.4662 9.68887 81.3578 10.1817 81.1408 10.5832C80.9239 10.9802 80.6331 11.2996 80.2685 11.5414C79.9085 11.7787 79.5116 11.9521 79.0777 12.0616V12.1985C79.5485 12.2213 80.0077 12.3718 80.4554 12.6502C80.9078 12.924 81.2816 13.3141 81.577 13.8206C81.8724 14.327 82.0201 14.943 82.0201 15.6685C82.0201 16.3849 81.8493 17.0283 81.5078 17.5986C81.1708 18.1644 80.6493 18.6139 79.9431 18.9469C79.237 19.2755 78.3346 19.4397 77.2361 19.4397H71.8014ZM73.9407 17.626H77.0284C78.0531 17.626 78.7869 17.4298 79.23 17.0374C79.6731 16.645 79.8947 16.1545 79.8947 15.5659C79.8947 15.1233 79.7816 14.7172 79.5554 14.3476C79.3293 13.978 79.0062 13.6837 78.5862 13.4647C78.1708 13.2456 77.6769 13.1361 77.1046 13.1361H73.9407V17.626ZM73.9407 11.4866H76.8069C77.2869 11.4866 77.7185 11.3954 78.1015 11.2129C78.4893 11.0304 78.7962 10.7748 79.0223 10.4463C79.2531 10.1132 79.3685 9.72081 79.3685 9.26909C79.3685 8.6896 79.1631 8.20366 78.7523 7.81125C78.3416 7.41884 77.7115 7.22264 76.8623 7.22264H73.9407V11.4866Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M90.1349 19.4397H87.8641L92.9665 5.42258H95.4381L100.54 19.4397H98.2697L96.9733 15.7301H91.4334L90.1349 19.4397ZM94.2611 7.96867L96.3515 13.9506H92.0564L94.1503 7.96867H94.2611Z" fill="#191919"/><path d="M113.308 9.9809H111.148C111.065 9.52461 110.91 9.12307 110.684 8.7763C110.458 8.42952 110.181 8.13521 109.853 7.89338C109.526 7.65155 109.159 7.46903 108.753 7.34584C108.351 7.22264 107.924 7.16104 107.472 7.16104C106.655 7.16104 105.923 7.36409 105.277 7.77018C104.636 8.17628 104.128 8.77173 103.754 9.55655C103.385 10.3414 103.2 11.2996 103.2 12.4312C103.2 13.5719 103.385 14.5346 103.754 15.3195C104.128 16.1043 104.638 16.6974 105.284 17.099C105.93 17.5005 106.657 17.7013 107.465 17.7013C107.913 17.7013 108.337 17.642 108.739 17.5233C109.145 17.4001 109.512 17.2199 109.84 16.9826C110.167 16.7454 110.444 16.4556 110.67 16.1134C110.901 15.7666 111.06 15.3697 111.148 14.9225L113.308 14.9293C113.193 15.6183 112.969 16.2526 112.637 16.8321C112.309 17.407 111.887 17.9043 111.37 18.3241C110.857 18.7393 110.271 19.061 109.611 19.2892C108.951 19.5173 108.231 19.6314 107.451 19.6314C106.223 19.6314 105.13 19.3439 104.169 18.769C103.209 18.1895 102.453 17.3613 101.899 16.2845C101.349 15.2077 101.075 13.9232 101.075 12.4312C101.075 10.9345 101.352 9.65009 101.906 8.57781C102.459 7.50097 103.216 6.67509 104.176 6.10017C105.136 5.52068 106.228 5.23094 107.451 5.23094C108.203 5.23094 108.905 5.33817 109.556 5.55263C110.211 5.76252 110.8 6.07279 111.321 6.48345C111.843 6.88955 112.274 7.3869 112.616 7.97551C112.957 8.55956 113.188 9.22802 113.308 9.9809Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M116.581 19.4397H114.31L119.412 5.42258H121.884L126.986 19.4397H124.715L123.419 15.7301H117.879L116.581 19.4397ZM120.707 7.96867L122.797 13.9506H118.502L120.596 7.96867H120.707Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M133.234 19.4397H128.644V5.42258H133.379C134.769 5.42258 135.962 5.7032 136.959 6.26443C137.956 6.8211 138.719 7.62189 139.25 8.66679C139.786 9.70712 140.053 10.9551 140.053 12.4106C140.053 13.8707 139.783 15.1255 139.243 16.175C138.708 17.2245 137.933 18.0321 136.917 18.5979C135.902 19.1591 134.674 19.4397 133.234 19.4397ZM130.783 17.5918H133.116C134.196 17.5918 135.094 17.391 135.809 16.9895C136.525 16.5834 137.06 15.997 137.416 15.2305C137.771 14.4594 137.949 13.5194 137.949 12.4106C137.949 11.311 137.771 10.3779 137.416 9.6113C137.065 8.84474 136.541 8.26297 135.844 7.866C135.147 7.46903 134.282 7.27055 133.248 7.27055H130.783V17.5918Z" fill="#191919"/><path d="M142.324 5.42258H151.213V7.24317H144.463V11.514H150.749V13.3278H144.463V17.6191H151.296V19.4397H142.324V5.42258Z" fill="#191919"/><path d="M153.681 5.42258H156.277L160.791 16.3187H160.957L165.471 5.42258H168.067V19.4397H166.032V9.29646H165.9L161.719 19.4192H160.029L155.848 9.28962H155.716V19.4397H153.681V5.42258Z" fill="#191919"/><path d="M169.694 5.42258H172.124L175.828 11.7946H175.98L179.684 5.42258H182.114L176.97 13.9369V19.4397H174.838V13.9369L169.694 5.42258Z" fill="#191919"/><path d="M46.553 30.6204C46.5115 30.2736 46.343 30.0044 46.0476 29.8127C45.7522 29.6211 45.3899 29.5253 44.9607 29.5253C44.6468 29.5253 44.3722 29.5755 44.1368 29.6759C43.9037 29.7762 43.7214 29.9143 43.5899 30.0899C43.4607 30.2656 43.396 30.4652 43.396 30.6888C43.396 30.8759 43.441 31.0367 43.531 31.1713C43.6234 31.3037 43.7411 31.4143 43.8841 31.5033C44.0272 31.59 44.1772 31.6618 44.3341 31.7189C44.4911 31.7736 44.6353 31.8181 44.7668 31.8523L45.4869 32.044C45.6715 32.0919 45.8769 32.1581 46.103 32.2425C46.3315 32.3269 46.5496 32.4421 46.7573 32.5881C46.9673 32.7318 47.1404 32.9166 47.2765 33.1425C47.4127 33.3684 47.4807 33.6456 47.4807 33.9741C47.4807 34.3528 47.3804 34.695 47.1796 35.0007C46.9811 35.3064 46.6903 35.5494 46.3073 35.7296C45.9265 35.9099 45.4638 36 44.9192 36C44.4114 36 43.9718 35.919 43.6003 35.757C43.231 35.595 42.9403 35.3692 42.728 35.0794C42.5179 34.7897 42.3991 34.4532 42.3714 34.0699H43.2576C43.2807 34.3346 43.3707 34.5536 43.5276 34.727C43.6868 34.8981 43.8876 35.0258 44.1299 35.1102C44.3745 35.1924 44.6376 35.2334 44.9192 35.2334C45.2468 35.2334 45.5411 35.181 45.8019 35.076C46.0626 34.9688 46.2692 34.8205 46.4215 34.6311C46.5738 34.4395 46.65 34.2159 46.65 33.9604C46.65 33.7277 46.5842 33.5383 46.4526 33.3923C46.3211 33.2463 46.148 33.1277 45.9334 33.0364C45.7188 32.9452 45.4869 32.8653 45.2376 32.7969L44.3653 32.5505C43.8114 32.393 43.373 32.1683 43.0499 31.8763C42.7268 31.5843 42.5653 31.2021 42.5653 30.7299C42.5653 30.3375 42.6726 29.9953 42.8872 29.7032C43.1041 29.4089 43.3949 29.1808 43.7595 29.0188C44.1264 28.8545 44.5361 28.7724 44.9884 28.7724C45.4453 28.7724 45.8515 28.8534 46.2069 29.0154C46.5623 29.1751 46.8438 29.3941 47.0515 29.6724C47.2615 29.9508 47.3723 30.2667 47.3838 30.6204H46.553Z" fill="#191919"/><path d="M55.2804 28.8682H54.4219V33.4402C54.4219 33.7824 54.3458 34.087 54.1935 34.3539C54.0435 34.6186 53.8265 34.8273 53.5427 34.9802C53.2588 35.1308 52.9196 35.2061 52.525 35.2061C52.1303 35.2061 51.7911 35.1308 51.5073 34.9802C51.2257 34.8273 51.0088 34.6186 50.8565 34.3539C50.7042 34.087 50.628 33.7824 50.628 33.4402V28.8682H49.7695V33.5087C49.7695 33.9878 49.8826 34.4155 50.1088 34.792C50.3372 35.1661 50.658 35.4616 51.0711 35.6783C51.4842 35.8928 51.9688 36 52.525 36C53.0811 36 53.5658 35.8928 53.9788 35.6783C54.3919 35.4616 54.7116 35.1661 54.9377 34.792C55.1662 34.4155 55.2804 33.9878 55.2804 33.5087V28.8682Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M57.8721 28.8682V35.8768H58.7306V33.317H60.2814C60.8329 33.317 61.2852 33.2178 61.6383 33.0193C61.9914 32.8185 62.2522 32.5493 62.4206 32.2117C62.5914 31.874 62.6768 31.4987 62.6768 31.0858C62.6768 30.6728 62.5914 30.2987 62.4206 29.9633C62.2499 29.6279 61.9868 29.3622 61.6314 29.166C61.2783 28.9675 60.8237 28.8682 60.2675 28.8682H57.8721ZM58.7306 32.5642H60.2537C60.6345 32.5642 60.9402 32.4991 61.171 32.3691C61.4018 32.2391 61.5691 32.0634 61.6729 31.8421C61.7791 31.6185 61.8322 31.3664 61.8322 31.0858C61.8322 30.8052 61.7791 30.5542 61.6729 30.3329C61.5691 30.1116 61.4006 29.9382 61.1675 29.8127C60.9345 29.685 60.6252 29.6211 60.2398 29.6211H58.7306V32.5642Z" fill="#191919"/><path d="M64.937 28.8682V35.8768H69.271V35.1239H65.7955V32.7421H68.994V31.9892H65.7955V29.6211H69.2156V28.8682H64.937Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M71.6402 28.8682V35.8768H72.4987V33.1391H74.0495C74.1109 33.1391 74.1711 33.138 74.2301 33.1357L75.7249 35.8768H76.7219L75.1204 32.9868C75.2207 32.9531 75.3149 32.9137 75.403 32.8687C75.7561 32.6862 76.018 32.4353 76.1888 32.1159C76.3596 31.7965 76.445 31.4303 76.445 31.0173C76.445 30.6044 76.3596 30.2359 76.1888 29.912C76.018 29.588 75.7549 29.3336 75.3995 29.1488C75.0442 28.9618 74.5895 28.8682 74.0357 28.8682H71.6402ZM72.4987 32.3725H74.0218C74.4003 32.3725 74.7049 32.3178 74.9357 32.2083C75.1688 32.0987 75.3372 31.9436 75.4411 31.7428C75.5472 31.5398 75.6003 31.298 75.6003 31.0173C75.6003 30.7367 75.5472 30.4915 75.4411 30.2816C75.3349 30.0717 75.1653 29.9097 74.9322 29.7956C74.6991 29.6793 74.3911 29.6211 74.008 29.6211H72.4987V32.3725Z" fill="#191919"/><path d="M78.7528 35.8768H79.6113V28.8682H78.7528V35.8768Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M87.7865 34.2889C88.0565 33.7505 88.1915 33.1117 88.1915 32.3725C88.1915 31.6333 88.0565 30.9945 87.7865 30.4561C87.5165 29.9177 87.1461 29.5025 86.6753 29.2104C86.2046 28.9184 85.6668 28.7724 85.0622 28.7724C84.4576 28.7724 83.9199 28.9184 83.4491 29.2104C82.9783 29.5025 82.6079 29.9177 82.3379 30.4561C82.0679 30.9945 81.9329 31.6333 81.9329 32.3725C81.9329 33.1117 82.0679 33.7505 82.3379 34.2889C82.6079 34.8273 82.9783 35.2426 83.4491 35.5346C83.9199 35.8266 84.4576 35.9726 85.0622 35.9726C85.6668 35.9726 86.2046 35.8266 86.6753 35.5346C87.1461 35.2426 87.5165 34.8273 87.7865 34.2889ZM87.0526 30.836C87.258 31.2535 87.3607 31.7657 87.3607 32.3725C87.3607 32.9794 87.258 33.4916 87.0526 33.9091C86.8496 34.3266 86.5738 34.6425 86.2253 34.857C85.8792 35.0715 85.4915 35.1787 85.0622 35.1787C84.633 35.1787 84.2441 35.0715 83.8957 34.857C83.5495 34.6425 83.2737 34.3266 83.0683 33.9091C82.8653 33.4916 82.7637 32.9794 82.7637 32.3725C82.7637 31.7657 82.8653 31.2535 83.0683 30.836C83.2737 30.4185 83.5495 30.1025 83.8957 29.888C84.2441 29.6736 84.633 29.5663 85.0622 29.5663C85.4915 29.5663 85.8792 29.6736 86.2253 29.888C86.5738 30.1025 86.8496 30.4185 87.0526 30.836Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M92.9078 28.8682H90.5123V35.8768H91.3708V33.1391H92.9216C92.983 33.1391 93.0432 33.138 93.1022 33.1357L94.597 35.8768H95.594L93.9925 32.9868C94.0928 32.9531 94.187 32.9137 94.2751 32.8687C94.6282 32.6862 94.8901 32.4353 95.0609 32.1159C95.2317 31.7965 95.317 31.4303 95.317 31.0173C95.317 30.6044 95.2317 30.2359 95.0609 29.912C94.8901 29.588 94.627 29.3336 94.2716 29.1488C93.9162 28.9618 93.4616 28.8682 92.9078 28.8682ZM91.3708 32.3725H92.8939C93.2724 32.3725 93.577 32.3178 93.8078 32.2083C94.0409 32.0987 94.2093 31.9436 94.3132 31.7428C94.4193 31.5398 94.4724 31.298 94.4724 31.0173C94.4724 30.7367 94.4193 30.4915 94.3132 30.2816C94.207 30.0717 94.0374 29.9097 93.8043 29.7956C93.5712 29.6793 93.2632 29.6211 92.8801 29.6211H91.3708V32.3725Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M103.43 28.8682H101.034V35.8768H101.893V33.317H103.444C103.995 33.317 104.447 33.2178 104.801 33.0193C105.154 32.8185 105.414 32.5493 105.583 32.2117C105.754 31.874 105.839 31.4987 105.839 31.0858C105.839 30.6728 105.754 30.2987 105.583 29.9633C105.412 29.6279 105.149 29.3622 104.794 29.166C104.441 28.9675 103.986 28.8682 103.43 28.8682ZM101.893 32.5642H103.416C103.797 32.5642 104.102 32.4991 104.333 32.3691C104.564 32.2391 104.731 32.0634 104.835 31.8421C104.941 31.6185 104.994 31.3664 104.994 31.0858C104.994 30.8052 104.941 30.5542 104.835 30.3329C104.731 30.1116 104.563 29.9382 104.33 29.8127C104.097 29.685 103.787 29.6211 103.402 29.6211H101.893V32.5642Z" fill="#191919"/><path d="M109.124 28.8682H108.099V35.8768H108.902V30.5519H108.972L111.187 35.8768H111.962L114.178 30.5519H114.247V35.8768H115.05V28.8682H114.026L111.616 34.6859H111.533L109.124 28.8682Z" fill="#191919"/><path d="M123.16 28.8682H122.301V33.4402C122.301 33.7824 122.225 34.087 122.073 34.3539C121.923 34.6186 121.706 34.8273 121.422 34.9802C121.138 35.1308 120.799 35.2061 120.404 35.2061C120.01 35.2061 119.67 35.1308 119.387 34.9802C119.105 34.8273 118.888 34.6186 118.736 34.3539C118.583 34.087 118.507 33.7824 118.507 33.4402V28.8682H117.649V33.5087C117.649 33.9878 117.762 34.4155 117.988 34.792C118.216 35.1661 118.537 35.4616 118.95 35.6783C119.363 35.8928 119.848 36 120.404 36C120.96 36 121.445 35.8928 121.858 35.6783C122.271 35.4616 122.591 35.1661 122.817 34.792C123.045 34.4155 123.16 33.9878 123.16 33.5087V28.8682Z" fill="#191919"/><path d="M128.983 28.8682V29.6211H131.212V35.8768H132.07V29.6211H134.3V28.8682H128.983Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M138.897 28.8682H136.502V35.8768H137.36V33.1391H138.911C138.938 33.1391 138.965 33.1389 138.991 33.1384C139.013 33.1381 139.034 33.1376 139.055 33.137L139.092 33.1357L140.587 35.8768H141.583L139.982 32.9868C140.082 32.9531 140.177 32.9137 140.265 32.8687C140.618 32.6862 140.88 32.4353 141.05 32.1159C141.221 31.7965 141.307 31.4303 141.307 31.0173C141.307 30.6044 141.221 30.2359 141.05 29.912C140.88 29.588 140.617 29.3336 140.261 29.1488C139.906 28.9618 139.451 28.8682 138.897 28.8682ZM137.36 32.3725H138.883C139.262 32.3725 139.567 32.3178 139.797 32.2083C140.03 32.0987 140.199 31.9436 140.303 31.7428C140.409 31.5398 140.462 31.298 140.462 31.0173C140.462 30.7367 140.409 30.4915 140.303 30.2816C140.197 30.0717 140.027 29.9097 139.794 29.7956C139.561 29.6793 139.253 29.6211 138.87 29.6211H137.36V32.3725Z" fill="#191919"/><path fill-rule="evenodd" clip-rule="evenodd" d="M143.005 35.8768H143.905L144.618 33.892H147.485L148.198 35.8768H149.098L146.494 28.8682H145.608L143.005 35.8768ZM147.214 33.1391L146.079 29.977H146.024L144.888 33.1391H147.214Z" fill="#191919"/><path d="M151.079 35.8768H151.938V28.8682H151.079V35.8768Z" fill="#191919"/><path d="M159.327 35.8768H160.158V28.8682H159.313V34.3847H159.244L155.367 28.8682H154.536V35.8768H155.395V30.374H155.464L159.327 35.8768Z" fill="#191919"/><path d="M162.753 35.8768H163.611V28.8682H162.753V35.8768Z" fill="#191919"/><path d="M171.001 35.8768H171.832V28.8682H170.987V34.3847H170.918L167.041 28.8682H166.21V35.8768H167.069V30.374H167.138L171.001 35.8768Z" fill="#191919"/><path d="M178.972 30.439C179.097 30.6215 179.197 30.828 179.273 31.0584H180.159C180.095 30.7185 179.977 30.4093 179.806 30.131C179.635 29.8504 179.422 29.6097 179.166 29.4089C178.912 29.2059 178.622 29.0496 178.297 28.9401C177.974 28.8283 177.625 28.7724 177.252 28.7724C176.797 28.7724 176.38 28.8557 176.002 29.0222C175.623 29.1888 175.296 29.4283 175.019 29.7409C174.742 30.0534 174.527 30.4321 174.375 30.877C174.225 31.3196 174.15 31.8181 174.15 32.3725C174.15 33.1117 174.281 33.7505 174.545 34.2889C174.81 34.8273 175.179 35.2426 175.652 35.5346C176.128 35.8266 176.679 35.9726 177.307 35.9726C177.87 35.9726 178.368 35.8563 178.802 35.6236C179.239 35.3886 179.58 35.0578 179.827 34.6311C180.076 34.2045 180.201 33.7026 180.201 33.1254V32.3725H177.501V33.1254H179.37C179.362 33.5314 179.275 33.8861 179.107 34.1897C178.934 34.5045 178.692 34.7486 178.38 34.922C178.071 35.0931 177.713 35.1787 177.307 35.1787C176.868 35.1787 176.474 35.0715 176.123 34.857C175.772 34.6425 175.494 34.3266 175.289 33.9091C175.083 33.4916 174.981 32.9794 174.981 32.3725C174.981 31.7657 175.082 31.2535 175.285 30.836C175.488 30.4185 175.762 30.1025 176.106 29.888C176.45 29.6736 176.832 29.5663 177.252 29.5663C177.508 29.5663 177.743 29.6006 177.958 29.669C178.172 29.7375 178.364 29.8367 178.532 29.9667C178.703 30.0968 178.85 30.2542 178.972 30.439Z" fill="#191919"/></svg></a></div>
+			<div class="header-wrap">
+				<div class="header-hr"><i></i></div>
+				<ul class="header-menu">
+					<li><a href="#">EXplore courses</a></li>
+					<li><a href="#">HOW WE’RE Different</a></li>
+					<li><a href="#">students’ work</a></li>
+					<li><a href="#">Training kits</a></li>
+					<li><a href="#">core curriculum</a></li>
+				</ul>
+				<div class="header-btns">
+					<a data-fancybox data-src="#modal-form" href="javascript:;" class="primary-btn">Find a couRse</a>
+					<a href="#" class="border-btn">store</a>
+				</div>
+				<div class="header-mob">
+					<ul>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">YOUTUBE</a></li>
+						<li><a href="#">Email</a></li>
+						<li><a href="#">Whats App</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-bar"></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-bg" style="background-image: url(img/img-1-min.jpg);"></div>
+		<div class="wrapper">
+			<div class="main-all">
+				<div class="main-top">
+					<div class="main-info">
+						<div class="main-top-wrap">
+							<h1 class="main-title">Discover your full potential with GGB</h1>
+							<div class="main-img"><img src="img/img-1-mob-min.png" alt=""></div>
+						</div>
+						<div class="buttons-row">
+							<a href="#" class="primary-btn">Find a course near you</a>
+							<a href="#" class="border-btn-arrow">our students’ work</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-bottom">
+					<div class="main-row">
+						<div class="main-col">
+							<div class="main-wrap">
+								<div class="main-ico"><img src="img/ico-1.svg" alt=""></div>
+								<span class="main-txt">Earn six figures annually</span>
+							</div>
+						</div><!-- col -->
+						<div class="main-col">
+							<div class="main-wrap">
+								<div class="main-ico"><img src="img/ico-2.svg" alt=""></div>
+								<span class="main-txt">Make your own schedule</span>
+							</div>
+						</div><!-- col -->
+						<div class="main-col">
+							<div class="main-wrap">
+								<div class="main-ico"><img src="img/ico-3.svg" alt=""></div>
+								<span class="main-txt">Help others look and feel their best</span>
+							</div>
+						</div><!-- col -->
+						<div class="main-col">
+							<div class="main-wrap">
+								<div class="main-ico"><img src="img/ico-4.svg" alt=""></div>
+								<span class="main-txt">Be your own boss</span>
+							</div>
+						</div><!-- col -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<div class="about-row">
+				<div class="about-info">
+					<h2 class="section-title">What is GGB Academy?</h2>
+					<p>GGB Academy is one of the most prestigious permanent makeup training schools in the US.</p>
+					<p>We have developed proprietary training programs using our own brand products with which we create the most successful artists in the world.</p>
+					<div class="about-mob" style="background-image: url(img/img-2-min.jpg);"></div>
+					<div class="about-items">
+						<div class="about-item">
+							<span class="about-sub">The average GGB PMU artist earns </span>
+							<div class="about-text">
+								<b>$163,800</b>
+								<span>Annually</span>
+							</div>
+						</div>
+						<div class="about-item">
+							<span class="about-sub">The artists can earn more than</span>
+							<div class="about-text">
+								<b>$200,000</b>
+								<span>Annually</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-img" style="background-image: url(img/img-2-min.jpg);"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start works -->
+	<section class="works">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Our Students’ Work</h2>
+				<p>Our students work on real models with different skin types</p>
+			</div>
+			<div class="works-all">
+				<div class="arrows">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="works-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-3-min.jpg);">
+								<span class="works-title">Immediately following application of GGB Lip Blush</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-4-min.jpg);">
+								<span class="works-title">Immediately following application of GGB Ombré Powder Brows</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-5-min.jpg);">
+								<span class="works-title">Immediately following application of GGB Ombré Powder Brows</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-6-min.jpg);">
+								<span class="works-title">Before/Immediately After/Healed</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-7-min.jpg);">
+								<span class="works-title">Healed GGB Ombré Powder Brows</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-8-min.jpg);">
+								<span class="works-title">Immediately following application of GGB Lip Blush</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-9-min.jpg);">
+								<span class="works-title">Healed GGB Ombré Powder Brows</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-10-min.jpg);">
+								<span class="works-title">Immediately following application of GGB Ombré Powder Brows</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-11-min.jpg);">
+								<span class="works-title">Immediately following application of GGB Ombré Powder Brows</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-12-min.jpg);">
+								<span class="works-title">Healed GGB Ombré Powder Brows</span>
+							</div>
+						</div><!-- slide -->
+						<div class="works-slide swiper-slide">
+							<div class="works-wrap" style="background-image: url(img/img-13-min.jpg);">
+								<span class="works-title">Immediately following application of GGB Lip Blush</span>
+							</div>
+						</div><!-- slide -->
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+				<div class="works-buttons">
+					<div class="buttons-row">
+						<a href="#" class="border-btn">WHAT ARE GGB Ombré Powder Brows?</a>
+						<a href="#" class="border-btn">WHAT is GGB Lip Blush?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end works -->
+	<!-- start kit -->
+	<section class="kit">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Each GGB trainee receives a training kit containing high-quality professional products and equipment.</h2>
+				<p>Our academy offers several types of training kits depending on the course you choose.</p>
+			</div>
+			<div class="kit-main"><img src="img/img-14-min.png" alt=""></div>
+			<div class="kit-row">
+				<div class="kit-col">
+					<div class="kit-wrap kit-wrap-main">
+						<div class="kit-img"><img src="img/img-15-min.png" alt=""></div>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-16-min.jpg" alt=""></div>
+						<span class="kit-name">GGB 3D Practice Lip Mold</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-17-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Equipment Set</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-18-min.jpg" alt=""></div>
+						<span class="kit-name">GGB 3D Practice Face Mold</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-19-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Pure-White Practice Pad</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-20-min.jpg" alt=""></div>
+						<span class="kit-name">Liquid Powder Lip Kit</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-21-min.jpg" alt=""></div>
+						<span class="kit-name">Liquid Powder Brow Kit</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-22-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Microfine Pen (Black)</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-23-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Prepping Lip Mask </span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-24-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Sketch Liquid Set</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-25-min.jpg" alt=""></div>
+						<span class="kit-name">Pixel Needle Catridge</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-26-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Sketch-Lock Powder</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-27-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Standart PMU Fundamentals</span>
+					</div>
+				</div><!-- col -->
+				<div class="kit-col">
+					<div class="kit-wrap">
+						<div class="kit-img"><img src="img/img-28-min.jpg" alt=""></div>
+						<span class="kit-name">GGB Brush</span>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="kit-button">
+				<a href="#" class="border-btn-arrow">Learn more about GGB and our products</a>
+			</div>
+		</div>
+	</section>
+	<!-- end kit -->
+	<!-- start differences -->
+	<section class="differences">
+		<div class="wrapper">
+			<div class="differences-block differences-block-main">
+				<h2 class="section-title">What sets GGB training apart</h2>
+				<div class="differences-info">
+					<p>What sets GGB training apart is that we prepare our students for the most challenging situations. During the training process, our students work on live models so that they learn how to approach real-life situations. </p>
+					<p>We teach advanced, non-painful, and safe methods of application. We have developed our own brand of top-quality needle cartridges, drawing tools, and equipment for PMU application. Our brand pigments are safe, clean, and fade gracefully over time. We have everything you need to become a successful artist. </p>
+				</div>
+			</div><!-- block -->
+			<div class="differences-block">
+				<h2 class="section-title">3-day Ombré Powder Brows training</h2>
+				<div class="differences-info">
+					<div class="differences-img" style="background-image: url(img/img-29-min.jpg);"></div>
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Ombré Powder Brows</span>
+						<div class="differences-accordeon-block">
+							<p>GGB Ombré Powder Brows are hyperrealistic, 3D eyebrow tattoos created by means of color gradient, light, and dark shadows without defined contours. As a result, eyebrows look full and symmetrical but very natural.</p>
+							<p>The GGB Powder Brows can last 1-3 years before gradually fading away through lighter brown shades.</p>
+							<p>Unlike microblading, this procedure is very gentle to the skin, does not create scarring, can be done on all skin types (even the most sensitive and sun-damaged skin), and can be reapplied every couple of years.</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Ombré Powder Brows procedure</span>
+						<div class="differences-accordeon-block">
+							<p>GGB Powder Brows procedure is a unique 3D brow-shading technique that includes a detailed method of sketching and non-painful machine pigment application. The GGB Powder Brows are created with the aid of high-quality GGB brand tools and pigments. Powerful equipment delivers pigment without creating extra trauma to the skin, allowing for fast, easy healing with good pigment retention and little visual downtime.</p>
+							<p>Clean mineral Liquid Powder pigments have muted natural brown colorsthat fade gracefully over time. The GGB 3D Powder Brows procedure is theideal brow-enhancing application, one that is growing in popularity around the world — and taking the place of manual, more traumatizing procedures such as microblading.</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Ombré Powder Brows training</span>
+						<div class="differences-accordeon-block">
+							<p>GGB Ombre Powder Brows training is not just a regular PMU training course. During our course, students go through multiple learning stages, starting with basic hygiene rules, setting up the working environment, and dress code and communication skills followed by detailed theoretical and hands-on training in permanent makeup.</p>
+							<p>Students meet in a classroom setting for practical training and learn drawing skills, practicing first on latex pads and then on live models so that students gain firsthand experience with the actual procedures under supervision of the GGB trainers. Nothing prepares you for the real world like a GGB Training Course.</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">Terms and prices</span>
+						<div class="differences-accordeon-block">
+							<p>With our permanent makeup training course, you receive:</p>
+							<ul>
+								<li>A training kit containing GGB professional equipment, tools, and products</li>
+								<li>Core PMU fundamentals training</li>
+								<li>Proprietary skills in procedure application on live models from top GGB trainers</li>
+								<li>Video training tutorials</li>
+								<li>Access to a support chat group</li>
+								<li>A certificate of completion</li>
+								<li>A chance to become a Top Artist or Trainer at GGB Academy</li>
+							</ul>
+							<div class="differences-item">
+								<span class="differences-item-tit">The total price for 3-day Ombré Powder Brows training is $3,900.</span>
+								<span class="differences-item-sub">$900 to reserve your training spot</span>
+							</div>
+							<div class="differences-message">
+								<span class="differences-message-tit">Total price for 3-day Ombré Powder Brows training <span>for GGB Artists</span> is $3,110.</span>
+								<p>* The student kit does not include the GGB equipment set or the GGB Standard PMU Fundamentals.</p>
+							</div>
+							<div class="differences-bot">
+								<ul>
+									<li>Our class capacity is limited.</li>
+									<li>The remaining balance is due 2 weeks before the first day of class.</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Professional Brow Kit (a $1,200 value)</span>
+						<div class="differences-accordeon-block">
+							<ul>
+								<li>GGB Standard PMU Fundamentals Course</li>
+								<li>GGB professional equipment set (2 pcs.)   	</li>
+								<li>Pixel Needle Cartridges (3 boxes x 20 pcs.) 	</li>
+								<li>GGB Microfine Pen (10 pcs.) 			</li>
+								<li>GGB Non-Erasable Pen (6 pcs.)		</li>
+								<li>GGB Sketch-Lock Powder (1 pc.)  	</li>
+								<li>GGB Pure-White practice pad (3 pcs.)		</li>
+								<li>GGB 3D Practice Face Mold (1 pc.) 		</li>
+								<li>Liquid Powder Pigment Light Blond (1 pc.)</li>
+								<li>Liquid Powder Pigment Dark Blond (1 pc.)</li>
+								<li>Liquid Powder Pigment Taupe (1 pc.)</li>
+								<li>Liquid Powder Pigment Brown (1 pc.)</li>
+								<li>Liquid Powder Pigment Warm Brown (1 pc.)</li>
+								<li>Liquid Powder Pigment Brown Black (1 pc.)</li>
+								<li>Liquid Powder Pigment Diluent (1 pc.)</li>
+							</ul>
+						</div>
+					</div><!-- accordeon -->
+					<div class="buttons-row">
+						<a href="#" class="primary-btn">Find a course near you</a>
+						<a href="#" class="border-btn-arrow">Go to our store</a>
+					</div>
+				</div>
+			</div><!-- block -->
+			<div class="differences-block">
+				<h2 class="section-title">3-day Lip Blush training</h2>
+				<div class="differences-info">
+					<div class="differences-img" style="background-image: url(img/img-30-min.jpg);"></div>
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Lip Blush</span>
+						<div class="differences-accordeon-block">
+							<p>GGB Lip Blush refers to a method of lip re-colorizing that is designed to restore natural lip color, providing a fresh, healthy, and more-defined appearance without the heavy makeup look. </p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Lip Blush procedure</span>
+						<div class="differences-accordeon-block">
+							<p>The GGB Lip Blush procedure is a unique, highly detailed method of sketching and non-painful machine pigment application.</p>
+							<p>The GGB Lip Blush is created with the aid of high-quality GGB brand tools and pigments.</p>
+							<p>Powerful equipment delivers pigment without creating extra trauma to the skin, allowing for fast, easy healing with good pigment retention and little to no visual downtime. Our mixable pigments have a large selection of colors so that you can match or recreate any natural lip color.</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Lip Blush training</span>
+						<div class="differences-accordeon-block">
+							<p>GGB Lip Blush training is not a regular PMU training course. We approach students individually and attend to their special needs.</p>
+							<p>During our course, students go through multiple learning stages, starting with basic hygiene rules, setting up the working environment, dress code and communication skills followed by detailed theoretical and hands-on training in permanent makeup.</p>
+							<p>Students meet in a classroom setting for practical training and learn drawing skills, practicing first on latex pads and then on live models so that students gain firsthand experience with the actual procedures under the supervision of the GGB trainers.</p>
+							<p>Nothing prepares you for the real world like a GGB Training Course.</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">Terms and prices</span>
+						<div class="differences-accordeon-block">
+							<p>With our permanent makeup training course, you receive:</p>
+							<ul>
+								<li>A kit of GGB professional equipment, tools, and products</li>
+								<li>Core PMU fundamentals training</li>
+								<li>Proprietary skills in procedure application on live models from Top GGB trainers</li>
+								<li>Video training tutorials</li>
+								<li>Access to a support chat group</li>
+								<li>A certificate of completion</li>
+								<li>A chance to become a Top Artist or Trainer at GGB Academy</li>
+							</ul>
+							<div class="differences-item">
+								<span class="differences-item-tit">The total price for 3-day Ombré Powder Brows training is $3,900.</span>
+								<span class="differences-item-sub">$900 to reserve your training spot</span>
+							</div>
+							<div class="differences-message">
+								<span class="differences-message-tit">Total price for 3-day Ombré Powder Brows training <span>for GGB Artists</span> is $3,110.</span>
+								<p>* The student kit does not include the GGB equipment set or the GGB Standard PMU Fundamentals.</p>
+							</div>
+							<div class="differences-bot">
+								<ul>
+									<li>Our class capacity is limited.</li>
+									<li>The remaining balance is due 2 weeks before the first day of class.</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Professional Brow Kit (a $1,200 value)</span>
+						<div class="differences-accordeon-block">
+							<ul>
+								<li>GGB Standard PMU Fundamentals Course</li>
+								<li>GGB professional equipment set (2 pcs.)   	</li>
+								<li>Pixel Needle Cartridges (3 boxes x 20 pcs.) 	</li>
+								<li>GGB Microfine Pen (10 pcs.) 			</li>
+								<li>GGB Non-Erasable Pen (6 pcs.)		</li>
+								<li>GGB Sketch-Lock Powder (1 pc.)  	</li>
+								<li>GGB Pure-White practice pad (3 pcs.)		</li>
+								<li>GGB 3D Practice Face Mold (1 pc.) 		</li>
+								<li>Liquid Powder Pigment Light Blond (1 pc.)</li>
+								<li>Liquid Powder Pigment Dark Blond (1 pc.)</li>
+								<li>Liquid Powder Pigment Taupe (1 pc.)</li>
+								<li>Liquid Powder Pigment Brown (1 pc.)</li>
+								<li>Liquid Powder Pigment Warm Brown (1 pc.)</li>
+								<li>Liquid Powder Pigment Brown Black (1 pc.)</li>
+								<li>Liquid Powder Pigment Diluent (1 pc.)</li>
+							</ul>
+						</div>
+					</div><!-- accordeon -->
+					<div class="buttons-row">
+						<a href="#" class="primary-btn">Find a course near you</a>
+						<a href="#" class="border-btn-arrow">Go to our store</a>
+					</div>
+				</div>
+			</div><!-- block -->
+			<div class="differences-block">
+				<h2 class="section-title">5-day Ombré Powder Brows AND Lip Blush training</h2>
+				<div class="differences-info">
+					<div class="differences-img" style="background-image: url(img/img-31-min.jpg);"></div>
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">Advantages</span>
+						<div class="differences-accordeon-block">
+							<p>A PMU Fundamentals course that combines two of the most useful techniques for lips and eyebrows is a perfect start for anyone looking to become an artist. During this five-day course, students go through multiple learning levels, starting with basic hygiene rules, setting up the work environment, and dress code and communication skills followed by detailed theoretical and hands-on training in permanent makeup.</p>
+							<p>Once more, what sets GGB training apart is that we prepare our students for the most difficult situations, giving them real-life models with difficult skin types and showing them how to approach each client. Our academy embraces human individuality and the natural look, and we teach our students how to beautify each face by finding the unique shape and color for each client.</p>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">Terms and prices</span>
+						<div class="differences-accordeon-block">
+							<p>With our permanent makeup training course, you receive:</p>
+							<ul>
+								<li>A kit of GGB professional equipment, tools, and products</li>
+								<li>Core PMU fundamentals training</li>
+								<li>Proprietary skills in procedure application on live models from Top GGB trainers</li>
+								<li>Video training tutorials</li>
+								<li>Access to a support chat group</li>
+								<li>A certificate of completion</li>
+								<li>A chance to become a Top Artist or Trainer at GGB Academy</li>
+							</ul>
+							<div class="differences-item">
+								<span class="differences-item-tit">The total price for the 5-day Ombre Powder Brows AND Lip Blush training is $5,900.</span>
+								<span class="differences-item-sub">$900 to reserve your training spot</span>
+							</div>
+							<div class="differences-bot">
+								<ul>
+									<li>Our class capacity is limited.</li>
+									<li>The remaining balance is due 2 weeks before the first day of class.</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- accordeon -->
+					<div class="differences-accordeon">
+						<span class="differences-accordeon-tit">GGB Professional Combo Kit (a $1,500 value)</span>
+						<div class="differences-accordeon-block">
+							<ul>
+								<li>GGB Standard PMU Fundamentals Course</li>
+								<li>GGB professional equipment set (2 pcs.)   </li>
+								<li>Pixel Needle Cartridges (2 boxes x 20 pcs.)  </li>
+								<li>GGB Microfine Pen (10 pcs.)		</li>
+								<li>GGB Non-Erasable Pen (6 pcs.)	</li>
+								<li>GGB Sketch-Lock Powder (1 pc.)        		</li>
+								<li>GGB 3D Practice Face Mold (1 pc.) 		</li>
+								<li>GGB 3D Practice Lip Mold (1 pc.)		</li>
+								<li>GGB Prepping Lip Mask (1 pc.)			</li>
+								<li>GGB Sketch Liquid Set (1 pc.)			</li>
+								<li>GGB Brush (4 pcs.)				</li>
+								<li>Pure-White practice pad (3 pcs.)			</li>
+								<li>Liquid Powder Pigment Light Blond (1 pc.)	</li>
+								<li>Liquid Powder Pigment Dark Blond (1 pc.)	</li>
+								<li>Liquid Powder Pigment Taupe (1 pc.)</li>
+								<li>Liquid Powder Pigment Brown (1 pc.)</li>
+								<li>Liquid Powder Pigment Warm Brown (1 pc.)</li>
+								<li>Liquid Powder Pigment Brown Black (1 pc.)</li>
+								<li>Liquid Powder Pigment Cream Beige (1 pc.)</li>
+								<li>Liquid Powder Pigment Dusty Rose (1 pc.)</li>
+								<li>Liquid Powder Pigment Natural Lips (1 pc.)</li>
+								<li>Liquid Powder Pigment Nude Mauve (1 pc.)</li>
+								<li>Liquid Powder Pigment Pumpkin (1 pc.)</li>
+								<li>Liquid Powder Pigment Raspberry (1 pc.)</li>
+								<li>Liquid Powder Pigment Very Pink (1 pc.)</li>
+								<li>Liquid Powder Pigment Diluent (2 pcs.)</li>
+								<li>Liquid Powder Pigment Bordeaux (1 pc.)</li>
+							</ul>
+						</div>
+					</div><!-- accordeon -->
+					<div class="buttons-row">
+						<a href="#" class="primary-btn">Find a course near you</a>
+						<a href="#" class="border-btn-arrow">Go to our store</a>
+					</div>
+				</div>
+			</div><!-- block -->
+		</div>
+	</section>
+	<!-- end differences -->
+	<!-- start actions -->
+	<section class="actions">
+		<div class="wrapper">
+			<h2 class="section-title">Our academy embraces human <i>individuality and the natural look,</i> and we teach our students how to beautify each face <i>by finding unique shapes and colors for every client.</i></h2>
+			<div class="buttons-row">
+				<a href="#" class="border-btn border-btn-white">Find a course near you</a>
+				<a href="#" class="border-btn-arrow border-btn-white">Go to our store</a>
+			</div>
+		</div>
+	</section>
+	<!-- end actions -->
+	<!-- start advantage -->
+	<section class="advantage">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">With our permanent makeup training course, you receive:</h2>
+			</div>
+			<div class="advantage-row">
+				<div class="advantage-col">
+					<div class="advantage-img"><img src="img/img-32-min.png" alt=""></div>
+					<span class="advantage-title">A training kit containing innovative brand equipment and tools</span>
+				</div><!-- col -->
+				<div class="advantage-col">
+					<div class="advantage-img"><img src="img/img-33-min.png" alt=""></div>
+					<span class="advantage-title">Proprietary skills in procedure application on live models</span>
+				</div><!-- col -->
+				<div class="advantage-col">
+					<div class="advantage-img"><img src="img/img-34-min.png" alt=""></div>
+					<span class="advantage-title">Video training tutorials</span>
+				</div><!-- col -->
+				<div class="advantage-col">
+					<div class="advantage-img"><img src="img/img-35-min.png" alt=""></div>
+					<span class="advantage-title">A certificate <br>of completion</span>
+				</div><!-- col -->
+				<div class="advantage-col">
+					<div class="advantage-img"><img src="img/img-36-min.png" alt=""></div>
+					<span class="advantage-title">A chance to become a Top Artist and Trainer at GGB Academy</span>
+				</div><!-- col -->
+				<div class="advantage-col">
+					<div class="advantage-img"><img src="img/img-37-min.png" alt=""></div>
+					<span class="advantage-title">GGB Standard PMU <br>Fundamentals</span>
+				</div><!-- col -->
+			</div>
+		</div>
+	</section>
+	<!-- end advantage -->
+	<!-- start prepare -->
+	<section class="prepare">
+		<div class="wrapper">
+			<div class="prepare-all">
+				<div class="prepare-info">
+					<h2 class="section-title">We prepare students for the industry’s most challenging situations.</h2>
+					<p>During the training process, our students work on <span>REAL MODELS</span> with various skin types and of various ages to learn how to approach every situation.</p>
+					<div class="prepare-btn"><a href="#" class="border-btn border-btn-white">Find a course near you</a></div>
+				</div>
+				<div class="prepare-mob"><img src="img/mb-min.png" alt=""></div>
+				<div class="prepare-images">
+					<div class="prepare-img prepare-1" style="background-image: url(img/img-38-min.jpg);"></div>
+					<div class="prepare-row">
+						<div class="prepare-col">
+							<div class="prepare-img prepare-2" style="background-image: url(img/img-39-min.jpg);"></div>
+							<div class="prepare-img prepare-3" style="background-image: url(img/img-40-min.jpg);"></div>
+						</div>
+						<div class="prepare-col">
+							<div class="prepare-img prepare-4" style="background-image: url(img/img-41-min.jpg);"></div>
+							<div class="prepare-img prepare-5" style="background-image: url(img/img-42-min.jpg);"></div>
+							<div class="prepare-img prepare-6" style="background-image: url(img/img-43-min.jpg);"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end prepare -->
+	<!-- start curriculum -->
+	<section class="curriculum">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">The core curriculum:</h2>
+			</div>
+			<div class="curriculum-row">
+				<div class="curriculum-col">
+					<h3 class="curriculum-title">Part 1: The Fundamentals</h3>
+					<div class="curriculum-item">
+						<span class="curriculum-sub">1. Dermapigmentation</span>
+						<ul>
+							<li>1.1	Overview of the dermapigmentation field</li>
+							<li>1.2 Overview of permanent makeup procedures</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">2. Your Professional Image</span>
+						<ul>
+							<li>2.1 Professional dress code</li>
+							<li>2.2 Maintaining professional conduct</li>
+							<li>2.3 Maintaining a professional reputation</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">3. The Skin</span>
+						<ul>
+							<li>3.1 Skin histology and physiology</li>
+							<li>3.2 Recognizing skin disorders</li>
+							<li>3.3 Skin colors and classifications</li>
+							<li>3.4 Complete skin analysis</li>
+							<li>3.5 Contraindications</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">4. Infection Control</span>
+						<ul>
+							<li>4.1 Principles of infection</li>
+							<li>4.2 Principles of prevention</li>
+							<li>4.3 Sanitation and disinfection of the workplace</li>
+							<li>4.5 Aseptic procedure</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">5. Client Information</span>
+						<ul>
+							<li>5.1 Intake/consent forms</li>
+							<li>5.2 Consultation</li>
+							<li>5.3 Before/after pictures</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">6. The Workspace</span>
+						<ul>
+							<li>6.1 Setting up the work environment</li>
+							<li>6.2 Checklist of essential equipment and supplies</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">7. Equipment and Needles</span>
+						<ul>
+							<li>7.1 Complete analysis of PMU machines</li>
+							<li>7.2 Understanding needles</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">8. Pigments</span>
+						<ul>
+							<li>8.1 Color theory</li>
+							<li>8.2 Pigments</li>
+							<li>8.3 Choosing the right color</li>
+							<li>8.4 Understanding color correction</li>
+						</ul>
+					</div><!-- item -->
+				</div><!-- col -->
+				<div class="curriculum-col">
+					<h3 class="curriculum-title">Part 2: Practical Skills</h3>
+					<div class="curriculum-item">
+						<span class="curriculum-sub">9. Sketching</span>
+						<ul>
+							<li>9.1 Rules of symmetrical  eyebrows</li>
+							<li>9.2 Rules of symmetrical  lips</li>
+							<li>9.3 Sketching on paper</li>
+							<li>9.4 Working with asymmetry</li>
+							<li>9.5 Sketching live models</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">10. Drawing techniques</span>
+						<ul>
+							<li>10.1 Holding the handpiece</li>
+							<li>10.2 Shading methods</li>
+							<li>10.3 Lining methods</li>
+							<li>10.4 Color density and gradient</li>
+							<li>10.5 Practicing on latex</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">11. Essentials</span>
+						<ul>
+							<li>11.1 Hand speed</li>
+							<li>11.2 Power supply speed</li>
+							<li>11.3 Hand posture and skin stretching</li>
+							<li>11.4 Pressure</li>
+							<li>11.5 Pigment placement</li>
+						</ul>
+					</div><!-- item -->
+					<div class="curriculum-item">
+						<span class="curriculum-sub">12. Application</span>
+						<ul>
+							<li>12.1 Eyebrows: step by step</li>
+							<li>12.2 Lips: step by step</li>
+							<li>12.3 Home care</li>
+							<li>12.3 Follow-up procedure</li>
+							<li>12.4 Dealing with old permanent makeup</li>
+						</ul>
+					</div><!-- item -->
+				</div><!-- col -->
+			</div>
+			<div class="buttons-row">
+				<a href="#" class="primary-btn">Find a course near you</a>
+				<a href="#" class="border-btn-arrow">Go to our store</a>
+			</div>
+		</div>
+	</section>
+	<!-- end curriculum -->
+	<!-- start testimonials -->
+	<section class="testimonials">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Clients talk about us</h2>
+			</div>
+			<div class="testimonials-all">
+				<div class="arrows">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="testimonials-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<div class="testimonials-top">
+									<span class="testimonials-name">Amanda J.</span>
+									<div class="testimonials-stars"><img src="img/icons/stars-0.svg" alt=""></div>
+								</div>
+								<p>Thank you so much for creating such a thorough training. Thank you for your detailed instruction, I could not have hoped for anything better! You are wonderful! I am so excited to start working in this field!</p>
+							</div>
+						</div><!-- slide -->
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<div class="testimonials-top">
+									<span class="testimonials-name">Analis B.</span>
+									<div class="testimonials-stars"><img src="img/icons/stars-0.svg" alt=""></div>
+								</div>
+								<p>Very good training program. Lots and lots of information. I’m panning on attending more classes here.</p>
+							</div>
+						</div><!-- slide -->
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<div class="testimonials-top">
+									<span class="testimonials-name">Erin T.</span>
+									<div class="testimonials-stars"><img src="img/icons/stars-0.svg" alt=""></div>
+								</div>
+								<p>I took powder brows course with Alena, and she was great. This was my first PMU training, before I was doing microblading. I feel like I really got this technique, so excited to start practicing more. I really recommend GGB academy, the quality of product I got in my kit are really nice, love the powder brush.</p>
+							</div>
+						</div><!-- slide -->
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<div class="testimonials-top">
+									<span class="testimonials-name">Carina B.</span>
+									<div class="testimonials-stars"><img src="img/icons/stars-0.svg" alt=""></div>
+								</div>
+								<p>I attended the fundamentals program. The instructor where very thorough, I was impressed, she knew everything. I did the training before with another school, but felt like needed more. Now I feel pretty confident. I think the key is to get practice on models. GGB is great, I will come back for other programs. </p>
+							</div>
+						</div><!-- slide -->
+						<div class="testimonials-slide swiper-slide">
+							<div class="testimonials-wrap">
+								<div class="testimonials-top">
+									<span class="testimonials-name">Rhe DEN</span>
+									<div class="testimonials-stars"><img src="img/icons/stars-0.svg" alt=""></div>
+								</div>
+								<p>I started school here for PMU as a tattoo artist and shop owner. I was really impressed by the instructor Lora. She was helping me while I was doing 2 procedures, extremely supportive and informative. I would really recommend Lora and the ACADEMY.</p>
+							</div>
+						</div><!-- slide -->
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end testimonials -->
+	<!-- start inst -->
+	<section class="inst">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Instagram</h2>
+				<span class="section-sub">@ girlgotbrows</span>
+			</div>
+			<div class="inst-all">
+				<div class="arrows">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="inst-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="inst-slide swiper-slide">
+							<div class="inst-img" style="background-image: url(img/img-44-min.jpg);"></div>
+						</div><!-- slide -->
+						<div class="inst-slide swiper-slide">
+							<div class="inst-img" style="background-image: url(img/img-45-min.jpg);"></div>
+						</div><!-- slide -->
+						<div class="inst-slide swiper-slide">
+							<div class="inst-img" style="background-image: url(img/img-46-min.jpg);"></div>
+						</div><!-- slide -->
+						<div class="inst-slide swiper-slide">
+							<div class="inst-img" style="background-image: url(img/img-47-min.jpg);"></div>
+						</div><!-- slide -->
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end inst -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-all">
+					<div class="footer-logo"><a href="#"><img src="img/logo-2.svg" alt=""></a></div>
+					<div class="footer-row">
+						<ul class="footer-list">
+							<li><a href="#">EXplore courses</a></li>
+							<li><a href="#">HOW WE’RE Different</a></li>
+							<li><a href="#">students’ work</a></li>
+							<li><a href="#">Training kits</a></li>
+							<li><a href="#">core curriculum</a></li>
+						</ul>
+						<div class="footer-btns">
+							<a data-fancybox data-src="#modal-form" href="javascript:;" class="primary-btn primary-btn-white">Find a couRse</a>
+							<a href="#" class="border-btn border-btn-white">store</a>
+						</div>
+					</div>
+				</div>
+				<ul class="footer-social">
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">YOUTUBE</a></li>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Whats App</a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>All Rights Reserved</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-form" class="modal modal-big">
+		<div class="modal-wrap">
+			<span class="modal-title">Book your place now</span>
+			<p>Fill in the fields below and we will contact you within 48 hours</p>
+			<form action="">
+				<div class="input-block">
+					<input type="text" name="text" placeholder="First & Last Name">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Email">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Phone">
+				</div>
+				<div class="input-block">
+					<textarea name="text" placeholder="Message"></textarea>
+				</div>
+				<div class="modal-btn">
+					<button class="primary-btn">Find a course near you</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
