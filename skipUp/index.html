@@ -12,7 +12,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -39,7 +39,68 @@
 					<div class="main-block">
 						<div class="main-block-top">
 							<span class="main-block-title">Основная информация</span>
-							<div class="download-btn download-logo"><i class="hb-ico img-ico"></i><span>Загрузить логотип</span></div>
+							<div class="download">
+								<div class="download-btn download-logo">
+									<div class="download-logo-main">
+										<input type="file" name="photo" accept="image/*" class="js-photo-upload">
+										<i class="hb-ico img-ico"></i><span>Загрузить логотип</span>
+									</div>
+									<div class="download-logo-block">
+										<ul class="download-list">
+											<li><i class="hb-ico edit-ico"></i></li>
+											<li><i class="hb-ico del-ico"></i></li>
+										</ul>
+										<img id="avatar-crop" src="">
+									</div>
+								</div>
+								<div class="md" id="cropperModal">
+									<div class="md-wrap">
+										<span class="md-title">Редактирование изображения</span>
+										<div class="md-row">
+											<span class="md-label">Описание для SEO (alt)</span>
+											<div class="input-block">
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="md-row">
+											<span class="md-label">Описание для пользователя (title)</span>
+											<div class="input-block">
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="md-row">
+											<span class="md-label">Адрес изображения</span>
+											<div class="input-block">
+												<input type="text" name="text">
+											</div>
+										</div>
+										<div class="md-main">
+											<img class="js-avatar-preview" src="">
+											<ul class="md-main-list">
+												<li><i class="hb-ico rotate-ico"></i></li>
+												<li><i class="hb-ico arrow1-ico"></i></li>
+												<li><i class="hb-ico arrow2-ico"></i></li>
+											</ul>
+										</div>
+										<div class="md-row">
+											<span class="md-label">Уменьшать размер</span>
+											<div class="input-block">
+												<input type="text" name="text" value="0px">
+											</div>
+										</div>
+										<div class="md-row">
+											<span class="md-label">Уменьшать качество</span>
+											<div class="input-block">
+												<input type="text" name="text" value="0%">
+											</div>
+										</div>
+										<div class="md-buttons">
+											<a href="#" class="border-btn">Отменить</a>
+											<button class="primary-btn js-save-cropped-avatar">Сохранить</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="inputs-row">
 							<div class="input-block">
@@ -363,6 +424,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
