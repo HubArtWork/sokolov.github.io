@@ -30,7 +30,7 @@
 				<ul class="header-menu">
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Business</a></li>
-					<li><a href="#" class="active">Investors</a></li>
+					<li><a href="#">Investors</a></li>
 					<li class="drop">
 						<a href="#" class="drop-top">Resources</a>
 						<ul class="drop-list">
@@ -117,11 +117,6 @@
 		</div>
 	</section>
 	<!-- end team -->
-	<akt-brokerbot ticker="VIDS" lang="en" id="brokerbot"></akt-brokerbot>
-	<akt-chart ticker="VIDS" lang="en" lineColor="#085ed0" textColor="#085ed0"></akt-chart>
-	<akt-trades ticker="VIDS" lang="en" size="5"></akt-trades>
-	<akt-subscribe ticker="VIDS" lang="en"></akt-subscribe>
-	<akt-registration ticker="VIDS" lang="en" id="akt-registration"></akt-registration>
 	<!-- start specialists -->
 	<section class="specialists">
 		<div class="wrapper">
@@ -380,19 +375,5 @@
 	</footer>
 	<!-- end footer -->
 	<script defer src="js/scripts.min.js"></script>
-	<script src="https://hub.aktionariat.com/widgets/widgets-ext.js" async onload="loadTokenData('VIDS')"></script>
-
-<script src="https://hub.aktionariat.com/brokerbot-v3/brokerbot-v3.js" async></script>
-<link rel="preload" href="https://hub.aktionariat.com/widgets/shareholder-registration-v2.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<script src="https://hub.aktionariat.com/widgets/shareholder-registration-v2.js" async></script>
-<link rel="preload" href="https://hub.aktionariat.com/widgets/widgets.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<style>
-:root {
---brokerbot-color-primary: #323131;
---aktionariat-widgets-color-primary: #323131;
---aktionariat-widgets-color-secondary: #ffffff;
---aktionariat-widgets-color-highlight: #085ed0;
-}
-</style>
 </body>
 </html>
