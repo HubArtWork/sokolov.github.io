@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">All modals</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-1" href="javascript:;">modal-1</a></li>
+				<li>2.<a data-fancybox data-src="#modal-2" href="javascript:;">modal-2</a></li>
+				<li>3.<a data-fancybox data-src="#modal-3" href="javascript:;">modal-3</a></li>
+				<li>3.<a data-fancybox data-src="#modal-4" href="javascript:;">modal-4</a></li>
+				<li>3.<a data-fancybox data-src="#modal-5" href="javascript:;">modal-5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-1" class="modal modal-big">
+		<span class="modal-tit">List of supported languages</span>
+		<div class="input-block search-block search-block-pad"><!-- add class input-error -->
+			<div class="search-block-wrap">
+				<input type="text" name="search" placeholder="Search" autocomplete="off">
+				<div class="search-block-drop">
+					<ul>
+						<li>ENG (Australia)</li>
+						<li>ENG (United Kingdom )</li>
+						<li>GER (Germany)</li>
+						<li>ITA (Italy)</li>
+						<li>UKR (Ukraine)</li>
+						<li>PL (Poland)</li>
+						<li>PL (Poland)</li>
+						<li>PL (Poland)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="error-txt">This language is not in the list of languages</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-2" class="modal">
+		<div class="modal-all"><!-- add class active -->
+			<div class="modal-main">
+				<span class="modal-title">GET THE CALCULATION TO THE EMAIL, AND A <b>10$ DISCOUNT</b> ON FIRST ORDER</span>
+				<form action="">
+					<div class="input-block"><!-- add class input-error -->
+						<label for="">Your e-mail</label>
+						<div class="input-wrap"><!-- add class active -->
+							<input type="text" name="text">
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="error-txt">Please enter a valid email address</div>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox">
+						<i class="checkbox-ico"></i>
+						<p>I agree to the processing of personal data</p>
+					</div>
+					<button class="primary-btn primary-btn-big">Submit</button>
+				</form>
+			</div>
+			<div class="modal-done">
+				<i class="hb-ico check-ico"></i>
+				<span class="modal-done-title"><b>THANKS!</b>A REMINDER ABOUT THE DISCOUNT HAS BEEN SENT TO YOUR E-MAIL</span>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-3" class="modal">
+		<div class="modal-all"><!-- add class active -->
+			<div class="modal-main">
+				<span class="modal-title">GET THE CALCULATION TO THE EMAIL, AND A <b>10$ DISCOUNT</b> ON FIRST ORDER</span>
+				<form action="">
+					<div class="input-block input-error"><!-- add class input-error -->
+						<label for="">Your e-mail</label>
+						<div class="input-wrap active"><!-- add class active -->
+							<input type="text" name="text" value="Lis_Bra">
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="error-txt">Please enter a valid email address</div>
+					</div>
+					<div class="checkbox" checked>
+						<input type="checkbox">
+						<i class="checkbox-ico"></i>
+						<p>I agree to the processing of personal data</p>
+					</div>
+					<button class="primary-btn primary-btn-big">Submit</button>
+				</form>
+			</div>
+			<div class="modal-done">
+				<i class="hb-ico check-ico"></i>
+				<span class="modal-done-title"><b>THANKS!</b>A REMINDER ABOUT THE DISCOUNT HAS BEEN SENT TO YOUR E-MAIL</span>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-4" class="modal">
+		<div class="modal-all active"><!-- add class active -->
+			<div class="modal-main">
+				<span class="modal-title">GET THE CALCULATION TO THE EMAIL, AND A <b>10$ DISCOUNT</b> ON FIRST ORDER</span>
+				<form action="">
+					<div class="input-block"><!-- add class input-error -->
+						<label for="">Your e-mail</label>
+						<div class="input-wrap"><!-- add class active -->
+							<input type="text" name="text">
+							<i class="hb-ico close-ico"></i>
+						</div>
+						<div class="error-txt">Please enter a valid email address</div>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox">
+						<i class="checkbox-ico"></i>
+						<p>I agree to the processing of personal data</p>
+					</div>
+					<button class="primary-btn primary-btn-big">Submit</button>
+				</form>
+			</div>
+			<div class="modal-done">
+				<i class="hb-ico check-ico"></i>
+				<span class="modal-done-title"><b>THANKS!</b>A REMINDER ABOUT THE DISCOUNT HAS BEEN SENT TO YOUR E-MAIL</span>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-5" class="modal modal-small">
+		<span class="modal-sub">Share list of voices:</span>
+		<span class="modal-txt">ITA (Italy)</span>
+		<ul class="modal-social">
+			<li><a href="#"><img src="img/social/Facebook.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/Messenger.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/mymir.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/WhatsApp.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/telegramm.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/skype.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/twitter.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/instagramm.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/viber.svg" alt=""></a></li>
+			<li><a href="#"><img src="img/social/linkedin.svg" alt=""></a></li>
+		</ul>
+		<a href="#" class="border-btn border-btn-copy">Copy page link</a>
+	</div>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
