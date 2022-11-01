@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-top-row">
+					<div class="header-location">
+						<i class="hb-ico location-ico"></i>
+						<span>Уфа</span>
+					</div>
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Пункты Выдачи</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+				<div class="header-info">
+					<a href="tel:+73472859909" class="header-tel">+7 (347) 285-99-09</a>
+					<a href="tel:+73472462120" class="header-tel">+7 (347) 246-21-20</a>
+					<a href="#" class="header-btn">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="wrapper">
+				<div class="header-block">
+					<i class="hb-ico header-bar"></i>
+					<i class="hb-ico location-blue-ico"></i>
+				</div>
+				<div class="header-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+				<div class="header-search">
+					<div class="header-search-all">
+						<div class="search-drop">
+							<div class="search-drop-top">Все категории</div>
+							<div class="search-drop-list">
+								<div class="search-drop-wrap">
+									<ul>
+										<li><a href="#">Боксы, щитки, ящики</a></li>
+										<li><a href="#">Бытовая химия</a></li>
+										<li><a href="#">Изоляционные материалы</a></li>
+										<li><a href="#">Инструмент</a></li>
+										<li><a href="#">Кабеленесущие системы</a></li>
+										<li><a href="#">Кабель, провод</a></li>
+										<li><a href="#">Крепеж</a></li>
+										<li><a href="#">Металлоизделия, прокат</a></li>
+										<li><a href="#">Модульное оборудование</a></li>
+										<li><a href="#">Приборы учета и контроля</a></li>
+										<li><a href="#">Пускатели, контакторы, пакет выключатели</a></li>
+										<li><a href="#">Разъемы силовые</a></li>
+										<li><a href="#">Реле, датчики движения, таймеры</a></li>
+										<li><a href="#">Светотехника</a></li>
+										<li><a href="#">Силовые автоматы, рубильники, предохранители</a></li>
+										<li><a href="#">Удлинители, адаптеры</a></li>
+										<li><a href="#">Устройства подачи команд и сигналов</a></li>
+										<li><a href="#">Хозтовары</a></li>
+										<li><a href="#">Электроустановочные изделия</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<input type="text" name="search" placeholder="Например, автоматические выключатели">
+						<button class="header-search-btn"><i class="hb-ico search-white-ico"></i></button>
+					</div>
+				</div>
+				<div class="header-row">
+					<div class="header-mob">
+						<a href="#" class="hb-ico phone-ico"></a>
+						<a href="#" class="hb-ico basket-ico"><b>5</b></a>
+					</div>
+					<a href="#" class="header-user">
+						<i class="hb-ico user-blue-ico"></i>
+						<span>Войти</span>
+					</a>
+					<a href="#" class="header-link">Зарегистрироваться</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<div class="header-bottom-row">
+					<a href="#" class="header-button">
+						<i class="hb-ico bar-ico"></i>
+						Каталог
+					</a>
+					<ul class="header-menu">
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Хиты продаж</a></li>
+					</ul>
+				</div>
+				<div class="header-actions">
+					<a href="#" class="header-item">
+						<span class="header-ico">
+							<i class="hb-ico comparison-ico"></i>
+						</span>
+						<span class="header-item-name">Сравнение</span>
+					</a>
+					<a href="#" class="header-item">
+						<span class="header-ico">
+							<i class="hb-ico chosen-ico"></i>
+							<b>3</b>
+						</span>
+						<span class="header-item-name">Избранное</span>
+					</a>
+					<a href="#" class="header-item">
+						<span class="basket-price">12 457 ₽</span>
+						<span class="header-ico">
+							<i class="hb-ico basket-ico"></i>
+							<b>5</b>
+						</span>
+						<span class="header-item-name">Корзина</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-catalog">
+		<div class="wrapper">
+			<div class="header-catalog-all">
+				<div class="header-catalog-over">
+					<div class="header-catalog-row">
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-1.png" alt="">
+								Модульное оборудование
+							</div>
+							<ul>
+								<li><a href="#">Автоматы, Боксы АББ (ABB)</a></li>
+								<li><a href="#">Автоматы ВА-GENERICA</a></li>
+								<li><a href="#">Автоматы ВА- ,кА хар-ка С серии ТДМ</a></li>
+								<li><a href="#">Автоматические выключатели Legrand</a></li>
+								<li><a href="#">Автоматические выключатели Schneider Electric</a></li>
+								<li><a href="#">Автоматические выключатели (КЭАЗ)</a></li>
+								<li><a href="#">Автоматические выключатели Dekraft</a></li>
+								<li><a href="#">Дополнительные Модульные Устройства ИЭК</a></li>
+								<li><a href="#">Ограничители мощности ОМ ФиФ (F&F)</a></li>
+								<li><a href="#">Устройства Дифференциальной Защиты ИЭК</a></li>
+							</ul>
+							<div class="header-catalog-more">
+								<a href="#" class="header-catalog-btn">Еще</a>
+								<ul>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+								</ul>
+							</div>
+						</div><!-- col -->
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-2.png" alt="">
+								Приборы учета и контроля
+							</div>
+							<ul>
+								<li><a href="#">Счетчики электроэнергии</a></li>
+								<li><a href="#">Трансформаторы тока ТТН ТДМ</a></li>
+								<li><a href="#">Трансформаторы тока ТТИ ИЕК</a></li>
+								<li><a href="#">Трансформаторы тока Т-</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-3.png" alt="">
+								Кабели, провода
+							</div>
+							<ul>
+								<li><a href="#">Провода соединительные, шнуры (ШВВП,ПВС)</a></li>
+								<li><a href="#">Кабели силовые с пластмассовой изоляцией и оболочкой АВБбШв,ВБбШв,АВВГ,ВВГ)</a></li>
+								<li><a href="#">Провода для воздушных линий передач (А,АС,СИП)</a></li>
+								<li><a href="#">Кабели контрольные (АКВВГ, КВВГ,КВВГЭ,АКВБбБШв,КВБбШВ)</a></li>
+								<li><a href="#">Кабели силовые гибкие (КГ, РПШ,РКГМ)</a></li>
+								<li><a href="#">Эмальпровод</a></li>
+								<li><a href="#">Провода телевизионные (РК,RG)</a></li>
+								<li><a href="#">Разномеры</a></li>
+								<li><a href="#">Кабель нагревательный</a></li>
+								<li><a href="#">Кабель нагревательный</a></li>
+							</ul>
+							<div class="header-catalog-more">
+								<a href="#" class="header-catalog-btn">Еще</a>
+								<ul>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+								</ul>
+							</div>
+						</div><!-- col -->
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-4.png" alt="">
+								Кабеленесущие системы
+							</div>
+							<ul>
+								<li><a href="#">Подрозетники</a></li>
+								<li><a href="#">Трубы ПВХ, ПНД (гофрированные, жесткие)</a></li>
+								<li><a href="#">Скобы пластиковые</a></li>
+								<li><a href="#">Полки</a></li>
+								<li><a href="#">Лоток, крышка</a></li>
+								<li><a href="#">Кабель-каналы</a></li>
+								<li><a href="#">Ленты</a></li>
+								<li><a href="#">Трубка термоусадочная</a></li>
+								<li><a href="#">Кабельные маркеры ИЭК</a></li>
+								<li><a href="#">Металлорукав и аксессуары</a></li>
+							</ul>
+							<div class="header-catalog-more">
+								<a href="#" class="header-catalog-btn">Еще</a>
+								<ul>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+								</ul>
+							</div>
+						</div><!-- col -->
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-5.png" alt="">
+								Силовые автоматы, рубильники, предохранители
+							</div>
+							<ul>
+								<li><a href="#">Комплектующие</a></li>
+								<li><a href="#">Предохранители</a></li>
+								<li><a href="#">Рубильники</a></li>
+								<li><a href="#">Силовые автоматы АЕ , АП , ВА -, АЕ</a></li>
+								<li><a href="#">Силовые автоматы ВА, ВА ИЭК</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-6.png" alt="">
+								Боксы, щитки, ящики
+							</div>
+							<ul>
+								<li><a href="#">Ящики с рубильником ЯБПВУ,ЯВЗ</a></li>
+								<li><a href="#">Ящики с трансф УКП, ЯТП, ОСО, ТСЗИ</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-7.png" alt="">
+								Изоляционные материалы
+							</div>
+							<ul>
+								<li><a href="#">Изолента</a></li>
+								<li><a href="#">Колпачки</a></li>
+								<li><a href="#">Паронит</a></li>
+								<li><a href="#">Трубка ХВТ</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-catalog-col">
+							<div class="header-catalog-top">
+								<img src="img/header-catalog-8.png" alt="">
+								Инструмент
+							</div>
+							<ul>
+								<li><a href="#">Bosch</a></li>
+								<li><a href="#">Delta</a></li>
+								<li><a href="#">Diamond Tools ( коронки,буры)</a></li>
+								<li><a href="#">Бастион</a></li>
+								<li><a href="#">Биты, насадки</a></li>
+								<li><a href="#">Бокорезы, плоскогубцы, клещи</a></li>
+								<li><a href="#">Буры</a></li>
+								<li><a href="#">Газонокосилки, Триммеры</a></li>
+								<li><a href="#">Диски, круги</a></li>
+								<li><a href="#">Знаки</a></li>
+							</ul>
+							<div class="header-catalog-more">
+								<a href="#" class="header-catalog-btn">Еще</a>
+								<ul>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+									<li><a href="#">Боксы, щитки, ящики</a></li>
+								</ul>
+							</div>
+						</div><!-- col -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-bg"></div>
+	<div class="menu">
+		<div class="menu-top">
+			<i class="hb-ico close-ico"></i>
+			<div class="menu-row">
+				<a href="#" class="menu-login"><i class="hb-ico user-blue-ico"></i><span>Вход</span></a>
+				<a href="#" class="menu-registration">Регистрация</a>
+			</div>
+			<div class="input-search">
+				<i class="hb-ico search-gray-ico"></i>
+				<input type="text" name="search" placeholder="Поиск по сайту">
+			</div>
+		</div>
+		<div class="menu-over">
+			<div class="menu-main">
+				<ul class="menu-actions">
+					<li><a href="#">
+						<span class="menu-ico"><i class="hb-ico basket-ico"></i><b>5</b></span>
+						<span class="menu-name">Корзина</span>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><i class="hb-ico chosen-ico"></i><b>5</b></span>
+						<span class="menu-name">Избранное</span>
+					</a></li>
+					<li><a href="#">
+						<span class="menu-ico"><i class="hb-ico comparison-ico"></i></span>
+						<span class="menu-name">Сравнение</span>
+					</a></li>
+				</ul>
+				<ul class="menu-list">
+					<li><a href="#" class="link-catalog">Каталог<i class="hb-ico arrow-blue-right"></i></a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Хиты продаж</a></li>
+					<li><a href="#" class="link-delivery">Оплата и доставка<i class="hb-ico arrow-right"></i></a></li>
+					<li><a href="#">Пункты Выдачи</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Вакансии</a></li>
+				</ul>
+				<div class="menu-block">
+					<a href="#" class="menu-link">Заказать звонок</a>
+					<ul>
+						<li><a href="tel:+73472859909">+7 (347) 285-99-09</a></li>
+						<li><a href="tel:+73472462120">+7 (347) 246-21-20</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-catalog">
+				<a href="#" class="back">Назад</a>
+				<span class="menu-tit">Каталог</span>
+				<ul>
+					<li><a href="#">Боксы, щитки, ящики</a></li>
+					<li><a href="#">Бытовая химия</a></li>
+					<li><a href="#">Изоляционные материалы</a></li>
+					<li><a href="#">Инструмент</a></li>
+					<li><a href="#">Кабеленесущие системы</a></li>
+					<li><a href="#">Кабель, провод</a></li>
+					<li><a href="#">Крепеж</a></li>
+					<li><a href="#">Металлоизделия, прокат</a></li>
+					<li><a href="#">Модульное оборудование</a></li>
+					<li><a href="#">Приборы учета и контроля</a></li>
+					<li><a href="#">Пускатели, контакторы, пакет выключатели</a></li>
+					<li><a href="#">Разъемы силовые</a></li>
+					<li><a href="#">Реле, датчики движения, таймеры</a></li>
+					<li><a href="#">Светотехника</a></li>
+					<li><a href="#">Силовые автоматы, рубильники, предохранители</a></li>
+					<li><a href="#">Удлинители, адаптеры</a></li>
+					<li><a href="#">Устройства подачи команд и сигналов</a></li>
+					<li><a href="#">Хозтовары</a></li>
+					<li><a href="#">Электроустановочные изделия</a></li>
+				</ul>
+			</div>
+			<div class="menu-delivery">
+				<a href="#" class="back">Назад</a>
+				<span class="menu-tit">Оплата и доставка</span>
+				<ul>
+					<li><a href="#">Самовывоз</a></li>
+					<li><a href="#">Курьер</a></li>
+					<li><a href="#">Служба доставки CDEK</a></li>
+					<li><a href="#">Служба доставки Деловые линии</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-img"><img src="img/menu.svg" alt=""></div>
+	</div>
+	<!-- end header -->
+	<!-- start cabinet -->
+	<section class="page cabinet">
+		<div class="wrapper">
+			<div class="page-top">
+				<h1 class="page-title">Обратная связь</h1>
+			</div>
+			<span class="cabinet-title">Свяжитесь с нами</span>
+			<div class="cabinet-form">
+				<form action="">
+					<div class="input-row">
+						<div class="input-label">Компания</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Введите название">
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-label">ИНН</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="Введите ИНН">
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-label">Ваш телефон</div>
+						<div class="input-block">
+							<div class="input-wrap">
+								<i class="hb-ico lang-ru"></i>
+								<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+							</div>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-label">Ваш E-mail</div>
+						<div class="input-block">
+							<input type="text" name="text" placeholder="example@gmail.com">
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-label">Сообщения</div>
+						<div class="input-block">
+							<textarea name="text" placeholder="Ваше сообщение"></textarea>
+						</div>
+					</div>
+					<div class="input-info">
+						<div class="checkbox">
+							<input type="checkbox">
+							<i class="checkbox-ico"></i>
+							<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+						</div>
+						<button class="primary-btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end cabinet -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-img"><img src="img/footer-img.svg" alt=""></div>
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-col">
+					<span class="footer-title">Меню сайта</span>
+					<ul class="footer-list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Пункты Выдачи</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<i class="hb-ico location-blue2-ico"></i>
+					<span class="footer-title">Мы находимся по адресу</span>
+					<p>г.Уфа, ул. Адм.Макарова, дом 18 оф.206</p>
+				</div><!-- col -->
+				<div class="footer-col">
+					<i class="hb-ico phone-blue-ico"></i>
+					<span class="footer-title">Обратная связь</span>
+					<ul class="footer-list">
+						<li><a href="tel:+73472859909">+7 (347) 285-99-09</a></li>
+						<li><a href="tel:+73472462120">+7 (347) 246-21-20</a></li>
+						<li><a href="tel:+73472762678">+7 (347) 276-26-78</a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-title">Мы в соцсетях</span>
+					<ul class="footer-social">
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+					</ul>
+				</div><!-- col -->
+				<div class="footer-col">
+					<span class="footer-subtitle">Закажите обратную связь и наш менеджер ответит на все ваши вопросы!</span>
+					<div class="footer-form">
+						<form action="">
+							<input type="text" name="text" placeholder="Номер телефона">
+							<div class="checkbox">
+								<input type="checkbox">
+								<i class="checkbox-ico"></i>
+								<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+							</div>
+							<button class="primary-btn">Отправить</button>
+						</form>
+					</div>
+				</div><!-- col -->
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-row">
+					<span class="footer-txt">Способы оплаты</span>
+					<ul class="footer-pay">
+						<li><img src="img/pay.png" alt=""></li>
+						<li><img src="img/mir.png" alt=""></li>
+						<li><img src="img/visa.png" alt=""></li>
+						<li><img src="img/card.png" alt=""></li>
+					</ul>
+				</div>
+				<a href="#" class="footer-link">Политика конфиденциальности</a>
+			</div>
+			<div class="footer-copy"><p>© 2022 Copyright Все права защищены</p></div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
