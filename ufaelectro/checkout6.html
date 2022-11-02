@@ -420,310 +420,248 @@
 		<div class="menu-img"><img src="img/menu.svg" alt=""></div>
 	</div>
 	<!-- end header -->
-	<!-- start delivery -->
-	<section class="page delivery">
+	<!-- start checkout -->
+	<section class="page checkout">
 		<div class="wrapper">
 			<div class="page-top">
-				<ul class="crumbs">
-					<li><a href="#">Главная</a></li>
-					<li>Оплата и доставка</li>
-				</ul>
-				<h1 class="page-title">Способы доставки товаров</h1>
+				<h1 class="page-title">Оформление заказа</h1>
+				<a href="#" class="page-link">Вернуться в корзину</a>
 			</div>
-			<div class="delivery-top">
-				<ul class="delivery-buttons">
-					<li><a href="#" class="active">Самовывоз</a></li>
-					<li><a href="#">Курьер</a></li>
-					<li><a href="#">Служба доставки CDEK</a></li>
-					<li><a href="#">Служба доставки Деловые линии</a></li>
-				</ul>
-				<div class="delivery-map map">
-					<div id="map" class="map-block"></div>
+			<div class="checkout-all">
+				<div class="checkout-content">
+					<div class="choice">
+						<span class="checkout-title">Выберите способ доставки</span>
+						<div class="choice-row">
+							<div class="choice-col">
+								<div class="choice-wrap">
+									<input type="radio" name="choice-1">
+									<div class="choice-card">
+										<i class="radio-ico"></i>
+										<div class="choice-top">
+											<div class="choice-ico"><img src="img/icons/choice-ico-1.svg" alt=""></div>
+											<span>Самовывоз</span>
+										</div>
+										<span class="choice-sub">15 пунктов выдачи в Уфе</span>
+										<span class="choice-txt">Бесплатно</span>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="choice-col">
+								<div class="choice-wrap">
+									<input type="radio" name="choice-1">
+									<div class="choice-card">
+										<i class="radio-ico"></i>
+										<div class="choice-top">
+											<div class="choice-ico"><img src="img/icons/choice-ico-2.svg" alt=""></div>
+											<span>Доставка курьером</span>
+										</div>
+										<span class="choice-txt">Бесплатно при заказе от 10 000 ₽</span>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="choice-col">
+								<div class="choice-wrap">
+									<input type="radio" name="choice-1" checked>
+									<div class="choice-card">
+										<i class="radio-ico"></i>
+										<div class="choice-top">
+											<div class="choice-ico"><img src="img/icons/choice-ico-3.svg" alt=""></div>
+											<span>Служба доставки</span>
+										</div>
+										<span class="choice-txt">Сумма рассчитывается при оформлении</span>
+									</div>
+								</div>
+							</div><!-- col -->
+						</div>
+					</div>
+					<div class="checkout-service">
+						<div class="choice">
+							<span class="checkout-title">Служба доставки и адрес пункта выдачи</span>
+							<div class="choice-row">
+								<div class="choice-col">
+									<div class="choice-wrap">
+										<input type="radio" name="choice-3" checked>
+										<div class="choice-card">
+											<i class="radio-ico"></i>
+											<div class="choice-logo"><img src="img/logo-1.png" alt=""></div>
+											<span class="choice-txt">Компания CDEK осуществляет транспортировку только малогабаритных товаров.</span>
+										</div>
+									</div>
+								</div><!-- col -->
+								<div class="choice-col">
+									<div class="choice-wrap">
+										<input type="radio" name="choice-3">
+										<div class="choice-card">
+											<i class="radio-ico"></i>
+											<div class="choice-logo"><img src="img/logo-2.png" alt=""></div>
+											<span class="choice-txt">Компания CDEK осуществляет транспортировку крупногабаритных товаров.</span>
+										</div>
+									</div>
+								</div><!-- col -->
+							</div>
+						</div>
+						<div class="checkout-service-map map">
+							<div id="map" class="map-block"></div>
+						</div>
+					</div>
+					<div class="checkout-form">
+						<div class="checkout-top">
+							<span class="checkout-title">Введите данные получателя</span>
+							<span class="checkout-txt">Я физическое лицо</span>
+						</div>
+						<div class="checkout-form-wrap">
+							<form action="">
+								<div class="input-row">
+									<div class="input-label">Компания</div>
+									<div class="input-block">
+										<input type="text" name="text" placeholder="Введите название компании">
+									</div>
+								</div>
+								<div class="input-row">
+									<div class="input-label">ИНН</div>
+									<div class="input-block">
+										<input type="text" name="text" placeholder="Введите ИНН">
+									</div>
+								</div>
+								<div class="input-row">
+									<div class="input-label">Ваш телефон</div>
+									<div class="input-block">
+										<div class="input-wrap">
+											<i class="hb-ico lang-ru"></i>
+											<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+										</div>
+									</div>
+								</div>
+								<div class="input-row">
+									<div class="input-label">Ваш E-mail</div>
+									<div class="input-block">
+										<input type="text" name="text" placeholder="example@gmail.com">
+									</div>
+								</div>
+								<div class="input-info">
+									<div class="checkbox">
+										<input type="checkbox">
+										<i class="checkbox-ico"></i>
+										<p>Я хочу получать рассылку об акциях и скидках</p>
+									</div>
+								</div>
+								<div class="input-row input-row-code">
+									<div class="input-label">Промокод</div>
+									<div class="input-block">
+										<div class="input-code">
+											<input type="text" name="text" placeholder="Промокод">
+											<a href="#" class="primary-btn">Применить</a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="choice choice-second">
+						<span class="checkout-title">Выбрать способ оплаты</span>
+						<div class="choice-row">
+							<div class="choice-col">
+								<div class="choice-wrap">
+									<input type="radio" name="choice-2" checked>
+									<div class="choice-card">
+										<i class="radio-ico"></i>
+										<div class="choice-top">
+											<div class="choice-ico"><img src="img/icons/choice-ico-4.svg" alt=""></div>
+											<span>Картой онлайн</span>
+										</div>
+										<ul class="choice-pay">
+											<li><img src="img/mir.png" alt=""></li>
+											<li><img src="img/visa.png" alt=""></li>
+											<li><img src="img/card.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- col -->
+							<div class="choice-col">
+								<div class="choice-wrap">
+									<input type="radio" name="choice-2">
+									<div class="choice-card">
+										<i class="radio-ico"></i>
+										<div class="choice-top">
+											<div class="choice-ico"><img src="img/icons/choice-ico-5.svg" alt=""></div>
+											<span>Наличными при получении</span>
+										</div>
+										<span class="choice-txt">Оплата наличными в любом пункте выдачи</span>
+									</div>
+								</div>
+							</div><!-- col -->
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="delivery-content">
-				<span class="delivery-title">Оплата заказа</span>
-				<div class="delivery-row">
-					<div class="delivery-col">
-						<div class="delivery-wrap">
-							<div class="delivery-ico"><img src="img/icons/choice-ico-4.svg" alt=""></div>
-							<span class="delivery-sub">Банковской картой </span>
-							<p>Оплата банковской картой Visa/Mastercard/ Мир в любом пункте выдачи</p>
+				<div class="checkout-sidebar">
+					<div class="checkout-sidebar-wrap">
+						<span class="checkout-sidebar-title">Заказ</span>
+						<div class="checkout-sidebar-items">
+							<div class="checkout-sidebar-item">
+								<span class="checkout-sidebar-name"><a href="#">Прожектор светодиодный 20Вт 4000К 1600Лм</a></span>
+								<div class="checkout-sidebar-row">
+									<span>15 шт</span>
+									<b>5 760 ₽ </b>
+								</div>
+							</div><!-- item -->
+							<div class="checkout-sidebar-item">
+								<span class="checkout-sidebar-name"><a href="#">Прожектор светодиодный 20Вт 4000К 1600Лм</a></span>
+								<div class="checkout-sidebar-row">
+									<span>15 шт</span>
+									<b>5 760 ₽ </b>
+								</div>
+							</div><!-- item -->
+							<div class="checkout-sidebar-item">
+								<span class="checkout-sidebar-name"><a href="#">Прожектор светодиодный 20Вт 4000К 1600Лм</a></span>
+								<div class="checkout-sidebar-row">
+									<span>15 шт</span>
+									<b>5 760 ₽ </b>
+								</div>
+							</div><!-- item -->
+							<div class="checkout-sidebar-item">
+								<span class="checkout-sidebar-name"><a href="#">Прожектор светодиодный 20Вт 4000К 1600Лм</a></span>
+								<div class="checkout-sidebar-row">
+									<span>15 шт</span>
+									<b>5 760 ₽ </b>
+								</div>
+							</div><!-- item -->
+							<div class="checkout-sidebar-item">
+								<span class="checkout-sidebar-name"><a href="#">Прожектор светодиодный 20Вт 4000К 1600Лм</a></span>
+								<div class="checkout-sidebar-row">
+									<span>15 шт</span>
+									<b>5 760 ₽ </b>
+								</div>
+							</div><!-- item -->
 						</div>
-					</div><!-- col -->
-					<div class="delivery-col">
-						<div class="delivery-wrap">
-							<div class="delivery-ico"><img src="img/icons/choice-ico-5.svg" alt=""></div>
-							<span class="delivery-sub">Наличными при получении</span>
-							<p>Оплата наличными в любом пункте выдачи</p>
+						<div class="checkout-sidebar-block">
+							<ul>
+								<li><span>5 товаров</span><span>12 457 ₽</span></li>
+								<li><span>Скидка</span><span>- 983 ₽</span></li>
+								<li><span>Доставка</span><span>250 ₽</span></li>
+								<li><b>Итого</b><b>11 474 ₽</b></li>
+							</ul>
+							<a href="#" class="primary-btn disabled">Оформить заказ</a>
+							<div class="checkbox">
+								<input type="checkbox">
+								<i class="checkbox-ico"></i>
+								<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+							</div>
 						</div>
-					</div><!-- col -->
-					<div class="delivery-col">
-						<div class="delivery-wrap">
-							<div class="delivery-ico"><img src="img/icons/choice-ico-6.svg" alt=""></div>
-							<span class="delivery-sub">Безналичный расчет</span>
-							<p>Безналичный расчет доступен только для юр. лиц</p>
-						</div>
-					</div><!-- col -->
-				</div>
-				<div class="delivery-table">
-					<div class="delivery-table-row delivery-table-top">
-						<div class="delivery-table-col">
-							<div class="delivery-table-tit"><img src="img/icons/ico-4.svg" alt="">Адрес</div>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div class="delivery-table-tit"><img src="img/icons/ico-5.svg" alt="">Режим работы</div>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div class="delivery-table-tit"><img src="img/icons/ico-6.svg" alt="">Контакты</div>
-						</div><!-- col -->
 					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>
-								г. Уфа, ул. Пр. Октября 95
-								<span class="prompt">
-									<span class="prompt-top"></span>
-									<span class="prompt-wrap">
-										<span class="prompt-title">Скидки ежедневно 10% с 16:00 до18.00 часов.</span>
-										<span class="prompt-txt"><i>*</i>При покупке от 500₽</span>
-										<span class="prompt-txt"><i>*</i>Акции не распространяются на товары с желтыми ценниками</span>
-									</span>
-								</span>
-							</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
-					</div>
-					<div class="delivery-table-row">
-						<div class="delivery-table-col">
-							<p>г. Уфа, ул. Пр. Октября 95</p>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<ul class="delivery-table-list delivery-table-list-second">
-								<li><b>Пн-Пт </b>9:00-19:00</li>
-								<li><b>Сб </b>9:00-16:00</li>
-							</ul>
-							<span class="delivery-table-status"><b>Открыто</b> До закрытия осталость 4ч</span>
-						</div><!-- col -->
-						<div class="delivery-table-col">
-							<div>
-								<ul class="delivery-table-list">
-									<li><a href="#">+7 (950) 93-35-888</a>,</li>
-									<li><a href="#">+7 (347) 235-76-42</a></li>
-								</ul>
-								<span class="delivery-table-mail"><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></span>
-							</div>
-						</div><!-- col -->
+					<div class="checkout-sidebar-bottom">
+						<span class="checkout-sidebar-subtitle">Мы принимаем к оплате</span>
+						<ul class="checkout-sidebar-pay">
+							<li><img src="img/pay.png" alt=""></li>
+							<li><img src="img/mir.png" alt=""></li>
+							<li><img src="img/visa.png" alt=""></li>
+							<li><img src="img/card.png" alt=""></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end delivery -->
+	<!-- end checkout -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="footer-img"><img src="img/footer-img.svg" alt=""></div>
