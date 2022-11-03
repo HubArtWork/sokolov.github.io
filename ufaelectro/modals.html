@@ -22,38 +22,340 @@
 <body class="st">
 	<div class="sitemap">
 		<div class="wrapper">
-			<h2 class="sitemap-title">Основные страницы</h2>
+			<h2 class="sitemap-title">Модалки</h2>
 			<ul class="sitemap-list">
-				<li>1.<a href="http://hubartwork.github.io/ufaelectro/" target="_blank">Главная</a></li>
-				<li>2.<a href="http://hubartwork.github.io/ufaelectro/catalog.html" target="_blank">Каталог</a></li>
-				<li>3.<a href="http://hubartwork.github.io/ufaelectro/delivery.html" target="_blank">Доставка</a></li>
-				<li>4.<a href="http://hubartwork.github.io/ufaelectro/delivery2.html" target="_blank">Доставка 2</a></li>
-				<li>5.<a href="http://hubartwork.github.io/ufaelectro/delivery3.html" target="_blank">Доставка 3</a></li>
-				<li>6.<a href="http://hubartwork.github.io/ufaelectro/delivery4.html" target="_blank">Доставка 4</a></li>
-				<li>7.<a href="http://hubartwork.github.io/ufaelectro/blog.html" target="_blank">Блог</a></li>
-				<li>8.<a href="http://hubartwork.github.io/ufaelectro/vacancy.html" target="_blank">Вакансии</a></li>
-				<li>9.<a href="http://hubartwork.github.io/ufaelectro/stock.html" target="_blank">Актуальные акции</a></li>
-				<li>10.<a href="http://hubartwork.github.io/ufaelectro/article.html" target="_blank">Статья</a></li>
-				<li>11.<a href="http://hubartwork.github.io/ufaelectro/cabinet.html" target="_blank">Личный кабинет</a></li>
-				<li>12.<a href="http://hubartwork.github.io/ufaelectro/cabinet2.html" target="_blank">Личный кабинет 2</a></li>
-				<li>13.<a href="http://hubartwork.github.io/ufaelectro/cabinet3.html" target="_blank">Личный кабинет 3</a></li>
-				<li>14.<a href="http://hubartwork.github.io/ufaelectro/cabinet4.html" target="_blank">Личный кабинет 4</a></li>
-				<li>15.<a href="http://hubartwork.github.io/ufaelectro/cabinet5.html" target="_blank">Личный кабинет 5</a></li>
-				<li>16.<a href="http://hubartwork.github.io/ufaelectro/cabinet6.html" target="_blank">Личный кабинет 6</a></li>
-				<li>17.<a href="http://hubartwork.github.io/ufaelectro/cabinet7.html" target="_blank">Личный кабинет 7</a></li>
-				<li>18.<a href="http://hubartwork.github.io/ufaelectro/checkout.html" target="_blank">Оформление</a></li>
-				<li>19.<a href="http://hubartwork.github.io/ufaelectro/checkout2.html" target="_blank">Оформление 2</a></li>
-				<li>20.<a href="http://hubartwork.github.io/ufaelectro/checkout3.html" target="_blank">Оформление 3</a></li>
-				<li>21.<a href="http://hubartwork.github.io/ufaelectro/checkout4.html" target="_blank">Оформление 4</a></li>
-				<li>22.<a href="http://hubartwork.github.io/ufaelectro/checkout5.html" target="_blank">Оформление 5</a></li>
-				<li>23.<a href="http://hubartwork.github.io/ufaelectro/checkout6.html" target="_blank">Оформление 6</a></li>
-				<li>24.<a href="http://hubartwork.github.io/ufaelectro/catalog2.html" target="_blank">Каталог 2</a></li>
-				<li>25.<a href="http://hubartwork.github.io/ufaelectro/card.html" target="_blank">Карточка товара</a></li>
-				<li>26.<a href="http://hubartwork.github.io/ufaelectro/basket.html" target="_blank">Корзина</a></li>
-				<li>27.<a href="http://hubartwork.github.io/ufaelectro/favorites.html" target="_blank">Избранное</a></li>
-				<li>28.<a href="http://hubartwork.github.io/ufaelectro/comparison.html" target="_blank">Сравнение</a></li>
-				<li>29.<a href="http://hubartwork.github.io/ufaelectro/modals.html" target="_blank">Модалки</a></li>
+				<li>1.<a data-fancybox data-src="#modal-1" href="javascript:;" class="main-btn main-btn-second">modal-1</a></li>
+				<li>2.<a data-fancybox data-src="#modal-2" href="javascript:;" class="main-btn main-btn-second">modal-2</a></li>
+				<li>3.<a data-fancybox data-src="#modal-3" href="javascript:;" class="main-btn main-btn-second">modal-3</a></li>
+				<li>4.<a data-fancybox data-src="#modal-4" href="javascript:;" class="main-btn main-btn-second">modal-4</a></li>
+				<li>5.<a data-fancybox data-src="#modal-5" href="javascript:;" class="main-btn main-btn-second">modal-5</a></li>
+				<li>6.<a data-fancybox data-src="#modal-6" href="javascript:;" class="main-btn main-btn-second">modal-6</a></li>
+				<li>7.<a data-fancybox data-src="#modal-7" href="javascript:;" class="main-btn main-btn-second">modal-7</a></li>
+				<li>8.<a data-fancybox data-src="#modal-8" href="javascript:;" class="main-btn main-btn-second">modal-8</a></li>
+				<li>9.<a data-fancybox data-src="#modal-9" href="javascript:;" class="main-btn main-btn-second">modal-9</a></li>
+				<li>10.<a data-fancybox data-src="#modal-10" href="javascript:;" class="main-btn main-btn-second">modal-10</a></li>
 			</ul>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-1" class="modal">
+		<div class="modal-wrap">
+			<span class="modal-title">Заказать звонок</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Ваше имя <i>* </i></label>
+					<input type="text" name="text" placeholder="Введите ваше Ф.И.О.">
+				</div>
+				<div class="input-block">
+					<label for="">Ваш телефон <i>* </i></label>
+					<div class="input-wrap">
+						<i class="hb-ico lang-ru"></i>
+						<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="">Время звонка (Мск)</label>
+					<input type="text" name="text" placeholder="Введите желаемое время">
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<i class="checkbox-ico"></i>
+					<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+				<div class="modal-button">
+					<button class="primary-btn">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-2" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal-1.svg" alt=""></div>
+			<span class="modal-title">Регистрация</span>
+			<form action="">
+				<div class="input-block">
+					<div class="modal-drop">
+						<div class="modal-drop-top">
+							<i class="hb-ico user-ico"></i>
+							<span class="modal-drop-name">Я физическое лицо</span>
+						</div>
+						<ul>
+							<li>Я юридическое лицо</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-bottom">
+					<button class="primary-btn">Продолжить</button>
+					<p>Не получили код? <a href="#">Отправить код</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-3" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal-1.svg" alt=""></div>
+			<span class="modal-title">Регистрация</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Название компании</label>
+					<input type="text" name="text" placeholder="Название">
+				</div>
+				<div class="input-block">
+					<label for="">ИНН</label>
+					<input type="text" name="text" placeholder="Введите ИНН">
+				</div>
+				<div class="input-block">
+					<label for="">Номер телефона</label>
+					<div class="input-wrap">
+						<i class="hb-ico lang-ru"></i>
+						<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+					</div>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<i class="checkbox-ico"></i>
+					<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+				<div class="modal-bottom">
+					<button class="primary-btn">Продолжить</button>
+					<p>Уже есть аккаунт? <a href="#">Войти</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-4" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal-1.svg" alt=""></div>
+			<span class="modal-title">Регистрация</span>
+			<form action="">
+				<div class="inputs-row">
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Ваше имя</label>
+							<input type="text" name="text" placeholder="Имя">
+						</div>
+					</div>
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Ваша фамилия</label>
+							<input type="text" name="text" placeholder="Фамилия">
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="">Номер телефона</label>
+					<div class="input-wrap">
+						<i class="hb-ico lang-ru"></i>
+						<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+					</div>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<i class="checkbox-ico"></i>
+					<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+				<div class="modal-bottom">
+					<button class="primary-btn">Продолжить</button>
+					<p>Уже есть аккаунт? <a href="#">Войти</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-5" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal-1.svg" alt=""></div>
+			<span class="modal-title">Регистрация</span>
+			<form action="">
+				<div class="inputs-row">
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Ваше имя</label>
+							<input type="text" name="text" placeholder="Имя">
+						</div>
+					</div>
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Ваша фамилия</label>
+							<input type="text" name="text" placeholder="Фамилия">
+						</div>
+					</div>
+				</div>
+				<div class="input-block input-error">
+					<label for="">Номер телефона</label>
+					<div class="input-wrap">
+						<i class="hb-ico lang-ru"></i>
+						<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+					</div>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<i class="checkbox-ico"></i>
+					<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+				<div class="modal-bottom">
+					<button class="primary-btn">Продолжить</button>
+					<p>Уже есть аккаунт? <a href="#">Войти</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-6" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal-1.svg" alt=""></div>
+			<div class="input-message error-message">Не удалось отправить код регистрации.</div>
+			<span class="modal-title">Регистрация</span>
+			<form action="">
+				<div class="inputs-row">
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Ваше имя</label>
+							<input type="text" name="text" placeholder="Имя">
+						</div>
+					</div>
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Ваша фамилия</label>
+							<input type="text" name="text" placeholder="Фамилия">
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<label for="">Номер телефона</label>
+					<div class="input-wrap">
+						<i class="hb-ico lang-ru"></i>
+						<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+					</div>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox">
+					<i class="checkbox-ico"></i>
+					<p>Я подтверждаю свое согласие с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+				<div class="modal-bottom">
+					<button class="primary-btn">Продолжить</button>
+					<p>Уже есть аккаунт? <a href="#">Войти</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-7" class="modal modal-form modal-second">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal-1.svg" alt=""></div>
+			<div class="input-message">На ваш номер было выслано СМС с кодом регистрации.</div>
+			<span class="modal-title">Регистрация</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Введите код</label>
+					<div class="input-wrap">
+						<i class="hb-ico lock-ico"></i>
+						<input type="text" name="text" placeholder="Введите код авторизации из СМС">
+					</div>
+				</div>
+				<div class="modal-bottom">
+					<button class="primary-btn">Зарегистрироваться</button>
+					<p>Не получили код? <a href="#">Отправить код</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-8" class="modal modal-form modal-successful">
+		<div class="modal-successful-wrap">
+			<div class="modal-wrap">
+				<div class="modal-ico"><img src="img/modal-2.svg" alt=""></div>
+				<span class="modal-title">Регистрация прошла успешно</span>
+				<span class="modal-txt">Вы можете закрыть это окно</span>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-9" class="modal modal-form modal-second">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/modal-3.svg" alt=""></div>
+			<span class="modal-title">Вход в личный кабинет</span>
+			<form action="">
+				<div class="input-block">
+					<label for="">Номер телефона</label>
+					<div class="input-wrap">
+						<i class="hb-ico lang-ru"></i>
+						<input type="text" name="text" placeholder="+7 (999) 999-99-99">
+					</div>
+				</div>
+				<div class="modal-bottom">
+					<button class="primary-btn">Получить код</button>
+					<p>Вы еще не зарегистрированы? <a href="#">Зарегистрироваться</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-10" class="modal modal-points">
+		<div class="modal-wrap">
+			<span class="modal-tit">Пункты выдачи заказов - Уфа</span>
+			<div class="modal-row">
+				<div class="modal-map"><div class="map"></div></div>
+				<div class="modal-descr">
+					<span class="modal-sub">Выбор пункта выдачи</span>
+					<span class="modal-text">Самовывоз доступен только на территории города Уфы.</span>
+					<div class="modal-block">
+						<span class="modal-block-top">Адреса:</span>
+						<div class="modal-block-over">
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-item">
+								<b>г. Уфа, ул. Пр. Октября 95</b>
+								<span>Узнать часы работы</span>
+							</div>
+							<div class="modal-schedule">
+								<b>График работы:</b>
+								<ul>
+									<li><span>Пн: </span>9:00-19:00</li>
+									<li><span>Вт: </span>9:00-19:00</li>
+									<li><span>Ср: </span>9:00-19:00</li>
+									<li><span>Чт: </span>9:00-19:00</li>
+									<li><span>Пт: </span>9:00-19:00</li>
+									<li><span>Сб: </span>9:00-16:00 </li>
+									<li><span>Вс: </span>Выходной</li>
+								</ul>
+							</div>
+							<div class="modal-contacts">
+								<span>Контакты:</span>
+								<ul>
+									<li><a href="#">+7 (950) 93-35-888</a></li>
+									<li><a href="#">+7 (347) 235-76-42</a></li>
+									<li><b>E-mail: </b><a href="#">Prospect@besmufa.ru</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
