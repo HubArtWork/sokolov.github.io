@@ -352,7 +352,8 @@ body {
   min-width: 480px; }
 
 .body-all {
-  width: 480px; }
+  width: 480px;
+  margin: 0 auto; }
 
 img {
   max-width: 100%;
