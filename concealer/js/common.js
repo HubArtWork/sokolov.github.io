@@ -17,11 +17,4 @@ $(document).ready(function(){
     },
   });
 
-  $('.swatch').click(function() {
-    $('.swatch').removeClass('active');
-    // $(this).find('.tooltiptext ').fadeIn(500).delay(1000).fadeOut(400);
-    $(this).addClass('active');
-    comment = $(this).attr("data-value");
-  });
-
 });
