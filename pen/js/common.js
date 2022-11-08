@@ -8,22 +8,20 @@ $(document).ready(function(){
     $('html, body').animate({scrollTop : blockTop},900);
   });
 
-  var swiper2 = new Swiper('.main-slider', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    pagination: {
+  var swiper = new Swiper('.testimonials-slider', {
+    slidesPerView: 1,
+    spaceBetween: 14,
+     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
   });
 
-  var swiper = new Swiper('.testimonials-slider', {
+  var swiper2 = new Swiper('.main-slider', {
     slidesPerView: 1,
     spaceBetween: 14,
     autoHeight: true,
-    pagination: {
+     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
@@ -35,5 +33,4 @@ $(document).ready(function(){
     var attr = +($(this).attr('data-cc')) - 1;
     swiper2.slideTo(attr);
   });
-
 });
