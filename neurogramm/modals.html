@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="bt">
+		<div class="wrapper">
+			<a data-fancybox data-src="#modal-form-1" href="javascript:;" class="primary-btn">modal-1</a>
+			<br>
+			<br>
+			<a data-fancybox data-src="#modal-form-2" href="javascript:;" class="primary-btn">modal-2</a>
+			<br>
+			<br>
+			<a data-fancybox data-src="#modal-form-3" href="javascript:;" class="primary-btn">modal-3 (errors and success)</a>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-form-1" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-icon"><img src="img/locked.svg" alt=""></div>
+				<span class="modal-title">Включение двухфакторной авторизации</span>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Назначить пароль">
+					<span class="input-txt">Внимательно относитесь к созданию пароля.</span>
+				</div>
+				<div class="input-block">
+					<input type="password" name="password" placeholder="Повторите пароль">
+				</div>
+				<div class="input-block">
+					<input type="password" name="password" placeholder="Подтвердите пароль еще раз">
+				</div>
+				<div class="modal-btn">
+					<button class="primary-btn">Сохранить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-form-2" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-icon"><img src="img/mobile.svg" alt=""></div>
+				<span class="modal-title">Смена номера телефона</span>
+				<span class="modal-subtitle"><b>Ваш текущий номер:</b> +7 (800)-800-80-80 </span>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Введите код подтверждения">
+					<a href="#" class="input-link">Отправить код</a>
+				</div>
+				<div class="modal-btn">
+					<button class="primary-btn">Сохранить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-form-3" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-icon"><img src="img/mobile.svg" alt=""></div>
+				<span class="modal-title">Смена номера телефона</span>
+				<span class="modal-subtitle"><b>Ваш текущий номер:</b> +7 (800)-800-80-80 </span>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Введите код подтверждения">
+					<span class="input-info">Error message</span>
+				</div>
+				<div class="input-block input-error"><!-- add class input-error -->
+					<input type="text" name="text" placeholder="Введите код подтверждения">
+					<span class="input-info">Error message</span>
+				</div>
+				<div class="input-block input-success"><!-- add class input-success -->
+					<input type="text" name="text" placeholder="Введите код подтверждения">
+					<span class="input-info">Success message</span>
+				</div>
+				<div class="modal-btn">
+					<button class="primary-btn">Сохранить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
