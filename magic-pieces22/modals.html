@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">Основные страницы</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-1" href="javascript:;">Заказ принят</a></li>
+				<li>2.<a data-fancybox data-src="#modal-2" href="javascript:;">Письмо отправлено!</a></li>
+				<li>3.<a data-fancybox data-src="#modal-3" href="javascript:;">Оставить отзыв</a></li>
+				<li>4.<a data-fancybox data-src="#modal-4" href="javascript:;">Восстановление пароля</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-1" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/ico-3.svg" alt=""></div>
+			<h2 class="modal-title">Заказ принят</h2>
+			<p>Мы отправим вам письмо с информацией о заказе и данными для отслеживания на Вашу почту - <b>mymail@gmail.com</b></p>
+			<a href="#" class="primary-btn close-button">Закрыть</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-2" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/ico-4.svg" alt=""></div>
+			<h2 class="modal-title">Письмо отправлено!</h2>
+			<p>Мы ответим так быстро, как только сможем.</p>
+			<a href="#" class="primary-btn close-button">Закрыть</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-3" class="modal modal-big">
+		<div class="modal-wrap">
+			<h2 class="modal-title">Оставить отзыв</h2>
+			<p>Мы всегда рады услышать ваше мнение!</p>
+			<form action="">
+				<div class="inputs-row">
+					<div class="inputs-col inputs-col-big">
+						<div class="input-block">
+							<label for="">Ваше имя<span>*</span></label>
+							<input type="text" name="text" placeholder="Введите Ваше имя">
+						</div>
+					</div>
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Введите электронную почту<span>*</span></label>
+							<input type="text" name="text" placeholder="Введите Вашу электронную почту">
+						</div>
+					</div>
+					<div class="inputs-col">
+						<div class="input-block">
+							<label for="">Имя приобретенного артефакта</label>
+							<input type="text" name="text" placeholder="Имя артефакта">
+						</div>
+					</div>
+					<div class="inputs-col inputs-col-big">
+						<div class="input-block">
+							<label for="">Ваш отзыв<span>*</span></label>
+							<textarea name="text" placeholder="Что Вы хотите нам сказать?"></textarea>
+						</div>
+					</div>
+				</div>
+				<button class="primary-btn">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-4" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-ico"><img src="img/ico-5.svg" alt=""></div>
+			<h2 class="modal-title modal-title-small">Восстановление пароля</h2>
+			<p>Мы отправили инстукцию для смены пароля на адрес электронной <b>почты@email</b></p>
+			<a href="#" class="primary-btn">Войти в аккаунт</a>
+			<a href="#" class="modal-link close-button">Закрыть </a>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
