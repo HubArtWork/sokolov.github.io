@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">Все модалки</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-authorization" href="javascript:;">Авторизация</a></li>
+				<li>2.<a data-fancybox data-src="#modal-registration" href="javascript:;">Регистрация</a></li>
+				<li>3.<a data-fancybox data-src="#modal-registration2" href="javascript:;">Регистрация 2</a></li>
+				<li>4.<a data-fancybox data-src="#modal-registration3" href="javascript:;">Регистрация 3</a></li>
+				<li>5.<a data-fancybox data-src="#modal-registration4" href="javascript:;">Регистрация 4</a></li>
+				<li>6.<a data-fancybox data-src="#modal-card" href="javascript:;">СКИДКИ NIKE 40%</a></li>
+				<li>7.<a data-fancybox data-src="#modal-education" href="javascript:;">Обучение</a></li>
+				<li>8.<a data-fancybox data-src="#modal-certificate" href="javascript:;">Сертификатная карта</a></li>
+				<li>9.<a data-fancybox data-src="#modal-basket" href="javascript:;">Корзина заполнение данных</a></li>
+				<li>10.<a data-fancybox data-src="#modal-ticket" href="javascript:;">Тикет, создание</a></li>
+				<li>11.<a data-fancybox data-src="#modal-add" href="javascript:;">Добавить в корзину</a></li>
+				<li>12.<a data-fancybox data-src="#modal-track" href="javascript:;">Мои заказы (Отследить заказ)</a></li>
+				<li>13.<a data-fancybox data-src="#modal-compilation" href="javascript:;">Подборка для вас</a></li>
+				<li>14.<a data-fancybox data-src="#modal-product" href="javascript:;">Добавление товара 2</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-authorization" class="modal">
+		<h2 class="modal-title">Авторизация</h2>
+		<form action="">
+			<div class="input-block input-block-ico">
+				<i class="hb-ico tel-ico"></i>
+				<input type="text" name="text" placeholder="Ведите номер телефона">
+			</div>
+			<div class="input-block input-block-ico">
+				<i class="hb-ico password-ico"></i>
+				<input type="password" name="password" placeholder="Ведите пароль">
+			</div>
+			<div class="modal-forgot">
+				<div class="checkbox">
+					<input type="checkbox">
+					<i class="checkbox-ico"></i>
+					<p>Запомнить меня</p>
+				</div>
+				<a href="#" class="modal-link">Забыли пароль?</a>
+			</div>
+			<div class="modal-btns">
+				<button class="primary-btn">Авторизоваться</button>
+				<a href="#" class="border-btn">Создать аккаунт</a>
+			</div>
+		</form>
+	</div>
+	<div style="display: none;" id="modal-registration" class="modal">
+		<h2 class="modal-title">Регистрация</h2>
+		<form action="">
+			<div class="input-block input-block-ico">
+				<i class="hb-ico tel-ico"></i>
+				<input type="text" name="text" placeholder="Ведите номер телефона">
+			</div>
+			<div class="modal-registration-bottom">
+				<button class="primary-btn">Отправить код</button>
+				<a href="#" class="border-btn modal-close">Вернутся</a>
+			</div>
+		</form>
+	</div>
+	<div style="display: none;" id="modal-registration2" class="modal">
+		<h2 class="modal-title">Регистрация</h2>
+		<form action="">
+			<div class="input-block">
+				<input type="text" name="text" placeholder="Ведите 6-ти значный код">
+			</div>
+			<div class="modal-registration-bottom">
+				<button class="primary-btn">Подтвердить</button>
+				<div class="modal-registration-time">Отправить код повторно через 1:25</div>
+				<a href="#" class="border-btn modal-close">Вернутся</a>
+			</div>
+		</form>
+	</div>
+	<div style="display: none;" id="modal-registration3" class="modal">
+		<h2 class="modal-title">Регистрация</h2>
+		<form action="">
+			<div class="input-block">
+				<input type="text" name="text" placeholder="Имя">
+			</div>
+			<div class="input-block">
+				<input type="text" name="text" placeholder="Фамилия">
+			</div>
+			<div class="input-block">
+				<input type="password" name="password" placeholder="Пароль">
+			</div>
+			<div class="input-block">
+				<input type="password" name="password" placeholder="Повторите пароль">
+			</div>
+			<div class="checkbox">
+				<input type="checkbox">
+				<i class="checkbox-ico"></i>
+				<p>я ознакомился с правилами конфиденциальности сайта</p>
+			</div>
+			<div class="modal-buttons">
+				<button class="primary-btn">Закончить регистрацию</button>
+				<a href="#" class="border-btn modal-close">Вернутся</a>
+			</div>
+		</form>
+	</div>
+	<div style="display: none;" id="modal-registration4" class="modal">
+		<h2 class="modal-title">Регистрация прошла успешно</h2>
+		<div class="modal-registration-img">
+			<img src="img/modal-4.svg" alt="">
+		</div>
+	</div>
+	<div style="display: none;" id="modal-card" class="modal modal-card">
+		<div class="modal-card-img"><img src="img/modal-1.webp" alt=""></div>
+		<div class="modal-card-content">
+			<h2 class="modal-card-title">СКИДКИ NIKE 40%</h2>
+			<p>Сейчас у компании nike можно получить огромные скидки в размере 40%</p>
+			<div class="modal-card-buttons">
+				<a href="#" class="modal-link">Нет, спасибо</a>
+				<a href="#" class="primary-btn">Посмотреть</a>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-education" class="modal modal-education">
+		<div class="modal-education-step active">
+			<div class="modal-education-info">
+				<span class="modal-education-sub">ОБУЧЕНИЕ</span>
+				<h2 class="modal-education-title">Хотите ли вы пройти обучение по покупке вещей на сайте?</h2>
+				<div class="modal-education-buttons">
+					<a href="#" class="primary-btn modal-next">Пройти обучение</a>
+					<a href="#" class="modal-link modal-close">Закрыть окно обучения</a>
+				</div>
+			</div>
+			<div class="modal-education-img"><img src="img/modal-3.svg" alt=""></div>
+		</div>
+		<div class="modal-education-step">
+			<div class="modal-education-info">
+				<span class="modal-education-sub">ОБУЧЕНИЕ</span>
+				<span class="modal-education-st">1 шаг из 5</span>
+				<h2 class="modal-education-title">Выберите бренд на нашем сервисе</h2>
+				<div class="modal-education-buttons">
+					<a href="#" class="primary-btn modal-next">Продолжить</a>
+					<a href="#" class="modal-link modal-close">Закрыть окно обучения</a>
+				</div>
+			</div>
+			<div class="modal-education-img"><img src="img/modal-5.svg" alt=""></div>
+		</div>
+		<div class="modal-education-step">
+			<div class="modal-education-info">
+				<span class="modal-education-sub">ОБУЧЕНИЕ</span>
+				<span class="modal-education-st">2 шаг из 5</span>
+				<h2 class="modal-education-title">Перейдите на сайт производителя</h2>
+				<div class="modal-education-buttons">
+					<a href="#" class="primary-btn modal-next">Продолжить</a>
+					<a href="#" class="modal-link modal-close">Закрыть окно обучения</a>
+				</div>
+			</div>
+			<div class="modal-education-img"><img src="img/modal-5.svg" alt=""></div>
+		</div>
+		<div class="modal-education-step">
+			<div class="modal-education-info">
+				<span class="modal-education-sub">ОБУЧЕНИЕ</span>
+				<span class="modal-education-st">3 шаг из 5</span>
+				<h2 class="modal-education-title">Выберите товар и скопируйте ссылку на товар</h2>
+				<div class="modal-education-buttons">
+					<a href="#" class="primary-btn modal-next">Продолжить</a>
+					<a href="#" class="modal-link modal-close">Закрыть окно обучения</a>
+				</div>
+			</div>
+			<div class="modal-education-img"><img src="img/modal-5.svg" alt=""></div>
+		</div>
+		<div class="modal-education-step">
+			<div class="modal-education-info">
+				<span class="modal-education-sub">ОБУЧЕНИЕ</span>
+				<span class="modal-education-st">4 шаг из 5</span>
+				<h2 class="modal-education-title">Вернитесь на наш сервис нажмите кнопку купить и вставьте ссылку</h2>
+				<div class="modal-education-buttons">
+					<a href="#" class="primary-btn modal-next">Продолжить</a>
+					<a href="#" class="modal-link modal-close">Закрыть окно обучения</a>
+				</div>
+			</div>
+			<div class="modal-education-img"><img src="img/modal-5.svg" alt=""></div>
+		</div>
+		<div class="modal-education-step">
+			<div class="modal-education-info">
+				<span class="modal-education-sub">ОБУЧЕНИЕ</span>
+				<span class="modal-education-st">5 шаг из 5</span>
+				<h2 class="modal-education-title">Оформите заказ.</h2>
+				<div class="modal-education-buttons">
+					<a href="#" class="primary-btn modal-close">Закрыть окно обучения</a>
+				</div>
+			</div>
+			<div class="modal-education-img"><img src="img/modal-5.svg" alt=""></div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-certificate" class="modal modal-certificate">
+		<div class="allTabs">
+			<ul class="tab-list">
+				<li><a href="#md-tab-1" class="active">Интернет карта</a></li>
+				<li><a href="#md-tab-2">Пластиковая карта</a></li>
+			</ul>
+			<div class="tab tab-active" id="md-tab-1">
+				<form action="">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Введите имя">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Введите адрес электронной почты">
+					</div>
+					<button class="primary-btn">Отправить</button>
+				</form>
+			</div>
+			<div class="tab" id="md-tab-2">
+				<form action="">
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Введите имя">
+					</div>
+					<div class="input-block">
+						<input type="text" name="text" placeholder="Введите адрес доставки">
+					</div>
+					<button class="primary-btn">Заказать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-basket" class="modal modal-basket">
+		<h2 class="modal-basket-title"><span>Использование</span> кэшбек или сертификат</h2>
+		<div class="modal-basket-bl"><i class="hb-ico calculator-ico"></i><span>Сумма доставки включена в стоимость</span></div>
+		<form action="">
+			<div class="input-block">
+				<input type="text" name="text" placeholder="Выбрать сертификат">
+			</div>
+			<div class="modal-basket-block"><span>Выбрать кэшбек</span><span>-5.00 руб</span></div>
+			<button class="primary-btn">Закрыть</button>
+		</form>
+	</div>
+	<div style="display: none;" id="modal-ticket" class="modal modal-ticket">
+		<form action="">
+			<h2 class="modal-ticket-title">Создание тикета</h2>
+			<div class="input-block">
+				<select name="text">
+					<option value="">Выберите номер заказа</option>
+					<option value="">Выберите номер заказа</option>
+				</select>
+			</div>
+			<div class="input-block">
+				<select name="text">
+					<option value="">Выберите департмент</option>
+					<option value="">Выберите департмент</option>
+				</select>
+			</div>
+			<div class="modal-ticket-hr"></div>
+			<div class="input-block">
+				<input type="text" name="text" placeholder="Напишите тему тикета">
+			</div>
+			<div class="input-block">
+				<textarea name="text" placeholder="Сообщение"></textarea>
+			</div>
+			<div class="modal-ticket-bottom">
+				<div class="modal-ticket-file">
+					<input type="file">
+					<a href="#" class="primary-btn">Прикрепить файл</a>
+					<span>123.png</span>
+				</div>
+				<button class="primary-btn">Отправить заявку</button>
+			</div>
+		</form>
+	</div>
+	<div style="display: none;" id="modal-add" class="modal modal-add">
+		<h2 class="modal-ticket-title">Добавить в корзину</h2>
+		<form action="">
+			<div class="modal-search">
+				<div class="input-block input-block-ico">
+					<i class="hb-ico clip-ico"></i>
+					<input type="text" name="text" placeholder="Введите ссылку">
+				</div>
+				<button class="primary-btn">Поиск</button>
+			</div>
+		</form>
+	</div>
+	<div style="display: none;" id="modal-track" class="modal modal-track">
+		<span class="modal-track-title">Доставлена</span>
+		<p>Ваша посылка успешно доставлена на отделение почты</p>
+		<div class="modal-track-btn">
+			<a href="#" class="primary-btn modal-close">Закрыть</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-compilation" class="modal modal-compilation">
+		<span class="modal-track-title">Подборка</span>
+		<p>Вы не настроили подброки, для того что бы настроить нажмите на кнпоку ниже</p>
+		<div class="modal-card-buttons">
+			<a href="#" class="modal-link modal-close">Нет, спасибо</a>
+			<a href="#" class="primary-btn">Настроить</a>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-product" class="modal modal-product">
+		<h2 class="modal-ticket-title">Добавить в корзину</h2>
+		<form action="">
+			<div class="modal-search">
+				<div class="input-block input-block-ico">
+					<i class="hb-ico clip-ico"></i>
+					<input type="text" name="text" placeholder="Введите ссылку">
+				</div>
+				<button class="primary-btn">Поиск</button>
+			</div>
+			<div class="modal-product-bl">Убедитесь что на сайте производителя есть цвет и размер товара так же выберите правильную категории, в сулчае если выбрали не правильно, стоимость доставик будет указано неверно</div>
+			<div class="modal-product-row">
+				<div class="modal-product-img"><img src="img/modal-10.webp" alt=""></div>
+				<div class="modal-product-info">
+					<span class="modal-product-sub">Название товара</span>
+					<span class="modal-product-tit">Женское платье Zara</span>
+					<div class="modal-product-block">
+						<span class="modal-product-label">Выберите цвет</span>
+						<ul class="colors">
+							<li>
+								<div>
+									<input type="radio" name="color">
+									<i class="colors-ico colors-dark"><i></i></i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="color">
+									<i class="colors-ico colors-gray"><i></i></i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="color">
+									<i class="colors-ico colors-red"><i></i></i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="color">
+									<i class="colors-ico colors-green"><i></i></i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="color" checked>
+									<i class="colors-ico colors-blue"><i></i></i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="color">
+									<i class="colors-ico colors-brown"><i></i></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-product-block">
+						<span class="modal-product-label">Выберите размер</span>
+						<ul class="sizes">
+							<li>
+								<div>
+									<input type="radio" name="size">
+									<i>S</i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="size">
+									<i>M</i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="size">
+									<i>L</i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="size">
+									<i>X</i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="size" checked>
+									<i>XL</i>
+								</div>
+							</li>
+							<li>
+								<div>
+									<input type="radio" name="size">
+									<i>XL</i>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-product-prices">
+						<b><span>Цена:</span>500 лиры</b>
+						<b>1500 руб</b>
+					</div>
+					<a href="#" class="primary-btn"><span>В корзину</span><img src="img/basket-ico-2.svg" alt=""></a>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+	<script defer src="js/common.js"></script>
+</body>
+</html>
