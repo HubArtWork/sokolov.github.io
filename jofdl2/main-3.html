@@ -19,7 +19,7 @@
 <body>
 	<!-- start main -->
 	<section class="main">
-		<div class="wrapper wrapper-second">
+		<div class="wrapper">
 			<div class="main-pl">
 				<span class="main-pl-txt">ID платежа</span>
 				<div class="main-copy">
@@ -27,29 +27,31 @@
 					<i class="copy-ico"></i>
 				</div>
 			</div>
-			<div class="main-payment main-payment-second">
-				<i class="main-payment-ico"><img src="img/vaadin_close-small.svg" alt=""></i>
-				<div class="main-payment-wrap">
-					<h1 class="main-title">Оплата не прошла! <br>Обратитесь в службу поддержки</h1>
-					<div class="payment">
-						<ul>
-							<li>
-								<span>Платёжная система</span>
-								<b>СБП</b>
-							</li>
-							<li>
-								<span>Сумма</span>
-								<b>12 000 RUB</b>
-							</li>
-							<li>
-								<span>Реквизиты</span>
-								<b>+7 923 363 33 33 <i>Тинькофф, Игорь М.</i></b>
-							</li>
-						</ul>
-					</div>
+			<div class="main-block">
+				<span class="main-block-tit">Реквизиты для перевода:</span>
+				<div class="main-block-copy">
+					<span>+7 923 363 33 33</span>
+					<i class="copy-ico copy-ico-big"></i>
+				</div>
+				<span class="main-block-txt">Тинькофф, Игорь М. </span>
+			</div>
+			<div class="main-block">
+				<span class="main-block-tit">Сумма перевода</span>
+				<div class="main-block-copy">
+					<span>12 000 RUB</span>
+					<i class="copy-ico copy-ico-big"></i>
 				</div>
 			</div>
-			<div class="main-bottom main-bottom-second">
+			<div class="main-wrap">
+				<span class="main-wrap-tit">Успейте перевести за: 05:12 </span>
+				<p>Не переводите после окончания времени!</p>
+				<p>Переведите ровно 12 000 руб. и нажмите кнопку «Оплачено»</p>
+			</div>
+			<div class="buttons">
+				<a href="#" class="primary-btn">Оплачено</a>
+				<a href="#" class="link">Отменить оплату</a>
+			</div>
+			<div class="main-bottom">
 				<p>Если у вас возникли вопросы по оплате или зачислению платежа, обратитесь в службу поддержки </p>
 				<a href="#" class="main-tg">@paymatrix_support</a>
 			</div>
