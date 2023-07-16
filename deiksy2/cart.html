@@ -185,49 +185,168 @@
 			</ul>
 		</div>
 	</div>
-	<!-- start card -->
-	<section class="card">
+	<!-- start cart -->
+	<section class="cart">
 		<div class="wrapper">
 			<ul class="crumbs">
 				<li><a href="#">Главная</a></li>
-				<li>Каталог</li>
+				<li>Корзина</li>
 			</ul>
-			<div class="card-all">
-				<div class="card-sidebar">
-					<div class="card-slider swiper-container">
-						<div class="swiper-wrapper">
-							<div class="card-slide swiper-slide">
-								<img src="img/card-1.webp" alt="">
-							</div><!-- slide -->
-							<div class="card-slide swiper-slide">
-								<img src="img/card-2.webp" alt="">
-							</div><!-- slide -->
-							<div class="card-slide swiper-slide">
-								<img src="img/card-3.webp" alt="">
-							</div><!-- slide -->
-							<div class="card-slide swiper-slide">
-								<img src="img/card-4.webp" alt="">
-							</div><!-- slide -->
-							<div class="card-slide swiper-slide">
-								<img src="img/card-5.webp" alt="">
-							</div><!-- slide -->
-							<div class="card-slide swiper-slide">
-								<img src="img/card-6.webp" alt="">
-							</div><!-- slide -->
-							<div class="card-slide swiper-slide">
-								<img src="img/card-7.webp" alt="">
-							</div><!-- slide -->
+			<h1 class="page-title">Корзина</h1>
+			<div class="cart-all">
+				<div class="cart-content">
+					<div class="cart-content-top">
+						<a href="#" class="cart-share">Поделиться</a>
+						<a href="#" class="cart-link">Очистить корзину</a>
+					</div>
+					<div class="cart-product">
+						<i class="hb-ico close-ico"></i>
+						<div class="cart-product-img"><a href="#"><img src="img/product-small.webp" alt=""></a></div>
+						<div class="cart-product-info">
+							<div class="cart-product-main">
+								<span class="cart-product-num">2011893729044</span>
+								<span class="cart-product-name"><a href="#">Акварельные маркеры с кисточкой 24 цвета и резервуаром для воды</a></span>
+							</div>
+							<div class="cart-product-row">
+								<div class="inputs">
+									<i class="hb-ico inputs-minus"></i>
+									<input type="number" name="text" value="1">
+									<i class="hb-ico inputs-plus"></i>
+								</div>
+								<div class="cart-product-prices">
+									<div class="cart-product-price">
+										<span>Цена за шт</span>
+										<b>1 290 ₽</b>
+										<i>1 800 ₽</i>
+									</div>
+									<div class="cart-product-price">
+										<span>Всего</span>
+										<b>2 580 ₽</b>
+										<i>3 600 ₽</i>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="swiper-pagination"></div>
+					</div><!-- product -->
+				</div>
+				<div class="cart-sidebar">
+					<div class="cart-sidebar-wrap">
+						<h2 class="section-title">Ваш заказ</h2>
+						<ul>
+							<li><span>Сумма заказа (без скидки)</span><b>6 690 ₽</b></li>
+							<li><span>Скидка</span><b>1 530 ₽</b></li>
+						</ul>
+						<div class="cart-sidebar-total">
+							<b>Итого:</b>
+							<b>5 160 ₽</b>
+						</div>
+						<span class="cart-sidebar-label">Код купона</span>
+						<div class="cart-sidebar-input">
+							<input type="text" name="text">
+							<a href="#" class="border-btn">Применить</a>
+						</div>
+						<a href="#" class="primary-btn">Перейти к оформлению</a>
 					</div>
 				</div>
-				<div class="card-info">
-					<h1 class="page-title">Акварельные маркеры с кисточкой 24 цвета и резервуаром для воды</h1>
-				</div>
+			</div>
+			<div class="cart-form">
+				<h2 class="section-title">Оформление заказа</h2>
+				<form action="">
+					<div class="cart-row">
+						<div class="cart-main">
+							<div class="cart-block">
+								<span class="cart-block-tit">Контактные данные</span>
+								<div class="inputs-row">
+									<div class="inputs-col">
+										<input type="text" name="text" placeholder="Имя">
+									</div>
+									<div class="inputs-col">
+										<input type="text" name="text" placeholder="Фамилия">
+									</div>
+									<div class="inputs-col">
+										<input type="email" name="email" placeholder="Электронная почта">
+									</div>
+									<div class="inputs-col">
+										<input type="text" name="text" placeholder="Телефон">
+									</div>
+								</div>
+							</div><!-- block -->
+							<div class="cart-block">
+								<span class="cart-block-tit">Адрес доставки</span>
+								<div class="inputs-row">
+									<div class="inputs-col">
+										<select name="text">
+											<option value="">Российская Федерация</option>
+											<option value="">Российская Федерация</option>
+										</select>
+									</div>
+									<div class="inputs-col">
+										<select name="text">
+											<option value="">Москва</option>
+											<option value="">Москва</option>
+										</select>
+									</div>
+									<div class="inputs-col">
+										<input type="text" name="text" placeholder="Москва">
+									</div>
+									<div class="inputs-col">
+										<input type="text" name="text" placeholder="Почтовый индекс">
+									</div>
+									<div class="inputs-col inputs-col-big">
+										<input type="text" name="text" placeholder="Адрес">
+									</div>
+								</div>
+							</div><!-- block -->
+							<div class="cart-block">
+								<span class="cart-block-tit">Комментарий к заказу</span>
+								<textarea name="text" placeholder="Комментарий"></textarea>
+							</div><!-- block -->
+						</div>
+						<div class="cart-second">
+							<div class="cart-block">
+								<span class="cart-block-tit">Способы доставки</span>
+								<div class="cart-block-radios">
+									<div class="radio">
+										<input type="radio" name="delivery" checked>
+										<i class="radio-ico"></i>
+										<span><b>Курьерская доставка</b><i>200 ₽</i></span>
+									</div>
+									<span class="cart-block-txt">Москва, улица Большая Октябрьская, 120, кв./офис 12, подъезд 4, этаж 3</span>
+									<div class="radio">
+										<input type="radio" name="delivery">
+										<i class="radio-ico"></i>
+										<span><b>Самовывоз</b><i>0 ₽</i></span>
+									</div>
+									<a href="#" class="cart-block-link">Выбрать пункт выдачи</a>
+								</div>
+							</div><!-- block -->
+							<div class="cart-block">
+								<span class="cart-block-tit">Способ оплаты</span>
+								<div class="cart-block-radios">
+									<div class="radio">
+										<input type="radio" name="pay" checked>
+										<i class="radio-ico"></i>
+										<span>Оплата онлайн</span>
+									</div>
+									<div class="radio">
+										<input type="radio" name="pay">
+										<i class="radio-ico"></i>
+										<span>Картой курьеру</span>
+									</div>
+									<div class="radio">
+										<input type="radio" name="pay">
+										<i class="radio-ico"></i>
+										<span>Наличными курьеру</span>
+									</div>
+								</div>
+							</div><!-- block -->
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</section>
-	<!-- end card -->
+	<!-- end cart -->
 	<!-- start sales -->
 	<section class="sales sales-2 sales-second">
 		<div class="wrapper">

@@ -185,55 +185,62 @@
 			</ul>
 		</div>
 	</div>
-	<!-- start cabinet -->
-	<section class="cabinet">
+	<!-- start contacts -->
+	<section class="contacts">
 		<div class="wrapper">
 			<ul class="crumbs">
 				<li><a href="#">Главная</a></li>
-				<li>База знаний</li>
+				<li>Контакты</li>
 			</ul>
-			<h1 class="page-title">Моя учетная запись</h1>
-			<div class="cabinet-row">
-				<div class="cabinet-col">
-					<a href="#" class="cabinet-wrap">
-						<span class="cabinet-ico"><img src="img/ico-1.svg" alt=""></span>
-						<span class="cabinet-wrap-name">История заказов</span>
-					</a>
-				</div><!-- col -->
-				<div class="cabinet-col">
-					<a href="#" class="cabinet-wrap">
-						<span class="cabinet-ico"><img src="img/ico-2.svg" alt=""></span>
-						<span class="cabinet-wrap-name">Изменить контактную информацию</span>
-					</a>
-				</div><!-- col -->
-				<div class="cabinet-col">
-					<a href="#" class="cabinet-wrap">
-						<span class="cabinet-ico"><img src="img/ico-3.svg" alt=""></span>
-						<span class="cabinet-wrap-name">Изменить свой пароль</span>
-					</a>
-				</div><!-- col -->
-				<div class="cabinet-col">
-					<a href="#" class="cabinet-wrap">
-						<span class="cabinet-ico"><img src="img/ico-4.svg" alt=""></span>
-						<span class="cabinet-wrap-name">Изменить мои адреса</span>
-					</a>
-				</div><!-- col -->
-				<div class="cabinet-col">
-					<a href="#" class="cabinet-wrap">
-						<span class="cabinet-ico"><img src="img/ico-5.svg" alt=""></span>
-						<span class="cabinet-wrap-name">Изменить закладки</span>
-					</a>
-				</div><!-- col -->
-				<div class="cabinet-col">
-					<a href="#" class="cabinet-wrap">
-						<span class="cabinet-ico"><img src="img/ico-6.svg" alt=""></span>
-						<span class="cabinet-wrap-name">Подписаться или отказаться от подписки на рассылку новостей</span>
-					</a>
-				</div><!-- col -->
+			<h1 class="page-title">Контакты</h1>
+			<div class="contacts-row">
+				<div class="contacts-info">
+					<ul class="contacts-list">
+						<li><span>Адрес:</span><b>г. Москва, Магистральный переулок, д. 1</b></li>
+						<li><span>Время работы:</span><b>понедельник - пятницас 09:00 до 18:00</b></li>
+						<li><span>e-mail:</span><b><a href="mailto:denksy@bk.ru">denksy@bk.ru</a></b></li>
+					</ul>
+					<ul class="social social-second">
+						<li><a href="#"><i class="hb-ico inst-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico tg-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+						<li><a href="#"><i class="hb-ico youtube-ico"></i></a></li>
+					</ul>
+					<div class="contacts-block">
+						<p>По вопросам оптовых закупок, а также сотрудничеству просим написать нам на электронную почту: <br><a href="mailto:denksy@bk.ru">denksy@bk.ru</a></p>
+					</div>
+				</div>
+				<div class="contacts-map">
+					<div class="map" id="map"></div>
+				</div>
+			</div>
+			<div class="about-form">
+				<div class="about-form-row">
+					<div class="about-form-info">
+						<h2 class="section-title">У меня магазин канцелярских товаров</h2>
+						<form action="">
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Имя">
+							</div>
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Номер телефона">
+							</div>
+							<div class="input-block">
+								<input type="text" name="text" placeholder="Удобное время для звонка">
+							</div>
+							<p>Данное Согласие дается на обработку персональных данных, как без использования средств автоматизации, так и с их использованием.</p>
+							<button class="primary-btn">Получит предложение</button>
+						</form>
+					</div>
+					<div class="about-form-img"><img src="img/about-8.webp" alt=""></div>
+				</div>
+				<div class="about-form-block">
+					<p>Господа, экономическая повестка сегодняшнего дня создаёт предпосылки для укрепления моральных ценностей. Как принято считать, сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и своевременно верифицированы.</p>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end cabinet -->
+	<!-- end contacts -->
 	<!-- start subscription -->
 	<section class="subscription subscription-second">
 		<div class="subscription-bottom">
@@ -462,5 +469,25 @@
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOlA2b3wMEPHqs4h7NzXPuCgQtA0gK9zs&callback=initMap" async defer></script>
+	<script>
+		function initMap() {
+    var myLatLng = {lat: 60.44734469, lng: 30.53580546};
+
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      scrollwheel: false,
+      zoom: 12
+    });
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'Hello World!'
+    });
+  }
+	</script>
 </body>
 </html>
