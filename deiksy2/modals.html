@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">Модалки</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-login" href="javascript:;" class="modal-link">Авторизация</a></li>
+				<li>2.<a data-fancybox data-src="#modal-registration" href="javascript:;" class="modal-link">Регистрация</a></li>
+				<li>3.<a data-fancybox data-src="#modal-recovery" href="javascript:;" class="modal-link">Забыли пароль?</a></li>
+				<li>4.<a data-fancybox data-src="#modal-offer" href="javascript:;" class="modal-link">У меня магазин канцелярских товаров</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- fancybox modal -->
+	<div style="display: none;" id="modal-login" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<span class="modal-title">Авторизация</span>
+				<div class="input-block">
+					<input type="email" name="email" placeholder="Ваш e-mail">
+				</div>
+				<div class="input-block">
+					<input type="password" name="password" placeholder="Ваш пароль">
+				</div>
+				<button class="primary-btn">Войти</button>
+				<div class="modal-row">
+					<div>
+						<a data-fancybox data-src="#modal-recovery" href="javascript:;" class="link">Я забыл(а) пароль</a>
+					</div>
+					<div>
+						<a data-fancybox data-src="#modal-registration" href="javascript:;" class="link">Зарегестрироваться</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-recovery" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<span class="modal-title">Забыли пароль?</span>
+				<p>Введите адрес электронной почты Вашей учетной записи. Нажмите кнопку продолжить, чтобы получить пароль по электронной почте.</p>
+				<div class="input-block">
+					<input type="email" name="email" placeholder="Ваш e-mail">
+				</div>
+				<button class="primary-btn">Продолжить</button>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-registration" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<span class="modal-title">Регистрация</span>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Ваше имя">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Ваш фамилия">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Ваш номер телефона">
+				</div>
+				<div class="input-block">
+					<input type="email" name="email" placeholder="Ваш e-mail">
+				</div>
+				<div class="input-block">
+					<input type="password" name="password" placeholder="Придумайте пароль">
+				</div>
+				<div class="input-block">
+					<input type="password" name="password" placeholder="Подтвердите пароль">
+				</div>
+				<span class="modal-label">Получать новости на E-Mail</span>
+				<div class="radios">
+					<div class="radio">
+						<input type="radio" name="email-news" checked>
+						<i class="radio-ico"></i>
+						<span>Да</span>
+					</div>
+					<div class="radio">
+						<input type="radio" name="email-news">
+						<i class="radio-ico"></i>
+						<span>Нет</span>
+					</div>
+				</div>
+				<div class="modal-cap">
+					<input type="text" name="text">
+					<div class="modal-cap-img">
+						<img src="img/cap.webp" alt="">
+					</div>
+				</div>
+				<span class="modal-sub">Я прочитал и согласен с условиями <br><a href="#">Политика конфиденциальности</a></span>
+				<div class="modal-btn">
+					<button class="primary-btn">Зарегестрироватся</button>
+				</div>
+				<div class="modal-txt">
+					<span>Уже зарегистрированы?</span>
+					<a data-fancybox data-src="#modal-login" href="javascript:;" class="modal-link link">Авторизуйтесь!</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-offer" class="modal">
+		<div class="modal-wrap">
+			<form action="">
+				<span class="modal-title">У меня магазин канцелярских товаров</span>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Имя">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Номер телефона">
+				</div>
+				<div class="input-block">
+					<input type="text" name="text" placeholder="Удобное время для звонка">
+				</div>
+				<div class="modal-descr">
+					<p>Данное Согласие дается на обработку персональных данных, как без использования средств автоматизации, так и с их использованием.</p>
+				</div>
+				<div class="modal-btn">
+					<button class="primary-btn">Зарегестрироватся</button>
+				</div>
+				<div class="modal-bottom">
+					<p>Господа, экономическая повестка сегодняшнего дня создаёт предпосылки для укрепления моральных ценностей. Как принято считать, сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и своевременно верифицированы.</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
