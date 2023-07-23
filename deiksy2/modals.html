@@ -25,7 +25,21 @@
 				<li>2.<a data-fancybox data-src="#modal-registration" href="javascript:;" class="modal-link">Регистрация</a></li>
 				<li>3.<a data-fancybox data-src="#modal-recovery" href="javascript:;" class="modal-link">Забыли пароль?</a></li>
 				<li>4.<a data-fancybox data-src="#modal-offer" href="javascript:;" class="modal-link">У меня магазин канцелярских товаров</a></li>
+				<li>5.<a data-fancybox data-src="#modal-info" href="javascript:;" class="modal-link">Модалка новая</a></li>
 			</ul>
+			<br><br>
+			<div class="input-block">
+				<input type="email" name="email" placeholder="Ваш e-mail" required>
+				<span class="input-txt">Неверно введён номер телефона</span>
+			</div>
+			<div class="input-block">
+				<input type="email" name="email" placeholder="Ваш e-mail" class="error" required>
+				<span class="input-txt">Неверно введён номер телефона</span>
+			</div>
+			<div class="input-block">
+				<input type="email" name="email" placeholder="Ваш e-mail" class="valid" required>
+				<span class="input-txt">Неверно введён номер телефона</span>
+			</div>
 		</div>
 	</div>
 	<!-- fancybox modal -->
@@ -138,6 +152,24 @@
 					<p>Господа, экономическая повестка сегодняшнего дня создаёт предпосылки для укрепления моральных ценностей. Как принято считать, сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и своевременно верифицированы.</p>
 				</div>
 			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-info" class="modal modal-big">
+		<div class="modal-wrap">
+			<div class="modal-all">
+				<div class="modal-form">
+					<form action="">
+						<div class="modal-logo"><img src="img/logo.svg" alt=""></div>
+						<span class="modal-title"><span>Receive Exclusive</span> <span>Promotions & Content</span> <span>from Arteza!</span></span>
+						<p>Sign up to stay connected with exclusive promotions, community content, and product launches.</p>
+						<div class="input-block">
+							<input type="email" name="email" placeholder="Ваш e-mail" required>
+						</div>
+						<button class="primary-btn">JOIN OUR COMMUNITY</button>
+					</form>
+				</div>
+				<div class="modal-img" style="background-image: url(img/md.jpeg);"></div>
+			</div>
 		</div>
 	</div>
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
