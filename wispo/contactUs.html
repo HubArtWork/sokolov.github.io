@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOlA2b3wMEPHqs4h7NzXPuCgQtA0gK9zs&callback=initMap"
+    async defer></script>
+   <script>
+   	function initMap() {
+    var myLatLng = {lat: 55.44734469, lng: 35.53580546};
+    var myLatLng1 = {lat: 55.44734469, lng: 35.53580546};
+
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      scrollwheel: false,
+      zoom: 12
+    });
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'Hello World!'
+    });
+    var marker1 = new google.maps.Marker({
+      map: map,
+      position: myLatLng1,
+      title: 'Hello World1!'
+    });
+  }
+   </script>
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-main">
+				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+				<div class="header-menu">
+					<ul class="header-list">
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-actions">
+				<a href="tel:+79193059767" class="header-phone">+7 919 305 97 67</a>
+				<a href="#" class="primary-btn">
+					<b>Обсудить проект</b>
+					<i>Связаться</i>
+					<span class="primary-btn-ava"><img src="img/ava-head.webp"></span>
+				</a>
+			</div>
+			<div class="header-bar"></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start contactUs -->
+	<section class="contactUs">
+		<div class="wrapper">
+			<div class="contactUs-row contactUs-head">
+				<span class="contactUs-sub">Контакты</span>
+				<div class="contactUs-info">
+					<h1 class="section-title">Мы всегда на связи по любым вопросам <span>работы над проектом или партнерства</span></h1>
+					<div class="contactUs-info-wrap">
+						<span class="contactUs-mob">Контакты</span>
+						<div class="contactUs-table">
+							<div class="contactUs-td">
+								<span>Телефон</span>
+								<a href="tel:+79193059767">+7 919 305 97 67</a>
+							</div>
+							<div class="contactUs-td">
+								<span>Для партнеров</span>
+								<a href="mailto:partner@wispo.ru">partner@wispo.ru</a>
+							</div>
+							<div class="contactUs-td">
+								<span>Для соискателей</span>
+								<a href="mailto:hr@wispo.ru">hr@wispo.ru</a>
+							</div>
+							<div class="contactUs-td">
+								<span>Мессенджеры</span>
+								<ul>
+									<li><a href="#">Telegram</a></li>
+									<li><a href="#">Whatsapp</a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="social">
+							<li><a href="#"><i class="hb-ico beh-ico"></i></a></li>
+							<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contactUs-img" style="background-image: url(img/contactus.webp);"></div>
+		<div class="wrapper">
+			<div class="contactUs-row contactUs-row-second">
+				<span class="contactUs-sub">Реквизиты</span>
+				<div class="contactUs-info">
+					<div class="contactUs-table">
+						<div class="contactUs-td">
+							<span>Название банка</span>
+							<p>Точка ПАО банка ФК Открытие</p>
+						</div>
+						<div class="contactUs-td">
+							<span>ИП</span>
+							<p>ИП Дудяк Виталий Иванович</p>
+						</div>
+						<div class="contactUs-td">
+							<span>Расчетный счет</span>
+							<p>861714561878</p>
+						</div>
+						<div class="contactUs-td">
+							<span>Корр. счёт</span>
+							<p>40802810305500002034</p>
+						</div>
+						<div class="contactUs-td">
+							<span>БИК</span>
+							<p>044525999</p>
+						</div>
+						<div class="contactUs-td">
+							<span>ОГРНИП</span>
+							<p>317861700046357</p>
+						</div>
+						<div class="contactUs-td">
+						</div>
+						<div class="contactUs-td">
+							<a href="#" class="download-link">Скачать </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contactUs-wrap">
+				<div class="contactUs-descr">
+					<span class="contactUs-tit">Санкт-Петербург, ул. Мебельная, <br>12к1, 7 этаж, 301 офис</span>
+					<ul>
+						<li>Пн-Пт — с 10:00 до 19:00</li>
+						<li>Сб-Вс — выходной</li>
+					</ul>
+				</div>
+				<div class="contactUs-block">
+					<div class="contactUs-map">
+						<div class="map" id="map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contactUs -->
+	<!-- start space -->
+	<section class="space">
+		<div class="wrapper">
+			<span class="section-sub">Офисное пространство</span>
+			<h2 class="section-title">Для нас важно работать в комфортных условиях, поэтому мы создаем уютную атмосферу в офисe</h2>
+			<div class="slider-wrap">
+				<div class="space-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="space-slide swiper-slide">
+							<img src="img/sl-1.webp" alt="">
+						</div><!-- slide -->
+						<div class="space-slide swiper-slide">
+							<img src="img/sl-2.webp" alt="">
+						</div><!-- slide -->
+						<div class="space-slide swiper-slide">
+							<img src="img/sl-3.webp" alt="">
+						</div><!-- slide -->
+						<div class="space-slide swiper-slide">
+							<img src="img/sl-4.webp" alt="">
+						</div><!-- slide -->
+						<div class="space-slide swiper-slide">
+							<img src="img/sl-1.webp" alt="">
+						</div><!-- slide -->
+						<div class="space-slide swiper-slide">
+							<img src="img/sl-2.webp" alt="">
+						</div><!-- slide -->
+					</div>
+				</div>
+				<div class="slider-tc">Тяните</div>
+			</div>
+		</div>
+	</section>
+	<!-- end space -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-main">
+					<div class="footer-block">
+						<div class="footer-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+						<p>Создаем понятные, удобные и адаптивные сайты. Запускаем окупаемую контекстную рекламу. Выводим сайты в топ Яндекса и Google.</p>
+					</div>
+					<div class="footer-rate">
+						<div class="footer-rate-ico"><img src="img/ya.svg" alt=""></div>
+						<div class="footer-rate-info">
+							<span>120 отзывов на Яндексе</span>
+							<img src="img/stars.svg" alt="">
+							<b>0.5/5</b>
+						</div>
+					</div>
+				</div>
+				<div class="footer-info">
+					<div class="footer-col">
+						<span class="footer-tit">Услуги</span>
+						<ul>
+							<li><a href="#">Комплексный маркетинг</a></li>
+							<li><a href="#">Разработка сайта</a></li>
+							<li><a href="#">Контекстная реклама</a></li>
+							<li><a href="#">SEO-продвижение</a></li>
+							<li><a href="#">Интеграция CRM и аналитики</a></li>
+							<li><a href="#">Дизайн</a></li>
+						</ul>
+					</div><!-- col -->
+					<div class="footer-col">
+						<span class="footer-tit"><a href="#">Проекты</a></span>
+						<span class="footer-tit"><a href="#">Команда</a></span>
+						<span class="footer-tit"><a href="#">Блог</a></span>
+						<span class="footer-tit"><a href="#">Вакансии</a></span>
+					</div><!-- col -->
+					<div class="footer-col">
+						<span class="footer-tit">Контакты</span>
+						<div class="footer-all">
+							<span class="footer-tel"><a href="tel:+79193059767">+7 919 305 97 67</a></span>
+							<div class="footer-soc">
+								<span><a href="#">Telegram</a></span>
+								<span><a href="#">WhatsApp</a></span>
+							</div>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="social">
+					<li><a href="#"><i class="hb-ico beh-ico"></i></a></li>
+					<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+				</ul>
+				<div class="footer-txt">
+					<p>©WISPO 2015 - 2022</p>
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+</body>
+</html>
