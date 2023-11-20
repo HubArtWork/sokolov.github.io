@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</head>
+<body>
+	<div class="sitemap">
+		<div class="wrapper">
+			<h2 class="sitemap-title">Модалки</h2>
+			<ul class="sitemap-list">
+				<li>1.<a data-fancybox data-src="#modal-form" href="javascript:;">Хотите задать вопрос?</a></li>
+				<li>2.<a data-fancybox data-src="#modal-form2" href="javascript:;">Заказать настройку контекстной рекламы</a></li>
+				<li>3.<a data-fancybox data-src="#modal-form3" href="javascript:;">Выберите удобный способ связи и напишите номер телефона </a></li>
+				<li>4.<a data-fancybox data-src="#modal-form4" href="javascript:;">Заказать ведение контекстной рекламы</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-form" class="modal modal-form">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-top">
+					<div class="questions-head">
+						<img src="img/avatars.webp" alt="">
+					</div>
+					<span class="modal-title">Хотите задать вопрос?</span>
+					<p>Ответим на любой вопрос через 5 минут. Спрашивайте, не стесняйтесь)</p>
+				</div>
+				<div class="input-block input-block-m">
+					<label for="">Напишите свой вопрос</label>
+					<textarea name="text"></textarea>
+				</div>
+				<div class="input-block">
+					<div class="input-block-wrap">
+						<input type="text" name="text" placeholder="+" class="input-tel">
+						<button class="border-btn border-btn-white disabled">Отправить</button>
+					</div>
+				</div>
+				<div class="modal-txt">Нажимая кнопку, вы даете <a href="#">согласие на обработку персональных данных</a></div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-form2" class="modal modal-form">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-top">
+					<div class="questions-head">
+						<img src="img/avatars.webp" alt="">
+					</div>
+					<span class="modal-title">Заказать настройку контекстной рекламы</span>
+					<p>Отлично, вы выбрали тариф One для лендинга или одной страницы сайта. Выбирайте удобный способ связи и пишите номер телефона – созвонимся и обсудим все детали проекта.</p>
+				</div>
+				<label for="">Выберите удобный способ связи</label>
+				<div class="choices">
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method2" checked="">
+							<div class="choice-txt">Телефон</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method2" checked="">
+							<div class="choice-txt">Telegram</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method2">
+							<div class="choice-txt">WhatsApp</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block-wrap">
+						<input type="text" name="text" placeholder="+" class="input-tel">
+						<button class="border-btn border-btn-white disabled">Отправить</button>
+					</div>
+				</div>
+				<div class="modal-txt">Нажимая кнопку, вы даете <a href="#">согласие на обработку персональных данных</a></div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-form3" class="modal modal-form">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-top">
+					<div class="questions-head">
+						<img src="img/avatars.webp" alt="">
+					</div>
+					<span class="modal-title">Выберите удобный способ связи и напишите номер телефона </span>
+					<p>Перезвоним через 5 минут и зададим несколько вопросов о проекте, чтобы понимать, чем наша команда может вам помочь.</p>
+				</div>
+				<label for="">Выберите удобный способ связи</label>
+				<div class="choices">
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3" checked="">
+							<div class="choice-txt">Телефон</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3" checked="">
+							<div class="choice-txt">Telegram</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3">
+							<div class="choice-txt">WhatsApp</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block-wrap">
+						<input type="text" name="text" placeholder="+" class="input-tel">
+						<button class="border-btn border-btn-white disabled">Отправить</button>
+					</div>
+				</div>
+				<div class="modal-txt">Нажимая кнопку, вы даете <a href="#">согласие на обработку персональных данных</a></div>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-form4" class="modal modal-form">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-top">
+					<div class="questions-head">
+						<img src="img/avatars.webp" alt="">
+					</div>
+					<span class="modal-title">Заказать ведение контекстной рекламы</span>
+					<p>Отлично, вы выбрали тариф One для лендинга или одной страницы сайта. Выбирайте удобный способ связи и пишите номер телефона – созвонимся и обсудим все детали проекта.</p>
+				</div>
+				<label for="">Выберите удобный способ связи</label>
+				<div class="choices">
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method4" checked="">
+							<div class="choice-txt">Телефон</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method4" checked="">
+							<div class="choice-txt">Telegram</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method4">
+							<div class="choice-txt">WhatsApp</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block-wrap">
+						<input type="text" name="text" placeholder="+" class="input-tel">
+						<button class="border-btn border-btn-white disabled">Отправить</button>
+					</div>
+				</div>
+				<div class="modal-txt">Нажимая кнопку, вы даете <a href="#">согласие на обработку персональных данных</a></div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

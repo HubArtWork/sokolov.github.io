@@ -18,6 +18,33 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="js/scripts.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOlA2b3wMEPHqs4h7NzXPuCgQtA0gK9zs&callback=initMap"
+    async defer></script>
+   <script>
+   	function initMap() {
+    var myLatLng = {lat: 55.44734469, lng: 35.53580546};
+    var myLatLng1 = {lat: 55.44734469, lng: 35.53580546};
+
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      scrollwheel: false,
+      zoom: 12
+    });
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'Hello World!'
+    });
+    var marker1 = new google.maps.Marker({
+      map: map,
+      position: myLatLng1,
+      title: 'Hello World1!'
+    });
+  }
+   </script>
 </head>
 <body>
 	<!-- start header -->
@@ -36,7 +63,7 @@
 			</div>
 			<div class="header-actions">
 				<a href="tel:+79193059767" class="header-phone">+7 919 305 97 67</a>
-				<a href="#" class="primary-btn">
+				<a data-fancybox data-src="#modal-form3" href="javascript:;" class="primary-btn">
 					<b>Обсудить проект</b>
 					<i>Связаться</i>
 					<span class="primary-btn-ava"><img src="img/ava-head.webp"></span>
@@ -45,6 +72,128 @@
 			<div class="header-bar"></div>
 		</div>
 	</header>
+	<div class="header-all">
+		<div class="header-br"></div>
+		<div class="wrapper">
+			<div class="header-top">
+				<div class="header-sidebar">
+					<ul>
+						<li><a href="#" class="active">Услуги</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header-content">
+					<div class="header-row">
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Разработка сайта</a></span>
+							<ul>
+								<li><a href="#">Квиз лендинг</a></li>
+								<li><a href="#">Лендинг пейдж</a></li>
+								<li><a href="#">Многостраничный сайт</a></li>
+								<li><a href="#">Интернет-магазин</a></li>
+								<li><a href="#">Frontend разработка</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Performance-маркетинг</a></span>
+							<ul>
+								<li><a href="#">Контекстная реклама в Яндекс</a></li>
+								<li><a href="#">Реклама в Telegram</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">SEO продвижение</a></span>
+							<ul>
+								<li><a href="#">SEO аудит сайта</a></li>
+								<li><a href="#">SEO копирайтинг</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Интеграция CRM <br>и аналитики</a></span>
+							<ul>
+								<li><a href="#">AmoCRM</a></li>
+								<li><a href="#">CRM Битрикс24</a></li>
+								<li><a href="#">Сквозная аналитика Roistat</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Дизайн</a></span>
+							<ul>
+								<li><a href="#">Разработка логотипа</a></li>
+								<li><a href="#">Разработка фирменного стиля</a></li>
+							</ul>
+						</div><!-- col -->
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="header-text">
+					<span class="header-tit">Напишите нам:</span>
+					<ul>
+						<li><a href="#">Telegram</a></li>
+						<li><a href="#">WhatsApp</a></li>
+					</ul>
+				</div>
+				<ul class="social">
+					<li><a href="#"><i class="hb-ico beh-ico"></i></a></li>
+					<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menu-all">
+			<div class="menu-main">
+				<div class="menu-top">
+					<span class="menu-tit">Меню</span>
+					<ul class="menu-list">
+						<li><a href="#menu-1" class="menu-link">Услуги</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="menu-bottom">
+					<span class="menu-sub">Напишите нам:</span>
+					<ul>
+						<li><a href="#">Telegram</a></li>
+						<li><a href="#">WhatsApp</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-block menu-block-main" id="menu-1">
+				<div class="menu-wrap">
+					<span class="menu-back">Назад</span>
+					<ul class="menu-list">
+						<li><a href="#menu-2" class="menu-link">Разработка сайта</a></li>
+						<li><a href="#menu-2" class="menu-link">Performance-маркетинг</a></li>
+						<li><a href="#menu-2" class="menu-link">SEO-продвижение</a></li>
+						<li><a href="#menu-2" class="menu-link">Интеграция CRM и аналитики</a></li>
+						<li><a href="#menu-2" class="menu-link">Дизайн</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-block" id="menu-2">
+				<div class="menu-wrap">
+					<span class="menu-back">Назад</span>
+					<ul class="menu-list">
+						<li><a href="#">Разработка сайта</a></li>
+						<li><a href="#">Квиз-лендинг</a></li>
+						<li><a href="#">Лендинг-Пейдж</a></li>
+						<li><a href="#">Многостраничный сайт</a></li>
+						<li><a href="#">Интернет-магазин</a></li>
+						<li><a href="#">Frontend разработка</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- end header -->
 	<!-- start vacancies -->
 	<section class="vacancies">
@@ -53,11 +202,237 @@
 				<li><a href="#">Главная</a></li>
 				<li>Вакансии</li>
 			</ul>
-			<h1 class="page-title"></h1>
-			<div class="vacancies-main">
-				<div class="vacancies-main-info">
-					<p></p>
+			<div class="vacancies-top">
+				<h1 class="page-title">Привет, мы ищем опытного <span>специалиста по контекстной рекламе</span></h1>
+				<div class="vacancies-main">
+					<div class="vacancies-main-info">
+						<p>Хотим вместе с тобой выстроить с нуля воронку по поиску команды в области маркетинга, дизайна и программирования. Создать обучение и оргполитику для будущих стажеров и опытных специалистов. Если ты хочешь не просто выкладывать вакансии на hh и собеседовать кандидатов, а развиваться в разных областях и совершенствоваться в создании команды, то знакомься с условиями, проходи небольшое тестовое и приходи на встречу. </p>
+						<div class="card-wrap-img">
+							<img src="img/card-2.webp" alt="">
+							<span>Анна <i>HR</i></span>
+						</div>
+					</div>
 				</div>
+			</div>
+		</div>
+		<div class="vacancies-offer vacancies-offer-1">
+			<div class="wrapper">
+				<span class="section-sub">Условия</span>
+				<h2 class="section-title">Что мы предлагаем</h2>
+				<div class="vacancies-steps">
+					<div class="vacancies-step">
+						<span class="vacancies-num">01/</span>
+						<div class="vacancies-info">
+							<span class="vacancies-tit">Занятость</span>
+							<span class="vacancies-txt">Полный рабочий день в офисе</span>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">02/</span>
+						<div class="vacancies-info">
+							<span class="vacancies-tit">График работы</span>
+							<span class="vacancies-txt">С понедельника по пятницу. Начало рабочего дня 9-11 и конец 18-20. Час на обед.</span>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">03/</span>
+						<div class="vacancies-info">
+							<span class="vacancies-tit">Отпуск</span>
+							<span class="vacancies-txt">2 раза в год и официальные российские праздники.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="vacancies-office">
+			<div class="wrapper">
+				<div class="vacancies-office-top">
+					<h2 class="section-title">Уютный офис</h2>
+					<p>Для нас важно работать в комфортных условиях, поэтому мы создаем уютную атмосферу в офисe</p>
+				</div>
+				<div class="slider-wrap">
+					<div class="vacancies-slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="vacancies-slide swiper-slide">
+								<img src="img/vacancies-1.webp" alt="">
+							</div><!-- slide -->
+							<div class="vacancies-slide swiper-slide">
+								<img src="img/vacancies-2.webp" alt="">
+							</div><!-- slide -->
+							<div class="vacancies-slide swiper-slide">
+								<img src="img/vacancies-3.webp" alt="">
+							</div><!-- slide -->
+							<div class="vacancies-slide swiper-slide">
+								<img src="img/vacancies-4.webp" alt="">
+							</div><!-- slide -->
+						</div>
+					</div>
+					<div class="slider-tc">Тяните</div>
+				</div>
+				<div class="contactUs-wrap">
+					<div class="contactUs-descr">
+						<span class="contactUs-tit">Санкт-Петербург, ул. Мебельная, <br>12к1, 7 этаж, 301 офис</span>
+						<ul>
+							<li>Пн-Пт — с 10:00 до 19:00</li>
+							<li>Сб-Вс — выходной</li>
+						</ul>
+					</div>
+					<div class="contactUs-block">
+						<div class="contactUs-map">
+							<div class="map" id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="vacancies-about">
+			<div class="wrapper">
+				<div class="vacancies-about-row">
+					<div class="vacancies-about-main">
+						<span class="section-sub">О важном</span>
+						<h2 class="section-title">Зарплата и карьерный рост</h2>
+					</div>
+					<div class="vacancies-about-info">
+						<div class="vacancies-about-block">
+							<span class="vacancies-about-sub">За что платит компания</span>
+							<p>Нанятые и эффективно работающие сотрудники, которые приносят прибыль компании</p>
+						</div>
+						<div class="vacancies-about-block">
+							<span class="vacancies-about-sub">Зарплата</span>
+							<ul>
+								<li>от 50 000 до 100 000 рублей</li>
+								<li>Подработки оплачиваются</li>
+								<li>Оклад + премия за выполнение KPI</li>
+							</ul>
+						</div>
+						<div class="vacancies-about-block">
+							<span class="vacancies-about-sub">Профессиональный рост в команде</span>
+							<p>После окончания тестового периода ты вместе с руководителем составишь свою карту развития. В ней будут прописаны скилы и необходимые результаты для перехода на следующий уровень должности. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="vacancies-img" style="background-image: url(img/vacancies-5.webp);"></div>
+		</div>
+		<div class="vacancies-offer vacancies-offer-2">
+			<div class="wrapper">
+				<span class="section-sub">Задачи</span>
+				<h2 class="section-title">Чем предстоит заниматься</h2>
+				<div class="vacancies-steps">
+					<div class="vacancies-step">
+						<span class="vacancies-num">01/</span>
+						<div class="vacancies-info">
+							<p>Организацией найма специалистов и закрытием вакансий (через HH, linkedin и прочие инструменты), hr-аналитикой.</p>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">02/</span>
+						<div class="vacancies-info">
+							<p>Проведением онбординга новых специалистов, сбором оценки от руководителей и коллег во время прохождения специалистом испытательного срока</p>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">03/</span>
+						<div class="vacancies-info">
+							<p>Составлением индивидуальных планов развития сотрудников и контролем их прохождения</p>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">04/</span>
+						<div class="vacancies-info">
+							<p>Составлением внутренних регламентов по найму специалистов, требованиям к специалистов, а также требуемых KPI</p>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">05/</span>
+						<div class="vacancies-info">
+							<p>Мониторингом состояния команды компании (на предмет выгорания, потенциала развития)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="vacancies-offer vacancies-offer-3">
+			<div class="wrapper">
+				<span class="section-sub">Требования </span>
+				<h2 class="section-title">Чего мы ждем от кандидата</h2>
+				<div class="vacancies-steps">
+					<div class="vacancies-step">
+						<span class="vacancies-num">01/</span>
+						<div class="vacancies-info">
+							<p>Опыт работы в найме digital-специалистов, преимуществом будет хорошо развитый нетворкинг с digital-специалистами</p>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">02/</span>
+						<div class="vacancies-info">
+							<p>Желание развиваться в сфере IT, заниматься не только рекрутингом, но и внутренним ведением и развитием сотрудников компании</p>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">03/</span>
+						<div class="vacancies-info">
+							<p>Понимание трудового законодательства</p>
+						</div>
+					</div>
+					<div class="vacancies-step">
+						<span class="vacancies-num">04/</span>
+						<div class="vacancies-info">
+							<p>Грамотная речь и отличное знание русского языка</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="vacancies-form">
+			<div class="wrapper">
+				<form action="">
+					<div class="vacancies-form-head">
+						<div class="vacancies-form-main">
+							<span class="section-sub">Отклик</span>
+							<h2 class="vacancies-form-title">Заинтересовала вакансия? Присылай резюме, и несколько слов о себе на <span>hr@wispo.ru </span> или заполни форму</h2>
+						</div>
+						<div class="vacancies-form-text">
+							<p>Если есть портфолио, обязательно прикрепи его к письму. После отклика мы отправим тестовое задание, чтобы оценить навыки и понять ход твоих мыслей. После прохождения тестового пригласим тебя на беседу, чтобы мы могли лучше познакомиться с тобой, а ты с нами.</p>
+						</div>
+					</div>
+					<div class="vacancies-form-row">
+						<div class="vacancies-form-block">
+							<div class="main-video">
+								<div class="main-video-wrap">
+									<i class="main-btn"></i>
+									<i class="main-time">00:57</i>
+									<img src="img/video.webp" alt="">
+								</div>
+							</div>
+							<p>Посмотри видео от нашего HR перед отправкой письма. Вероника расскажет, как правильно составить письмо, чтобы попасть в команду.</p>
+						</div>
+						<div class="vacancies-form-wrap">
+							<div class="form-white">
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Как тебя зовут?">
+								</div>
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Напиши номер телефона">
+								</div>
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Укажи имя в Telegram">
+								</div>
+								<div class="input-block">
+									<textarea name="text" placeholder="Расскажи о себе"></textarea>
+								</div>
+								<div class="input-file">
+									<div class="file">
+										<input type="file">
+										<div class="file-txt">Прикрепить  файл</div>
+									</div>
+								</div>
+								<button class="border-btn disabled">Отправить</button>
+								<p>Нажимая кнопку, вы даете <a href="#">согласие на обработку  персональных данных</a></p>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</section>
@@ -123,5 +498,46 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<div style="display: none;" id="modal-form3" class="modal modal-form">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-top">
+					<div class="questions-head">
+						<img src="img/avatars.webp" alt="">
+					</div>
+					<span class="modal-title">Выберите удобный способ связи и напишите номер телефона </span>
+					<p>Перезвоним через 5 минут и зададим несколько вопросов о проекте, чтобы понимать, чем наша команда может вам помочь.</p>
+				</div>
+				<label for="">Выберите удобный способ связи</label>
+				<div class="choices">
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3" checked="">
+							<div class="choice-txt">Телефон</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3" checked="">
+							<div class="choice-txt">Telegram</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3">
+							<div class="choice-txt">WhatsApp</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block-wrap">
+						<input type="text" name="text" placeholder="+" class="input-tel">
+						<button class="border-btn border-btn-white disabled">Отправить</button>
+					</div>
+				</div>
+				<div class="modal-txt">Нажимая кнопку, вы даете <a href="#">согласие на обработку персональных данных</a></div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
