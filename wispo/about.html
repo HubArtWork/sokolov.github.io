@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/scripts.min.js"></script>
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-main">
+				<div class="header-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+				<div class="header-menu">
+					<ul class="header-list">
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#" class="link-menu">Услуги</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-actions">
+				<a href="tel:+79193059767" class="header-phone">+7 919 305 97 67</a>
+				<a data-fancybox data-src="#modal-form3" href="javascript:;" class="primary-btn">
+					<b>Обсудить проект</b>
+					<i>Связаться</i>
+					<span class="primary-btn-ava"><img src="img/ava-head.webp"></span>
+				</a>
+			</div>
+			<div class="header-bar"></div>
+		</div>
+	</header>
+	<div class="header-all">
+		<div class="header-br"></div>
+		<div class="wrapper">
+			<div class="header-top">
+				<div class="header-sidebar">
+					<ul>
+						<li><a href="#" class="active">Услуги</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header-content">
+					<div class="header-row">
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Разработка сайта</a></span>
+							<ul>
+								<li><a href="#">Квиз лендинг</a></li>
+								<li><a href="#">Лендинг пейдж</a></li>
+								<li><a href="#">Многостраничный сайт</a></li>
+								<li><a href="#">Интернет-магазин</a></li>
+								<li><a href="#">Frontend разработка</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Performance-маркетинг</a></span>
+							<ul>
+								<li><a href="#">Контекстная реклама в Яндекс</a></li>
+								<li><a href="#">Реклама в Telegram</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">SEO продвижение</a></span>
+							<ul>
+								<li><a href="#">SEO аудит сайта</a></li>
+								<li><a href="#">SEO копирайтинг</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Интеграция CRM <br>и аналитики</a></span>
+							<ul>
+								<li><a href="#">AmoCRM</a></li>
+								<li><a href="#">CRM Битрикс24</a></li>
+								<li><a href="#">Сквозная аналитика Roistat</a></li>
+							</ul>
+						</div><!-- col -->
+						<div class="header-col">
+							<span class="header-sub"><a href="#">Дизайн</a></span>
+							<ul>
+								<li><a href="#">Разработка логотипа</a></li>
+								<li><a href="#">Разработка фирменного стиля</a></li>
+							</ul>
+						</div><!-- col -->
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="header-text">
+					<span class="header-tit">Напишите нам:</span>
+					<ul>
+						<li><a href="#">Telegram</a></li>
+						<li><a href="#">WhatsApp</a></li>
+					</ul>
+				</div>
+				<ul class="social">
+					<li><a href="#"><i class="hb-ico beh-ico"></i></a></li>
+					<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menu-all">
+			<div class="menu-main">
+				<div class="menu-top">
+					<span class="menu-tit">Меню</span>
+					<ul class="menu-list">
+						<li>
+							<a href="#" class="menu-link">Услуги</a>
+							<div class="menu-block menu-block-main">
+								<div class="menu-wrap">
+									<span class="menu-back">Назад</span>
+									<ul class="menu-list">
+										<li>
+											<a href="#" class="menu-link">Разработка сайта</a>
+											<div class="menu-block">
+												<div class="menu-wrap">
+													<span class="menu-back">Назад</span>
+													<ul class="menu-list">
+														<li><a href="#">Разработка сайта</a></li>
+														<li><a href="#">Квиз-лендинг</a></li>
+														<li><a href="#">Лендинг-Пейдж</a></li>
+														<li><a href="#">Многостраничный сайт</a></li>
+														<li><a href="#">Интернет-магазин</a></li>
+														<li><a href="#">Frontend разработка</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li><a href="#" class="menu-link">Performance-маркетинг</a></li>
+										<li><a href="#" class="menu-link">SEO-продвижение</a></li>
+										<li><a href="#" class="menu-link">Интеграция CRM и аналитики</a></li>
+										<li><a href="#" class="menu-link">Дизайн</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="menu-bottom">
+					<span class="menu-sub">Напишите нам:</span>
+					<ul>
+						<li><a href="#">Telegram</a></li>
+						<li><a href="#">WhatsApp</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<div class="about-head">
+				<ul class="crumbs">
+					<li>Предложение по запуску контекстной рекламы в Яндекс.Директ и Google Ads для компании «Торгпласт»</li>
+				</ul>
+				<h1 class="page-title">Главная цель нашей команды — сделать все, чтобы вы забыли о вопросе <span>«как привлечь больше клиентов»</span></h1>
+			</div>
+		</div>
+		<div class="about-video">
+			<div class="wrapper">
+				<div class="about-video-block">
+					<div class="about-video-main">
+						<img src="img/video.webp" alt="">
+						<div>
+							<b>Виталий</b>
+							<span>Teamlead</span>
+						</div>
+					</div>
+					<div class="about-video-text">
+						<p>Меня зовут Виталий. Я основатель digital-агентства Wispo. Давайте я коротко расскажу, чем мы можем быть полезны вашей компании.</p>
+						<p>Я изучил ваш продукт, обсудил возможные решения с коллегами и в видео записал наше понимание стратегии его продвижения в контекстной рекламе.</p>
+					</div>
+				</div>
+				<div class="about-play">
+					<i class="hb-ico play-ico"></i>
+					<span>СМОТРЕТЬ ВИДЕО</span>
+				</div>
+			</div>
+		</div>
+		<div class="about-projects">
+			<div class="wrapper">
+				<div class="about-descr">
+					<h2 class="section-title">Наверняка вы хотите узнать, каких результатов мы достигаем для компаний, с которыми уже работаем</h2>
+					<p>Посмотрите реализованные проекты. Мы подробно рассказываем и показываем, что именно делаем и какой результат получаем.</p>
+				</div>
+				<div class="projects-head">
+					<span class="projects-head-name"><span>Проекты по контекстной рекламе</span></span>
+				</div>
+				<div class="projects-items">
+					<div class="projects-item">
+						<div class="projects-wrap">
+							<div class="projects-info">
+								<h2 class="projects-name">Торгпласт</h2>
+								<p>Производство дренажной системы и полифасада.</p>
+								<div class="projects-row">
+									<div class="projects-col">
+										<span class="projects-subtitle">Ежемесячный KPI </span>
+										<ul>
+											<li><span>Количество лидов </span><span>200 шт.</span></li>
+											<li><span>Цена лида </span><span>400</span></li>
+										</ul>
+									</div>
+									<div class="projects-col">
+										<span class="projects-subtitle">Услуги</span>
+										<ul>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+										</ul>
+									</div>
+								</div>
+								<span class="projects-subtitle">Результат</span>
+								<ul>
+									<li><span>Конверсия сайта</span><span>5%</span></li>
+									<li><span>Лидов с контекста в мес.</span><span>400</span></li>
+									<li><span>Прирост трафика с SEO в мес.</span><span>~ 43%</span></li>
+									<li><span>Средний % запрос в ТОПе</span><span>~ 16%</span></li>
+								</ul>
+								<div class="projects-actions">
+									<a href="#" class="primary-btn">Смотреть кейс</a>
+									<a href="#" class="link">Читать отзыв</a>
+								</div>
+							</div>
+							<div class="projects-img">
+								<div class="projects-pic" style="background-image: url(img/img-1.webp);"></div>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="projects-item">
+						<div class="projects-wrap">
+							<div class="projects-info">
+								<h2 class="projects-name">Торгпласт</h2>
+								<p>Настройка контекстной рекламы для производителя изделий из пенопласта</p>
+								<div class="projects-row">
+									<div class="projects-col">
+										<span class="projects-subtitle">Ежемесячный KPI </span>
+										<ul>
+											<li><span>Количество лидов </span><span>200 шт.</span></li>
+											<li><span>Цена лида </span><span>400</span></li>
+										</ul>
+									</div>
+									<div class="projects-col">
+										<span class="projects-subtitle">Услуги</span>
+										<ul>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+										</ul>
+									</div>
+								</div>
+								<span class="projects-subtitle">Результат</span>
+								<ul>
+									<li><span>Конверсия сайта</span><span>5%</span></li>
+									<li><span>Лидов с контекста в мес.</span><span>400</span></li>
+									<li><span>Прирост трафика с SEO в мес.</span><span>~ 43%</span></li>
+									<li><span>Средний % запрос в ТОПе</span><span>~ 16%</span></li>
+								</ul>
+								<div class="projects-actions">
+									<a href="#" class="primary-btn">Смотреть кейс</a>
+									<a href="#" class="link">Читать отзыв</a>
+								</div>
+							</div>
+							<div class="projects-img">
+								<div class="projects-pic" style="background-image: url(img/img-1.webp);"></div>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="projects-item">
+						<div class="projects-wrap">
+							<div class="projects-info">
+								<h2 class="projects-name">Торгпласт</h2>
+								<p>Настройка контекстной рекламы для производителя изделий из пенопласта</p>
+								<div class="projects-row">
+									<div class="projects-col">
+										<span class="projects-subtitle">Ежемесячный KPI </span>
+										<ul>
+											<li><span>Количество лидов </span><span>200 шт.</span></li>
+											<li><span>Цена лида </span><span>400</span></li>
+										</ul>
+									</div>
+									<div class="projects-col">
+										<span class="projects-subtitle">Услуги</span>
+										<ul>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+										</ul>
+									</div>
+								</div>
+								<span class="projects-subtitle">Результат</span>
+								<ul>
+									<li><span>Конверсия сайта</span><span>5%</span></li>
+									<li><span>Лидов с контекста в мес.</span><span>400</span></li>
+									<li><span>Прирост трафика с SEO в мес.</span><span>~ 43%</span></li>
+									<li><span>Средний % запрос в ТОПе</span><span>~ 16%</span></li>
+								</ul>
+								<div class="projects-actions">
+									<a href="#" class="primary-btn">Смотреть кейс</a>
+									<a href="#" class="link">Читать отзыв</a>
+								</div>
+							</div>
+							<div class="projects-img">
+								<div class="projects-pic" style="background-image: url(img/img-1.webp);"></div>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="projects-item">
+						<div class="projects-wrap">
+							<div class="projects-info">
+								<h2 class="projects-name">Торгпласт</h2>
+								<p>Настройка контекстной рекламы для производителя изделий из пенопласта</p>
+								<div class="projects-row">
+									<div class="projects-col">
+										<span class="projects-subtitle">Ежемесячный KPI </span>
+										<ul>
+											<li><span>Количество лидов </span><span>200 шт.</span></li>
+											<li><span>Цена лида </span><span>400</span></li>
+										</ul>
+									</div>
+									<div class="projects-col">
+										<span class="projects-subtitle">Услуги</span>
+										<ul>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+										</ul>
+									</div>
+								</div>
+								<span class="projects-subtitle">Результат</span>
+								<ul>
+									<li><span>Конверсия сайта</span><span>5%</span></li>
+									<li><span>Лидов с контекста в мес.</span><span>400</span></li>
+									<li><span>Прирост трафика с SEO в мес.</span><span>~ 43%</span></li>
+									<li><span>Средний % запрос в ТОПе</span><span>~ 16%</span></li>
+								</ul>
+								<div class="projects-actions">
+									<a href="#" class="primary-btn">Смотреть кейс</a>
+									<a href="#" class="link">Читать отзыв</a>
+								</div>
+							</div>
+							<div class="projects-img">
+								<div class="projects-pic" style="background-image: url(img/img-1.webp);"></div>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="projects-item">
+						<div class="projects-wrap">
+							<div class="projects-info">
+								<h2 class="projects-name">Торгпласт</h2>
+								<p>Настройка контекстной рекламы для производителя изделий из пенопласта</p>
+								<div class="projects-row">
+									<div class="projects-col">
+										<span class="projects-subtitle">Ежемесячный KPI </span>
+										<ul>
+											<li><span>Количество лидов </span><span>200 шт.</span></li>
+											<li><span>Цена лида </span><span>400</span></li>
+										</ul>
+									</div>
+									<div class="projects-col">
+										<span class="projects-subtitle">Услуги</span>
+										<ul>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+										</ul>
+									</div>
+								</div>
+								<span class="projects-subtitle">Результат</span>
+								<ul>
+									<li><span>Конверсия сайта</span><span>5%</span></li>
+									<li><span>Лидов с контекста в мес.</span><span>400</span></li>
+									<li><span>Прирост трафика с SEO в мес.</span><span>~ 43%</span></li>
+									<li><span>Средний % запрос в ТОПе</span><span>~ 16%</span></li>
+								</ul>
+								<div class="projects-actions">
+									<a href="#" class="primary-btn">Смотреть кейс</a>
+									<a href="#" class="link">Читать отзыв</a>
+								</div>
+							</div>
+							<div class="projects-img">
+								<div class="projects-pic" style="background-image: url(img/img-1.webp);"></div>
+							</div>
+						</div>
+					</div><!-- item -->
+					<div class="projects-item">
+						<div class="projects-wrap">
+							<div class="projects-info">
+								<h2 class="projects-name">Торгпласт</h2>
+								<p>Настройка контекстной рекламы для производителя изделий из пенопласта</p>
+								<div class="projects-row">
+									<div class="projects-col">
+										<span class="projects-subtitle">Ежемесячный KPI </span>
+										<ul>
+											<li><span>Количество лидов </span><span>200 шт.</span></li>
+											<li><span>Цена лида </span><span>400</span></li>
+										</ul>
+									</div>
+									<div class="projects-col">
+										<span class="projects-subtitle">Услуги</span>
+										<ul>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+											<li><span>Контекстная реклама <i>/</i> SEO</span></li>
+										</ul>
+									</div>
+								</div>
+								<span class="projects-subtitle">Результат</span>
+								<ul>
+									<li><span>Конверсия сайта</span><span>5%</span></li>
+									<li><span>Лидов с контекста в мес.</span><span>400</span></li>
+									<li><span>Прирост трафика с SEO в мес.</span><span>~ 43%</span></li>
+									<li><span>Средний % запрос в ТОПе</span><span>~ 16%</span></li>
+								</ul>
+								<div class="projects-actions">
+									<a href="#" class="primary-btn">Смотреть кейс</a>
+									<a href="#" class="link">Читать отзыв</a>
+								</div>
+							</div>
+							<div class="projects-img">
+								<div class="projects-pic" style="background-image: url(img/img-1.webp);"></div>
+							</div>
+						</div>
+					</div><!-- item -->
+				</div>
+				<div class="about-btn">
+					<a href="#" class="border-btn border-btn-arrow2">Смотреть все проекты</a>
+				</div>
+			</div>
+		</div>
+		<div class="about-promises">
+			<div class="wrapper">
+				<div class="action-top">
+					<h2 class="section-title">Выполняем обещания и указываем все в договоре</h2>
+					<div class="action-info">
+						<p>Вся наша команда знает, что бизнесу нужны не клики на сайт или хороший CTR объявлений, а лиды и продажи.</p>
+						<p>Поэтому у нас есть ряд правил, которым мы всегда следуем</p>
+					</div>
+				</div>
+				<div class="allTabs">
+					<ul class="tab-list">
+						<li><a href="#tab-1" class="active"><span>Запускаем рекламу в оговоренные сроки</span></a></li>
+						<li><a href="#tab-2"><span>Вникаем в бизнес и делаем понятный отчет</span></a></li>
+						<li><a href="#tab-3"><span>Ведем работу безопасно, честно и открыто</span></a></li>
+						<li><a href="#tab-4"><span>Решаем задачи быстро и <br>в тот же день</span></a></li>
+					</ul>
+					<div class="tab tab-active" id="tab-1">
+						<div class="tab-wrap">
+							<div class="about-tab-main">
+								<div class="about-tab-main-info">
+									<h3 class="section-subtitle">Берем на себя полную ответственность по договору и возмещаем финансово каждый просроченный день</h3>
+									<a href="#" class="link-more"><span>Читать договор </span></a>
+								</div>
+								<div class="about-tab-img" style="background-image: url(img/img-2.webp);"></div>
+							</div>
+						</div>
+					</div>
+					<div class="tab" id="tab-2">
+						<div class="tab-wrap">
+							<div class="reports-w-text">
+								<p>Отчет в виде таблицы с основными показателями бизнеса. На основании полученных результатов, предложим дальнейшую стратегию развития рекламной кампании.</p>
+							</div>
+							<div class="reports-wrap">
+								<img src="img/table.webp" alt="">
+								<div class="tool tool-1">
+									<i class="tool-ico"></i>
+									<div class="tool-wrap">
+										<p>Оцениваем результаты в разрезе каждого канала трафика</p>
+									</div>
+								</div>
+								<div class="tool tool-2">
+									<i class="tool-ico"></i>
+									<div class="tool-wrap">
+										<p>Считаем стоимость  заявки  по каждому  рекламному источнику</p>
+										<p>Вы можете посмотреть подробно в отдельном кейсе, как мы делали аудит сайта и контекстной рекламы.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab" id="tab-3">
+						<div class="tab-wrap">
+							<div class="reports-tab">
+								<div class="reports-info">
+									<p>Например, у вас поменялась акция или сменились ссылки на товары. Вам не нужно бегать за нами и напоминать о задаче. Мы исправим все в течение дня: зададим вопросы, отпишем в чате о проделанной работе и согласуем готовый результат.</p>
+								</div>
+								<div class="reports-message">
+									<div class="reports-block">
+										<div class="reports-block-wrap">
+											<div class="reports-block-top">
+												<div class="reports-block-ava"><img src="img/ava-3.webp" alt=""></div>
+												<span>Евгений</span>
+												<div class="reports-block-time">14:30</div>
+											</div>
+											<p>Виктория, я получил от клиентов новые отзывы. Мы можем добавить их на сайт?</p>
+										</div>
+									</div><!-- block -->
+									<div class="reports-block">
+										<div class="reports-block-wrap">
+											<div class="reports-block-top">
+												<div class="reports-block-ava"><img src="img/ava-4.webp" alt=""></div>
+												<span>Виктория<i>Проект-менеджер</i></span>
+												<div class="reports-block-time">14:31</div>
+											</div>
+											<p>Александр, да, конечно. Присылайте и сегодня добавим.</p>
+										</div>
+									</div><!-- block -->
+									<div class="reports-block">
+										<div class="reports-block-wrap">
+											<div class="reports-block-top">
+												<span>Держите, фото.zip</span>
+												<div class="reports-block-time">14:34</div>
+											</div>
+										</div>
+									</div><!-- block -->
+									<div class="reports-block">
+										<div class="reports-block-wrap">
+											<div class="reports-block-top">
+												<span>Добавили, проверяйте.</span>
+												<div class="reports-block-time">15:00</div>
+											</div>
+										</div>
+									</div><!-- block -->
+									<div class="reports-block">
+										<div class="reports-block-wrap">
+											<div class="reports-block-top">
+												<span>Все хорошо, спасибо.</span>
+												<div class="reports-block-time">15:10</div>
+											</div>
+										</div>
+									</div><!-- block -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab" id="tab-4">
+						<div class="tab-wrap">
+							<div class="about-tab-row">
+								<div class="about-tab-text">
+									<ul>
+										<li>Все рекламные аккаунты принадлежат вам</li>
+										<li>Работают специалисты, прошедшие аттестацию</li>
+										<li>Простой и понятный договор</li>
+										<li>Взаимопонимание в работе</li>
+										<li>Круглосуточная забота о рекламном бюджете</li>
+									</ul>
+								</div>
+								<div class="about-tab-img">
+									<picture>
+									  <source srcset="img/about-t-1.webp" media="(min-width: 1024px)" />
+									  <source srcset="img/about-t-2.webp" media="(min-width: 768px)" />
+									  <source srcset="img/about-t-3.webp" media="(min-width: 500px)" />
+									  <img src="img/about-t-4.webp" alt="" />
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-prices">
+			<div class="wrapper">
+				<h2 class="section-title">Стоимость подготовки и ведения контекстной рекламы</h2>
+				<div class="about-table">
+					<div class="about-table-main">
+						<div class="about-table-row">
+							<div class="about-table-col">
+								<span>Услуга</span>
+							</div>
+							<div class="about-table-col">
+								<span>Подготовка рекламной кампании</span>
+							</div>
+							<div class="about-table-col">
+								<span>Ведение рекламной кампании</span>
+							</div>
+						</div>
+						<div class="about-table-row">
+							<div class="about-table-col">
+								<span>Стоимость</span>
+							</div>
+							<div class="about-table-col">
+								<span>15 000 рублей</span>
+							</div>
+							<div class="about-table-col">
+								<span>15 000 рублей</span>
+							</div>
+						</div>
+						<div class="about-table-row">
+							<div class="about-table-col">
+								<span>Сроки</span>
+							</div>
+							<div class="about-table-col">
+								<span>от 7 до 30 дней</span>
+							</div>
+							<div class="about-table-col">
+								<span>30 дней</span>
+							</div>
+						</div>
+						<div class="about-table-row">
+							<div class="about-table-col">
+								<span>Оплата</span>
+							</div>
+							<div class="about-table-col">
+								<span>50% предоплата и 50% после запуска рекламных кампаний</span>
+							</div>
+							<div class="about-table-col">
+								<span>Предоплата 100%</span>
+							</div>
+						</div>
+					</div>
+					<div class="about-table-bottom">
+						<div class="about-table-bottom-col">
+							<span class="about-table-tit">Оплатить можно любым удобным способом</span>
+						</div>
+						<div class="about-table-bottom-col">
+							<div class="about-table-logo">
+								<picture>
+								  <source srcset="img/lg-1.svg" media="(min-width: 768px)" />
+								  <img src="img/lg-1-mob.svg" alt="" />
+								</picture>
+							</div>
+						</div>
+						<div class="about-table-bottom-col">
+							<div class="about-table-logo">
+								<picture>
+								  <source srcset="img/lg-2.svg" media="(min-width: 768px)" />
+								  <img src="img/lg-2-mob.svg" alt="" />
+								</picture>
+							</div>
+						</div>
+						<div class="about-table-bottom-col">
+							<div class="about-table-rt">
+								<picture>
+								  <source srcset="img/lg-3.svg" media="(min-width: 768px)" />
+								  <img src="img/lg-3-mob.svg" alt="" />
+								</picture>
+								<span>Безналичный расчет</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-bottom">
+			<div class="about-bottom-head">
+				<div class="wrapper">
+					<h3 class="section-subtitle">Более подробно о подготовке и ведению рекламных кампаний в Яндекс.Директ и Google Ads можно почитать в плане работ</h3>
+					<ul>
+						<li><a href="#">О подготовке</a></li>
+						<li><a href="#">О ведении</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="about-bottom-content">
+				<div class="wrapper">
+					<div class="about-bottom-main">
+						<div class="about-bottom-img"><img src="img/video.webp" alt=""></div>
+						<span class="about-bottom-text"><b>Виталий</b>Teamlead </span>
+					</div>
+					<div class="about-bottom-info">
+						<h2 class="section-title">Готовы начать работу?</h2>
+						<p>Я понимаю, как важно правильно выбрать подрядчика. При ошибочном выборе, потери будут больше, чем просто оплата исполнителя. Рекламный бюджет + простой менеджеров + время на разбор ситуации и поиск нового подрядчика.</p>
+						<p>Мы с командой подробно вникнем в ваш проект, выслушаем пожелания и решим проблемы, с которыми вы столкнулись.</p>
+						<ul>
+							<li><a href="#">Давайте начнем</a></li>
+							<li><a href="#">Давайте начнем <i class="hb-ico chat-ico"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-main">
+					<div class="footer-block">
+						<div class="footer-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+						<p>Создаем понятные, удобные и адаптивные сайты. Запускаем окупаемую контекстную рекламу. Выводим сайты в топ Яндекса и Google.</p>
+					</div>
+					<div class="footer-rate">
+						<div class="footer-rate-ico"><img src="img/ya.svg" alt=""></div>
+						<div class="footer-rate-info">
+							<span>120 отзывов на Яндексе</span>
+							<img src="img/stars.svg" alt="">
+							<b>0.5/5</b>
+						</div>
+					</div>
+				</div>
+				<div class="footer-info">
+					<div class="footer-col">
+						<span class="footer-tit">Услуги</span>
+						<ul>
+							<li><a href="#">Комплексный маркетинг</a></li>
+							<li><a href="#">Разработка сайта</a></li>
+							<li><a href="#">Контекстная реклама</a></li>
+							<li><a href="#">SEO-продвижение</a></li>
+							<li><a href="#">Интеграция CRM и аналитики</a></li>
+							<li><a href="#">Дизайн</a></li>
+						</ul>
+					</div><!-- col -->
+					<div class="footer-col">
+						<span class="footer-tit"><a href="#">Проекты</a></span>
+						<span class="footer-tit"><a href="#">Команда</a></span>
+						<span class="footer-tit"><a href="#">Блог</a></span>
+						<span class="footer-tit"><a href="#">Вакансии</a></span>
+					</div><!-- col -->
+					<div class="footer-col">
+						<span class="footer-tit">Контакты</span>
+						<div class="footer-all">
+							<span class="footer-tel"><a href="tel:+79193059767">+7 919 305 97 67</a></span>
+							<div class="footer-soc">
+								<span><a href="#">Telegram</a></span>
+								<span><a href="#">WhatsApp</a></span>
+							</div>
+						</div>
+					</div><!-- col -->
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="social">
+					<li><a href="#"><i class="hb-ico beh-ico"></i></a></li>
+					<li><a href="#"><i class="hb-ico vk-ico"></i></a></li>
+				</ul>
+				<div class="footer-txt">
+					<p>©WISPO 2015 - 2022</p>
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<div style="display: none;" id="modal-form3" class="modal modal-form">
+		<div class="modal-wrap">
+			<form action="">
+				<div class="modal-top">
+					<div class="questions-head">
+						<img src="img/avatars.webp" alt="">
+					</div>
+					<span class="modal-title">Выберите удобный способ связи и напишите номер телефона </span>
+					<p>Перезвоним через 5 минут и зададим несколько вопросов о проекте, чтобы понимать, чем наша команда может вам помочь.</p>
+				</div>
+				<label for="">Выберите удобный способ связи</label>
+				<div class="choices">
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3" checked="">
+							<div class="choice-txt">Телефон</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3" checked="">
+							<div class="choice-txt">Telegram</div>
+						</div>
+					</div>
+					<div class="choice">
+						<div class="choice-wrap">
+							<input type="checkbox" name="method3">
+							<div class="choice-txt">WhatsApp</div>
+						</div>
+					</div>
+				</div>
+				<div class="input-block">
+					<div class="input-block-wrap">
+						<input type="text" name="text" placeholder="+" class="input-tel">
+						<button class="border-btn border-btn-white disabled">Отправить</button>
+					</div>
+				</div>
+				<div class="modal-txt">Нажимая кнопку, вы даете <a href="#">согласие на обработку персональных данных</a></div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
